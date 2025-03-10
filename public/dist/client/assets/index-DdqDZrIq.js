@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-CSALbpeV.js","assets/GLTFLoader-CfFNxV29.js","assets/method-CUWft9iF.js","assets/RGBELoader-Cg7WrFXj.js","assets/method-C0g7j2kg.js","assets/method-PBmoLbaf.js","assets/method-BfCQZpN8.js","assets/method-BUe6ja1h.js","assets/method-BOVvZrDx.js","assets/method-DHE9t7eA.js","assets/OrbitControls-eYha1zXB.js","assets/method-BXEZlt6M.js","assets/method-B6UMTpJg.js","assets/method-zu2OffTs.js","assets/method-2h0HgPn9.js","assets/method-NGNmvDhQ.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-CzNoqZRC.js","assets/GLTFLoader-C-mCnoxi.js","assets/method-CpVIBVEU.js","assets/RGBELoader-CaGZwBk-.js","assets/method-BnRv76e9.js","assets/method-B9KsxA_s.js","assets/method-4VZhLryt.js","assets/method-D2z9n8cD.js","assets/method-B8oa2GBo.js","assets/method-EQeUgUsM.js","assets/OrbitControls-C6yETkk4.js","assets/method-D3KUAg-o.js","assets/method-C0cqYEcu.js","assets/method-BybDqJ9T.js","assets/method-X_9VAQWN.js","assets/method-D84-j8j0.js"])))=>i.map(i=>d[i]);
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -59563,7 +59563,7 @@ function setCurrentViewportBox(visualElement2) {
   });
 }
 var visualElement = function(_a2) {
-  var _b = _a2.treeType, treeType = _b === void 0 ? "" : _b, build = _a2.build, getBaseTarget = _a2.getBaseTarget, makeTargetAnimatable = _a2.makeTargetAnimatable, measureViewportBox = _a2.measureViewportBox, renderInstance = _a2.render, readValueFromInstance = _a2.readValueFromInstance, resetTransform = _a2.resetTransform, restoreTransform = _a2.restoreTransform, removeValueFromRenderState = _a2.removeValueFromRenderState, sortNodePosition = _a2.sortNodePosition, scrapeMotionValuesFromProps2 = _a2.scrapeMotionValuesFromProps;
+  var _b = _a2.treeType, treeType = _b === void 0 ? "" : _b, build2 = _a2.build, getBaseTarget = _a2.getBaseTarget, makeTargetAnimatable = _a2.makeTargetAnimatable, measureViewportBox = _a2.measureViewportBox, renderInstance = _a2.render, readValueFromInstance = _a2.readValueFromInstance, resetTransform = _a2.resetTransform, restoreTransform = _a2.restoreTransform, removeValueFromRenderState = _a2.removeValueFromRenderState, sortNodePosition = _a2.sortNodePosition, scrapeMotionValuesFromProps2 = _a2.scrapeMotionValuesFromProps;
   return function(_a3, options2) {
     var parent2 = _a3.parent, props = _a3.props, presenceId2 = _a3.presenceId, blockInitialAnimation = _a3.blockInitialAnimation, visualState = _a3.visualState;
     if (options2 === void 0) {
@@ -59603,7 +59603,7 @@ var visualElement = function(_a2) {
         if (crossfadedValues)
           valuesToRender = crossfadedValues;
       }
-      build(element, renderState, valuesToRender, leadProjection, layoutState, options2, props);
+      build2(element, renderState, valuesToRender, leadProjection, layoutState, options2, props);
     }
     function update9() {
       lifecycles.notifyUpdate(latestValues);
@@ -65144,7 +65144,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-eYha1zXB.js");
+        } = await import("./OrbitControls-C6yETkk4.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -65168,7 +65168,7 @@ const Viewer = ({
           createScene: createScene2,
           onWindowResize: onWindowResize2,
           animate: animate3
-        } = await import("./methods-CSALbpeV.js");
+        } = await import("./methods-CzNoqZRC.js");
         return {
           createCamera: createCamera2,
           createFloor: createFloor2,
@@ -65185,7 +65185,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           default: ColorPallete3
-        } = await import("./index-DiLbKMLC.js");
+        } = await import("./index-BSAgylhT.js");
         return {
           default: ColorPallete3
         };
@@ -92456,7 +92456,7 @@ const PlantModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-eYha1zXB.js");
+        } = await import("./OrbitControls-C6yETkk4.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92480,7 +92480,7 @@ const PlantModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-CUWft9iF.js");
+        } = await import("./method-CpVIBVEU.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92532,7 +92532,7 @@ const PlantModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-eYha1zXB.js");
+        } = await import("./OrbitControls-C6yETkk4.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92556,7 +92556,7 @@ const PlantModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-C0g7j2kg.js");
+        } = await import("./method-BnRv76e9.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92613,7 +92613,7 @@ const PlanModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-eYha1zXB.js");
+        } = await import("./OrbitControls-C6yETkk4.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92637,7 +92637,7 @@ const PlanModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-PBmoLbaf.js");
+        } = await import("./method-B9KsxA_s.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93038,7 +93038,7 @@ const BagModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-eYha1zXB.js");
+        } = await import("./OrbitControls-C6yETkk4.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -93062,7 +93062,7 @@ const BagModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BfCQZpN8.js");
+        } = await import("./method-4VZhLryt.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93112,7 +93112,7 @@ const BagModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-eYha1zXB.js");
+        } = await import("./OrbitControls-C6yETkk4.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -93136,7 +93136,7 @@ const BagModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BUe6ja1h.js");
+        } = await import("./method-D2z9n8cD.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93192,7 +93192,7 @@ const BagModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-eYha1zXB.js");
+        } = await import("./OrbitControls-C6yETkk4.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -93216,7 +93216,7 @@ const BagModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BOVvZrDx.js");
+        } = await import("./method-B8oa2GBo.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93413,13 +93413,13 @@ const Model1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-eYha1zXB.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-C6yETkk4.js"), true ? [] : void 0);
     const {
       createCamera,
       createRenderer,
       onWindowResize,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-DHE9t7eA.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-EQeUgUsM.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -93442,7 +93442,7 @@ const Model2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-eYha1zXB.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-C6yETkk4.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93451,7 +93451,7 @@ const Model2 = ({
       createScene,
       onWindowResize,
       animate: animate2
-    } = __vitePreload(() => import("./method-BXEZlt6M.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-D3KUAg-o.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
     const renderer = createRenderer();
     const scene = createScene();
     const camera = createCamera();
@@ -93489,7 +93489,7 @@ const Model3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-eYha1zXB.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-C6yETkk4.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93499,7 +93499,7 @@ const Model3 = ({
       animate: animate2,
       createFloor,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-B6UMTpJg.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-C0cqYEcu.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -93571,7 +93571,7 @@ const BottleModel1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-eYha1zXB.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-C6yETkk4.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93581,7 +93581,7 @@ const BottleModel1 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-zu2OffTs.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-BybDqJ9T.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93616,7 +93616,7 @@ const BottleModel2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-eYha1zXB.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-C6yETkk4.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93626,7 +93626,7 @@ const BottleModel2 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-2h0HgPn9.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-X_9VAQWN.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93663,7 +93663,7 @@ const BottleModel3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-eYha1zXB.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-C6yETkk4.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93673,7 +93673,7 @@ const BottleModel3 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-NGNmvDhQ.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-D84-j8j0.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -94016,7 +94016,7 @@ const ModalVideo = (props) => {
   const [isOpen, setOpen] = reactExports.useState(false);
   const [VideoModal, setVideoModal] = reactExports.useState(null);
   reactExports.useEffect(() => {
-    __vitePreload(() => import("./index-JphhMhjE.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
+    __vitePreload(() => import("./index-DbAcZVPe.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
       setVideoModal(() => module2.default);
     });
   }, []);
@@ -96180,6 +96180,726 @@ function LandingPage() {
     })]
   });
 }
+var build = { exports: {} };
+var hasRequiredBuild;
+function requireBuild() {
+  if (hasRequiredBuild) return build.exports;
+  hasRequiredBuild = 1;
+  (() => {
+    var e = { 296: (e2, t2, r2) => {
+      var n2 = /^\s+|\s+$/g, o = /^[-+]0x[0-9a-f]+$/i, i = /^0b[01]+$/i, c2 = /^0o[0-7]+$/i, s = parseInt, u = "object" == typeof r2.g && r2.g && r2.g.Object === Object && r2.g, l = "object" == typeof self && self && self.Object === Object && self, a2 = u || l || Function("return this")(), f = Object.prototype.toString, p = Math.max, y = Math.min, d = function() {
+        return a2.Date.now();
+      };
+      function b2(e3) {
+        var t3 = typeof e3;
+        return !!e3 && ("object" == t3 || "function" == t3);
+      }
+      function h(e3) {
+        if ("number" == typeof e3) return e3;
+        if (function(e4) {
+          return "symbol" == typeof e4 || /* @__PURE__ */ function(e5) {
+            return !!e5 && "object" == typeof e5;
+          }(e4) && "[object Symbol]" == f.call(e4);
+        }(e3)) return NaN;
+        if (b2(e3)) {
+          var t3 = "function" == typeof e3.valueOf ? e3.valueOf() : e3;
+          e3 = b2(t3) ? t3 + "" : t3;
+        }
+        if ("string" != typeof e3) return 0 === e3 ? e3 : +e3;
+        e3 = e3.replace(n2, "");
+        var r3 = i.test(e3);
+        return r3 || c2.test(e3) ? s(e3.slice(2), r3 ? 2 : 8) : o.test(e3) ? NaN : +e3;
+      }
+      e2.exports = function(e3, t3, r3) {
+        var n3, o2, i2, c3, s2, u2, l2 = 0, a3 = false, f2 = false, v = true;
+        if ("function" != typeof e3) throw new TypeError("Expected a function");
+        function m(t4) {
+          var r4 = n3, i3 = o2;
+          return n3 = o2 = void 0, l2 = t4, c3 = e3.apply(i3, r4);
+        }
+        function O(e4) {
+          return l2 = e4, s2 = setTimeout(g, t3), a3 ? m(e4) : c3;
+        }
+        function w2(e4) {
+          var r4 = e4 - u2;
+          return void 0 === u2 || r4 >= t3 || r4 < 0 || f2 && e4 - l2 >= i2;
+        }
+        function g() {
+          var e4 = d();
+          if (w2(e4)) return P(e4);
+          s2 = setTimeout(g, function(e5) {
+            var r4 = t3 - (e5 - u2);
+            return f2 ? y(r4, i2 - (e5 - l2)) : r4;
+          }(e4));
+        }
+        function P(e4) {
+          return s2 = void 0, v && n3 ? m(e4) : (n3 = o2 = void 0, c3);
+        }
+        function j() {
+          var e4 = d(), r4 = w2(e4);
+          if (n3 = arguments, o2 = this, u2 = e4, r4) {
+            if (void 0 === s2) return O(u2);
+            if (f2) return s2 = setTimeout(g, t3), m(u2);
+          }
+          return void 0 === s2 && (s2 = setTimeout(g, t3)), c3;
+        }
+        return t3 = h(t3) || 0, b2(r3) && (a3 = !!r3.leading, i2 = (f2 = "maxWait" in r3) ? p(h(r3.maxWait) || 0, t3) : i2, v = "trailing" in r3 ? !!r3.trailing : v), j.cancel = function() {
+          void 0 !== s2 && clearTimeout(s2), l2 = 0, n3 = u2 = o2 = s2 = void 0;
+        }, j.flush = function() {
+          return void 0 === s2 ? c3 : P(d());
+        }, j;
+      };
+    }, 96: (e2, t2, r2) => {
+      var n2 = "Expected a function", o = /^\s+|\s+$/g, i = /^[-+]0x[0-9a-f]+$/i, c2 = /^0b[01]+$/i, s = /^0o[0-7]+$/i, u = parseInt, l = "object" == typeof r2.g && r2.g && r2.g.Object === Object && r2.g, a2 = "object" == typeof self && self && self.Object === Object && self, f = l || a2 || Function("return this")(), p = Object.prototype.toString, y = Math.max, d = Math.min, b2 = function() {
+        return f.Date.now();
+      };
+      function h(e3) {
+        var t3 = typeof e3;
+        return !!e3 && ("object" == t3 || "function" == t3);
+      }
+      function v(e3) {
+        if ("number" == typeof e3) return e3;
+        if (function(e4) {
+          return "symbol" == typeof e4 || /* @__PURE__ */ function(e5) {
+            return !!e5 && "object" == typeof e5;
+          }(e4) && "[object Symbol]" == p.call(e4);
+        }(e3)) return NaN;
+        if (h(e3)) {
+          var t3 = "function" == typeof e3.valueOf ? e3.valueOf() : e3;
+          e3 = h(t3) ? t3 + "" : t3;
+        }
+        if ("string" != typeof e3) return 0 === e3 ? e3 : +e3;
+        e3 = e3.replace(o, "");
+        var r3 = c2.test(e3);
+        return r3 || s.test(e3) ? u(e3.slice(2), r3 ? 2 : 8) : i.test(e3) ? NaN : +e3;
+      }
+      e2.exports = function(e3, t3, r3) {
+        var o2 = true, i2 = true;
+        if ("function" != typeof e3) throw new TypeError(n2);
+        return h(r3) && (o2 = "leading" in r3 ? !!r3.leading : o2, i2 = "trailing" in r3 ? !!r3.trailing : i2), function(e4, t4, r4) {
+          var o3, i3, c3, s2, u2, l2, a3 = 0, f2 = false, p2 = false, m = true;
+          if ("function" != typeof e4) throw new TypeError(n2);
+          function O(t5) {
+            var r5 = o3, n3 = i3;
+            return o3 = i3 = void 0, a3 = t5, s2 = e4.apply(n3, r5);
+          }
+          function w2(e5) {
+            return a3 = e5, u2 = setTimeout(P, t4), f2 ? O(e5) : s2;
+          }
+          function g(e5) {
+            var r5 = e5 - l2;
+            return void 0 === l2 || r5 >= t4 || r5 < 0 || p2 && e5 - a3 >= c3;
+          }
+          function P() {
+            var e5 = b2();
+            if (g(e5)) return j(e5);
+            u2 = setTimeout(P, function(e6) {
+              var r5 = t4 - (e6 - l2);
+              return p2 ? d(r5, c3 - (e6 - a3)) : r5;
+            }(e5));
+          }
+          function j(e5) {
+            return u2 = void 0, m && o3 ? O(e5) : (o3 = i3 = void 0, s2);
+          }
+          function T() {
+            var e5 = b2(), r5 = g(e5);
+            if (o3 = arguments, i3 = this, l2 = e5, r5) {
+              if (void 0 === u2) return w2(l2);
+              if (p2) return u2 = setTimeout(P, t4), O(l2);
+            }
+            return void 0 === u2 && (u2 = setTimeout(P, t4)), s2;
+          }
+          return t4 = v(t4) || 0, h(r4) && (f2 = !!r4.leading, c3 = (p2 = "maxWait" in r4) ? y(v(r4.maxWait) || 0, t4) : c3, m = "trailing" in r4 ? !!r4.trailing : m), T.cancel = function() {
+            void 0 !== u2 && clearTimeout(u2), a3 = 0, o3 = l2 = i3 = u2 = void 0;
+          }, T.flush = function() {
+            return void 0 === u2 ? s2 : j(b2());
+          }, T;
+        }(e3, t3, { leading: o2, maxWait: t3, trailing: i2 });
+      };
+    }, 703: (e2, t2, r2) => {
+      var n2 = r2(414);
+      function o() {
+      }
+      function i() {
+      }
+      i.resetWarningCache = o, e2.exports = function() {
+        function e3(e4, t4, r4, o2, i2, c2) {
+          if (c2 !== n2) {
+            var s = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+            throw s.name = "Invariant Violation", s;
+          }
+        }
+        function t3() {
+          return e3;
+        }
+        e3.isRequired = e3;
+        var r3 = { array: e3, bool: e3, func: e3, number: e3, object: e3, string: e3, symbol: e3, any: e3, arrayOf: t3, element: e3, elementType: e3, instanceOf: t3, node: e3, objectOf: t3, oneOf: t3, oneOfType: t3, shape: t3, exact: t3, checkPropTypes: i, resetWarningCache: o };
+        return r3.PropTypes = r3, r3;
+      };
+    }, 697: (e2, t2, r2) => {
+      e2.exports = r2(703)();
+    }, 414: (e2) => {
+      e2.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+    } }, t = {};
+    function r(n2) {
+      var o = t[n2];
+      if (void 0 !== o) return o.exports;
+      var i = t[n2] = { exports: {} };
+      return e[n2](i, i.exports, r), i.exports;
+    }
+    r.n = (e2) => {
+      var t2 = e2 && e2.__esModule ? () => e2.default : () => e2;
+      return r.d(t2, { a: t2 }), t2;
+    }, r.d = (e2, t2) => {
+      for (var n2 in t2) r.o(t2, n2) && !r.o(e2, n2) && Object.defineProperty(e2, n2, { enumerable: true, get: t2[n2] });
+    }, r.g = function() {
+      if ("object" == typeof globalThis) return globalThis;
+      try {
+        return this || new Function("return this")();
+      } catch (e2) {
+        if ("object" == typeof window) return window;
+      }
+    }(), r.o = (e2, t2) => Object.prototype.hasOwnProperty.call(e2, t2), r.r = (e2) => {
+      "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e2, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e2, "__esModule", { value: true });
+    };
+    var n = {};
+    (() => {
+      r.r(n), r.d(n, { LazyLoadComponent: () => J, LazyLoadImage: () => ue, trackWindowScroll: () => C });
+      const e2 = requireReact();
+      var t2 = r.n(e2), o = r(697);
+      const i = requireReactDom();
+      var c2 = r.n(i);
+      function s() {
+        return "undefined" != typeof window && "IntersectionObserver" in window && "isIntersecting" in window.IntersectionObserverEntry.prototype;
+      }
+      function u(e3) {
+        return (u = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e4) {
+          return typeof e4;
+        } : function(e4) {
+          return e4 && "function" == typeof Symbol && e4.constructor === Symbol && e4 !== Symbol.prototype ? "symbol" : typeof e4;
+        })(e3);
+      }
+      function l(e3, t3) {
+        var r2 = Object.keys(e3);
+        if (Object.getOwnPropertySymbols) {
+          var n2 = Object.getOwnPropertySymbols(e3);
+          t3 && (n2 = n2.filter(function(t4) {
+            return Object.getOwnPropertyDescriptor(e3, t4).enumerable;
+          })), r2.push.apply(r2, n2);
+        }
+        return r2;
+      }
+      function a2(e3, t3, r2) {
+        return t3 in e3 ? Object.defineProperty(e3, t3, { value: r2, enumerable: true, configurable: true, writable: true }) : e3[t3] = r2, e3;
+      }
+      function f(e3, t3) {
+        for (var r2 = 0; r2 < t3.length; r2++) {
+          var n2 = t3[r2];
+          n2.enumerable = n2.enumerable || false, n2.configurable = true, "value" in n2 && (n2.writable = true), Object.defineProperty(e3, n2.key, n2);
+        }
+      }
+      function p(e3, t3) {
+        return (p = Object.setPrototypeOf || function(e4, t4) {
+          return e4.__proto__ = t4, e4;
+        })(e3, t3);
+      }
+      function y(e3, t3) {
+        if (t3 && ("object" === u(t3) || "function" == typeof t3)) return t3;
+        if (void 0 !== t3) throw new TypeError("Derived constructors may only return object or undefined");
+        return function(e4) {
+          if (void 0 === e4) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+          return e4;
+        }(e3);
+      }
+      function d(e3) {
+        return (d = Object.setPrototypeOf ? Object.getPrototypeOf : function(e4) {
+          return e4.__proto__ || Object.getPrototypeOf(e4);
+        })(e3);
+      }
+      var b2 = function(e3) {
+        e3.forEach(function(e4) {
+          e4.isIntersecting && e4.target.onVisible();
+        });
+      }, h = {}, v = function(e3) {
+        !function(e4, t3) {
+          if ("function" != typeof t3 && null !== t3) throw new TypeError("Super expression must either be null or a function");
+          e4.prototype = Object.create(t3 && t3.prototype, { constructor: { value: e4, writable: true, configurable: true } }), t3 && p(e4, t3);
+        }(v2, e3);
+        var r2, n2, o2, i2, u2 = (o2 = v2, i2 = function() {
+          if ("undefined" == typeof Reflect || !Reflect.construct) return false;
+          if (Reflect.construct.sham) return false;
+          if ("function" == typeof Proxy) return true;
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+            })), true;
+          } catch (e4) {
+            return false;
+          }
+        }(), function() {
+          var e4, t3 = d(o2);
+          if (i2) {
+            var r3 = d(this).constructor;
+            e4 = Reflect.construct(t3, arguments, r3);
+          } else e4 = t3.apply(this, arguments);
+          return y(this, e4);
+        });
+        function v2(e4) {
+          var t3;
+          if (function(e5, t4) {
+            if (!(e5 instanceof t4)) throw new TypeError("Cannot call a class as a function");
+          }(this, v2), (t3 = u2.call(this, e4)).supportsObserver = !e4.scrollPosition && e4.useIntersectionObserver && s(), t3.supportsObserver) {
+            var r3 = e4.threshold;
+            t3.observer = function(e5) {
+              return h[e5] = h[e5] || new IntersectionObserver(b2, { rootMargin: e5 + "px" }), h[e5];
+            }(r3);
+          }
+          return t3;
+        }
+        return r2 = v2, (n2 = [{ key: "componentDidMount", value: function() {
+          this.placeholder && this.observer && (this.placeholder.onVisible = this.props.onVisible, this.observer.observe(this.placeholder)), this.supportsObserver || this.updateVisibility();
+        } }, { key: "componentWillUnmount", value: function() {
+          this.observer && this.observer.unobserve(this.placeholder);
+        } }, { key: "componentDidUpdate", value: function() {
+          this.supportsObserver || this.updateVisibility();
+        } }, { key: "getPlaceholderBoundingBox", value: function() {
+          var e4 = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this.props.scrollPosition, t3 = this.placeholder.getBoundingClientRect(), r3 = c2().findDOMNode(this.placeholder).style, n3 = { left: parseInt(r3.getPropertyValue("margin-left"), 10) || 0, top: parseInt(r3.getPropertyValue("margin-top"), 10) || 0 };
+          return { bottom: e4.y + t3.bottom + n3.top, left: e4.x + t3.left + n3.left, right: e4.x + t3.right + n3.left, top: e4.y + t3.top + n3.top };
+        } }, { key: "isPlaceholderInViewport", value: function() {
+          if ("undefined" == typeof window || !this.placeholder) return false;
+          var e4 = this.props, t3 = e4.scrollPosition, r3 = e4.threshold, n3 = this.getPlaceholderBoundingBox(t3), o3 = t3.y + window.innerHeight, i3 = t3.x, c3 = t3.x + window.innerWidth, s2 = t3.y;
+          return Boolean(s2 - r3 <= n3.bottom && o3 + r3 >= n3.top && i3 - r3 <= n3.right && c3 + r3 >= n3.left);
+        } }, { key: "updateVisibility", value: function() {
+          this.isPlaceholderInViewport() && this.props.onVisible();
+        } }, { key: "render", value: function() {
+          var e4 = this, r3 = this.props, n3 = r3.className, o3 = r3.height, i3 = r3.placeholder, c3 = r3.style, s2 = r3.width;
+          if (i3 && "function" != typeof i3.type) return t2().cloneElement(i3, { ref: function(t3) {
+            return e4.placeholder = t3;
+          } });
+          var u3 = function(e5) {
+            for (var t3 = 1; t3 < arguments.length; t3++) {
+              var r4 = null != arguments[t3] ? arguments[t3] : {};
+              t3 % 2 ? l(Object(r4), true).forEach(function(t4) {
+                a2(e5, t4, r4[t4]);
+              }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e5, Object.getOwnPropertyDescriptors(r4)) : l(Object(r4)).forEach(function(t4) {
+                Object.defineProperty(e5, t4, Object.getOwnPropertyDescriptor(r4, t4));
+              });
+            }
+            return e5;
+          }({ display: "inline-block" }, c3);
+          return void 0 !== s2 && (u3.width = s2), void 0 !== o3 && (u3.height = o3), t2().createElement("span", { className: n3, ref: function(t3) {
+            return e4.placeholder = t3;
+          }, style: u3 }, i3);
+        } }]) && f(r2.prototype, n2), v2;
+      }(t2().Component);
+      v.propTypes = { onVisible: o.PropTypes.func.isRequired, className: o.PropTypes.string, height: o.PropTypes.oneOfType([o.PropTypes.number, o.PropTypes.string]), placeholder: o.PropTypes.element, threshold: o.PropTypes.number, useIntersectionObserver: o.PropTypes.bool, scrollPosition: o.PropTypes.shape({ x: o.PropTypes.number.isRequired, y: o.PropTypes.number.isRequired }), width: o.PropTypes.oneOfType([o.PropTypes.number, o.PropTypes.string]) }, v.defaultProps = { className: "", placeholder: null, threshold: 100, useIntersectionObserver: true };
+      const m = v;
+      var O = r(296), w2 = r.n(O), g = r(96), P = r.n(g), j = function(e3) {
+        var t3 = getComputedStyle(e3, null);
+        return t3.getPropertyValue("overflow") + t3.getPropertyValue("overflow-y") + t3.getPropertyValue("overflow-x");
+      };
+      const T = function(e3) {
+        if (!(e3 instanceof HTMLElement)) return window;
+        for (var t3 = e3; t3 && t3 instanceof HTMLElement; ) {
+          if (/(scroll|auto)/.test(j(t3))) return t3;
+          t3 = t3.parentNode;
+        }
+        return window;
+      };
+      function S(e3) {
+        return (S = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e4) {
+          return typeof e4;
+        } : function(e4) {
+          return e4 && "function" == typeof Symbol && e4.constructor === Symbol && e4 !== Symbol.prototype ? "symbol" : typeof e4;
+        })(e3);
+      }
+      var E = ["delayMethod", "delayTime"];
+      function _() {
+        return (_ = Object.assign || function(e3) {
+          for (var t3 = 1; t3 < arguments.length; t3++) {
+            var r2 = arguments[t3];
+            for (var n2 in r2) Object.prototype.hasOwnProperty.call(r2, n2) && (e3[n2] = r2[n2]);
+          }
+          return e3;
+        }).apply(this, arguments);
+      }
+      function I(e3, t3) {
+        for (var r2 = 0; r2 < t3.length; r2++) {
+          var n2 = t3[r2];
+          n2.enumerable = n2.enumerable || false, n2.configurable = true, "value" in n2 && (n2.writable = true), Object.defineProperty(e3, n2.key, n2);
+        }
+      }
+      function L(e3, t3) {
+        return (L = Object.setPrototypeOf || function(e4, t4) {
+          return e4.__proto__ = t4, e4;
+        })(e3, t3);
+      }
+      function x(e3, t3) {
+        if (t3 && ("object" === S(t3) || "function" == typeof t3)) return t3;
+        if (void 0 !== t3) throw new TypeError("Derived constructors may only return object or undefined");
+        return R(e3);
+      }
+      function R(e3) {
+        if (void 0 === e3) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return e3;
+      }
+      function k(e3) {
+        return (k = Object.setPrototypeOf ? Object.getPrototypeOf : function(e4) {
+          return e4.__proto__ || Object.getPrototypeOf(e4);
+        })(e3);
+      }
+      var D = function() {
+        return "undefined" == typeof window ? 0 : window.scrollX || window.pageXOffset;
+      }, N = function() {
+        return "undefined" == typeof window ? 0 : window.scrollY || window.pageYOffset;
+      };
+      const C = function(e3) {
+        var r2 = function(r3) {
+          !function(e4, t3) {
+            if ("function" != typeof t3 && null !== t3) throw new TypeError("Super expression must either be null or a function");
+            e4.prototype = Object.create(t3 && t3.prototype, { constructor: { value: e4, writable: true, configurable: true } }), t3 && L(e4, t3);
+          }(a3, r3);
+          var n2, o2, i2, u2, l2 = (i2 = a3, u2 = function() {
+            if ("undefined" == typeof Reflect || !Reflect.construct) return false;
+            if (Reflect.construct.sham) return false;
+            if ("function" == typeof Proxy) return true;
+            try {
+              return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+              })), true;
+            } catch (e4) {
+              return false;
+            }
+          }(), function() {
+            var e4, t3 = k(i2);
+            if (u2) {
+              var r4 = k(this).constructor;
+              e4 = Reflect.construct(t3, arguments, r4);
+            } else e4 = t3.apply(this, arguments);
+            return x(this, e4);
+          });
+          function a3(e4) {
+            var r4;
+            if (function(e5, t3) {
+              if (!(e5 instanceof t3)) throw new TypeError("Cannot call a class as a function");
+            }(this, a3), (r4 = l2.call(this, e4)).useIntersectionObserver = e4.useIntersectionObserver && s(), r4.useIntersectionObserver) return x(r4);
+            var n3 = r4.onChangeScroll.bind(R(r4));
+            return "debounce" === e4.delayMethod ? r4.delayedScroll = w2()(n3, e4.delayTime) : "throttle" === e4.delayMethod && (r4.delayedScroll = P()(n3, e4.delayTime)), r4.state = { scrollPosition: { x: D(), y: N() } }, r4.baseComponentRef = t2().createRef(), r4;
+          }
+          return n2 = a3, (o2 = [{ key: "componentDidMount", value: function() {
+            this.addListeners();
+          } }, { key: "componentWillUnmount", value: function() {
+            this.removeListeners();
+          } }, { key: "componentDidUpdate", value: function() {
+            "undefined" == typeof window || this.useIntersectionObserver || T(c2().findDOMNode(this.baseComponentRef.current)) !== this.scrollElement && (this.removeListeners(), this.addListeners());
+          } }, { key: "addListeners", value: function() {
+            "undefined" == typeof window || this.useIntersectionObserver || (this.scrollElement = T(c2().findDOMNode(this.baseComponentRef.current)), this.scrollElement.addEventListener("scroll", this.delayedScroll, { passive: true }), window.addEventListener("resize", this.delayedScroll, { passive: true }), this.scrollElement !== window && window.addEventListener("scroll", this.delayedScroll, { passive: true }));
+          } }, { key: "removeListeners", value: function() {
+            "undefined" == typeof window || this.useIntersectionObserver || (this.scrollElement.removeEventListener("scroll", this.delayedScroll), window.removeEventListener("resize", this.delayedScroll), this.scrollElement !== window && window.removeEventListener("scroll", this.delayedScroll));
+          } }, { key: "onChangeScroll", value: function() {
+            this.useIntersectionObserver || this.setState({ scrollPosition: { x: D(), y: N() } });
+          } }, { key: "render", value: function() {
+            var r4 = this.props, n3 = (r4.delayMethod, r4.delayTime, function(e4, t3) {
+              if (null == e4) return {};
+              var r5, n4, o4 = function(e5, t4) {
+                if (null == e5) return {};
+                var r6, n5, o5 = {}, i4 = Object.keys(e5);
+                for (n5 = 0; n5 < i4.length; n5++) r6 = i4[n5], t4.indexOf(r6) >= 0 || (o5[r6] = e5[r6]);
+                return o5;
+              }(e4, t3);
+              if (Object.getOwnPropertySymbols) {
+                var i3 = Object.getOwnPropertySymbols(e4);
+                for (n4 = 0; n4 < i3.length; n4++) r5 = i3[n4], t3.indexOf(r5) >= 0 || Object.prototype.propertyIsEnumerable.call(e4, r5) && (o4[r5] = e4[r5]);
+              }
+              return o4;
+            }(r4, E)), o3 = this.useIntersectionObserver ? null : this.state.scrollPosition;
+            return t2().createElement(e3, _({ forwardRef: this.baseComponentRef, scrollPosition: o3 }, n3));
+          } }]) && I(n2.prototype, o2), a3;
+        }(t2().Component);
+        return r2.propTypes = { delayMethod: o.PropTypes.oneOf(["debounce", "throttle"]), delayTime: o.PropTypes.number, useIntersectionObserver: o.PropTypes.bool }, r2.defaultProps = { delayMethod: "throttle", delayTime: 300, useIntersectionObserver: true }, r2;
+      };
+      function M(e3) {
+        return (M = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e4) {
+          return typeof e4;
+        } : function(e4) {
+          return e4 && "function" == typeof Symbol && e4.constructor === Symbol && e4 !== Symbol.prototype ? "symbol" : typeof e4;
+        })(e3);
+      }
+      function B(e3, t3) {
+        for (var r2 = 0; r2 < t3.length; r2++) {
+          var n2 = t3[r2];
+          n2.enumerable = n2.enumerable || false, n2.configurable = true, "value" in n2 && (n2.writable = true), Object.defineProperty(e3, n2.key, n2);
+        }
+      }
+      function V(e3, t3) {
+        return (V = Object.setPrototypeOf || function(e4, t4) {
+          return e4.__proto__ = t4, e4;
+        })(e3, t3);
+      }
+      function W(e3, t3) {
+        if (t3 && ("object" === M(t3) || "function" == typeof t3)) return t3;
+        if (void 0 !== t3) throw new TypeError("Derived constructors may only return object or undefined");
+        return function(e4) {
+          if (void 0 === e4) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+          return e4;
+        }(e3);
+      }
+      function z(e3) {
+        return (z = Object.setPrototypeOf ? Object.getPrototypeOf : function(e4) {
+          return e4.__proto__ || Object.getPrototypeOf(e4);
+        })(e3);
+      }
+      var $2 = function(e3) {
+        !function(e4, t3) {
+          if ("function" != typeof t3 && null !== t3) throw new TypeError("Super expression must either be null or a function");
+          e4.prototype = Object.create(t3 && t3.prototype, { constructor: { value: e4, writable: true, configurable: true } }), t3 && V(e4, t3);
+        }(s2, e3);
+        var r2, n2, o2, i2, c3 = (o2 = s2, i2 = function() {
+          if ("undefined" == typeof Reflect || !Reflect.construct) return false;
+          if (Reflect.construct.sham) return false;
+          if ("function" == typeof Proxy) return true;
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+            })), true;
+          } catch (e4) {
+            return false;
+          }
+        }(), function() {
+          var e4, t3 = z(o2);
+          if (i2) {
+            var r3 = z(this).constructor;
+            e4 = Reflect.construct(t3, arguments, r3);
+          } else e4 = t3.apply(this, arguments);
+          return W(this, e4);
+        });
+        function s2(e4) {
+          return function(e5, t3) {
+            if (!(e5 instanceof t3)) throw new TypeError("Cannot call a class as a function");
+          }(this, s2), c3.call(this, e4);
+        }
+        return r2 = s2, (n2 = [{ key: "render", value: function() {
+          return t2().createElement(m, this.props);
+        } }]) && B(r2.prototype, n2), s2;
+      }(t2().Component);
+      const U = C($2);
+      function q(e3) {
+        return (q = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e4) {
+          return typeof e4;
+        } : function(e4) {
+          return e4 && "function" == typeof Symbol && e4.constructor === Symbol && e4 !== Symbol.prototype ? "symbol" : typeof e4;
+        })(e3);
+      }
+      function F(e3, t3) {
+        for (var r2 = 0; r2 < t3.length; r2++) {
+          var n2 = t3[r2];
+          n2.enumerable = n2.enumerable || false, n2.configurable = true, "value" in n2 && (n2.writable = true), Object.defineProperty(e3, n2.key, n2);
+        }
+      }
+      function H(e3, t3) {
+        return (H = Object.setPrototypeOf || function(e4, t4) {
+          return e4.__proto__ = t4, e4;
+        })(e3, t3);
+      }
+      function Y(e3, t3) {
+        if (t3 && ("object" === q(t3) || "function" == typeof t3)) return t3;
+        if (void 0 !== t3) throw new TypeError("Derived constructors may only return object or undefined");
+        return X(e3);
+      }
+      function X(e3) {
+        if (void 0 === e3) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return e3;
+      }
+      function A(e3) {
+        return (A = Object.setPrototypeOf ? Object.getPrototypeOf : function(e4) {
+          return e4.__proto__ || Object.getPrototypeOf(e4);
+        })(e3);
+      }
+      var G = function(e3) {
+        !function(e4, t3) {
+          if ("function" != typeof t3 && null !== t3) throw new TypeError("Super expression must either be null or a function");
+          e4.prototype = Object.create(t3 && t3.prototype, { constructor: { value: e4, writable: true, configurable: true } }), t3 && H(e4, t3);
+        }(u2, e3);
+        var r2, n2, o2, i2, c3 = (o2 = u2, i2 = function() {
+          if ("undefined" == typeof Reflect || !Reflect.construct) return false;
+          if (Reflect.construct.sham) return false;
+          if ("function" == typeof Proxy) return true;
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+            })), true;
+          } catch (e4) {
+            return false;
+          }
+        }(), function() {
+          var e4, t3 = A(o2);
+          if (i2) {
+            var r3 = A(this).constructor;
+            e4 = Reflect.construct(t3, arguments, r3);
+          } else e4 = t3.apply(this, arguments);
+          return Y(this, e4);
+        });
+        function u2(e4) {
+          var t3;
+          !function(e5, t4) {
+            if (!(e5 instanceof t4)) throw new TypeError("Cannot call a class as a function");
+          }(this, u2), t3 = c3.call(this, e4);
+          var r3 = e4.afterLoad, n3 = e4.beforeLoad, o3 = e4.scrollPosition, i3 = e4.visibleByDefault;
+          return t3.state = { visible: i3 }, i3 && (n3(), r3()), t3.onVisible = t3.onVisible.bind(X(t3)), t3.isScrollTracked = Boolean(o3 && Number.isFinite(o3.x) && o3.x >= 0 && Number.isFinite(o3.y) && o3.y >= 0), t3;
+        }
+        return r2 = u2, (n2 = [{ key: "componentDidUpdate", value: function(e4, t3) {
+          t3.visible !== this.state.visible && this.props.afterLoad();
+        } }, { key: "onVisible", value: function() {
+          this.props.beforeLoad(), this.setState({ visible: true });
+        } }, { key: "render", value: function() {
+          if (this.state.visible) return this.props.children;
+          var e4 = this.props, r3 = e4.className, n3 = e4.delayMethod, o3 = e4.delayTime, i3 = e4.height, c4 = e4.placeholder, u3 = e4.scrollPosition, l2 = e4.style, a3 = e4.threshold, f2 = e4.useIntersectionObserver, p2 = e4.width;
+          return this.isScrollTracked || f2 && s() ? t2().createElement(m, { className: r3, height: i3, onVisible: this.onVisible, placeholder: c4, scrollPosition: u3, style: l2, threshold: a3, useIntersectionObserver: f2, width: p2 }) : t2().createElement(U, { className: r3, delayMethod: n3, delayTime: o3, height: i3, onVisible: this.onVisible, placeholder: c4, style: l2, threshold: a3, width: p2 });
+        } }]) && F(r2.prototype, n2), u2;
+      }(t2().Component);
+      G.propTypes = { afterLoad: o.PropTypes.func, beforeLoad: o.PropTypes.func, useIntersectionObserver: o.PropTypes.bool, visibleByDefault: o.PropTypes.bool }, G.defaultProps = { afterLoad: function() {
+        return {};
+      }, beforeLoad: function() {
+        return {};
+      }, useIntersectionObserver: true, visibleByDefault: false };
+      const J = G;
+      function K(e3) {
+        return (K = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e4) {
+          return typeof e4;
+        } : function(e4) {
+          return e4 && "function" == typeof Symbol && e4.constructor === Symbol && e4 !== Symbol.prototype ? "symbol" : typeof e4;
+        })(e3);
+      }
+      var Q = ["afterLoad", "beforeLoad", "delayMethod", "delayTime", "effect", "placeholder", "placeholderSrc", "scrollPosition", "threshold", "useIntersectionObserver", "visibleByDefault", "wrapperClassName", "wrapperProps"];
+      function Z(e3, t3) {
+        var r2 = Object.keys(e3);
+        if (Object.getOwnPropertySymbols) {
+          var n2 = Object.getOwnPropertySymbols(e3);
+          t3 && (n2 = n2.filter(function(t4) {
+            return Object.getOwnPropertyDescriptor(e3, t4).enumerable;
+          })), r2.push.apply(r2, n2);
+        }
+        return r2;
+      }
+      function ee(e3) {
+        for (var t3 = 1; t3 < arguments.length; t3++) {
+          var r2 = null != arguments[t3] ? arguments[t3] : {};
+          t3 % 2 ? Z(Object(r2), true).forEach(function(t4) {
+            te(e3, t4, r2[t4]);
+          }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e3, Object.getOwnPropertyDescriptors(r2)) : Z(Object(r2)).forEach(function(t4) {
+            Object.defineProperty(e3, t4, Object.getOwnPropertyDescriptor(r2, t4));
+          });
+        }
+        return e3;
+      }
+      function te(e3, t3, r2) {
+        return t3 in e3 ? Object.defineProperty(e3, t3, { value: r2, enumerable: true, configurable: true, writable: true }) : e3[t3] = r2, e3;
+      }
+      function re() {
+        return (re = Object.assign || function(e3) {
+          for (var t3 = 1; t3 < arguments.length; t3++) {
+            var r2 = arguments[t3];
+            for (var n2 in r2) Object.prototype.hasOwnProperty.call(r2, n2) && (e3[n2] = r2[n2]);
+          }
+          return e3;
+        }).apply(this, arguments);
+      }
+      function ne(e3, t3) {
+        for (var r2 = 0; r2 < t3.length; r2++) {
+          var n2 = t3[r2];
+          n2.enumerable = n2.enumerable || false, n2.configurable = true, "value" in n2 && (n2.writable = true), Object.defineProperty(e3, n2.key, n2);
+        }
+      }
+      function oe(e3, t3) {
+        return (oe = Object.setPrototypeOf || function(e4, t4) {
+          return e4.__proto__ = t4, e4;
+        })(e3, t3);
+      }
+      function ie(e3, t3) {
+        if (t3 && ("object" === K(t3) || "function" == typeof t3)) return t3;
+        if (void 0 !== t3) throw new TypeError("Derived constructors may only return object or undefined");
+        return function(e4) {
+          if (void 0 === e4) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+          return e4;
+        }(e3);
+      }
+      function ce(e3) {
+        return (ce = Object.setPrototypeOf ? Object.getPrototypeOf : function(e4) {
+          return e4.__proto__ || Object.getPrototypeOf(e4);
+        })(e3);
+      }
+      var se = function(e3) {
+        !function(e4, t3) {
+          if ("function" != typeof t3 && null !== t3) throw new TypeError("Super expression must either be null or a function");
+          e4.prototype = Object.create(t3 && t3.prototype, { constructor: { value: e4, writable: true, configurable: true } }), t3 && oe(e4, t3);
+        }(s2, e3);
+        var r2, n2, o2, i2, c3 = (o2 = s2, i2 = function() {
+          if ("undefined" == typeof Reflect || !Reflect.construct) return false;
+          if (Reflect.construct.sham) return false;
+          if ("function" == typeof Proxy) return true;
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+            })), true;
+          } catch (e4) {
+            return false;
+          }
+        }(), function() {
+          var e4, t3 = ce(o2);
+          if (i2) {
+            var r3 = ce(this).constructor;
+            e4 = Reflect.construct(t3, arguments, r3);
+          } else e4 = t3.apply(this, arguments);
+          return ie(this, e4);
+        });
+        function s2(e4) {
+          var t3;
+          return function(e5, t4) {
+            if (!(e5 instanceof t4)) throw new TypeError("Cannot call a class as a function");
+          }(this, s2), (t3 = c3.call(this, e4)).state = { loaded: false }, t3;
+        }
+        return r2 = s2, (n2 = [{ key: "onImageLoad", value: function() {
+          var e4 = this;
+          return this.state.loaded ? null : function() {
+            e4.props.afterLoad(), e4.setState({ loaded: true });
+          };
+        } }, { key: "getImg", value: function() {
+          var e4 = this.props, r3 = (e4.afterLoad, e4.beforeLoad, e4.delayMethod, e4.delayTime, e4.effect, e4.placeholder, e4.placeholderSrc, e4.scrollPosition, e4.threshold, e4.useIntersectionObserver, e4.visibleByDefault, e4.wrapperClassName, e4.wrapperProps, function(e5, t3) {
+            if (null == e5) return {};
+            var r4, n3, o3 = function(e6, t4) {
+              if (null == e6) return {};
+              var r5, n4, o4 = {}, i4 = Object.keys(e6);
+              for (n4 = 0; n4 < i4.length; n4++) r5 = i4[n4], t4.indexOf(r5) >= 0 || (o4[r5] = e6[r5]);
+              return o4;
+            }(e5, t3);
+            if (Object.getOwnPropertySymbols) {
+              var i3 = Object.getOwnPropertySymbols(e5);
+              for (n3 = 0; n3 < i3.length; n3++) r4 = i3[n3], t3.indexOf(r4) >= 0 || Object.prototype.propertyIsEnumerable.call(e5, r4) && (o3[r4] = e5[r4]);
+            }
+            return o3;
+          }(e4, Q));
+          return t2().createElement("img", re({ onLoad: this.onImageLoad() }, r3));
+        } }, { key: "getLazyLoadImage", value: function() {
+          var e4 = this.props, r3 = e4.beforeLoad, n3 = e4.className, o3 = e4.delayMethod, i3 = e4.delayTime, c4 = e4.height, s3 = e4.placeholder, u2 = e4.scrollPosition, l2 = e4.style, a3 = e4.threshold, f2 = e4.useIntersectionObserver, p2 = e4.visibleByDefault, y2 = e4.width;
+          return t2().createElement(J, { beforeLoad: r3, className: n3, delayMethod: o3, delayTime: i3, height: c4, placeholder: s3, scrollPosition: u2, style: l2, threshold: a3, useIntersectionObserver: f2, visibleByDefault: p2, width: y2 }, this.getImg());
+        } }, { key: "getWrappedLazyLoadImage", value: function(e4) {
+          var r3 = this.props, n3 = r3.effect, o3 = r3.height, i3 = r3.placeholderSrc, c4 = r3.width, s3 = r3.wrapperClassName, u2 = r3.wrapperProps, l2 = this.state.loaded, a3 = l2 ? " lazy-load-image-loaded" : "", f2 = l2 || !i3 ? {} : { backgroundImage: "url(".concat(i3, ")"), backgroundSize: "100% 100%" };
+          return t2().createElement("span", re({ className: s3 + " lazy-load-image-background " + n3 + a3, style: ee(ee({}, f2), {}, { color: "transparent", display: "inline-block", height: o3, width: c4 }) }, u2), e4);
+        } }, { key: "render", value: function() {
+          var e4 = this.props, t3 = e4.effect, r3 = e4.placeholderSrc, n3 = e4.visibleByDefault, o3 = e4.wrapperClassName, i3 = e4.wrapperProps, c4 = this.getLazyLoadImage();
+          return (t3 || r3) && !n3 || o3 || i3 ? this.getWrappedLazyLoadImage(c4) : c4;
+        } }]) && ne(r2.prototype, n2), s2;
+      }(t2().Component);
+      se.propTypes = { afterLoad: o.PropTypes.func, beforeLoad: o.PropTypes.func, delayMethod: o.PropTypes.string, delayTime: o.PropTypes.number, effect: o.PropTypes.string, placeholderSrc: o.PropTypes.string, threshold: o.PropTypes.number, useIntersectionObserver: o.PropTypes.bool, visibleByDefault: o.PropTypes.bool, wrapperClassName: o.PropTypes.string, wrapperProps: o.PropTypes.object }, se.defaultProps = { afterLoad: function() {
+        return {};
+      }, beforeLoad: function() {
+        return {};
+      }, delayMethod: "throttle", delayTime: 300, effect: "", placeholderSrc: null, threshold: 100, useIntersectionObserver: true, visibleByDefault: false, wrapperClassName: "" };
+      const ue = se;
+    })(), build.exports = n;
+  })();
+  return build.exports;
+}
+var buildExports = requireBuild();
+const pkg = /* @__PURE__ */ getDefaultExportFromCjs(buildExports);
+const {
+  LazyLoadImage: LazyLoadImage$7
+} = pkg;
 function HeroSection$2() {
   return /* @__PURE__ */ jsxs("section", {
     id: "hero",
@@ -96188,11 +96908,13 @@ function HeroSection$2() {
       className: "xl:container xl:mx-auto flex flex-col lg:items-start xlxl:items-center lg:justify-center lg:flex-row-reverse justify-between pb-6 gap-0 lg:mb-0 pt-4",
       children: [/* @__PURE__ */ jsx$1("div", {
         className: "visible lg:invisible relative mx-auto lg:mx-0 lg:mb-0 w-full lg:w-1/2",
-        children: /* @__PURE__ */ jsx$1("img", {
+        children: /* @__PURE__ */ jsx$1(LazyLoadImage$7, {
+          height: 1097,
+          width: 972,
           loading: "lazy",
           src: "/Images/edisu/section_1-webp.webp",
           alt: "chats",
-          className: "relative z-10 overflow-x-visible w-full"
+          className: "relative z-10  w-full"
         })
       }), /* @__PURE__ */ jsxs("div", {
         className: "flex flex-col items-center lg:items-start my-12 lg:my-0 justify-center gap-4 lg:pl-20 w-full lg:w-1/2",
@@ -96203,7 +96925,9 @@ function HeroSection$2() {
           }), "Study"]
         }), /* @__PURE__ */ jsx$1("div", {
           className: "flex justify-center lg:justify-start items-center w-full",
-          children: /* @__PURE__ */ jsx$1("img", {
+          children: /* @__PURE__ */ jsx$1(LazyLoadImage$7, {
+            height: 188,
+            width: 188,
             src: "/Images/edisu/edisu_logo-webp.webp",
             alt: "app-logo",
             className: "w-40 mb-2"
@@ -96213,7 +96937,9 @@ function HeroSection$2() {
           children: "Design and Develop by"
         }), /* @__PURE__ */ jsx$1("div", {
           className: "flex justify-center lg:justify-start items-center w-full",
-          children: /* @__PURE__ */ jsx$1("img", {
+          children: /* @__PURE__ */ jsx$1(LazyLoadImage$7, {
+            height: 85,
+            width: 410,
             src: "/Images/edisu/astute_logo-webp.webp",
             alt: "app-logo",
             className: "w-40 mb-2"
@@ -96222,15 +96948,20 @@ function HeroSection$2() {
       })]
     }), /* @__PURE__ */ jsx$1("div", {
       className: "invisible md:visible absolute top-0 right-0 w-1/2 xl:w-2/5 z-20",
-      children: /* @__PURE__ */ jsx$1("img", {
+      children: /* @__PURE__ */ jsx$1(LazyLoadImage$7, {
+        height: 1097,
+        width: 927,
         loading: "lazy",
         src: "/Images/edisu/section_1-webp.webp",
         alt: "chats",
-        className: "overflow-x-visible w-full"
+        className: " w-full"
       })
     })]
   });
 }
+const {
+  LazyLoadImage: LazyLoadImage$6
+} = pkg;
 function AboutSection$2() {
   return /* @__PURE__ */ jsxs("section", {
     id: "about",
@@ -96241,11 +96972,13 @@ function AboutSection$2() {
         "data-aos": "fade-right",
         "data-aos-duration": "1000",
         className: "invisible relative lg:mx-0 lg:mb-0 w-7/12 lg:-w-1/2 xl:w-2/5 xlxl:w-1/2 mx-auto",
-        children: /* @__PURE__ */ jsx$1("img", {
+        children: /* @__PURE__ */ jsx$1(LazyLoadImage$6, {
+          height: 835,
+          width: 825,
           loading: "lazy",
           src: "/Images/edisu/section_2-webp.webp",
           alt: "chats",
-          className: "relative z-10 overflow-x-visible"
+          className: "relative z-10 "
         })
       }), /* @__PURE__ */ jsxs("div", {
         "data-aos": "fade-left",
@@ -96264,15 +96997,20 @@ function AboutSection$2() {
       })]
     }), /* @__PURE__ */ jsx$1("div", {
       className: "absolute bottom-0 left-0 w-7/12 lg:w-2/5 2xl:w-1/3 z-20",
-      children: /* @__PURE__ */ jsx$1("img", {
+      children: /* @__PURE__ */ jsx$1(LazyLoadImage$6, {
+        height: 835,
+        width: 825,
         loading: "lazy",
         src: "/Images/edisu/section_2-webp.webp",
         alt: "chats",
-        className: "overflow-x-visible w-full"
+        className: " w-full"
       })
     })]
   });
 }
+const {
+  LazyLoadImage: LazyLoadImage$5
+} = pkg;
 function ProblemStatementSection$2() {
   return /* @__PURE__ */ jsxs("section", {
     id: "problem-statement",
@@ -96310,7 +97048,9 @@ function ProblemStatementSection$2() {
                   children: "The Italian government faced a significant challenge in maintaining the safety and health of individuals using study halls amidst the COVID-19 pandemic."
                 }), /* @__PURE__ */ jsx$1("div", {
                   className: "pl-4",
-                  children: /* @__PURE__ */ jsx$1("img", {
+                  children: /* @__PURE__ */ jsx$1(LazyLoadImage$5, {
+                    height: 510,
+                    width: 390,
                     loading: "lazy",
                     src: "/Images/edisu/group_10-webp.webp",
                     alt: "card pattern",
@@ -96339,7 +97079,9 @@ function ProblemStatementSection$2() {
                   children: "The primary concern was the risk of virus transmission through surface contact, particularly the seats that were used by multiple individuals throughout the day."
                 }), /* @__PURE__ */ jsx$1("div", {
                   className: "pl-4",
-                  children: /* @__PURE__ */ jsx$1("img", {
+                  children: /* @__PURE__ */ jsx$1(LazyLoadImage$5, {
+                    width: 515,
+                    height: 390,
                     loading: "lazy",
                     src: "/Images/edisu/group_10-webp.webp",
                     alt: "card pattern",
@@ -96368,7 +97110,9 @@ function ProblemStatementSection$2() {
                   children: "Given the nature of the virus's spread, it was crucial to implement a rigorous disinfection and sanitization protocol to mitigate the risk of COVID-19 transmission."
                 }), /* @__PURE__ */ jsx$1("div", {
                   className: "pl-4",
-                  children: /* @__PURE__ */ jsx$1("img", {
+                  children: /* @__PURE__ */ jsx$1(LazyLoadImage$5, {
+                    width: 515,
+                    height: 390,
                     loading: "lazy",
                     src: "/Images/edisu/group_10-webp.webp",
                     alt: "card pattern",
@@ -96382,7 +97126,9 @@ function ProblemStatementSection$2() {
       })]
     }), /* @__PURE__ */ jsx$1("div", {
       className: "w-11/12 absolute top-8 left-2/5 z-10",
-      children: /* @__PURE__ */ jsx$1("img", {
+      children: /* @__PURE__ */ jsx$1(LazyLoadImage$5, {
+        width: 1816,
+        height: 959,
         src: "/Images/edisu/section_3_bg-webp.webp",
         alt: "",
         className: "invisible 2xl:visible"
@@ -96390,6 +97136,9 @@ function ProblemStatementSection$2() {
     })]
   });
 }
+const {
+  LazyLoadImage: LazyLoadImage$4
+} = pkg;
 function Challenges() {
   return /* @__PURE__ */ jsxs("section", {
     id: "solutions",
@@ -96468,14 +97217,18 @@ function Challenges() {
           })]
         }), /* @__PURE__ */ jsx$1("div", {
           className: "w-1/3 h-auto absolute top-20 left-1/4 z-10",
-          children: /* @__PURE__ */ jsx$1("img", {
+          children: /* @__PURE__ */ jsx$1(LazyLoadImage$4, {
+            width: 285,
+            height: 62,
             src: "/Images/edisu/group_1-webp.webp",
             alt: "",
             className: "invisible 2xl:visible"
           })
         }), /* @__PURE__ */ jsx$1("div", {
           className: "w-1/3 h-auto absolute top-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/5 z-10",
-          children: /* @__PURE__ */ jsx$1("img", {
+          children: /* @__PURE__ */ jsx$1(LazyLoadImage$4, {
+            width: 234,
+            height: 86,
             src: "/Images/edisu/group_2-webp.webp",
             alt: "",
             className: "invisible 2xl:visible"
@@ -96485,24 +97238,31 @@ function Challenges() {
         "data-aos": "fade-right",
         "data-aos-duration": "1000",
         className: "invisible relative lg:mx-0 lg:mb-0 w-7/12 lg:-w-1/2 xl:w-2/5 xlxl:w-1/2 mx-auto",
-        children: /* @__PURE__ */ jsx$1("img", {
+        children: /* @__PURE__ */ jsx$1(LazyLoadImage$4, {
+          width: 621,
+          height: 724,
           loading: "lazy",
           src: "/Images/edisu/springs-webp.webp",
           alt: "springs",
-          className: "w-full relative z-10 overflow-x-visible"
+          className: "w-full relative z-10 "
         })
       })]
     }), /* @__PURE__ */ jsx$1("div", {
       className: "absolute bottom-0 md:top-1/12 right-0 w-7/12 lg:w-2/5 2xl:w-1/4 z-10",
-      children: /* @__PURE__ */ jsx$1("img", {
+      children: /* @__PURE__ */ jsx$1(LazyLoadImage$4, {
+        width: 621,
+        height: 724,
         loading: "lazy",
         src: "/Images/edisu/springs-webp.webp",
         alt: "springs",
-        className: "overflow-x-visible w-full"
+        className: " w-full"
       })
     })]
   });
 }
+const {
+  LazyLoadImage: LazyLoadImage$3
+} = pkg;
 function SolutionSection$2() {
   return /* @__PURE__ */ jsxs("section", {
     id: "solutions",
@@ -96529,7 +97289,9 @@ function SolutionSection$2() {
       })
     }), /* @__PURE__ */ jsx$1("div", {
       className: "w-1/3 h-auto absolute inset-y-0 right-0 z-10",
-      children: /* @__PURE__ */ jsx$1("img", {
+      children: /* @__PURE__ */ jsx$1(LazyLoadImage$3, {
+        width: 598,
+        height: 587,
         src: "/Images/edisu/section_4-webp.webp",
         alt: "",
         className: "invisible 2xl:visible xlxl:invisible"
@@ -96537,6 +97299,9 @@ function SolutionSection$2() {
     })]
   });
 }
+const {
+  LazyLoadImage: LazyLoadImage$2
+} = pkg;
 function MobileAppSection() {
   return /* @__PURE__ */ jsxs("section", {
     id: "solutions",
@@ -96653,24 +97418,31 @@ function MobileAppSection() {
         "data-aos": "fade-right",
         "data-aos-duration": "1000",
         className: "invisible relative mx-auto lg:mx-0 lg:mb-0 w-9/12 lg:w-2/6",
-        children: /* @__PURE__ */ jsx$1("img", {
+        children: /* @__PURE__ */ jsx$1(LazyLoadImage$2, {
+          width: 643,
+          height: 872,
           loading: "lazy",
           src: "/Images/edisu/section_5-webp.webp",
           alt: "chats",
-          className: "relative z-10 overflow-x-visible"
+          className: "relative z-10 "
         })
       })]
     }), /* @__PURE__ */ jsx$1("div", {
       className: "absolute bottom-0 md:top-1/12 right-0 w-9/12 lg:w-2/6 xlxl:w-1/4 z-10",
-      children: /* @__PURE__ */ jsx$1("img", {
+      children: /* @__PURE__ */ jsx$1(LazyLoadImage$2, {
+        width: 643,
+        height: 872,
         loading: "lazy",
         src: "/Images/edisu/section_5-webp.webp",
         alt: "springs",
-        className: "overflow-x-visible w-full"
+        className: " w-full"
       })
     })]
   });
 }
+const {
+  LazyLoadImage: LazyLoadImage$1
+} = pkg;
 function WebPortalSection() {
   return /* @__PURE__ */ jsxs("section", {
     id: "solutions",
@@ -96748,20 +97520,24 @@ function WebPortalSection() {
         "data-aos": "fade-right",
         "data-aos-duration": "1000",
         className: "invisible relative mx-auto lg:mx-0 lg:mb-0 lg:w-2/6",
-        children: /* @__PURE__ */ jsx$1("img", {
+        children: /* @__PURE__ */ jsx$1(LazyLoadImage$1, {
+          width: 667,
+          height: 567,
           loading: "lazy",
           src: "/Images/edisu/section_6-webp.webp",
           alt: "chats",
-          className: "relative z-10 overflow-x-visible"
+          className: "relative z-10 "
         })
       })]
     }), /* @__PURE__ */ jsx$1("div", {
       className: "absolute bottom-0 md:top-1/12 right-0 w-9/12 lg:w-2/6 xlxl:w-1/4 z-10",
-      children: /* @__PURE__ */ jsx$1("img", {
+      children: /* @__PURE__ */ jsx$1(LazyLoadImage$1, {
+        width: 667,
+        height: 567,
         loading: "lazy",
         src: "/Images/edisu/section_6-webp.webp",
         alt: "springs",
-        className: "overflow-x-visible w-full"
+        className: " w-full"
       })
     })]
   });
@@ -96852,6 +97628,9 @@ function SerivceSection() {
     })
   });
 }
+const {
+  LazyLoadImage
+} = pkg;
 function ResultSection$2() {
   return /* @__PURE__ */ jsxs(Fragment, {
     children: [/* @__PURE__ */ jsx$1("section", {
@@ -96863,11 +97642,13 @@ function ResultSection$2() {
           "data-aos": "fade-right",
           "data-aos-duration": "1000",
           className: "relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2",
-          children: /* @__PURE__ */ jsx$1("img", {
+          children: /* @__PURE__ */ jsx$1(LazyLoadImage, {
+            width: 1021,
+            height: 620,
             loading: "lazy",
             src: "/Images/edisu/section_7-webp.webp",
             alt: "chats",
-            className: "relative z-10 overflow-x-visible"
+            className: "relative z-10 "
           })
         }), /* @__PURE__ */ jsxs("div", {
           "data-aos": "fade-left",
@@ -96915,7 +97696,9 @@ function ResultSection$2() {
                     children: "Astute Softwares's solution gained significant recognition for its effectiveness and utility, leading to its adoption by the Italian Ministry of Education as the official method for booking study halls across Italy. This endorsement underscores the system's reliability, user-friendliness, and alignment with public health guidelines, making it a pivotal tool in the nationwide effort to maintain educational continuity and safety during the pandemic"
                   }), /* @__PURE__ */ jsx$1("div", {
                     className: "pl-4",
-                    children: /* @__PURE__ */ jsx$1("img", {
+                    children: /* @__PURE__ */ jsx$1(LazyLoadImage, {
+                      width: 515,
+                      height: 390,
                       loading: "lazy",
                       src: "/Images/edisu/group_10-webp.webp",
                       alt: "card pattern",
@@ -96944,7 +97727,9 @@ function ResultSection$2() {
                     children: "The mobile application saw a rapid uptake among students, reaching an impressive milestone of more than 100,000 unique users. This wide adoption speaks volumes about the app's usability, relevance, and effectiveness in meeting the needs of its target audience. Moreover, the platform maintained a high level of user engagement, with over 50,000 active"
                   }), /* @__PURE__ */ jsx$1("div", {
                     className: "pl-4",
-                    children: /* @__PURE__ */ jsx$1("img", {
+                    children: /* @__PURE__ */ jsx$1(LazyLoadImage, {
+                      width: 515,
+                      height: 390,
                       loading: "lazy",
                       src: "/Images/edisu/group_10-webp.webp",
                       alt: "card pattern",
@@ -96978,7 +97763,9 @@ function ResultSection$2() {
                     children: "Perhaps one of the most telling indicators of the solution's success is its sustained use beyond the COVID-19 pandemic. The continued reliance on this digital booking system by students and study hall operators alike points to its enduring value, not just as a response to a public health crisis but as a transformative tool for educational infrastructure."
                   }), /* @__PURE__ */ jsx$1("div", {
                     className: "pl-4",
-                    children: /* @__PURE__ */ jsx$1("img", {
+                    children: /* @__PURE__ */ jsx$1(LazyLoadImage, {
+                      width: 515,
+                      height: 390,
                       loading: "lazy",
                       src: "/Images/edisu/group_10-webp.webp",
                       alt: "card pattern",
@@ -96996,7 +97783,9 @@ function ResultSection$2() {
           })]
         }), /* @__PURE__ */ jsx$1("div", {
           className: "w-1/3 h-auto absolute top-1/4 left-1/2 transform -translate-x-1/4 -translate-y-1/5 z-10",
-          children: /* @__PURE__ */ jsx$1("img", {
+          children: /* @__PURE__ */ jsx$1(LazyLoadImage, {
+            width: 208,
+            height: 348,
             src: "/Images/edisu/group_3-webp.webp",
             alt: "",
             className: "invisible 2xl:visible"
@@ -97004,7 +97793,9 @@ function ResultSection$2() {
         })]
       }), /* @__PURE__ */ jsx$1("div", {
         className: "w-1/3 h-auto absolute bottom-0 right-0 z-10",
-        children: /* @__PURE__ */ jsx$1("img", {
+        children: /* @__PURE__ */ jsx$1(LazyLoadImage, {
+          width: 714,
+          height: 684,
           src: "/Images/edisu/section_8-webp.webp",
           alt: "",
           className: "invisible 2xl:visible xlxl:invisible"
@@ -97031,7 +97822,7 @@ function HeroSection$1() {
           loading: "lazy",
           src: "/Images/pat-app/section_1-webp.webp",
           alt: "chats",
-          className: "overflow-x-visible w-full"
+          className: " w-full"
         })
       }), /* @__PURE__ */ jsxs("div", {
         className: "flex flex-col items-center lg:items-start mt-24 md:mt-0 lg:mt-12 pb-12 lg:my-0 justify-center gap-6 lg:pl-20 w-full lg:w-1/2 relative z-30",
@@ -97065,7 +97856,7 @@ function HeroSection$1() {
         loading: "lazy",
         src: "/Images/pat-app/section_1-webp.webp",
         alt: "chats",
-        className: "overflow-x-visible w-full"
+        className: " w-full"
       })
     }), /* @__PURE__ */ jsx$1("div", {
       className: "absolute top-0 z-10 w-full",
@@ -97091,7 +97882,7 @@ function AboutSection$1() {
           loading: "lazy",
           src: "/Images/pat-app/section_2-webp.webp",
           alt: "chats",
-          className: "relative z-10 overflow-x-visible"
+          className: "relative z-10 "
         })
       }), /* @__PURE__ */ jsxs("div", {
         "data-aos": "fade-left",
@@ -97114,7 +97905,7 @@ function AboutSection$1() {
         loading: "lazy",
         src: "/Images/pat-app/section_2-webp.webp",
         alt: "chats",
-        className: "overflow-x-visible w-full"
+        className: " w-full"
       })
     })]
   });
@@ -97314,7 +98105,7 @@ function SolutionSection$1() {
           loading: "lazy",
           src: "/Images/pat-app/section_3-webp.webp",
           alt: "chats",
-          className: "relative z-10 overflow-x-visible"
+          className: "relative z-10 "
         })
       })]
     }), /* @__PURE__ */ jsx$1("div", {
@@ -97323,7 +98114,7 @@ function SolutionSection$1() {
         loading: "lazy",
         src: "/Images/pat-app/section_3-webp.webp",
         alt: "chats",
-        className: "overflow-x-visible w-full"
+        className: " w-full"
       })
     })]
   });
@@ -97614,7 +98405,7 @@ function TechnologySection() {
                   loading: "lazy",
                   src: "/Images/pat-app/section_4-webp.webp",
                   alt: "chats",
-                  className: "relative z-10 overflow-x-visible"
+                  className: "relative z-10 "
                 })
               })
             })]
@@ -97641,7 +98432,7 @@ function ResultSection$1() {
           loading: "lazy",
           src: "/Images/pat-app/results-webp.webp",
           alt: "chats",
-          className: "relative z-10 overflow-x-visible"
+          className: "relative z-10 "
         })]
       }), /* @__PURE__ */ jsx$1("div", {
         className: "invisible relative lg:mx-0 lg:mb-0 w-7/12 lg:w-2/5 xlxl:w-1/2 mx-auto",
@@ -97649,7 +98440,7 @@ function ResultSection$1() {
           loading: "lazy",
           src: "/Images/pat-app/section_3-webp.webp",
           alt: "chats",
-          className: "relative z-10 overflow-x-visible"
+          className: "relative z-10 "
         })
       })]
     }), /* @__PURE__ */ jsx$1("div", {
@@ -97658,7 +98449,7 @@ function ResultSection$1() {
         loading: "lazy",
         src: "/Images/pat-app/section_5-webp.webp",
         alt: "chats",
-        className: "overflow-x-visible w-full"
+        className: " w-full"
       })
     })]
   });
@@ -97826,7 +98617,7 @@ function HeroSection() {
           loading: "lazy",
           src: "/Images/proid/section_1-webp.webp",
           alt: "chats",
-          className: "relative z-10 overflow-x-visible w-full"
+          className: "relative z-10  w-full"
         })
       }), /* @__PURE__ */ jsxs("div", {
         "data-aos": "fade-right",
@@ -97873,7 +98664,7 @@ function AboutSection() {
           loading: "lazy",
           src: "/Images/proid/section_2-webp.webp",
           alt: "section_2",
-          className: "relative z-10 overflow-x-visible"
+          className: "relative z-10 "
         })
       }), /* @__PURE__ */ jsxs("div", {
         "data-aos": "fade-left",
@@ -98090,7 +98881,7 @@ function SolutionSection() {
                   loading: "lazy",
                   src: "/Images/proid/section_4_1-webp.webp",
                   alt: "chats",
-                  className: "relative z-10 overflow-x-visible"
+                  className: "relative z-10 "
                 })
               })
             })]
@@ -98137,7 +98928,7 @@ function SolutionSection() {
                   loading: "lazy",
                   src: "/Images/proid/section_4_2-webp.webp",
                   alt: "chats",
-                  className: "relative z-10 overflow-x-visible"
+                  className: "relative z-10 "
                 })
               })
             })]
@@ -98184,7 +98975,7 @@ function SolutionSection() {
                   loading: "lazy",
                   src: "/Images/proid/section_4_3-webp.webp",
                   alt: "chats",
-                  className: "relative z-10 overflow-x-visible"
+                  className: "relative z-10 "
                 })
               })
             })]

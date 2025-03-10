@@ -1,18 +1,44 @@
-import { aB as jsxs, aC as motion, aD as jsx, G as TextureLoader, aE as Fragment, aF as FaArrowLeft, M as MeshPhongMaterial } from "./index-DsEwbqpU.js";
+import "react";
+import { motion } from "framer-motion";
+import { FaArrowLeft } from "react-icons/fa";
+import * as THREE from "three";
+import { j as jsxs, a as jsx, F as Fragment } from "../entry-server.js";
+import "react-dom/server.js";
+import "react-router-dom";
+import "react-intl";
+import "aos";
+import "react-icons/ai";
+import "object-assign";
+import "react-ga4";
+import "react-helmet";
+import "react-icons/bs";
+import "ssr-window";
+import "dom7";
+import "three/examples/jsm/exporters/GLTFExporter.js";
+import "react-qr-code";
+import "react-icons/bi";
+import "formik";
+import "axios";
+import "yup";
+import "react-icons/fi";
+import "react-select";
+import "react-detect-click-outside";
+import "react-icons/md";
+import "react-lazy-load-image-component";
 const COLOR_PALLETTE = ["#ff0000", "#68b745", "#66717E", "#D4D6B9", "#D1CAA1"];
 const BED_PALLETE = [{
-  txt: new TextureLoader().load("/textures/bed/1-webp.webp"),
+  txt: new THREE.TextureLoader().load("/textures/bed/1-webp.webp"),
   img: "/textures/bed/1-webp.webp"
 }];
 const CLOTH_PALLETE = [{
-  txt: new TextureLoader().load("/textures/cloth/1-webp.webp"),
+  txt: new THREE.TextureLoader().load("/textures/cloth/1-webp.webp"),
   img: "/textures/cloth/1-webp.webp"
 }, {
-  txt: new TextureLoader().load("/textures/cloth/2-webp.webp"),
+  txt: new THREE.TextureLoader().load("/textures/cloth/2-webp.webp"),
   img: "/textures/cloth/2-webp.webp"
 }];
 const MATTRESS_PALLETE = [{
-  txt: new TextureLoader().load("/textures/mattress/1-webp.webp"),
+  txt: new THREE.TextureLoader().load("/textures/mattress/1-webp.webp"),
   img: "/textures/mattress/1-webp.webp"
 }];
 const ColorPallete = ({
@@ -28,7 +54,7 @@ const ColorPallete = ({
     setTooltipOpen(false);
     model.current.traverse((o) => {
       if (o.isMesh && o.name === activeLayer.value) {
-        o.material = new MeshPhongMaterial({
+        o.material = new THREE.MeshPhongMaterial({
           color,
           emmisive: 16776437,
           shininess: 0
@@ -54,7 +80,7 @@ const ColorPallete = ({
     setTooltipOpen(false);
     model.current.traverse((o) => {
       if (o.isMesh && o.name === activeLayer.value) {
-        o.material = new MeshPhongMaterial({
+        o.material = new THREE.MeshPhongMaterial({
           map: text.txt,
           emmisive: 16776437,
           shininess: 0

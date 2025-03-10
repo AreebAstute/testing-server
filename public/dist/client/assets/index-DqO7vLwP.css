@@ -2043,10 +2043,6 @@ video {
   overflow-y: hidden;
 }
 
-.overflow-x-visible{
-  overflow-x: visible;
-}
-
 .whitespace-nowrap{
   white-space: nowrap;
 }
