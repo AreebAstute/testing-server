@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-s9JbLDjr.js","assets/GLTFLoader-BuvAmIm4.js","assets/method-52q47yM1.js","assets/RGBELoader-Cvuy2iIw.js","assets/method-SIAJkPbW.js","assets/method-B9wrN5LQ.js","assets/method-Ch-ckUsc.js","assets/method-BTanD-6o.js","assets/method-CiAt48Ov.js","assets/method-C2wpKTwR.js","assets/OrbitControls-DmHupjny.js","assets/method-BypZc41i.js","assets/method-BD9UeoOa.js","assets/method-DYVGoggp.js","assets/method-xNhRsBqp.js","assets/method-DrkjJduw.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-D1iv-3AR.js","assets/GLTFLoader-BN1_KJyK.js","assets/method-DC-D6IsU.js","assets/RGBELoader-D-Npn4Il.js","assets/method-CClTKbPa.js","assets/method-CmWgbLI2.js","assets/method-BSV_AkQf.js","assets/method-CCLxznmJ.js","assets/method-BzNdo5IZ.js","assets/method-Cp_irF6F.js","assets/OrbitControls-CFGiMx0J.js","assets/method-D3WV7MgK.js","assets/method-DkT9ycOi.js","assets/method-D4hZwt04.js","assets/method-C-Y2D5KY.js","assets/method-CXw3ZNJW.js"])))=>i.map(i=>d[i]);
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -44869,7 +44869,6 @@ const GameServices = ({
           children: [/* @__PURE__ */ jsxs("div", {
             className: "w-full lg:w-1/2 flex justify-center items-center  relative",
             children: [/* @__PURE__ */ jsx$1("img", {
-              loading: "lazy",
               alt: "game-cart",
               className: "w-4/5 lg:w-full xl:w-4/5",
               src: "/Images/GamingServices/game-cart-webp.webp",
@@ -44893,7 +44892,6 @@ const GameServices = ({
                   className: "text-white text-xl px-10",
                   children: "Falling Gems"
                 }), /* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   alt: "game-title-icon",
                   className: "w-28 absolute bottom-0 right-0",
                   src: "/Images/GamingServices/game-title-icon-webp.webp",
@@ -44920,7 +44918,6 @@ const GameServices = ({
                     },
                     className: "cursor-pointer my-3 mr-3",
                     children: /* @__PURE__ */ jsx$1("img", {
-                      loading: "lazy",
                       alt: "apple-store",
                       className: "w-full",
                       src: "/Images/GamingServices/apple-store-webp.webp",
@@ -44933,7 +44930,6 @@ const GameServices = ({
                     },
                     className: "cursor-pointer my-3 ml-3",
                     children: /* @__PURE__ */ jsx$1("img", {
-                      loading: "lazy",
                       alt: "google-play-store",
                       className: "w-full",
                       src: "/Images/GamingServices/google-play-store-webp.webp",
@@ -61617,7 +61613,6 @@ const ServiceCard = (props) => {
       children: /* @__PURE__ */ jsx$1("img", {
         width: props.width,
         height: props.height,
-        loading: "lazy",
         className: "w-2/6 md:w-4/6 lg:w-1/6 xl:w-4/6 mx-auto md:mx-0",
         alt: getImageALt(props.img),
         src: props.img
@@ -61735,7 +61730,6 @@ const HomePageServices = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "flex items-center justify-center serviceImgDiv",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           className: "w-4/5 md:w-3/5 lg:w-full",
           alt: "services-img-resized",
           src: "/Images/LandingPageImage/services-img-resized-webp.webp",
@@ -61790,7 +61784,6 @@ const HomePageLanguageCard = ({
         children: [/* @__PURE__ */ jsx$1("img", {
           width,
           height,
-          loading: "lazy",
           className: "object-contain h-1/5 w-full",
           src: image,
           alt: getImageALt(image)
@@ -61930,7 +61923,6 @@ function LanguagePage() {
                     className: languageTitle,
                     children: "Angular"
                   }), /* @__PURE__ */ jsx$1("img", {
-                    loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/angular_icon-webp.webp",
                     width: 118,
@@ -61951,7 +61943,6 @@ function LanguagePage() {
                     className: languageTitle,
                     children: "Laravel"
                   }), /* @__PURE__ */ jsx$1("img", {
-                    loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/l-webp.webp",
                     width: 128,
@@ -61975,7 +61966,6 @@ function LanguagePage() {
                     className: languageTitle,
                     children: "Node.js"
                   }), /* @__PURE__ */ jsx$1("img", {
-                    loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/nodeJs_logo-webp.webp",
                     width: 192,
@@ -61996,7 +61986,6 @@ function LanguagePage() {
                     className: languageTitle,
                     children: "Vue JS"
                   }), /* @__PURE__ */ jsx$1("img", {
-                    loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/vuejs_logo-webp.webp",
                     width: 300,
@@ -62020,7 +62009,6 @@ function LanguagePage() {
                     className: languageTitle,
                     children: "Swift"
                   }), /* @__PURE__ */ jsx$1("img", {
-                    loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/swift_logo-webp.webp",
                     width: 116,
@@ -62044,7 +62032,6 @@ function LanguagePage() {
                     className: languageTitle,
                     children: "Java"
                   }), /* @__PURE__ */ jsx$1("img", {
-                    loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/Java_logo-webp.webp",
                     width: 78,
@@ -62068,7 +62055,6 @@ function LanguagePage() {
                     className: languageTitle,
                     children: "Flutter"
                   }), /* @__PURE__ */ jsx$1("img", {
-                    loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/flutter-webp.webp",
                     width: 88,
@@ -62160,7 +62146,6 @@ const Consultation$1 = () => {
           children: "Book free Consultation"
         })]
       }), /* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
         className: "absolute aiIcon",
         alt: "AI Pattern",
         src: "/Images/LandingPageImage/AI Pattern-webp.webp",
@@ -62187,7 +62172,6 @@ const Consultation$1 = () => {
           })
         })]
       }), /* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
         className: " absolute bottom-0 left-1/3 w-full",
         alt: "AI Pattern-resized",
         src: "/Images/LandingPageImage/AI Pattern-resized-webp.webp",
@@ -62224,7 +62208,6 @@ const SeoServiceCard = ({
           children: [/* @__PURE__ */ jsxs("div", {
             className: "container text-center items-center ",
             children: [/* @__PURE__ */ jsx$1("img", {
-              loading: "lazy",
               className: "inline-block py-10",
               src: img,
               alt: getImageALt(img),
@@ -62425,7 +62408,6 @@ const TimeAndMaterial = ({}) => {
         children: [/* @__PURE__ */ jsx$1("div", {
           className: "w-full lg:w-1/2 px-8",
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
             alt: "time-and-material",
             className: "w-3/5 lg:w-full xl:w-4/5 mx-auto",
             src: "/Images/LandingPageImage/time-and-material-webp.webp",
@@ -63473,7 +63455,6 @@ const FeatureCard$7 = ({
         children: /* @__PURE__ */ jsx$1("img", {
           width,
           height,
-          loading: "lazy",
           className: "w-20 -mt-10",
           src: img,
           alt
@@ -63617,7 +63598,6 @@ const StepFive = () => {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 850,
           height: 850,
-          loading: "lazy",
           className: "md:w-4/5  mx-auto",
           alt: "howitworks_publish",
           src: "/Images/AR-assets/howitworks_publish-webp.webp"
@@ -63650,7 +63630,6 @@ const StepFour = () => {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 1688,
           height: 1304,
-          loading: "lazy",
           className: " md:w-4/5 mx-auto",
           alt: "test on mobile devices",
           src: "/Images/AR-assets/Test on Mobile Devices-webp.webp"
@@ -63707,7 +63686,6 @@ const StepOne = () => {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 1688,
           height: 1304,
-          loading: "lazy",
           alt: "Use Templates to Accelerate",
           className: "md:w-4/5 lg:w-full 2xl:w-4/5 mx-auto relative z-20",
           src: "/Images/AR-assets/Use Templates to Accelerate-webp.webp"
@@ -63749,7 +63727,8 @@ const StepThree = () => {
         })]
       }), /* @__PURE__ */ jsx$1("div", {
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 3127,
+          height: 2e3,
           alt: "Upload Edit and Manage",
           className: "md:w-4/5 lg:w-full 2xl:w-4/5 mx-auto",
           src: "/Images/AR-assets/Upload Edit and Manage-webp.webp"
@@ -63779,7 +63758,6 @@ const StepTwo = () => {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 1688,
           height: 1304,
-          loading: "lazy",
           alt: "customize",
           className: "md:w-4/5 mx-auto",
           src: "/Images/AR-assets/customize-webp.webp"
@@ -63806,7 +63784,6 @@ const StepTwo = () => {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 1688,
           height: 1304,
-          loading: "lazy",
           alt: "with source code",
           className: "md:w-4/5 mx-auto",
           src: "/Images/AR-assets/with Source Code-webp.webp"
@@ -63840,7 +63817,6 @@ const LandingSectionCard = ({
     children: [/* @__PURE__ */ jsx$1("img", {
       width,
       height,
-      loading: "lazy",
       alt: "",
       className: "w-48",
       src: img
@@ -65204,7 +65180,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DmHupjny.js");
+        } = await import("./OrbitControls-CFGiMx0J.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -65228,7 +65204,7 @@ const Viewer = ({
           createScene: createScene2,
           onWindowResize: onWindowResize2,
           animate: animate3
-        } = await import("./methods-s9JbLDjr.js");
+        } = await import("./methods-D1iv-3AR.js");
         return {
           createCamera: createCamera2,
           createFloor: createFloor2,
@@ -65245,7 +65221,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           default: ColorPallete3
-        } = await import("./index-q5pd69MT.js");
+        } = await import("./index-CqaSvcdn.js");
         return {
           default: ColorPallete3
         };
@@ -65514,7 +65490,6 @@ const ScrollButton = ({
         height: 606,
         className: "w-full animate-bounce",
         alt: "scroll icon",
-        loading: "lazy",
         src: "/Images/icons/scroll-icon-webp.webp"
       })
     })
@@ -65568,7 +65543,6 @@ const ServicePageServiceCard = ({
         children: [/* @__PURE__ */ jsx$1("img", {
           width,
           height,
-          loading: "lazy",
           className: "inline-block w-2/5 ",
           src: img,
           alt: getImageALt(img)
@@ -65862,7 +65836,6 @@ const Card = ({
           children: [/* @__PURE__ */ jsx$1("img", {
             height,
             width,
-            loading: "lazy",
             className: "inline-block bg-contain img-width-ln",
             src: `${image}`,
             alt: `${alt}`
@@ -65874,7 +65847,6 @@ const Card = ({
           })]
         })
       }), /* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
         className: "bottom-0 absolute rounded-lg",
         src: cardPatrren,
         alt: `${alt}`
@@ -66060,7 +66032,8 @@ function SectionChooseUS() {
         }), /* @__PURE__ */ jsx$1("div", {
           className: "section3-image-div",
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 827,
+            height: 738,
             className: " section3-image-inner-div",
             src: "/Images/about-usAssets/why-choose-us-webp.webp",
             alt: "why-choose-us"
@@ -66077,7 +66050,6 @@ function WhoWeArePage() {
       children: [/* @__PURE__ */ jsx$1("div", {
         className: "whoWeAre-imageSection relative",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           src: "/Images/about-usAssets/who-we-50-expert-webp.webp",
           width: 600,
           height: 600,
@@ -66133,7 +66105,6 @@ function DigitalizationPage() {
       children: [/* @__PURE__ */ jsx$1("div", {
         className: "digitalization-imageSection",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           src: "/Images/about-usAssets/Digitalization-webp.webp",
           width: 768,
           height: 788,
@@ -66228,7 +66199,8 @@ const ContactDetailCard = () => {
       }), /* @__PURE__ */ jsxs("div", {
         className: "my-5 flex",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 179,
+          height: 178,
           alt: "phone",
           className: "w-4 h-4",
           src: "/Images/icons/phone-webp.webp"
@@ -66248,7 +66220,8 @@ const ContactDetailCard = () => {
       }), /* @__PURE__ */ jsxs("div", {
         className: "my-5 flex",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 224,
+          height: 199,
           alt: "mail",
           className: "w-4 h-4",
           src: "/Images/icons/mail-webp.webp"
@@ -66268,7 +66241,8 @@ const ContactDetailCard = () => {
       }), /* @__PURE__ */ jsxs("div", {
         className: "my-5 flex",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 130,
+          height: 190,
           alt: "location",
           className: "w-4 h-6",
           src: "/Images/icons/location-webp.webp"
@@ -66285,7 +66259,8 @@ const ContactDetailCard = () => {
       }), /* @__PURE__ */ jsxs("div", {
         className: "my-5 flex",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 130,
+          height: 190,
           alt: "location",
           className: "w-4 h-6",
           src: "/Images/icons/location-webp.webp"
@@ -66303,7 +66278,8 @@ const ContactDetailCard = () => {
           rel: "noopener noreferrer",
           href: ASTUTE_INSTAGRAM,
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 136,
+            height: 136,
             alt: "insta_graybg",
             className: "w-8 ",
             src: "Images/icons/insta_graybg-webp.webp"
@@ -66313,7 +66289,8 @@ const ContactDetailCard = () => {
           rel: "noopener noreferrer",
           href: ASTUTE_FACEBOOK,
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 135,
+            height: 136,
             alt: "fb_graybg",
             className: "w-8 ",
             src: "Images/icons/fb_graybg-webp.webp"
@@ -66323,7 +66300,8 @@ const ContactDetailCard = () => {
           rel: "noopener noreferrer",
           href: ASTUTE_LINKEDIN,
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 136,
+            height: 136,
             alt: "linkedin_graybg",
             className: "w-8 ",
             src: "Images/icons/linkedin_graybg-webp.webp"
@@ -66333,7 +66311,8 @@ const ContactDetailCard = () => {
           rel: "noopener noreferrer",
           href: ASTUTE_TWITTER,
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 136,
+            height: 136,
             alt: "twitter_graybg",
             className: "w-8 ",
             src: "Images/icons/twitter_graybg-webp.webp"
@@ -79698,7 +79677,8 @@ const FeaturesCard$3 = (props) => {
       children: [/* @__PURE__ */ jsxs("div", {
         className: "flex items-start mb-2 h-16",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: props.width,
+          height: props.height,
           className: "w-2/12 mr-3 ",
           alt: getImageALt(props.img),
           src: props.img
@@ -80336,7 +80316,6 @@ const QDFeaturesCard = (props) => {
         children: [/* @__PURE__ */ jsx$1("img", {
           width: props.width,
           height: props.height,
-          loading: "lazy",
           className: "w-2/12 lg:w-3/12 mr-5",
           alt: getImageALt(props.img),
           src: props.img
@@ -80441,7 +80420,6 @@ const FeaturesCard$2 = (props) => {
       children: [/* @__PURE__ */ jsx$1("img", {
         width: props.width,
         height: props.height,
-        loading: "lazy",
         className: "w-1/4 md:w-2/12 mt-2 mx-3",
         alt: getImageALt(props.img),
         src: props.img
@@ -80592,7 +80570,6 @@ const IterativeIncremental = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "xl:col-span-2 flex items-center justify-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           className: "w-3/5 md:w-2/5 xl:w-4/5 globeImage",
           alt: "globe",
           src: "/Images/how-we-deliver/globe-webp.webp",
@@ -80662,7 +80639,6 @@ const ClosedPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://www.bit.ly/AstuteADI",
           children: [/* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
             alt: "hiring AD",
             className: "",
             src: "/Images/careers/open positions/hiring AD-100-webp.webp"
@@ -80683,7 +80659,6 @@ const ClosedPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://www.bit.ly/AstuteBDI",
           children: [/* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
             alt: "hiring developer",
             className: "",
             src: "/Images/careers/open positions/hiring developer-100-webp.webp"
@@ -80714,7 +80689,6 @@ const OpenPositionPosts = () => {
           children: [/* @__PURE__ */ jsx$1("img", {
             width: 1200,
             height: 1200,
-            loading: "lazy",
             alt: "react js post",
             className: "",
             src: "/Images/careers/open positions/react-100-webp.webp"
@@ -80737,7 +80711,6 @@ const OpenPositionPosts = () => {
           children: [/* @__PURE__ */ jsx$1("img", {
             width: 2400,
             height: 2400,
-            loading: "lazy",
             alt: "wordpress post",
             className: "",
             src: "/Images/careers/open positions/wordpress-webp.webp"
@@ -80760,7 +80733,6 @@ const OpenPositionPosts = () => {
           children: [/* @__PURE__ */ jsx$1("img", {
             width: 1200,
             height: 1200,
-            loading: "lazy",
             alt: "CMM post",
             className: "",
             src: "/Images/careers/open positions/CMM-100-webp.webp"
@@ -80783,7 +80755,6 @@ const OpenPositionPosts = () => {
           children: [/* @__PURE__ */ jsx$1("img", {
             width: 1200,
             height: 1200,
-            loading: "lazy",
             alt: "django post",
             className: "",
             src: "/Images/careers/open positions/django-100-webp.webp"
@@ -80806,7 +80777,6 @@ const OpenPositionPosts = () => {
           children: [/* @__PURE__ */ jsx$1("img", {
             width: 1200,
             height: 1200,
-            loading: "lazy",
             alt: "react typescript post",
             className: "",
             src: "/Images/careers/open positions/ReactTypeScriptDeveloper-100-webp.webp"
@@ -80829,7 +80799,6 @@ const OpenPositionPosts = () => {
           children: [/* @__PURE__ */ jsx$1("img", {
             width: 1200,
             height: 1200,
-            loading: "lazy",
             alt: "SQA post",
             className: "",
             src: "/Images/careers/open positions/SQa-100-webp.webp"
@@ -80852,7 +80821,6 @@ const OpenPositionPosts = () => {
           children: [/* @__PURE__ */ jsx$1("img", {
             width: 1200,
             height: 1200,
-            loading: "lazy",
             alt: "3d designer post",
             className: "",
             src: "/Images/careers/open positions/3d designer-100-webp.webp"
@@ -80918,7 +80886,6 @@ const ValueCard = (props) => {
     children: [/* @__PURE__ */ jsx$1("img", {
       height: props.height,
       width: props.width,
-      loading: "lazy",
       src: props.img,
       alt: "icon-bg",
       className: "w-24 bg-no-repeat bg-contain bg-center absolute -top-10 left-1/2 transform -translate-x-1/2",
@@ -81022,7 +80989,6 @@ const UnderConstruction = () => {
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow flex justify-center items-center flex-col mt-10",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           alt: "underconstruction-vector",
           className: "w-3/6 md:w-2/6",
           src: "/Images/under-constructionAssets/underconstruction-vector-webp.webp",
@@ -81745,7 +81711,8 @@ const WhiteCard$6 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -82387,7 +82354,8 @@ const WhiteCard$5 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -83031,7 +82999,8 @@ const WhiteCard$4 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card-img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -83674,7 +83643,8 @@ const WhiteCard$3 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -84297,7 +84267,8 @@ const GreenCard$2 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card-img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -84316,7 +84287,8 @@ const WhiteCard$2 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card-img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -84352,25 +84324,35 @@ const WhyVueJs = () => {
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$2, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "Ability to scale a team in days",
           desc: `At times, great efort ends in failure, or conversely, ordinary 
                 efort leads to succes. We recognize and reward efort and resist 
                 the temptation to judge you based on outcomes.`
         }), /* @__PURE__ */ jsx$1(GreenCard$2, {
           img: "/Images/technologies/API-first-approach-webp.webp",
+          width: 75,
+          height: 56,
           title: "API-first approach",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$2, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "SEO-friendly code",
           desc: `Search engines will love your app. We'll make your Javascript 
                 indexable and visible for Google`
         }), /* @__PURE__ */ jsx$1(GreenCard$2, {
           img: "/Images/technologies/Newest-trends-in-practice-webp.webp",
+          width: 58,
+          height: 54,
           title: "Newest trends in practice",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$2, {
           img: "/Images/technologies/Battle-tested-process-webp.webp",
+          width: 55,
+          height: 64,
           title: "Batle-tested proces",
           desc: `BSo you can easily adapt to change and stay on the track at the 
                 same time`
@@ -84916,7 +84898,8 @@ const GreenCard$1 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -84935,7 +84918,8 @@ const WhiteCard$1 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -84967,29 +84951,41 @@ const WhyKotline = () => {
         },
         children: [/* @__PURE__ */ jsx$1(GreenCard$1, {
           img: "/Images/technologies/High-seniority-level-and-technical-skills-webp.webp",
+          width: 65,
+          height: 72,
           title: "High seniority level and technical skils development",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$1, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "Ability to scale a team in days",
           desc: `At times, great efort ends in failure, or conversely, ordinary 
                 efort leads to succes. We recognize and reward efort and resist 
                 the temptation to judge you based on outcomes.`
         }), /* @__PURE__ */ jsx$1(GreenCard$1, {
           img: "/Images/technologies/API-first-approach-webp.webp",
+          width: 75,
+          height: 56,
           title: "API-first approach",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$1, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "SEO-friendly code",
           desc: `Search engines will love your app. We'll make your Javascript 
                 indexable and visible for Google`
         }), /* @__PURE__ */ jsx$1(GreenCard$1, {
           img: "/Images/technologies/Newest-trends-in-practice-webp.webp",
+          width: 58,
+          height: 54,
           title: "Newest trends in practice",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$1, {
           img: "/Images/technologies/Battle-tested-process-webp.webp",
+          width: 55,
+          height: 64,
           title: "Batle-tested proces",
           desc: `BSo you can easily adapt to change and stay on the track at the 
                 same time`
@@ -85563,7 +85559,8 @@ const WhiteCard = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -85719,7 +85716,6 @@ const SecondSection$5 = () => {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 453,
           height: 370,
-          loading: "lazy",
           alt: "software development",
           className: "w-4/5",
           src: "/Images/serviceDetails/software development-webp.webp"
@@ -85756,7 +85752,6 @@ const Services$d = () => {
                 children: [/* @__PURE__ */ jsx$1("img", {
                   width: 37,
                   height: 37,
-                  loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -85767,7 +85762,6 @@ const Services$d = () => {
                 children: [/* @__PURE__ */ jsx$1("img", {
                   width: 37,
                   height: 37,
-                  loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -85778,7 +85772,6 @@ const Services$d = () => {
                 children: [/* @__PURE__ */ jsx$1("img", {
                   width: 37,
                   height: 37,
-                  loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -85789,7 +85782,6 @@ const Services$d = () => {
                 children: [/* @__PURE__ */ jsx$1("img", {
                   width: 37,
                   height: 37,
-                  loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -85809,7 +85801,6 @@ const Services$d = () => {
                 children: [/* @__PURE__ */ jsx$1("img", {
                   width: 37,
                   height: 37,
-                  loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -85820,7 +85811,6 @@ const Services$d = () => {
                 children: [/* @__PURE__ */ jsx$1("img", {
                   width: 37,
                   height: 37,
-                  loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -85831,7 +85821,6 @@ const Services$d = () => {
                 children: [/* @__PURE__ */ jsx$1("img", {
                   width: 37,
                   height: 37,
-                  loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -85842,7 +85831,6 @@ const Services$d = () => {
                 children: [/* @__PURE__ */ jsx$1("img", {
                   width: 37,
                   height: 37,
-                  loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -85943,7 +85931,8 @@ const SecretSauceCard$1 = (props) => {
         className: "text-blue-primary text-2xl mb-5",
         children: props.title
       }), /* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: getImageALt(props.image),
         src: props.image
       })]
@@ -86070,7 +86059,6 @@ const CardLanguage$1 = (props) => {
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex flex-row justify-center items-center container text-center  ",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           className: "inline-block bg-contain py-10 pl-5 pr-5 ",
           src: props.imgCard,
           alt: getImageALt(props.imgCard),
@@ -86130,7 +86118,8 @@ const ResponsiveAdvantages$1 = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "flex justify-between items-center group-hover:text-white group-focus:text-white",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 512,
+                height: 512,
                 alt: "Django",
                 className: "w-20",
                 src: "/Images/languageAssets/Django-webp.webp"
@@ -86171,7 +86160,8 @@ const ResponsiveAdvantages$1 = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "flex justify-between items-center group-hover:text-white group-focus:text-white",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 360,
+                height: 360,
                 alt: "kotlin",
                 className: "w-20",
                 src: "/Images/languageAssets/kotlin-webp.webp"
@@ -86212,7 +86202,8 @@ const ResponsiveAdvantages$1 = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "flex justify-between items-center group-hover:text-white group-focus:text-white",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 360,
+                height: 360,
                 alt: "angular",
                 className: "w-20",
                 src: "/Images/languageAssets/angular-webp.webp"
@@ -86253,7 +86244,8 @@ const ResponsiveAdvantages$1 = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "flex justify-between items-center group-hover:text-white group-focus:text-white",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 256,
+                height: 157,
                 alt: "node",
                 className: "w-20",
                 src: "/Images/languageAssets/node-webp.webp"
@@ -86294,7 +86286,8 @@ const ResponsiveAdvantages$1 = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "flex justify-between items-center group-hover:text-white group-focus:text-white",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 105,
+                height: 105,
                 alt: "laravel",
                 className: "w-20",
                 src: "/Images/languageAssets/laravel-webp.webp"
@@ -86336,7 +86329,8 @@ const ResponsiveAdvantages$1 = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "flex justify-between items-center group-hover:text-white group-focus:text-white",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 512,
+                height: 512,
                 alt: "react",
                 className: "w-20",
                 src: "/Images/languageAssets/react-webp.webp"
@@ -86630,7 +86624,6 @@ const SecondSection$4 = () => {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 453,
           height: 370,
-          loading: "lazy",
           className: "w-4/5",
           alt: "qa_second",
           src: "/Images/serviceDetails/qa_second-webp.webp"
@@ -86669,7 +86662,7 @@ const QATypeCard = ({
     //     <div className="bg-no-repeat bg-left-top bg-image-top" >
     //         <div className="bg-no-repeat bg-right-bottom bg-image-bottom h-full">
     //             <div className="container text-center items-center ">
-    //                 <img loading="lazy" className="inline-block " src="/Images/LandingPageImage/Services2/devops-webp.webp" alt="React" width="150px" height="150px"></img>
+    //                 <img  className="inline-block " src="/Images/LandingPageImage/Services2/devops-webp.webp" alt="React" width="150px" height="150px"></img>
     //                 <h3 className=" font-extrabold text-lg text-font-primary">{title}</h3>
     //                 <p className="mt-5 text-sm text-gray-text" style={{paddingBottom:"80px"}}>
     //                     {desc}
@@ -86681,7 +86674,6 @@ const QATypeCard = ({
     /* @__PURE__ */ jsxs("div", {
       className: "container text-center items-center qa-type-card card-multiple-bg",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
         className: "inline-block mt-5 ",
         src: img,
         alt: getImageALt(img),
@@ -86771,7 +86763,8 @@ const QATestingServicesCard = ({
     children: /* @__PURE__ */ jsxs("li", {
       className: "contentListItem",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: 37,
+        height: 37,
         alt: "bullet-point",
         src: "/Images/serviceDetails/bullet-point-webp.webp"
       }), /* @__PURE__ */ jsxs("div", {
@@ -87162,7 +87155,8 @@ const ListItem = ({
       className: "contentListItem",
       children: [/* @__PURE__ */ jsx$1("img", {
         alt: "List bullet icon",
-        loading: "lazy",
+        width: 37,
+        height: 37,
         src: "/Images/serviceDetails/bullet-point-webp.webp"
       }), /* @__PURE__ */ jsx$1("p", {
         className: "text-left",
@@ -87342,7 +87336,6 @@ const CardLanguage = (props) => {
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex flex-row  text-center justify-center  items-center ",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           className: "inline-block bg-contain py-10 pl-5 pr-5 ",
           src: props.imgCard,
           alt: getImageALt(props.imgCard),
@@ -87410,7 +87403,8 @@ const ResponsiveAdvantages = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "flex justify-between items-center ",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 512,
+                height: 512,
                 className: "w-20",
                 alt: "Django",
                 src: "/Images/languageAssets/Django-webp.webp"
@@ -87446,7 +87440,8 @@ const ResponsiveAdvantages = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "flex justify-between items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 360,
+                height: 360,
                 className: "w-20",
                 alt: "kotlin",
                 src: "/Images/languageAssets/kotlin-webp.webp"
@@ -87482,7 +87477,8 @@ const ResponsiveAdvantages = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "flex justify-between items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 180,
+                height: 192,
                 className: "w-20",
                 alt: "angular",
                 src: "/Images/languageAssets/angular-webp.webp"
@@ -87518,7 +87514,8 @@ const ResponsiveAdvantages = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "flex justify-between items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 256,
+                height: 157,
                 className: "w-20",
                 alt: "node",
                 src: "/Images/languageAssets/node-webp.webp"
@@ -87554,7 +87551,8 @@ const ResponsiveAdvantages = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "flex justify-between items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 105,
+                height: 105,
                 className: "w-20",
                 alt: "laravel",
                 src: "/Images/languageAssets/laravel-webp.webp"
@@ -87590,7 +87588,8 @@ const ResponsiveAdvantages = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "flex justify-between items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 512,
+                height: 512,
                 className: "w-20",
                 alt: "react",
                 src: "/Images/languageAssets/react-webp.webp"
@@ -88223,7 +88222,7 @@ const EngagementModelCard = ({
     //     <div className="bg-no-repeat bg-left-top bg-image-top" >
     //         <div className="bg-no-repeat bg-right-bottom bg-image-bottom h-full">
     //             <div className="container text-center items-center ">
-    //                 <img loading="lazy" className="inline-block " src="/Images/LandingPageImage/Services2/devops-webp.webp" alt="React" width="150px" height="150px"></img>
+    //                 <img  className="inline-block " src="/Images/LandingPageImage/Services2/devops-webp.webp" alt="React" width="150px" height="150px"></img>
     //                 <h3 className=" font-extrabold text-lg text-font-primary">{title}</h3>
     //                 <p className="mt-5 text-sm text-gray-text" style={{paddingBottom:"80px"}}>
     //                     {desc}
@@ -88235,7 +88234,6 @@ const EngagementModelCard = ({
     /* @__PURE__ */ jsxs("div", {
       className: "container text-center items-center qa-type-card card-multiple-bg",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
         className: "inline-block my-5 ",
         src: img,
         alt: getImageALt(img),
@@ -88597,7 +88595,6 @@ const MaintenanceServicesCard = ({
   return /* @__PURE__ */ jsxs("div", {
     className: "container text-center items-center qa-type-card card-multiple-bg",
     children: [/* @__PURE__ */ jsx$1("img", {
-      loading: "lazy",
       className: "inline-block ",
       src: img,
       alt: getImageALt(img),
@@ -88703,7 +88700,6 @@ const SupportServicesCard = ({
   return /* @__PURE__ */ jsxs("div", {
     className: `container ${hidden ? "hidden lg:block" : null}`,
     children: [/* @__PURE__ */ jsx$1("img", {
-      loading: "lazy",
       className: "inline-block ",
       src: "/Images/serviceDetails/levels-webp.webp",
       alt: "levels",
@@ -88863,7 +88859,8 @@ const LandingSection$5 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " bg-cover px-5 py-20 flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 881,
+          height: 674,
           alt: "big-data-service",
           className: "w-full md:w-4/5 lg:w-full",
           src: "/Images/serviceDetails/big-data-service-webp.webp"
@@ -89007,7 +89004,6 @@ const Services$3 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89016,7 +89012,6 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89025,7 +89020,6 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89034,7 +89028,6 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89043,7 +89036,6 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89052,7 +89044,6 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89225,7 +89216,8 @@ const LandingSection$4 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " bg-cover px-5 py-20 flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 881,
+          height: 674,
           className: "w-full md:w-4/5 lg:w-full",
           alt: "big-data-service",
           src: "/Images/serviceDetails/big-data-service-webp.webp"
@@ -89351,7 +89343,8 @@ const FeaturesCard = (props) => {
                 ${props.center === "end" ? "flex flex-col items-end justify-end" : ""}
                 `,
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 22,
+          height: 243,
           className: "flex text-center w-3 mt-5",
           alt: "Blockchain-conpect-cart",
           src: "/Images/serviceDetails/Blockchain-conpect-cart-webp.webp"
@@ -89473,7 +89466,6 @@ const ReasonCard = (props) => {
         children: [/* @__PURE__ */ jsx$1("img", {
           height: props.height,
           width: props.width,
-          loading: "lazy",
           alt: props.img.split("/").pop(),
           className: "w-2/12",
           src: props.img
@@ -89578,7 +89570,8 @@ const LandingSection$3 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " bg-cover px-5 py-20 flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 986,
+          height: 691,
           className: "w-full md:w-4/5 lg:w-full",
           alt: "Devops",
           src: "/Images/serviceDetails/Devops-webp.webp"
@@ -90523,6 +90516,8 @@ const Hiring = () => {
           className: " px-10 hidden mdmd:block",
           src: "/Images/serviceDetails/TimeAndMaterial/3-steps-webp.webp"
         }), /* @__PURE__ */ jsx$1("img", {
+          width: 99,
+          height: 1419,
           alt: "3-steps",
           style: {
             height: "80%"
@@ -91282,7 +91277,8 @@ const Table = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-2 items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 114,
+                height: 114,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/iconBlue-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -91293,7 +91289,8 @@ const Table = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-2 items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 114,
+                height: 114,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/iconBlue-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -91304,7 +91301,8 @@ const Table = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-2 items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 114,
+                height: 114,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/iconBlue-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -91324,7 +91322,8 @@ const Table = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 114,
+                height: 114,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/iconBlue-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -91335,7 +91334,8 @@ const Table = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 114,
+                height: 114,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/iconBlue-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -91756,7 +91756,7 @@ const PlantModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DmHupjny.js");
+        } = await import("./OrbitControls-CFGiMx0J.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91780,7 +91780,7 @@ const PlantModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-52q47yM1.js");
+        } = await import("./method-DC-D6IsU.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -91832,7 +91832,7 @@ const PlantModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DmHupjny.js");
+        } = await import("./OrbitControls-CFGiMx0J.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91856,7 +91856,7 @@ const PlantModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-SIAJkPbW.js");
+        } = await import("./method-CClTKbPa.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -91913,7 +91913,7 @@ const PlanModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DmHupjny.js");
+        } = await import("./OrbitControls-CFGiMx0J.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91937,7 +91937,7 @@ const PlanModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-B9wrN5LQ.js");
+        } = await import("./method-CmWgbLI2.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92235,7 +92235,8 @@ const ArViewer = ({
         // :
         /* @__PURE__ */ jsx$1("img", {
           src: "/Images/serviceAssets/3dModelPage/ar-webp.webp",
-          loading: "lazy",
+          width: 307,
+          height: 226,
           alt: "ar-icon",
           className: "w-10 mx-auto h-8"
         })
@@ -92338,7 +92339,7 @@ const BagModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DmHupjny.js");
+        } = await import("./OrbitControls-CFGiMx0J.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92362,7 +92363,7 @@ const BagModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-Ch-ckUsc.js");
+        } = await import("./method-BSV_AkQf.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92412,7 +92413,7 @@ const BagModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DmHupjny.js");
+        } = await import("./OrbitControls-CFGiMx0J.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92436,7 +92437,7 @@ const BagModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BTanD-6o.js");
+        } = await import("./method-CCLxznmJ.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92492,7 +92493,7 @@ const BagModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DmHupjny.js");
+        } = await import("./OrbitControls-CFGiMx0J.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92516,7 +92517,7 @@ const BagModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-CiAt48Ov.js");
+        } = await import("./method-BzNdo5IZ.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92713,13 +92714,13 @@ const Model1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DmHupjny.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-CFGiMx0J.js"), true ? [] : void 0);
     const {
       createCamera,
       createRenderer,
       onWindowResize,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-C2wpKTwR.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-Cp_irF6F.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -92742,7 +92743,7 @@ const Model2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DmHupjny.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-CFGiMx0J.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92751,7 +92752,7 @@ const Model2 = ({
       createScene,
       onWindowResize,
       animate: animate2
-    } = __vitePreload(() => import("./method-BypZc41i.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-D3WV7MgK.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
     const renderer = createRenderer();
     const scene = createScene();
     const camera = createCamera();
@@ -92789,7 +92790,7 @@ const Model3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DmHupjny.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-CFGiMx0J.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92799,7 +92800,7 @@ const Model3 = ({
       animate: animate2,
       createFloor,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-BD9UeoOa.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-DkT9ycOi.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -92871,7 +92872,7 @@ const BottleModel1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DmHupjny.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-CFGiMx0J.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92881,7 +92882,7 @@ const BottleModel1 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-DYVGoggp.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-D4hZwt04.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -92916,7 +92917,7 @@ const BottleModel2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DmHupjny.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-CFGiMx0J.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92926,7 +92927,7 @@ const BottleModel2 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-xNhRsBqp.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-C-Y2D5KY.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -92963,7 +92964,7 @@ const BottleModel3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DmHupjny.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-CFGiMx0J.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92973,7 +92974,7 @@ const BottleModel3 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-DrkjJduw.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-CXw3ZNJW.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93167,7 +93168,6 @@ const SideBar = ({
             children: /* @__PURE__ */ jsx$1("div", {
               className: "rounded-md",
               children: /* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
                 alt: "img",
                 src: innerItems.src,
                 className: "rounded-md  mx-auto"
@@ -93265,7 +93265,6 @@ const LandingSection = () => {
           width: 870,
           height: 643,
           className: "w-4/5 md:w-3/5 lg:w-full mx-auto",
-          loading: "lazy",
           alt: "game logo",
           src: "/Images/falling-gems/picture-webp.webp"
         })
@@ -93277,7 +93276,7 @@ const ModalVideo = (props) => {
   const [isOpen, setOpen] = reactExports.useState(false);
   const [VideoModal, setVideoModal] = reactExports.useState(null);
   reactExports.useEffect(() => {
-    __vitePreload(() => import("./index-DB5ewjxO.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
+    __vitePreload(() => import("./index-DUnatCpZ.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
       setVideoModal(() => module2.default);
     });
   }, []);
@@ -93296,7 +93295,8 @@ const ModalVideo = (props) => {
       className: "",
       onClick: () => setOpen(true),
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: 270,
+        height: 270,
         alt: "play button",
         className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer w-28  shadow-2xl rounded-full border-4 border-gray-50 ",
         src: "/Images/falling-gems/play-webp.webp"
@@ -93480,7 +93480,6 @@ const BucketCart = ({
       children: /* @__PURE__ */ jsxs("div", {
         className: "text-center space-y-3 flex flex-col items-center justify-center bg-golden-text rounded-3xl px-10 pb-20",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           alt: img.split("/").pop(),
           className: "w-40 mb-5 -mt-20",
           src: img
@@ -93490,7 +93489,8 @@ const BucketCart = ({
             className: "text-blue-dark text-xl font-bold ",
             children: heading
           }), /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 144,
+            height: 144,
             alt: "coins",
             className: "w-10 mx-1",
             src: "/Images/falling-gems/coins-webp.webp"
@@ -93622,7 +93622,8 @@ const Profile = () => {
           children: [/* @__PURE__ */ jsxs("div", {
             className: "flex justify-center pb-3 items-center",
             children: [/* @__PURE__ */ jsx$1("img", {
-              loading: "lazy",
+              width: 262,
+              height: 260,
               alt: "profile avatar",
               className: "-mt-5 w-32",
               src: "/Images/falling-gems/profile img-webp.webp"
@@ -94479,7 +94480,6 @@ function StatsSection$1() {
                   className: "text-4xl text-left text-blue-primary font-semibold",
                   children: data2.stats
                 }), /* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   src: "/Images/landing-page-assets/Layer_3.svg",
                   alt: "layer-img"
                 })]
@@ -94489,7 +94489,6 @@ function StatsSection$1() {
                   className: "text-blue-primary text-base text-left mr-2 max-w-md",
                   children: data2.desc
                 }), /* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   src: "/Images/landing-page-assets/Group17.svg",
                   alt: "group-img"
                 })]
@@ -94497,7 +94496,8 @@ function StatsSection$1() {
             }), /* @__PURE__ */ jsx$1("div", {
               className: "relative flex items-center justify-center h-24 mt-6",
               children: /* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 1242,
+                height: 675,
                 src: "/Images/landing-page-assets/cart pattern 2-webp.webp",
                 alt: "card pattern",
                 className: "absolute bottom-0 left-0 z-10"
@@ -94508,7 +94508,6 @@ function StatsSection$1() {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "hidden lg:flex lg:absolute lg:-bottom-14 lg:-right-12 h-full z-0",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           src: "/Images/landing-page-assets/bg_dots.svg",
           alt: "bg_dots"
         })
@@ -94525,7 +94524,6 @@ function HeroSection$1() {
       children: /* @__PURE__ */ jsx$1("img", {
         width: 1201,
         height: 1438,
-        loading: "lazy",
         alt: "pattern",
         className: "absolute top-0 right-0 transform lg:translate-x-1/4 lg:-translate-y-24 w-full z-0 select-none hidden lg:inline",
         src: "/Images/landing-page-assets/Group 53-webp.webp"
@@ -94599,12 +94597,14 @@ function SearchItem$1() {
           "data-aos-duration": "1500",
           className: "relative rounded-2xl outline-none mb-4 group overflow-hidden",
           children: [/* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 1986,
+            height: 298,
             alt: "dots_dark",
             className: "absolute right-2 w-full z-10 opacity-100 group-hover:opacity-0",
             src: "/Images/landing-page-assets/dots_dark-webp.webp"
           }), /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 1986,
+            height: 298,
             alt: "dots_light",
             className: "absolute right-2 w-full z-10 opacity-0 group-hover:opacity-100",
             src: "/Images/landing-page-assets/dots_light-webp.webp"
@@ -94621,12 +94621,10 @@ function SearchItem$1() {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "relative flex items-center justify-end w-3/12",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   alt: "green_right_arrow",
                   className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 z-20 opacity-100 group-hover:opacity-0",
                   src: "/Images/landing-page-assets/green_right_arrow.svg"
                 }), /* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   alt: "white_right_arrow",
                   className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 z-20 opacity-0 group-hover:opacity-100",
                   src: "/Images/landing-page-assets/white_right_arrow.svg"
@@ -94759,7 +94757,6 @@ function TechCards$1() {
           return /* @__PURE__ */ jsx$1("div", {
             className: "flex items-center justify-center overflow-hidden cursor-pointer p-4 rounded-2xl bg-transparent hover:bg-green-primary h-32 w-1/2 md:w-1/5",
             children: /* @__PURE__ */ jsx$1("img", {
-              loading: "lazy",
               src: data2.logo,
               alt: "logo",
               className: "object-contain h-2/4 w-full hover:bg-green-primary"
@@ -94800,7 +94797,6 @@ function TechSection$1() {
         children: [/* @__PURE__ */ jsx$1("img", {
           width: 4768,
           height: 1792,
-          loading: "lazy",
           alt: "box_layers",
           className: "absolute top-0 w-full z-0",
           src: "/Images/landing-page-assets/box_layers-webp.webp"
@@ -94917,7 +94913,6 @@ function StatsSection() {
                   className: "text-4xl text-left text-blue-primary font-semibold",
                   children: data2.stats
                 }), /* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   src: "/Images/landing-page-assets/Layer_3.svg",
                   alt: "layer-img"
                 })]
@@ -94927,7 +94922,6 @@ function StatsSection() {
                   className: "text-blue-primary text-base text-left mr-2 max-w-md",
                   children: data2.desc
                 }), /* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   src: "/Images/landing-page-assets/Group17.svg",
                   alt: "group-img"
                 })]
@@ -94935,7 +94929,6 @@ function StatsSection() {
             }), /* @__PURE__ */ jsx$1("div", {
               className: "relative flex items-center justify-center h-24 mt-6",
               children: /* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
                 src: "/Images/landing-page-assets/cart pattern 2-webp.webp",
                 alt: "card pattern",
                 className: "absolute bottom-0 left-0 z-10"
@@ -94946,7 +94939,6 @@ function StatsSection() {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "hidden lg:flex lg:absolute lg:-bottom-14 lg:-right-12 h-full z-0",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           src: "/Images/landing-page-assets/bg_dots.svg",
           alt: "bg_dots"
         })
@@ -95036,12 +95028,14 @@ function SearchItem() {
           "data-aos-duration": "1500",
           className: "relative rounded-2xl outline-none mb-4 group overflow-hidden",
           children: [/* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 1986,
+            height: 298,
             alt: "dots_dark",
             className: "absolute right-2 w-full z-10 opacity-100 group-hover:opacity-0",
             src: "/Images/landing-page-assets/dots_dark-webp.webp"
           }), /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 1986,
+            height: 298,
             alt: "dots_light",
             className: "absolute right-2 w-full z-10 opacity-0 group-hover:opacity-100",
             src: "/Images/landing-page-assets/dots_light-webp.webp"
@@ -95058,12 +95052,10 @@ function SearchItem() {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "relative flex items-center justify-end w-3/12",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   alt: "green_right_arrow",
                   className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 z-20 opacity-100 group-hover:opacity-0",
                   src: "/Images/landing-page-assets/green_right_arrow.svg"
                 }), /* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
                   alt: "white_right_arrow",
                   className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 z-20 opacity-0 group-hover:opacity-100",
                   src: "/Images/landing-page-assets/white_right_arrow.svg"
@@ -95195,7 +95187,6 @@ function TechCards() {
           return /* @__PURE__ */ jsx$1("div", {
             className: "flex items-center justify-center overflow-hidden cursor-pointer p-4 rounded-2xl bg-transparent hover:bg-green-primary h-32 w-1/2 md:w-1/5",
             children: /* @__PURE__ */ jsx$1("img", {
-              loading: "lazy",
               src: data2.logo,
               alt: "logo",
               className: "object-contain h-2/4 w-full hover:bg-green-primary"
@@ -95314,7 +95305,6 @@ const PageNotFound = () => {
     }), /* @__PURE__ */ jsx$1("div", {
       className: "flex justify-center",
       children: /* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
         alt: "404",
         className: "flex justify-center w-2/5",
         src: "/Images/page-not-found/gif.gif"
@@ -95409,7 +95399,6 @@ const DirectContactUs = ({
         children: /* @__PURE__ */ jsxs("div", {
           className: "w-full sm:w-1/2  lg:mt-14 xl:mt-8 z-10 ",
           children: [/* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
             src: "/Images/DirectContact/circle-logo-modified-webp.webp",
             width: 738,
             height: 738,
@@ -95723,14 +95712,12 @@ const ItalianDirectContactUs = ({
       children: [/* @__PURE__ */ jsxs("div", {
         className: "-z-10",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           src: "/Images/DirectContact/header3-webp.webp",
           width: 2794,
           height: 660,
           alt: "header3",
           className: " relative"
         }), /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           src: "/Images/DirectContact/circle-logo-modified-webp.webp",
           width: 738,
           height: 738,
@@ -95742,7 +95729,6 @@ const ItalianDirectContactUs = ({
         children: /* @__PURE__ */ jsxs("div", {
           className: "w-full sm:w-1/2  lg:mt-14 xl:mt-8 z-10 ",
           children: [/* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
             src: "/Images/DirectContact/circle-logo-modified-webp.webp",
             width: 738,
             height: 738,
