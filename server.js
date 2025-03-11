@@ -38,6 +38,7 @@ async function createServer(root = process.cwd(), isProd = process.env.NODE_ENV 
     app.use(vite.middlewares);
   } else {
     app.use(compression());
+<<<<<<< HEAD
 
     app.use(
       serveStatic(resolve("./public/dist/client"), {
@@ -53,6 +54,24 @@ async function createServer(root = process.cwd(), isProd = process.env.NODE_ENV 
     );
     
 
+=======
+
+    // ✅ Cache Static Assets (JS, CSS, images)
+    app.use(
+      serveStatic(resolve("./public/dist/client"), {
+        index: false,
+        setHeaders: (res, filePath) => {
+          if (filePath.endsWith(".html")) {
+            res.setHeader("Cache-Control", "no-cache, must-revalidate");
+          } else {
+            res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+          }
+        },
+      })
+    );
+  }
+
+>>>>>>> aa865a637bb06419a2f2f10783b84f9b04b711d0
   app.use("*", async (req, res) => {
     try {
       const url = req.originalUrl;
