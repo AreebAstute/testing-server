@@ -1219,7 +1219,8 @@ const NavContainer = (props) => {
       to: "/",
       className: "mobile-logo flex-shrink-0 lg:w-3/12 flex justify-left items-center ml-0 sm:ml-6 mr-6  h-12",
       children: /* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        width: 738,
+        height: 156,
         src: "/Images/logo-webp.webp",
         alt: "Astute logo",
         className: "logo"
@@ -26828,7 +26829,8 @@ const Header = () => {
       children: /* @__PURE__ */ jsx(Link, {
         to: "/",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 738,
+          height: 156,
           alt: "logo",
           src: "/Images/logo-webp.webp",
           className: " w-56 mx-auto"
