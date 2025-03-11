@@ -1,6 +1,6 @@
-import { G as GLTFLoader } from "./GLTFLoader-ChaeOe3T.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-BXCT1ExZ.js";
-import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, C as Color, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-geD9lluw.js";
+import { G as GLTFLoader } from "./GLTFLoader-PCrT0e2P.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-DJDXf6YW.js";
+import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, C as Color, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-7cUOXsZh.js";
 const createRenderer = () => {
   var renderer = new WebGLRenderer({
     canvas: document.getElementById("bagModel2"),

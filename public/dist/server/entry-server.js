@@ -12748,7 +12748,9 @@ const FeatureCard$7 = ({
   img,
   title,
   desc,
-  alt
+  alt,
+  height,
+  width
 }) => {
   return /* @__PURE__ */ jsx("div", {
     className: "bg-white h-96 md:h-70 lg:h-96",
@@ -12757,6 +12759,8 @@ const FeatureCard$7 = ({
       children: [/* @__PURE__ */ jsx("div", {
         className: "flex justify-center mb-5",
         children: /* @__PURE__ */ jsx("img", {
+          width,
+          height,
           loading: "lazy",
           className: "w-20 -mt-10",
           src: img,
@@ -12796,15 +12800,21 @@ const Features$1 = () => {
         children: [/* @__PURE__ */ jsx(FeatureCard$7, {
           alt: "multi-platform",
           img: "/Images/AR-assets/multi-platform-webp.webp",
+          width: 442,
+          height: 407,
           title: "Multi Platform Support",
           desc: "Apps created with our system run on iOS or \r Android devices using the same codebase and styling. \r This drastically lowers app development effort, cost, and time."
         }), /* @__PURE__ */ jsx(FeatureCard$7, {
           alt: "css",
           img: "/Images/AR-assets/css-webp.webp",
+          width: 442,
+          height: 407,
           title: "Style with CSS",
           desc: "Since our templates are HMTL-based, you can utilize all \r the features and the flexibility of CSS to style your app. \r This way we make sure that your AR Application is WebAR ready. "
         }), /* @__PURE__ */ jsx(FeatureCard$7, {
           alt: "web-browser",
+          width: 442,
+          height: 407,
           img: "/Images/AR-assets/web-browser-webp.webp",
           title: "Web-Browser Support",
           desc: "Since our templates are HMTL-based, you can utilize all \r the features and the flexibility of CSS to style your app. \r This way we make sure that your AR Application is WebAR ready."
@@ -12893,6 +12903,8 @@ const StepFive = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "",
         children: /* @__PURE__ */ jsx("img", {
+          width: 850,
+          height: 850,
           loading: "lazy",
           className: "md:w-4/5  mx-auto",
           alt: "howitworks_publish",
@@ -12924,6 +12936,8 @@ const StepFour = () => {
       children: [/* @__PURE__ */ jsx("div", {
         className: "order-2 lg:order-1 mt-10 lg:mt-0",
         children: /* @__PURE__ */ jsx("img", {
+          width: 1688,
+          height: 1304,
           loading: "lazy",
           className: " md:w-4/5 mx-auto",
           alt: "test on mobile devices",
@@ -12979,6 +12993,8 @@ const StepOne = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " relative",
         children: /* @__PURE__ */ jsx("img", {
+          width: 1688,
+          height: 1304,
           loading: "lazy",
           alt: "Use Templates to Accelerate",
           className: "md:w-4/5 lg:w-full 2xl:w-4/5 mx-auto relative z-20",
@@ -13049,6 +13065,8 @@ const StepTwo = () => {
       children: [/* @__PURE__ */ jsx("div", {
         className: "order-2 lg:order-1 mt-5 lg:mt-0",
         children: /* @__PURE__ */ jsx("img", {
+          width: 1688,
+          height: 1304,
           loading: "lazy",
           alt: "customize",
           className: "md:w-4/5 mx-auto",
@@ -13074,6 +13092,8 @@ const StepTwo = () => {
       children: [/* @__PURE__ */ jsx("div", {
         className: "order-2 lg:order-1 mt-5 lg:mt-0",
         children: /* @__PURE__ */ jsx("img", {
+          width: 1688,
+          height: 1304,
           loading: "lazy",
           alt: "with source code",
           className: "md:w-4/5 mx-auto",
@@ -13099,11 +13119,15 @@ const StepTwo = () => {
 const LandingSectionCard = ({
   img,
   desc,
-  text: text2
+  text: text2,
+  width,
+  height
 }) => {
   return /* @__PURE__ */ jsxs("div", {
     className: "text-center flex flex-col items-center space-y-5",
     children: [/* @__PURE__ */ jsx("img", {
+      width,
+      height,
       loading: "lazy",
       alt: "",
       className: "w-48",
@@ -13501,14 +13525,20 @@ const LandingSection$m = () => {
         children: [/* @__PURE__ */ jsx(LandingSectionCard, {
           desc: "Join millions of 3D creators and showcase your work",
           img: "/Images/AR-assets/showcase your work-webp.webp",
+          width: 870,
+          height: 638,
           text: "Join"
         }), /* @__PURE__ */ jsx(LandingSectionCard, {
           desc: "Buy & sell 3D models on the Sketchfab Store",
           img: "/Images/AR-assets/Store-webp.webp",
+          width: 870,
+          height: 638,
           text: "Buy 3D models"
         }), /* @__PURE__ */ jsx(LandingSectionCard, {
           desc: "Share & embed 3D models anywhere online",
           img: "/Images/AR-assets/Share & embed 3D models-webp.webp",
+          width: 870,
+          height: 638,
           text: "DISCOVER OUR BUSINESS SOLUTIONS"
         })]
       })
@@ -13516,71 +13546,12 @@ const LandingSection$m = () => {
   });
 };
 const ARLandingPage = () => {
-  const intl = useIntl();
-  const defaultTitle = "Augmented Reality Solutions - Astute Softwares";
-  const defaultDescription = "Experience the future with our cutting-edge AR solutions. Astute Softwares offers innovative technology and expert consulting to help you stay ahead of the game.";
-  const url = "https://astutesoftwares.com/ar-solutions";
-  const imageUrl = "/Images/icons/in-1-webp.webp";
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: (intl == null ? void 0 : intl.formatMessage({
-          id: "augmented.reality",
-          defaultMessage: defaultTitle
-        })) || defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: (intl == null ? void 0 : intl.formatMessage({
-          id: "experience.the.future.with",
-          defaultMessage: defaultDescription
-        })) || defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Augmented reality services, AR app development, Custom AR solutions, AR technology company, Innovative AR apps"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: url
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: url
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:image",
-        content: imageUrl
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:image:alt",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:card",
-        content: "summary_large_image"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:title",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:description",
-        content: defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:image",
-        content: imageUrl
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "robots",
-        content: "index, follow"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "py-28 relative z-20",
       children: [/* @__PURE__ */ jsx(LandingSection$m, {}), /* @__PURE__ */ jsx(Intro, {}), /* @__PURE__ */ jsx(StepOne, {}), /* @__PURE__ */ jsx(StepTwo, {}), /* @__PURE__ */ jsx(StepThree, {}), /* @__PURE__ */ jsx(StepFour, {}), /* @__PURE__ */ jsx(StepFive, {}), /* @__PURE__ */ jsx(Hiring$2, {}), /* @__PURE__ */ jsx(Features$1, {}), /* @__PURE__ */ jsx(Hiring$3, {}), /* @__PURE__ */ jsx(Features$2, {})]
-    })]
+    })
   });
 };
 const ScrollButton = ({
@@ -13595,6 +13566,8 @@ const ScrollButton = ({
     children: /* @__PURE__ */ jsx("div", {
       className: "w-4/5 md:w-full",
       children: /* @__PURE__ */ jsx("img", {
+        width: 242,
+        height: 606,
         className: "w-full animate-bounce",
         alt: "scroll icon",
         loading: "lazy",
@@ -14189,6 +14162,8 @@ function WhoWeArePage() {
         children: /* @__PURE__ */ jsx("img", {
           loading: "lazy",
           src: "/Images/about-usAssets/who-we-50-expert-webp.webp",
+          width: 600,
+          height: 600,
           alt: "who we are"
         })
       }), /* @__PURE__ */ jsx("div", {
@@ -14243,6 +14218,8 @@ function DigitalizationPage() {
         children: /* @__PURE__ */ jsx("img", {
           loading: "lazy",
           src: "/Images/about-usAssets/Digitalization-webp.webp",
+          width: 768,
+          height: 788,
           alt: "Digitalization"
         })
       }), /* @__PURE__ */ jsx("div", {
@@ -14273,71 +14250,12 @@ function DigitalizationPage() {
 function AboutUSIndex() {
   const [refOffset, setRefOffset] = useState();
   const ref = useRef(null);
-  const intl = useIntl();
+  useIntl();
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  const defaultTitle = "Software, Mobile Applications, Web Applications, and Web 3.0 Development & Consultancy - Astute Softwares";
-  const defaultDescription = "Astute Softwares helps tech companies and marketing agencies scale up and reach their goals quickly. We create high-performing software applications, mobile applications, augmented reality applications, and metaverse solutions that grow with your business.";
-  const url = "https://astutesoftwares.com/about-us";
-  const imageUrl = "https://astutesoftwares.com/images/about-banner-webp.webp";
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: (intl == null ? void 0 : intl.formatMessage({
-          id: "software.mobile.app",
-          defaultMessage: defaultTitle
-        })) || defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: (intl == null ? void 0 : intl.formatMessage({
-          id: "astute.software.helps",
-          defaultMessage: defaultDescription
-        })) || defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "About Astute Softwares, Our software team, Technology expertise, Our mission and values, Professional achievements"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: url
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: url
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:image",
-        content: imageUrl
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:image:alt",
-        content: "About Astute Softwares"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:card",
-        content: "summary_large_image"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:title",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:description",
-        content: defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:image",
-        content: imageUrl
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "robots",
-        content: "index, follow"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx(LandingPageAboutUS, {
+    children: [/* @__PURE__ */ jsx(LandingPageAboutUS, {
       refOffset
     }), /* @__PURE__ */ jsx("div", {
       ref,
