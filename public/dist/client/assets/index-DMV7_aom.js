@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-2bPuJ5dD.js","assets/GLTFLoader-BywxR1N6.js","assets/method-D8Mil6mq.js","assets/RGBELoader-CLEryQzw.js","assets/method-BqmtF4I8.js","assets/method-Dt0j2y40.js","assets/method-CeJ8FjxA.js","assets/method-nGVSSzFC.js","assets/method-yJ08FEbw.js","assets/method-CFjhI-dc.js","assets/OrbitControls-Ch87DSNr.js","assets/method-DEisIT12.js","assets/method-TDnnvG4C.js","assets/method-TgNUax7A.js","assets/method-B484q8uI.js","assets/method-fCX5TjFi.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-BFnWlPwt.js","assets/GLTFLoader-Cgbirf7B.js","assets/method-m8pvkBRU.js","assets/RGBELoader-DiV7eAGT.js","assets/method-Dz220hjP.js","assets/method-CisCM4HF.js","assets/method-CzSfs5VY.js","assets/method-DZC2XyY-.js","assets/method-CSNuuxJ5.js","assets/method-CpCSPUyW.js","assets/OrbitControls-DIfbNrtF.js","assets/method-FQUFIah6.js","assets/method-BA8fI6ky.js","assets/method-BMIfKqZF.js","assets/method-jA26W_0f.js","assets/method-CKUjG2I2.js"])))=>i.map(i=>d[i]);
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -65190,7 +65190,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-Ch87DSNr.js");
+        } = await import("./OrbitControls-DIfbNrtF.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -65214,7 +65214,7 @@ const Viewer = ({
           createScene: createScene2,
           onWindowResize: onWindowResize2,
           animate: animate3
-        } = await import("./methods-2bPuJ5dD.js");
+        } = await import("./methods-BFnWlPwt.js");
         return {
           createCamera: createCamera2,
           createFloor: createFloor2,
@@ -65231,7 +65231,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           default: ColorPallete3
-        } = await import("./index-DicB-cId.js");
+        } = await import("./index-DWdieH9J.js");
         return {
           default: ColorPallete3
         };
@@ -79737,19 +79737,27 @@ const Predictable = () => {
           children: [/* @__PURE__ */ jsx$1(FeaturesCard$3, {
             title: "Budget & timeline control",
             desc: "Being agile doesn't mean you have to worry about overspending. We've established good practices that help you to stay within your budget.",
-            img: "/Images/how-we-deliver/btc-webp.webp"
+            img: "/Images/how-we-deliver/btc-webp.webp",
+            width: 211,
+            height: 205
           }), /* @__PURE__ */ jsx$1(FeaturesCard$3, {
             title: "Project planning",
             desc: "Before the actual development process, we organise the Project Planning Session. You meet the Astute experts and together we aim to understand the project’s business requirements and agree on our mutual approach to the project delivery.",
-            img: "/Images/how-we-deliver/project planning-webp.webp"
+            img: "/Images/how-we-deliver/project planning-webp.webp",
+            width: 211,
+            height: 205
           }), /* @__PURE__ */ jsx$1(FeaturesCard$3, {
             title: "Executive reports",
             desc: "Sent to you every sprint with all agreed metrics, which means you are always up to date.",
-            img: "/Images/how-we-deliver/ER-webp.webp"
+            img: "/Images/how-we-deliver/ER-webp.webp",
+            width: 180,
+            height: 183
           }), /* @__PURE__ */ jsx$1(FeaturesCard$3, {
             title: "Certified project Managers",
-            desc: "Most of our Project Managers are AgilePM Certified. They are also encouraged to constantly improve their project management skills. That means you can sleep well – you are in good hands.\r ",
-            img: "/Images/how-we-deliver/cpm-webp.webp"
+            desc: "Most of our Project Managers are AgilePM Certified. They are also encouraged to constantly improve their project management skills. That means you can sleep well – you are in good hands.",
+            img: "/Images/how-we-deliver/cpm-webp.webp",
+            width: 176,
+            height: 205
           })]
         })
       })]
@@ -80312,6 +80320,8 @@ const QDFeaturesCard = (props) => {
       children: [/* @__PURE__ */ jsxs("div", {
         className: "flex items-center mb-2  h-20",
         children: [/* @__PURE__ */ jsx$1("img", {
+          width: props.width,
+          height: props.height,
           loading: "lazy",
           className: "w-2/12 lg:w-3/12 mr-5",
           alt: getImageALt(props.img),
@@ -80361,35 +80371,51 @@ const QualityDriven = () => {
       children: [/* @__PURE__ */ jsx$1(QDFeaturesCard, {
         title: "Project planning & control",
         desc: "Scope, milestones, priorities, estimation, reporting",
-        img: "/Images/how-we-deliver/PPC-webp.webp"
+        img: "/Images/how-we-deliver/PPC-webp.webp",
+        width: 195,
+        height: 174
       }), /* @__PURE__ */ jsx$1(QDFeaturesCard, {
         title: "Standards & proceses",
         desc: "Code Coverage, Quality Gates, Git Flow, DoR, DoD",
-        img: "/Images/how-we-deliver/standards-processes-webp.webp"
+        img: "/Images/how-we-deliver/standards-processes-webp.webp",
+        width: 175,
+        height: 174
       }), /* @__PURE__ */ jsx$1(QDFeaturesCard, {
         title: "Testing Levels",
         desc: "Unit, integration, system and end-to-end testing",
-        img: "/Images/how-we-deliver/Testing-levels-webp.webp"
+        img: "/Images/how-we-deliver/Testing-levels-webp.webp",
+        width: 175,
+        height: 174
       }), /* @__PURE__ */ jsx$1(QDFeaturesCard, {
         title: "CI / CD",
         desc: "Executed with Bitbucket Pipelines or Jenkins",
-        img: "/Images/how-we-deliver/ci-cd-webp.webp"
+        img: "/Images/how-we-deliver/ci-cd-webp.webp",
+        width: 172,
+        height: 174
       }), /* @__PURE__ */ jsx$1(QDFeaturesCard, {
         title: "Code reviews",
         desc: "Always done by at least two other team members and approved by the team lead",
-        img: "/Images/how-we-deliver/code-reviews-webp.webp"
+        img: "/Images/how-we-deliver/code-reviews-webp.webp",
+        width: 181,
+        height: 173
       }), /* @__PURE__ */ jsx$1(QDFeaturesCard, {
         title: "Automted Tests",
         desc: "For the most important parts of business logic",
-        img: "/Images/how-we-deliver/automated-tests-webp.webp"
+        img: "/Images/how-we-deliver/automated-tests-webp.webp",
+        width: 225,
+        height: 140
       }), /* @__PURE__ */ jsx$1(QDFeaturesCard, {
         title: "Code Qulaity",
         desc: "SOLID, Code Style, Version Control",
-        img: "/Images/how-we-deliver/Code quality-webp.webp"
+        img: "/Images/how-we-deliver/Code quality-webp.webp",
+        width: 132,
+        height: 147
       }), /* @__PURE__ */ jsx$1(QDFeaturesCard, {
         title: "Cloud Solutions",
         desc: "Scalable servers set up on AWS and GCP",
-        img: "/Images/how-we-deliver/cloud-solutions-webp.webp"
+        img: "/Images/how-we-deliver/cloud-solutions-webp.webp",
+        width: 132,
+        height: 134
       })]
     })]
   });
@@ -80399,6 +80425,8 @@ const FeaturesCard$2 = (props) => {
     children: /* @__PURE__ */ jsxs("div", {
       className: " flex flex-col md:flex-row md:items-start tracking-wider mb-12  lg:px-20 ",
       children: [/* @__PURE__ */ jsx$1("img", {
+        width: props.width,
+        height: props.height,
         loading: "lazy",
         className: "w-1/4 md:w-2/12 mt-2 mx-3",
         alt: getImageALt(props.img),
@@ -80469,11 +80497,15 @@ const Scalable = () => {
           }), /* @__PURE__ */ jsx$1(FeaturesCard$2, {
             title: "Scaling up your team",
             desc: "You can start small and scale the team along with your business. \r All of our developers must complete a special skill-unification Bootcamp before they start working on commercial projects for clients, so you can be sure you always get the same top-level skills.",
-            img: "/Images/how-we-deliver/scaling-up-your-team-webp.webp"
+            img: "/Images/how-we-deliver/scaling-up-your-team-webp.webp",
+            width: 181,
+            height: 91
           }), /* @__PURE__ */ jsx$1(FeaturesCard$2, {
             title: "Scalable infrastructure in cloud",
             desc: "Our DevOps engineers will help you build secure and scalable infrastructure, so your software is ready to grow with your business.",
-            img: "/Images/how-we-deliver/scaling-up-your-team-webp.webp"
+            img: "/Images/how-we-deliver/scaling-up-your-team-webp.webp",
+            width: 181,
+            height: 91
           })]
         })]
       })
@@ -80549,7 +80581,9 @@ const IterativeIncremental = () => {
           loading: "lazy",
           className: "w-3/5 md:w-2/5 xl:w-4/5 globeImage",
           alt: "globe",
-          src: "/Images/how-we-deliver/globe-webp.webp"
+          src: "/Images/how-we-deliver/globe-webp.webp",
+          width: 407,
+          height: 464
         })
       })]
     })
@@ -80557,153 +80591,14 @@ const IterativeIncremental = () => {
 };
 const HowWeDeliver = () => {
   useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx$1(HelmetComp$1, {}), /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
         children: [/* @__PURE__ */ jsx$1(LandingSection$k, {}), /* @__PURE__ */ jsx$1(Predictable, {}), /* @__PURE__ */ jsx$1(IterativeIncremental$1, {}), /* @__PURE__ */ jsx$1(QualityDriven, {}), /* @__PURE__ */ jsx$1(Scalable, {}), /* @__PURE__ */ jsx$1(IterativeIncremental, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })]
-  });
-};
-const HelmetComp$1 = () => {
-  const intl = useIntl();
-  const defaultTitle = "Agile Software Development | Astute Softwares - Remote Collaboration Experts";
-  const defaultDescription = "Boost your business with Agile Software Development by Astute Softwares. We ensure predictable results, cost control, scalability, and seamless collaboration for your IT projects.";
-  const url = "https://astutesoftwares.com/how-we-deliver";
-  const imageUrl = "https://astutesoftwares.com/images/agile-placeholder-webp.webp";
-  return /* @__PURE__ */ jsxs(HelmetExport, {
-    children: [/* @__PURE__ */ jsx$1("title", {
-      children: (intl == null ? void 0 : intl.formatMessage({
-        id: "agile.development.title",
-        defaultMessage: defaultTitle
-      })) || defaultTitle
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "description",
-      content: (intl == null ? void 0 : intl.formatMessage({
-        id: "agile.development.description",
-        defaultMessage: defaultDescription
-      })) || defaultDescription
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "keywords",
-      content: "Agile software development, Remote collaboration, Project planning, DevOps, Scrum, CI/CD, Code quality, Software consulting"
-    }), /* @__PURE__ */ jsx$1("link", {
-      rel: "canonical",
-      href: url
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:title",
-      content: defaultTitle
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:description",
-      content: defaultDescription
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:type",
-      content: "website"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:url",
-      content: url
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:image:alt",
-      content: "Agile Software Development - Astute Softwares"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:card",
-      content: "summary_large_image"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:title",
-      content: defaultTitle
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:description",
-      content: defaultDescription
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "robots",
-      content: "index, follow"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "referrer",
-      content: "origin-when-crossorigin"
-    })]
-  });
-};
-const HelmetComp = ({
-  title,
-  description,
-  keywords,
-  url,
-  imageUrl
-}) => {
-  useIntl();
-  return /* @__PURE__ */ jsxs(HelmetExport, {
-    children: [/* @__PURE__ */ jsx$1("meta", {
-      charSet: "UTF-8"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "viewport",
-      content: "width=device-width, initial-scale=1.0"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "author",
-      content: "Astute Softwares"
-    }), /* @__PURE__ */ jsx$1("title", {
-      children: title
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "description",
-      content: description
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "keywords",
-      content: keywords
-    }), /* @__PURE__ */ jsx$1("link", {
-      rel: "canonical",
-      href: url
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:title",
-      content: title
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:description",
-      content: description
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:type",
-      content: "website"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:url",
-      content: url
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:image:alt",
-      content: title
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:site_name",
-      content: "Astute Softwares"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:locale",
-      content: "en_US"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:card",
-      content: "summary_large_image"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:title",
-      content: title
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:description",
-      content: description
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:site",
-      content: "@AstuteSoftwares"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "robots",
-      content: "index, follow"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "referrer",
-      content: "origin-when-crossorigin"
-    })]
+    })
   });
 };
 const LandingSection$j = ({
@@ -80803,6 +80698,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://bit.ly/3tIsbv6",
           children: [/* @__PURE__ */ jsx$1("img", {
+            width: 1200,
+            height: 1200,
             loading: "lazy",
             alt: "react js post",
             className: "",
@@ -80824,6 +80721,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "http://bit.ly/47eFAtl",
           children: [/* @__PURE__ */ jsx$1("img", {
+            width: 2400,
+            height: 2400,
             loading: "lazy",
             alt: "wordpress post",
             className: "",
@@ -80845,6 +80744,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://bit.ly/36uxHFV",
           children: [/* @__PURE__ */ jsx$1("img", {
+            width: 1200,
+            height: 1200,
             loading: "lazy",
             alt: "CMM post",
             className: "",
@@ -80866,6 +80767,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://bit.ly/ASDD22",
           children: [/* @__PURE__ */ jsx$1("img", {
+            width: 1200,
+            height: 1200,
             loading: "lazy",
             alt: "django post",
             className: "",
@@ -80887,6 +80790,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://bit.ly/RTSD22",
           children: [/* @__PURE__ */ jsx$1("img", {
+            width: 1200,
+            height: 1200,
             loading: "lazy",
             alt: "react typescript post",
             className: "",
@@ -80908,6 +80813,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://bit.ly/SQA22",
           children: [/* @__PURE__ */ jsx$1("img", {
+            width: 1200,
+            height: 1200,
             loading: "lazy",
             alt: "SQA post",
             className: "",
@@ -80929,6 +80836,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://www.bit.ly/Astute3D",
           children: [/* @__PURE__ */ jsx$1("img", {
+            width: 1200,
+            height: 1200,
             loading: "lazy",
             alt: "3d designer post",
             className: "",
@@ -80993,6 +80902,8 @@ const ValueCard = (props) => {
   return /* @__PURE__ */ jsxs("div", {
     className: "rounded-2xl shadow-md bg-white bg-opacity-70 px-10 py-12 relative",
     children: [/* @__PURE__ */ jsx$1("img", {
+      height: props.height,
+      width: props.width,
       loading: "lazy",
       src: props.img,
       alt: "icon-bg",
@@ -81029,17 +80940,23 @@ const CoreValues = () => {
       children: [/* @__PURE__ */ jsx$1(ValueCard, {
         title: "TRUST OVER PROCESS",
         desc: "Trust is our most fundamental core value.\r We trust our people to do their best for the organization without strict\r monitoring proceses. Similarly,we expect that you will trust the \r organization to help you become succesfull.",
-        img: "/Images/careers/trust-over-webp.webp"
+        img: "/Images/careers/trust-over-webp.webp",
+        width: 147,
+        height: 135
       }), /* @__PURE__ */ jsx$1(ValueCard, {
         title: "EFFORT OVER OUTCOME",
         desc: "At times, great efort ends in failure, or conversely, ordinary \r efort leads to succes. We recognize and reward efort and resist the \r temptation to judge you based on outcomes.",
-        img: "/Images/careers/effort-over-outcome-webp.webp"
+        img: "/Images/careers/effort-over-outcome-webp.webp",
+        width: 131,
+        height: 130
       }), /* @__PURE__ */ jsx$1(ValueCard, {
         title: "VALUE OVER PROFIT",
         desc: `Always ask yourself the question "Is my work actually useful for 
                 someone? ”as opposed to" Have I met the requirements given to me so we can 
                 bil the client?"`,
-        img: "/Images/careers/value-over-webp.webp"
+        img: "/Images/careers/value-over-webp.webp",
+        width: 149,
+        height: 130
       })]
     }), /* @__PURE__ */ jsxs("div", {
       className: "grid lg:grid-cols-2 gap-x-10 gap-y-20 mt-20 justify-center lg:w-4/6 lg:mx-auto",
@@ -81048,13 +80965,17 @@ const CoreValues = () => {
         desc: `There is no individual glory (or failure) at AS To constantly enrich 
                 eachother's work life is way more important than to be beter than your coleagues 
                 and peers`,
-        img: "/Images/careers/COLLABORATION OVER COMPETITION-webp.webp"
+        img: "/Images/careers/COLLABORATION OVER COMPETITION-webp.webp",
+        width: 130,
+        height: 130
       }), /* @__PURE__ */ jsx$1(ValueCard, {
         title: "EXCELLENCE OVER SUCCESS",
         desc: `Excelence is all about being the best at what you do and maximizing your 
                 talents and abilities to perform atvyour highest potential. Success will automatically 
                 follow.`,
-        img: "/Images/careers/EXCELLENCE-OVER-SUCCESS-webp.webp"
+        img: "/Images/careers/EXCELLENCE-OVER-SUCCESS-webp.webp",
+        width: 134,
+        height: 122
       })]
     })]
   });
@@ -81062,33 +80983,13 @@ const CoreValues = () => {
 const Careers = () => {
   const [refOffset, setRefOffset] = reactExports.useState();
   const ref = reactExports.useRef(null);
-  const intl = useIntl();
+  useIntl();
   reactExports.useEffect(() => {
     window.scrollTo(0, 0);
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  const title = intl.formatMessage({
-    id: "careers.title",
-    defaultMessage: "Careers at Astute Softwares | Join Our Growing IT Team"
-  });
-  const description = intl.formatMessage({
-    id: "careers.description",
-    defaultMessage: "Looking for a career in IT? Join Astute Softwares – one of the fastest-growing software services companies. Explore job opportunities in React, WordPress, Django, QA, 3D Design, and more!"
-  });
-  const keywords = intl.formatMessage({
-    id: "careers.keywords",
-    defaultMessage: "IT jobs, software careers, React, WordPress, Django, QA, 3D Design"
-  });
-  const url = "https://astutesoftwares.com/careers";
-  const imageUrl = "https://astutesoftwares.com/images/careers-placeholder-webp.webp";
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx$1(HelmetComp, {
-      title,
-      description,
-      keywords,
-      url,
-      imageUrl
-    }), /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-28",
       children: [/* @__PURE__ */ jsx$1(LandingSection$j, {
         refOffset
@@ -81096,52 +80997,13 @@ const Careers = () => {
         ref,
         children: /* @__PURE__ */ jsx$1(OpenPositions, {})
       }), /* @__PURE__ */ jsx$1(WhyUs, {}), /* @__PURE__ */ jsx$1(CoreValues, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const UnderConstruction = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "coming.soon",
-          defaultMessage: "Coming Soon - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "exciting.things.are",
-          defaultMessage: "Exciting things are coming soon! Stay tuned for Astute Softwares' new innovative products and services."
-        })
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/coming-soon"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "coming.soon",
-          defaultMessage: "Coming Soon - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "exciting.things.are",
-          defaultMessage: "Exciting things are coming soon! Stay tuned for Astute Softwares' new innovative products and services."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/coming-soon"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col pt-32",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow flex justify-center items-center flex-col mt-10",
@@ -81149,7 +81011,9 @@ const UnderConstruction = () => {
           loading: "lazy",
           alt: "underconstruction-vector",
           className: "w-3/6 md:w-2/6",
-          src: "/Images/under-constructionAssets/underconstruction-vector-webp.webp"
+          src: "/Images/under-constructionAssets/underconstruction-vector-webp.webp",
+          width: 858,
+          height: 692
         }), /* @__PURE__ */ jsxs("div", {
           className: "mt-10 text-center w-full md:w-3/6 mb-20 px-5",
           children: [/* @__PURE__ */ jsxs("p", {
@@ -81170,7 +81034,7 @@ const UnderConstruction = () => {
           })]
         })]
       })
-    })]
+    })
   });
 };
 const ContactForm = (props) => {
@@ -92353,7 +92217,7 @@ const PlantModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-Ch87DSNr.js");
+        } = await import("./OrbitControls-DIfbNrtF.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92377,7 +92241,7 @@ const PlantModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-D8Mil6mq.js");
+        } = await import("./method-m8pvkBRU.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92429,7 +92293,7 @@ const PlantModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-Ch87DSNr.js");
+        } = await import("./OrbitControls-DIfbNrtF.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92453,7 +92317,7 @@ const PlantModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BqmtF4I8.js");
+        } = await import("./method-Dz220hjP.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92510,7 +92374,7 @@ const PlanModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-Ch87DSNr.js");
+        } = await import("./OrbitControls-DIfbNrtF.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92534,7 +92398,7 @@ const PlanModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-Dt0j2y40.js");
+        } = await import("./method-CisCM4HF.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92935,7 +92799,7 @@ const BagModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-Ch87DSNr.js");
+        } = await import("./OrbitControls-DIfbNrtF.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92959,7 +92823,7 @@ const BagModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-CeJ8FjxA.js");
+        } = await import("./method-CzSfs5VY.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93009,7 +92873,7 @@ const BagModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-Ch87DSNr.js");
+        } = await import("./OrbitControls-DIfbNrtF.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -93033,7 +92897,7 @@ const BagModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-nGVSSzFC.js");
+        } = await import("./method-DZC2XyY-.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93089,7 +92953,7 @@ const BagModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-Ch87DSNr.js");
+        } = await import("./OrbitControls-DIfbNrtF.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -93113,7 +92977,7 @@ const BagModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-yJ08FEbw.js");
+        } = await import("./method-CSNuuxJ5.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93310,13 +93174,13 @@ const Model1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-Ch87DSNr.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DIfbNrtF.js"), true ? [] : void 0);
     const {
       createCamera,
       createRenderer,
       onWindowResize,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-CFjhI-dc.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-CpCSPUyW.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -93339,7 +93203,7 @@ const Model2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-Ch87DSNr.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DIfbNrtF.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93348,7 +93212,7 @@ const Model2 = ({
       createScene,
       onWindowResize,
       animate: animate2
-    } = __vitePreload(() => import("./method-DEisIT12.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-FQUFIah6.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
     const renderer = createRenderer();
     const scene = createScene();
     const camera = createCamera();
@@ -93386,7 +93250,7 @@ const Model3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-Ch87DSNr.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DIfbNrtF.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93396,7 +93260,7 @@ const Model3 = ({
       animate: animate2,
       createFloor,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-TDnnvG4C.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-BA8fI6ky.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -93468,7 +93332,7 @@ const BottleModel1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-Ch87DSNr.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DIfbNrtF.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93478,7 +93342,7 @@ const BottleModel1 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-TgNUax7A.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-BMIfKqZF.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93513,7 +93377,7 @@ const BottleModel2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-Ch87DSNr.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DIfbNrtF.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93523,7 +93387,7 @@ const BottleModel2 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-B484q8uI.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-jA26W_0f.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93560,7 +93424,7 @@ const BottleModel3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-Ch87DSNr.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DIfbNrtF.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93570,7 +93434,7 @@ const BottleModel3 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-fCX5TjFi.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-CKUjG2I2.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93913,7 +93777,7 @@ const ModalVideo = (props) => {
   const [isOpen, setOpen] = reactExports.useState(false);
   const [VideoModal, setVideoModal] = reactExports.useState(null);
   reactExports.useEffect(() => {
-    __vitePreload(() => import("./index-DQrLns9f.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
+    __vitePreload(() => import("./index-yXNZFP3y.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
       setVideoModal(() => module2.default);
     });
   }, []);

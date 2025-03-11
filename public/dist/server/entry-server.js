@@ -14844,19 +14844,27 @@ const Predictable = () => {
           children: [/* @__PURE__ */ jsx(FeaturesCard$3, {
             title: "Budget & timeline control",
             desc: "Being agile doesn't mean you have to worry about overspending. We've established good practices that help you to stay within your budget.",
-            img: "/Images/how-we-deliver/btc-webp.webp"
+            img: "/Images/how-we-deliver/btc-webp.webp",
+            width: 211,
+            height: 205
           }), /* @__PURE__ */ jsx(FeaturesCard$3, {
             title: "Project planning",
             desc: "Before the actual development process, we organise the Project Planning Session. You meet the Astute experts and together we aim to understand the project’s business requirements and agree on our mutual approach to the project delivery.",
-            img: "/Images/how-we-deliver/project planning-webp.webp"
+            img: "/Images/how-we-deliver/project planning-webp.webp",
+            width: 211,
+            height: 205
           }), /* @__PURE__ */ jsx(FeaturesCard$3, {
             title: "Executive reports",
             desc: "Sent to you every sprint with all agreed metrics, which means you are always up to date.",
-            img: "/Images/how-we-deliver/ER-webp.webp"
+            img: "/Images/how-we-deliver/ER-webp.webp",
+            width: 180,
+            height: 183
           }), /* @__PURE__ */ jsx(FeaturesCard$3, {
             title: "Certified project Managers",
-            desc: "Most of our Project Managers are AgilePM Certified. They are also encouraged to constantly improve their project management skills. That means you can sleep well – you are in good hands.\r ",
-            img: "/Images/how-we-deliver/cpm-webp.webp"
+            desc: "Most of our Project Managers are AgilePM Certified. They are also encouraged to constantly improve their project management skills. That means you can sleep well – you are in good hands.",
+            img: "/Images/how-we-deliver/cpm-webp.webp",
+            width: 176,
+            height: 205
           })]
         })
       })]
@@ -15419,6 +15427,8 @@ const QDFeaturesCard = (props) => {
       children: [/* @__PURE__ */ jsxs("div", {
         className: "flex items-center mb-2  h-20",
         children: [/* @__PURE__ */ jsx("img", {
+          width: props.width,
+          height: props.height,
           loading: "lazy",
           className: "w-2/12 lg:w-3/12 mr-5",
           alt: getImageALt(props.img),
@@ -15468,35 +15478,51 @@ const QualityDriven = () => {
       children: [/* @__PURE__ */ jsx(QDFeaturesCard, {
         title: "Project planning & control",
         desc: "Scope, milestones, priorities, estimation, reporting",
-        img: "/Images/how-we-deliver/PPC-webp.webp"
+        img: "/Images/how-we-deliver/PPC-webp.webp",
+        width: 195,
+        height: 174
       }), /* @__PURE__ */ jsx(QDFeaturesCard, {
         title: "Standards & proceses",
         desc: "Code Coverage, Quality Gates, Git Flow, DoR, DoD",
-        img: "/Images/how-we-deliver/standards-processes-webp.webp"
+        img: "/Images/how-we-deliver/standards-processes-webp.webp",
+        width: 175,
+        height: 174
       }), /* @__PURE__ */ jsx(QDFeaturesCard, {
         title: "Testing Levels",
         desc: "Unit, integration, system and end-to-end testing",
-        img: "/Images/how-we-deliver/Testing-levels-webp.webp"
+        img: "/Images/how-we-deliver/Testing-levels-webp.webp",
+        width: 175,
+        height: 174
       }), /* @__PURE__ */ jsx(QDFeaturesCard, {
         title: "CI / CD",
         desc: "Executed with Bitbucket Pipelines or Jenkins",
-        img: "/Images/how-we-deliver/ci-cd-webp.webp"
+        img: "/Images/how-we-deliver/ci-cd-webp.webp",
+        width: 172,
+        height: 174
       }), /* @__PURE__ */ jsx(QDFeaturesCard, {
         title: "Code reviews",
         desc: "Always done by at least two other team members and approved by the team lead",
-        img: "/Images/how-we-deliver/code-reviews-webp.webp"
+        img: "/Images/how-we-deliver/code-reviews-webp.webp",
+        width: 181,
+        height: 173
       }), /* @__PURE__ */ jsx(QDFeaturesCard, {
         title: "Automted Tests",
         desc: "For the most important parts of business logic",
-        img: "/Images/how-we-deliver/automated-tests-webp.webp"
+        img: "/Images/how-we-deliver/automated-tests-webp.webp",
+        width: 225,
+        height: 140
       }), /* @__PURE__ */ jsx(QDFeaturesCard, {
         title: "Code Qulaity",
         desc: "SOLID, Code Style, Version Control",
-        img: "/Images/how-we-deliver/Code quality-webp.webp"
+        img: "/Images/how-we-deliver/Code quality-webp.webp",
+        width: 132,
+        height: 147
       }), /* @__PURE__ */ jsx(QDFeaturesCard, {
         title: "Cloud Solutions",
         desc: "Scalable servers set up on AWS and GCP",
-        img: "/Images/how-we-deliver/cloud-solutions-webp.webp"
+        img: "/Images/how-we-deliver/cloud-solutions-webp.webp",
+        width: 132,
+        height: 134
       })]
     })]
   });
@@ -15506,6 +15532,8 @@ const FeaturesCard$2 = (props) => {
     children: /* @__PURE__ */ jsxs("div", {
       className: " flex flex-col md:flex-row md:items-start tracking-wider mb-12  lg:px-20 ",
       children: [/* @__PURE__ */ jsx("img", {
+        width: props.width,
+        height: props.height,
         loading: "lazy",
         className: "w-1/4 md:w-2/12 mt-2 mx-3",
         alt: getImageALt(props.img),
@@ -15576,11 +15604,15 @@ const Scalable = () => {
           }), /* @__PURE__ */ jsx(FeaturesCard$2, {
             title: "Scaling up your team",
             desc: "You can start small and scale the team along with your business. \r All of our developers must complete a special skill-unification Bootcamp before they start working on commercial projects for clients, so you can be sure you always get the same top-level skills.",
-            img: "/Images/how-we-deliver/scaling-up-your-team-webp.webp"
+            img: "/Images/how-we-deliver/scaling-up-your-team-webp.webp",
+            width: 181,
+            height: 91
           }), /* @__PURE__ */ jsx(FeaturesCard$2, {
             title: "Scalable infrastructure in cloud",
             desc: "Our DevOps engineers will help you build secure and scalable infrastructure, so your software is ready to grow with your business.",
-            img: "/Images/how-we-deliver/scaling-up-your-team-webp.webp"
+            img: "/Images/how-we-deliver/scaling-up-your-team-webp.webp",
+            width: 181,
+            height: 91
           })]
         })]
       })
@@ -15656,7 +15688,9 @@ const IterativeIncremental = () => {
           loading: "lazy",
           className: "w-3/5 md:w-2/5 xl:w-4/5 globeImage",
           alt: "globe",
-          src: "/Images/how-we-deliver/globe-webp.webp"
+          src: "/Images/how-we-deliver/globe-webp.webp",
+          width: 407,
+          height: 464
         })
       })]
     })
@@ -15664,153 +15698,14 @@ const IterativeIncremental = () => {
 };
 const HowWeDeliver = () => {
   useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(HelmetComp$1, {}), /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
         children: [/* @__PURE__ */ jsx(LandingSection$k, {}), /* @__PURE__ */ jsx(Predictable, {}), /* @__PURE__ */ jsx(IterativeIncremental$1, {}), /* @__PURE__ */ jsx(QualityDriven, {}), /* @__PURE__ */ jsx(Scalable, {}), /* @__PURE__ */ jsx(IterativeIncremental, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })]
-  });
-};
-const HelmetComp$1 = () => {
-  const intl = useIntl();
-  const defaultTitle = "Agile Software Development | Astute Softwares - Remote Collaboration Experts";
-  const defaultDescription = "Boost your business with Agile Software Development by Astute Softwares. We ensure predictable results, cost control, scalability, and seamless collaboration for your IT projects.";
-  const url = "https://astutesoftwares.com/how-we-deliver";
-  const imageUrl = "https://astutesoftwares.com/images/agile-placeholder-webp.webp";
-  return /* @__PURE__ */ jsxs(Helmet, {
-    children: [/* @__PURE__ */ jsx("title", {
-      children: (intl == null ? void 0 : intl.formatMessage({
-        id: "agile.development.title",
-        defaultMessage: defaultTitle
-      })) || defaultTitle
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "description",
-      content: (intl == null ? void 0 : intl.formatMessage({
-        id: "agile.development.description",
-        defaultMessage: defaultDescription
-      })) || defaultDescription
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "keywords",
-      content: "Agile software development, Remote collaboration, Project planning, DevOps, Scrum, CI/CD, Code quality, Software consulting"
-    }), /* @__PURE__ */ jsx("link", {
-      rel: "canonical",
-      href: url
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:title",
-      content: defaultTitle
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:description",
-      content: defaultDescription
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:type",
-      content: "website"
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:url",
-      content: url
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:image:alt",
-      content: "Agile Software Development - Astute Softwares"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:card",
-      content: "summary_large_image"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:title",
-      content: defaultTitle
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:description",
-      content: defaultDescription
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "robots",
-      content: "index, follow"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "referrer",
-      content: "origin-when-crossorigin"
-    })]
-  });
-};
-const HelmetComp = ({
-  title,
-  description,
-  keywords,
-  url,
-  imageUrl
-}) => {
-  useIntl();
-  return /* @__PURE__ */ jsxs(Helmet, {
-    children: [/* @__PURE__ */ jsx("meta", {
-      charSet: "UTF-8"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "viewport",
-      content: "width=device-width, initial-scale=1.0"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "author",
-      content: "Astute Softwares"
-    }), /* @__PURE__ */ jsx("title", {
-      children: title
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "description",
-      content: description
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "keywords",
-      content: keywords
-    }), /* @__PURE__ */ jsx("link", {
-      rel: "canonical",
-      href: url
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:title",
-      content: title
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:description",
-      content: description
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:type",
-      content: "website"
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:url",
-      content: url
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:image:alt",
-      content: title
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:site_name",
-      content: "Astute Softwares"
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:locale",
-      content: "en_US"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:card",
-      content: "summary_large_image"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:title",
-      content: title
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:description",
-      content: description
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:site",
-      content: "@AstuteSoftwares"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "robots",
-      content: "index, follow"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "referrer",
-      content: "origin-when-crossorigin"
-    })]
+    })
   });
 };
 const LandingSection$j = ({
@@ -15910,6 +15805,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://bit.ly/3tIsbv6",
           children: [/* @__PURE__ */ jsx("img", {
+            width: 1200,
+            height: 1200,
             loading: "lazy",
             alt: "react js post",
             className: "",
@@ -15931,6 +15828,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "http://bit.ly/47eFAtl",
           children: [/* @__PURE__ */ jsx("img", {
+            width: 2400,
+            height: 2400,
             loading: "lazy",
             alt: "wordpress post",
             className: "",
@@ -15952,6 +15851,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://bit.ly/36uxHFV",
           children: [/* @__PURE__ */ jsx("img", {
+            width: 1200,
+            height: 1200,
             loading: "lazy",
             alt: "CMM post",
             className: "",
@@ -15973,6 +15874,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://bit.ly/ASDD22",
           children: [/* @__PURE__ */ jsx("img", {
+            width: 1200,
+            height: 1200,
             loading: "lazy",
             alt: "django post",
             className: "",
@@ -15994,6 +15897,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://bit.ly/RTSD22",
           children: [/* @__PURE__ */ jsx("img", {
+            width: 1200,
+            height: 1200,
             loading: "lazy",
             alt: "react typescript post",
             className: "",
@@ -16015,6 +15920,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://bit.ly/SQA22",
           children: [/* @__PURE__ */ jsx("img", {
+            width: 1200,
+            height: 1200,
             loading: "lazy",
             alt: "SQA post",
             className: "",
@@ -16036,6 +15943,8 @@ const OpenPositionPosts = () => {
           rel: "noopener noreferrer",
           href: "https://www.bit.ly/Astute3D",
           children: [/* @__PURE__ */ jsx("img", {
+            width: 1200,
+            height: 1200,
             loading: "lazy",
             alt: "3d designer post",
             className: "",
@@ -16100,6 +16009,8 @@ const ValueCard = (props) => {
   return /* @__PURE__ */ jsxs("div", {
     className: "rounded-2xl shadow-md bg-white bg-opacity-70 px-10 py-12 relative",
     children: [/* @__PURE__ */ jsx("img", {
+      height: props.height,
+      width: props.width,
       loading: "lazy",
       src: props.img,
       alt: "icon-bg",
@@ -16136,17 +16047,23 @@ const CoreValues = () => {
       children: [/* @__PURE__ */ jsx(ValueCard, {
         title: "TRUST OVER PROCESS",
         desc: "Trust is our most fundamental core value.\r We trust our people to do their best for the organization without strict\r monitoring proceses. Similarly,we expect that you will trust the \r organization to help you become succesfull.",
-        img: "/Images/careers/trust-over-webp.webp"
+        img: "/Images/careers/trust-over-webp.webp",
+        width: 147,
+        height: 135
       }), /* @__PURE__ */ jsx(ValueCard, {
         title: "EFFORT OVER OUTCOME",
         desc: "At times, great efort ends in failure, or conversely, ordinary \r efort leads to succes. We recognize and reward efort and resist the \r temptation to judge you based on outcomes.",
-        img: "/Images/careers/effort-over-outcome-webp.webp"
+        img: "/Images/careers/effort-over-outcome-webp.webp",
+        width: 131,
+        height: 130
       }), /* @__PURE__ */ jsx(ValueCard, {
         title: "VALUE OVER PROFIT",
         desc: `Always ask yourself the question "Is my work actually useful for 
                 someone? ”as opposed to" Have I met the requirements given to me so we can 
                 bil the client?"`,
-        img: "/Images/careers/value-over-webp.webp"
+        img: "/Images/careers/value-over-webp.webp",
+        width: 149,
+        height: 130
       })]
     }), /* @__PURE__ */ jsxs("div", {
       className: "grid lg:grid-cols-2 gap-x-10 gap-y-20 mt-20 justify-center lg:w-4/6 lg:mx-auto",
@@ -16155,13 +16072,17 @@ const CoreValues = () => {
         desc: `There is no individual glory (or failure) at AS To constantly enrich 
                 eachother's work life is way more important than to be beter than your coleagues 
                 and peers`,
-        img: "/Images/careers/COLLABORATION OVER COMPETITION-webp.webp"
+        img: "/Images/careers/COLLABORATION OVER COMPETITION-webp.webp",
+        width: 130,
+        height: 130
       }), /* @__PURE__ */ jsx(ValueCard, {
         title: "EXCELLENCE OVER SUCCESS",
         desc: `Excelence is all about being the best at what you do and maximizing your 
                 talents and abilities to perform atvyour highest potential. Success will automatically 
                 follow.`,
-        img: "/Images/careers/EXCELLENCE-OVER-SUCCESS-webp.webp"
+        img: "/Images/careers/EXCELLENCE-OVER-SUCCESS-webp.webp",
+        width: 134,
+        height: 122
       })]
     })]
   });
@@ -16169,33 +16090,13 @@ const CoreValues = () => {
 const Careers = () => {
   const [refOffset, setRefOffset] = useState();
   const ref = useRef(null);
-  const intl = useIntl();
+  useIntl();
   useEffect(() => {
     window.scrollTo(0, 0);
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  const title = intl.formatMessage({
-    id: "careers.title",
-    defaultMessage: "Careers at Astute Softwares | Join Our Growing IT Team"
-  });
-  const description = intl.formatMessage({
-    id: "careers.description",
-    defaultMessage: "Looking for a career in IT? Join Astute Softwares – one of the fastest-growing software services companies. Explore job opportunities in React, WordPress, Django, QA, 3D Design, and more!"
-  });
-  const keywords = intl.formatMessage({
-    id: "careers.keywords",
-    defaultMessage: "IT jobs, software careers, React, WordPress, Django, QA, 3D Design"
-  });
-  const url = "https://astutesoftwares.com/careers";
-  const imageUrl = "https://astutesoftwares.com/images/careers-placeholder-webp.webp";
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(HelmetComp, {
-      title,
-      description,
-      keywords,
-      url,
-      imageUrl
-    }), /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-28",
       children: [/* @__PURE__ */ jsx(LandingSection$j, {
         refOffset
@@ -16203,52 +16104,13 @@ const Careers = () => {
         ref,
         children: /* @__PURE__ */ jsx(OpenPositions, {})
       }), /* @__PURE__ */ jsx(WhyUs, {}), /* @__PURE__ */ jsx(CoreValues, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const UnderConstruction = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "coming.soon",
-          defaultMessage: "Coming Soon - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "exciting.things.are",
-          defaultMessage: "Exciting things are coming soon! Stay tuned for Astute Softwares' new innovative products and services."
-        })
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/coming-soon"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "coming.soon",
-          defaultMessage: "Coming Soon - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "exciting.things.are",
-          defaultMessage: "Exciting things are coming soon! Stay tuned for Astute Softwares' new innovative products and services."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/coming-soon"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col pt-32",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow flex justify-center items-center flex-col mt-10",
@@ -16256,7 +16118,9 @@ const UnderConstruction = () => {
           loading: "lazy",
           alt: "underconstruction-vector",
           className: "w-3/6 md:w-2/6",
-          src: "/Images/under-constructionAssets/underconstruction-vector-webp.webp"
+          src: "/Images/under-constructionAssets/underconstruction-vector-webp.webp",
+          width: 858,
+          height: 692
         }), /* @__PURE__ */ jsxs("div", {
           className: "mt-10 text-center w-full md:w-3/6 mb-20 px-5",
           children: [/* @__PURE__ */ jsxs("p", {
@@ -16277,7 +16141,7 @@ const UnderConstruction = () => {
           })]
         })]
       })
-    })]
+    })
   });
 };
 const ContactForm = (props) => {
