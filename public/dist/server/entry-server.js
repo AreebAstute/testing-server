@@ -1693,7 +1693,9 @@ const GameServices = ({
               loading: "lazy",
               alt: "game-cart",
               className: "w-4/5 lg:w-full xl:w-4/5",
-              src: "/Images/GamingServices/game-cart-webp.webp"
+              src: "/Images/GamingServices/game-cart-webp.webp",
+              width: 785,
+              height: 693
             }), /* @__PURE__ */ jsx("div", {
               className: "absolute left-1/2 transform -translate-x-1/2 bottom-25 md:bottom-50",
               children: /* @__PURE__ */ jsx(Link, {
@@ -1715,7 +1717,9 @@ const GameServices = ({
                   loading: "lazy",
                   alt: "game-title-icon",
                   className: "w-28 absolute bottom-0 right-0",
-                  src: "/Images/GamingServices/game-title-icon-webp.webp"
+                  src: "/Images/GamingServices/game-title-icon-webp.webp",
+                  width: 175,
+                  height: 120
                 })]
               }), /* @__PURE__ */ jsxs("div", {
                 className: "relative bg-white rounded-xl shadow-2xl pt-8 px-8 space-y-5 mt-3",
@@ -1740,7 +1744,9 @@ const GameServices = ({
                       loading: "lazy",
                       alt: "apple-store",
                       className: "w-full",
-                      src: "/Images/GamingServices/apple-store-webp.webp"
+                      src: "/Images/GamingServices/apple-store-webp.webp",
+                      width: 1084,
+                      height: 329
                     })
                   }), /* @__PURE__ */ jsx("button", {
                     onClick: () => {
@@ -1751,7 +1757,9 @@ const GameServices = ({
                       loading: "lazy",
                       alt: "google-play-store",
                       className: "w-full",
-                      src: "/Images/GamingServices/google-play-store-webp.webp"
+                      src: "/Images/GamingServices/google-play-store-webp.webp",
+                      width: 1084,
+                      height: 329
                     })
                   })]
                 })]
@@ -9990,7 +9998,9 @@ const LandingAnimation = ({
   isActive,
   metaImg,
   threedImage,
-  detailLine
+  detailLine,
+  width,
+  height
 }) => {
   const [rendered, setRendered] = useState(false);
   useEffect(() => {
@@ -10100,6 +10110,8 @@ const LandingAnimation = ({
         // backgroundPositionY:"20%"
       },
       children: /* @__PURE__ */ jsx("img", {
+        width,
+        height,
         alt: "dots",
         src: "/Images/landing-page/dots(2)-webp.webp",
         className: "imgAnimation",
@@ -11673,6 +11685,8 @@ const MainPageContent = () => {
               lightHeading: " Product Development &",
               boldHeading: "Software Consultancy",
               link: "/services" + OUR_SERVICES_HASH_LINK,
+              width: 1200,
+              height: 750,
               img: "/Images/landing-page/rounded-corner-webp.webp",
               isActive,
               detailLine: "for CTOs and Tech Managers"
@@ -11688,6 +11702,8 @@ const MainPageContent = () => {
               boldHeading: "Immersive Experience",
               link: "/metaverse",
               img: "/Images/landing-page/meta-webp.webp",
+              width: 1200,
+              height: 750,
               makeRound: true,
               isActive,
               metaImg: true,
@@ -11704,6 +11720,8 @@ const MainPageContent = () => {
               boldHeading: "with 3D models",
               link: "/3d-modelling",
               img: "/Images/landing-page/3d-modeling-webp.webp",
+              width: 1200,
+              height: 750,
               makeRound: true,
               isActive,
               threedImage: true,
@@ -11720,6 +11738,8 @@ const MainPageContent = () => {
               boldHeading: "QA Testing",
               link: "services/software-quality-assurance",
               img: "/Images/landing-page/qa-testing1-webp.webp",
+              width: 1200,
+              height: 750,
               isActive,
               detailLine: "for Quality Assurance heads"
             })
@@ -11761,6 +11781,8 @@ const ServiceCard = (props) => {
     children: [/* @__PURE__ */ jsx("div", {
       className: " ",
       children: /* @__PURE__ */ jsx("img", {
+        width: props.width,
+        height: props.height,
         loading: "lazy",
         className: "w-2/6 md:w-4/6 lg:w-1/6 xl:w-4/6 mx-auto md:mx-0",
         alt: getImageALt(props.img),
@@ -11856,18 +11878,24 @@ const HomePageServices = () => {
           title: "Custom Software Development",
           desc: "High performing software applications that grow with your business.",
           img: "/Images/LandingPageImage/software dev-webp.webp",
+          width: 535,
+          height: 496,
           detailLink: "/services/custom-software-development"
         }), /* @__PURE__ */ jsx(ServiceCard, {
           margin: "mx-5 md:mx-20 lg:ml-10",
           title: "Digital Transformation",
           desc: "Team up with Astute Softwares to accelerate your journey to the cloud.",
           img: "/Images/LandingPageImage/Transformation-webp.webp",
+          width: 234,
+          height: 233,
           detailLink: "/services/digital-transformation-services"
         }), /* @__PURE__ */ jsx(ServiceCard, {
           margin: "mx-5 md:mx-20 lg:ml-20 lg:-mr-10",
           title: "Mobile Application Development",
           desc: "Let’s build apps for your everyday use.",
           img: "/Images/LandingPageImage/app dev-webp.webp",
+          width: 181,
+          height: 207,
           detailLink: "/services/mobile-application-development"
         })]
       }), /* @__PURE__ */ jsx("div", {
@@ -11876,7 +11904,9 @@ const HomePageServices = () => {
           loading: "lazy",
           className: "w-4/5 md:w-3/5 lg:w-full",
           alt: "services-img-resized",
-          src: "/Images/LandingPageImage/services-img-resized-webp.webp"
+          src: "/Images/LandingPageImage/services-img-resized-webp.webp",
+          width: 312,
+          height: 282
         })
       }), /* @__PURE__ */ jsxs("div", {
         className: "serviceDiv  flex flex-col items-center",
@@ -11885,18 +11915,24 @@ const HomePageServices = () => {
           title: "QA and Testing Services",
           desc: "Our Quality Assurance team ensures your code is impeccable.",
           img: "/Images/LandingPageImage/QA-webp.webp",
+          width: 459,
+          height: 378,
           detailLink: "/services/software-quality-assurance"
         }), /* @__PURE__ */ jsx(ServiceCard, {
           margin: "mx-5 md:mx-20 lg:mr-10",
           title: "UX and UI Design",
           desc: "We create things, your users will love.",
           img: "/Images/LandingPageImage/UI-UX-webp.webp",
+          width: 626,
+          height: 515,
           detailLink: "/services/ui-and-ux-design"
         }), /* @__PURE__ */ jsx(ServiceCard, {
           margin: "mx-5 md:mx-20 lg:mr-20 lg:-ml-10",
           title: "Application Maintenance & Support",
           desc: "Our support team is there for you 24/7, helping you high available for your clients.",
           img: "/Images/LandingPageImage/app maintenance-webp.webp",
+          width: 133,
+          height: 84,
           detailLink: "/services/maintenance-and-support"
         })]
       })]
@@ -11906,7 +11942,9 @@ const HomePageServices = () => {
 const HomePageLanguageCard = ({
   title,
   image,
-  desc
+  desc,
+  width,
+  height
 }) => {
   const languageTitle = "font-extrabold text-xl md:text-2xl text-font-primary";
   return /* @__PURE__ */ jsx("div", {
@@ -11916,6 +11954,8 @@ const HomePageLanguageCard = ({
       children: /* @__PURE__ */ jsxs("div", {
         className: "container text-center flex flex-col h-56 justify-center items-center ",
         children: [/* @__PURE__ */ jsx("img", {
+          width,
+          height,
           loading: "lazy",
           className: "object-contain h-1/5 w-full",
           src: image,
@@ -12015,24 +12055,32 @@ function LanguagePage() {
           children: [/* @__PURE__ */ jsx("div", {
             children: /* @__PURE__ */ jsx(HomePageLanguageCard, {
               image: "/Images/landing-page-assets/c_logo-webp.webp",
+              width: 1600,
+              height: 1600,
               title: "C++ / C#",
               desc: "High performance web applications that grow with your bussiness"
             })
           }), /* @__PURE__ */ jsx("div", {
             children: /* @__PURE__ */ jsx(HomePageLanguageCard, {
               image: "/Images/landing-page-assets/Django_Logo-webp.webp",
+              width: 254,
+              height: 110,
               title: "Django",
               desc: "Python web framework that encourages rapid development"
             })
           }), /* @__PURE__ */ jsx("div", {
             children: /* @__PURE__ */ jsx(HomePageLanguageCard, {
               image: "/Images/landing-page-assets/React_icon-webp.webp",
+              width: 128,
+              height: 110,
               title: "React",
               desc: "User-centred JavaScript framework for crafting real-time interfaces"
             })
           }), /* @__PURE__ */ jsx("div", {
             children: /* @__PURE__ */ jsx(HomePageLanguageCard, {
               image: "/Images/landing-page-assets/kotlin_logo-webp.webp",
+              width: 112,
+              height: 114,
               title: "Kotline",
               desc: "Writing better android apps faster with Kotlin "
             })
@@ -12051,6 +12099,8 @@ function LanguagePage() {
                     loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/angular_icon-webp.webp",
+                    width: 118,
+                    height: 126,
                     alt: "angular"
                     //   width="35px"
                     //   height="35px"
@@ -12070,6 +12120,8 @@ function LanguagePage() {
                     loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/l-webp.webp",
+                    width: 128,
+                    height: 128,
                     alt: "laravel"
                     //   width="35px"
                     //   height="35px"
@@ -12092,6 +12144,8 @@ function LanguagePage() {
                     loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/nodeJs_logo-webp.webp",
+                    width: 192,
+                    height: 190,
                     alt: "node"
                     //   width="50px"
                     //   height="50px"
@@ -12111,6 +12165,8 @@ function LanguagePage() {
                     loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/vuejs_logo-webp.webp",
+                    width: 300,
+                    height: 259,
                     alt: "vue"
                     //   width="50px"
                     //   height="50px"
@@ -12133,7 +12189,9 @@ function LanguagePage() {
                     loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/swift_logo-webp.webp",
-                    alt: "node"
+                    width: 116,
+                    height: 116,
+                    alt: "swift"
                     //   width="50px"
                     //   height="50px"
                   })]
@@ -12155,7 +12213,9 @@ function LanguagePage() {
                     loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/Java_logo-webp.webp",
-                    alt: "node"
+                    width: 78,
+                    height: 144,
+                    alt: "Java"
                     //   width="50px"
                     //   height="50px"
                   })]
@@ -12177,7 +12237,9 @@ function LanguagePage() {
                     loading: "lazy",
                     className: "object-contain w-1/6 h-full",
                     src: "/Images/landing-page-assets/flutter-webp.webp",
-                    alt: "node"
+                    width: 88,
+                    height: 112,
+                    alt: "flutter"
                     //   width="50px"
                     //   height="50px"
                   })]
@@ -12268,6 +12330,8 @@ const Consultation$1 = () => {
         className: "absolute aiIcon",
         alt: "AI Pattern",
         src: "/Images/LandingPageImage/AI Pattern-webp.webp",
+        width: 900,
+        height: 845,
         style: {}
       })]
     }), /* @__PURE__ */ jsxs("div", {
@@ -12293,6 +12357,8 @@ const Consultation$1 = () => {
         className: " absolute bottom-0 left-1/3 w-full",
         alt: "AI Pattern-resized",
         src: "/Images/LandingPageImage/AI Pattern-resized-webp.webp",
+        width: 450,
+        height: 423,
         style: {
           zIndex: "-1"
         }
@@ -12528,7 +12594,9 @@ const TimeAndMaterial = ({}) => {
             loading: "lazy",
             alt: "time-and-material",
             className: "w-3/5 lg:w-full xl:w-4/5 mx-auto",
-            src: "/Images/LandingPageImage/time-and-material-webp.webp"
+            src: "/Images/LandingPageImage/time-and-material-webp.webp",
+            width: 746,
+            height: 620
           })
         }), /* @__PURE__ */ jsxs("div", {
           className: "w-full lg:w-1/2 flex flex-col text-center lg:text-left space-y-10",
@@ -12568,61 +12636,15 @@ const Index$2 = ({
   gameDownload,
   setGameDownload
 }) => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "astute.software.home",
-          defaultMessage: "Astute Softwares - Making World Digitally Astute"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.software.home.desc",
-          defaultMessage: "Astute Softwares helps tech companies and marketing agencies to scale up and reach their goals quickly. We create high-performing software applications, mobile applications, augmented reality applications, and metaverse development that grows with your business."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Leading software house, Expert software developers, Custom IT solutions, Professional web services, Software development company, Astute Softwares solutions, Innovative software services, Professional IT consulting, Custom software development, Technology solutions provider"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "astute.software.home",
-          defaultMessage: "Astute Softwares - Making World Digitally Astute"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.software.home.desc",
-          defaultMessage: "Astute Softwares helps tech companies and marketing agencies to scale up and reach their goals quickly. We create high-performing software applications, mobile applications, augmented reality applications, and metaverse development that grows with your business."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "preload",
-        href: "/Images/landing-page/dots(2)-webp.webp",
-        as: "image"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "overflow-hidden",
       children: [/* @__PURE__ */ jsx(MainPageContent, {}), /* @__PURE__ */ jsx(HomePageServices, {}), /* @__PURE__ */ jsx(SEOServices, {}), /* @__PURE__ */ jsx(TimeAndMaterial, {}), /* @__PURE__ */ jsx(LanguagePage, {}), /* @__PURE__ */ jsx(GameServices, {
         gameDownload,
         setGameDownload
       }), /* @__PURE__ */ jsx(Consultation$1, {})]
-    })]
+    })
   });
 };
 const FeatureCard$8 = ({
@@ -30162,13 +30184,15 @@ function StatsSection$1() {
     })
   });
 }
-function HeroSection$4() {
+function HeroSection$1() {
   return /* @__PURE__ */ jsxs("section", {
     id: "hero",
     className: "mt-10 lg:mt-40 pt-16",
     children: [/* @__PURE__ */ jsx("div", {
       className: "relative",
       children: /* @__PURE__ */ jsx("img", {
+        width: 1201,
+        height: 1438,
         loading: "lazy",
         alt: "pattern",
         className: "absolute top-0 right-0 transform lg:translate-x-1/4 lg:-translate-y-24 w-full z-0 select-none hidden lg:inline",
@@ -30310,7 +30334,7 @@ function MostSearchedSection$1() {
     })]
   });
 }
-function SolutionSection$4() {
+function SolutionSection$1() {
   return /* @__PURE__ */ jsx("section", {
     id: "solutions",
     className: "bg-blue-primary py-16 mt-16 lg:mt-24 z-20",
@@ -30321,6 +30345,8 @@ function SolutionSection$4() {
         "data-aos-duration": "1000",
         className: "relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2",
         children: /* @__PURE__ */ jsx("img", {
+          width: 1420,
+          height: 1012,
           loading: "lazy",
           src: "/Images/landing-page-assets/chats-webp.webp",
           alt: "chats",
@@ -30440,6 +30466,8 @@ function TechSection$1() {
       }), /* @__PURE__ */ jsxs("div", {
         className: "relative z-10 mt-10",
         children: [/* @__PURE__ */ jsx("img", {
+          width: 4768,
+          height: 1792,
           loading: "lazy",
           alt: "box_layers",
           className: "absolute top-0 w-full z-0",
@@ -30511,71 +30539,12 @@ const TidioChat = () => {
   return /* @__PURE__ */ jsx(Fragment, {});
 };
 function LandingPage$1() {
-  const intl = useIntl();
-  const defaultTitle = "Astute Softwares - Empowering Startups with Scalable Tech Solutions";
-  const defaultDescription = "Astute Softwares helps startups cut costs and launch MVPs with cloud-optimized development. Trusted by 10+ startups, handling 100K+ users daily.";
-  const url = "https://astutesoftwares.com/usa-startups";
-  const imageUrl = "https://astutesoftwares.com/images/home-banner-placeholder-webp.webp";
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: (intl == null ? void 0 : intl.formatMessage({
-          id: "home.title",
-          defaultMessage: defaultTitle
-        })) || defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: (intl == null ? void 0 : intl.formatMessage({
-          id: "home.description",
-          defaultMessage: defaultDescription
-        })) || defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Startup software solutions, MVP development, Cloud cost optimization, Web and mobile development, DevOps consulting, AWS services, 3D modeling, IT consulting"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: url
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: url
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:image",
-        content: imageUrl
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:image:alt",
-        content: "Astute Softwares - Empowering Startups"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:card",
-        content: "summary_large_image"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:title",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:description",
-        content: defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:image",
-        content: imageUrl
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "robots",
-        content: "index, follow"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "main_landing flex flex-col py-8",
-      children: [/* @__PURE__ */ jsx(HeroSection$4, {}), /* @__PURE__ */ jsx(MostSearchedSection$1, {}), /* @__PURE__ */ jsx(SolutionSection$4, {}), /* @__PURE__ */ jsx(TechSection$1, {}), /* @__PURE__ */ jsx(ReviewSection$1, {}), /* @__PURE__ */ jsx(TidioChat, {})]
-    })]
+      children: [/* @__PURE__ */ jsx(HeroSection$1, {}), /* @__PURE__ */ jsx(MostSearchedSection$1, {}), /* @__PURE__ */ jsx(SolutionSection$1, {}), /* @__PURE__ */ jsx(TechSection$1, {}), /* @__PURE__ */ jsx(ReviewSection$1, {}), /* @__PURE__ */ jsx(TidioChat, {})]
+    })
   });
 }
 const statsData = [{
@@ -30653,13 +30622,15 @@ function StatsSection() {
     })
   });
 }
-function HeroSection$3() {
+function HeroSection() {
   return /* @__PURE__ */ jsxs("section", {
     id: "hero",
     className: "mt-10 lg:mt-40 pt-16",
     children: [/* @__PURE__ */ jsx("div", {
       className: "relative",
       children: /* @__PURE__ */ jsx("img", {
+        width: 1201,
+        height: 1438,
         loading: "lazy",
         alt: "pattern",
         className: "absolute top-0 right-0 transform lg:translate-x-1/4 lg:-translate-y-24 w-full z-0 select-none hidden lg:inline",
@@ -30801,7 +30772,7 @@ function MostSearchedSection() {
     })]
   });
 }
-function SolutionSection$3() {
+function SolutionSection() {
   return /* @__PURE__ */ jsx("section", {
     id: "solutions",
     className: "bg-blue-primary py-16 mt-16 lg:mt-24 z-20",
@@ -30812,6 +30783,8 @@ function SolutionSection$3() {
         "data-aos-duration": "1000",
         className: "relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2",
         children: /* @__PURE__ */ jsx("img", {
+          width: 1420,
+          height: 1012,
           loading: "lazy",
           src: "/Images/landing-page-assets/chats-webp.webp",
           alt: "chats",
@@ -30931,6 +30904,8 @@ function TechSection() {
       }), /* @__PURE__ */ jsxs("div", {
         className: "relative z-10 mt-10",
         children: [/* @__PURE__ */ jsx("img", {
+          width: 4768,
+          height: 1792,
           loading: "lazy",
           alt: "box_layers",
           className: "absolute top-0 w-full z-0",
@@ -30990,2290 +30965,14 @@ function ReviewSection() {
   });
 }
 function LandingPage() {
-  const intl = useIntl();
-  const defaultTitle = "Astute Softwares - Potenziamo le Startup con Soluzioni Scalabili";
-  const defaultDescription = "Astute Softwares aiuta le startup a ridurre i costi e lanciare MVP con sviluppo cloud-ottimizzato. Oltre 10 startup avviate con successo nel 2023, servendo 100K+ utenti al giorno.";
-  const url = "https://astutesoftwares.com/turin-startup-campaign";
-  const imageUrl = "https://astutesoftwares.com/images/home-banner-placeholder-webp.webp";
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: (intl == null ? void 0 : intl.formatMessage({
-          id: "home.title.it",
-          defaultMessage: defaultTitle
-        })) || defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: (intl == null ? void 0 : intl.formatMessage({
-          id: "home.description.it",
-          defaultMessage: defaultDescription
-        })) || defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Soluzioni software per startup, sviluppo MVP, ottimizzazione costi cloud, sviluppo web e mobile, consulenza DevOps, servizi AWS, modellazione 3D, consulenza IT"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: url
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: url
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:image",
-        content: imageUrl
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:image:alt",
-        content: "Astute Softwares - Potenziamo le Startup"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:card",
-        content: "summary_large_image"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:title",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:description",
-        content: defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:image",
-        content: imageUrl
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "robots",
-        content: "index, follow"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "main_landing flex flex-col py-8",
-      children: [/* @__PURE__ */ jsx(HeroSection$3, {}), /* @__PURE__ */ jsx(MostSearchedSection, {}), /* @__PURE__ */ jsx(SolutionSection$3, {}), /* @__PURE__ */ jsx(TechSection, {}), /* @__PURE__ */ jsx(ReviewSection, {}), /* @__PURE__ */ jsx(TidioChat, {})]
-    })]
-  });
-}
-function HeroSection$2() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "hero",
-    className: "mt-16 lg:mt-24 z-20 relative",
-    children: [/* @__PURE__ */ jsxs("div", {
-      className: "xl:container xl:mx-auto flex flex-col lg:items-start xlxl:items-center lg:justify-center lg:flex-row-reverse justify-between pb-6 gap-0 lg:mb-0 pt-4",
-      children: [/* @__PURE__ */ jsx("div", {
-        className: "visible lg:invisible relative mx-auto lg:mx-0 lg:mb-0 w-full lg:w-1/2",
-        children: /* @__PURE__ */ jsx("img", {
-          width: 1070,
-          height: 972,
-          loading: "lazy",
-          src: "/Images/edisu/section_1-webp.webp",
-          alt: "chats",
-          className: "relative z-10 overflow-x-visible w-full"
-        })
-      }), /* @__PURE__ */ jsxs("div", {
-        className: "flex flex-col items-center lg:items-start my-12 lg:my-0 justify-center gap-4 lg:pl-20 w-full lg:w-1/2",
-        children: [/* @__PURE__ */ jsxs("h5", {
-          className: "font-bold text-4xl lg:text-6xl my-6",
-          children: ["Edisu Case ", /* @__PURE__ */ jsx("br", {
-            className: "hidden md:block"
-          }), "Study"]
-        }), /* @__PURE__ */ jsx("div", {
-          className: "flex justify-center lg:justify-start items-center w-full",
-          children: /* @__PURE__ */ jsx("img", {
-            width: 188,
-            height: 189,
-            src: "/Images/edisu/edisu_logo-webp.webp",
-            alt: "app-logo",
-            className: "w-40 mb-2"
-          })
-        }), /* @__PURE__ */ jsx("p", {
-          className: "max-w-md font-normal text-xl mb-4",
-          children: "Design and Develop by"
-        }), /* @__PURE__ */ jsx("div", {
-          className: "flex justify-center lg:justify-start items-center w-full",
-          children: /* @__PURE__ */ jsx("img", {
-            width: 410,
-            height: 85,
-            src: "/Images/edisu/astute_logo-webp.webp",
-            alt: "app-logo",
-            className: "w-40 mb-2"
-          })
-        })]
-      })]
-    }), /* @__PURE__ */ jsx("div", {
-      className: "invisible md:visible absolute top-0 right-0 w-1/2 xl:w-2/5 z-20",
-      children: /* @__PURE__ */ jsx("img", {
-        width: 1070,
-        height: 972,
-        loading: "lazy",
-        src: "/Images/edisu/section_1-webp.webp",
-        alt: "chats",
-        className: "overflow-x-visible w-full"
-      })
-    })]
-  });
-}
-function AboutSection$2() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "about",
-    className: "pt-16 z-20 relative overflow-hidden",
-    children: [/* @__PURE__ */ jsxs("div", {
-      className: "xl:container xl:mx-auto flex flex-col-reverse justify-center gap-8 lg:gap-0 lg:flex-row lg:mb-0 px-0",
-      children: [/* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "invisible relative lg:mx-0 lg:mb-0 w-7/12 lg:-w-1/2 xl:w-2/5 xlxl:w-1/2 mx-auto",
-        children: /* @__PURE__ */ jsx("img", {
-          width: 835,
-          height: 825,
-          loading: "lazy",
-          src: "/Images/edisu/section_2-webp.webp",
-          alt: "chats",
-          className: "relative z-10 overflow-x-visible"
-        })
-      }), /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center gap-4 px-6 pb-16 lg:pl-20 lg:w-1/2",
-        children: [/* @__PURE__ */ jsxs("h1", {
-          className: "flex text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:w-11/12 lg:text-left",
-          children: [/* @__PURE__ */ jsx("span", {
-            className: "bg-edisu-primary w-11 h-12 lg:w-16 text-3xl md:text-4xl lg:text-5xl font-bold text-right",
-            children: "A"
-          }), "bout Project"]
-        }), /* @__PURE__ */ jsx("p", {
-          className: "w-11/12 mx-auto text-xl lg:text-2xl font-normal text-left lg:mt-0 lg:mx-0",
-          children: "During the COVID-19 pandemic, public health and safety became big concerns for governments worldwide. In Italy, one of the countries hardest hit by the pandemic, ensuring the safety of public spaces, especially educational facilities, became a critical issue. Study halls, used by students and the public for studying and academic activities, posed a particular challenge. These spaces are characterized by high foot traffic and shared use of facilities, making them potential hotspots for virus transmission."
-        })]
-      })]
-    }), /* @__PURE__ */ jsx("div", {
-      className: "absolute bottom-0 left-0 w-7/12 lg:w-2/5 2xl:w-1/3 z-20",
-      children: /* @__PURE__ */ jsx("img", {
-        width: 835,
-        height: 825,
-        loading: "lazy",
-        src: "/Images/edisu/section_2-webp.webp",
-        alt: "chats",
-        className: "overflow-x-visible w-full"
-      })
-    })]
-  });
-}
-function ProblemStatementSection$2() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "problem-statement",
-    className: "pt-16 z-20 bg-edisu-light overflow-hidden relative",
-    children: [/* @__PURE__ */ jsxs("div", {
-      className: "relative xl:container xl:mx-auto flex flex-col justify-between p-6 gap-0 lg:mb-0 lg:pl-20 z-20",
-      children: [/* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center gap-4 w-full",
-        children: /* @__PURE__ */ jsx("h1", {
-          className: "flex text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:w-11/12 lg:text-left",
-          children: "Problems Statement"
-        })
-      }), /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-up",
-        "data-aos-duration": "1000",
-        className: "relative flex flex-col items-start space-y-2 lg:space-y-0 lg:space-x-7 lg:flex-row mt-6",
-        children: [/* @__PURE__ */ jsxs("div", {
-          className: "flex w-full py-6 text-left rounded-lg lg:w-1/3",
-          children: [/* @__PURE__ */ jsx("div", {
-            className: "bg-edisu-primary w-12 h-10 text-center text-white text-2xl lg:text-4xl font-semibold",
-            children: "#1"
-          }), /* @__PURE__ */ jsx("div", {
-            className: "relative w-10/12",
-            children: /* @__PURE__ */ jsxs("div", {
-              className: "px-6",
-              children: [/* @__PURE__ */ jsx("h5", {
-                className: "flex text-xl md:text-2xl lg:text-3xl font-semibold",
-                children: "Safety and Health"
-              }), /* @__PURE__ */ jsxs("div", {
-                className: "flex flex-col items-center justify-center mt-6",
-                children: [/* @__PURE__ */ jsx("p", {
-                  className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                  children: "The Italian government faced a significant challenge in maintaining the safety and health of individuals using study halls amidst the COVID-19 pandemic."
-                }), /* @__PURE__ */ jsx("div", {
-                  className: "pl-4",
-                  children: /* @__PURE__ */ jsx("img", {
-                    width: 515,
-                    height: 390,
-                    loading: "lazy",
-                    src: "/Images/edisu/group_10-webp.webp",
-                    alt: "card pattern",
-                    className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                  })
-                })]
-              })]
-            })
-          })]
-        }), /* @__PURE__ */ jsxs("div", {
-          className: "flex w-full py-6 text-left rounded-lg lg:w-1/3 md:mt-8",
-          children: [/* @__PURE__ */ jsx("div", {
-            className: "bg-edisu-primary w-12 h-10 text-center text-white text-2xl lg:text-4xl font-semibold",
-            children: "#2"
-          }), /* @__PURE__ */ jsx("div", {
-            className: "relative w-10/12",
-            children: /* @__PURE__ */ jsxs("div", {
-              className: "px-6",
-              children: [/* @__PURE__ */ jsx("h5", {
-                className: "flex text-xl md:text-2xl lg:text-3xl font-semibold",
-                children: "Risk of Virus Transmission"
-              }), /* @__PURE__ */ jsxs("div", {
-                className: "flex flex-col items-center justify-center mt-6",
-                children: [/* @__PURE__ */ jsx("p", {
-                  className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                  children: "The primary concern was the risk of virus transmission through surface contact, particularly the seats that were used by multiple individuals throughout the day."
-                }), /* @__PURE__ */ jsx("div", {
-                  className: "pl-4",
-                  children: /* @__PURE__ */ jsx("img", {
-                    width: 515,
-                    height: 390,
-                    loading: "lazy",
-                    src: "/Images/edisu/group_10-webp.webp",
-                    alt: "card pattern",
-                    className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                  })
-                })]
-              })]
-            })
-          })]
-        }), /* @__PURE__ */ jsxs("div", {
-          className: "flex w-full py-6 text-left rounded-lg lg:w-1/3 md:mt-16",
-          children: [/* @__PURE__ */ jsx("div", {
-            className: "bg-edisu-primary w-12 h-10 text-center text-white text-2xl lg:text-4xl font-semibold",
-            children: "#3"
-          }), /* @__PURE__ */ jsx("div", {
-            className: "relative w-10/12",
-            children: /* @__PURE__ */ jsxs("div", {
-              className: "px-6",
-              children: [/* @__PURE__ */ jsx("h5", {
-                className: "flex text-xl md:text-2xl lg:text-3xl font-semibold",
-                children: "Disinfection and Sanitization"
-              }), /* @__PURE__ */ jsxs("div", {
-                className: "flex flex-col items-center justify-center mt-6",
-                children: [/* @__PURE__ */ jsx("p", {
-                  className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                  children: "Given the nature of the virus's spread, it was crucial to implement a rigorous disinfection and sanitization protocol to mitigate the risk of COVID-19 transmission."
-                }), /* @__PURE__ */ jsx("div", {
-                  className: "pl-4",
-                  children: /* @__PURE__ */ jsx("img", {
-                    width: 515,
-                    height: 390,
-                    loading: "lazy",
-                    src: "/Images/edisu/group_10-webp.webp",
-                    alt: "card pattern",
-                    className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                  })
-                })]
-              })]
-            })
-          })]
-        })]
-      })]
-    }), /* @__PURE__ */ jsx("div", {
-      className: "w-11/12 absolute top-8 left-2/5 z-10",
-      children: /* @__PURE__ */ jsx("img", {
-        width: 1816,
-        height: 959,
-        src: "/Images/edisu/section_3_bg-webp.webp",
-        alt: "",
-        className: "invisible 2xl:visible"
-      })
-    })]
-  });
-}
-function Challenges() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "solutions",
-    className: "pt-16 z-20 bg-edisu-light relative",
-    children: [/* @__PURE__ */ jsxs("div", {
-      className: "relative xl:container xl:mx-auto flex flex-col justify-between gap-8 lg:gap-0 lg:flex-row lg:mb-0 px-0 lg:pl-20 z-30",
-      children: [/* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center w-11/12 mx-auto",
-        children: [/* @__PURE__ */ jsx("h1", {
-          className: "flex text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:w-11/12 lg:text-left",
-          children: "Challenges"
-        }), /* @__PURE__ */ jsxs("div", {
-          className: "flex flex-col lg:flex-row w-11/12 mx-auto",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "relative flex flex-col items-start space-y-10 lg:space-y-0 mt-8",
-            children: [/* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-edisu-primary_light w-6 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "H"
-                }), "igh Foot Traffic:"]
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Study halls are typically utilized by a large number of students and members of the public. This high foot traffic increases the risk of virus transmission and complicates efforts to maintain sanitized conditions."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-edisu-primary_light w-6 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "C"
-                }), "ontinuous Use:"]
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Study halls often operate for extended hours, with individuals coming and going throughout the day. This continuous use necessitates a rapid yet effective sanitization process between bookings or uses, which can be logistically challenging and resource-intensive."
-                  })
-                })
-              })]
-            })]
-          }), /* @__PURE__ */ jsx("div", {
-            className: "relative flex items-start justify-end lg:flex-row mt-8",
-            children: /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-edisu-primary_light w-6 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "M"
-                }), "onitoring and Enforcement:"]
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Establishing a system for monitoring the effectiveness of the sanitization measures and enforcing compliance with safety protocols was essential for preventing virus transmission. This required additional administrative effort and potentially the development of new policies and procedures."
-                  })
-                })
-              })]
-            })
-          })]
-        }), /* @__PURE__ */ jsx("div", {
-          className: "w-1/3 h-auto absolute top-20 left-1/4 z-10",
-          children: /* @__PURE__ */ jsx("img", {
-            width: 285,
-            height: 62,
-            src: "/Images/edisu/group_1-webp.webp",
-            alt: "",
-            className: "invisible 2xl:visible"
-          })
-        }), /* @__PURE__ */ jsx("div", {
-          className: "w-1/3 h-auto absolute top-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/5 z-10",
-          children: /* @__PURE__ */ jsx("img", {
-            width: 234,
-            height: 86,
-            src: "/Images/edisu/group_2-webp.webp",
-            alt: "",
-            className: "invisible 2xl:visible"
-          })
-        })]
-      }), /* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "invisible relative lg:mx-0 lg:mb-0 w-7/12 lg:-w-1/2 xl:w-2/5 xlxl:w-1/2 mx-auto",
-        children: /* @__PURE__ */ jsx("img", {
-          width: 621,
-          height: 724,
-          loading: "lazy",
-          src: "/Images/edisu/springs-webp.webp",
-          alt: "springs",
-          className: "w-full relative z-10 overflow-x-visible"
-        })
-      })]
-    }), /* @__PURE__ */ jsx("div", {
-      className: "absolute bottom-0 md:top-1/12 right-0 w-7/12 lg:w-2/5 2xl:w-1/4 z-10",
-      children: /* @__PURE__ */ jsx("img", {
-        width: 621,
-        height: 724,
-        loading: "lazy",
-        src: "/Images/edisu/springs-webp.webp",
-        alt: "springs",
-        className: "overflow-x-visible w-full"
-      })
-    })]
-  });
-}
-function SolutionSection$2() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "solutions",
-    className: "relative pt-16 z-20 overflow-hidden",
-    children: [/* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col-reverse justify-between p-6 gap-8 lg:gap-0 lg:flex-row lg:mb-0 relative z-20",
-      children: /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "w-full mx-auto flex flex-col justify-center gap-4 px-6",
-        children: [/* @__PURE__ */ jsxs("div", {
-          className: "w-full relative flex flex-col justify-center gap-4 mb-6",
-          children: [/* @__PURE__ */ jsx("div", {
-            className: "outlined_edisu_text text-center w-full z-0 font-bold text-5xl md:text-7xl lg:text-9xl lg:font-black",
-            children: "Solution"
-          }), /* @__PURE__ */ jsx("div", {
-            className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-3xl md:text-4xl lg:text-5xl font-bold text-center z-20",
-            children: "Solution Proposed by Astute Softwares"
-          })]
-        }), /* @__PURE__ */ jsx("p", {
-          className: "w-full lg:w-11/12 text-xl md:text-2xl font-normal text-center lg:mt-0 lg:mx-0",
-          children: "To address the challenges associated with disinfecting and sanitizing seats in study halls during the COVID-19 pandemic, Astute Softwares devised a comprehensive digital solution aimed at minimizing physical contact, ensuring proper sanitization between uses, and enhancing the overall management of study hall bookings. This solution consisted of developing a mobile application for students and a web portal for study hall operators, alongside an innovative approach to handling book loans. Here’s how the solution was structured:"
-        })]
-      })
-    }), /* @__PURE__ */ jsx("div", {
-      className: "w-1/3 h-auto absolute inset-y-0 right-0 z-10",
-      children: /* @__PURE__ */ jsx("img", {
-        width: 598,
-        height: 587,
-        src: "/Images/edisu/section_4-webp.webp",
-        alt: "",
-        className: "invisible 2xl:visible xlxl:invisible"
-      })
-    })]
-  });
-}
-function MobileAppSection() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "solutions",
-    className: "pt-16 z-20 relative",
-    children: [/* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col-reverse justify-between p-6 gap-8 lg:gap-0 lg:flex-row lg:mb-0",
-      children: /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "w-full mx-auto flex flex-col justify-center gap-4 px-6",
-        children: [/* @__PURE__ */ jsxs("div", {
-          className: "w-full relative flex flex-col justify-center gap-4 mb-6",
-          children: [/* @__PURE__ */ jsx("div", {
-            className: "outlined_edisu_text text-center w-full z-0 font-bold text-5xl md:text-7xl lg:text-9xl lg:font-black",
-            children: "Application"
-          }), /* @__PURE__ */ jsx("div", {
-            className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-3xl md:text-4xl lg:text-5xl font-bold text-center z-20",
-            children: "Mobile Application for Students"
-          })]
-        }), /* @__PURE__ */ jsx("p", {
-          className: "w-full lg:w-11/12 text-xl md:text-2xl font-normal text-center lg:mt-0 lg:mx-0",
-          children: "The cornerstone of Astute Software's solution was the development of a user-friendly mobile application tailored for students. This app served multiple purposes:"
-        })]
-      })
-    }), /* @__PURE__ */ jsxs("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-between gap-8 lg:gap-0 lg:flex-row lg:mb-0 px-0",
-      children: [/* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center lg:pl-20 lg:w-4/6",
-        children: /* @__PURE__ */ jsxs("div", {
-          className: "w-11/12 mx-auto flex flex-col",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "relative flex flex-col lg:flex-row items-start space-y-10 lg:space-y-0 mt-8",
-            children: [/* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-edisu-primary_light w-6 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "B"
-                }), "ooking Management:"]
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Students could view the availability of seats in real-time and book specific seats at preferred times. This ensured that study hall usage was spread evenly, avoiding overcrowding and facilitating effective sanitization between bookings."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-edisu-primary_light w-6 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "F"
-                }), "lexible Study Hall Selection:"]
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "The app allowed students to choose from different study halls, providing flexibility and convenience in selecting a location that met their needs or preferences.."
-                  })
-                })
-              })]
-            })]
-          }), /* @__PURE__ */ jsxs("div", {
-            className: "relative flex flex-col lg:flex-row items-start space-y-10 lg:space-y-0 mt-8",
-            children: [/* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-edisu-primary_light w-6 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "T"
-                }), "ime Slot Selection:"]
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "By enabling students to book specific time slots, the app ensured that the flow of individuals in and out of study halls was controlled and predictable, which was crucial for maintaining social distancing guidelines and allowing sufficient time for seat sanitization."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-edisu-primary_light w-6 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "B"
-                }), "ook Loan Service:"]
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "An innovative feature of the app was its integration with the study hall's book loan service. Students could request books through the app, and library operators would prepare these for pickup, minimizing physical browsing and contact."
-                  })
-                })
-              })]
-            })]
-          })]
-        })
-      }), /* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "invisible relative mx-auto lg:mx-0 lg:mb-0 w-9/12 lg:w-2/6",
-        children: /* @__PURE__ */ jsx("img", {
-          width: 643,
-          height: 872,
-          loading: "lazy",
-          src: "/Images/edisu/section_5-webp.webp",
-          alt: "chats",
-          className: "relative z-10 overflow-x-visible"
-        })
-      })]
-    }), /* @__PURE__ */ jsx("div", {
-      className: "absolute bottom-0 md:top-1/12 right-0 w-9/12 lg:w-2/6 xlxl:w-1/4 z-10",
-      children: /* @__PURE__ */ jsx("img", {
-        width: 643,
-        height: 872,
-        loading: "lazy",
-        src: "/Images/edisu/section_5-webp.webp",
-        alt: "springs",
-        className: "overflow-x-visible w-full"
-      })
-    })]
-  });
-}
-function WebPortalSection() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "solutions",
-    className: "pt-16 z-20 bg-edisu-light relative",
-    children: [/* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col-reverse justify-between p-6 gap-8 lg:gap-0 lg:flex-row lg:mb-0",
-      children: /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "w-full mx-auto flex flex-col justify-center gap-4 px-6",
-        children: [/* @__PURE__ */ jsxs("div", {
-          className: "w-full lg:w-11/12  relative flex flex-col justify-center gap-4",
-          children: [/* @__PURE__ */ jsx("div", {
-            className: "outlined_edisu_text text-center w-full z-0 font-bold text-5xl md:text-7xl lg:text-9xl lg:font-black",
-            children: "Web Portal"
-          }), /* @__PURE__ */ jsx("div", {
-            className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-3xl md:text-4xl lg:text-5xl font-bold text-center z-20",
-            children: "Web Portal for Study Hall Operators"
-          })]
-        }), /* @__PURE__ */ jsx("p", {
-          className: "w-full lg:w-11/12 text-xl md:text-2xl font-normal text-center lg:mt-0 lg:mx-0",
-          children: "Parallel to the mobile application, Astute Softwares developed a web portal for study hall operators. This platform facilitated:"
-        })]
-      })
-    }), /* @__PURE__ */ jsxs("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-center gap-8 lg:gap-0 lg:flex-row lg:mb-0 px-0",
-      children: [/* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center lg:pl-20 lg:w-4/6",
-        children: /* @__PURE__ */ jsx("div", {
-          className: "w-11/12 mx-auto flex flex-col",
-          children: /* @__PURE__ */ jsxs("div", {
-            className: "relative flex flex-col lg:flex-row items-start space-y-10 lg:space-y-0 mt-8",
-            children: [/* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex text-xl md:text-2xl font-bold lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-edisu-primary_light w-6 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "B"
-                }), "ooking Verification and Management:"]
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Operators could easily verify bookings, monitor occupancy levels, and ensure that the sanitization schedule was aligned with booking slots, thus maintaining a safe environment for all users."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-edisu-primary_light w-6 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "S"
-                }), "anitization Tracking:"]
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "The portal provided a feature to track and verify the sanitization of seats between uses, ensuring compliance with health guidelines and building trust among the users."
-                  })
-                })
-              })]
-            })]
-          })
-        })
-      }), /* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "invisible relative mx-auto lg:mx-0 lg:mb-0 lg:w-2/6",
-        children: /* @__PURE__ */ jsx("img", {
-          width: 667,
-          height: 567,
-          loading: "lazy",
-          src: "/Images/edisu/section_6-webp.webp",
-          alt: "chats",
-          className: "relative z-10 overflow-x-visible"
-        })
-      })]
-    }), /* @__PURE__ */ jsx("div", {
-      className: "absolute bottom-0 md:top-1/12 right-0 w-9/12 lg:w-2/6 xlxl:w-1/4 z-10",
-      children: /* @__PURE__ */ jsx("img", {
-        width: 667,
-        height: 567,
-        loading: "lazy",
-        src: "/Images/edisu/section_6-webp.webp",
-        alt: "springs",
-        className: "overflow-x-visible w-full"
-      })
-    })]
-  });
-}
-function AlternativeSection() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "solutions",
-    className: "pt-16 z-20 bg-edisu-light",
-    children: [/* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-center gap-8 lg:gap-0 lg:flex-row lg:mb-0 px-0",
-      children: /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "w-full flex flex-col justify-center gap-4 px-6",
-        children: [/* @__PURE__ */ jsxs("div", {
-          className: "w-full relative flex flex-col justify-center gap-4 mb-6",
-          children: [/* @__PURE__ */ jsx("div", {
-            className: "outlined_edisu_text text-center w-full z-0 font-bold text-5xl md:text-7xl lg:text-9xl lg:font-black",
-            children: "Alternative"
-          }), /* @__PURE__ */ jsx("div", {
-            className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-3xl md:text-4xl lg:text-5xl font-bold text-center z-20",
-            children: "Alternative to Digital Booking"
-          })]
-        }), /* @__PURE__ */ jsx("p", {
-          className: "w-full lg:w-11/12 text-xl md:text-2xl font-normal text-center lg:mt-0 lg:mx-0",
-          children: "Recognizing that not all students might have access to the mobile app or prefer using it, Astute Softwares also proposed a manual alternative:"
-        })]
-      })
-    }), /* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-center gap-8 lg:gap-0 lg:flex-row lg:mb-0 px-0",
-      children: /* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center w-11/12",
-        children: /* @__PURE__ */ jsx("div", {
-          className: "w-11/12 mx-auto flex flex-col",
-          children: /* @__PURE__ */ jsx("div", {
-            className: "relative flex flex-col items-start space-y-10 lg:space-y-0 mt-8",
-            children: /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col justify-center items-center w-full rounded-lg",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex justify-center items-center text-xl md:text-2xl font-bold lg:w-11/12",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-edisu-primary_light w-6 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "I"
-                }), "n-Person Inquiry:"]
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 pb-20 text-center",
-                    children: "Students had the option to approach study hall administrators directly to inquire about available slots. This ensured inclusivity, allowing those without access to the app or those preferring personal interaction to still make use of study halls safely."
-                  })
-                })
-              })]
-            })
-          })
-        })
-      })
-    })]
-  });
-}
-function SerivceSection() {
-  return /* @__PURE__ */ jsx("section", {
-    id: "solutions",
-    className: "pt-16 z-20",
-    children: /* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-center gap-8 lg:gap-0 lg:flex-row lg:mb-0",
-      children: /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "w-full flex flex-col justify-center gap-4 px-6",
-        children: [/* @__PURE__ */ jsxs("div", {
-          className: "w-full relative flex flex-col justify-center gap-4 mb-6",
-          children: [/* @__PURE__ */ jsx("div", {
-            className: "outlined_edisu_text text-center w-full z-0 font-bold text-5xl md:text-7xl lg:text-9xl lg:font-black",
-            children: "Service"
-          }), /* @__PURE__ */ jsx("div", {
-            className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-3xl md:text-4xl lg:text-5xl font-bold text-center z-20",
-            children: "Book Booking Service Integration"
-          })]
-        }), /* @__PURE__ */ jsx("p", {
-          className: "w-full lg:w-11/12 text-xl md:text-2xl font-normal text-center lg:mt-0 lg:mx-0",
-          children: "The integration of a book booking service within the mobile app represented a forward-thinking approach to reducing physical contact. This feature not only facilitated academic research by making library resources more accessible but also contributed to the overall safety strategy by minimizing the handling of books and reducing students' need to spend extended periods in shared spaces."
-        })]
-      })
+      children: [/* @__PURE__ */ jsx(HeroSection, {}), /* @__PURE__ */ jsx(MostSearchedSection, {}), /* @__PURE__ */ jsx(SolutionSection, {}), /* @__PURE__ */ jsx(TechSection, {}), /* @__PURE__ */ jsx(ReviewSection, {}), /* @__PURE__ */ jsx(TidioChat, {})]
     })
   });
 }
-function ResultSection$2() {
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx("section", {
-      id: "result",
-      className: "pt-16 z-20 overflow-hidden",
-      children: /* @__PURE__ */ jsxs("div", {
-        className: "xl:container xl:mx-auto flex flex-col justify-center gap-8 lg:gap-0 lg:flex-row lg:mb-0 px-0",
-        children: [/* @__PURE__ */ jsx("div", {
-          "data-aos": "fade-right",
-          "data-aos-duration": "1000",
-          className: "relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2",
-          children: /* @__PURE__ */ jsx("img", {
-            width: 1021,
-            height: 620,
-            loading: "lazy",
-            src: "/Images/edisu/section_7-webp.webp",
-            alt: "chats",
-            className: "relative z-10 overflow-x-visible"
-          })
-        }), /* @__PURE__ */ jsxs("div", {
-          "data-aos": "fade-left",
-          "data-aos-duration": "1000",
-          className: "flex flex-col justify-center gap-4 px-6 pb-16 lg:pl-20 lg:w-1/2",
-          children: [/* @__PURE__ */ jsxs("h1", {
-            className: "flex text-3xl md:text-4xl lg:text-5xl font-bold text-left lg:w-11/12 lg:text-left",
-            children: [/* @__PURE__ */ jsx("span", {
-              className: "bg-edisu-primary w-11 h-12 lg:w-16 text-3xl md:text-4xl lg:text-5xl font-bold text-right",
-              children: "R"
-            }), "esults and Impact of", /* @__PURE__ */ jsx("br", {
-              className: "invisible lg:visible"
-            }), " Astute's Digital Solution"]
-          }), /* @__PURE__ */ jsx("p", {
-            className: "w-11/12 mx-auto text-xl lg:text-2xl font-normal text-left lg:mt-0 lg:mx-0",
-            children: "During the COVID-19 pandemic, public health and safety became big concerns for governments worldwide. In Italy, one of the countries hardest hit by the pandemic, ensuring the safety of public spaces, especially educational facilities, became a critical issue. Study halls, used by students and the public for studying and academic activities, posed a particular challenge. These spaces are characterized by high foot traffic and shared use of facilities, making them potential hotspots for virus transmission."
-          })]
-        })]
-      })
-    }), /* @__PURE__ */ jsxs("section", {
-      id: "result",
-      className: "relative pt-16 z-20 bg-edisu-light overflow-hidden",
-      children: [/* @__PURE__ */ jsxs("div", {
-        className: "relative xl:container xl:mx-auto flex flex-col justify-between p-6 gap-0 lg:mb-0 lg:pl-20 z-30",
-        children: [/* @__PURE__ */ jsxs("div", {
-          "data-aos": "fade-up",
-          "data-aos-duration": "1000",
-          className: "relative flex flex-col items-start lg:justify-around space-y-10 lg:space-y-0 lg:space-x-12 lg:flex-row mt-8 z-20",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex w-full py-6 text-left rounded-lg lg:w-2/5",
-            children: [/* @__PURE__ */ jsx("div", {
-              className: "bg-edisu-primary w-12 h-10 text-center text-white text-2xl lg:text-4xl font-semibold",
-              children: "#1"
-            }), /* @__PURE__ */ jsx("div", {
-              className: "relative w-10/12",
-              children: /* @__PURE__ */ jsxs("div", {
-                className: "px-6",
-                children: [/* @__PURE__ */ jsx("h5", {
-                  className: "flex text-xl md:text-2xl lg:text-3xl font-semibold",
-                  children: "Adoption by the Italian Ministry of Education"
-                }), /* @__PURE__ */ jsxs("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: [/* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Astute Softwares's solution gained significant recognition for its effectiveness and utility, leading to its adoption by the Italian Ministry of Education as the official method for booking study halls across Italy. This endorsement underscores the system's reliability, user-friendliness, and alignment with public health guidelines, making it a pivotal tool in the nationwide effort to maintain educational continuity and safety during the pandemic"
-                  }), /* @__PURE__ */ jsx("div", {
-                    className: "pl-4",
-                    children: /* @__PURE__ */ jsx("img", {
-                      width: 515,
-                      height: 390,
-                      loading: "lazy",
-                      src: "/Images/edisu/group_10-webp.webp",
-                      alt: "card pattern",
-                      className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                    })
-                  })]
-                })]
-              })
-            })]
-          }), /* @__PURE__ */ jsxs("div", {
-            className: "flex w-full py-6 text-left rounded-lg lg:w-2/5 md:mt-8",
-            children: [/* @__PURE__ */ jsx("div", {
-              className: "bg-edisu-primary w-12 h-10 text-center text-white text-2xl lg:text-4xl font-semibold",
-              children: "#2"
-            }), /* @__PURE__ */ jsx("div", {
-              className: "relative w-10/12",
-              children: /* @__PURE__ */ jsxs("div", {
-                className: "px-6",
-                children: [/* @__PURE__ */ jsx("h5", {
-                  className: "flex text-xl md:text-2xl lg:text-3xl font-semibold",
-                  children: "User Engagement and Popularity"
-                }), /* @__PURE__ */ jsxs("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: [/* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "The mobile application saw a rapid uptake among students, reaching an impressive milestone of more than 100,000 unique users. This wide adoption speaks volumes about the app's usability, relevance, and effectiveness in meeting the needs of its target audience. Moreover, the platform maintained a high level of user engagement, with over 50,000 active"
-                  }), /* @__PURE__ */ jsx("div", {
-                    className: "pl-4",
-                    children: /* @__PURE__ */ jsx("img", {
-                      width: 515,
-                      height: 390,
-                      loading: "lazy",
-                      src: "/Images/edisu/group_10-webp.webp",
-                      alt: "card pattern",
-                      className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                    })
-                  })]
-                })]
-              })
-            })]
-          })]
-        }), /* @__PURE__ */ jsxs("div", {
-          "data-aos": "fade-up",
-          "data-aos-duration": "1000",
-          className: "relative flex flex-col items-center justify-center space-y-10 lg:space-y-0 lg:space-x-7 lg:flex-row lg:mt-8",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex w-full py-6 text-left rounded-lg lg:w-2/5 md:mt-16",
-            children: [/* @__PURE__ */ jsx("div", {
-              className: "bg-edisu-primary w-12 h-10 text-center text-white text-2xl lg:text-4xl font-semibold",
-              children: "#3"
-            }), /* @__PURE__ */ jsx("div", {
-              className: "relative w-10/12",
-              children: /* @__PURE__ */ jsxs("div", {
-                className: "px-6",
-                children: [/* @__PURE__ */ jsx("h5", {
-                  className: "flex text-xl md:text-2xl lg:text-3xl font-semibold",
-                  children: "Sustained Use Beyond the Pandemic"
-                }), /* @__PURE__ */ jsxs("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: [/* @__PURE__ */ jsx("p", {
-                    className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Perhaps one of the most telling indicators of the solution's success is its sustained use beyond the COVID-19 pandemic. The continued reliance on this digital booking system by students and study hall operators alike points to its enduring value, not just as a response to a public health crisis but as a transformative tool for educational infrastructure."
-                  }), /* @__PURE__ */ jsx("div", {
-                    className: "pl-4",
-                    children: /* @__PURE__ */ jsx("img", {
-                      width: 515,
-                      height: 390,
-                      loading: "lazy",
-                      src: "/Images/edisu/group_10-webp.webp",
-                      alt: "card pattern",
-                      className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                    })
-                  })]
-                })]
-              })
-            })]
-          }), /* @__PURE__ */ jsx("div", {
-            className: "flex w-full py-6 text-left rounded-lg lg:w-1/3 md:mt-16",
-            children: /* @__PURE__ */ jsx("div", {
-              className: "relative w-full"
-            })
-          })]
-        }), /* @__PURE__ */ jsx("div", {
-          className: "w-1/3 h-auto absolute top-1/4 left-1/2 transform -translate-x-1/4 -translate-y-1/5 z-10",
-          children: /* @__PURE__ */ jsx("img", {
-            width: 208,
-            height: 348,
-            src: "/Images/edisu/group_3-webp.webp",
-            alt: "",
-            className: "invisible 2xl:visible"
-          })
-        })]
-      }), /* @__PURE__ */ jsx("div", {
-        className: "w-1/3 h-auto absolute bottom-0 right-0 z-10",
-        children: /* @__PURE__ */ jsx("img", {
-          width: 714,
-          height: 684,
-          src: "/Images/edisu/section_8-webp.webp",
-          alt: "",
-          className: "invisible 2xl:visible xlxl:invisible"
-        })
-      })]
-    })]
-  });
-}
-const EdisuMain = () => {
-  return /* @__PURE__ */ jsxs("div", {
-    className: "App overflow-x-hidden",
-    children: [/* @__PURE__ */ jsx(HeroSection$2, {}), /* @__PURE__ */ jsx(AboutSection$2, {}), /* @__PURE__ */ jsx(ProblemStatementSection$2, {}), /* @__PURE__ */ jsx(Challenges, {}), /* @__PURE__ */ jsx(SolutionSection$2, {}), /* @__PURE__ */ jsx(MobileAppSection, {}), /* @__PURE__ */ jsx(WebPortalSection, {}), /* @__PURE__ */ jsx(AlternativeSection, {}), /* @__PURE__ */ jsx(SerivceSection, {}), /* @__PURE__ */ jsx(ResultSection$2, {})]
-  });
-};
-function HeroSection$1() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "hero",
-    className: "mt-16 lg:mt-24 z-20 relative",
-    children: [/* @__PURE__ */ jsxs("div", {
-      className: "xl:container xl:mx-auto flex flex-col lg:items-start xlxl:items-center lg:justify-center lg:flex-row-reverse justify-between pb-6 gap-0 lg:mb-0 pt-4",
-      children: [/* @__PURE__ */ jsx("div", {
-        className: "invisible relative mx-auto lg:mx-0 lg:mb-0 w-1/2 lg:w-2/5 xlxl:w-1/2 z-20",
-        children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
-          src: "/Images/pat-app/section_1-webp.webp",
-          alt: "chats",
-          className: "overflow-x-visible w-full"
-        })
-      }), /* @__PURE__ */ jsxs("div", {
-        className: "flex flex-col items-center lg:items-start mt-24 md:mt-0 lg:mt-12 pb-12 lg:my-0 justify-center gap-6 lg:pl-20 w-full lg:w-1/2 relative z-30",
-        children: [/* @__PURE__ */ jsxs("h5", {
-          className: "text-black lg:text-white font-extrabold lg:font-bold text-4xl md:text-5xl lg:text-6xl mb-12 md:mb-28",
-          children: ["Pat App ", /* @__PURE__ */ jsx("br", {
-            className: "hidden lg:block"
-          }), "Case Study"]
-        }), /* @__PURE__ */ jsx("div", {
-          className: "flex justify-center lg:justify-start items-center w-full",
-          children: /* @__PURE__ */ jsx("img", {
-            src: "/Images/pat-app/pat_logo-webp.webp",
-            alt: "app-logo",
-            className: "w-40 mb-2"
-          })
-        }), /* @__PURE__ */ jsx("p", {
-          className: "max-w-md font-normal text-xl mb-4",
-          children: "Design and Develop by"
-        }), /* @__PURE__ */ jsx("div", {
-          className: "flex justify-center lg:justify-start items-center w-full",
-          children: /* @__PURE__ */ jsx("img", {
-            src: "/Images/pat-app/astute_logo-webp.webp",
-            alt: "app-logo",
-            className: "w-40 mb-2"
-          })
-        })]
-      })]
-    }), /* @__PURE__ */ jsx("div", {
-      className: "invisible md:visible absolute top-0 right-0 w-1/2 z-20",
-      children: /* @__PURE__ */ jsx("img", {
-        loading: "lazy",
-        src: "/Images/pat-app/section_1-webp.webp",
-        alt: "chats",
-        className: "overflow-x-visible w-full"
-      })
-    }), /* @__PURE__ */ jsx("div", {
-      className: "absolute top-0 z-10 w-full",
-      children: /* @__PURE__ */ jsx("img", {
-        src: "/Images/pat-app/hero_bg-webp.webp",
-        alt: "hero_bg",
-        className: "w-full 2xl:h-3/5"
-      })
-    })]
-  });
-}
-function AboutSection$1() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "about",
-    className: "pt-16 z-20 relative overflow-hidden",
-    children: [/* @__PURE__ */ jsxs("div", {
-      className: "xl:container xl:mx-auto flex flex-col-reverse justify-center gap-8 lg:gap-0 lg:flex-row lg:mb-0 px-0",
-      children: [/* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "invisible relative lg:mx-0 lg:mb-0 w-7/12 lg:-w-1/2 xl:w-2/5 xlxl:w-1/2 mx-auto",
-        children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
-          src: "/Images/pat-app/section_2-webp.webp",
-          alt: "chats",
-          className: "relative z-10 overflow-x-visible"
-        })
-      }), /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center gap-4 px-6 pb-16 lg:pl-20 lg:w-1/2",
-        children: [/* @__PURE__ */ jsxs("h1", {
-          className: "flex text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:w-11/12 lg:text-left text-pat-dark",
-          children: [/* @__PURE__ */ jsx("span", {
-            className: "bg-pat-primary rounded-full w-14 h-14 text-3xl md:text-4xl lg:text-5xl font-bold text-right",
-            children: "A"
-          }), "bout Project"]
-        }), /* @__PURE__ */ jsx("p", {
-          className: "w-11/12 mx-auto text-xl lg:text-2xl font-normal text-left lg:mt-0 lg:mx-0 text-pat-dark",
-          children: "The PAT APP is a patient-centric solution designed to streamline the treatment journey for individuals undergoing medical care. This innovative application facilitates direct communication between patients and their healthcare providers through a user-friendly mobile platform."
-        })]
-      })]
-    }), /* @__PURE__ */ jsx("div", {
-      className: "absolute bottom-0 left-0 w-7/12 lg:w-2/5 2xl:w-1/3 z-20",
-      children: /* @__PURE__ */ jsx("img", {
-        loading: "lazy",
-        src: "/Images/pat-app/section_2-webp.webp",
-        alt: "chats",
-        className: "overflow-x-visible w-full"
-      })
-    })]
-  });
-}
-function ProblemStatementSection$1() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "problem-statement",
-    className: "pt-16 z-20 bg-pat-secondary overflow-hidden relative",
-    children: [/* @__PURE__ */ jsxs("div", {
-      className: "relative xl:container xl:mx-auto flex flex-col justify-between px-6 lg:pt-6 gap-0 lg:mb-0 lg:pl-20 z-20",
-      children: [/* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center gap-4 w-full",
-        children: /* @__PURE__ */ jsx("h1", {
-          className: "flex text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:w-11/12 lg:text-left",
-          children: "Problems Statement"
-        })
-      }), /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-up",
-        "data-aos-duration": "1000",
-        className: "relative flex flex-col flex-wrap justify-center space-y-2 lg:space-y-0 lg:space-x-0 lg:flex-row mt-8 lg:12",
-        children: [/* @__PURE__ */ jsxs("div", {
-          className: "flex flex-col w-full lg:pt-24 pt-6 pb-6 text-left rounded-lg lg:w-1/3",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex justify-start w-full",
-            children: [/* @__PURE__ */ jsx("div", {
-              className: "flex flex-shrink-0 justify-center items-center bg-pat-primary w-14 h-14 text-center text-white text-2xl lg:text-4xl font-semibold rounded-full",
-              children: "#1"
-            }), /* @__PURE__ */ jsx("div", {
-              className: "pl-6 pr-8",
-              children: /* @__PURE__ */ jsx("h5", {
-                className: "text-xl md:text-2xl lg:text-3xl font-semibold",
-                children: "Inconvenience of In-Person Visits"
-              })
-            })]
-          }), /* @__PURE__ */ jsx("div", {
-            className: "relative w-full px-2",
-            children: /* @__PURE__ */ jsx("div", {
-              className: "px-6",
-              children: /* @__PURE__ */ jsxs("div", {
-                className: "flex flex-col items-start justify-center mt-6",
-                children: [/* @__PURE__ */ jsx("p", {
-                  className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20 px-4",
-                  children: "Routine check-ups and follow-ups are time-consuming for both patients and doctors."
-                }), /* @__PURE__ */ jsx("div", {
-                  className: "pl-4",
-                  children: /* @__PURE__ */ jsx("img", {
-                    loading: "lazy",
-                    src: "/Images/edisu/group_10-webp.webp",
-                    alt: "card pattern",
-                    className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                  })
-                })]
-              })
-            })
-          })]
-        }), /* @__PURE__ */ jsxs("div", {
-          className: "flex flex-col w-full py-6 text-left rounded-lg lg:w-1/3 md:mt-8",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex justify-start w-full",
-            children: [/* @__PURE__ */ jsx("div", {
-              className: "flex flex-shrink-0 justify-center items-center bg-pat-primary w-14 h-14 text-center text-white text-2xl lg:text-4xl font-semibold rounded-full",
-              children: "#2"
-            }), /* @__PURE__ */ jsx("div", {
-              className: "px-6",
-              children: /* @__PURE__ */ jsx("h5", {
-                className: "text-xl md:text-2xl lg:text-3xl font-semibold",
-                children: "Inaccurate Symptom Tracking:"
-              })
-            })]
-          }), /* @__PURE__ */ jsx("div", {
-            className: "relative w-full px-2",
-            children: /* @__PURE__ */ jsx("div", {
-              className: "px-6",
-              children: /* @__PURE__ */ jsxs("div", {
-                className: "flex flex-col items-start justify-center mt-6",
-                children: [/* @__PURE__ */ jsx("p", {
-                  className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20 px-4",
-                  children: "Difficulty in recalling and communicating symptoms accurately can hinder diagnosis and treatment."
-                }), /* @__PURE__ */ jsx("div", {
-                  className: "pl-4",
-                  children: /* @__PURE__ */ jsx("img", {
-                    loading: "lazy",
-                    src: "/Images/edisu/group_10-webp.webp",
-                    alt: "card pattern",
-                    className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                  })
-                })]
-              })
-            })
-          })]
-        }), /* @__PURE__ */ jsxs("div", {
-          className: "flex flex-col w-full lg:pt-24 pt-6 pb-6 text-left rounded-lg lg:w-1/3 md:mt-16",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex justify-start w-full",
-            children: [/* @__PURE__ */ jsx("div", {
-              className: "flex flex-shrink-0 justify-center items-center bg-pat-primary w-14 h-14 text-center text-white text-2xl lg:text-4xl font-semibold rounded-full",
-              children: "#3"
-            }), /* @__PURE__ */ jsx("div", {
-              className: "px-6",
-              children: /* @__PURE__ */ jsx("h5", {
-                className: "text-xl md:text-2xl lg:text-3xl font-semibold",
-                children: "Medication Non-Adherence:"
-              })
-            })]
-          }), /* @__PURE__ */ jsx("div", {
-            className: "relative w-full px-2",
-            children: /* @__PURE__ */ jsx("div", {
-              className: "px-6",
-              children: /* @__PURE__ */ jsxs("div", {
-                className: "flex flex-col items-start justify-center mt-6",
-                children: [/* @__PURE__ */ jsx("p", {
-                  className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20 px-4",
-                  children: "Patients may forget to take medications or refill prescriptions, impacting treatment effectiveness."
-                }), /* @__PURE__ */ jsx("div", {
-                  className: "pl-4",
-                  children: /* @__PURE__ */ jsx("img", {
-                    loading: "lazy",
-                    src: "/Images/edisu/group_10-webp.webp",
-                    alt: "card pattern",
-                    className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                  })
-                })]
-              })
-            })
-          })]
-        }), /* @__PURE__ */ jsxs("div", {
-          className: "flex flex-col flex-shrink-0 w-full py-6 text-left rounded-lg lg:w-1/3 md:mt-16",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex justify-start w-full",
-            children: [/* @__PURE__ */ jsx("div", {
-              className: "flex flex-shrink-0 justify-center items-center bg-pat-primary w-14 h-14 text-center text-white text-2xl lg:text-4xl font-semibold rounded-full",
-              children: "#4"
-            }), /* @__PURE__ */ jsx("div", {
-              className: "px-6",
-              children: /* @__PURE__ */ jsx("h5", {
-                className: "text-xl md:text-2xl lg:text-3xl font-semibold",
-                children: "Inconvenience of In-Person Visits"
-              })
-            })]
-          }), /* @__PURE__ */ jsx("div", {
-            className: "relative w-full px-2",
-            children: /* @__PURE__ */ jsx("div", {
-              className: "px-6",
-              children: /* @__PURE__ */ jsxs("div", {
-                className: "flex flex-col items-start justify-center mt-6",
-                children: [/* @__PURE__ */ jsx("p", {
-                  className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20 px-4",
-                  children: "Routine check-ups and follow-ups are time-consuming for both patients and doctors."
-                }), /* @__PURE__ */ jsx("div", {
-                  className: "pl-4",
-                  children: /* @__PURE__ */ jsx("img", {
-                    loading: "lazy",
-                    src: "/Images/edisu/group_10-webp.webp",
-                    alt: "card pattern",
-                    className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                  })
-                })]
-              })
-            })
-          })]
-        })]
-      })]
-    }), /* @__PURE__ */ jsx("div", {
-      className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10",
-      children: /* @__PURE__ */ jsx("img", {
-        src: "/Images/pat-app/section_3_bg-webp.webp",
-        alt: "",
-        className: "visible"
-      })
-    })]
-  });
-}
-function SolutionSection$1() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "about",
-    className: "pt-16 z-20 relative bg-pat-secondary",
-    children: [/* @__PURE__ */ jsxs("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-center lg:flex-row lg:mb-0 px-0 pb-16",
-      children: [/* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center gap-4 px-6 lg:pl-20 lg:w-1/2",
-        children: [/* @__PURE__ */ jsx("h1", {
-          className: "flex text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:w-11/12 lg:text-left",
-          children: "Solution Proposed"
-        }), /* @__PURE__ */ jsx("p", {
-          className: "text-xl lg:text-2xl font-normal text-left lg:mt-0 lg:mx-0",
-          children: "Astute Softwares designed the PAT APP to solve the above mentioned challenges. The app makes it easier for patients and doctors to connect through virtual appointments, saving time and reducing unnecessary in-person visits. Patients can easily track their symptoms, giving doctors important information about their health. The app also sends medication reminders, helping patients stay on track with their treatment. It even includes tools for assessing conditions remotely. This means doctors can quickly change prescriptions when needed, ensuring patients get the best possible care."
-        })]
-      }), /* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "invisible relative lg:mx-0 lg:mb-0 w-7/12 lg:-w-1/2 xl:w-2/5 xlxl:w-1/2 mx-auto",
-        children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
-          src: "/Images/pat-app/section_3-webp.webp",
-          alt: "chats",
-          className: "relative z-10 overflow-x-visible"
-        })
-      })]
-    }), /* @__PURE__ */ jsx("div", {
-      className: "absolute bottom-0 md:top-1/12 right-0 w-7/12 lg:w-2/5 2xl:w-1/3 z-20",
-      children: /* @__PURE__ */ jsx("img", {
-        loading: "lazy",
-        src: "/Images/pat-app/section_3-webp.webp",
-        alt: "chats",
-        className: "overflow-x-visible w-full"
-      })
-    })]
-  });
-}
-function InnovationSection() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "solutions",
-    className: "pt-16 z-20",
-    children: [/* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col-reverse justify-between p-6 gap-8 lg:gap-0 lg:flex-row lg:mb-0",
-      children: /* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "w-full mx-auto flex flex-col justify-center gap-4 px-6",
-        children: /* @__PURE__ */ jsxs("div", {
-          className: "w-full relative flex flex-col justify-center gap-4 mb-6",
-          children: [/* @__PURE__ */ jsx("div", {
-            className: "outlined_edisu_text text-center w-full z-0 font-bold text-5xl md:text-7xl lg:text-9xl lg:font-black",
-            children: "Innovations"
-          }), /* @__PURE__ */ jsx("div", {
-            className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-3xl md:text-4xl lg:text-5xl font-bold text-center z-20",
-            children: "Key Features and Technological Innovations"
-          })]
-        })
-      })
-    }), /* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-between gap-8 lg:gap-0 lg:flex-row lg:mb-0 px-0",
-      children: /* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center lg:pl-20",
-        children: /* @__PURE__ */ jsxs("div", {
-          className: "w-11/12 mx-auto flex flex-col",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "relative flex flex-col lg:flex-row items-start space-y-10 lg:space-y-0 mt-8",
-            children: [/* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-pat-primary rounded-full w-8 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "V"
-                }), "irtual Doctor-"]
-              }), /* @__PURE__ */ jsx("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: "Patient Connectivity:"
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Enables seamless communication and virtual consultations, reducing the need for physical visits"
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-pat-primary rounded-full w-8 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "S"
-                }), "ymptom"]
-              }), /* @__PURE__ */ jsx("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: "Recording:"
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Allows patients to record and track their symptoms, offering health care providers a comprehensive health status overview."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-pat-primary rounded-full w-8 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "M"
-                }), "edicine"]
-              }), /* @__PURE__ */ jsx("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: "Reminders:"
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Features a built-in reminder system to promote medication adherence."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsx("div", {
-              className: "w-1/6 h-auto absolute z-10",
-              style: {
-                top: "0%",
-                left: "25%"
-              },
-              children: /* @__PURE__ */ jsx("img", {
-                src: "/Images/pat-app/connect_1-webp.webp",
-                alt: "",
-                className: "invisible 2xl:visible"
-              })
-            }), /* @__PURE__ */ jsx("div", {
-              className: "w-1/6 h-auto absolute z-10",
-              style: {
-                top: "0%",
-                left: "58%"
-              },
-              children: /* @__PURE__ */ jsx("img", {
-                src: "/Images/pat-app/connect_1-webp.webp",
-                alt: "",
-                className: "invisible 2xl:visible"
-              })
-            })]
-          }), /* @__PURE__ */ jsxs("div", {
-            className: "relative flex flex-col lg:flex-row items-start space-y-10 lg:space-y-0 mt-8",
-            children: [/* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-pat-primary rounded-full w-8 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "M"
-                }), "edicine Refill"]
-              }), /* @__PURE__ */ jsx("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: "Reminder:"
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Sends timely reminders for medicine refills, ensuring patients have continuous access to essential medications."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-pat-primary rounded-full w-8 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "T"
-                }), "remor"]
-              }), /* @__PURE__ */ jsx("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: "Assessments:"
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Allows patients to record and track their symptoms, offering health care providers a comprehensive health status overview."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-pat-primary rounded-full w-8 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "R"
-                }), "emote Prescription"]
-              }), /* @__PURE__ */ jsx("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: "Modification:"
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Features a built-in reminder system to promote medication adherence."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsx("div", {
-              className: "w-1/6 h-auto absolute z-10",
-              style: {
-                top: "0%",
-                left: "25%"
-              },
-              children: /* @__PURE__ */ jsx("img", {
-                src: "/Images/pat-app/connect_1-webp.webp",
-                alt: "",
-                className: "invisible 2xl:visible"
-              })
-            }), /* @__PURE__ */ jsx("div", {
-              className: "w-1/6 h-auto absolute z-10",
-              style: {
-                top: "0%",
-                left: "58%"
-              },
-              children: /* @__PURE__ */ jsx("img", {
-                src: "/Images/pat-app/connect_1-webp.webp",
-                alt: "",
-                className: "invisible 2xl:visible"
-              })
-            })]
-          })]
-        })
-      })
-    })]
-  });
-}
-function TechnologySection() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "solutions",
-    className: "pt-16 z-20",
-    children: [/* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col-reverse justify-between p-6 gap-8 lg:gap-0 lg:flex-row lg:mb-0",
-      children: /* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "w-full mx-auto flex flex-col justify-center gap-4 px-6",
-        children: /* @__PURE__ */ jsxs("div", {
-          className: "w-full relative flex flex-col justify-center gap-4 mb-6",
-          children: [/* @__PURE__ */ jsx("div", {
-            className: "outlined_edisu_text text-center w-full z-0 font-bold text-5xl md:text-7xl lg:text-9xl lg:font-black",
-            children: "Technology"
-          }), /* @__PURE__ */ jsx("div", {
-            className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-3xl md:text-4xl lg:text-5xl font-bold text-center z-20",
-            children: "Technology Specifications"
-          })]
-        })
-      })
-    }), /* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-between gap-8 lg:gap-0 lg:flex-row lg:mb-0 px-0",
-      children: /* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center lg:pl-20",
-        children: /* @__PURE__ */ jsx("div", {
-          className: "w-11/12 mx-auto flex flex-col",
-          children: /* @__PURE__ */ jsxs("div", {
-            className: "relative flex flex-col lg:flex-row items-start gap-y-10 lg:gap-y-0 mt-8",
-            children: [/* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12 lg:mt-16",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-pat-primary rounded-full w-8 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "C"
-                }), "ompatibility:"]
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Available on iOS, Android, and tablets, making it accessible to a wide user base."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12 lg:mt-16",
-              children: [/* @__PURE__ */ jsxs("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "bg-pat-primary rounded-full w-8 lg:w-8 h-8 text-xl md:text-2xl font-bold text-right",
-                  children: "D"
-                }), "evelopment:"]
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Utilizes Swift for iOS and native development for Android to ensure high performance and a quality user experience."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsx("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: /* @__PURE__ */ jsx("div", {
-                className: "relative lg:mx-0 lg:mb-0 w-1/2 lg:w-full mx-auto",
-                children: /* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  src: "/Images/pat-app/section_4-webp.webp",
-                  alt: "chats",
-                  className: "relative z-10 overflow-x-visible"
-                })
-              })
-            })]
-          })
-        })
-      })
-    })]
-  });
-}
-function ResultSection$1() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "about",
-    className: "pt-16 z-20 relative",
-    children: [/* @__PURE__ */ jsxs("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-center lg:flex-row lg:mb-0 px-0 pb-16",
-      children: [/* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "relative lg:mx-0 lg:mb-0 w-11/12 lg:w-1/2 mx-auto",
-        children: [/* @__PURE__ */ jsx("h1", {
-          className: "flex text-pat-dark text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:w-11/12 lg:text-left mb-16",
-          children: "Results"
-        }), /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
-          src: "/Images/pat-app/results-webp.webp",
-          alt: "chats",
-          className: "relative z-10 overflow-x-visible"
-        })]
-      }), /* @__PURE__ */ jsx("div", {
-        className: "invisible relative lg:mx-0 lg:mb-0 w-7/12 lg:w-2/5 xlxl:w-1/2 mx-auto",
-        children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
-          src: "/Images/pat-app/section_3-webp.webp",
-          alt: "chats",
-          className: "relative z-10 overflow-x-visible"
-        })
-      })]
-    }), /* @__PURE__ */ jsx("div", {
-      className: "absolute bottom-0 md:top-0 right-0 w-7/12 lg:w-2/5 2xl:w-1/3 z-20",
-      children: /* @__PURE__ */ jsx("img", {
-        loading: "lazy",
-        src: "/Images/pat-app/section_5-webp.webp",
-        alt: "chats",
-        className: "overflow-x-visible w-full"
-      })
-    })]
-  });
-}
-function TestimonialSection() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "testimonials",
-    className: "pt-16 pb-16 z-20 relative bg-pat-secondary",
-    children: [/* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-center lg:flex-row lg:mb-0 px-0 pb-16",
-      children: /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center gap-4 px-6 w-full lg:px-20",
-        children: [/* @__PURE__ */ jsx("h1", {
-          className: "flex text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:w-11/12 lg:text-left",
-          children: "Doctor Testimonials"
-        }), /* @__PURE__ */ jsxs("div", {
-          className: "grid grid-cols-1 md:grid-cols-3 items-start gap-12 lg:gap-0 mt-8",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex flex-col lg:flex-row items-center space-x-3",
-            children: [/* @__PURE__ */ jsx("img", {
-              src: "/Images/pat-app/user-webp.webp",
-              alt: "user",
-              className: "w-24 h-24"
-            }), /* @__PURE__ */ jsxs("div", {
-              children: [/* @__PURE__ */ jsxs("p", {
-                className: "font-light text-xl",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "font-extrabold text-7xl",
-                  children: "“"
-                }), "For patients with chronic conditions, the PAT APP's tremor assessment is invaluable. It lets us track progression conveniently, making treatment adjustments more precise and timely."]
-              }), /* @__PURE__ */ jsx("p", {
-                className: "font-semibold text-base mt-4",
-                children: "- Dr. Michael Patel, Neurologist"
-              })]
-            })]
-          }), /* @__PURE__ */ jsxs("div", {
-            className: "flex flex-col lg:flex-row items-center space-x-3 mt-0 lg:mt-32",
-            children: [/* @__PURE__ */ jsx("img", {
-              src: "/Images/pat-app/user-webp.webp",
-              alt: "user",
-              className: "w-24 h-24"
-            }), /* @__PURE__ */ jsxs("div", {
-              children: [/* @__PURE__ */ jsxs("p", {
-                className: "font-light text-xl",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "font-extrabold text-7xl",
-                  children: "“"
-                }), "The increased communication facilitated by the PAT APP has strengthened my relationships with patients. Their improved medication adherence is also a significant benefit."]
-              }), /* @__PURE__ */ jsx("p", {
-                className: "font-semibold text-base mt-4",
-                children: "- Dr. Michael Patel, Neurologist"
-              })]
-            })]
-          }), /* @__PURE__ */ jsxs("div", {
-            className: "flex flex-col lg:flex-row items-center space-x-3",
-            children: [/* @__PURE__ */ jsx("img", {
-              src: "/Images/pat-app/user-webp.webp",
-              alt: "user",
-              className: "w-24 h-24"
-            }), /* @__PURE__ */ jsxs("div", {
-              children: [/* @__PURE__ */ jsxs("p", {
-                className: "font-light text-xl",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "font-extrabold text-7xl",
-                  children: "“"
-                }), "The PAT APP has streamlined my practice. I can monitor patient symptoms remotely and make necessary prescription changes without requiring frequent office visits. It's a fantastic tool for improving patient outcomes."]
-              }), /* @__PURE__ */ jsx("p", {
-                className: "font-semibold text-base mt-4",
-                children: "- Dr. Michael Patel, Neurologist"
-              })]
-            })]
-          })]
-        })]
-      })
-    }), /* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-center lg:flex-row lg:mb-0 px-0 pb-16",
-      children: /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center gap-4 px-6 w-full lg:px-20",
-        children: [/* @__PURE__ */ jsx("h1", {
-          className: "flex text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:w-11/12 lg:text-left",
-          children: "Patient Testimonials"
-        }), /* @__PURE__ */ jsxs("div", {
-          className: "grid grid-cols-1 md:grid-cols-3 items-start gap-12 lg:gap-0 mt-8",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex flex-col lg:flex-row items-center space-x-3",
-            children: [/* @__PURE__ */ jsx("img", {
-              src: "/Images/pat-app/user-webp.webp",
-              alt: "user",
-              className: "w-24 h-24"
-            }), /* @__PURE__ */ jsxs("div", {
-              children: [/* @__PURE__ */ jsxs("p", {
-                className: "font-light text-xl",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "font-extrabold text-7xl",
-                  children: "“"
-                }), "For patients with chronic conditions, the PAT APP's tremor assessment is invaluable. It lets us track progression conveniently, making treatment adjustments more precise and timely."]
-              }), /* @__PURE__ */ jsx("p", {
-                className: "font-semibold text-base mt-4",
-                children: "- Dr. Michael Patel, Neurologist"
-              })]
-            })]
-          }), /* @__PURE__ */ jsxs("div", {
-            className: "flex flex-col lg:flex-row items-center space-x-3 mt-0 lg:mt-32",
-            children: [/* @__PURE__ */ jsx("img", {
-              src: "/Images/pat-app/user-webp.webp",
-              alt: "user",
-              className: "w-24 h-24"
-            }), /* @__PURE__ */ jsxs("div", {
-              children: [/* @__PURE__ */ jsxs("p", {
-                className: "font-light text-xl",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "font-extrabold text-7xl",
-                  children: "“"
-                }), "The increased communication facilitated by the PAT APP has strengthened my relationships with patients. Their improved medication adherence is also a significant benefit."]
-              }), /* @__PURE__ */ jsx("p", {
-                className: "font-semibold text-base mt-4",
-                children: "- Dr. Michael Patel, Neurologist"
-              })]
-            })]
-          }), /* @__PURE__ */ jsxs("div", {
-            className: "flex flex-col lg:flex-row items-center space-x-3",
-            children: [/* @__PURE__ */ jsx("img", {
-              src: "/Images/pat-app/user-webp.webp",
-              alt: "user",
-              className: "w-24 h-24"
-            }), /* @__PURE__ */ jsxs("div", {
-              children: [/* @__PURE__ */ jsxs("p", {
-                className: "font-light text-xl",
-                children: [/* @__PURE__ */ jsx("span", {
-                  className: "font-extrabold text-7xl",
-                  children: "“"
-                }), "The PAT APP has streamlined my practice. I can monitor patient symptoms remotely and make necessary prescription changes without requiring frequent office visits. It's a fantastic tool for improving patient outcomes."]
-              }), /* @__PURE__ */ jsx("p", {
-                className: "font-semibold text-base mt-4",
-                children: "- Dr. Michael Patel, Neurologist"
-              })]
-            })]
-          })]
-        })]
-      })
-    })]
-  });
-}
-const PATApp = () => {
-  return /* @__PURE__ */ jsxs("div", {
-    className: "App overflow-x-hidden",
-    children: [/* @__PURE__ */ jsx(HeroSection$1, {}), /* @__PURE__ */ jsx(AboutSection$1, {}), /* @__PURE__ */ jsx(ProblemStatementSection$1, {}), /* @__PURE__ */ jsx(SolutionSection$1, {}), /* @__PURE__ */ jsx(InnovationSection, {}), /* @__PURE__ */ jsx(TechnologySection, {}), /* @__PURE__ */ jsx(ResultSection$1, {}), /* @__PURE__ */ jsx(TestimonialSection, {})]
-  });
-};
-function HeroSection() {
-  return /* @__PURE__ */ jsx("section", {
-    id: "hero",
-    className: "pt-16 lg:pt-24 z-20",
-    children: /* @__PURE__ */ jsxs("div", {
-      className: "xl:container xl:mx-auto flex flex-col lg:items-center lg:justify-center lg:flex-row-reverse justify-between lg:pb-6 gap-0 mt-8 lg:mb-0",
-      children: [/* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "relative mx-auto lg:mx-0 lg:mb-0 w-10/12 md:w-7/12 lg:w-1/2",
-        children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
-          src: "/Images/proid/section_1-webp.webp",
-          alt: "chats",
-          className: "relative z-10 overflow-x-visible w-full"
-        })
-      }), /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "flex flex-col items-center lg:items-start lg:mt-12 mb-12 lg:my-0 justify-center gap-4 lg:pl-20 w-full lg:w-1/2",
-        children: [/* @__PURE__ */ jsxs("h5", {
-          className: "font-bold text-4xl lg:text-6xl my-6 text-blue-primary",
-          children: ["PRO-ID ", /* @__PURE__ */ jsx("br", {
-            className: "hidden md:block"
-          }), "Case Study"]
-        }), /* @__PURE__ */ jsx("div", {
-          className: "flex justify-center lg:justify-start items-center w-full",
-          children: /* @__PURE__ */ jsx("img", {
-            src: "/Images/proid/proid_logo-webp.webp",
-            alt: "app-logo",
-            className: "w-40 mb-2"
-          })
-        }), /* @__PURE__ */ jsx("p", {
-          className: "max-w-md font-normal text-xl mb-4",
-          children: "Design and Develop by"
-        }), /* @__PURE__ */ jsx("div", {
-          className: "flex justify-center lg:justify-start items-center w-full",
-          children: /* @__PURE__ */ jsx("img", {
-            src: "/Images/edisu/astute_logo-webp.webp",
-            alt: "app-logo",
-            className: "w-52 mb-2"
-          })
-        })]
-      })]
-    })
-  });
-}
-function AboutSection() {
-  return /* @__PURE__ */ jsx("section", {
-    id: "about",
-    className: "pt-16 z-20",
-    children: /* @__PURE__ */ jsxs("div", {
-      className: "xl:container xl:mx-auto flex flex-col-reverse justify-center gap-8 lg:gap-0 lg:flex-row lg:mb-0 px-0",
-      children: [/* @__PURE__ */ jsx("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "relative lg:mx-0 lg:mb-0 w-10/12 lg:w-1/2 mx-auto",
-        children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
-          src: "/Images/proid/section_2-webp.webp",
-          alt: "section_2",
-          className: "relative z-10 overflow-x-visible"
-        })
-      }), /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center gap-4 px-6 pb-16 lg:pl-20 lg:w-1/2",
-        children: [/* @__PURE__ */ jsxs("h1", {
-          className: "flex text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:w-11/12 lg:text-left text-blue-primary",
-          children: [/* @__PURE__ */ jsx("span", {
-            className: "bg-blue-primary text-white rounded-full w-14 h-14 text-3xl md:text-4xl lg:text-5xl font-bold text-right",
-            children: "A"
-          }), "bout Project"]
-        }), /* @__PURE__ */ jsx("p", {
-          className: "w-11/12 mx-auto text-xl lg:text-2xl font-normal text-left lg:mt-0 lg:mx-0",
-          children: "During the COVID-19 pandemic, public health and safety became big concerns for governments worldwide. In Italy, one of the countries hardest hit by the pandemic, ensuring the safety of public spaces, especially educational facilities, became a critical issue. Study halls, used by students and the public for studying and academic activities, posed a particular challenge. These spaces are characterized by high foot traffic and shared use of facilities, making them potential hotspots for virus transmission."
-        })]
-      })]
-    })
-  });
-}
-function ProblemStatementSection() {
-  return /* @__PURE__ */ jsx("section", {
-    id: "problem-statement",
-    className: "pt-16 z-20 bg-proid-secondary overflow-hidden relative",
-    children: /* @__PURE__ */ jsxs("div", {
-      className: "relative xl:container xl:mx-auto flex flex-col justify-between px-6 lg:py-6 gap-0 md:gap-8 lg:mb-0 lg:pl-20 z-20",
-      children: [/* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center gap-4 w-full",
-        children: [/* @__PURE__ */ jsx("h1", {
-          className: "flex text-3xl md:text-4xl lg:text-5xl font-bold text-left lg:text-left text-blue-primary",
-          children: "Problems Statement"
-        }), /* @__PURE__ */ jsx("p", {
-          className: "w-full text-xl md:text-2xl font-normal text-left md:mt-8 lg:mx-0",
-          children: "Every day, millions of business cards are printed, contributing significantly to paper consumption and waste. The vast majority of these cards end up discarded shortly after exchange, illustrating a cycle of wastefulness and unnecessary environmental burden. Furthermore, the static nature of paper cards limits the potential for dynamic information exchange and engagement."
-        })]
-      }), /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-up",
-        "data-aos-duration": "1000",
-        className: "relative flex flex-col flex-wrap justify-center space-y-2 lg:space-y-0 lg:space-x-0 lg:flex-row mt-12",
-        children: [/* @__PURE__ */ jsxs("div", {
-          className: "flex flex-col w-full lg:pt-24 pt-6 pb-6 text-left rounded-lg lg:w-1/3",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex justify-start w-full",
-            children: [/* @__PURE__ */ jsx("div", {
-              className: "flex flex-shrink-0 justify-center items-center bg-blue-primary w-14 h-14 text-center text-white text-2xl lg:text-4xl font-semibold rounded-full relative z-20",
-              children: "#1"
-            }), /* @__PURE__ */ jsx("div", {
-              className: "pl-6 pr-8",
-              children: /* @__PURE__ */ jsx("h5", {
-                className: "text-xl md:text-2xl lg:text-3xl font-semibold",
-                children: "Inconvenience of In-Person Visits"
-              })
-            })]
-          }), /* @__PURE__ */ jsx("div", {
-            className: "relative w-full px-2",
-            children: /* @__PURE__ */ jsx("div", {
-              className: "px-6",
-              children: /* @__PURE__ */ jsxs("div", {
-                className: "flex flex-col items-start justify-center mt-6",
-                children: [/* @__PURE__ */ jsx("p", {
-                  className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20 px-4",
-                  children: "Routine check-ups and follow-ups are time-consuming for both patients and doctors."
-                }), /* @__PURE__ */ jsx("div", {
-                  className: "pl-4",
-                  children: /* @__PURE__ */ jsx("img", {
-                    loading: "lazy",
-                    src: "/Images/proid/text_div_bg-webp.webp",
-                    alt: "card pattern",
-                    className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                  })
-                })]
-              })
-            })
-          })]
-        }), /* @__PURE__ */ jsxs("div", {
-          className: "flex flex-col w-full py-6 text-left rounded-lg lg:w-1/3 md:mt-8",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex justify-start w-full",
-            children: [/* @__PURE__ */ jsx("div", {
-              className: "flex flex-shrink-0 justify-center items-center bg-blue-primary w-14 h-14 text-center text-white text-2xl lg:text-4xl font-semibold rounded-full relative z-20",
-              children: "#2"
-            }), /* @__PURE__ */ jsx("div", {
-              className: "px-6",
-              children: /* @__PURE__ */ jsx("h5", {
-                className: "text-xl md:text-2xl lg:text-3xl font-semibold",
-                children: "Inaccurate Symptom Tracking:"
-              })
-            })]
-          }), /* @__PURE__ */ jsx("div", {
-            className: "relative w-full px-2",
-            children: /* @__PURE__ */ jsx("div", {
-              className: "px-6",
-              children: /* @__PURE__ */ jsxs("div", {
-                className: "flex flex-col items-start justify-center mt-6",
-                children: [/* @__PURE__ */ jsx("p", {
-                  className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20 px-4",
-                  children: "Difficulty in recalling and communicating symptoms accurately can hinder diagnosis and treatment."
-                }), /* @__PURE__ */ jsx("div", {
-                  className: "pl-4",
-                  children: /* @__PURE__ */ jsx("img", {
-                    loading: "lazy",
-                    src: "/Images/proid/text_div_bg-webp.webp",
-                    alt: "card pattern",
-                    className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                  })
-                })]
-              })
-            })
-          })]
-        }), /* @__PURE__ */ jsxs("div", {
-          className: "flex flex-col w-full lg:pt-24 pt-6 pb-6 text-left rounded-lg lg:w-1/3 md:mt-16",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex justify-start w-full",
-            children: [/* @__PURE__ */ jsx("div", {
-              className: "flex flex-shrink-0 justify-center items-center bg-blue-primary w-14 h-14 text-center text-white text-2xl lg:text-4xl font-semibold rounded-full relative z-20",
-              children: "#3"
-            }), /* @__PURE__ */ jsx("div", {
-              className: "px-6",
-              children: /* @__PURE__ */ jsx("h5", {
-                className: "text-xl md:text-2xl lg:text-3xl font-semibold",
-                children: "Medication Non-Adherence:"
-              })
-            })]
-          }), /* @__PURE__ */ jsx("div", {
-            className: "relative w-full px-2",
-            children: /* @__PURE__ */ jsx("div", {
-              className: "px-6",
-              children: /* @__PURE__ */ jsxs("div", {
-                className: "flex flex-col items-start justify-center mt-6",
-                children: [/* @__PURE__ */ jsx("p", {
-                  className: "text-black text-lg md:text-xl font-normal z-20 lg:pb-20 px-4",
-                  children: "Patients may forget to take medications or refill prescriptions, impacting treatment effectiveness."
-                }), /* @__PURE__ */ jsx("div", {
-                  className: "pl-4",
-                  children: /* @__PURE__ */ jsx("img", {
-                    loading: "lazy",
-                    src: "/Images/proid/text_div_bg-webp.webp",
-                    alt: "card pattern",
-                    className: "invisible lg:visible absolute bottom-0 left-0 z-10"
-                  })
-                })]
-              })
-            })
-          })]
-        })]
-      })]
-    })
-  });
-}
-function SolutionSection() {
-  return /* @__PURE__ */ jsxs("section", {
-    id: "solutions",
-    className: "pt-16 z-20 bg-proid-secondary",
-    children: [/* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col-reverse justify-between p-6 gap-8 lg:gap-0 lg:flex-row lg:mb-0",
-      children: /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "w-full mx-auto flex flex-col justify-center gap-4 px-6",
-        children: [/* @__PURE__ */ jsx("h1", {
-          className: "flex text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:w-11/12 lg:text-left text-blue-primary",
-          children: "Solution Proposed"
-        }), /* @__PURE__ */ jsx("p", {
-          className: "text-xl lg:text-2xl font-normal text-left md:mt-8 lg:mx-0",
-          children: "Astute developed Pro-ID, a cutting-edge digital business card platform, to address these challenges. Key solutions include:"
-        })]
-      })
-    }), /* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-between gap-8 lg:gap-0 lg:flex-row lg:mb-0 px-0",
-      children: /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-left",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-center gap-6 lg:pl-20",
-        children: [/* @__PURE__ */ jsx("div", {
-          className: "w-11/12 mx-auto flex flex-col",
-          children: /* @__PURE__ */ jsxs("div", {
-            className: "relative flex flex-col lg:flex-row items-start gap-y-10 lg:gap-y-0 mt-8",
-            children: [/* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12 lg:mt-16",
-              children: [/* @__PURE__ */ jsx("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left text-blue-primary",
-                children: "Digital Transformation:"
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Pro-ID replaces paper cards with customizable digital profiles, drastically reducing paper consumption and waste."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12 lg:mt-16",
-              children: [/* @__PURE__ */ jsx("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left text-blue-primary",
-                children: "Real-Time Updates:"
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Users can instantly update contact information, ensuring accuracy and eliminating the need for reprints."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsx("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: /* @__PURE__ */ jsx("div", {
-                className: "relative lg:mx-0 lg:mb-0 w-4/5 lg:w-full mx-auto",
-                children: /* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  src: "/Images/proid/section_4_1-webp.webp",
-                  alt: "chats",
-                  className: "relative z-10 overflow-x-visible"
-                })
-              })
-            })]
-          })
-        }), /* @__PURE__ */ jsx("div", {
-          className: "w-11/12 mx-auto flex flex-col",
-          children: /* @__PURE__ */ jsxs("div", {
-            className: "relative flex flex-col lg:flex-row items-start gap-y-10 lg:gap-y-0 mt-8",
-            children: [/* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12 lg:mt-16",
-              children: [/* @__PURE__ */ jsx("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left text-blue-primary",
-                children: "QR Codes & NFC:"
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Seamless information sharing via QR codes and optional NFC-enabled physical cards modernizes the networking process."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12 lg:mt-16",
-              children: [/* @__PURE__ */ jsx("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left text-blue-primary",
-                children: "Data Analytics:"
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Pro-ID tracks card usage, providing valuable insights into networking activity and lead generation."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsx("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: /* @__PURE__ */ jsx("div", {
-                className: "relative lg:mx-0 lg:mb-0 w-4/5 lg:w-full mx-auto",
-                children: /* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  src: "/Images/proid/section_4_2-webp.webp",
-                  alt: "chats",
-                  className: "relative z-10 overflow-x-visible"
-                })
-              })
-            })]
-          })
-        }), /* @__PURE__ */ jsx("div", {
-          className: "w-11/12 mx-auto flex flex-col",
-          children: /* @__PURE__ */ jsxs("div", {
-            className: "relative flex flex-col lg:flex-row items-start gap-y-10 lg:gap-y-0 mt-8",
-            children: [/* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12 lg:mt-16",
-              children: [/* @__PURE__ */ jsx("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left text-blue-primary",
-                children: "Customization and Branding:"
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Extensive personalization options allow individuals and organizations to create digital cards that reinforce their brand identity."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsxs("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12 lg:mt-16",
-              children: [/* @__PURE__ */ jsx("h3", {
-                className: "flex justify-center text-xl md:text-2xl font-bold text-center lg:w-11/12 lg:text-left text-blue-primary",
-                children: "Security:"
-              }), /* @__PURE__ */ jsx("div", {
-                className: "px-6",
-                children: /* @__PURE__ */ jsx("div", {
-                  className: "flex flex-col items-center justify-center mt-6",
-                  children: /* @__PURE__ */ jsx("p", {
-                    className: "text-black text-center text-lg md:text-xl font-normal z-20 lg:pb-20",
-                    children: "Robust security measures protect sensitive user data."
-                  })
-                })
-              })]
-            }), /* @__PURE__ */ jsx("div", {
-              className: "flex flex-col w-full text-left rounded-lg lg:w-11/12",
-              children: /* @__PURE__ */ jsx("div", {
-                className: "relative lg:mx-0 lg:mb-0 w-4/5 lg:w-full mx-auto",
-                children: /* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  src: "/Images/proid/section_4_3-webp.webp",
-                  alt: "chats",
-                  className: "relative z-10 overflow-x-visible"
-                })
-              })
-            })]
-          })
-        })]
-      })
-    })]
-  });
-}
-function ResultSection() {
-  return /* @__PURE__ */ jsx("section", {
-    id: "about",
-    className: "pt-16 z-20 relative",
-    children: /* @__PURE__ */ jsx("div", {
-      className: "xl:container xl:mx-auto flex flex-col justify-center lg:flex-row lg:mb-0 px-0 pb-16",
-      children: /* @__PURE__ */ jsxs("div", {
-        "data-aos": "fade-right",
-        "data-aos-duration": "1000",
-        className: "flex flex-col justify-start gap-x-4 gap-y-8 md:gap-3 px-6 lg:px-20 w-full z-30",
-        children: [/* @__PURE__ */ jsx("h1", {
-          className: "flex text-blue-primary text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:w-11/12 lg:text-left",
-          children: "Final Results"
-        }), /* @__PURE__ */ jsx("p", {
-          className: "text-xl lg:text-2xl font-normal text-left md:mt-8 lg:mx-0",
-          children: "Pro-ID offers a streamlined, sustainable, and data-driven approach to professional networking, delivering several impactful results:"
-        }), /* @__PURE__ */ jsxs("div", {
-          className: "flex flex-col md:flex-row justify-center mt-16 gap-x-4 lg:gap-x-0 gap-y-8 relative",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex flex-col w-full flex-shrink text-left rounded-lg md:w-96 bg-proid-primary_light p-6",
-            children: [/* @__PURE__ */ jsx("p", {
-              className: "text-center font-semibold text-2xl",
-              children: "Environmental Responsibility:"
-            }), /* @__PURE__ */ jsx("p", {
-              className: "text-center text-xl py-4 px-2",
-              children: "Significantly reduces paper usage, mitigating deforestation and minimizing waste generation."
-            })]
-          }), /* @__PURE__ */ jsx("div", {
-            className: "hidden lg:flex flex-col w-full flex-shrink text-left rounded-lg lg:w-16 relative",
-            children: /* @__PURE__ */ jsx("div", {
-              className: "w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10",
-              children: /* @__PURE__ */ jsxs("svg", {
-                className: "w-full",
-                viewBox: "0 0 111 15",
-                fill: "none",
-                xmlns: "http://www.w3.org/2000/svg",
-                children: [/* @__PURE__ */ jsx("line", {
-                  x1: "4.37114e-08",
-                  y1: "8.5",
-                  x2: "97",
-                  y2: "8.50001",
-                  stroke: "black",
-                  "stroke-opacity": "0.7",
-                  "stroke-dasharray": "6 6"
-                }), /* @__PURE__ */ jsx("circle", {
-                  cx: "103.5",
-                  cy: "7.5",
-                  r: "7.5",
-                  fill: "#083049"
-                })]
-              })
-            })
-          }), /* @__PURE__ */ jsxs("div", {
-            className: "flex flex-col w-full flex-shrink text-left rounded-lg md:w-96 bg-proid-secondary_light p-6",
-            children: [/* @__PURE__ */ jsx("p", {
-              className: "text-center font-semibold text-2xl",
-              children: "Enhanced Efficiency:"
-            }), /* @__PURE__ */ jsx("p", {
-              className: "text-center text-xl py-4 px-2",
-              children: " Real-time updates and easy sharing optimize networking processes, saving time and resources."
-            })]
-          }), /* @__PURE__ */ jsx("div", {
-            className: "hidden lg:flex flex-col w-full flex-shrink text-left rounded-lg lg:w-16 relative",
-            children: /* @__PURE__ */ jsx("div", {
-              className: "w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10",
-              children: /* @__PURE__ */ jsxs("svg", {
-                className: "w-full",
-                viewBox: "0 0 111 15",
-                fill: "none",
-                xmlns: "http://www.w3.org/2000/svg",
-                children: [/* @__PURE__ */ jsx("line", {
-                  x1: "4.37114e-08",
-                  y1: "8.5",
-                  x2: "97",
-                  y2: "8.50001",
-                  stroke: "black",
-                  "stroke-opacity": "0.7",
-                  "stroke-dasharray": "6 6"
-                }), /* @__PURE__ */ jsx("circle", {
-                  cx: "103.5",
-                  cy: "7.5",
-                  r: "7.5",
-                  fill: "#083049"
-                })]
-              })
-            })
-          }), /* @__PURE__ */ jsxs("div", {
-            className: "flex flex-col w-full flex-shrink text-left rounded-lg md:w-96 bg-proid-primary_light p-6",
-            children: [/* @__PURE__ */ jsx("p", {
-              className: "text-center font-semibold text-2xl",
-              children: "Improved Professionalism:"
-            }), /* @__PURE__ */ jsx("p", {
-              className: "text-center text-xl py-4 px-2",
-              children: "  Customized digital cards project a modern, tech-savvy image."
-            })]
-          })]
-        }), /* @__PURE__ */ jsxs("div", {
-          className: "flex flex-col md:flex-row justify-center md:mt-16 gap-x-4 lg:gap-x-0 gap-y-8 relative",
-          children: [/* @__PURE__ */ jsxs("div", {
-            className: "flex flex-col w-full flex-shrink text-left rounded-lg md:w-96 bg-proid-secondary_light p-6",
-            children: [/* @__PURE__ */ jsx("p", {
-              className: "text-center font-semibold text-2xl",
-              children: "Actionable Insights:"
-            }), /* @__PURE__ */ jsx("p", {
-              className: "text-center text-xl py-4 px-2",
-              children: "Analytics empower users with data to refine networking strategies and track conversion rates."
-            })]
-          }), /* @__PURE__ */ jsx("div", {
-            className: "hidden lg:flex flex-col w-full flex-shrink text-left rounded-lg lg:w-16 relative",
-            children: /* @__PURE__ */ jsx("div", {
-              className: "w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10",
-              children: /* @__PURE__ */ jsxs("svg", {
-                className: "w-full",
-                viewBox: "0 0 111 15",
-                fill: "none",
-                xmlns: "http://www.w3.org/2000/svg",
-                children: [/* @__PURE__ */ jsx("line", {
-                  x1: "4.37114e-08",
-                  y1: "8.5",
-                  x2: "97",
-                  y2: "8.50001",
-                  stroke: "black",
-                  "stroke-opacity": "0.7",
-                  "stroke-dasharray": "6 6"
-                }), /* @__PURE__ */ jsx("circle", {
-                  cx: "103.5",
-                  cy: "7.5",
-                  r: "7.5",
-                  fill: "#083049"
-                })]
-              })
-            })
-          }), /* @__PURE__ */ jsxs("div", {
-            className: "flex flex-col w-full flex-shrink text-left rounded-lg md:w-96 bg-proid-primary_light p-6",
-            children: [/* @__PURE__ */ jsx("p", {
-              className: "text-center font-semibold text-2xl",
-              children: "Brand Strengthening:"
-            }), /* @__PURE__ */ jsx("p", {
-              className: "text-center text-xl py-4 px-2",
-              children: " Corporate packages promote consistent branding, improve lead generation, and boost marketing effectiveness."
-            })]
-          })]
-        })]
-      })
-    })
-  });
-}
-const ProIDMain = () => {
-  return /* @__PURE__ */ jsxs("div", {
-    className: "App overflow-x-hidden",
-    children: [/* @__PURE__ */ jsx(HeroSection, {}), /* @__PURE__ */ jsx(AboutSection, {}), /* @__PURE__ */ jsx(ProblemStatementSection, {}), /* @__PURE__ */ jsx(SolutionSection, {}), /* @__PURE__ */ jsx(ResultSection, {})]
-  });
-};
 const PageNotFound = () => {
   return /* @__PURE__ */ jsxs("div", {
     className: "pt-32 pb-20 flex flex-col justify-center h-auto bg-no-repeat lg:h-screen bg-cover bg-center",
@@ -34102,18 +31801,6 @@ const BaseRoutes = () => {
         })]
       }), /* @__PURE__ */ jsxs(Switch, {
         children: [/* @__PURE__ */ jsx(Route, {
-          path: "/edisu",
-          exact: true,
-          children: /* @__PURE__ */ jsx(EdisuMain, {})
-        }), /* @__PURE__ */ jsx(Route, {
-          path: "/pat-app",
-          exact: true,
-          children: /* @__PURE__ */ jsx(PATApp, {})
-        }), /* @__PURE__ */ jsx(Route, {
-          path: "/pro-id",
-          exact: true,
-          children: /* @__PURE__ */ jsx(ProIDMain, {})
-        }), /* @__PURE__ */ jsx(Route, {
           path: "/turin-startup-campaign",
           exact: true,
           children: /* @__PURE__ */ jsx(LandingPage, {})

@@ -1,6 +1,6 @@
-import { G as GLTFLoader } from "./GLTFLoader-Dij9Py3Y.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-Cw72DoUG.js";
-import { W as WebGLRenderer, S as Scene, P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, C as Color, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-tuJqKUH4.js";
+import { G as GLTFLoader } from "./GLTFLoader-ChaeOe3T.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-BXCT1ExZ.js";
+import { W as WebGLRenderer, S as Scene, P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, C as Color, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-geD9lluw.js";
 const createRenderer = () => {
   var renderer = new WebGLRenderer({
     canvas: document.getElementById("bottleModel2"),

@@ -1,9 +1,9 @@
-import { G as GLTFLoader } from "./GLTFLoader-Dij9Py3Y.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-Cw72DoUG.js";
-import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-tuJqKUH4.js";
+import { G as GLTFLoader } from "./GLTFLoader-ChaeOe3T.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-BXCT1ExZ.js";
+import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-geD9lluw.js";
 const createRenderer = () => {
   var renderer = new WebGLRenderer({
-    canvas: document.getElementById("plantmodel2"),
+    canvas: document.getElementById("plantModel3"),
     antialias: true,
     alpha: true
   });
@@ -19,14 +19,14 @@ const createScene = () => {
   return scene;
 };
 const createCamera = () => {
-  const camera = new PerspectiveCamera(1, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 20, 4e3);
+  const camera = new PerspectiveCamera(2.7, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 0.9, 4e3);
   camera.position.z = 190;
   camera.position.x = 0;
-  camera.position.y = 50;
+  camera.position.y = 60;
   return camera;
 };
 const createLight = (scene) => {
-  const ambientlight = new AmbientLight(16777215, 0);
+  const ambientlight = new AmbientLight(16777215, 1);
   const pointlight = new PointLight(16777215, 1, 100);
   pointlight.position.set(2, 2, 10);
   scene.add(ambientlight);
@@ -46,8 +46,8 @@ const createModel = (model, scene, path, setLoading, renderer) => {
   });
   loader.load(path, function(gltf) {
     model.current = gltf.scene;
-    model.current.position.y = -0.6;
     model.current.position.x = 0;
+    model.current.position.y = -3;
     if (!loadingEnvornment) {
       scene.add(model.current);
       setLoading(false);
