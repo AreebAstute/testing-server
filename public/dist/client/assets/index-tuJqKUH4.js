@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-sO8uQtfJ.js","assets/GLTFLoader-CPKINeF4.js","assets/method-DuWgxEf4.js","assets/RGBELoader-DvHb5Fz4.js","assets/method-D5Bu1fs6.js","assets/method-CdJws9Us.js","assets/method-dmcJ2BEa.js","assets/method-BQJh7S1l.js","assets/method-CnpLZWvu.js","assets/method-C6EUjIlW.js","assets/OrbitControls-DGiz7aEz.js","assets/method-DbfwJYMT.js","assets/method-P3spbzlt.js","assets/method-BS5tQ9w7.js","assets/method-WL9NYcl8.js","assets/method-BAda1Wx1.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-KFrXGc6q.js","assets/GLTFLoader-Dij9Py3Y.js","assets/method-CL0CcJiR.js","assets/RGBELoader-Cw72DoUG.js","assets/method-tEAW2giT.js","assets/method-DAzMVfPI.js","assets/method-sVUl4PPg.js","assets/method-C9JHPt12.js","assets/method-DU8p_cTD.js","assets/method-AdpGynFN.js","assets/OrbitControls-DFUl_YoY.js","assets/method-B0ACOK2m.js","assets/method-BslyLvZf.js","assets/method-KOlnvH9C.js","assets/method-3KVQcKZD.js","assets/method-DfxKgIw1.js"])))=>i.map(i=>d[i]);
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -65144,7 +65144,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DGiz7aEz.js");
+        } = await import("./OrbitControls-DFUl_YoY.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -65168,7 +65168,7 @@ const Viewer = ({
           createScene: createScene2,
           onWindowResize: onWindowResize2,
           animate: animate3
-        } = await import("./methods-sO8uQtfJ.js");
+        } = await import("./methods-KFrXGc6q.js");
         return {
           createCamera: createCamera2,
           createFloor: createFloor2,
@@ -65185,7 +65185,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           default: ColorPallete3
-        } = await import("./index-DfIL4JGq.js");
+        } = await import("./index-COXLTbZa.js");
         return {
           default: ColorPallete3
         };
@@ -92456,7 +92456,7 @@ const PlantModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DGiz7aEz.js");
+        } = await import("./OrbitControls-DFUl_YoY.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92480,7 +92480,7 @@ const PlantModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-DuWgxEf4.js");
+        } = await import("./method-CL0CcJiR.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92532,7 +92532,7 @@ const PlantModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DGiz7aEz.js");
+        } = await import("./OrbitControls-DFUl_YoY.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92556,7 +92556,7 @@ const PlantModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-D5Bu1fs6.js");
+        } = await import("./method-tEAW2giT.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92613,7 +92613,7 @@ const PlanModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DGiz7aEz.js");
+        } = await import("./OrbitControls-DFUl_YoY.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92637,7 +92637,7 @@ const PlanModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-CdJws9Us.js");
+        } = await import("./method-DAzMVfPI.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93038,7 +93038,7 @@ const BagModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DGiz7aEz.js");
+        } = await import("./OrbitControls-DFUl_YoY.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -93062,7 +93062,7 @@ const BagModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-dmcJ2BEa.js");
+        } = await import("./method-sVUl4PPg.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93112,7 +93112,7 @@ const BagModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DGiz7aEz.js");
+        } = await import("./OrbitControls-DFUl_YoY.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -93136,7 +93136,7 @@ const BagModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BQJh7S1l.js");
+        } = await import("./method-C9JHPt12.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93192,7 +93192,7 @@ const BagModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DGiz7aEz.js");
+        } = await import("./OrbitControls-DFUl_YoY.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -93216,7 +93216,7 @@ const BagModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-CnpLZWvu.js");
+        } = await import("./method-DU8p_cTD.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93413,13 +93413,13 @@ const Model1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DGiz7aEz.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DFUl_YoY.js"), true ? [] : void 0);
     const {
       createCamera,
       createRenderer,
       onWindowResize,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-C6EUjIlW.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-AdpGynFN.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -93442,7 +93442,7 @@ const Model2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DGiz7aEz.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DFUl_YoY.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93451,7 +93451,7 @@ const Model2 = ({
       createScene,
       onWindowResize,
       animate: animate2
-    } = __vitePreload(() => import("./method-DbfwJYMT.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-B0ACOK2m.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
     const renderer = createRenderer();
     const scene = createScene();
     const camera = createCamera();
@@ -93489,7 +93489,7 @@ const Model3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DGiz7aEz.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DFUl_YoY.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93499,7 +93499,7 @@ const Model3 = ({
       animate: animate2,
       createFloor,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-P3spbzlt.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-BslyLvZf.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -93571,7 +93571,7 @@ const BottleModel1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DGiz7aEz.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DFUl_YoY.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93581,7 +93581,7 @@ const BottleModel1 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-BS5tQ9w7.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-KOlnvH9C.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93616,7 +93616,7 @@ const BottleModel2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DGiz7aEz.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DFUl_YoY.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93626,7 +93626,7 @@ const BottleModel2 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-WL9NYcl8.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-3KVQcKZD.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93663,7 +93663,7 @@ const BottleModel3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DGiz7aEz.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DFUl_YoY.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93673,7 +93673,7 @@ const BottleModel3 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-BAda1Wx1.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-DfxKgIw1.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -94016,7 +94016,7 @@ const ModalVideo = (props) => {
   const [isOpen, setOpen] = reactExports.useState(false);
   const [VideoModal, setVideoModal] = reactExports.useState(null);
   reactExports.useEffect(() => {
-    __vitePreload(() => import("./index-CFBZsokz.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
+    __vitePreload(() => import("./index-CQqOu1S1.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
       setVideoModal(() => module2.default);
     });
   }, []);
@@ -96191,6 +96191,7 @@ function HeroSection$2() {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 1070,
           height: 972,
+          loading: "lazy",
           src: "/Images/edisu/section_1-webp.webp",
           alt: "chats",
           className: "relative z-10 overflow-x-visible w-full"
@@ -96230,6 +96231,7 @@ function HeroSection$2() {
       children: /* @__PURE__ */ jsx$1("img", {
         width: 1070,
         height: 972,
+        loading: "lazy",
         src: "/Images/edisu/section_1-webp.webp",
         alt: "chats",
         className: "overflow-x-visible w-full"
@@ -96250,6 +96252,7 @@ function AboutSection$2() {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 835,
           height: 825,
+          loading: "lazy",
           src: "/Images/edisu/section_2-webp.webp",
           alt: "chats",
           className: "relative z-10 overflow-x-visible"
@@ -96274,6 +96277,7 @@ function AboutSection$2() {
       children: /* @__PURE__ */ jsx$1("img", {
         width: 835,
         height: 825,
+        loading: "lazy",
         src: "/Images/edisu/section_2-webp.webp",
         alt: "chats",
         className: "overflow-x-visible w-full"
@@ -96321,6 +96325,7 @@ function ProblemStatementSection$2() {
                   children: /* @__PURE__ */ jsx$1("img", {
                     width: 515,
                     height: 390,
+                    loading: "lazy",
                     src: "/Images/edisu/group_10-webp.webp",
                     alt: "card pattern",
                     className: "invisible lg:visible absolute bottom-0 left-0 z-10"
@@ -96351,6 +96356,7 @@ function ProblemStatementSection$2() {
                   children: /* @__PURE__ */ jsx$1("img", {
                     width: 515,
                     height: 390,
+                    loading: "lazy",
                     src: "/Images/edisu/group_10-webp.webp",
                     alt: "card pattern",
                     className: "invisible lg:visible absolute bottom-0 left-0 z-10"
@@ -96381,6 +96387,7 @@ function ProblemStatementSection$2() {
                   children: /* @__PURE__ */ jsx$1("img", {
                     width: 515,
                     height: 390,
+                    loading: "lazy",
                     src: "/Images/edisu/group_10-webp.webp",
                     alt: "card pattern",
                     className: "invisible lg:visible absolute bottom-0 left-0 z-10"
@@ -96505,6 +96512,7 @@ function Challenges() {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 621,
           height: 724,
+          loading: "lazy",
           src: "/Images/edisu/springs-webp.webp",
           alt: "springs",
           className: "w-full relative z-10 overflow-x-visible"
@@ -96515,6 +96523,7 @@ function Challenges() {
       children: /* @__PURE__ */ jsx$1("img", {
         width: 621,
         height: 724,
+        loading: "lazy",
         src: "/Images/edisu/springs-webp.webp",
         alt: "springs",
         className: "overflow-x-visible w-full"
@@ -96677,6 +96686,7 @@ function MobileAppSection() {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 643,
           height: 872,
+          loading: "lazy",
           src: "/Images/edisu/section_5-webp.webp",
           alt: "chats",
           className: "relative z-10 overflow-x-visible"
@@ -96687,6 +96697,7 @@ function MobileAppSection() {
       children: /* @__PURE__ */ jsx$1("img", {
         width: 643,
         height: 872,
+        loading: "lazy",
         src: "/Images/edisu/section_5-webp.webp",
         alt: "springs",
         className: "overflow-x-visible w-full"
@@ -96774,6 +96785,7 @@ function WebPortalSection() {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 667,
           height: 567,
+          loading: "lazy",
           src: "/Images/edisu/section_6-webp.webp",
           alt: "chats",
           className: "relative z-10 overflow-x-visible"
@@ -96784,6 +96796,7 @@ function WebPortalSection() {
       children: /* @__PURE__ */ jsx$1("img", {
         width: 667,
         height: 567,
+        loading: "lazy",
         src: "/Images/edisu/section_6-webp.webp",
         alt: "springs",
         className: "overflow-x-visible w-full"
@@ -96891,6 +96904,7 @@ function ResultSection$2() {
           children: /* @__PURE__ */ jsx$1("img", {
             width: 1021,
             height: 620,
+            loading: "lazy",
             src: "/Images/edisu/section_7-webp.webp",
             alt: "chats",
             className: "relative z-10 overflow-x-visible"
@@ -96944,6 +96958,7 @@ function ResultSection$2() {
                     children: /* @__PURE__ */ jsx$1("img", {
                       width: 515,
                       height: 390,
+                      loading: "lazy",
                       src: "/Images/edisu/group_10-webp.webp",
                       alt: "card pattern",
                       className: "invisible lg:visible absolute bottom-0 left-0 z-10"
@@ -96974,6 +96989,7 @@ function ResultSection$2() {
                     children: /* @__PURE__ */ jsx$1("img", {
                       width: 515,
                       height: 390,
+                      loading: "lazy",
                       src: "/Images/edisu/group_10-webp.webp",
                       alt: "card pattern",
                       className: "invisible lg:visible absolute bottom-0 left-0 z-10"
@@ -97009,6 +97025,7 @@ function ResultSection$2() {
                     children: /* @__PURE__ */ jsx$1("img", {
                       width: 515,
                       height: 390,
+                      loading: "lazy",
                       src: "/Images/edisu/group_10-webp.webp",
                       alt: "card pattern",
                       className: "invisible lg:visible absolute bottom-0 left-0 z-10"

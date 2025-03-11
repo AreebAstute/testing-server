@@ -1,9 +1,9 @@
-import { G as GLTFLoader } from "./GLTFLoader-CPKINeF4.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-DvHb5Fz4.js";
-import { W as WebGLRenderer, S as Scene, P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, C as Color, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-CtVSE5G8.js";
+import { G as GLTFLoader } from "./GLTFLoader-Dij9Py3Y.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-Cw72DoUG.js";
+import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, C as Color, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-tuJqKUH4.js";
 const createRenderer = () => {
   var renderer = new WebGLRenderer({
-    canvas: document.getElementById("bottleModel2"),
+    canvas: document.getElementById("bagModel2"),
     antialias: true,
     alpha: true
   });
@@ -19,19 +19,19 @@ const createScene = () => {
   return scene;
 };
 const createCamera = () => {
-  const camera = new PerspectiveCamera(3.6, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 20, 4e3);
+  const camera = new PerspectiveCamera(3, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 20, 4e3);
   camera.position.z = 190;
-  camera.position.x = 0;
-  camera.position.y = 50;
+  camera.position.x = 100;
+  camera.position.y = 0;
   return camera;
 };
 const createLight = (scene) => {
-  const ambientlight = new AmbientLight(16777215, 0.8);
-  const pointlight = new PointLight(16777215, 1, 100);
-  pointlight.position.set(0, 0, 10);
+  const ambientlight = new AmbientLight(16777215, 1);
+  const pointlightFront = new PointLight(16777215, 1, 100);
+  pointlightFront.position.set(0, 0, 10);
   const pointlightBack = new PointLight(16777215, 1, 100);
-  pointlightBack.position.set(2, 1, -10);
-  scene.add(pointlight, ambientlight, pointlightBack);
+  pointlightBack.position.set(0, 0, -10);
+  scene.add(ambientlight, pointlightFront, pointlightBack);
 };
 const createModel = (model, scene, path, setLoading, renderer) => {
   setLoading(true);
@@ -48,10 +48,14 @@ const createModel = (model, scene, path, setLoading, renderer) => {
   });
   loader.load(path, function(gltf) {
     model.current = gltf.scene;
-    model.current.position.y = -2.2;
+    model.current.position.y = -1.7;
     model.current.position.x = 0;
-    const baseMesh = model.current.children.find((item) => item.name === "base");
-    baseMesh.material.color = new Color("#0289a3");
+    const bagLayer = model.current.children.find((item) => item.name === "bag");
+    bagLayer.children.map((item) => {
+      if (item.isMesh) {
+        item.material.color = new Color("#878881");
+      }
+    });
     if (!loadingEnvornment) {
       scene.add(model.current);
       setLoading(false);
@@ -72,16 +76,6 @@ const createFloor = (scene) => {
   floor.position.y = -1;
   scene.add(floor);
 };
-const applyTextureToModel = (parent, type, mtl) => {
-  parent.traverse((o) => {
-    if (o.isMesh) {
-      if (o.name.includes(type)) {
-        o.material = mtl;
-        o.nameID = type;
-      }
-    }
-  });
-};
 const animate = (callback) => {
   function loop(time) {
     callback(time);
@@ -97,7 +91,6 @@ const onWindowResize = (camera, renderer) => {
 };
 export {
   animate,
-  applyTextureToModel,
   createCamera,
   createFloor,
   createLight,

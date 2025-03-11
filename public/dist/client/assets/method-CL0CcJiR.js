@@ -1,9 +1,9 @@
-import { G as GLTFLoader } from "./GLTFLoader-CPKINeF4.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-DvHb5Fz4.js";
-import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, e as PointLightHelper, b as PMREMGenerator, E as EquirectangularReflectionMapping, C as Color, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-CtVSE5G8.js";
+import { G as GLTFLoader } from "./GLTFLoader-Dij9Py3Y.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-Cw72DoUG.js";
+import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-tuJqKUH4.js";
 const createRenderer = () => {
   var renderer = new WebGLRenderer({
-    canvas: document.getElementById("bagModel1"),
+    canvas: document.getElementById("plantModel1"),
     antialias: true,
     alpha: true
   });
@@ -19,23 +19,19 @@ const createScene = () => {
   return scene;
 };
 const createCamera = () => {
-  const camera = new PerspectiveCamera(5.7, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 20, 4e3);
+  const camera = new PerspectiveCamera(2, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 20, 4e3);
   camera.position.z = 100;
   camera.position.x = 0;
-  camera.position.y = 0;
+  camera.position.y = 30;
   return camera;
 };
 const createLight = (scene) => {
-  const ambientlight = new AmbientLight(16777215, 1);
-  const pointlightFront = new PointLight(16777215, 1, 100);
-  pointlightFront.position.set(0, 0, 10);
-  new PointLightHelper(pointlightFront, 2, "red");
-  const pointlightBackTop = new PointLight(16777215, 1, 100);
-  pointlightBackTop.position.set(0, 0, -10);
-  new PointLightHelper(pointlightBackTop, 2, "blue");
-  scene.add(ambientlight, pointlightFront, pointlightBackTop);
+  const ambientlight = new AmbientLight(16777215, 1.6);
+  const pointlight = new PointLight(16777215, 1, 100);
+  pointlight.position.set(2, 2, 10);
+  scene.add(ambientlight);
 };
-const createModel = (model, scene, path, setLoading, renderer, selectedColor) => {
+const createModel = (model, scene, path, setLoading, renderer) => {
   setLoading(true);
   let loadingEnvornment = true;
   const dracoLoader = new DRACOLoader();
@@ -50,14 +46,8 @@ const createModel = (model, scene, path, setLoading, renderer, selectedColor) =>
   });
   loader.load(path, function(gltf) {
     model.current = gltf.scene;
-    model.current.position.y = -1.2;
+    model.current.position.y = -0.78;
     model.current.position.x = 0;
-    const baseMesh = model.current.children.find((item) => item.name === "base");
-    baseMesh.children.map((item) => {
-      if (item.isMesh && item.name != "NurbsPath003" && item.name != "Cylinder002") {
-        item.material.color = new Color("#C95a65");
-      }
-    });
     if (!loadingEnvornment) {
       scene.add(model.current);
       setLoading(false);
