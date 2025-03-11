@@ -25768,18 +25768,21 @@ const CouponPage = () => {
           className: "flex justify-center relative mt-40 ",
           children: [/* @__PURE__ */ jsx("img", {
             // id="stars"
-            loading: "lazy",
+            width: 1381,
+            height: 663,
             alt: "confetti",
             className: " absolute -top-60 z-10 animate-pulse",
             src: "/Images/coupon-page/confetti-webp.webp"
           }), /* @__PURE__ */ jsx("img", {
             id: "couponImg",
-            loading: "lazy",
+            width: 1353,
+            height: 791,
             alt: "coupon image",
             className: "transform w-9/12 md:w-8/12 absolute bottom-32 md:bottom-48 left-18",
             src: "/Images/coupon-page/coupon image-webp.webp"
           }), /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 869,
+            height: 436,
             alt: "qr-code",
             className: "w-8/12 md:w-7/12",
             src: "/Images/coupon-page/qr-code-webp.webp"
