@@ -1,4 +1,4 @@
-import { aB as jsxs, aC as motion, aD as jsx, G as TextureLoader, aE as Fragment, aF as FaArrowLeft, M as MeshPhongMaterial } from "./index-DORNP08w.js";
+import { aB as jsxs, aC as motion, aD as jsx, G as TextureLoader, aE as Fragment, aF as FaArrowLeft, M as MeshPhongMaterial } from "./index-CtVSE5G8.js";
 const COLOR_PALLETTE = ["#ff0000", "#68b745", "#66717E", "#D4D6B9", "#D1CAA1"];
 const BED_PALLETE = [{
   txt: new TextureLoader().load("/textures/bed/1-webp.webp"),

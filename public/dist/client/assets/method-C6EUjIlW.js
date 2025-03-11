@@ -1,7 +1,7 @@
-import { G as GLTFLoader } from "./GLTFLoader-4zcRcUaB.js";
-import { OrbitControls } from "./OrbitControls-BkH7DyUX.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-BeadH7Jb.js";
-import { S as Scene, P as PerspectiveCamera, A as AmbientLight, H as HemisphereLight, D as DirectionalLight, a as PointLight, f as SpotLight, W as WebGLRenderer, b as PMREMGenerator, E as EquirectangularReflectionMapping, g as AnimationMixer, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh, h as Clock } from "./index-DORNP08w.js";
+import { G as GLTFLoader } from "./GLTFLoader-CPKINeF4.js";
+import { OrbitControls } from "./OrbitControls-DGiz7aEz.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-DvHb5Fz4.js";
+import { S as Scene, P as PerspectiveCamera, A as AmbientLight, H as HemisphereLight, D as DirectionalLight, a as PointLight, f as SpotLight, W as WebGLRenderer, b as PMREMGenerator, E as EquirectangularReflectionMapping, g as AnimationMixer, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh, h as Clock } from "./index-CtVSE5G8.js";
 let scene;
 let camera;
 let renderer;
@@ -12,15 +12,16 @@ const createScene = () => {
   return scene2;
 };
 const createCamera = () => {
+  document.getElementById("model-container");
   document.body.clientWidth;
-  const camera2 = new PerspectiveCamera(5.7, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 0.9, 4e3);
-  camera2.position.z = 190;
+  const camera2 = new PerspectiveCamera(100, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 0.1, 4e3);
+  camera2.position.z = 5;
   camera2.position.x = 0;
-  camera2.position.y = 20;
+  camera2.position.y = 0;
   return camera2;
 };
 const createLight = (scene2) => {
-  const ambientlight = new AmbientLight(16777215, 0.2);
+  const ambientlight = new AmbientLight(16777215, 0.8);
   const hemiLight = new HemisphereLight(16777215, 16777215, 0.8);
   hemiLight.position.set(10, 50, 0);
   const pointLightExtra = new DirectionalLight(16777215, 0.9);
@@ -41,7 +42,7 @@ const createLight = (scene2) => {
 };
 const createRenderer = () => {
   var renderer2 = new WebGLRenderer({
-    canvas: document.getElementById("Robotmodel3"),
+    canvas: document.getElementById("Robotmodel1"),
     antialias: true,
     alpha: true
   });
@@ -65,8 +66,6 @@ const createAnimatedModel = (model, path, setLoading) => {
   controls.enablePan = false;
   controls.enableZoom = false;
   controls.dampingFactor = 0.1;
-  controls.autoRotate = true;
-  controls.autoRotateSpeed = 4;
   const dracoLoader = new DRACOLoader();
   dracoLoader.setDecoderPath("https://www.gstatic.com/draco/v1/decoders/");
   const loader = new GLTFLoader();
@@ -85,21 +84,17 @@ const createAnimatedModel = (model, path, setLoading) => {
         node.receiveShadow = true;
       }
     });
-    model.current.rotation.y = 0.9;
+    model.current.position.y = -0.8;
     model.current.position.x = 0;
-    model.current.position.y = -4.5;
-    model.current.scale.set(5, 5, 5);
+    model.current.scale.set(1.2, 1.2, 1.2);
     if (!loadingEnvornment) {
       scene.add(model.current);
       mixer = new AnimationMixer(model.current);
-      console.log("mixer", mixer);
       let clips = gltf.animations;
-      console.log("clips", clips);
-      mixer.timeScale = 0.5;
       clips.forEach(function(clip) {
         mixer.clipAction(clip).play();
       });
-      animate2();
+      animate();
       setLoading(false);
     }
   }, void 0, function(error) {
@@ -129,11 +124,9 @@ const applyTextureToModel = (parent, type, mtl) => {
   });
 };
 const animate = () => {
-  requestAnimationFrame(animate2);
+  requestAnimationFrame(animate);
   const delta = clock.getDelta();
-  if (mixer) {
-    mixer.update(delta);
-  }
+  mixer.update(delta);
   renderer.render(scene, camera);
 };
 const onWindowResize = (camera2, renderer2) => {

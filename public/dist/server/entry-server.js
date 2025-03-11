@@ -31068,7 +31068,6 @@ function HeroSection$2() {
         children: /* @__PURE__ */ jsx("img", {
           width: 1070,
           height: 972,
-          loading: "lazy",
           src: "/Images/edisu/section_1-webp.webp",
           alt: "chats",
           className: "relative z-10 overflow-x-visible w-full"
@@ -31106,7 +31105,8 @@ function HeroSection$2() {
     }), /* @__PURE__ */ jsx("div", {
       className: "invisible md:visible absolute top-0 right-0 w-1/2 xl:w-2/5 z-20",
       children: /* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        width: 1070,
+        height: 972,
         src: "/Images/edisu/section_1-webp.webp",
         alt: "chats",
         className: "overflow-x-visible w-full"
@@ -31127,7 +31127,6 @@ function AboutSection$2() {
         children: /* @__PURE__ */ jsx("img", {
           width: 835,
           height: 825,
-          loading: "lazy",
           src: "/Images/edisu/section_2-webp.webp",
           alt: "chats",
           className: "relative z-10 overflow-x-visible"
@@ -31152,7 +31151,6 @@ function AboutSection$2() {
       children: /* @__PURE__ */ jsx("img", {
         width: 835,
         height: 825,
-        loading: "lazy",
         src: "/Images/edisu/section_2-webp.webp",
         alt: "chats",
         className: "overflow-x-visible w-full"
@@ -31200,7 +31198,6 @@ function ProblemStatementSection$2() {
                   children: /* @__PURE__ */ jsx("img", {
                     width: 515,
                     height: 390,
-                    loading: "lazy",
                     src: "/Images/edisu/group_10-webp.webp",
                     alt: "card pattern",
                     className: "invisible lg:visible absolute bottom-0 left-0 z-10"
@@ -31231,7 +31228,6 @@ function ProblemStatementSection$2() {
                   children: /* @__PURE__ */ jsx("img", {
                     width: 515,
                     height: 390,
-                    loading: "lazy",
                     src: "/Images/edisu/group_10-webp.webp",
                     alt: "card pattern",
                     className: "invisible lg:visible absolute bottom-0 left-0 z-10"
@@ -31262,7 +31258,6 @@ function ProblemStatementSection$2() {
                   children: /* @__PURE__ */ jsx("img", {
                     width: 515,
                     height: 390,
-                    loading: "lazy",
                     src: "/Images/edisu/group_10-webp.webp",
                     alt: "card pattern",
                     className: "invisible lg:visible absolute bottom-0 left-0 z-10"
@@ -31387,7 +31382,6 @@ function Challenges() {
         children: /* @__PURE__ */ jsx("img", {
           width: 621,
           height: 724,
-          loading: "lazy",
           src: "/Images/edisu/springs-webp.webp",
           alt: "springs",
           className: "w-full relative z-10 overflow-x-visible"
@@ -31398,7 +31392,6 @@ function Challenges() {
       children: /* @__PURE__ */ jsx("img", {
         width: 621,
         height: 724,
-        loading: "lazy",
         src: "/Images/edisu/springs-webp.webp",
         alt: "springs",
         className: "overflow-x-visible w-full"
@@ -31561,7 +31554,6 @@ function MobileAppSection() {
         children: /* @__PURE__ */ jsx("img", {
           width: 643,
           height: 872,
-          loading: "lazy",
           src: "/Images/edisu/section_5-webp.webp",
           alt: "chats",
           className: "relative z-10 overflow-x-visible"
@@ -31572,7 +31564,6 @@ function MobileAppSection() {
       children: /* @__PURE__ */ jsx("img", {
         width: 643,
         height: 872,
-        loading: "lazy",
         src: "/Images/edisu/section_5-webp.webp",
         alt: "springs",
         className: "overflow-x-visible w-full"
@@ -31660,7 +31651,6 @@ function WebPortalSection() {
         children: /* @__PURE__ */ jsx("img", {
           width: 667,
           height: 567,
-          loading: "lazy",
           src: "/Images/edisu/section_6-webp.webp",
           alt: "chats",
           className: "relative z-10 overflow-x-visible"
@@ -31671,7 +31661,6 @@ function WebPortalSection() {
       children: /* @__PURE__ */ jsx("img", {
         width: 667,
         height: 567,
-        loading: "lazy",
         src: "/Images/edisu/section_6-webp.webp",
         alt: "springs",
         className: "overflow-x-visible w-full"
@@ -31779,7 +31768,6 @@ function ResultSection$2() {
           children: /* @__PURE__ */ jsx("img", {
             width: 1021,
             height: 620,
-            loading: "lazy",
             src: "/Images/edisu/section_7-webp.webp",
             alt: "chats",
             className: "relative z-10 overflow-x-visible"
@@ -31833,7 +31821,6 @@ function ResultSection$2() {
                     children: /* @__PURE__ */ jsx("img", {
                       width: 515,
                       height: 390,
-                      loading: "lazy",
                       src: "/Images/edisu/group_10-webp.webp",
                       alt: "card pattern",
                       className: "invisible lg:visible absolute bottom-0 left-0 z-10"
@@ -31864,7 +31851,6 @@ function ResultSection$2() {
                     children: /* @__PURE__ */ jsx("img", {
                       width: 515,
                       height: 390,
-                      loading: "lazy",
                       src: "/Images/edisu/group_10-webp.webp",
                       alt: "card pattern",
                       className: "invisible lg:visible absolute bottom-0 left-0 z-10"
@@ -31900,7 +31886,6 @@ function ResultSection$2() {
                     children: /* @__PURE__ */ jsx("img", {
                       width: 515,
                       height: 390,
-                      loading: "lazy",
                       src: "/Images/edisu/group_10-webp.webp",
                       alt: "card pattern",
                       className: "invisible lg:visible absolute bottom-0 left-0 z-10"
