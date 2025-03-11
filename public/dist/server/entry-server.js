@@ -13611,7 +13611,9 @@ const ServicePageServiceCard = ({
   title,
   desc,
   link,
-  img
+  img,
+  height,
+  width
 }) => {
   return /* @__PURE__ */ jsx(Fragment, {
     children: /* @__PURE__ */ jsxs(Link, {
@@ -13620,6 +13622,8 @@ const ServicePageServiceCard = ({
       children: [/* @__PURE__ */ jsxs("div", {
         className: "container text-center items-center pt-5",
         children: [/* @__PURE__ */ jsx("img", {
+          width,
+          height,
           loading: "lazy",
           className: "inline-block w-2/5 ",
           src: img,
@@ -13690,32 +13694,44 @@ function OurServiceSection() {
             title: "Custom Software Development",
             desc: "Full-service Custom Software Development, Cloud Engineering, QA and DevOps\r company, specializing in the development of time-sensitive and innovative solutions.",
             link: "/services/custom-software-development",
-            img: "/Images/serviceAssets/section2/software_dev-webp.webp"
+            img: "/Images/serviceAssets/section2/software_dev-webp.webp",
+            width: 409,
+            height: 409
           }), /* @__PURE__ */ jsx(ServicePageServiceCard, {
             title: "Digital Transformation",
             desc: "An experienced team to help you take advantage of new technologies and reap the benefits of being a digital enterprise.",
             link: "/services/digital-transformation-services",
-            img: "/Images/serviceAssets/section2/transformation-webp.webp"
+            img: "/Images/serviceAssets/section2/transformation-webp.webp",
+            width: 344,
+            height: 344
           }), /* @__PURE__ */ jsx(ServicePageServiceCard, {
             title: "QA and Testing Services",
             desc: "For 25 years Astute Softwares utilized an Integrated Quality Assurance practice to ensure the highest\r quality of our deliverables.",
             link: "/services/software-quality-assurance",
-            img: "/Images/serviceAssets/section2/QA-webp.webp"
+            img: "/Images/serviceAssets/section2/QA-webp.webp",
+            width: 345,
+            height: 345
           }), /* @__PURE__ */ jsx(ServicePageServiceCard, {
             title: "Mobile Application development",
             desc: "Your customers want access to your business anytime, anywhere… Our TOP-NOTCH mobile app development talent will make sure they can.",
             link: "/services/mobile-application-development",
-            img: "/Images/serviceAssets/section2/app_dev-webp.webp"
+            img: "/Images/serviceAssets/section2/app_dev-webp.webp",
+            width: 344,
+            height: 344
           }), /* @__PURE__ */ jsx(ServicePageServiceCard, {
             title: "UI and UX Design",
             desc: "We let the purpose of the particular web or mobile application drive its design and user experience to deliver\r high user acceptance and engagement rates of your product.",
             link: "/services/ui-and-ux-design",
-            img: "/Images/serviceAssets/section2/uiux-webp.webp"
+            img: "/Images/serviceAssets/section2/uiux-webp.webp",
+            width: 328,
+            height: 328
           }), /* @__PURE__ */ jsx(ServicePageServiceCard, {
             title: "Maintenance & Support Services",
             desc: "Our maintenance and support teams seamlessly blend with clients\r development and support practices ensuring smooth software operation and scalability.",
             link: "/services/maintenance-and-support",
-            img: "/Images/serviceAssets/section2/app_maintenance-webp.webp"
+            img: "/Images/serviceAssets/section2/app_maintenance-webp.webp",
+            width: 347,
+            height: 347
           })]
         })]
       })
@@ -13822,34 +13838,46 @@ function ChooseUs() {
         children: [/* @__PURE__ */ jsx(Card, {
           link: "/services/blockchain-solutions",
           image: "/Images/serviceAssets/section3/blockchain-webp.webp",
+          width: 320,
+          height: 320,
           alt: "blockchain",
           text: "Block Chain",
           custom_className: "-mt-6"
         }), /* @__PURE__ */ jsx(Card, {
           link: "/services/devops-services",
           image: "/Images/serviceAssets/section3/devops-webp.webp",
+          width: 368,
+          height: 368,
           alt: "devops",
           text: "DevOps Services"
         }), /* @__PURE__ */ jsx(Card, {
           link: "/services/big-data-consulting-services",
           image: "/Images/serviceAssets/section3/big_data-webp.webp",
+          width: 319,
+          height: 319,
           alt: "big_data",
           text: "Big Data",
           custom_className: "-mt-6"
         }), /* @__PURE__ */ jsx(Card, {
           link: "/metaverse",
           image: "/Images/serviceAssets/section3/metaverse-icon-webp.webp",
+          width: 380,
+          height: 380,
           alt: "metaverse-icon",
           text: "Metaverse"
         }), /* @__PURE__ */ jsx(Card, {
           link: "/augmented-reality",
           image: "/Images/serviceAssets/section3/ar-icon-webp.webp",
+          width: 380,
+          height: 380,
           alt: "augmented_reality",
           text: "Augmented Reality",
           custom_className: "-mt-4"
         }), /* @__PURE__ */ jsx(Card, {
           link: "/3d-modelling",
           image: "/Images/serviceAssets/section3/3d-modeling-icon-webp.webp",
+          width: 512,
+          height: 512,
           alt: "3d_model_icon",
           text: "3d Modeling",
           custom_className: "-mt-6"
@@ -13871,7 +13899,9 @@ const Card = ({
   image,
   text: text2,
   alt,
-  custom_class
+  custom_class,
+  width,
+  height
 }) => {
   const [active, setActive] = useState(false);
   return /* @__PURE__ */ jsx(Link, {
@@ -13886,6 +13916,8 @@ const Card = ({
         children: /* @__PURE__ */ jsxs("div", {
           className: "",
           children: [/* @__PURE__ */ jsx("img", {
+            height,
+            width,
             loading: "lazy",
             className: "inline-block bg-contain img-width-ln",
             src: `${image}`,
@@ -13912,74 +13944,15 @@ function ServiceIndex() {
   } = useLocation();
   const [refOffset, setRefOffset] = useState();
   const ref = useRef(null);
-  const intl = useIntl();
+  useIntl();
   useEffect(() => {
     if (hash == OUR_SERVICES_HASH_LINK) {
       handleScroll(ref.current.offsetTop);
     }
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  const defaultTitle = "Astute Softwares - Services";
-  const defaultDescription = "Astute Softwares is a software development company offering mobile application development, web design, 3D modeling and animation, AR, and VR services.";
-  const url = "https://astutesoftwares.com/services";
-  const imageUrl = "https://astutesoftwares.com/images/services-banner-webp.webp";
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: (intl == null ? void 0 : intl.formatMessage({
-          id: "software.services",
-          defaultMessage: defaultTitle
-        })) || defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: (intl == null ? void 0 : intl.formatMessage({
-          id: "astute.software.is.a.development",
-          defaultMessage: defaultDescription
-        })) || defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "IT consulting services, Professional web development, Mobile app development, UX/UI design services, Custom software solutions"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: url
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: url
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:image",
-        content: imageUrl
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:image:alt",
-        content: "Astute Softwares Services"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:card",
-        content: "summary_large_image"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:title",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:description",
-        content: defaultDescription
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "twitter:image",
-        content: imageUrl
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "robots",
-        content: "index, follow"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx(ServiceLandingPage, {
+    children: [/* @__PURE__ */ jsx(ServiceLandingPage, {
       refOffset
     }), /* @__PURE__ */ jsx("div", {
       id: "our-services",
@@ -14777,23 +14750,7 @@ const MapSection = () => {
 const Index$1 = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: "Contact Us - Your Company"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: "Get in touch with us for any queries or support."
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "contact, support, customer service"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: "Contact Us - Your Company"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: "Get in touch with us for any queries or support."
-      })]
-    }), /* @__PURE__ */ jsx(LandingSection$l, {}), /* @__PURE__ */ jsx(GetinTouch, {}), /* @__PURE__ */ jsx(MapSection, {})]
+    children: [/* @__PURE__ */ jsx(LandingSection$l, {}), /* @__PURE__ */ jsx(GetinTouch, {}), /* @__PURE__ */ jsx(MapSection, {})]
   });
 };
 const LandingSection$k = () => {
@@ -15708,7 +15665,7 @@ const IterativeIncremental = () => {
 const HowWeDeliver = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(HelmetComp$3, {}), /* @__PURE__ */ jsx("div", {
+    children: [/* @__PURE__ */ jsx(HelmetComp$1, {}), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -15717,7 +15674,7 @@ const HowWeDeliver = () => {
     })]
   });
 };
-const HelmetComp$3 = () => {
+const HelmetComp$1 = () => {
   const intl = useIntl();
   const defaultTitle = "Agile Software Development | Astute Softwares - Remote Collaboration Experts";
   const defaultDescription = "Boost your business with Agile Software Development by Astute Softwares. We ensure predictable results, cost control, scalability, and seamless collaboration for your IT projects.";
@@ -15780,7 +15737,7 @@ const HelmetComp$3 = () => {
     })]
   });
 };
-const HelmetComp$2 = ({
+const HelmetComp = ({
   title,
   description,
   keywords,
@@ -16232,7 +16189,7 @@ const Careers = () => {
   const url = "https://astutesoftwares.com/careers";
   const imageUrl = "https://astutesoftwares.com/images/careers-placeholder-webp.webp";
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(HelmetComp$2, {
+    children: [/* @__PURE__ */ jsx(HelmetComp, {
       title,
       description,
       keywords,
@@ -30975,17 +30932,21 @@ const DirectContactUs = ({
       }, 1e4);
     }
   }, [screen]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(HelmetComp$1, {}), /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "bg-blue-primary min-h-screen w-screen ",
       children: [/* @__PURE__ */ jsxs("div", {
         className: "-z-10",
         children: [/* @__PURE__ */ jsx("img", {
           src: "/Images/DirectContact/header3-webp.webp",
+          width: 2794,
+          height: 660,
           alt: "header3",
           className: " relative"
         }), /* @__PURE__ */ jsx("img", {
           src: "/Images/DirectContact/circle-logo-modified-webp.webp",
+          width: 738,
+          height: 738,
           alt: "logo",
           className: "pl-4 block sm:hidden absolute z-10 w-16  sm:w-32 -mt-6 sm:-mt-24  "
         })]
@@ -30996,6 +30957,8 @@ const DirectContactUs = ({
           children: [/* @__PURE__ */ jsx("img", {
             loading: "lazy",
             src: "/Images/DirectContact/circle-logo-modified-webp.webp",
+            width: 738,
+            height: 738,
             alt: "logo",
             className: "hidden sm:block w-16 lg:w-32  -mt-6 lg:-mt-24  "
           }), screen === 0 ? /* @__PURE__ */ jsxs(Fragment, {
@@ -31244,70 +31207,7 @@ const DirectContactUs = ({
           })]
         })
       })]
-    })]
-  });
-};
-const HelmetComp$1 = () => {
-  const intl = useIntl();
-  const defaultTitle = "Richiedi Contatto | Astute Softwares - Mettiti in Contatto con Noi";
-  const defaultDescription = "Sei interessato ai nostri servizi? Richiedi una consulenza con Astute Softwares oggi stesso. Ti metteremo in contatto con i nostri esperti per discutere le esigenze del tuo progetto.";
-  const url = "https://astutesoftwares.com/request-contact";
-  const imageUrl = "https://astutesoftwares.com/images/richiedi-contatto-placeholder-webp.webp";
-  return /* @__PURE__ */ jsxs(Helmet, {
-    children: [/* @__PURE__ */ jsx("title", {
-      children: (intl == null ? void 0 : intl.formatMessage({
-        id: "richiedi.contatto.title",
-        defaultMessage: defaultTitle
-      })) || defaultTitle
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "description",
-      content: (intl == null ? void 0 : intl.formatMessage({
-        id: "richiedi.contatto.description",
-        defaultMessage: defaultDescription
-      })) || defaultDescription
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "keywords",
-      content: "Richiedi contatto, Astute Softwares, Consulenza IT, Sviluppo software, Trasformazione digitale, Sviluppo app mobile, Metaverso, AR VR"
-    }), /* @__PURE__ */ jsx("link", {
-      rel: "canonical",
-      href: url
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:title",
-      content: defaultTitle
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:description",
-      content: defaultDescription
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:type",
-      content: "website"
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:url",
-      content: url
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:image:alt",
-      content: "Richiedi Contatto - Astute Softwares"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:card",
-      content: "summary_large_image"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:title",
-      content: defaultTitle
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:description",
-      content: defaultDescription
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "robots",
-      content: "index, follow"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "referrer",
-      content: "origin-when-crossorigin"
-    })]
+    })
   });
 };
 const ItalianDirectContactUs = ({
@@ -31363,19 +31263,23 @@ const ItalianDirectContactUs = ({
     }
     actions.resetForm(initialValues);
   };
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(HelmetComp, {}), /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "bg-blue-primary min-h-screen w-screen ",
       children: [/* @__PURE__ */ jsxs("div", {
         className: "-z-10",
         children: [/* @__PURE__ */ jsx("img", {
           loading: "lazy",
           src: "/Images/DirectContact/header3-webp.webp",
+          width: 2794,
+          height: 660,
           alt: "header3",
           className: " relative"
         }), /* @__PURE__ */ jsx("img", {
           loading: "lazy",
           src: "/Images/DirectContact/circle-logo-modified-webp.webp",
+          width: 738,
+          height: 738,
           alt: "circle-logo-modified",
           className: "pl-4 block sm:hidden absolute z-10 w-16  sm:w-32 -mt-6 sm:-mt-24  "
         })]
@@ -31386,6 +31290,8 @@ const ItalianDirectContactUs = ({
           children: [/* @__PURE__ */ jsx("img", {
             loading: "lazy",
             src: "/Images/DirectContact/circle-logo-modified-webp.webp",
+            width: 738,
+            height: 738,
             alt: "circle-logo-modified",
             className: "hidden sm:block w-16 lg:w-32  -mt-6 lg:-mt-24  "
           }), screen === 0 ? /* @__PURE__ */ jsxs(Fragment, {
@@ -31634,70 +31540,7 @@ const ItalianDirectContactUs = ({
           })]
         })
       })]
-    })]
-  });
-};
-const HelmetComp = () => {
-  const intl = useIntl();
-  const defaultTitle = "Request Contact | Astute Softwares - Get in Touch Today";
-  const defaultDescription = "Interested in our services? Request a callback from Astute Softwares today. We’ll connect you with our experts to discuss your project needs.";
-  const url = "https://astutesoftwares.com/request-contact-it";
-  const imageUrl = "https://astutesoftwares.com/images/request-contact-placeholder-webp.webp";
-  return /* @__PURE__ */ jsxs(Helmet, {
-    children: [/* @__PURE__ */ jsx("title", {
-      children: (intl == null ? void 0 : intl.formatMessage({
-        id: "request.contact.title",
-        defaultMessage: defaultTitle
-      })) || defaultTitle
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "description",
-      content: (intl == null ? void 0 : intl.formatMessage({
-        id: "request.contact.description",
-        defaultMessage: defaultDescription
-      })) || defaultDescription
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "keywords",
-      content: "Request contact, Astute Softwares, IT consulting, Software development, Digital transformation, Mobile app development, Metaverse, AR VR"
-    }), /* @__PURE__ */ jsx("link", {
-      rel: "canonical",
-      href: url
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:title",
-      content: defaultTitle
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:description",
-      content: defaultDescription
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:type",
-      content: "website"
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:url",
-      content: url
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx("meta", {
-      property: "og:image:alt",
-      content: "Request Contact - Astute Softwares"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:card",
-      content: "summary_large_image"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:title",
-      content: defaultTitle
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:description",
-      content: defaultDescription
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "twitter:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "robots",
-      content: "index, follow"
-    }), /* @__PURE__ */ jsx("meta", {
-      name: "referrer",
-      content: "origin-when-crossorigin"
-    })]
+    })
   });
 };
 const BaseRoutes = () => {

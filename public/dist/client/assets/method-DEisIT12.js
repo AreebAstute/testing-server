@@ -1,6 +1,6 @@
-import { G as GLTFLoader } from "./GLTFLoader-PCrT0e2P.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-DJDXf6YW.js";
-import { W as WebGLRenderer, S as Scene, P as PerspectiveCamera, A as AmbientLight, a as PointLight, e as PointLightHelper, b as PMREMGenerator, E as EquirectangularReflectionMapping, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-7cUOXsZh.js";
+import { G as GLTFLoader } from "./GLTFLoader-BywxR1N6.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-CLEryQzw.js";
+import { W as WebGLRenderer, S as Scene, P as PerspectiveCamera, A as AmbientLight, a as PointLight, e as PointLightHelper, b as PMREMGenerator, E as EquirectangularReflectionMapping, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-CMPvXOEM.js";
 const createRenderer = () => {
   var renderer = new WebGLRenderer({
     canvas: document.getElementById("Robotmodel2"),

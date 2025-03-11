@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-CucaqXqn.js","assets/GLTFLoader-PCrT0e2P.js","assets/method-CQC8VsOV.js","assets/RGBELoader-DJDXf6YW.js","assets/method-BHGOROaW.js","assets/method-Dg-_NlS3.js","assets/method-CR0D03M5.js","assets/method-Doi82Xhi.js","assets/method-B7-uZ4hb.js","assets/method-Ba3_7lMo.js","assets/OrbitControls-BJPpftth.js","assets/method-4IG8B2iK.js","assets/method-Dh5ZlSwx.js","assets/method-Nw8wBc63.js","assets/method-C0HWzJIk.js","assets/method-CDnKpoLX.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-2bPuJ5dD.js","assets/GLTFLoader-BywxR1N6.js","assets/method-D8Mil6mq.js","assets/RGBELoader-CLEryQzw.js","assets/method-BqmtF4I8.js","assets/method-Dt0j2y40.js","assets/method-CeJ8FjxA.js","assets/method-nGVSSzFC.js","assets/method-yJ08FEbw.js","assets/method-CFjhI-dc.js","assets/OrbitControls-Ch87DSNr.js","assets/method-DEisIT12.js","assets/method-TDnnvG4C.js","assets/method-TgNUax7A.js","assets/method-B484q8uI.js","assets/method-fCX5TjFi.js"])))=>i.map(i=>d[i]);
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -65190,7 +65190,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BJPpftth.js");
+        } = await import("./OrbitControls-Ch87DSNr.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -65214,7 +65214,7 @@ const Viewer = ({
           createScene: createScene2,
           onWindowResize: onWindowResize2,
           animate: animate3
-        } = await import("./methods-CucaqXqn.js");
+        } = await import("./methods-2bPuJ5dD.js");
         return {
           createCamera: createCamera2,
           createFloor: createFloor2,
@@ -65231,7 +65231,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           default: ColorPallete3
-        } = await import("./index-CDR2ph4E.js");
+        } = await import("./index-DicB-cId.js");
         return {
           default: ColorPallete3
         };
@@ -65541,7 +65541,9 @@ const ServicePageServiceCard = ({
   title,
   desc,
   link,
-  img
+  img,
+  height,
+  width
 }) => {
   return /* @__PURE__ */ jsx$1(Fragment, {
     children: /* @__PURE__ */ jsxs(Link, {
@@ -65550,6 +65552,8 @@ const ServicePageServiceCard = ({
       children: [/* @__PURE__ */ jsxs("div", {
         className: "container text-center items-center pt-5",
         children: [/* @__PURE__ */ jsx$1("img", {
+          width,
+          height,
           loading: "lazy",
           className: "inline-block w-2/5 ",
           src: img,
@@ -65620,32 +65624,44 @@ function OurServiceSection() {
             title: "Custom Software Development",
             desc: "Full-service Custom Software Development, Cloud Engineering, QA and DevOps\r company, specializing in the development of time-sensitive and innovative solutions.",
             link: "/services/custom-software-development",
-            img: "/Images/serviceAssets/section2/software_dev-webp.webp"
+            img: "/Images/serviceAssets/section2/software_dev-webp.webp",
+            width: 409,
+            height: 409
           }), /* @__PURE__ */ jsx$1(ServicePageServiceCard, {
             title: "Digital Transformation",
             desc: "An experienced team to help you take advantage of new technologies and reap the benefits of being a digital enterprise.",
             link: "/services/digital-transformation-services",
-            img: "/Images/serviceAssets/section2/transformation-webp.webp"
+            img: "/Images/serviceAssets/section2/transformation-webp.webp",
+            width: 344,
+            height: 344
           }), /* @__PURE__ */ jsx$1(ServicePageServiceCard, {
             title: "QA and Testing Services",
             desc: "For 25 years Astute Softwares utilized an Integrated Quality Assurance practice to ensure the highest\r quality of our deliverables.",
             link: "/services/software-quality-assurance",
-            img: "/Images/serviceAssets/section2/QA-webp.webp"
+            img: "/Images/serviceAssets/section2/QA-webp.webp",
+            width: 345,
+            height: 345
           }), /* @__PURE__ */ jsx$1(ServicePageServiceCard, {
             title: "Mobile Application development",
             desc: "Your customers want access to your business anytime, anywhere… Our TOP-NOTCH mobile app development talent will make sure they can.",
             link: "/services/mobile-application-development",
-            img: "/Images/serviceAssets/section2/app_dev-webp.webp"
+            img: "/Images/serviceAssets/section2/app_dev-webp.webp",
+            width: 344,
+            height: 344
           }), /* @__PURE__ */ jsx$1(ServicePageServiceCard, {
             title: "UI and UX Design",
             desc: "We let the purpose of the particular web or mobile application drive its design and user experience to deliver\r high user acceptance and engagement rates of your product.",
             link: "/services/ui-and-ux-design",
-            img: "/Images/serviceAssets/section2/uiux-webp.webp"
+            img: "/Images/serviceAssets/section2/uiux-webp.webp",
+            width: 328,
+            height: 328
           }), /* @__PURE__ */ jsx$1(ServicePageServiceCard, {
             title: "Maintenance & Support Services",
             desc: "Our maintenance and support teams seamlessly blend with clients\r development and support practices ensuring smooth software operation and scalability.",
             link: "/services/maintenance-and-support",
-            img: "/Images/serviceAssets/section2/app_maintenance-webp.webp"
+            img: "/Images/serviceAssets/section2/app_maintenance-webp.webp",
+            width: 347,
+            height: 347
           })]
         })]
       })
@@ -65752,34 +65768,46 @@ function ChooseUs() {
         children: [/* @__PURE__ */ jsx$1(Card, {
           link: "/services/blockchain-solutions",
           image: "/Images/serviceAssets/section3/blockchain-webp.webp",
+          width: 320,
+          height: 320,
           alt: "blockchain",
           text: "Block Chain",
           custom_className: "-mt-6"
         }), /* @__PURE__ */ jsx$1(Card, {
           link: "/services/devops-services",
           image: "/Images/serviceAssets/section3/devops-webp.webp",
+          width: 368,
+          height: 368,
           alt: "devops",
           text: "DevOps Services"
         }), /* @__PURE__ */ jsx$1(Card, {
           link: "/services/big-data-consulting-services",
           image: "/Images/serviceAssets/section3/big_data-webp.webp",
+          width: 319,
+          height: 319,
           alt: "big_data",
           text: "Big Data",
           custom_className: "-mt-6"
         }), /* @__PURE__ */ jsx$1(Card, {
           link: "/metaverse",
           image: "/Images/serviceAssets/section3/metaverse-icon-webp.webp",
+          width: 380,
+          height: 380,
           alt: "metaverse-icon",
           text: "Metaverse"
         }), /* @__PURE__ */ jsx$1(Card, {
           link: "/augmented-reality",
           image: "/Images/serviceAssets/section3/ar-icon-webp.webp",
+          width: 380,
+          height: 380,
           alt: "augmented_reality",
           text: "Augmented Reality",
           custom_className: "-mt-4"
         }), /* @__PURE__ */ jsx$1(Card, {
           link: "/3d-modelling",
           image: "/Images/serviceAssets/section3/3d-modeling-icon-webp.webp",
+          width: 512,
+          height: 512,
           alt: "3d_model_icon",
           text: "3d Modeling",
           custom_className: "-mt-6"
@@ -65801,7 +65829,9 @@ const Card = ({
   image,
   text: text2,
   alt,
-  custom_class
+  custom_class,
+  width,
+  height
 }) => {
   const [active, setActive] = reactExports.useState(false);
   return /* @__PURE__ */ jsx$1(Link, {
@@ -65816,6 +65846,8 @@ const Card = ({
         children: /* @__PURE__ */ jsxs("div", {
           className: "",
           children: [/* @__PURE__ */ jsx$1("img", {
+            height,
+            width,
             loading: "lazy",
             className: "inline-block bg-contain img-width-ln",
             src: `${image}`,
@@ -65842,74 +65874,15 @@ function ServiceIndex() {
   } = useLocation();
   const [refOffset, setRefOffset] = reactExports.useState();
   const ref = reactExports.useRef(null);
-  const intl = useIntl();
+  useIntl();
   reactExports.useEffect(() => {
     if (hash2 == OUR_SERVICES_HASH_LINK) {
       handleScroll(ref.current.offsetTop);
     }
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  const defaultTitle = "Astute Softwares - Services";
-  const defaultDescription = "Astute Softwares is a software development company offering mobile application development, web design, 3D modeling and animation, AR, and VR services.";
-  const url = "https://astutesoftwares.com/services";
-  const imageUrl = "https://astutesoftwares.com/images/services-banner-webp.webp";
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: (intl == null ? void 0 : intl.formatMessage({
-          id: "software.services",
-          defaultMessage: defaultTitle
-        })) || defaultTitle
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: (intl == null ? void 0 : intl.formatMessage({
-          id: "astute.software.is.a.development",
-          defaultMessage: defaultDescription
-        })) || defaultDescription
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "IT consulting services, Professional web development, Mobile app development, UX/UI design services, Custom software solutions"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: url
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: defaultDescription
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: url
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:image",
-        content: imageUrl
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:image:alt",
-        content: "Astute Softwares Services"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "twitter:card",
-        content: "summary_large_image"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "twitter:title",
-        content: defaultTitle
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "twitter:description",
-        content: defaultDescription
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "twitter:image",
-        content: imageUrl
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "robots",
-        content: "index, follow"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1(ServiceLandingPage, {
+    children: [/* @__PURE__ */ jsx$1(ServiceLandingPage, {
       refOffset
     }), /* @__PURE__ */ jsx$1("div", {
       id: "our-services",
@@ -79670,23 +79643,7 @@ const MapSection = () => {
 const Index$1 = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: "Contact Us - Your Company"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: "Get in touch with us for any queries or support."
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "contact, support, customer service"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: "Contact Us - Your Company"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: "Get in touch with us for any queries or support."
-      })]
-    }), /* @__PURE__ */ jsx$1(LandingSection$l, {}), /* @__PURE__ */ jsx$1(GetinTouch, {}), /* @__PURE__ */ jsx$1(MapSection, {})]
+    children: [/* @__PURE__ */ jsx$1(LandingSection$l, {}), /* @__PURE__ */ jsx$1(GetinTouch, {}), /* @__PURE__ */ jsx$1(MapSection, {})]
   });
 };
 const LandingSection$k = () => {
@@ -80601,7 +80558,7 @@ const IterativeIncremental = () => {
 const HowWeDeliver = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx$1(HelmetComp$3, {}), /* @__PURE__ */ jsx$1("div", {
+    children: [/* @__PURE__ */ jsx$1(HelmetComp$1, {}), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -80610,7 +80567,7 @@ const HowWeDeliver = () => {
     })]
   });
 };
-const HelmetComp$3 = () => {
+const HelmetComp$1 = () => {
   const intl = useIntl();
   const defaultTitle = "Agile Software Development | Astute Softwares - Remote Collaboration Experts";
   const defaultDescription = "Boost your business with Agile Software Development by Astute Softwares. We ensure predictable results, cost control, scalability, and seamless collaboration for your IT projects.";
@@ -80673,7 +80630,7 @@ const HelmetComp$3 = () => {
     })]
   });
 };
-const HelmetComp$2 = ({
+const HelmetComp = ({
   title,
   description,
   keywords,
@@ -81125,7 +81082,7 @@ const Careers = () => {
   const url = "https://astutesoftwares.com/careers";
   const imageUrl = "https://astutesoftwares.com/images/careers-placeholder-webp.webp";
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx$1(HelmetComp$2, {
+    children: [/* @__PURE__ */ jsx$1(HelmetComp, {
       title,
       description,
       keywords,
@@ -92396,7 +92353,7 @@ const PlantModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BJPpftth.js");
+        } = await import("./OrbitControls-Ch87DSNr.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92420,7 +92377,7 @@ const PlantModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-CQC8VsOV.js");
+        } = await import("./method-D8Mil6mq.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92472,7 +92429,7 @@ const PlantModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BJPpftth.js");
+        } = await import("./OrbitControls-Ch87DSNr.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92496,7 +92453,7 @@ const PlantModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BHGOROaW.js");
+        } = await import("./method-BqmtF4I8.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92553,7 +92510,7 @@ const PlanModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BJPpftth.js");
+        } = await import("./OrbitControls-Ch87DSNr.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92577,7 +92534,7 @@ const PlanModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-Dg-_NlS3.js");
+        } = await import("./method-Dt0j2y40.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92978,7 +92935,7 @@ const BagModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BJPpftth.js");
+        } = await import("./OrbitControls-Ch87DSNr.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -93002,7 +92959,7 @@ const BagModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-CR0D03M5.js");
+        } = await import("./method-CeJ8FjxA.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93052,7 +93009,7 @@ const BagModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BJPpftth.js");
+        } = await import("./OrbitControls-Ch87DSNr.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -93076,7 +93033,7 @@ const BagModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-Doi82Xhi.js");
+        } = await import("./method-nGVSSzFC.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93132,7 +93089,7 @@ const BagModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BJPpftth.js");
+        } = await import("./OrbitControls-Ch87DSNr.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -93156,7 +93113,7 @@ const BagModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-B7-uZ4hb.js");
+        } = await import("./method-yJ08FEbw.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93353,13 +93310,13 @@ const Model1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-BJPpftth.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-Ch87DSNr.js"), true ? [] : void 0);
     const {
       createCamera,
       createRenderer,
       onWindowResize,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-Ba3_7lMo.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-CFjhI-dc.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -93382,7 +93339,7 @@ const Model2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-BJPpftth.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-Ch87DSNr.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93391,7 +93348,7 @@ const Model2 = ({
       createScene,
       onWindowResize,
       animate: animate2
-    } = __vitePreload(() => import("./method-4IG8B2iK.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-DEisIT12.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
     const renderer = createRenderer();
     const scene = createScene();
     const camera = createCamera();
@@ -93429,7 +93386,7 @@ const Model3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-BJPpftth.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-Ch87DSNr.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93439,7 +93396,7 @@ const Model3 = ({
       animate: animate2,
       createFloor,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-Dh5ZlSwx.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-TDnnvG4C.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -93511,7 +93468,7 @@ const BottleModel1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-BJPpftth.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-Ch87DSNr.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93521,7 +93478,7 @@ const BottleModel1 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-Nw8wBc63.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-TgNUax7A.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93556,7 +93513,7 @@ const BottleModel2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-BJPpftth.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-Ch87DSNr.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93566,7 +93523,7 @@ const BottleModel2 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-C0HWzJIk.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-B484q8uI.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93603,7 +93560,7 @@ const BottleModel3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-BJPpftth.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-Ch87DSNr.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93613,7 +93570,7 @@ const BottleModel3 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-CDnKpoLX.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-fCX5TjFi.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93956,7 +93913,7 @@ const ModalVideo = (props) => {
   const [isOpen, setOpen] = reactExports.useState(false);
   const [VideoModal, setVideoModal] = reactExports.useState(null);
   reactExports.useEffect(() => {
-    __vitePreload(() => import("./index-9At6tTUY.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
+    __vitePreload(() => import("./index-DQrLns9f.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
       setVideoModal(() => module2.default);
     });
   }, []);
@@ -96098,17 +96055,21 @@ const DirectContactUs = ({
       }, 1e4);
     }
   }, [screen]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx$1(HelmetComp$1, {}), /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "bg-blue-primary min-h-screen w-screen ",
       children: [/* @__PURE__ */ jsxs("div", {
         className: "-z-10",
         children: [/* @__PURE__ */ jsx$1("img", {
           src: "/Images/DirectContact/header3-webp.webp",
+          width: 2794,
+          height: 660,
           alt: "header3",
           className: " relative"
         }), /* @__PURE__ */ jsx$1("img", {
           src: "/Images/DirectContact/circle-logo-modified-webp.webp",
+          width: 738,
+          height: 738,
           alt: "logo",
           className: "pl-4 block sm:hidden absolute z-10 w-16  sm:w-32 -mt-6 sm:-mt-24  "
         })]
@@ -96119,6 +96080,8 @@ const DirectContactUs = ({
           children: [/* @__PURE__ */ jsx$1("img", {
             loading: "lazy",
             src: "/Images/DirectContact/circle-logo-modified-webp.webp",
+            width: 738,
+            height: 738,
             alt: "logo",
             className: "hidden sm:block w-16 lg:w-32  -mt-6 lg:-mt-24  "
           }), screen === 0 ? /* @__PURE__ */ jsxs(Fragment, {
@@ -96367,70 +96330,7 @@ const DirectContactUs = ({
           })]
         })
       })]
-    })]
-  });
-};
-const HelmetComp$1 = () => {
-  const intl = useIntl();
-  const defaultTitle = "Richiedi Contatto | Astute Softwares - Mettiti in Contatto con Noi";
-  const defaultDescription = "Sei interessato ai nostri servizi? Richiedi una consulenza con Astute Softwares oggi stesso. Ti metteremo in contatto con i nostri esperti per discutere le esigenze del tuo progetto.";
-  const url = "https://astutesoftwares.com/request-contact";
-  const imageUrl = "https://astutesoftwares.com/images/richiedi-contatto-placeholder-webp.webp";
-  return /* @__PURE__ */ jsxs(HelmetExport, {
-    children: [/* @__PURE__ */ jsx$1("title", {
-      children: (intl == null ? void 0 : intl.formatMessage({
-        id: "richiedi.contatto.title",
-        defaultMessage: defaultTitle
-      })) || defaultTitle
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "description",
-      content: (intl == null ? void 0 : intl.formatMessage({
-        id: "richiedi.contatto.description",
-        defaultMessage: defaultDescription
-      })) || defaultDescription
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "keywords",
-      content: "Richiedi contatto, Astute Softwares, Consulenza IT, Sviluppo software, Trasformazione digitale, Sviluppo app mobile, Metaverso, AR VR"
-    }), /* @__PURE__ */ jsx$1("link", {
-      rel: "canonical",
-      href: url
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:title",
-      content: defaultTitle
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:description",
-      content: defaultDescription
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:type",
-      content: "website"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:url",
-      content: url
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:image:alt",
-      content: "Richiedi Contatto - Astute Softwares"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:card",
-      content: "summary_large_image"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:title",
-      content: defaultTitle
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:description",
-      content: defaultDescription
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "robots",
-      content: "index, follow"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "referrer",
-      content: "origin-when-crossorigin"
-    })]
+    })
   });
 };
 const ItalianDirectContactUs = ({
@@ -96486,19 +96386,23 @@ const ItalianDirectContactUs = ({
     }
     actions.resetForm(initialValues);
   };
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx$1(HelmetComp, {}), /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "bg-blue-primary min-h-screen w-screen ",
       children: [/* @__PURE__ */ jsxs("div", {
         className: "-z-10",
         children: [/* @__PURE__ */ jsx$1("img", {
           loading: "lazy",
           src: "/Images/DirectContact/header3-webp.webp",
+          width: 2794,
+          height: 660,
           alt: "header3",
           className: " relative"
         }), /* @__PURE__ */ jsx$1("img", {
           loading: "lazy",
           src: "/Images/DirectContact/circle-logo-modified-webp.webp",
+          width: 738,
+          height: 738,
           alt: "circle-logo-modified",
           className: "pl-4 block sm:hidden absolute z-10 w-16  sm:w-32 -mt-6 sm:-mt-24  "
         })]
@@ -96509,6 +96413,8 @@ const ItalianDirectContactUs = ({
           children: [/* @__PURE__ */ jsx$1("img", {
             loading: "lazy",
             src: "/Images/DirectContact/circle-logo-modified-webp.webp",
+            width: 738,
+            height: 738,
             alt: "circle-logo-modified",
             className: "hidden sm:block w-16 lg:w-32  -mt-6 lg:-mt-24  "
           }), screen === 0 ? /* @__PURE__ */ jsxs(Fragment, {
@@ -96757,70 +96663,7 @@ const ItalianDirectContactUs = ({
           })]
         })
       })]
-    })]
-  });
-};
-const HelmetComp = () => {
-  const intl = useIntl();
-  const defaultTitle = "Request Contact | Astute Softwares - Get in Touch Today";
-  const defaultDescription = "Interested in our services? Request a callback from Astute Softwares today. We’ll connect you with our experts to discuss your project needs.";
-  const url = "https://astutesoftwares.com/request-contact-it";
-  const imageUrl = "https://astutesoftwares.com/images/request-contact-placeholder-webp.webp";
-  return /* @__PURE__ */ jsxs(HelmetExport, {
-    children: [/* @__PURE__ */ jsx$1("title", {
-      children: (intl == null ? void 0 : intl.formatMessage({
-        id: "request.contact.title",
-        defaultMessage: defaultTitle
-      })) || defaultTitle
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "description",
-      content: (intl == null ? void 0 : intl.formatMessage({
-        id: "request.contact.description",
-        defaultMessage: defaultDescription
-      })) || defaultDescription
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "keywords",
-      content: "Request contact, Astute Softwares, IT consulting, Software development, Digital transformation, Mobile app development, Metaverse, AR VR"
-    }), /* @__PURE__ */ jsx$1("link", {
-      rel: "canonical",
-      href: url
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:title",
-      content: defaultTitle
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:description",
-      content: defaultDescription
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:type",
-      content: "website"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:url",
-      content: url
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx$1("meta", {
-      property: "og:image:alt",
-      content: "Request Contact - Astute Softwares"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:card",
-      content: "summary_large_image"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:title",
-      content: defaultTitle
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:description",
-      content: defaultDescription
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "twitter:image",
-      content: imageUrl
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "robots",
-      content: "index, follow"
-    }), /* @__PURE__ */ jsx$1("meta", {
-      name: "referrer",
-      content: "origin-when-crossorigin"
-    })]
+    })
   });
 };
 const BaseRoutes = () => {
