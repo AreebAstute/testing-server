@@ -22,7 +22,6 @@ import { FiArrowRight } from "react-icons/fi";
 import Select from "react-select";
 import { useDetectClickOutside } from "react-detect-click-outside";
 import { MdCancel } from "react-icons/md";
-import pkg from "react-lazy-load-image-component";
 const en = {
   "astute.software.home": "Astute Softwares - Making World Digitally Astute",
   "astute.software.home.desc": "Astute Softwares helps tech companies and marketing agencies to scale up and reach their goals quickly. We create high-performing software applications, mobile applications, augmented reality applications, and metaverse development that grows with your business.",
@@ -13274,7 +13273,7 @@ const Viewer = ({
       } = await import("./assets/methods-Bfz_N5DN.js");
       const {
         default: ColorPallete2
-      } = await import("./assets/index-1lFHSe5f.js");
+      } = await import("./assets/index-DzVjzD8b.js");
       setColorPalleteComponent(() => ColorPallete2);
       const {
         GLTFExporter: GLTFExporter2
@@ -31058,9 +31057,6 @@ function LandingPage() {
     })]
   });
 }
-const {
-  LazyLoadImage: LazyLoadImage$7
-} = pkg;
 function HeroSection$2() {
   return /* @__PURE__ */ jsxs("section", {
     id: "hero",
@@ -31069,13 +31065,13 @@ function HeroSection$2() {
       className: "xl:container xl:mx-auto flex flex-col lg:items-start xlxl:items-center lg:justify-center lg:flex-row-reverse justify-between pb-6 gap-0 lg:mb-0 pt-4",
       children: [/* @__PURE__ */ jsx("div", {
         className: "visible lg:invisible relative mx-auto lg:mx-0 lg:mb-0 w-full lg:w-1/2",
-        children: /* @__PURE__ */ jsx(LazyLoadImage$7, {
-          height: 1097,
-          width: 972,
+        children: /* @__PURE__ */ jsx("img", {
+          width: 1070,
+          height: 972,
           loading: "lazy",
           src: "/Images/edisu/section_1-webp.webp",
           alt: "chats",
-          className: "relative z-10  w-full"
+          className: "relative z-10 overflow-x-visible w-full"
         })
       }), /* @__PURE__ */ jsxs("div", {
         className: "flex flex-col items-center lg:items-start my-12 lg:my-0 justify-center gap-4 lg:pl-20 w-full lg:w-1/2",
@@ -31086,9 +31082,9 @@ function HeroSection$2() {
           }), "Study"]
         }), /* @__PURE__ */ jsx("div", {
           className: "flex justify-center lg:justify-start items-center w-full",
-          children: /* @__PURE__ */ jsx(LazyLoadImage$7, {
-            height: 188,
+          children: /* @__PURE__ */ jsx("img", {
             width: 188,
+            height: 189,
             src: "/Images/edisu/edisu_logo-webp.webp",
             alt: "app-logo",
             className: "w-40 mb-2"
@@ -31098,9 +31094,9 @@ function HeroSection$2() {
           children: "Design and Develop by"
         }), /* @__PURE__ */ jsx("div", {
           className: "flex justify-center lg:justify-start items-center w-full",
-          children: /* @__PURE__ */ jsx(LazyLoadImage$7, {
-            height: 85,
+          children: /* @__PURE__ */ jsx("img", {
             width: 410,
+            height: 85,
             src: "/Images/edisu/astute_logo-webp.webp",
             alt: "app-logo",
             className: "w-40 mb-2"
@@ -31109,20 +31105,15 @@ function HeroSection$2() {
       })]
     }), /* @__PURE__ */ jsx("div", {
       className: "invisible md:visible absolute top-0 right-0 w-1/2 xl:w-2/5 z-20",
-      children: /* @__PURE__ */ jsx(LazyLoadImage$7, {
-        height: 1097,
-        width: 927,
+      children: /* @__PURE__ */ jsx("img", {
         loading: "lazy",
         src: "/Images/edisu/section_1-webp.webp",
         alt: "chats",
-        className: " w-full"
+        className: "overflow-x-visible w-full"
       })
     })]
   });
 }
-const {
-  LazyLoadImage: LazyLoadImage$6
-} = pkg;
 function AboutSection$2() {
   return /* @__PURE__ */ jsxs("section", {
     id: "about",
@@ -31133,13 +31124,13 @@ function AboutSection$2() {
         "data-aos": "fade-right",
         "data-aos-duration": "1000",
         className: "invisible relative lg:mx-0 lg:mb-0 w-7/12 lg:-w-1/2 xl:w-2/5 xlxl:w-1/2 mx-auto",
-        children: /* @__PURE__ */ jsx(LazyLoadImage$6, {
-          height: 835,
-          width: 825,
+        children: /* @__PURE__ */ jsx("img", {
+          width: 835,
+          height: 825,
           loading: "lazy",
           src: "/Images/edisu/section_2-webp.webp",
           alt: "chats",
-          className: "relative z-10 "
+          className: "relative z-10 overflow-x-visible"
         })
       }), /* @__PURE__ */ jsxs("div", {
         "data-aos": "fade-left",
@@ -31158,20 +31149,17 @@ function AboutSection$2() {
       })]
     }), /* @__PURE__ */ jsx("div", {
       className: "absolute bottom-0 left-0 w-7/12 lg:w-2/5 2xl:w-1/3 z-20",
-      children: /* @__PURE__ */ jsx(LazyLoadImage$6, {
-        height: 835,
-        width: 825,
+      children: /* @__PURE__ */ jsx("img", {
+        width: 835,
+        height: 825,
         loading: "lazy",
         src: "/Images/edisu/section_2-webp.webp",
         alt: "chats",
-        className: " w-full"
+        className: "overflow-x-visible w-full"
       })
     })]
   });
 }
-const {
-  LazyLoadImage: LazyLoadImage$5
-} = pkg;
 function ProblemStatementSection$2() {
   return /* @__PURE__ */ jsxs("section", {
     id: "problem-statement",
@@ -31209,9 +31197,9 @@ function ProblemStatementSection$2() {
                   children: "The Italian government faced a significant challenge in maintaining the safety and health of individuals using study halls amidst the COVID-19 pandemic."
                 }), /* @__PURE__ */ jsx("div", {
                   className: "pl-4",
-                  children: /* @__PURE__ */ jsx(LazyLoadImage$5, {
-                    height: 510,
-                    width: 390,
+                  children: /* @__PURE__ */ jsx("img", {
+                    width: 515,
+                    height: 390,
                     loading: "lazy",
                     src: "/Images/edisu/group_10-webp.webp",
                     alt: "card pattern",
@@ -31240,7 +31228,7 @@ function ProblemStatementSection$2() {
                   children: "The primary concern was the risk of virus transmission through surface contact, particularly the seats that were used by multiple individuals throughout the day."
                 }), /* @__PURE__ */ jsx("div", {
                   className: "pl-4",
-                  children: /* @__PURE__ */ jsx(LazyLoadImage$5, {
+                  children: /* @__PURE__ */ jsx("img", {
                     width: 515,
                     height: 390,
                     loading: "lazy",
@@ -31271,7 +31259,7 @@ function ProblemStatementSection$2() {
                   children: "Given the nature of the virus's spread, it was crucial to implement a rigorous disinfection and sanitization protocol to mitigate the risk of COVID-19 transmission."
                 }), /* @__PURE__ */ jsx("div", {
                   className: "pl-4",
-                  children: /* @__PURE__ */ jsx(LazyLoadImage$5, {
+                  children: /* @__PURE__ */ jsx("img", {
                     width: 515,
                     height: 390,
                     loading: "lazy",
@@ -31287,7 +31275,7 @@ function ProblemStatementSection$2() {
       })]
     }), /* @__PURE__ */ jsx("div", {
       className: "w-11/12 absolute top-8 left-2/5 z-10",
-      children: /* @__PURE__ */ jsx(LazyLoadImage$5, {
+      children: /* @__PURE__ */ jsx("img", {
         width: 1816,
         height: 959,
         src: "/Images/edisu/section_3_bg-webp.webp",
@@ -31297,9 +31285,6 @@ function ProblemStatementSection$2() {
     })]
   });
 }
-const {
-  LazyLoadImage: LazyLoadImage$4
-} = pkg;
 function Challenges() {
   return /* @__PURE__ */ jsxs("section", {
     id: "solutions",
@@ -31378,7 +31363,7 @@ function Challenges() {
           })]
         }), /* @__PURE__ */ jsx("div", {
           className: "w-1/3 h-auto absolute top-20 left-1/4 z-10",
-          children: /* @__PURE__ */ jsx(LazyLoadImage$4, {
+          children: /* @__PURE__ */ jsx("img", {
             width: 285,
             height: 62,
             src: "/Images/edisu/group_1-webp.webp",
@@ -31387,7 +31372,7 @@ function Challenges() {
           })
         }), /* @__PURE__ */ jsx("div", {
           className: "w-1/3 h-auto absolute top-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/5 z-10",
-          children: /* @__PURE__ */ jsx(LazyLoadImage$4, {
+          children: /* @__PURE__ */ jsx("img", {
             width: 234,
             height: 86,
             src: "/Images/edisu/group_2-webp.webp",
@@ -31399,31 +31384,28 @@ function Challenges() {
         "data-aos": "fade-right",
         "data-aos-duration": "1000",
         className: "invisible relative lg:mx-0 lg:mb-0 w-7/12 lg:-w-1/2 xl:w-2/5 xlxl:w-1/2 mx-auto",
-        children: /* @__PURE__ */ jsx(LazyLoadImage$4, {
+        children: /* @__PURE__ */ jsx("img", {
           width: 621,
           height: 724,
           loading: "lazy",
           src: "/Images/edisu/springs-webp.webp",
           alt: "springs",
-          className: "w-full relative z-10 "
+          className: "w-full relative z-10 overflow-x-visible"
         })
       })]
     }), /* @__PURE__ */ jsx("div", {
       className: "absolute bottom-0 md:top-1/12 right-0 w-7/12 lg:w-2/5 2xl:w-1/4 z-10",
-      children: /* @__PURE__ */ jsx(LazyLoadImage$4, {
+      children: /* @__PURE__ */ jsx("img", {
         width: 621,
         height: 724,
         loading: "lazy",
         src: "/Images/edisu/springs-webp.webp",
         alt: "springs",
-        className: " w-full"
+        className: "overflow-x-visible w-full"
       })
     })]
   });
 }
-const {
-  LazyLoadImage: LazyLoadImage$3
-} = pkg;
 function SolutionSection$2() {
   return /* @__PURE__ */ jsxs("section", {
     id: "solutions",
@@ -31450,7 +31432,7 @@ function SolutionSection$2() {
       })
     }), /* @__PURE__ */ jsx("div", {
       className: "w-1/3 h-auto absolute inset-y-0 right-0 z-10",
-      children: /* @__PURE__ */ jsx(LazyLoadImage$3, {
+      children: /* @__PURE__ */ jsx("img", {
         width: 598,
         height: 587,
         src: "/Images/edisu/section_4-webp.webp",
@@ -31460,9 +31442,6 @@ function SolutionSection$2() {
     })]
   });
 }
-const {
-  LazyLoadImage: LazyLoadImage$2
-} = pkg;
 function MobileAppSection() {
   return /* @__PURE__ */ jsxs("section", {
     id: "solutions",
@@ -31579,31 +31558,28 @@ function MobileAppSection() {
         "data-aos": "fade-right",
         "data-aos-duration": "1000",
         className: "invisible relative mx-auto lg:mx-0 lg:mb-0 w-9/12 lg:w-2/6",
-        children: /* @__PURE__ */ jsx(LazyLoadImage$2, {
+        children: /* @__PURE__ */ jsx("img", {
           width: 643,
           height: 872,
           loading: "lazy",
           src: "/Images/edisu/section_5-webp.webp",
           alt: "chats",
-          className: "relative z-10 "
+          className: "relative z-10 overflow-x-visible"
         })
       })]
     }), /* @__PURE__ */ jsx("div", {
       className: "absolute bottom-0 md:top-1/12 right-0 w-9/12 lg:w-2/6 xlxl:w-1/4 z-10",
-      children: /* @__PURE__ */ jsx(LazyLoadImage$2, {
+      children: /* @__PURE__ */ jsx("img", {
         width: 643,
         height: 872,
         loading: "lazy",
         src: "/Images/edisu/section_5-webp.webp",
         alt: "springs",
-        className: " w-full"
+        className: "overflow-x-visible w-full"
       })
     })]
   });
 }
-const {
-  LazyLoadImage: LazyLoadImage$1
-} = pkg;
 function WebPortalSection() {
   return /* @__PURE__ */ jsxs("section", {
     id: "solutions",
@@ -31681,24 +31657,24 @@ function WebPortalSection() {
         "data-aos": "fade-right",
         "data-aos-duration": "1000",
         className: "invisible relative mx-auto lg:mx-0 lg:mb-0 lg:w-2/6",
-        children: /* @__PURE__ */ jsx(LazyLoadImage$1, {
+        children: /* @__PURE__ */ jsx("img", {
           width: 667,
           height: 567,
           loading: "lazy",
           src: "/Images/edisu/section_6-webp.webp",
           alt: "chats",
-          className: "relative z-10 "
+          className: "relative z-10 overflow-x-visible"
         })
       })]
     }), /* @__PURE__ */ jsx("div", {
       className: "absolute bottom-0 md:top-1/12 right-0 w-9/12 lg:w-2/6 xlxl:w-1/4 z-10",
-      children: /* @__PURE__ */ jsx(LazyLoadImage$1, {
+      children: /* @__PURE__ */ jsx("img", {
         width: 667,
         height: 567,
         loading: "lazy",
         src: "/Images/edisu/section_6-webp.webp",
         alt: "springs",
-        className: " w-full"
+        className: "overflow-x-visible w-full"
       })
     })]
   });
@@ -31789,9 +31765,6 @@ function SerivceSection() {
     })
   });
 }
-const {
-  LazyLoadImage
-} = pkg;
 function ResultSection$2() {
   return /* @__PURE__ */ jsxs(Fragment, {
     children: [/* @__PURE__ */ jsx("section", {
@@ -31803,13 +31776,13 @@ function ResultSection$2() {
           "data-aos": "fade-right",
           "data-aos-duration": "1000",
           className: "relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2",
-          children: /* @__PURE__ */ jsx(LazyLoadImage, {
+          children: /* @__PURE__ */ jsx("img", {
             width: 1021,
             height: 620,
             loading: "lazy",
             src: "/Images/edisu/section_7-webp.webp",
             alt: "chats",
-            className: "relative z-10 "
+            className: "relative z-10 overflow-x-visible"
           })
         }), /* @__PURE__ */ jsxs("div", {
           "data-aos": "fade-left",
@@ -31857,7 +31830,7 @@ function ResultSection$2() {
                     children: "Astute Softwares's solution gained significant recognition for its effectiveness and utility, leading to its adoption by the Italian Ministry of Education as the official method for booking study halls across Italy. This endorsement underscores the system's reliability, user-friendliness, and alignment with public health guidelines, making it a pivotal tool in the nationwide effort to maintain educational continuity and safety during the pandemic"
                   }), /* @__PURE__ */ jsx("div", {
                     className: "pl-4",
-                    children: /* @__PURE__ */ jsx(LazyLoadImage, {
+                    children: /* @__PURE__ */ jsx("img", {
                       width: 515,
                       height: 390,
                       loading: "lazy",
@@ -31888,7 +31861,7 @@ function ResultSection$2() {
                     children: "The mobile application saw a rapid uptake among students, reaching an impressive milestone of more than 100,000 unique users. This wide adoption speaks volumes about the app's usability, relevance, and effectiveness in meeting the needs of its target audience. Moreover, the platform maintained a high level of user engagement, with over 50,000 active"
                   }), /* @__PURE__ */ jsx("div", {
                     className: "pl-4",
-                    children: /* @__PURE__ */ jsx(LazyLoadImage, {
+                    children: /* @__PURE__ */ jsx("img", {
                       width: 515,
                       height: 390,
                       loading: "lazy",
@@ -31924,7 +31897,7 @@ function ResultSection$2() {
                     children: "Perhaps one of the most telling indicators of the solution's success is its sustained use beyond the COVID-19 pandemic. The continued reliance on this digital booking system by students and study hall operators alike points to its enduring value, not just as a response to a public health crisis but as a transformative tool for educational infrastructure."
                   }), /* @__PURE__ */ jsx("div", {
                     className: "pl-4",
-                    children: /* @__PURE__ */ jsx(LazyLoadImage, {
+                    children: /* @__PURE__ */ jsx("img", {
                       width: 515,
                       height: 390,
                       loading: "lazy",
@@ -31944,7 +31917,7 @@ function ResultSection$2() {
           })]
         }), /* @__PURE__ */ jsx("div", {
           className: "w-1/3 h-auto absolute top-1/4 left-1/2 transform -translate-x-1/4 -translate-y-1/5 z-10",
-          children: /* @__PURE__ */ jsx(LazyLoadImage, {
+          children: /* @__PURE__ */ jsx("img", {
             width: 208,
             height: 348,
             src: "/Images/edisu/group_3-webp.webp",
@@ -31954,7 +31927,7 @@ function ResultSection$2() {
         })]
       }), /* @__PURE__ */ jsx("div", {
         className: "w-1/3 h-auto absolute bottom-0 right-0 z-10",
-        children: /* @__PURE__ */ jsx(LazyLoadImage, {
+        children: /* @__PURE__ */ jsx("img", {
           width: 714,
           height: 684,
           src: "/Images/edisu/section_8-webp.webp",
@@ -31983,7 +31956,7 @@ function HeroSection$1() {
           loading: "lazy",
           src: "/Images/pat-app/section_1-webp.webp",
           alt: "chats",
-          className: " w-full"
+          className: "overflow-x-visible w-full"
         })
       }), /* @__PURE__ */ jsxs("div", {
         className: "flex flex-col items-center lg:items-start mt-24 md:mt-0 lg:mt-12 pb-12 lg:my-0 justify-center gap-6 lg:pl-20 w-full lg:w-1/2 relative z-30",
@@ -32017,7 +31990,7 @@ function HeroSection$1() {
         loading: "lazy",
         src: "/Images/pat-app/section_1-webp.webp",
         alt: "chats",
-        className: " w-full"
+        className: "overflow-x-visible w-full"
       })
     }), /* @__PURE__ */ jsx("div", {
       className: "absolute top-0 z-10 w-full",
@@ -32043,7 +32016,7 @@ function AboutSection$1() {
           loading: "lazy",
           src: "/Images/pat-app/section_2-webp.webp",
           alt: "chats",
-          className: "relative z-10 "
+          className: "relative z-10 overflow-x-visible"
         })
       }), /* @__PURE__ */ jsxs("div", {
         "data-aos": "fade-left",
@@ -32066,7 +32039,7 @@ function AboutSection$1() {
         loading: "lazy",
         src: "/Images/pat-app/section_2-webp.webp",
         alt: "chats",
-        className: " w-full"
+        className: "overflow-x-visible w-full"
       })
     })]
   });
@@ -32266,7 +32239,7 @@ function SolutionSection$1() {
           loading: "lazy",
           src: "/Images/pat-app/section_3-webp.webp",
           alt: "chats",
-          className: "relative z-10 "
+          className: "relative z-10 overflow-x-visible"
         })
       })]
     }), /* @__PURE__ */ jsx("div", {
@@ -32275,7 +32248,7 @@ function SolutionSection$1() {
         loading: "lazy",
         src: "/Images/pat-app/section_3-webp.webp",
         alt: "chats",
-        className: " w-full"
+        className: "overflow-x-visible w-full"
       })
     })]
   });
@@ -32566,7 +32539,7 @@ function TechnologySection() {
                   loading: "lazy",
                   src: "/Images/pat-app/section_4-webp.webp",
                   alt: "chats",
-                  className: "relative z-10 "
+                  className: "relative z-10 overflow-x-visible"
                 })
               })
             })]
@@ -32593,7 +32566,7 @@ function ResultSection$1() {
           loading: "lazy",
           src: "/Images/pat-app/results-webp.webp",
           alt: "chats",
-          className: "relative z-10 "
+          className: "relative z-10 overflow-x-visible"
         })]
       }), /* @__PURE__ */ jsx("div", {
         className: "invisible relative lg:mx-0 lg:mb-0 w-7/12 lg:w-2/5 xlxl:w-1/2 mx-auto",
@@ -32601,7 +32574,7 @@ function ResultSection$1() {
           loading: "lazy",
           src: "/Images/pat-app/section_3-webp.webp",
           alt: "chats",
-          className: "relative z-10 "
+          className: "relative z-10 overflow-x-visible"
         })
       })]
     }), /* @__PURE__ */ jsx("div", {
@@ -32610,7 +32583,7 @@ function ResultSection$1() {
         loading: "lazy",
         src: "/Images/pat-app/section_5-webp.webp",
         alt: "chats",
-        className: " w-full"
+        className: "overflow-x-visible w-full"
       })
     })]
   });
@@ -32778,7 +32751,7 @@ function HeroSection() {
           loading: "lazy",
           src: "/Images/proid/section_1-webp.webp",
           alt: "chats",
-          className: "relative z-10  w-full"
+          className: "relative z-10 overflow-x-visible w-full"
         })
       }), /* @__PURE__ */ jsxs("div", {
         "data-aos": "fade-right",
@@ -32825,7 +32798,7 @@ function AboutSection() {
           loading: "lazy",
           src: "/Images/proid/section_2-webp.webp",
           alt: "section_2",
-          className: "relative z-10 "
+          className: "relative z-10 overflow-x-visible"
         })
       }), /* @__PURE__ */ jsxs("div", {
         "data-aos": "fade-left",
@@ -33042,7 +33015,7 @@ function SolutionSection() {
                   loading: "lazy",
                   src: "/Images/proid/section_4_1-webp.webp",
                   alt: "chats",
-                  className: "relative z-10 "
+                  className: "relative z-10 overflow-x-visible"
                 })
               })
             })]
@@ -33089,7 +33062,7 @@ function SolutionSection() {
                   loading: "lazy",
                   src: "/Images/proid/section_4_2-webp.webp",
                   alt: "chats",
-                  className: "relative z-10 "
+                  className: "relative z-10 overflow-x-visible"
                 })
               })
             })]
@@ -33136,7 +33109,7 @@ function SolutionSection() {
                   loading: "lazy",
                   src: "/Images/proid/section_4_3-webp.webp",
                   alt: "chats",
-                  className: "relative z-10 "
+                  className: "relative z-10 overflow-x-visible"
                 })
               })
             })]
