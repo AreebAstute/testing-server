@@ -1383,7 +1383,8 @@ const Index$3 = () => {
         children: [/* @__PURE__ */ jsxs("div", {
           className: "text-white col-span-1",
           children: [/* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 250,
+            height: 63,
             alt: "white logo",
             className: "-mt-8",
             src: "/Images/footerAssets/White color logo-webp.webp"
@@ -1392,7 +1393,8 @@ const Index$3 = () => {
             children: [/* @__PURE__ */ jsx("div", {
               className: "flex flex-col justify-start",
               children: /* @__PURE__ */ jsx("img", {
-                loading: "lazy",
+                width: 130,
+                height: 190,
                 alt: "location icon",
                 className: "w-6",
                 src: "/Images/icons/location-1-webp.webp"
@@ -1411,7 +1413,8 @@ const Index$3 = () => {
             children: [/* @__PURE__ */ jsx("div", {
               className: "flex flex-col justify-start",
               children: /* @__PURE__ */ jsx("img", {
-                loading: "lazy",
+                width: 130,
+                height: 190,
                 alt: "location icon",
                 className: "w-6",
                 src: "/Images/icons/location-1-webp.webp"
@@ -1505,32 +1508,40 @@ const Index$3 = () => {
             className: "flex mt-10",
             children: [/* @__PURE__ */ jsx("a", {
               href: "https://www.instagram.com/astutesoftwares/",
+              "aria-label": "Instagram",
               children: /* @__PURE__ */ jsx("img", {
-                loading: "lazy",
+                width: 131,
+                height: 131,
                 alt: "insta icon",
                 className: "w-7 mr-5",
                 src: "/Images/icons/insta-1-webp.webp"
               })
             }), /* @__PURE__ */ jsx("a", {
               href: "https://www.facebook.com/astutesoftwares/",
+              "aria-label": "facebook",
               children: /* @__PURE__ */ jsx("img", {
-                loading: "lazy",
+                width: 131,
+                height: 131,
                 alt: "fb icon",
                 className: "w-7 mx-5",
                 src: "/Images/icons/fb_-webp.webp"
               })
             }), /* @__PURE__ */ jsx("a", {
               href: "https://linkedin.com/company/astutesoftwares",
+              "aria-label": "Linkdin",
               children: /* @__PURE__ */ jsx("img", {
-                loading: "lazy",
+                width: 131,
+                height: 131,
                 alt: "in icon",
                 className: "w-7 mx-5",
                 src: "/Images/icons/in-1-webp.webp"
               })
             }), /* @__PURE__ */ jsx("a", {
               href: "https://twitter.com/astutesoftwares?s=11",
+              "aria-label": "twitter",
               children: /* @__PURE__ */ jsx("img", {
-                loading: "lazy",
+                width: 131,
+                height: 131,
                 alt: "twitter icon",
                 className: "w-7 mx-5",
                 src: "/Images/icons/twitter-webp.webp"
@@ -1544,7 +1555,8 @@ const Index$3 = () => {
             target: "_blank",
             rel: "noopener noreferrer",
             children: /* @__PURE__ */ jsx("img", {
-              loading: "lazy",
+              width: 340,
+              height: 314,
               alt: "pseb logo",
               className: "w-28 ",
               src: "/Images/pseb-logo-webp.webp"
@@ -1554,7 +1566,8 @@ const Index$3 = () => {
             target: "_blank",
             rel: "noopener noreferrer",
             children: /* @__PURE__ */ jsx("img", {
-              loading: "lazy",
+              width: 413,
+              height: 413,
               alt: "q-logo",
               className: "w-28 mt-5",
               src: "/Images/q-logo-webp.webp"
