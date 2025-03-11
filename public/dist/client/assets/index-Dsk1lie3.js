@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-BFnWlPwt.js","assets/GLTFLoader-Cgbirf7B.js","assets/method-m8pvkBRU.js","assets/RGBELoader-DiV7eAGT.js","assets/method-Dz220hjP.js","assets/method-CisCM4HF.js","assets/method-CzSfs5VY.js","assets/method-DZC2XyY-.js","assets/method-CSNuuxJ5.js","assets/method-CpCSPUyW.js","assets/OrbitControls-DIfbNrtF.js","assets/method-FQUFIah6.js","assets/method-BA8fI6ky.js","assets/method-BMIfKqZF.js","assets/method-jA26W_0f.js","assets/method-CKUjG2I2.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-BtP789T5.js","assets/GLTFLoader-DkwnA4js.js","assets/method-0l1A4vHk.js","assets/RGBELoader-DOn7Fsbx.js","assets/method-THoBvFiM.js","assets/method-6HjCZsR3.js","assets/method-m_CFHN3L.js","assets/method-BawH-5zb.js","assets/method-pYwz3ydG.js","assets/method-DTnRun3g.js","assets/OrbitControls-s0x68D5e.js","assets/method-DoTJb-Oe.js","assets/method-D8RijHY6.js","assets/method-BnOULp63.js","assets/method-93Cfjsxa.js","assets/method-mA2RCo5H.js"])))=>i.map(i=>d[i]);
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -44811,884 +44811,6 @@ const saveString = (file, setState, setModelConverting) => {
     setState(base64data);
   };
 };
-var lib$1;
-var hasRequiredLib$1;
-function requireLib$1() {
-  if (hasRequiredLib$1) return lib$1;
-  hasRequiredLib$1 = 1;
-  function _interopDefault(ex) {
-    return ex && typeof ex === "object" && "default" in ex ? ex["default"] : ex;
-  }
-  var React2 = requireReact();
-  var React__default = _interopDefault(React2);
-  function _defineProperty2(obj, key, value) {
-    if (key in obj) {
-      Object.defineProperty(obj, key, {
-        value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      });
-    } else {
-      obj[key] = value;
-    }
-    return obj;
-  }
-  function _inheritsLoose2(subClass, superClass) {
-    subClass.prototype = Object.create(superClass.prototype);
-    subClass.prototype.constructor = subClass;
-    subClass.__proto__ = superClass;
-  }
-  var canUseDOM2 = !!(typeof window !== "undefined" && window.document && window.document.createElement);
-  function withSideEffect2(reducePropsToState3, handleStateChangeOnClient, mapStateOnServer3) {
-    if (typeof reducePropsToState3 !== "function") {
-      throw new Error("Expected reducePropsToState to be a function.");
-    }
-    if (typeof handleStateChangeOnClient !== "function") {
-      throw new Error("Expected handleStateChangeOnClient to be a function.");
-    }
-    if (typeof mapStateOnServer3 !== "undefined" && typeof mapStateOnServer3 !== "function") {
-      throw new Error("Expected mapStateOnServer to either be undefined or a function.");
-    }
-    function getDisplayName(WrappedComponent) {
-      return WrappedComponent.displayName || WrappedComponent.name || "Component";
-    }
-    return function wrap(WrappedComponent) {
-      if (typeof WrappedComponent !== "function") {
-        throw new Error("Expected WrappedComponent to be a React component.");
-      }
-      var mountedInstances = [];
-      var state;
-      function emitChange() {
-        state = reducePropsToState3(mountedInstances.map(function(instance) {
-          return instance.props;
-        }));
-        if (SideEffect.canUseDOM) {
-          handleStateChangeOnClient(state);
-        } else if (mapStateOnServer3) {
-          state = mapStateOnServer3(state);
-        }
-      }
-      var SideEffect = /* @__PURE__ */ function(_PureComponent) {
-        _inheritsLoose2(SideEffect2, _PureComponent);
-        function SideEffect2() {
-          return _PureComponent.apply(this, arguments) || this;
-        }
-        SideEffect2.peek = function peek2() {
-          return state;
-        };
-        SideEffect2.rewind = function rewind() {
-          if (SideEffect2.canUseDOM) {
-            throw new Error("You may only call rewind() on the server. Call peek() to read the current state.");
-          }
-          var recordedState = state;
-          state = void 0;
-          mountedInstances = [];
-          return recordedState;
-        };
-        var _proto = SideEffect2.prototype;
-        _proto.UNSAFE_componentWillMount = function UNSAFE_componentWillMount() {
-          mountedInstances.push(this);
-          emitChange();
-        };
-        _proto.componentDidUpdate = function componentDidUpdate() {
-          emitChange();
-        };
-        _proto.componentWillUnmount = function componentWillUnmount() {
-          var index2 = mountedInstances.indexOf(this);
-          mountedInstances.splice(index2, 1);
-          emitChange();
-        };
-        _proto.render = function render2() {
-          return React__default.createElement(WrappedComponent, this.props);
-        };
-        return SideEffect2;
-      }(React2.PureComponent);
-      _defineProperty2(SideEffect, "displayName", "SideEffect(" + getDisplayName(WrappedComponent) + ")");
-      _defineProperty2(SideEffect, "canUseDOM", canUseDOM2);
-      return SideEffect;
-    };
-  }
-  lib$1 = withSideEffect2;
-  return lib$1;
-}
-var libExports$1 = requireLib$1();
-const withSideEffect = /* @__PURE__ */ getDefaultExportFromCjs(libExports$1);
-var reactFastCompare$1;
-var hasRequiredReactFastCompare$1;
-function requireReactFastCompare$1() {
-  if (hasRequiredReactFastCompare$1) return reactFastCompare$1;
-  hasRequiredReactFastCompare$1 = 1;
-  var hasElementType = typeof Element !== "undefined";
-  var hasMap = typeof Map === "function";
-  var hasSet = typeof Set === "function";
-  var hasArrayBuffer = typeof ArrayBuffer === "function" && !!ArrayBuffer.isView;
-  function equal(a2, b2) {
-    if (a2 === b2) return true;
-    if (a2 && b2 && typeof a2 == "object" && typeof b2 == "object") {
-      if (a2.constructor !== b2.constructor) return false;
-      var length2, i, keys2;
-      if (Array.isArray(a2)) {
-        length2 = a2.length;
-        if (length2 != b2.length) return false;
-        for (i = length2; i-- !== 0; )
-          if (!equal(a2[i], b2[i])) return false;
-        return true;
-      }
-      var it;
-      if (hasMap && a2 instanceof Map && b2 instanceof Map) {
-        if (a2.size !== b2.size) return false;
-        it = a2.entries();
-        while (!(i = it.next()).done)
-          if (!b2.has(i.value[0])) return false;
-        it = a2.entries();
-        while (!(i = it.next()).done)
-          if (!equal(i.value[1], b2.get(i.value[0]))) return false;
-        return true;
-      }
-      if (hasSet && a2 instanceof Set && b2 instanceof Set) {
-        if (a2.size !== b2.size) return false;
-        it = a2.entries();
-        while (!(i = it.next()).done)
-          if (!b2.has(i.value[0])) return false;
-        return true;
-      }
-      if (hasArrayBuffer && ArrayBuffer.isView(a2) && ArrayBuffer.isView(b2)) {
-        length2 = a2.length;
-        if (length2 != b2.length) return false;
-        for (i = length2; i-- !== 0; )
-          if (a2[i] !== b2[i]) return false;
-        return true;
-      }
-      if (a2.constructor === RegExp) return a2.source === b2.source && a2.flags === b2.flags;
-      if (a2.valueOf !== Object.prototype.valueOf && typeof a2.valueOf === "function" && typeof b2.valueOf === "function") return a2.valueOf() === b2.valueOf();
-      if (a2.toString !== Object.prototype.toString && typeof a2.toString === "function" && typeof b2.toString === "function") return a2.toString() === b2.toString();
-      keys2 = Object.keys(a2);
-      length2 = keys2.length;
-      if (length2 !== Object.keys(b2).length) return false;
-      for (i = length2; i-- !== 0; )
-        if (!Object.prototype.hasOwnProperty.call(b2, keys2[i])) return false;
-      if (hasElementType && a2 instanceof Element) return false;
-      for (i = length2; i-- !== 0; ) {
-        if ((keys2[i] === "_owner" || keys2[i] === "__v" || keys2[i] === "__o") && a2.$$typeof) {
-          continue;
-        }
-        if (!equal(a2[keys2[i]], b2[keys2[i]])) return false;
-      }
-      return true;
-    }
-    return a2 !== a2 && b2 !== b2;
-  }
-  reactFastCompare$1 = function isEqual2(a2, b2) {
-    try {
-      return equal(a2, b2);
-    } catch (error) {
-      if ((error.message || "").match(/stack|recursion/i)) {
-        console.warn("react-fast-compare cannot handle circular refs");
-        return false;
-      }
-      throw error;
-    }
-  };
-  return reactFastCompare$1;
-}
-var reactFastCompareExports$1 = requireReactFastCompare$1();
-const isEqual$2 = /* @__PURE__ */ getDefaultExportFromCjs(reactFastCompareExports$1);
-var objectAssignExports = requireObjectAssign();
-const objectAssign = /* @__PURE__ */ getDefaultExportFromCjs(objectAssignExports);
-var ATTRIBUTE_NAMES = {
-  BODY: "bodyAttributes",
-  HTML: "htmlAttributes",
-  TITLE: "titleAttributes"
-};
-var TAG_NAMES = {
-  BASE: "base",
-  BODY: "body",
-  HEAD: "head",
-  HTML: "html",
-  LINK: "link",
-  META: "meta",
-  NOSCRIPT: "noscript",
-  SCRIPT: "script",
-  STYLE: "style",
-  TITLE: "title"
-};
-Object.keys(TAG_NAMES).map(function(name) {
-  return TAG_NAMES[name];
-});
-var TAG_PROPERTIES = {
-  CHARSET: "charset",
-  CSS_TEXT: "cssText",
-  HREF: "href",
-  HTTPEQUIV: "http-equiv",
-  INNER_HTML: "innerHTML",
-  ITEM_PROP: "itemprop",
-  NAME: "name",
-  PROPERTY: "property",
-  REL: "rel",
-  SRC: "src",
-  TARGET: "target"
-};
-var REACT_TAG_MAP = {
-  accesskey: "accessKey",
-  charset: "charSet",
-  class: "className",
-  contenteditable: "contentEditable",
-  contextmenu: "contextMenu",
-  "http-equiv": "httpEquiv",
-  itemprop: "itemProp",
-  tabindex: "tabIndex"
-};
-var HELMET_PROPS = {
-  DEFAULT_TITLE: "defaultTitle",
-  DEFER: "defer",
-  ENCODE_SPECIAL_CHARACTERS: "encodeSpecialCharacters",
-  ON_CHANGE_CLIENT_STATE: "onChangeClientState",
-  TITLE_TEMPLATE: "titleTemplate"
-};
-var HTML_TAG_MAP = Object.keys(REACT_TAG_MAP).reduce(function(obj, key) {
-  obj[REACT_TAG_MAP[key]] = key;
-  return obj;
-}, {});
-var SELF_CLOSING_TAGS = [TAG_NAMES.NOSCRIPT, TAG_NAMES.SCRIPT, TAG_NAMES.STYLE];
-var HELMET_ATTRIBUTE = "data-react-helmet";
-var _typeof$1 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function(obj) {
-  return typeof obj;
-} : function(obj) {
-  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-};
-var classCallCheck = function(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-};
-var createClass = /* @__PURE__ */ function() {
-  function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-  return function(Constructor, protoProps, staticProps) {
-    if (protoProps) defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) defineProperties(Constructor, staticProps);
-    return Constructor;
-  };
-}();
-var _extends$o = Object.assign || function(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-  return target;
-};
-var inherits = function(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-  }
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      enumerable: false,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-};
-var objectWithoutProperties = function(obj, keys2) {
-  var target = {};
-  for (var i in obj) {
-    if (keys2.indexOf(i) >= 0) continue;
-    if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-    target[i] = obj[i];
-  }
-  return target;
-};
-var possibleConstructorReturn = function(self2, call) {
-  if (!self2) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-  return call && (typeof call === "object" || typeof call === "function") ? call : self2;
-};
-var encodeSpecialCharacters = function encodeSpecialCharacters2(str) {
-  var encode = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : true;
-  if (encode === false) {
-    return String(str);
-  }
-  return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
-};
-var getTitleFromPropsList = function getTitleFromPropsList2(propsList) {
-  var innermostTitle = getInnermostProperty(propsList, TAG_NAMES.TITLE);
-  var innermostTemplate = getInnermostProperty(propsList, HELMET_PROPS.TITLE_TEMPLATE);
-  if (innermostTemplate && innermostTitle) {
-    return innermostTemplate.replace(/%s/g, function() {
-      return Array.isArray(innermostTitle) ? innermostTitle.join("") : innermostTitle;
-    });
-  }
-  var innermostDefaultTitle = getInnermostProperty(propsList, HELMET_PROPS.DEFAULT_TITLE);
-  return innermostTitle || innermostDefaultTitle || void 0;
-};
-var getOnChangeClientState = function getOnChangeClientState2(propsList) {
-  return getInnermostProperty(propsList, HELMET_PROPS.ON_CHANGE_CLIENT_STATE) || function() {
-  };
-};
-var getAttributesFromPropsList = function getAttributesFromPropsList2(tagType, propsList) {
-  return propsList.filter(function(props) {
-    return typeof props[tagType] !== "undefined";
-  }).map(function(props) {
-    return props[tagType];
-  }).reduce(function(tagAttrs, current) {
-    return _extends$o({}, tagAttrs, current);
-  }, {});
-};
-var getBaseTagFromPropsList = function getBaseTagFromPropsList2(primaryAttributes, propsList) {
-  return propsList.filter(function(props) {
-    return typeof props[TAG_NAMES.BASE] !== "undefined";
-  }).map(function(props) {
-    return props[TAG_NAMES.BASE];
-  }).reverse().reduce(function(innermostBaseTag, tag) {
-    if (!innermostBaseTag.length) {
-      var keys2 = Object.keys(tag);
-      for (var i = 0; i < keys2.length; i++) {
-        var attributeKey = keys2[i];
-        var lowerCaseAttributeKey = attributeKey.toLowerCase();
-        if (primaryAttributes.indexOf(lowerCaseAttributeKey) !== -1 && tag[lowerCaseAttributeKey]) {
-          return innermostBaseTag.concat(tag);
-        }
-      }
-    }
-    return innermostBaseTag;
-  }, []);
-};
-var getTagsFromPropsList = function getTagsFromPropsList2(tagName, primaryAttributes, propsList) {
-  var approvedSeenTags = {};
-  return propsList.filter(function(props) {
-    if (Array.isArray(props[tagName])) {
-      return true;
-    }
-    if (typeof props[tagName] !== "undefined") {
-      warn("Helmet: " + tagName + ' should be of type "Array". Instead found type "' + _typeof$1(props[tagName]) + '"');
-    }
-    return false;
-  }).map(function(props) {
-    return props[tagName];
-  }).reverse().reduce(function(approvedTags, instanceTags) {
-    var instanceSeenTags = {};
-    instanceTags.filter(function(tag) {
-      var primaryAttributeKey = void 0;
-      var keys22 = Object.keys(tag);
-      for (var i2 = 0; i2 < keys22.length; i2++) {
-        var attributeKey2 = keys22[i2];
-        var lowerCaseAttributeKey = attributeKey2.toLowerCase();
-        if (primaryAttributes.indexOf(lowerCaseAttributeKey) !== -1 && !(primaryAttributeKey === TAG_PROPERTIES.REL && tag[primaryAttributeKey].toLowerCase() === "canonical") && !(lowerCaseAttributeKey === TAG_PROPERTIES.REL && tag[lowerCaseAttributeKey].toLowerCase() === "stylesheet")) {
-          primaryAttributeKey = lowerCaseAttributeKey;
-        }
-        if (primaryAttributes.indexOf(attributeKey2) !== -1 && (attributeKey2 === TAG_PROPERTIES.INNER_HTML || attributeKey2 === TAG_PROPERTIES.CSS_TEXT || attributeKey2 === TAG_PROPERTIES.ITEM_PROP)) {
-          primaryAttributeKey = attributeKey2;
-        }
-      }
-      if (!primaryAttributeKey || !tag[primaryAttributeKey]) {
-        return false;
-      }
-      var value = tag[primaryAttributeKey].toLowerCase();
-      if (!approvedSeenTags[primaryAttributeKey]) {
-        approvedSeenTags[primaryAttributeKey] = {};
-      }
-      if (!instanceSeenTags[primaryAttributeKey]) {
-        instanceSeenTags[primaryAttributeKey] = {};
-      }
-      if (!approvedSeenTags[primaryAttributeKey][value]) {
-        instanceSeenTags[primaryAttributeKey][value] = true;
-        return true;
-      }
-      return false;
-    }).reverse().forEach(function(tag) {
-      return approvedTags.push(tag);
-    });
-    var keys2 = Object.keys(instanceSeenTags);
-    for (var i = 0; i < keys2.length; i++) {
-      var attributeKey = keys2[i];
-      var tagUnion = objectAssign({}, approvedSeenTags[attributeKey], instanceSeenTags[attributeKey]);
-      approvedSeenTags[attributeKey] = tagUnion;
-    }
-    return approvedTags;
-  }, []).reverse();
-};
-var getInnermostProperty = function getInnermostProperty2(propsList, property) {
-  for (var i = propsList.length - 1; i >= 0; i--) {
-    var props = propsList[i];
-    if (props.hasOwnProperty(property)) {
-      return props[property];
-    }
-  }
-  return null;
-};
-var reducePropsToState = function reducePropsToState2(propsList) {
-  return {
-    baseTag: getBaseTagFromPropsList([TAG_PROPERTIES.HREF, TAG_PROPERTIES.TARGET], propsList),
-    bodyAttributes: getAttributesFromPropsList(ATTRIBUTE_NAMES.BODY, propsList),
-    defer: getInnermostProperty(propsList, HELMET_PROPS.DEFER),
-    encode: getInnermostProperty(propsList, HELMET_PROPS.ENCODE_SPECIAL_CHARACTERS),
-    htmlAttributes: getAttributesFromPropsList(ATTRIBUTE_NAMES.HTML, propsList),
-    linkTags: getTagsFromPropsList(TAG_NAMES.LINK, [TAG_PROPERTIES.REL, TAG_PROPERTIES.HREF], propsList),
-    metaTags: getTagsFromPropsList(TAG_NAMES.META, [TAG_PROPERTIES.NAME, TAG_PROPERTIES.CHARSET, TAG_PROPERTIES.HTTPEQUIV, TAG_PROPERTIES.PROPERTY, TAG_PROPERTIES.ITEM_PROP], propsList),
-    noscriptTags: getTagsFromPropsList(TAG_NAMES.NOSCRIPT, [TAG_PROPERTIES.INNER_HTML], propsList),
-    onChangeClientState: getOnChangeClientState(propsList),
-    scriptTags: getTagsFromPropsList(TAG_NAMES.SCRIPT, [TAG_PROPERTIES.SRC, TAG_PROPERTIES.INNER_HTML], propsList),
-    styleTags: getTagsFromPropsList(TAG_NAMES.STYLE, [TAG_PROPERTIES.CSS_TEXT], propsList),
-    title: getTitleFromPropsList(propsList),
-    titleAttributes: getAttributesFromPropsList(ATTRIBUTE_NAMES.TITLE, propsList)
-  };
-};
-var rafPolyfill = function() {
-  var clock = Date.now();
-  return function(callback) {
-    var currentTime = Date.now();
-    if (currentTime - clock > 16) {
-      clock = currentTime;
-      callback(currentTime);
-    } else {
-      setTimeout(function() {
-        rafPolyfill(callback);
-      }, 0);
-    }
-  };
-}();
-var cafPolyfill = function cafPolyfill2(id) {
-  return clearTimeout(id);
-};
-var requestAnimationFrame$1 = typeof window !== "undefined" ? window.requestAnimationFrame && window.requestAnimationFrame.bind(window) || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || rafPolyfill : global.requestAnimationFrame || rafPolyfill;
-var cancelAnimationFrame$1 = typeof window !== "undefined" ? window.cancelAnimationFrame || window.webkitCancelAnimationFrame || window.mozCancelAnimationFrame || cafPolyfill : global.cancelAnimationFrame || cafPolyfill;
-var warn = function warn2(msg) {
-  return console && typeof console.warn === "function" && console.warn(msg);
-};
-var _helmetCallback = null;
-var handleClientStateChange = function handleClientStateChange2(newState) {
-  if (_helmetCallback) {
-    cancelAnimationFrame$1(_helmetCallback);
-  }
-  if (newState.defer) {
-    _helmetCallback = requestAnimationFrame$1(function() {
-      commitTagChanges(newState, function() {
-        _helmetCallback = null;
-      });
-    });
-  } else {
-    commitTagChanges(newState);
-    _helmetCallback = null;
-  }
-};
-var commitTagChanges = function commitTagChanges2(newState, cb2) {
-  var baseTag = newState.baseTag, bodyAttributes = newState.bodyAttributes, htmlAttributes = newState.htmlAttributes, linkTags = newState.linkTags, metaTags = newState.metaTags, noscriptTags = newState.noscriptTags, onChangeClientState = newState.onChangeClientState, scriptTags = newState.scriptTags, styleTags = newState.styleTags, title = newState.title, titleAttributes = newState.titleAttributes;
-  updateAttributes(TAG_NAMES.BODY, bodyAttributes);
-  updateAttributes(TAG_NAMES.HTML, htmlAttributes);
-  updateTitle(title, titleAttributes);
-  var tagUpdates = {
-    baseTag: updateTags(TAG_NAMES.BASE, baseTag),
-    linkTags: updateTags(TAG_NAMES.LINK, linkTags),
-    metaTags: updateTags(TAG_NAMES.META, metaTags),
-    noscriptTags: updateTags(TAG_NAMES.NOSCRIPT, noscriptTags),
-    scriptTags: updateTags(TAG_NAMES.SCRIPT, scriptTags),
-    styleTags: updateTags(TAG_NAMES.STYLE, styleTags)
-  };
-  var addedTags = {};
-  var removedTags = {};
-  Object.keys(tagUpdates).forEach(function(tagType) {
-    var _tagUpdates$tagType = tagUpdates[tagType], newTags = _tagUpdates$tagType.newTags, oldTags = _tagUpdates$tagType.oldTags;
-    if (newTags.length) {
-      addedTags[tagType] = newTags;
-    }
-    if (oldTags.length) {
-      removedTags[tagType] = tagUpdates[tagType].oldTags;
-    }
-  });
-  cb2 && cb2();
-  onChangeClientState(newState, addedTags, removedTags);
-};
-var flattenArray = function flattenArray2(possibleArray) {
-  return Array.isArray(possibleArray) ? possibleArray.join("") : possibleArray;
-};
-var updateTitle = function updateTitle2(title, attributes) {
-  if (typeof title !== "undefined" && document.title !== title) {
-    document.title = flattenArray(title);
-  }
-  updateAttributes(TAG_NAMES.TITLE, attributes);
-};
-var updateAttributes = function updateAttributes2(tagName, attributes) {
-  var elementTag = document.getElementsByTagName(tagName)[0];
-  if (!elementTag) {
-    return;
-  }
-  var helmetAttributeString = elementTag.getAttribute(HELMET_ATTRIBUTE);
-  var helmetAttributes = helmetAttributeString ? helmetAttributeString.split(",") : [];
-  var attributesToRemove = [].concat(helmetAttributes);
-  var attributeKeys = Object.keys(attributes);
-  for (var i = 0; i < attributeKeys.length; i++) {
-    var attribute = attributeKeys[i];
-    var value = attributes[attribute] || "";
-    if (elementTag.getAttribute(attribute) !== value) {
-      elementTag.setAttribute(attribute, value);
-    }
-    if (helmetAttributes.indexOf(attribute) === -1) {
-      helmetAttributes.push(attribute);
-    }
-    var indexToSave = attributesToRemove.indexOf(attribute);
-    if (indexToSave !== -1) {
-      attributesToRemove.splice(indexToSave, 1);
-    }
-  }
-  for (var _i = attributesToRemove.length - 1; _i >= 0; _i--) {
-    elementTag.removeAttribute(attributesToRemove[_i]);
-  }
-  if (helmetAttributes.length === attributesToRemove.length) {
-    elementTag.removeAttribute(HELMET_ATTRIBUTE);
-  } else if (elementTag.getAttribute(HELMET_ATTRIBUTE) !== attributeKeys.join(",")) {
-    elementTag.setAttribute(HELMET_ATTRIBUTE, attributeKeys.join(","));
-  }
-};
-var updateTags = function updateTags2(type, tags) {
-  var headElement = document.head || document.querySelector(TAG_NAMES.HEAD);
-  var tagNodes = headElement.querySelectorAll(type + "[" + HELMET_ATTRIBUTE + "]");
-  var oldTags = Array.prototype.slice.call(tagNodes);
-  var newTags = [];
-  var indexToDelete = void 0;
-  if (tags && tags.length) {
-    tags.forEach(function(tag) {
-      var newElement = document.createElement(type);
-      for (var attribute in tag) {
-        if (tag.hasOwnProperty(attribute)) {
-          if (attribute === TAG_PROPERTIES.INNER_HTML) {
-            newElement.innerHTML = tag.innerHTML;
-          } else if (attribute === TAG_PROPERTIES.CSS_TEXT) {
-            if (newElement.styleSheet) {
-              newElement.styleSheet.cssText = tag.cssText;
-            } else {
-              newElement.appendChild(document.createTextNode(tag.cssText));
-            }
-          } else {
-            var value = typeof tag[attribute] === "undefined" ? "" : tag[attribute];
-            newElement.setAttribute(attribute, value);
-          }
-        }
-      }
-      newElement.setAttribute(HELMET_ATTRIBUTE, "true");
-      if (oldTags.some(function(existingTag, index2) {
-        indexToDelete = index2;
-        return newElement.isEqualNode(existingTag);
-      })) {
-        oldTags.splice(indexToDelete, 1);
-      } else {
-        newTags.push(newElement);
-      }
-    });
-  }
-  oldTags.forEach(function(tag) {
-    return tag.parentNode.removeChild(tag);
-  });
-  newTags.forEach(function(tag) {
-    return headElement.appendChild(tag);
-  });
-  return {
-    oldTags,
-    newTags
-  };
-};
-var generateElementAttributesAsString = function generateElementAttributesAsString2(attributes) {
-  return Object.keys(attributes).reduce(function(str, key) {
-    var attr2 = typeof attributes[key] !== "undefined" ? key + '="' + attributes[key] + '"' : "" + key;
-    return str ? str + " " + attr2 : attr2;
-  }, "");
-};
-var generateTitleAsString = function generateTitleAsString2(type, title, attributes, encode) {
-  var attributeString = generateElementAttributesAsString(attributes);
-  var flattenedTitle = flattenArray(title);
-  return attributeString ? "<" + type + " " + HELMET_ATTRIBUTE + '="true" ' + attributeString + ">" + encodeSpecialCharacters(flattenedTitle, encode) + "</" + type + ">" : "<" + type + " " + HELMET_ATTRIBUTE + '="true">' + encodeSpecialCharacters(flattenedTitle, encode) + "</" + type + ">";
-};
-var generateTagsAsString = function generateTagsAsString2(type, tags, encode) {
-  return tags.reduce(function(str, tag) {
-    var attributeHtml = Object.keys(tag).filter(function(attribute) {
-      return !(attribute === TAG_PROPERTIES.INNER_HTML || attribute === TAG_PROPERTIES.CSS_TEXT);
-    }).reduce(function(string2, attribute) {
-      var attr2 = typeof tag[attribute] === "undefined" ? attribute : attribute + '="' + encodeSpecialCharacters(tag[attribute], encode) + '"';
-      return string2 ? string2 + " " + attr2 : attr2;
-    }, "");
-    var tagContent = tag.innerHTML || tag.cssText || "";
-    var isSelfClosing = SELF_CLOSING_TAGS.indexOf(type) === -1;
-    return str + "<" + type + " " + HELMET_ATTRIBUTE + '="true" ' + attributeHtml + (isSelfClosing ? "/>" : ">" + tagContent + "</" + type + ">");
-  }, "");
-};
-var convertElementAttributestoReactProps = function convertElementAttributestoReactProps2(attributes) {
-  var initProps = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
-  return Object.keys(attributes).reduce(function(obj, key) {
-    obj[REACT_TAG_MAP[key] || key] = attributes[key];
-    return obj;
-  }, initProps);
-};
-var convertReactPropstoHtmlAttributes = function convertReactPropstoHtmlAttributes2(props) {
-  var initAttributes = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
-  return Object.keys(props).reduce(function(obj, key) {
-    obj[HTML_TAG_MAP[key] || key] = props[key];
-    return obj;
-  }, initAttributes);
-};
-var generateTitleAsReactComponent = function generateTitleAsReactComponent2(type, title, attributes) {
-  var _initProps;
-  var initProps = (_initProps = {
-    key: title
-  }, _initProps[HELMET_ATTRIBUTE] = true, _initProps);
-  var props = convertElementAttributestoReactProps(attributes, initProps);
-  return [React.createElement(TAG_NAMES.TITLE, props, title)];
-};
-var generateTagsAsReactComponent = function generateTagsAsReactComponent2(type, tags) {
-  return tags.map(function(tag, i) {
-    var _mappedTag;
-    var mappedTag = (_mappedTag = {
-      key: i
-    }, _mappedTag[HELMET_ATTRIBUTE] = true, _mappedTag);
-    Object.keys(tag).forEach(function(attribute) {
-      var mappedAttribute = REACT_TAG_MAP[attribute] || attribute;
-      if (mappedAttribute === TAG_PROPERTIES.INNER_HTML || mappedAttribute === TAG_PROPERTIES.CSS_TEXT) {
-        var content = tag.innerHTML || tag.cssText;
-        mappedTag.dangerouslySetInnerHTML = { __html: content };
-      } else {
-        mappedTag[mappedAttribute] = tag[attribute];
-      }
-    });
-    return React.createElement(type, mappedTag);
-  });
-};
-var getMethodsForTag = function getMethodsForTag2(type, tags, encode) {
-  switch (type) {
-    case TAG_NAMES.TITLE:
-      return {
-        toComponent: function toComponent() {
-          return generateTitleAsReactComponent(type, tags.title, tags.titleAttributes);
-        },
-        toString: function toString2() {
-          return generateTitleAsString(type, tags.title, tags.titleAttributes, encode);
-        }
-      };
-    case ATTRIBUTE_NAMES.BODY:
-    case ATTRIBUTE_NAMES.HTML:
-      return {
-        toComponent: function toComponent() {
-          return convertElementAttributestoReactProps(tags);
-        },
-        toString: function toString2() {
-          return generateElementAttributesAsString(tags);
-        }
-      };
-    default:
-      return {
-        toComponent: function toComponent() {
-          return generateTagsAsReactComponent(type, tags);
-        },
-        toString: function toString2() {
-          return generateTagsAsString(type, tags, encode);
-        }
-      };
-  }
-};
-var mapStateOnServer = function mapStateOnServer2(_ref3) {
-  var baseTag = _ref3.baseTag, bodyAttributes = _ref3.bodyAttributes, encode = _ref3.encode, htmlAttributes = _ref3.htmlAttributes, linkTags = _ref3.linkTags, metaTags = _ref3.metaTags, noscriptTags = _ref3.noscriptTags, scriptTags = _ref3.scriptTags, styleTags = _ref3.styleTags, _ref$title = _ref3.title, title = _ref$title === void 0 ? "" : _ref$title, titleAttributes = _ref3.titleAttributes;
-  return {
-    base: getMethodsForTag(TAG_NAMES.BASE, baseTag, encode),
-    bodyAttributes: getMethodsForTag(ATTRIBUTE_NAMES.BODY, bodyAttributes, encode),
-    htmlAttributes: getMethodsForTag(ATTRIBUTE_NAMES.HTML, htmlAttributes, encode),
-    link: getMethodsForTag(TAG_NAMES.LINK, linkTags, encode),
-    meta: getMethodsForTag(TAG_NAMES.META, metaTags, encode),
-    noscript: getMethodsForTag(TAG_NAMES.NOSCRIPT, noscriptTags, encode),
-    script: getMethodsForTag(TAG_NAMES.SCRIPT, scriptTags, encode),
-    style: getMethodsForTag(TAG_NAMES.STYLE, styleTags, encode),
-    title: getMethodsForTag(TAG_NAMES.TITLE, { title, titleAttributes }, encode)
-  };
-};
-var Helmet = function Helmet2(Component) {
-  var _class, _temp;
-  return _temp = _class = function(_React$Component) {
-    inherits(HelmetWrapper, _React$Component);
-    function HelmetWrapper() {
-      classCallCheck(this, HelmetWrapper);
-      return possibleConstructorReturn(this, _React$Component.apply(this, arguments));
-    }
-    HelmetWrapper.prototype.shouldComponentUpdate = function shouldComponentUpdate(nextProps) {
-      return !isEqual$2(this.props, nextProps);
-    };
-    HelmetWrapper.prototype.mapNestedChildrenToProps = function mapNestedChildrenToProps(child, nestedChildren) {
-      if (!nestedChildren) {
-        return null;
-      }
-      switch (child.type) {
-        case TAG_NAMES.SCRIPT:
-        case TAG_NAMES.NOSCRIPT:
-          return {
-            innerHTML: nestedChildren
-          };
-        case TAG_NAMES.STYLE:
-          return {
-            cssText: nestedChildren
-          };
-      }
-      throw new Error("<" + child.type + " /> elements are self-closing and can not contain children. Refer to our API for more information.");
-    };
-    HelmetWrapper.prototype.flattenArrayTypeChildren = function flattenArrayTypeChildren(_ref3) {
-      var _babelHelpers$extends;
-      var child = _ref3.child, arrayTypeChildren = _ref3.arrayTypeChildren, newChildProps = _ref3.newChildProps, nestedChildren = _ref3.nestedChildren;
-      return _extends$o({}, arrayTypeChildren, (_babelHelpers$extends = {}, _babelHelpers$extends[child.type] = [].concat(arrayTypeChildren[child.type] || [], [_extends$o({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren))]), _babelHelpers$extends));
-    };
-    HelmetWrapper.prototype.mapObjectTypeChildren = function mapObjectTypeChildren(_ref22) {
-      var _babelHelpers$extends2, _babelHelpers$extends3;
-      var child = _ref22.child, newProps = _ref22.newProps, newChildProps = _ref22.newChildProps, nestedChildren = _ref22.nestedChildren;
-      switch (child.type) {
-        case TAG_NAMES.TITLE:
-          return _extends$o({}, newProps, (_babelHelpers$extends2 = {}, _babelHelpers$extends2[child.type] = nestedChildren, _babelHelpers$extends2.titleAttributes = _extends$o({}, newChildProps), _babelHelpers$extends2));
-        case TAG_NAMES.BODY:
-          return _extends$o({}, newProps, {
-            bodyAttributes: _extends$o({}, newChildProps)
-          });
-        case TAG_NAMES.HTML:
-          return _extends$o({}, newProps, {
-            htmlAttributes: _extends$o({}, newChildProps)
-          });
-      }
-      return _extends$o({}, newProps, (_babelHelpers$extends3 = {}, _babelHelpers$extends3[child.type] = _extends$o({}, newChildProps), _babelHelpers$extends3));
-    };
-    HelmetWrapper.prototype.mapArrayTypeChildrenToProps = function mapArrayTypeChildrenToProps(arrayTypeChildren, newProps) {
-      var newFlattenedProps = _extends$o({}, newProps);
-      Object.keys(arrayTypeChildren).forEach(function(arrayChildName) {
-        var _babelHelpers$extends4;
-        newFlattenedProps = _extends$o({}, newFlattenedProps, (_babelHelpers$extends4 = {}, _babelHelpers$extends4[arrayChildName] = arrayTypeChildren[arrayChildName], _babelHelpers$extends4));
-      });
-      return newFlattenedProps;
-    };
-    HelmetWrapper.prototype.warnOnInvalidChildren = function warnOnInvalidChildren(child, nestedChildren) {
-      return true;
-    };
-    HelmetWrapper.prototype.mapChildrenToProps = function mapChildrenToProps(children2, newProps) {
-      var _this2 = this;
-      var arrayTypeChildren = {};
-      React.Children.forEach(children2, function(child) {
-        if (!child || !child.props) {
-          return;
-        }
-        var _child$props = child.props, nestedChildren = _child$props.children, childProps = objectWithoutProperties(_child$props, ["children"]);
-        var newChildProps = convertReactPropstoHtmlAttributes(childProps);
-        _this2.warnOnInvalidChildren(child, nestedChildren);
-        switch (child.type) {
-          case TAG_NAMES.LINK:
-          case TAG_NAMES.META:
-          case TAG_NAMES.NOSCRIPT:
-          case TAG_NAMES.SCRIPT:
-          case TAG_NAMES.STYLE:
-            arrayTypeChildren = _this2.flattenArrayTypeChildren({
-              child,
-              arrayTypeChildren,
-              newChildProps,
-              nestedChildren
-            });
-            break;
-          default:
-            newProps = _this2.mapObjectTypeChildren({
-              child,
-              newProps,
-              newChildProps,
-              nestedChildren
-            });
-            break;
-        }
-      });
-      newProps = this.mapArrayTypeChildrenToProps(arrayTypeChildren, newProps);
-      return newProps;
-    };
-    HelmetWrapper.prototype.render = function render2() {
-      var _props = this.props, children2 = _props.children, props = objectWithoutProperties(_props, ["children"]);
-      var newProps = _extends$o({}, props);
-      if (children2) {
-        newProps = this.mapChildrenToProps(children2, newProps);
-      }
-      return React.createElement(Component, newProps);
-    };
-    createClass(HelmetWrapper, null, [{
-      key: "canUseDOM",
-      // Component.peek comes from react-side-effect:
-      // For testing, you may use a static peek() method available on the returned component.
-      // It lets you get the current state without resetting the mounted instance stack.
-      // Don’t use it for anything other than testing.
-      /**
-       * @param {Object} base: {"target": "_blank", "href": "http://mysite.com/"}
-       * @param {Object} bodyAttributes: {"className": "root"}
-       * @param {String} defaultTitle: "Default Title"
-       * @param {Boolean} defer: true
-       * @param {Boolean} encodeSpecialCharacters: true
-       * @param {Object} htmlAttributes: {"lang": "en", "amp": undefined}
-       * @param {Array} link: [{"rel": "canonical", "href": "http://mysite.com/example"}]
-       * @param {Array} meta: [{"name": "description", "content": "Test description"}]
-       * @param {Array} noscript: [{"innerHTML": "<img src='http://mysite.com/js/test.js'"}]
-       * @param {Function} onChangeClientState: "(newState) => console.log(newState)"
-       * @param {Array} script: [{"type": "text/javascript", "src": "http://mysite.com/js/test.js"}]
-       * @param {Array} style: [{"type": "text/css", "cssText": "div { display: block; color: blue; }"}]
-       * @param {String} title: "Title"
-       * @param {Object} titleAttributes: {"itemprop": "name"}
-       * @param {String} titleTemplate: "MySite.com - %s"
-       */
-      set: function set$$1(canUseDOM2) {
-        Component.canUseDOM = canUseDOM2;
-      }
-    }]);
-    return HelmetWrapper;
-  }(React.Component), _class.propTypes = {
-    base: PropTypes.object,
-    bodyAttributes: PropTypes.object,
-    children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
-    defaultTitle: PropTypes.string,
-    defer: PropTypes.bool,
-    encodeSpecialCharacters: PropTypes.bool,
-    htmlAttributes: PropTypes.object,
-    link: PropTypes.arrayOf(PropTypes.object),
-    meta: PropTypes.arrayOf(PropTypes.object),
-    noscript: PropTypes.arrayOf(PropTypes.object),
-    onChangeClientState: PropTypes.func,
-    script: PropTypes.arrayOf(PropTypes.object),
-    style: PropTypes.arrayOf(PropTypes.object),
-    title: PropTypes.string,
-    titleAttributes: PropTypes.object,
-    titleTemplate: PropTypes.string
-  }, _class.defaultProps = {
-    defer: true,
-    encodeSpecialCharacters: true
-  }, _class.peek = Component.peek, _class.rewind = function() {
-    var mappedState = Component.rewind();
-    if (!mappedState) {
-      mappedState = mapStateOnServer({
-        baseTag: [],
-        bodyAttributes: {},
-        htmlAttributes: {},
-        linkTags: [],
-        metaTags: [],
-        noscriptTags: [],
-        scriptTags: [],
-        styleTags: [],
-        title: "",
-        titleAttributes: {}
-      });
-    }
-    return mappedState;
-  }, _temp;
-};
-var NullComponent = function NullComponent2() {
-  return null;
-};
-var HelmetSideEffects = withSideEffect(reducePropsToState, handleClientStateChange, mapStateOnServer)(NullComponent);
-var HelmetExport = Helmet(HelmetSideEffects);
-HelmetExport.renderStatic = HelmetExport.rewind;
 const GameServices = ({
   gameDownload,
   setGameDownload
@@ -47043,8 +46165,8 @@ const Resize = {
     }
   }
 };
-function _extends$n() {
-  _extends$n = Object.assign || function(target) {
+function _extends$o() {
+  _extends$o = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -47055,7 +46177,7 @@ function _extends$n() {
     }
     return target;
   };
-  return _extends$n.apply(this, arguments);
+  return _extends$o.apply(this, arguments);
 }
 var Observer = {
   attach: function attach(target, options2) {
@@ -47120,7 +46242,7 @@ const Observer$1 = {
   create: function create3() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      observer: _extends$n({}, Observer, {
+      observer: _extends$o({}, Observer, {
         observers: []
       })
     });
@@ -50100,8 +49222,8 @@ Object.keys(prototypes).forEach(function(prototypeGroup) {
   });
 });
 Swiper$1.use([Resize, Observer$1]);
-function _extends$m() {
-  _extends$m = Object.assign || function(target) {
+function _extends$n() {
+  _extends$n = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -50112,7 +49234,7 @@ function _extends$m() {
     }
     return target;
   };
-  return _extends$m.apply(this, arguments);
+  return _extends$n.apply(this, arguments);
 }
 var Virtual = {
   update: function update2(force) {
@@ -50311,7 +49433,7 @@ const Virtual$1 = {
   create: function create4() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      virtual: _extends$m({}, Virtual, {
+      virtual: _extends$n({}, Virtual, {
         slides: swiper2.params.virtual.slides,
         cache: {}
       })
@@ -50336,8 +49458,8 @@ const Virtual$1 = {
     }
   }
 };
-function _extends$l() {
-  _extends$l = Object.assign || function(target) {
+function _extends$m() {
+  _extends$m = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -50348,7 +49470,7 @@ function _extends$l() {
     }
     return target;
   };
-  return _extends$l.apply(this, arguments);
+  return _extends$m.apply(this, arguments);
 }
 var Keyboard = {
   handle: function handle(event2) {
@@ -50446,7 +49568,7 @@ const keyboard = {
   create: function create5() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      keyboard: _extends$l({
+      keyboard: _extends$m({
         enabled: false
       }, Keyboard)
     });
@@ -50798,8 +49920,8 @@ const mousewheel = {
     }
   }
 };
-function _extends$k() {
-  _extends$k = Object.assign || function(target) {
+function _extends$l() {
+  _extends$l = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -50810,7 +49932,7 @@ function _extends$k() {
     }
     return target;
   };
-  return _extends$k.apply(this, arguments);
+  return _extends$l.apply(this, arguments);
 }
 var Navigation = {
   toggleEl: function toggleEl($el, disabled) {
@@ -50923,7 +50045,7 @@ const Navigation$1 = {
   create: function create7() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      navigation: _extends$k({}, Navigation)
+      navigation: _extends$l({}, Navigation)
     });
   },
   on: {
@@ -50975,8 +50097,8 @@ const Navigation$1 = {
     }
   }
 };
-function _extends$j() {
-  _extends$j = Object.assign || function(target) {
+function _extends$k() {
+  _extends$k = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -50987,7 +50109,7 @@ function _extends$j() {
     }
     return target;
   };
-  return _extends$j.apply(this, arguments);
+  return _extends$k.apply(this, arguments);
 }
 var Pagination = {
   update: function update4() {
@@ -51252,7 +50374,7 @@ const Pagination$1 = {
   create: function create8() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      pagination: _extends$j({
+      pagination: _extends$k({
         dynamicBulletIndex: 0
       }, Pagination)
     });
@@ -51311,8 +50433,8 @@ const Pagination$1 = {
     }
   }
 };
-function _extends$i() {
-  _extends$i = Object.assign || function(target) {
+function _extends$j() {
+  _extends$j = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -51323,7 +50445,7 @@ function _extends$i() {
     }
     return target;
   };
-  return _extends$i.apply(this, arguments);
+  return _extends$j.apply(this, arguments);
 }
 var Scrollbar = {
   setTranslate: function setTranslate3() {
@@ -51592,7 +50714,7 @@ const Scrollbar$1 = {
   create: function create9() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      scrollbar: _extends$i({
+      scrollbar: _extends$j({
         isTouched: false,
         timeout: null,
         dragTimeout: null
@@ -51631,8 +50753,8 @@ const Scrollbar$1 = {
     }
   }
 };
-function _extends$h() {
-  _extends$h = Object.assign || function(target) {
+function _extends$i() {
+  _extends$i = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -51643,7 +50765,7 @@ function _extends$h() {
     }
     return target;
   };
-  return _extends$h.apply(this, arguments);
+  return _extends$i.apply(this, arguments);
 }
 var Parallax = {
   setTransform: function setTransform(el, progress2) {
@@ -51728,7 +50850,7 @@ const parallax = {
   create: function create10() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      parallax: _extends$h({}, Parallax)
+      parallax: _extends$i({}, Parallax)
     });
   },
   on: {
@@ -51751,8 +50873,8 @@ const parallax = {
     }
   }
 };
-function _extends$g() {
-  _extends$g = Object.assign || function(target) {
+function _extends$h() {
+  _extends$h = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -51763,7 +50885,7 @@ function _extends$g() {
     }
     return target;
   };
-  return _extends$g.apply(this, arguments);
+  return _extends$h.apply(this, arguments);
 }
 var Zoom = {
   // Calc Scale From Multi-touches
@@ -52201,7 +51323,7 @@ const zoom = {
   create: function create11() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      zoom: _extends$g({
+      zoom: _extends$h({
         enabled: false,
         scale: 1,
         currentScale: 1,
@@ -52288,8 +51410,8 @@ const zoom = {
     }
   }
 };
-function _extends$f() {
-  _extends$f = Object.assign || function(target) {
+function _extends$g() {
+  _extends$g = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -52300,7 +51422,7 @@ function _extends$f() {
     }
     return target;
   };
-  return _extends$f.apply(this, arguments);
+  return _extends$g.apply(this, arguments);
 }
 var Lazy = {
   loadInSlide: function loadInSlide(index2, loadInDuplicate) {
@@ -52482,7 +51604,7 @@ const lazy = {
   create: function create12() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      lazy: _extends$f({
+      lazy: _extends$g({
         initialImageLoaded: false
       }, Lazy)
     });
@@ -52532,8 +51654,8 @@ const lazy = {
     }
   }
 };
-function _extends$e() {
-  _extends$e = Object.assign || function(target) {
+function _extends$f() {
+  _extends$f = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -52544,7 +51666,7 @@ function _extends$e() {
     }
     return target;
   };
-  return _extends$e.apply(this, arguments);
+  return _extends$f.apply(this, arguments);
 }
 var Controller = {
   LinearSpline: function LinearSpline(x, y) {
@@ -52667,7 +51789,7 @@ const controller = {
   create: function create13() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      controller: _extends$e({
+      controller: _extends$f({
         control: swiper2.params.controller.control
       }, Controller)
     });
@@ -52704,8 +51826,8 @@ const controller = {
     }
   }
 };
-function _extends$d() {
-  _extends$d = Object.assign || function(target) {
+function _extends$e() {
+  _extends$e = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -52716,7 +51838,7 @@ function _extends$d() {
     }
     return target;
   };
-  return _extends$d.apply(this, arguments);
+  return _extends$e.apply(this, arguments);
 }
 var A11y = {
   getRandomNumber: function getRandomNumber(size) {
@@ -52943,7 +52065,7 @@ const a11y = {
   create: function create14() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      a11y: _extends$d({}, A11y, {
+      a11y: _extends$e({}, A11y, {
         liveRegion: $('<span class="' + swiper2.params.a11y.notificationClass + '" aria-live="assertive" aria-atomic="true"></span>')
       })
     });
@@ -52972,8 +52094,8 @@ const a11y = {
     }
   }
 };
-function _extends$c() {
-  _extends$c = Object.assign || function(target) {
+function _extends$d() {
+  _extends$d = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -52984,7 +52106,7 @@ function _extends$c() {
     }
     return target;
   };
-  return _extends$c.apply(this, arguments);
+  return _extends$d.apply(this, arguments);
 }
 var History = {
   init: function init16() {
@@ -53101,7 +52223,7 @@ const history = {
   create: function create15() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      history: _extends$c({}, History)
+      history: _extends$d({}, History)
     });
   },
   on: {
@@ -53127,8 +52249,8 @@ const history = {
     }
   }
 };
-function _extends$b() {
-  _extends$b = Object.assign || function(target) {
+function _extends$c() {
+  _extends$c = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -53139,7 +52261,7 @@ function _extends$b() {
     }
     return target;
   };
-  return _extends$b.apply(this, arguments);
+  return _extends$c.apply(this, arguments);
 }
 var HashNavigation = {
   onHashChange: function onHashChange() {
@@ -53211,7 +52333,7 @@ const hashNavigation = {
   create: function create16() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      hashNavigation: _extends$b({
+      hashNavigation: _extends$c({
         initialized: false
       }, HashNavigation)
     });
@@ -53239,8 +52361,8 @@ const hashNavigation = {
     }
   }
 };
-function _extends$a() {
-  _extends$a = Object.assign || function(target) {
+function _extends$b() {
+  _extends$b = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -53251,7 +52373,7 @@ function _extends$a() {
     }
     return target;
   };
-  return _extends$a.apply(this, arguments);
+  return _extends$b.apply(this, arguments);
 }
 var Autoplay = {
   run: function run() {
@@ -53406,7 +52528,7 @@ const Autoplay$1 = {
   create: function create17() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      autoplay: _extends$a({}, Autoplay, {
+      autoplay: _extends$b({}, Autoplay, {
         running: false,
         paused: false
       })
@@ -53454,8 +52576,8 @@ const Autoplay$1 = {
     }
   }
 };
-function _extends$9() {
-  _extends$9 = Object.assign || function(target) {
+function _extends$a() {
+  _extends$a = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -53466,7 +52588,7 @@ function _extends$9() {
     }
     return target;
   };
-  return _extends$9.apply(this, arguments);
+  return _extends$a.apply(this, arguments);
 }
 var Fade = {
   setTranslate: function setTranslate9() {
@@ -53517,7 +52639,7 @@ const EffectFade = {
   create: function create18() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      fadeEffect: _extends$9({}, Fade)
+      fadeEffect: _extends$a({}, Fade)
     });
   },
   on: {
@@ -53545,8 +52667,8 @@ const EffectFade = {
     }
   }
 };
-function _extends$8() {
-  _extends$8 = Object.assign || function(target) {
+function _extends$9() {
+  _extends$9 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -53557,7 +52679,7 @@ function _extends$8() {
     }
     return target;
   };
-  return _extends$8.apply(this, arguments);
+  return _extends$9.apply(this, arguments);
 }
 var Cube = {
   setTranslate: function setTranslate11() {
@@ -53686,7 +52808,7 @@ const effectCube = {
   create: function create19() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      cubeEffect: _extends$8({}, Cube)
+      cubeEffect: _extends$9({}, Cube)
     });
   },
   on: {
@@ -53717,8 +52839,8 @@ const effectCube = {
     }
   }
 };
-function _extends$7() {
-  _extends$7 = Object.assign || function(target) {
+function _extends$8() {
+  _extends$8 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -53729,7 +52851,7 @@ function _extends$7() {
     }
     return target;
   };
-  return _extends$7.apply(this, arguments);
+  return _extends$8.apply(this, arguments);
 }
 var Flip = {
   setTranslate: function setTranslate13() {
@@ -53803,7 +52925,7 @@ const effectFlip = {
   create: function create20() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      flipEffect: _extends$7({}, Flip)
+      flipEffect: _extends$8({}, Flip)
     });
   },
   on: {
@@ -53832,8 +52954,8 @@ const effectFlip = {
     }
   }
 };
-function _extends$6() {
-  _extends$6 = Object.assign || function(target) {
+function _extends$7() {
+  _extends$7 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -53844,7 +52966,7 @@ function _extends$6() {
     }
     return target;
   };
-  return _extends$6.apply(this, arguments);
+  return _extends$7.apply(this, arguments);
 }
 var Coverflow = {
   setTranslate: function setTranslate15() {
@@ -53916,7 +53038,7 @@ const effectCoverflow = {
   create: function create21() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      coverflowEffect: _extends$6({}, Coverflow)
+      coverflowEffect: _extends$7({}, Coverflow)
     });
   },
   on: {
@@ -53937,8 +53059,8 @@ const effectCoverflow = {
     }
   }
 };
-function _extends$5() {
-  _extends$5 = Object.assign || function(target) {
+function _extends$6() {
+  _extends$6 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -53949,7 +53071,7 @@ function _extends$5() {
     }
     return target;
   };
-  return _extends$5.apply(this, arguments);
+  return _extends$6.apply(this, arguments);
 }
 var Thumbs = {
   init: function init21() {
@@ -54094,7 +53216,7 @@ const thumbs = {
   create: function create22() {
     var swiper2 = this;
     bindModuleMethods(swiper2, {
-      thumbs: _extends$5({
+      thumbs: _extends$6({
         swiper: null,
         initialized: false
       }, Thumbs)
@@ -63345,6 +62467,884 @@ const Index$2 = ({
     })
   });
 };
+var lib$1;
+var hasRequiredLib$1;
+function requireLib$1() {
+  if (hasRequiredLib$1) return lib$1;
+  hasRequiredLib$1 = 1;
+  function _interopDefault(ex) {
+    return ex && typeof ex === "object" && "default" in ex ? ex["default"] : ex;
+  }
+  var React2 = requireReact();
+  var React__default = _interopDefault(React2);
+  function _defineProperty2(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+    return obj;
+  }
+  function _inheritsLoose2(subClass, superClass) {
+    subClass.prototype = Object.create(superClass.prototype);
+    subClass.prototype.constructor = subClass;
+    subClass.__proto__ = superClass;
+  }
+  var canUseDOM2 = !!(typeof window !== "undefined" && window.document && window.document.createElement);
+  function withSideEffect2(reducePropsToState3, handleStateChangeOnClient, mapStateOnServer3) {
+    if (typeof reducePropsToState3 !== "function") {
+      throw new Error("Expected reducePropsToState to be a function.");
+    }
+    if (typeof handleStateChangeOnClient !== "function") {
+      throw new Error("Expected handleStateChangeOnClient to be a function.");
+    }
+    if (typeof mapStateOnServer3 !== "undefined" && typeof mapStateOnServer3 !== "function") {
+      throw new Error("Expected mapStateOnServer to either be undefined or a function.");
+    }
+    function getDisplayName(WrappedComponent) {
+      return WrappedComponent.displayName || WrappedComponent.name || "Component";
+    }
+    return function wrap(WrappedComponent) {
+      if (typeof WrappedComponent !== "function") {
+        throw new Error("Expected WrappedComponent to be a React component.");
+      }
+      var mountedInstances = [];
+      var state;
+      function emitChange() {
+        state = reducePropsToState3(mountedInstances.map(function(instance) {
+          return instance.props;
+        }));
+        if (SideEffect.canUseDOM) {
+          handleStateChangeOnClient(state);
+        } else if (mapStateOnServer3) {
+          state = mapStateOnServer3(state);
+        }
+      }
+      var SideEffect = /* @__PURE__ */ function(_PureComponent) {
+        _inheritsLoose2(SideEffect2, _PureComponent);
+        function SideEffect2() {
+          return _PureComponent.apply(this, arguments) || this;
+        }
+        SideEffect2.peek = function peek2() {
+          return state;
+        };
+        SideEffect2.rewind = function rewind() {
+          if (SideEffect2.canUseDOM) {
+            throw new Error("You may only call rewind() on the server. Call peek() to read the current state.");
+          }
+          var recordedState = state;
+          state = void 0;
+          mountedInstances = [];
+          return recordedState;
+        };
+        var _proto = SideEffect2.prototype;
+        _proto.UNSAFE_componentWillMount = function UNSAFE_componentWillMount() {
+          mountedInstances.push(this);
+          emitChange();
+        };
+        _proto.componentDidUpdate = function componentDidUpdate() {
+          emitChange();
+        };
+        _proto.componentWillUnmount = function componentWillUnmount() {
+          var index2 = mountedInstances.indexOf(this);
+          mountedInstances.splice(index2, 1);
+          emitChange();
+        };
+        _proto.render = function render2() {
+          return React__default.createElement(WrappedComponent, this.props);
+        };
+        return SideEffect2;
+      }(React2.PureComponent);
+      _defineProperty2(SideEffect, "displayName", "SideEffect(" + getDisplayName(WrappedComponent) + ")");
+      _defineProperty2(SideEffect, "canUseDOM", canUseDOM2);
+      return SideEffect;
+    };
+  }
+  lib$1 = withSideEffect2;
+  return lib$1;
+}
+var libExports$1 = requireLib$1();
+const withSideEffect = /* @__PURE__ */ getDefaultExportFromCjs(libExports$1);
+var reactFastCompare$1;
+var hasRequiredReactFastCompare$1;
+function requireReactFastCompare$1() {
+  if (hasRequiredReactFastCompare$1) return reactFastCompare$1;
+  hasRequiredReactFastCompare$1 = 1;
+  var hasElementType = typeof Element !== "undefined";
+  var hasMap = typeof Map === "function";
+  var hasSet = typeof Set === "function";
+  var hasArrayBuffer = typeof ArrayBuffer === "function" && !!ArrayBuffer.isView;
+  function equal(a2, b2) {
+    if (a2 === b2) return true;
+    if (a2 && b2 && typeof a2 == "object" && typeof b2 == "object") {
+      if (a2.constructor !== b2.constructor) return false;
+      var length2, i, keys2;
+      if (Array.isArray(a2)) {
+        length2 = a2.length;
+        if (length2 != b2.length) return false;
+        for (i = length2; i-- !== 0; )
+          if (!equal(a2[i], b2[i])) return false;
+        return true;
+      }
+      var it;
+      if (hasMap && a2 instanceof Map && b2 instanceof Map) {
+        if (a2.size !== b2.size) return false;
+        it = a2.entries();
+        while (!(i = it.next()).done)
+          if (!b2.has(i.value[0])) return false;
+        it = a2.entries();
+        while (!(i = it.next()).done)
+          if (!equal(i.value[1], b2.get(i.value[0]))) return false;
+        return true;
+      }
+      if (hasSet && a2 instanceof Set && b2 instanceof Set) {
+        if (a2.size !== b2.size) return false;
+        it = a2.entries();
+        while (!(i = it.next()).done)
+          if (!b2.has(i.value[0])) return false;
+        return true;
+      }
+      if (hasArrayBuffer && ArrayBuffer.isView(a2) && ArrayBuffer.isView(b2)) {
+        length2 = a2.length;
+        if (length2 != b2.length) return false;
+        for (i = length2; i-- !== 0; )
+          if (a2[i] !== b2[i]) return false;
+        return true;
+      }
+      if (a2.constructor === RegExp) return a2.source === b2.source && a2.flags === b2.flags;
+      if (a2.valueOf !== Object.prototype.valueOf && typeof a2.valueOf === "function" && typeof b2.valueOf === "function") return a2.valueOf() === b2.valueOf();
+      if (a2.toString !== Object.prototype.toString && typeof a2.toString === "function" && typeof b2.toString === "function") return a2.toString() === b2.toString();
+      keys2 = Object.keys(a2);
+      length2 = keys2.length;
+      if (length2 !== Object.keys(b2).length) return false;
+      for (i = length2; i-- !== 0; )
+        if (!Object.prototype.hasOwnProperty.call(b2, keys2[i])) return false;
+      if (hasElementType && a2 instanceof Element) return false;
+      for (i = length2; i-- !== 0; ) {
+        if ((keys2[i] === "_owner" || keys2[i] === "__v" || keys2[i] === "__o") && a2.$$typeof) {
+          continue;
+        }
+        if (!equal(a2[keys2[i]], b2[keys2[i]])) return false;
+      }
+      return true;
+    }
+    return a2 !== a2 && b2 !== b2;
+  }
+  reactFastCompare$1 = function isEqual2(a2, b2) {
+    try {
+      return equal(a2, b2);
+    } catch (error) {
+      if ((error.message || "").match(/stack|recursion/i)) {
+        console.warn("react-fast-compare cannot handle circular refs");
+        return false;
+      }
+      throw error;
+    }
+  };
+  return reactFastCompare$1;
+}
+var reactFastCompareExports$1 = requireReactFastCompare$1();
+const isEqual$2 = /* @__PURE__ */ getDefaultExportFromCjs(reactFastCompareExports$1);
+var objectAssignExports = requireObjectAssign();
+const objectAssign = /* @__PURE__ */ getDefaultExportFromCjs(objectAssignExports);
+var ATTRIBUTE_NAMES = {
+  BODY: "bodyAttributes",
+  HTML: "htmlAttributes",
+  TITLE: "titleAttributes"
+};
+var TAG_NAMES = {
+  BASE: "base",
+  BODY: "body",
+  HEAD: "head",
+  HTML: "html",
+  LINK: "link",
+  META: "meta",
+  NOSCRIPT: "noscript",
+  SCRIPT: "script",
+  STYLE: "style",
+  TITLE: "title"
+};
+Object.keys(TAG_NAMES).map(function(name) {
+  return TAG_NAMES[name];
+});
+var TAG_PROPERTIES = {
+  CHARSET: "charset",
+  CSS_TEXT: "cssText",
+  HREF: "href",
+  HTTPEQUIV: "http-equiv",
+  INNER_HTML: "innerHTML",
+  ITEM_PROP: "itemprop",
+  NAME: "name",
+  PROPERTY: "property",
+  REL: "rel",
+  SRC: "src",
+  TARGET: "target"
+};
+var REACT_TAG_MAP = {
+  accesskey: "accessKey",
+  charset: "charSet",
+  class: "className",
+  contenteditable: "contentEditable",
+  contextmenu: "contextMenu",
+  "http-equiv": "httpEquiv",
+  itemprop: "itemProp",
+  tabindex: "tabIndex"
+};
+var HELMET_PROPS = {
+  DEFAULT_TITLE: "defaultTitle",
+  DEFER: "defer",
+  ENCODE_SPECIAL_CHARACTERS: "encodeSpecialCharacters",
+  ON_CHANGE_CLIENT_STATE: "onChangeClientState",
+  TITLE_TEMPLATE: "titleTemplate"
+};
+var HTML_TAG_MAP = Object.keys(REACT_TAG_MAP).reduce(function(obj, key) {
+  obj[REACT_TAG_MAP[key]] = key;
+  return obj;
+}, {});
+var SELF_CLOSING_TAGS = [TAG_NAMES.NOSCRIPT, TAG_NAMES.SCRIPT, TAG_NAMES.STYLE];
+var HELMET_ATTRIBUTE = "data-react-helmet";
+var _typeof$1 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function(obj) {
+  return typeof obj;
+} : function(obj) {
+  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+};
+var classCallCheck = function(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+var createClass = /* @__PURE__ */ function() {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+  return function(Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+}();
+var _extends$5 = Object.assign || function(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+    for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+  return target;
+};
+var inherits = function(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+};
+var objectWithoutProperties = function(obj, keys2) {
+  var target = {};
+  for (var i in obj) {
+    if (keys2.indexOf(i) >= 0) continue;
+    if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+    target[i] = obj[i];
+  }
+  return target;
+};
+var possibleConstructorReturn = function(self2, call) {
+  if (!self2) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+  return call && (typeof call === "object" || typeof call === "function") ? call : self2;
+};
+var encodeSpecialCharacters = function encodeSpecialCharacters2(str) {
+  var encode = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : true;
+  if (encode === false) {
+    return String(str);
+  }
+  return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
+};
+var getTitleFromPropsList = function getTitleFromPropsList2(propsList) {
+  var innermostTitle = getInnermostProperty(propsList, TAG_NAMES.TITLE);
+  var innermostTemplate = getInnermostProperty(propsList, HELMET_PROPS.TITLE_TEMPLATE);
+  if (innermostTemplate && innermostTitle) {
+    return innermostTemplate.replace(/%s/g, function() {
+      return Array.isArray(innermostTitle) ? innermostTitle.join("") : innermostTitle;
+    });
+  }
+  var innermostDefaultTitle = getInnermostProperty(propsList, HELMET_PROPS.DEFAULT_TITLE);
+  return innermostTitle || innermostDefaultTitle || void 0;
+};
+var getOnChangeClientState = function getOnChangeClientState2(propsList) {
+  return getInnermostProperty(propsList, HELMET_PROPS.ON_CHANGE_CLIENT_STATE) || function() {
+  };
+};
+var getAttributesFromPropsList = function getAttributesFromPropsList2(tagType, propsList) {
+  return propsList.filter(function(props) {
+    return typeof props[tagType] !== "undefined";
+  }).map(function(props) {
+    return props[tagType];
+  }).reduce(function(tagAttrs, current) {
+    return _extends$5({}, tagAttrs, current);
+  }, {});
+};
+var getBaseTagFromPropsList = function getBaseTagFromPropsList2(primaryAttributes, propsList) {
+  return propsList.filter(function(props) {
+    return typeof props[TAG_NAMES.BASE] !== "undefined";
+  }).map(function(props) {
+    return props[TAG_NAMES.BASE];
+  }).reverse().reduce(function(innermostBaseTag, tag) {
+    if (!innermostBaseTag.length) {
+      var keys2 = Object.keys(tag);
+      for (var i = 0; i < keys2.length; i++) {
+        var attributeKey = keys2[i];
+        var lowerCaseAttributeKey = attributeKey.toLowerCase();
+        if (primaryAttributes.indexOf(lowerCaseAttributeKey) !== -1 && tag[lowerCaseAttributeKey]) {
+          return innermostBaseTag.concat(tag);
+        }
+      }
+    }
+    return innermostBaseTag;
+  }, []);
+};
+var getTagsFromPropsList = function getTagsFromPropsList2(tagName, primaryAttributes, propsList) {
+  var approvedSeenTags = {};
+  return propsList.filter(function(props) {
+    if (Array.isArray(props[tagName])) {
+      return true;
+    }
+    if (typeof props[tagName] !== "undefined") {
+      warn("Helmet: " + tagName + ' should be of type "Array". Instead found type "' + _typeof$1(props[tagName]) + '"');
+    }
+    return false;
+  }).map(function(props) {
+    return props[tagName];
+  }).reverse().reduce(function(approvedTags, instanceTags) {
+    var instanceSeenTags = {};
+    instanceTags.filter(function(tag) {
+      var primaryAttributeKey = void 0;
+      var keys22 = Object.keys(tag);
+      for (var i2 = 0; i2 < keys22.length; i2++) {
+        var attributeKey2 = keys22[i2];
+        var lowerCaseAttributeKey = attributeKey2.toLowerCase();
+        if (primaryAttributes.indexOf(lowerCaseAttributeKey) !== -1 && !(primaryAttributeKey === TAG_PROPERTIES.REL && tag[primaryAttributeKey].toLowerCase() === "canonical") && !(lowerCaseAttributeKey === TAG_PROPERTIES.REL && tag[lowerCaseAttributeKey].toLowerCase() === "stylesheet")) {
+          primaryAttributeKey = lowerCaseAttributeKey;
+        }
+        if (primaryAttributes.indexOf(attributeKey2) !== -1 && (attributeKey2 === TAG_PROPERTIES.INNER_HTML || attributeKey2 === TAG_PROPERTIES.CSS_TEXT || attributeKey2 === TAG_PROPERTIES.ITEM_PROP)) {
+          primaryAttributeKey = attributeKey2;
+        }
+      }
+      if (!primaryAttributeKey || !tag[primaryAttributeKey]) {
+        return false;
+      }
+      var value = tag[primaryAttributeKey].toLowerCase();
+      if (!approvedSeenTags[primaryAttributeKey]) {
+        approvedSeenTags[primaryAttributeKey] = {};
+      }
+      if (!instanceSeenTags[primaryAttributeKey]) {
+        instanceSeenTags[primaryAttributeKey] = {};
+      }
+      if (!approvedSeenTags[primaryAttributeKey][value]) {
+        instanceSeenTags[primaryAttributeKey][value] = true;
+        return true;
+      }
+      return false;
+    }).reverse().forEach(function(tag) {
+      return approvedTags.push(tag);
+    });
+    var keys2 = Object.keys(instanceSeenTags);
+    for (var i = 0; i < keys2.length; i++) {
+      var attributeKey = keys2[i];
+      var tagUnion = objectAssign({}, approvedSeenTags[attributeKey], instanceSeenTags[attributeKey]);
+      approvedSeenTags[attributeKey] = tagUnion;
+    }
+    return approvedTags;
+  }, []).reverse();
+};
+var getInnermostProperty = function getInnermostProperty2(propsList, property) {
+  for (var i = propsList.length - 1; i >= 0; i--) {
+    var props = propsList[i];
+    if (props.hasOwnProperty(property)) {
+      return props[property];
+    }
+  }
+  return null;
+};
+var reducePropsToState = function reducePropsToState2(propsList) {
+  return {
+    baseTag: getBaseTagFromPropsList([TAG_PROPERTIES.HREF, TAG_PROPERTIES.TARGET], propsList),
+    bodyAttributes: getAttributesFromPropsList(ATTRIBUTE_NAMES.BODY, propsList),
+    defer: getInnermostProperty(propsList, HELMET_PROPS.DEFER),
+    encode: getInnermostProperty(propsList, HELMET_PROPS.ENCODE_SPECIAL_CHARACTERS),
+    htmlAttributes: getAttributesFromPropsList(ATTRIBUTE_NAMES.HTML, propsList),
+    linkTags: getTagsFromPropsList(TAG_NAMES.LINK, [TAG_PROPERTIES.REL, TAG_PROPERTIES.HREF], propsList),
+    metaTags: getTagsFromPropsList(TAG_NAMES.META, [TAG_PROPERTIES.NAME, TAG_PROPERTIES.CHARSET, TAG_PROPERTIES.HTTPEQUIV, TAG_PROPERTIES.PROPERTY, TAG_PROPERTIES.ITEM_PROP], propsList),
+    noscriptTags: getTagsFromPropsList(TAG_NAMES.NOSCRIPT, [TAG_PROPERTIES.INNER_HTML], propsList),
+    onChangeClientState: getOnChangeClientState(propsList),
+    scriptTags: getTagsFromPropsList(TAG_NAMES.SCRIPT, [TAG_PROPERTIES.SRC, TAG_PROPERTIES.INNER_HTML], propsList),
+    styleTags: getTagsFromPropsList(TAG_NAMES.STYLE, [TAG_PROPERTIES.CSS_TEXT], propsList),
+    title: getTitleFromPropsList(propsList),
+    titleAttributes: getAttributesFromPropsList(ATTRIBUTE_NAMES.TITLE, propsList)
+  };
+};
+var rafPolyfill = function() {
+  var clock = Date.now();
+  return function(callback) {
+    var currentTime = Date.now();
+    if (currentTime - clock > 16) {
+      clock = currentTime;
+      callback(currentTime);
+    } else {
+      setTimeout(function() {
+        rafPolyfill(callback);
+      }, 0);
+    }
+  };
+}();
+var cafPolyfill = function cafPolyfill2(id) {
+  return clearTimeout(id);
+};
+var requestAnimationFrame$1 = typeof window !== "undefined" ? window.requestAnimationFrame && window.requestAnimationFrame.bind(window) || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || rafPolyfill : global.requestAnimationFrame || rafPolyfill;
+var cancelAnimationFrame$1 = typeof window !== "undefined" ? window.cancelAnimationFrame || window.webkitCancelAnimationFrame || window.mozCancelAnimationFrame || cafPolyfill : global.cancelAnimationFrame || cafPolyfill;
+var warn = function warn2(msg) {
+  return console && typeof console.warn === "function" && console.warn(msg);
+};
+var _helmetCallback = null;
+var handleClientStateChange = function handleClientStateChange2(newState) {
+  if (_helmetCallback) {
+    cancelAnimationFrame$1(_helmetCallback);
+  }
+  if (newState.defer) {
+    _helmetCallback = requestAnimationFrame$1(function() {
+      commitTagChanges(newState, function() {
+        _helmetCallback = null;
+      });
+    });
+  } else {
+    commitTagChanges(newState);
+    _helmetCallback = null;
+  }
+};
+var commitTagChanges = function commitTagChanges2(newState, cb2) {
+  var baseTag = newState.baseTag, bodyAttributes = newState.bodyAttributes, htmlAttributes = newState.htmlAttributes, linkTags = newState.linkTags, metaTags = newState.metaTags, noscriptTags = newState.noscriptTags, onChangeClientState = newState.onChangeClientState, scriptTags = newState.scriptTags, styleTags = newState.styleTags, title = newState.title, titleAttributes = newState.titleAttributes;
+  updateAttributes(TAG_NAMES.BODY, bodyAttributes);
+  updateAttributes(TAG_NAMES.HTML, htmlAttributes);
+  updateTitle(title, titleAttributes);
+  var tagUpdates = {
+    baseTag: updateTags(TAG_NAMES.BASE, baseTag),
+    linkTags: updateTags(TAG_NAMES.LINK, linkTags),
+    metaTags: updateTags(TAG_NAMES.META, metaTags),
+    noscriptTags: updateTags(TAG_NAMES.NOSCRIPT, noscriptTags),
+    scriptTags: updateTags(TAG_NAMES.SCRIPT, scriptTags),
+    styleTags: updateTags(TAG_NAMES.STYLE, styleTags)
+  };
+  var addedTags = {};
+  var removedTags = {};
+  Object.keys(tagUpdates).forEach(function(tagType) {
+    var _tagUpdates$tagType = tagUpdates[tagType], newTags = _tagUpdates$tagType.newTags, oldTags = _tagUpdates$tagType.oldTags;
+    if (newTags.length) {
+      addedTags[tagType] = newTags;
+    }
+    if (oldTags.length) {
+      removedTags[tagType] = tagUpdates[tagType].oldTags;
+    }
+  });
+  cb2 && cb2();
+  onChangeClientState(newState, addedTags, removedTags);
+};
+var flattenArray = function flattenArray2(possibleArray) {
+  return Array.isArray(possibleArray) ? possibleArray.join("") : possibleArray;
+};
+var updateTitle = function updateTitle2(title, attributes) {
+  if (typeof title !== "undefined" && document.title !== title) {
+    document.title = flattenArray(title);
+  }
+  updateAttributes(TAG_NAMES.TITLE, attributes);
+};
+var updateAttributes = function updateAttributes2(tagName, attributes) {
+  var elementTag = document.getElementsByTagName(tagName)[0];
+  if (!elementTag) {
+    return;
+  }
+  var helmetAttributeString = elementTag.getAttribute(HELMET_ATTRIBUTE);
+  var helmetAttributes = helmetAttributeString ? helmetAttributeString.split(",") : [];
+  var attributesToRemove = [].concat(helmetAttributes);
+  var attributeKeys = Object.keys(attributes);
+  for (var i = 0; i < attributeKeys.length; i++) {
+    var attribute = attributeKeys[i];
+    var value = attributes[attribute] || "";
+    if (elementTag.getAttribute(attribute) !== value) {
+      elementTag.setAttribute(attribute, value);
+    }
+    if (helmetAttributes.indexOf(attribute) === -1) {
+      helmetAttributes.push(attribute);
+    }
+    var indexToSave = attributesToRemove.indexOf(attribute);
+    if (indexToSave !== -1) {
+      attributesToRemove.splice(indexToSave, 1);
+    }
+  }
+  for (var _i = attributesToRemove.length - 1; _i >= 0; _i--) {
+    elementTag.removeAttribute(attributesToRemove[_i]);
+  }
+  if (helmetAttributes.length === attributesToRemove.length) {
+    elementTag.removeAttribute(HELMET_ATTRIBUTE);
+  } else if (elementTag.getAttribute(HELMET_ATTRIBUTE) !== attributeKeys.join(",")) {
+    elementTag.setAttribute(HELMET_ATTRIBUTE, attributeKeys.join(","));
+  }
+};
+var updateTags = function updateTags2(type, tags) {
+  var headElement = document.head || document.querySelector(TAG_NAMES.HEAD);
+  var tagNodes = headElement.querySelectorAll(type + "[" + HELMET_ATTRIBUTE + "]");
+  var oldTags = Array.prototype.slice.call(tagNodes);
+  var newTags = [];
+  var indexToDelete = void 0;
+  if (tags && tags.length) {
+    tags.forEach(function(tag) {
+      var newElement = document.createElement(type);
+      for (var attribute in tag) {
+        if (tag.hasOwnProperty(attribute)) {
+          if (attribute === TAG_PROPERTIES.INNER_HTML) {
+            newElement.innerHTML = tag.innerHTML;
+          } else if (attribute === TAG_PROPERTIES.CSS_TEXT) {
+            if (newElement.styleSheet) {
+              newElement.styleSheet.cssText = tag.cssText;
+            } else {
+              newElement.appendChild(document.createTextNode(tag.cssText));
+            }
+          } else {
+            var value = typeof tag[attribute] === "undefined" ? "" : tag[attribute];
+            newElement.setAttribute(attribute, value);
+          }
+        }
+      }
+      newElement.setAttribute(HELMET_ATTRIBUTE, "true");
+      if (oldTags.some(function(existingTag, index2) {
+        indexToDelete = index2;
+        return newElement.isEqualNode(existingTag);
+      })) {
+        oldTags.splice(indexToDelete, 1);
+      } else {
+        newTags.push(newElement);
+      }
+    });
+  }
+  oldTags.forEach(function(tag) {
+    return tag.parentNode.removeChild(tag);
+  });
+  newTags.forEach(function(tag) {
+    return headElement.appendChild(tag);
+  });
+  return {
+    oldTags,
+    newTags
+  };
+};
+var generateElementAttributesAsString = function generateElementAttributesAsString2(attributes) {
+  return Object.keys(attributes).reduce(function(str, key) {
+    var attr2 = typeof attributes[key] !== "undefined" ? key + '="' + attributes[key] + '"' : "" + key;
+    return str ? str + " " + attr2 : attr2;
+  }, "");
+};
+var generateTitleAsString = function generateTitleAsString2(type, title, attributes, encode) {
+  var attributeString = generateElementAttributesAsString(attributes);
+  var flattenedTitle = flattenArray(title);
+  return attributeString ? "<" + type + " " + HELMET_ATTRIBUTE + '="true" ' + attributeString + ">" + encodeSpecialCharacters(flattenedTitle, encode) + "</" + type + ">" : "<" + type + " " + HELMET_ATTRIBUTE + '="true">' + encodeSpecialCharacters(flattenedTitle, encode) + "</" + type + ">";
+};
+var generateTagsAsString = function generateTagsAsString2(type, tags, encode) {
+  return tags.reduce(function(str, tag) {
+    var attributeHtml = Object.keys(tag).filter(function(attribute) {
+      return !(attribute === TAG_PROPERTIES.INNER_HTML || attribute === TAG_PROPERTIES.CSS_TEXT);
+    }).reduce(function(string2, attribute) {
+      var attr2 = typeof tag[attribute] === "undefined" ? attribute : attribute + '="' + encodeSpecialCharacters(tag[attribute], encode) + '"';
+      return string2 ? string2 + " " + attr2 : attr2;
+    }, "");
+    var tagContent = tag.innerHTML || tag.cssText || "";
+    var isSelfClosing = SELF_CLOSING_TAGS.indexOf(type) === -1;
+    return str + "<" + type + " " + HELMET_ATTRIBUTE + '="true" ' + attributeHtml + (isSelfClosing ? "/>" : ">" + tagContent + "</" + type + ">");
+  }, "");
+};
+var convertElementAttributestoReactProps = function convertElementAttributestoReactProps2(attributes) {
+  var initProps = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
+  return Object.keys(attributes).reduce(function(obj, key) {
+    obj[REACT_TAG_MAP[key] || key] = attributes[key];
+    return obj;
+  }, initProps);
+};
+var convertReactPropstoHtmlAttributes = function convertReactPropstoHtmlAttributes2(props) {
+  var initAttributes = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
+  return Object.keys(props).reduce(function(obj, key) {
+    obj[HTML_TAG_MAP[key] || key] = props[key];
+    return obj;
+  }, initAttributes);
+};
+var generateTitleAsReactComponent = function generateTitleAsReactComponent2(type, title, attributes) {
+  var _initProps;
+  var initProps = (_initProps = {
+    key: title
+  }, _initProps[HELMET_ATTRIBUTE] = true, _initProps);
+  var props = convertElementAttributestoReactProps(attributes, initProps);
+  return [React.createElement(TAG_NAMES.TITLE, props, title)];
+};
+var generateTagsAsReactComponent = function generateTagsAsReactComponent2(type, tags) {
+  return tags.map(function(tag, i) {
+    var _mappedTag;
+    var mappedTag = (_mappedTag = {
+      key: i
+    }, _mappedTag[HELMET_ATTRIBUTE] = true, _mappedTag);
+    Object.keys(tag).forEach(function(attribute) {
+      var mappedAttribute = REACT_TAG_MAP[attribute] || attribute;
+      if (mappedAttribute === TAG_PROPERTIES.INNER_HTML || mappedAttribute === TAG_PROPERTIES.CSS_TEXT) {
+        var content = tag.innerHTML || tag.cssText;
+        mappedTag.dangerouslySetInnerHTML = { __html: content };
+      } else {
+        mappedTag[mappedAttribute] = tag[attribute];
+      }
+    });
+    return React.createElement(type, mappedTag);
+  });
+};
+var getMethodsForTag = function getMethodsForTag2(type, tags, encode) {
+  switch (type) {
+    case TAG_NAMES.TITLE:
+      return {
+        toComponent: function toComponent() {
+          return generateTitleAsReactComponent(type, tags.title, tags.titleAttributes);
+        },
+        toString: function toString2() {
+          return generateTitleAsString(type, tags.title, tags.titleAttributes, encode);
+        }
+      };
+    case ATTRIBUTE_NAMES.BODY:
+    case ATTRIBUTE_NAMES.HTML:
+      return {
+        toComponent: function toComponent() {
+          return convertElementAttributestoReactProps(tags);
+        },
+        toString: function toString2() {
+          return generateElementAttributesAsString(tags);
+        }
+      };
+    default:
+      return {
+        toComponent: function toComponent() {
+          return generateTagsAsReactComponent(type, tags);
+        },
+        toString: function toString2() {
+          return generateTagsAsString(type, tags, encode);
+        }
+      };
+  }
+};
+var mapStateOnServer = function mapStateOnServer2(_ref3) {
+  var baseTag = _ref3.baseTag, bodyAttributes = _ref3.bodyAttributes, encode = _ref3.encode, htmlAttributes = _ref3.htmlAttributes, linkTags = _ref3.linkTags, metaTags = _ref3.metaTags, noscriptTags = _ref3.noscriptTags, scriptTags = _ref3.scriptTags, styleTags = _ref3.styleTags, _ref$title = _ref3.title, title = _ref$title === void 0 ? "" : _ref$title, titleAttributes = _ref3.titleAttributes;
+  return {
+    base: getMethodsForTag(TAG_NAMES.BASE, baseTag, encode),
+    bodyAttributes: getMethodsForTag(ATTRIBUTE_NAMES.BODY, bodyAttributes, encode),
+    htmlAttributes: getMethodsForTag(ATTRIBUTE_NAMES.HTML, htmlAttributes, encode),
+    link: getMethodsForTag(TAG_NAMES.LINK, linkTags, encode),
+    meta: getMethodsForTag(TAG_NAMES.META, metaTags, encode),
+    noscript: getMethodsForTag(TAG_NAMES.NOSCRIPT, noscriptTags, encode),
+    script: getMethodsForTag(TAG_NAMES.SCRIPT, scriptTags, encode),
+    style: getMethodsForTag(TAG_NAMES.STYLE, styleTags, encode),
+    title: getMethodsForTag(TAG_NAMES.TITLE, { title, titleAttributes }, encode)
+  };
+};
+var Helmet = function Helmet2(Component) {
+  var _class, _temp;
+  return _temp = _class = function(_React$Component) {
+    inherits(HelmetWrapper, _React$Component);
+    function HelmetWrapper() {
+      classCallCheck(this, HelmetWrapper);
+      return possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+    }
+    HelmetWrapper.prototype.shouldComponentUpdate = function shouldComponentUpdate(nextProps) {
+      return !isEqual$2(this.props, nextProps);
+    };
+    HelmetWrapper.prototype.mapNestedChildrenToProps = function mapNestedChildrenToProps(child, nestedChildren) {
+      if (!nestedChildren) {
+        return null;
+      }
+      switch (child.type) {
+        case TAG_NAMES.SCRIPT:
+        case TAG_NAMES.NOSCRIPT:
+          return {
+            innerHTML: nestedChildren
+          };
+        case TAG_NAMES.STYLE:
+          return {
+            cssText: nestedChildren
+          };
+      }
+      throw new Error("<" + child.type + " /> elements are self-closing and can not contain children. Refer to our API for more information.");
+    };
+    HelmetWrapper.prototype.flattenArrayTypeChildren = function flattenArrayTypeChildren(_ref3) {
+      var _babelHelpers$extends;
+      var child = _ref3.child, arrayTypeChildren = _ref3.arrayTypeChildren, newChildProps = _ref3.newChildProps, nestedChildren = _ref3.nestedChildren;
+      return _extends$5({}, arrayTypeChildren, (_babelHelpers$extends = {}, _babelHelpers$extends[child.type] = [].concat(arrayTypeChildren[child.type] || [], [_extends$5({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren))]), _babelHelpers$extends));
+    };
+    HelmetWrapper.prototype.mapObjectTypeChildren = function mapObjectTypeChildren(_ref22) {
+      var _babelHelpers$extends2, _babelHelpers$extends3;
+      var child = _ref22.child, newProps = _ref22.newProps, newChildProps = _ref22.newChildProps, nestedChildren = _ref22.nestedChildren;
+      switch (child.type) {
+        case TAG_NAMES.TITLE:
+          return _extends$5({}, newProps, (_babelHelpers$extends2 = {}, _babelHelpers$extends2[child.type] = nestedChildren, _babelHelpers$extends2.titleAttributes = _extends$5({}, newChildProps), _babelHelpers$extends2));
+        case TAG_NAMES.BODY:
+          return _extends$5({}, newProps, {
+            bodyAttributes: _extends$5({}, newChildProps)
+          });
+        case TAG_NAMES.HTML:
+          return _extends$5({}, newProps, {
+            htmlAttributes: _extends$5({}, newChildProps)
+          });
+      }
+      return _extends$5({}, newProps, (_babelHelpers$extends3 = {}, _babelHelpers$extends3[child.type] = _extends$5({}, newChildProps), _babelHelpers$extends3));
+    };
+    HelmetWrapper.prototype.mapArrayTypeChildrenToProps = function mapArrayTypeChildrenToProps(arrayTypeChildren, newProps) {
+      var newFlattenedProps = _extends$5({}, newProps);
+      Object.keys(arrayTypeChildren).forEach(function(arrayChildName) {
+        var _babelHelpers$extends4;
+        newFlattenedProps = _extends$5({}, newFlattenedProps, (_babelHelpers$extends4 = {}, _babelHelpers$extends4[arrayChildName] = arrayTypeChildren[arrayChildName], _babelHelpers$extends4));
+      });
+      return newFlattenedProps;
+    };
+    HelmetWrapper.prototype.warnOnInvalidChildren = function warnOnInvalidChildren(child, nestedChildren) {
+      return true;
+    };
+    HelmetWrapper.prototype.mapChildrenToProps = function mapChildrenToProps(children2, newProps) {
+      var _this2 = this;
+      var arrayTypeChildren = {};
+      React.Children.forEach(children2, function(child) {
+        if (!child || !child.props) {
+          return;
+        }
+        var _child$props = child.props, nestedChildren = _child$props.children, childProps = objectWithoutProperties(_child$props, ["children"]);
+        var newChildProps = convertReactPropstoHtmlAttributes(childProps);
+        _this2.warnOnInvalidChildren(child, nestedChildren);
+        switch (child.type) {
+          case TAG_NAMES.LINK:
+          case TAG_NAMES.META:
+          case TAG_NAMES.NOSCRIPT:
+          case TAG_NAMES.SCRIPT:
+          case TAG_NAMES.STYLE:
+            arrayTypeChildren = _this2.flattenArrayTypeChildren({
+              child,
+              arrayTypeChildren,
+              newChildProps,
+              nestedChildren
+            });
+            break;
+          default:
+            newProps = _this2.mapObjectTypeChildren({
+              child,
+              newProps,
+              newChildProps,
+              nestedChildren
+            });
+            break;
+        }
+      });
+      newProps = this.mapArrayTypeChildrenToProps(arrayTypeChildren, newProps);
+      return newProps;
+    };
+    HelmetWrapper.prototype.render = function render2() {
+      var _props = this.props, children2 = _props.children, props = objectWithoutProperties(_props, ["children"]);
+      var newProps = _extends$5({}, props);
+      if (children2) {
+        newProps = this.mapChildrenToProps(children2, newProps);
+      }
+      return React.createElement(Component, newProps);
+    };
+    createClass(HelmetWrapper, null, [{
+      key: "canUseDOM",
+      // Component.peek comes from react-side-effect:
+      // For testing, you may use a static peek() method available on the returned component.
+      // It lets you get the current state without resetting the mounted instance stack.
+      // Don’t use it for anything other than testing.
+      /**
+       * @param {Object} base: {"target": "_blank", "href": "http://mysite.com/"}
+       * @param {Object} bodyAttributes: {"className": "root"}
+       * @param {String} defaultTitle: "Default Title"
+       * @param {Boolean} defer: true
+       * @param {Boolean} encodeSpecialCharacters: true
+       * @param {Object} htmlAttributes: {"lang": "en", "amp": undefined}
+       * @param {Array} link: [{"rel": "canonical", "href": "http://mysite.com/example"}]
+       * @param {Array} meta: [{"name": "description", "content": "Test description"}]
+       * @param {Array} noscript: [{"innerHTML": "<img src='http://mysite.com/js/test.js'"}]
+       * @param {Function} onChangeClientState: "(newState) => console.log(newState)"
+       * @param {Array} script: [{"type": "text/javascript", "src": "http://mysite.com/js/test.js"}]
+       * @param {Array} style: [{"type": "text/css", "cssText": "div { display: block; color: blue; }"}]
+       * @param {String} title: "Title"
+       * @param {Object} titleAttributes: {"itemprop": "name"}
+       * @param {String} titleTemplate: "MySite.com - %s"
+       */
+      set: function set$$1(canUseDOM2) {
+        Component.canUseDOM = canUseDOM2;
+      }
+    }]);
+    return HelmetWrapper;
+  }(React.Component), _class.propTypes = {
+    base: PropTypes.object,
+    bodyAttributes: PropTypes.object,
+    children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
+    defaultTitle: PropTypes.string,
+    defer: PropTypes.bool,
+    encodeSpecialCharacters: PropTypes.bool,
+    htmlAttributes: PropTypes.object,
+    link: PropTypes.arrayOf(PropTypes.object),
+    meta: PropTypes.arrayOf(PropTypes.object),
+    noscript: PropTypes.arrayOf(PropTypes.object),
+    onChangeClientState: PropTypes.func,
+    script: PropTypes.arrayOf(PropTypes.object),
+    style: PropTypes.arrayOf(PropTypes.object),
+    title: PropTypes.string,
+    titleAttributes: PropTypes.object,
+    titleTemplate: PropTypes.string
+  }, _class.defaultProps = {
+    defer: true,
+    encodeSpecialCharacters: true
+  }, _class.peek = Component.peek, _class.rewind = function() {
+    var mappedState = Component.rewind();
+    if (!mappedState) {
+      mappedState = mapStateOnServer({
+        baseTag: [],
+        bodyAttributes: {},
+        htmlAttributes: {},
+        linkTags: [],
+        metaTags: [],
+        noscriptTags: [],
+        scriptTags: [],
+        styleTags: [],
+        title: "",
+        titleAttributes: {}
+      });
+    }
+    return mappedState;
+  }, _temp;
+};
+var NullComponent = function NullComponent2() {
+  return null;
+};
+var HelmetSideEffects = withSideEffect(reducePropsToState, handleClientStateChange, mapStateOnServer)(NullComponent);
+var HelmetExport = Helmet(HelmetSideEffects);
+HelmetExport.renderStatic = HelmetExport.rewind;
 const FeatureCard$8 = ({
   img,
   alt
@@ -65190,7 +65190,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DIfbNrtF.js");
+        } = await import("./OrbitControls-s0x68D5e.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -65214,7 +65214,7 @@ const Viewer = ({
           createScene: createScene2,
           onWindowResize: onWindowResize2,
           animate: animate3
-        } = await import("./methods-BFnWlPwt.js");
+        } = await import("./methods-BtP789T5.js");
         return {
           createCamera: createCamera2,
           createFloor: createFloor2,
@@ -65231,7 +65231,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           default: ColorPallete3
-        } = await import("./index-DWdieH9J.js");
+        } = await import("./index-CFGHEZu_.js");
         return {
           default: ColorPallete3
         };
@@ -81202,7 +81202,8 @@ const LandingSection$i = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 744,
+          height: 625,
           className: "w-full md:w-4/5 lg:w-full",
           alt: "Angular-logo",
           src: "/Images/technologies/Angular-logo-webp.webp"
@@ -81238,7 +81239,8 @@ const ModernDevelopment$6 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           alt: "modern-js-development",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -81253,7 +81255,8 @@ const FeatureCard$6 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -81278,11 +81281,15 @@ const AngularFeatures = () => {
       children: [/* @__PURE__ */ jsx$1(FeatureCard$6, {
         alt: "fast-development",
         img: "/Images/technologies/fast-development-webp.webp",
+        width: 79,
+        height: 72,
         title: "Fast development",
         desc: "Angular provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx$1(FeatureCard$6, {
         alt: "Awesome-user-experience",
         img: "/Images/technologies/Awesome-user-experience-webp.webp",
+        width: 74,
+        height: 60,
         title: "Awesome user experience",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -81290,18 +81297,24 @@ const AngularFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard$6, {
         alt: "all-in-one-approach",
         img: "/Images/technologies/all-in-one-approach-webp.webp",
+        width: 86,
+        height: 52,
         title: "All-in-one approach ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
       }), /* @__PURE__ */ jsx$1(FeatureCard$6, {
         alt: "versatile-use",
         img: "/Images/technologies/versatile-use-webp.webp",
+        width: 72,
+        height: 42,
         title: "Verstaile use",
         desc: `You can build web apps, mobile web apps, native mobile 
             apps and even desktop software`
       }), /* @__PURE__ */ jsx$1(FeatureCard$6, {
         alt: "best-practices",
         img: "/Images/technologies/Bestpractices-webp.webp",
+        width: 69,
+        height: 63,
         title: "Best practice",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to 
@@ -81309,6 +81322,8 @@ const AngularFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard$6, {
         alt: "focus-on-busines",
         img: "/Images/technologies/Focus-on-busines-webp.webp",
+        width: 69,
+        height: 67,
         title: "Focus on business",
         desc: `It's used, developed and trusted by the biggest and most innovative 
             companies in the business`
@@ -81696,7 +81711,8 @@ const GreenCard$6 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.width,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -81747,29 +81763,41 @@ const WhyAngular = () => {
         },
         children: [/* @__PURE__ */ jsx$1(GreenCard$6, {
           img: "/Images/technologies/High-seniority-level-and-technical-skills-webp.webp",
+          width: 65,
+          height: 72,
           title: "High seniority level and technical skils development",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$6, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "Ability to scale a team in days",
           desc: `At times, great efort ends in failure, or conversely, ordinary 
                 efort leads to succes. We recognize and reward efort and resist 
                 the temptation to judge you based on outcomes.`
         }), /* @__PURE__ */ jsx$1(GreenCard$6, {
           img: "/Images/technologies/API-first-approach-webp.webp",
+          width: 75,
+          height: 56,
           title: "API-first approach",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$6, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "SEO-friendly code",
           desc: `Search engines will love your app. We'll make your Javascript 
                 indexable and visible for Google`
         }), /* @__PURE__ */ jsx$1(GreenCard$6, {
           img: "/Images/technologies/Newest-trends-in-practice-webp.webp",
+          width: 58,
+          height: 54,
           title: "Newest trends in practice",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$6, {
           img: "/Images/technologies/Battle-tested-process-webp.webp",
+          width: 55,
+          height: 64,
           title: "Batle-tested proces",
           desc: `BSo you can easily adapt to change and stay on the track at the 
                 same time`
@@ -81779,54 +81807,12 @@ const WhyAngular = () => {
   });
 };
 const Angular = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "angular.development",
-          defaultMessage: "Angular Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.softwares.offers.angular",
-          defaultMessage: "Astute Softwares offers expert Angular development services for creating immersive and interactive UIs that deliver great UX to consumers."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Angular development services, Angular web development, Certified Angular developers, Enterprise Angular solutions, Angular application development"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/angular"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "angular.development",
-          defaultMessage: "Angular Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.softwares.offers.angular",
-          defaultMessage: "Astute Softwares offers expert Angular development services for creating immersive and interactive UIs that deliver great UX to consumers."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/angular"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$i, {}), /* @__PURE__ */ jsx$1(ModernDevelopment$6, {}), /* @__PURE__ */ jsx$1(AngularFeatures, {}), /* @__PURE__ */ jsx$1(Advantages$6, {}), /* @__PURE__ */ jsx$1(WhyAngular, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$h = () => {
@@ -81852,7 +81838,8 @@ const LandingSection$h = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 2600,
+          height: 1750,
           className: "w-full md:w-4/5 lg:w-full",
           alt: "laravel-logo",
           src: "/Images/technologies/Laravel-logo-webp.webp"
@@ -81888,7 +81875,8 @@ const ModernDevelopment$5 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           alt: "modern-js-development",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -81903,7 +81891,8 @@ const FeatureCard$5 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -81928,11 +81917,15 @@ const LaravelFeatures = () => {
       children: [/* @__PURE__ */ jsx$1(FeatureCard$5, {
         alt: "benefits from Laravel",
         img: "/Images/technologies/Benefits from Laravel's powerfu-webp.webp",
+        width: 250,
+        height: 250,
         title: "Rapid development",
         desc: "Laravel provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx$1(FeatureCard$5, {
         alt: "best application",
         img: "/Images/technologies/Follows best application-webp.webp",
+        width: 250,
+        height: 250,
         title: "Awesome user experience",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -81940,18 +81933,24 @@ const LaravelFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard$5, {
         alt: "Laravel",
         img: "/Images/technologies/Laravel documentation-webp.webp",
+        width: 250,
+        height: 250,
         title: "All-in-one approach ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
       }), /* @__PURE__ */ jsx$1(FeatureCard$5, {
         alt: "SEO-friendly-code",
         img: "/Images/technologies/SEO-friendly-code-webp.webp",
+        width: 73,
+        height: 49,
         title: "Verstaile use",
         desc: `You can build web apps, mobile web apps, native mobile 
             apps and even desktop software`
       }), /* @__PURE__ */ jsx$1(FeatureCard$5, {
         alt: "PHP Developers’ choice",
         img: "/Images/technologies/PHP Developers’ choice-webp.webp",
+        width: 250,
+        height: 250,
         title: "Best practice",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to 
@@ -81959,6 +81958,8 @@ const LaravelFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard$5, {
         alt: "Focus-on-business",
         img: "/Images/technologies/Focus-on-busines-webp.webp",
+        width: 69,
+        height: 67,
         title: "Focus on business",
         desc: `It's used, developed and trusted by the biggest and most innovative 
             companies in the business`
@@ -82352,7 +82353,8 @@ const GreenCard$5 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -82404,29 +82406,41 @@ const WhyLaravel = () => {
         },
         children: [/* @__PURE__ */ jsx$1(GreenCard$5, {
           img: "/Images/technologies/High-seniority-level-and-technical-skills-webp.webp",
+          width: 65,
+          height: 72,
           title: "High seniority level and technical skils development",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$5, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "Ability to scale a team in days",
           desc: `At times, great efort ends in failure, or conversely, ordinary 
                 efort leads to succes. We recognize and reward efort and resist 
                 the temptation to judge you based on outcomes.`
         }), /* @__PURE__ */ jsx$1(GreenCard$5, {
           img: "/Images/technologies/API-first-approach-webp.webp",
+          width: 75,
+          height: 56,
           title: "API-first approach",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$5, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "SEO-friendly code",
           desc: `Search engines will love your app. We'll make your Javascript 
                 indexable and visible for Google`
         }), /* @__PURE__ */ jsx$1(GreenCard$5, {
           img: "/Images/technologies/Newest-trends-in-practice-webp.webp",
+          width: 58,
+          height: 54,
           title: "Newest trends in practice",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$5, {
           img: "/Images/technologies/Battle-tested-process-webp.webp",
+          width: 55,
+          height: 64,
           title: "Battle-tested process",
           desc: `BSo you can easily adapt to change and stay on the track at the 
                 same time`
@@ -82436,54 +82450,12 @@ const WhyLaravel = () => {
   });
 };
 const Laravel = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "laravel.development",
-          defaultMessage: "Laravel Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.softwares.offers",
-          defaultMessage: "Astute Softwares offers expert Laravel development services solutions for web application development, e-commerce solutions, and more."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Laravel development services, Custom Laravel solutions, PHP Laravel developer, Laravel web application, Laravel enterprise solutions"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/laravel"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "laravel.development",
-          defaultMessage: "Laravel Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.softwares.offers",
-          defaultMessage: "Astute Softwares offers expert Laravel development services solutions for web application development, e-commerce solutions, and more."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/laravel"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$h, {}), /* @__PURE__ */ jsx$1(ModernDevelopment$5, {}), /* @__PURE__ */ jsx$1(LaravelFeatures, {}), /* @__PURE__ */ jsx$1(Advantages$5, {}), /* @__PURE__ */ jsx$1(WhyLaravel, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$g = () => {
@@ -82509,7 +82481,8 @@ const LandingSection$g = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 1797,
+          height: 1209,
           className: "w-full md:w-4/5 lg:w-full",
           alt: "react-logo",
           src: "/Images/technologies/React-logo-webp.webp"
@@ -82545,7 +82518,8 @@ const ModernDevelopment$4 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           alt: "modern-js-development",
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -82560,7 +82534,8 @@ const FeatureCard$4 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -82586,11 +82561,15 @@ const ReactFeatures = () => {
       children: [/* @__PURE__ */ jsx$1(FeatureCard$4, {
         alt: "supportive",
         img: "/Images/technologies/A supportive -webp.webp",
+        width: 250,
+        height: 250,
         title: "Supportive",
         desc: "React provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx$1(FeatureCard$4, {
         alt: "Higher quality, cheaper",
         img: "/Images/technologies/Higher quality, cheapeR-webp.webp",
+        width: 250,
+        height: 250,
         title: "Higher quality",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -82598,18 +82577,24 @@ const ReactFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard$4, {
         alt: "Micro frontends",
         img: "/Images/technologies/Micro frontends-webp.webp",
+        width: 250,
+        height: 250,
         title: "Micro front-ends ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
       }), /* @__PURE__ */ jsx$1(FeatureCard$4, {
         alt: "Performance",
         img: "/Images/technologies/Performance-webp.webp",
+        width: 250,
+        height: 250,
         title: "Higher performance",
         desc: `You can build web apps, mobile web apps, native mobile 
             apps and even desktop software`
       }), /* @__PURE__ */ jsx$1(FeatureCard$4, {
         alt: "Reusable components",
         img: "/Images/technologies/Reusable components-webp.webp",
+        width: 250,
+        height: 250,
         title: "Reusable components",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to 
@@ -82617,6 +82602,8 @@ const ReactFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard$4, {
         alt: "SEO-optimized",
         img: "/Images/technologies/SEO-optimized-webp.webp",
+        width: 250,
+        height: 250,
         title: "SEO optimized",
         desc: `It's used, developed and trusted by the biggest and most innovative 
             companies in the business`
@@ -83010,7 +82997,8 @@ const GreenCard$4 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         alt: "card-img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -83061,29 +83049,41 @@ const WhyReact = () => {
         },
         children: [/* @__PURE__ */ jsx$1(GreenCard$4, {
           img: "/Images/technologies/High-seniority-level-and-technical-skills-webp.webp",
+          width: 65,
+          height: 72,
           title: "High seniority level and technical skils development",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$4, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "Ability to scale a team in days",
           desc: `At times, great efort ends in failure, or conversely, ordinary 
                 efort leads to succes. We recognize and reward efort and resist 
                 the temptation to judge you based on outcomes.`
         }), /* @__PURE__ */ jsx$1(GreenCard$4, {
           img: "/Images/technologies/API-first-approach-webp.webp",
+          width: 75,
+          height: 56,
           title: "API-first approach",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$4, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "SEO-friendly code",
           desc: `Search engines will love your app. We'll make your Javascript 
                 indexable and visible for Google`
         }), /* @__PURE__ */ jsx$1(GreenCard$4, {
           img: "/Images/technologies/Newest-trends-in-practice-webp.webp",
+          width: 58,
+          height: 54,
           title: "Newest trends in practice",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$4, {
           img: "/Images/technologies/Battle-tested-process-webp.webp",
+          width: 55,
+          height: 64,
           title: "Batle-tested proces",
           desc: `BSo you can easily adapt to change and stay on the track at the 
                 same time`
@@ -83093,54 +83093,12 @@ const WhyReact = () => {
   });
 };
 const ReactTechnology = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "react.development.services",
-          defaultMessage: "React Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.softwares.offers.react",
-          defaultMessage: "Astute Softwares offers expert React development services for creating immersive and interactive UIs that deliver great UX to consumers."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "React development services, React JS development, Hire React developers, React web application, React native for mobile"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/react"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "react.development.services",
-          defaultMessage: "React Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.softwares.offers.react",
-          defaultMessage: "Astute Softwares offers expert React development services for creating immersive and interactive UIs that deliver great UX to consumers."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/react"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$g, {}), /* @__PURE__ */ jsx$1(ModernDevelopment$4, {}), /* @__PURE__ */ jsx$1(ReactFeatures, {}), /* @__PURE__ */ jsx$1(Advantages$4, {}), /* @__PURE__ */ jsx$1(WhyReact, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$f = () => {
@@ -83166,7 +83124,8 @@ const LandingSection$f = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 1797,
+          height: 1209,
           className: "w-full md:w-4/5 lg:w-full",
           alt: "Node-logo",
           src: "/Images/technologies/Node-logo-webp.webp"
@@ -83202,7 +83161,8 @@ const ModernDevelopment$3 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           alt: "modern-js-development",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -83217,7 +83177,8 @@ const FeatureCard$3 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -83243,11 +83204,15 @@ const NodeFeatures = () => {
       children: [/* @__PURE__ */ jsx$1(FeatureCard$3, {
         alt: "1st choice for scalable apps",
         img: "/Images/technologies/1st choice for scalable apps-webp.webp",
+        width: 250,
+        height: 250,
         title: "Supportive",
         desc: "Node provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx$1(FeatureCard$3, {
         alt: "Community-made",
         img: "/Images/technologies/Community-made -webp.webp",
+        width: 250,
+        height: 250,
         title: "Higher quality",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -83255,18 +83220,24 @@ const NodeFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard$3, {
         alt: "Designed to empower",
         img: "/Images/technologies/Designed to empower-webp.webp",
+        width: 250,
+        height: 250,
         title: "Micro front-ends ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
       }), /* @__PURE__ */ jsx$1(FeatureCard$3, {
         alt: "Microservice-ready",
         img: "/Images/technologies/Microservice-ready a-webp.webp",
+        width: 250,
+        height: 250,
         title: "Higher performance",
         desc: `You can build web apps, mobile web apps, native mobile 
             apps and even desktop software`
       }), /* @__PURE__ */ jsx$1(FeatureCard$3, {
         alt: "Ready for full-stack",
         img: "/Images/technologies/Ready for full-stack-webp.webp",
+        width: 250,
+        height: 250,
         title: "Reusable components",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to 
@@ -83274,6 +83245,8 @@ const NodeFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard$3, {
         alt: "Real-time data flow",
         img: "/Images/technologies/Real-time data flow-webp.webp",
+        width: 250,
+        height: 250,
         title: "SEO optimized",
         desc: `It's used, developed and trusted by the biggest and most innovative 
             companies in the business`
@@ -83667,7 +83640,8 @@ const GreenCard$3 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -83718,29 +83692,41 @@ const WhyNode = () => {
         },
         children: [/* @__PURE__ */ jsx$1(GreenCard$3, {
           img: "/Images/technologies/High-seniority-level-and-technical-skills-webp.webp",
+          width: 65,
+          height: 72,
           title: "High seniority level and technical skils development",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$3, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "Ability to scale a team in days",
           desc: `At times, great efort ends in failure, or conversely, ordinary 
                 efort leads to succes. We recognize and reward efort and resist 
                 the temptation to judge you based on outcomes.`
         }), /* @__PURE__ */ jsx$1(GreenCard$3, {
           img: "/Images/technologies/API-first-approach-webp.webp",
+          width: 75,
+          height: 56,
           title: "API-first approach",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$3, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "SEO-friendly code",
           desc: `Search engines will love your app. We'll make your Javascript 
                 indexable and visible for Google`
         }), /* @__PURE__ */ jsx$1(GreenCard$3, {
           img: "/Images/technologies/Newest-trends-in-practice-webp.webp",
+          width: 58,
+          height: 54,
           title: "Newest trends in practice",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard$3, {
           img: "/Images/technologies/Battle-tested-process-webp.webp",
+          width: 55,
+          height: 64,
           title: "Batle-tested proces",
           desc: `BSo you can easily adapt to change and stay on the track at the 
                 same time`
@@ -83750,54 +83736,12 @@ const WhyNode = () => {
   });
 };
 const Node$1 = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "node.js.development",
-          defaultMessage: "NodeJS Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "asute.softwares.node.js",
-          defaultMessage: "Astute Softwares offers expert NodeJS development services for building efficient web applications. Contact us today to learn how we can help bring your project to life."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Node.js development services, Node.js backend development, Hire Node.js developers, Scalable Node.js applications, Node.js API development"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/nodejs"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "node.js.development",
-          defaultMessage: "NodeJS Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "asute.softwares.node.js",
-          defaultMessage: "Astute Softwares offers expert NodeJS development services for building efficient web applications. Contact us today to learn how we can help bring your project to life."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/nodejs"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$f, {}), /* @__PURE__ */ jsx$1(ModernDevelopment$3, {}), /* @__PURE__ */ jsx$1(NodeFeatures, {}), /* @__PURE__ */ jsx$1(Advantages$3, {}), /* @__PURE__ */ jsx$1(WhyNode, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$e = () => {
@@ -83823,7 +83767,8 @@ const LandingSection$e = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 1797,
+          height: 1209,
           alt: "react-logo",
           className: "w-full md:w-4/5 lg:w-full",
           src: "/Images/technologies/React-logo-webp.webp"
@@ -83859,7 +83804,8 @@ const ModernDevelopment$2 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           alt: "modern-js-development",
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -83874,7 +83820,8 @@ const FeatureCard$2 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -83900,11 +83847,15 @@ const VueJsFeatures = () => {
       children: [/* @__PURE__ */ jsx$1(FeatureCard$2, {
         alt: "1st choice for scalable apps",
         img: "/Images/technologies/1st choice for scalable apps-webp.webp",
+        width: 250,
+        height: 250,
         title: "Supportive",
         desc: "VueJs provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx$1(FeatureCard$2, {
         alt: "Community-made",
         img: "/Images/technologies/Community-made -webp.webp",
+        width: 250,
+        height: 250,
         title: "Higher quality",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -83912,18 +83863,24 @@ const VueJsFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard$2, {
         alt: "Designed to empower",
         img: "/Images/technologies/Designed to empower-webp.webp",
+        width: 250,
+        height: 250,
         title: "Micro front-ends ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
       }), /* @__PURE__ */ jsx$1(FeatureCard$2, {
         alt: "Microservice-ready",
         img: "/Images/technologies/Microservice-ready a-webp.webp",
+        width: 250,
+        height: 250,
         title: "Higher performance",
         desc: `You can build web apps, mobile web apps, native mobile 
             apps and even desktop software`
       }), /* @__PURE__ */ jsx$1(FeatureCard$2, {
         alt: "Ready for full-stack",
         img: "/Images/technologies/Ready for full-stack-webp.webp",
+        width: 250,
+        height: 250,
         title: "Reusable components",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to 
@@ -83931,6 +83888,8 @@ const VueJsFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard$2, {
         alt: "Real-time data flow",
         img: "/Images/technologies/Real-time data flow-webp.webp",
+        width: 250,
+        height: 250,
         title: "SEO optimized",
         desc: `It's used, developed and trusted by the biggest and most innovative 
             companies in the business`
@@ -84407,54 +84366,12 @@ const WhyVueJs = () => {
   });
 };
 const VueJs = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "vue.js.development",
-          defaultMessage: "Kotlin Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "asute.softwares.vue.js",
-          defaultMessage: "Astute Softwares offers expert Kotlin developers that can build your next project with efficiency and reliability. Contact us today to get started."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Vue.js development services, Vue frontend development, Hire Vue.js developers, Vue SPA development, Vue application development"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/vue"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "vue.js.development",
-          defaultMessage: "Kotlin Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "asute.softwares.vue.js",
-          defaultMessage: "Astute Softwares offers expert Kotlin developers that can build your next project with efficiency and reliability. Contact us today to get started."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/vue"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$e, {}), /* @__PURE__ */ jsx$1(ModernDevelopment$2, {}), /* @__PURE__ */ jsx$1(VueJsFeatures, {}), /* @__PURE__ */ jsx$1(Advantages$2, {}), /* @__PURE__ */ jsx$1(WhyVueJs, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$d = () => {
@@ -84480,7 +84397,8 @@ const LandingSection$d = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 1797,
+          height: 1209,
           alt: "react-logo",
           className: "w-full md:w-4/5 lg:w-full",
           src: "/Images/technologies/react-logo-webp.webp"
@@ -84516,7 +84434,8 @@ const ModernDevelopment$1 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           alt: "modern-js-development",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -84531,7 +84450,8 @@ const FeatureCard$1 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -84561,6 +84481,8 @@ const KotlineFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard$1, {
         alt: "best-application",
         img: "/Images/technologies/Follows best application-webp.webp",
+        width: 250,
+        height: 250,
         title: "Awesome user experience",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -85063,54 +84985,12 @@ const WhyKotline = () => {
   });
 };
 const Kotline = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "kotlin.development",
-          defaultMessage: "Kotlin Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "asute.softwares.kotlin",
-          defaultMessage: "Astute Softwares offers expert Kotlin developers that can build your next project with efficiency and reliability. Contact us today to get started."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Kotlin development services, Kotlin app development, Hire Kotlin developers, Kotlin for Android, Kotlin mobile solutions"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/kotlin"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "kotlin.development",
-          defaultMessage: "Kotlin Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "asute.softwares.kotlin",
-          defaultMessage: "Astute Softwares offers expert Kotlin developers that can build your next project with efficiency and reliability. Contact us today to get started."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/kotlin"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$d, {}), /* @__PURE__ */ jsx$1(ModernDevelopment$1, {}), /* @__PURE__ */ jsx$1(KotlineFeatures, {}), /* @__PURE__ */ jsx$1(Advantages$1, {}), /* @__PURE__ */ jsx$1(WhyKotline, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$c = () => {
@@ -85136,7 +85016,8 @@ const LandingSection$c = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 1797,
+          height: 1209,
           alt: "react-logo",
           className: "w-full md:w-4/5 lg:w-full",
           src: "/Images/technologies/react-logo-webp.webp"
@@ -85172,7 +85053,8 @@ const ModernDevelopment = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           alt: "modern-js-development",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -85187,7 +85069,8 @@ const FeatureCard = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -85212,11 +85095,15 @@ const DjangoFeatures = () => {
       children: [/* @__PURE__ */ jsx$1(FeatureCard, {
         alt: "benefits-from-laravel",
         img: "/Images/technologies/Benefits from Laravel's powerfu-webp.webp",
+        width: 250,
+        height: 250,
         title: "Rapid development",
         desc: "Django provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx$1(FeatureCard, {
         alt: "follows-best-application",
         img: "/Images/technologies/Follows best application-webp.webp",
+        width: 250,
+        height: 250,
         title: "Awesome user experience",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -85224,18 +85111,24 @@ const DjangoFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard, {
         alt: "laravel-documentation",
         img: "/Images/technologies/Laravel documentation-webp.webp",
+        width: 250,
+        height: 250,
         title: "All-in-one approach ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
       }), /* @__PURE__ */ jsx$1(FeatureCard, {
         alt: "SEO-friendly-code",
         img: "/Images/technologies/SEO-friendly-code-webp.webp",
+        width: 73,
+        height: 49,
         title: "Verstaile use",
         desc: `You can build web apps, mobile web apps, native mobile 
             apps and even desktop software`
       }), /* @__PURE__ */ jsx$1(FeatureCard, {
         alt: "/PHP-developers-choice",
         img: "/Images/technologies/PHP Developers’ choice-webp.webp",
+        width: 250,
+        height: 250,
         title: "Best practice",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to 
@@ -85243,6 +85136,8 @@ const DjangoFeatures = () => {
       }), /* @__PURE__ */ jsx$1(FeatureCard, {
         alt: "focus-on-busines",
         img: "/Images/technologies/Focus-on-busines-webp.webp",
+        width: 69,
+        height: 67,
         title: "Focus on business",
         desc: `It's used, developed and trusted by the biggest and most innovative 
             companies in the business`
@@ -85634,7 +85529,8 @@ const GreenCard = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -85685,29 +85581,41 @@ const WhyDjango = () => {
         },
         children: [/* @__PURE__ */ jsx$1(GreenCard, {
           img: "/Images/technologies/High-seniority-level-and-technical-skills-webp.webp",
+          width: 65,
+          height: 72,
           title: "High seniority level and technical skils development",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "Ability to scale a team in days",
           desc: `At times, great efort ends in failure, or conversely, ordinary 
                 efort leads to succes. We recognize and reward efort and resist 
                 the temptation to judge you based on outcomes.`
         }), /* @__PURE__ */ jsx$1(GreenCard, {
           img: "/Images/technologies/API-first-approach-webp.webp",
+          width: 75,
+          height: 56,
           title: "API-first approach",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "SEO-friendly code",
           desc: `Search engines will love your app. We'll make your Javascript 
                 indexable and visible for Google`
         }), /* @__PURE__ */ jsx$1(GreenCard, {
           img: "/Images/technologies/Newest-trends-in-practice-webp.webp",
+          width: 58,
+          height: 54,
           title: "Newest trends in practice",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx$1(WhiteCard, {
           img: "/Images/technologies/Battle-tested-process-webp.webp",
+          width: 55,
+          height: 64,
           title: "Batle-tested proces",
           desc: `BSo you can easily adapt to change and stay on the track at the 
                 same time`
@@ -85717,54 +85625,12 @@ const WhyDjango = () => {
   });
 };
 const Django = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "django.development",
-          defaultMessage: "Django Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "django.development.services",
-          defaultMessage: "Astute Softwares offers expert Django development services that can build your next web application efficiently. Contact us today to get started."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Django development services, Python Django web development, Django application development, Hire Django developers, Custom Django solutions"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/django"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "django.development",
-          defaultMessage: "Django Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "django.development.services",
-          defaultMessage: "Astute Softwares offers expert Django development services that can build your next web application efficiently. Contact us today to get started."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/django"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$c, {}), /* @__PURE__ */ jsx$1(ModernDevelopment, {}), /* @__PURE__ */ jsx$1(DjangoFeatures, {}), /* @__PURE__ */ jsx$1(Advantages, {}), /* @__PURE__ */ jsx$1(WhyDjango, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$b = ({
@@ -85837,6 +85703,8 @@ const SecondSection$5 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx$1("img", {
+          width: 453,
+          height: 370,
           loading: "lazy",
           alt: "software development",
           className: "w-4/5",
@@ -85872,6 +85740,8 @@ const Services$d = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -85881,6 +85751,8 @@ const Services$d = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -85890,6 +85762,8 @@ const Services$d = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -85899,6 +85773,8 @@ const Services$d = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -85917,6 +85793,8 @@ const Services$d = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -85926,6 +85804,8 @@ const Services$d = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -85935,6 +85815,8 @@ const Services$d = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -85944,6 +85826,8 @@ const Services$d = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -85972,7 +85856,6 @@ const EngagementModelCard$1 = ({
         children: /* @__PURE__ */ jsxs("div", {
           className: "container text-center items-center ",
           children: [/* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
             className: "inline-block my-3 ",
             src: img,
             alt: getImageALt(img),
@@ -86058,7 +85941,8 @@ const SecretSauceCard$1 = (props) => {
           return /* @__PURE__ */ jsxs("li", {
             className: "contentListItem",
             children: [/* @__PURE__ */ jsx$1("img", {
-              loading: "lazy",
+              height: props.height,
+              width: props.width,
               alt: "bullet-point",
               src: "/Images/serviceDetails/bullet-point-webp.webp"
             }), /* @__PURE__ */ jsx$1("p", {
@@ -86090,6 +85974,8 @@ const SecretSauce$1 = () => {
       children: [/* @__PURE__ */ jsx$1(SecretSauceCard$1, {
         title: "Skill",
         image: "/Images/serviceDetails/skill-webp.webp",
+        width: 250,
+        height: 250,
         list: [`We recruit and retain exceptional engineering talent and 
                     keep training them. 80% of our developers and over 
                     50% or QA staff hold MS degree in Computer Science or 
@@ -86106,6 +85992,8 @@ const SecretSauce$1 = () => {
       }), /* @__PURE__ */ jsx$1(SecretSauceCard$1, {
         title: "Speed",
         image: "/Images/serviceDetails/speed-webp.webp",
+        width: 250,
+        height: 250,
         list: [`We assemble a dedicated team ready to engage faster than 
                     hiring locally. We are able to quickly scale up or downsize 
                     according to client’s needs`, `Ingrained Agile Development Methodology.`, `Astute Softwares has been actively using Agile Methodology since 2007. 
@@ -86115,6 +86003,8 @@ const SecretSauce$1 = () => {
       }), /* @__PURE__ */ jsx$1(SecretSauceCard$1, {
         title: "Security",
         image: "/Images/serviceDetails/security-webp.webp",
+        width: 250,
+        height: 250,
         list: [`Thorough protection of client’s IP`, `Astute Softwares has worked on various enterprise-class applications that 
                     require strict security protocols. Security is assured at 
                     several levels, including authentication and authorization 
@@ -86641,54 +86531,12 @@ const FifthSection$1 = () => {
 const WebDevService = () => {
   const [refOffset, setRefOffset] = reactExports.useState();
   const ref = reactExports.useRef(null);
-  const intl = useIntl();
+  useIntl();
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "ideal.company.for",
-          defaultMessage: "The ideal company for top-notch websites and web application development."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "we.offer.web.design",
-          defaultMessage: "We offer web design, framework coding, and backend development for reliable, scalable and maintainable software. Start-ups, established businesses and marketers all need web development services. We specialize in building custom websites and mobile apps."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Custom web development, Professional website creation, E-commerce development services, Responsive web design, Full-stack web developers"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/custom-software-development"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "ideal.company.for",
-          defaultMessage: "The ideal company for top-notch websites and web application development."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "we.offer.web.design",
-          defaultMessage: "We offer web design, framework coding, and backend development for reliable, scalable and maintainable software. Start-ups, established businesses and marketers all need web development services. We specialize in building custom websites and mobile apps."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/custom-software-development"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow ",
@@ -86699,7 +86547,7 @@ const WebDevService = () => {
           children: /* @__PURE__ */ jsx$1(SecondSection$5, {})
         }), /* @__PURE__ */ jsx$1(Services$d, {}), /* @__PURE__ */ jsx$1(EngagementModels, {}), /* @__PURE__ */ jsx$1(SecretSauce$1, {}), /* @__PURE__ */ jsx$1(FourthSection$3, {}), /* @__PURE__ */ jsx$1(FifthSection$1, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$a = ({
@@ -86766,6 +86614,8 @@ const SecondSection$4 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx$1("img", {
+          width: 453,
+          height: 370,
           loading: "lazy",
           className: "w-4/5",
           alt: "qa_second",
@@ -86980,54 +86830,12 @@ const Services$c = () => {
 const QAService = () => {
   const [refOffset, setRefOffset] = reactExports.useState();
   const ref = reactExports.useRef(null);
-  const intl = useIntl();
+  useIntl();
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "astute.software.quality",
-          defaultMessage: "Astute Softwares, Software Quality Assurance"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.offer.has.perfected",
-          defaultMessage: "Astute Softwares has perfected QA and Testing strategy and methodology that blend seamlessly into the development lifecycle without crossing the important boundaries,"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Quality assurance services, Software testing experts, Application testing services, Automated testing solutions, QA and testing consultancy"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/software-quality-assurance"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "astute.software.quality",
-          defaultMessage: "Astute Softwares, Software Quality Assurance"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.offer.has.perfected",
-          defaultMessage: "Astute Softwares has perfected QA and Testing strategy and methodology that blend seamlessly into the development lifecycle without crossing the important boundaries,"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/software-quality-assurance"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -87038,7 +86846,7 @@ const QAService = () => {
           children: /* @__PURE__ */ jsx$1(SecondSection$4, {})
         }), /* @__PURE__ */ jsx$1(MutualSuccess, {}), /* @__PURE__ */ jsx$1(Services$c, {}), /* @__PURE__ */ jsx$1(QATypes$3, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$9 = ({
@@ -87108,7 +86916,8 @@ const SecondSection$3 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 567,
+          height: 463,
           alt: "Digital Transformation",
           className: "w-4/5",
           src: "/Images/serviceDetails/Digital Transformation-webp.webp"
@@ -87126,7 +86935,8 @@ const SecretSauceCard = (props) => {
         className: "text-blue-primary text-center text-xl md:text-2xl lg:text-xl font-bold mb-5",
         children: props.title
       }), /* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         alt: getImageALt(props.image),
         className: "w-3/5",
         src: props.image
@@ -87165,21 +86975,29 @@ const SecretSauce = () => {
       children: [/* @__PURE__ */ jsx$1(SecretSauceCard, {
         title: "Improve Business\r Agility",
         image: "/Images/serviceDetails/Improve_Business-webp.webp",
+        width: 250,
+        height: 250,
         blueText: "Optimize business performance, reap the benefits of digital economy and speed up\r innovation by moving to the Cloud and implementing DevOps. Unlock better\r business and consumer insights with Advanced Analytics and Reporting.",
         grayText: "We work with you to make your technology backbone and business more agile, scalable, and\r efficient in addressing fast-changing business demands."
       }), /* @__PURE__ */ jsx$1(SecretSauceCard, {
         title: "Transform Digital\r Experiences",
         image: "/Images/serviceDetails/Transform_Digital-webp.webp",
+        width: 250,
+        height: 250,
         blueText: "Delight your customers with hyper-personalized experiences and run successful\r customized omni-channel campaigns by utilizing latest technology advances like\r Machine Learning and AI, 360-degree consumer journey analytics, VR, and IoT.",
         grayText: "We help clients build and launch real-time consumer insights platforms to capture critical\r information, develop and deploy AI-driven recommendation and customization engines, predict\r consumer behavior, identify high-value customer segments, and drive product and services\r strategy that is highly relevant to company’s clients."
       }), /* @__PURE__ */ jsx$1(SecretSauceCard, {
         title: "Increase Operational\r Efficiency",
         image: "/Images/serviceDetails/Increase_Operational-webp.webp",
+        width: 250,
+        height: 250,
         blueText: "Streamline business processes and workflows to improve business operations and\r profitability without compromising on product quality, security and customer\r experiences.",
         grayText: "We help clients to reduce total cost of ownership by moving to the cloud, translate internal data\r into meaningful business insights, implement process automation, and increase the speed and\r quality of the releases by implementing DevOps."
       }), /* @__PURE__ */ jsx$1(SecretSauceCard, {
         title: "Monetize Your Data",
         image: "/Images/serviceDetails/Monetize_Your_Data-webp.webp",
+        width: 250,
+        height: 250,
         blueText: "Leverage your data to transform operations and business planning, develop new\r markets, increase revenue and create enhanced consumer experiences.",
         grayText: "From ETL and Data Integration to Cloud Data Warehousing and Business Intelligence platforms\r we have the skills and expertise in helping clients monetize their data to deliver value to clients,\r customize offerings, optimize internal operations, and unlock new revenue streams."
       })]
@@ -87223,7 +87041,8 @@ const Services$b = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -87232,7 +87051,8 @@ const Services$b = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -87241,7 +87061,8 @@ const Services$b = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -87250,7 +87071,8 @@ const Services$b = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -87268,7 +87090,8 @@ const Services$b = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -87277,7 +87100,8 @@ const Services$b = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -87286,7 +87110,8 @@ const Services$b = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -87375,7 +87200,8 @@ const ModernCoreApplication = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 2002,
+          height: 2002,
           alt: "Core-Application",
           className: "Core_Application",
           src: "/Images/serviceDetails/Core_Application-webp.webp"
@@ -87387,14 +87213,17 @@ const ModernCoreApplication = () => {
 const MonetizeDataCard = ({
   title,
   img,
-  desc
+  desc,
+  height,
+  width
 }) => {
   return /* @__PURE__ */ jsxs("div", {
     className: "flex py-5 ",
     children: [/* @__PURE__ */ jsx$1("div", {
       className: "w-1/4 mx-3",
       children: /* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        height,
+        width,
         alt: getImageALt(img),
         className: "bg-gray-light rounded-full",
         src: img
@@ -87446,15 +87275,21 @@ const MonetizeData = () => {
         children: [/* @__PURE__ */ jsx$1(MonetizeDataCard, {
           title: "ENABLE DATA COLLECTION",
           desc: "Big Data Warehousing. Data Extraction, Conversion and Normalization.\r Make your data feeds clean, clear and actionable",
-          img: "/Images/serviceDetails/DATA_COLLECTION-webp.webp"
+          img: "/Images/serviceDetails/DATA_COLLECTION-webp.webp",
+          width: 250,
+          height: 250
         }), /* @__PURE__ */ jsx$1(MonetizeDataCard, {
           title: "VISUALIZE DATA TO UNLOCK INSIGHTS",
           desc: "Convert Disorganized consumer, business and operations data \r into Actionable Insights and Comprehensive reports",
-          img: "/Images/serviceDetails/VISUALIZE-DATA-webp.webp"
+          img: "/Images/serviceDetails/VISUALIZE-DATA-webp.webp",
+          width: 250,
+          height: 250
         }), /* @__PURE__ */ jsx$1(MonetizeDataCard, {
           title: "DATA-DRIVEN BEHAVIOR & ANALYTICS",
           desc: "Forecasting, Predictive Analytics, Real-time Personalization",
-          img: "/Images/serviceDetails/DATA-DRIVEN-BEHAVIOR-webp.webp"
+          img: "/Images/serviceDetails/DATA-DRIVEN-BEHAVIOR-webp.webp",
+          width: 250,
+          height: 250
         })]
       })]
     })]
@@ -87925,54 +87760,12 @@ const FifthSection = () => {
 const DTService = () => {
   const [refOffset, setRefOffset] = reactExports.useState();
   const ref = reactExports.useRef(null);
-  const intl = useIntl();
+  useIntl();
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "astute.software.digital.transformation",
-          defaultMessage: "Astute Softwares, Digital Transformation Services"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.offer.the.most",
-          defaultMessage: "Astute Softwares offers the most advanced digital transformation services. We provide an integrated and astute way of digitising internal processes and corporate tasks. We are also committed to making sure that you have all transparency about what is going on."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Digital transformation services, Business digitalization consulting, Digital strategy development, Tech innovation solutions, Digital enterprise transformation"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/digital-transformation-services"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "astute.software.digital.transformation",
-          defaultMessage: "Astute Softwares, Digital Transformation Services"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.offer.the.most",
-          defaultMessage: "Astute Softwares offers the most advanced digital transformation services. We provide an integrated and astute way of digitising internal processes and corporate tasks. We are also committed to making sure that you have all transparency about what is going on."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/digital-transformation-services"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -87983,7 +87776,7 @@ const DTService = () => {
           children: /* @__PURE__ */ jsx$1(SecondSection$3, {})
         }), /* @__PURE__ */ jsx$1(SecretSauce, {}), /* @__PURE__ */ jsx$1(DigitalTransformationDesc, {}), /* @__PURE__ */ jsx$1(ModernCoreApplication, {}), /* @__PURE__ */ jsx$1(Services$b, {}), /* @__PURE__ */ jsx$1(FourthSection$2, {}), /* @__PURE__ */ jsx$1(MonetizeData, {}), /* @__PURE__ */ jsx$1(FifthSection, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$8 = ({
@@ -88053,7 +87846,8 @@ const SecondSection$2 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 453,
+          height: 370,
           alt: "app_development",
           className: "w-4/5",
           src: "/Images/serviceDetails/app_development-webp.webp"
@@ -88224,54 +88018,12 @@ const Services$7 = () => {
 const MobileAppDev = () => {
   const [refOffset, setRefOffset] = reactExports.useState();
   const ref = reactExports.useRef(null);
-  const intl = useIntl();
+  useIntl();
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "astute.software.custom.mobile.app",
-          defaultMessage: "Astute Softwares, Custom Mobile Application Development"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.software.is.a",
-          defaultMessage: "Astute Softwares is a leading mobile application developer with a wide range of products and services. We have a team of skilled, qualified specialists in the field of iOS and Android development to help you create an app that suits your needs."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Mobile application development, iOS and Android app services, Cross-platform app solutions, Custom mobile app design, Mobile app project consultation"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/mobile-application-development"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "astute.software.custom.mobile.app",
-          defaultMessage: "Astute Softwares, Custom Mobile Application Development"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.software.is.a",
-          defaultMessage: "Astute Softwares is a leading mobile application developer with a wide range of products and services. We have a team of skilled, qualified specialists in the field of iOS and Android development to help you create an app that suits your needs."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/mobile-application-development"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -88282,7 +88034,7 @@ const MobileAppDev = () => {
           children: /* @__PURE__ */ jsx$1(SecondSection$2, {})
         }), /* @__PURE__ */ jsx$1(Services$a, {}), /* @__PURE__ */ jsx$1(Services$9, {}), /* @__PURE__ */ jsx$1(Services$8, {}), /* @__PURE__ */ jsx$1(Services$7, {}), /* @__PURE__ */ jsx$1(FourthSection$1, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$7 = ({
@@ -88382,8 +88134,9 @@ const Services$6 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
                   children: "Front-End Architecture and Design"
@@ -88391,8 +88144,9 @@ const Services$6 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
                   children: "Rapid Prototyping"
@@ -88400,8 +88154,9 @@ const Services$6 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
                   children: "Front-end assessment and optimization services"
@@ -88409,8 +88164,9 @@ const Services$6 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
                   children: "Front-end Migration"
@@ -88418,8 +88174,9 @@ const Services$6 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
                   children: "Front-end Quality assurance services"
@@ -88427,8 +88184,9 @@ const Services$6 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
                   children: "Maintenance and Support"
@@ -88543,7 +88301,6 @@ const SecondSection$1 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           alt: "prototype",
           className: "w-4/5",
           src: "/Images/serviceDetails/prototype-webp.webp"
@@ -88574,8 +88331,9 @@ const Services$5 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
                   children: "UX/UI Audit and Analysis"
@@ -88583,8 +88341,9 @@ const Services$5 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
                   children: "User Interface Wireframing"
@@ -88592,8 +88351,9 @@ const Services$5 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
                   children: "Clickable Prototypes"
@@ -88601,8 +88361,9 @@ const Services$5 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
                   children: "User Journey mapping and design"
@@ -88610,8 +88371,9 @@ const Services$5 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
                   children: "Cross-Device User Experience"
@@ -88619,8 +88381,9 @@ const Services$5 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
                   children: "Maintenance and Support"
@@ -88647,7 +88410,6 @@ const LanguageCard = ({
     children: /* @__PURE__ */ jsxs("div", {
       className: "flex items-center my-2 md:my-0 lg:mx-10 flex-col",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
         alt: getImageALt(img),
         src: img
       }), /* @__PURE__ */ jsx$1("p", {
@@ -88720,54 +88482,12 @@ const FrontEndLanguages = () => {
 const UxDesign = () => {
   const [refOffset, setRefOffset] = reactExports.useState();
   const ref = reactExports.useRef(null);
-  const intl = useIntl();
+  useIntl();
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "ui.ux.design",
-          defaultMessage: "UI and UX Design - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "we.blend.a.variety",
-          defaultMessage: "We blend a variety of ui and ux design skills to produce elegant, functional and user-focused interfaces that gives users an immersive experience."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "User experience design services, Professional UI/UX design, Creative design solutions, Interactive app design, UX/UI consulting services"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/ui-and-ux-design"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "ui.ux.design",
-          defaultMessage: "UI and UX Design - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "we.blend.a.variety",
-          defaultMessage: "We blend a variety of ui and ux design skills to produce elegant, functional and user-focused interfaces that gives users an immersive experience."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/ui-and-ux-design"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -88778,7 +88498,7 @@ const UxDesign = () => {
           children: /* @__PURE__ */ jsx$1(PurposeNeeds, {})
         }), /* @__PURE__ */ jsx$1(Services$6, {}), /* @__PURE__ */ jsx$1(Services$5, {}), /* @__PURE__ */ jsx$1(QATypes$2, {}), /* @__PURE__ */ jsx$1(SecondSection$1, {}), /* @__PURE__ */ jsx$1(FourthSection, {}), /* @__PURE__ */ jsx$1(FrontEndLanguages, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$6 = ({
@@ -88845,7 +88565,8 @@ const SecondSection = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 567,
+          height: 463,
           className: "w-4/5",
           alt: "MAintenance team",
           src: "/Images/serviceDetails/MAintenance team-webp.webp"
@@ -89081,54 +88802,12 @@ const Services$4 = () => {
 const MaintenanceSupport = () => {
   const [refOffset, setRefOffset] = reactExports.useState();
   const ref = reactExports.useRef(null);
-  const intl = useIntl();
+  useIntl();
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "maintenance.and.support",
-          defaultMessage: "Maintenance and Support - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "outsourcing.your.application",
-          defaultMessage: "Outsourcing your application's support and maintenance frees up your team to focus on what really matters. Astute Softwares seamlessly becomes the binding glue keeping everything together."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "IT support and maintenance, Software maintenance services, Application support solutions, Ongoing IT assistance, Technical support services"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/maintenance-and-support"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "maintenance.and.support",
-          defaultMessage: "Maintenance and Support - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "outsourcing.your.application",
-          defaultMessage: "Outsourcing your application's support and maintenance frees up your team to focus on what really matters. Astute Softwares seamlessly becomes the binding glue keeping everything together."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/maintenance-and-support"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -89139,7 +88818,7 @@ const MaintenanceSupport = () => {
           children: /* @__PURE__ */ jsx$1(SecondSection, {})
         }), /* @__PURE__ */ jsx$1(Services$4, {}), /* @__PURE__ */ jsx$1(QATypes$1, {}), /* @__PURE__ */ jsx$1(QATypes, {}), /* @__PURE__ */ jsx$1(Monitoring, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$5 = () => {
@@ -89215,7 +88894,8 @@ const Services$3 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89224,7 +88904,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89233,7 +88914,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89242,7 +88924,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89251,7 +88934,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89260,7 +88944,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89269,7 +88954,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89278,7 +88964,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89287,7 +88974,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89371,7 +89059,8 @@ const FeaturesCard$1 = (props) => {
       children: [/* @__PURE__ */ jsx$1("div", {
         className: "flex flex-col justify-center items-center mb-5 rounded-xl shadow-lg h-4/5 p-8",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          height: props.height,
+          width: props.width,
           alt: props.img.split("/").pop(),
           className: "w-2/6 md:w-2/5 xl:w-3/5",
           src: props.img
@@ -89412,28 +89101,42 @@ const ThirdSection = () => {
         className: "grid grid-cols-1 md:grid-cols-2  xl:grid-cols-4 mt-20 w-5/6 2xl:w-3/5 gap-12 mx-auto ",
         children: [/* @__PURE__ */ jsx$1(FeaturesCard$1, {
           title: "Digital health",
-          img: "/Images/serviceDetails/DIGITAL-HEALTH-webp.webp"
+          img: "/Images/serviceDetails/DIGITAL-HEALTH-webp.webp",
+          width: 107,
+          height: 122
         }), /* @__PURE__ */ jsx$1(FeaturesCard$1, {
           title: "Financial services",
-          img: "/Images/serviceDetails/FINANCIALSERVICE-webp.webp"
+          img: "/Images/serviceDetails/FINANCIALSERVICE-webp.webp",
+          width: 172,
+          height: 129
         }), /* @__PURE__ */ jsx$1(FeaturesCard$1, {
           title: "Retail",
           img: "/Images/serviceDetails/RETAI-webp.webp"
         }), /* @__PURE__ */ jsx$1(FeaturesCard$1, {
           title: "Education",
-          img: "/Images/serviceDetails/Educatio-webp.webp"
+          img: "/Images/serviceDetails/Educatio-webp.webp",
+          width: 158,
+          height: 116
         }), /* @__PURE__ */ jsx$1(FeaturesCard$1, {
           title: "ADTECH & MARKETING",
-          img: "/Images/serviceDetails/ADTECH&MARKETING-webp.webp"
+          img: "/Images/serviceDetails/ADTECH&MARKETING-webp.webp",
+          width: 134,
+          height: 112
         }), /* @__PURE__ */ jsx$1(FeaturesCard$1, {
           title: "IOT",
-          img: "/Images/serviceDetails/IOT-webp.webp"
+          img: "/Images/serviceDetails/IOT-webp.webp",
+          width: 75,
+          height: 124
         }), /* @__PURE__ */ jsx$1(FeaturesCard$1, {
           title: "Publishing",
-          img: "/Images/serviceDetails/PUBLISHING-webp.webp"
+          img: "/Images/serviceDetails/PUBLISHING-webp.webp",
+          width: 148,
+          height: 117
         }), /* @__PURE__ */ jsx$1(FeaturesCard$1, {
           title: "Non-profit",
-          img: "/Images/serviceDetails/NON-PROFIT-webp.webp"
+          img: "/Images/serviceDetails/NON-PROFIT-webp.webp",
+          width: 130,
+          height: 117
         })]
       })]
     })
@@ -89469,57 +89172,15 @@ const KandaIndustries$1 = () => {
   });
 };
 const BigDataService = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "big.data.services",
-          defaultMessage: "Big Data Consulting Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "get.insights.from",
-          defaultMessage: "Get insights from your data with our expert big data consulting services. From data collection to analysis, Astute Softwares helps you make informed decisions."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Big data solutions, Data analytics services, Big data consulting, Data management solutions, Advanced analytics services"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/big-data-consulting-services"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "big.data.services",
-          defaultMessage: "Big Data Consulting Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "get.insights.from",
-          defaultMessage: "Get insights from your data with our expert big data consulting services. From data collection to analysis, Astute Softwares helps you make informed decisions."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/big-data-consulting-services"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx$1(LandingSection$5, {}), /* @__PURE__ */ jsx$1(Services$3, {}), /* @__PURE__ */ jsx$1(ThirdSection, {}), /* @__PURE__ */ jsx$1(KandaIndustries$1, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$4 = () => {
@@ -89571,7 +89232,8 @@ const BlockChainWebDevelopment = () => {
         children: [/* @__PURE__ */ jsx$1("div", {
           className: "order-2 lg:order-1",
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 818,
+            height: 672,
             className: "w-4/5 md:w-3/5 lg:w-full mx-auto",
             alt: "Decentralized-Web-Consulting",
             src: "/Images/serviceDetails/Decentralized-Web-Consulting-webp.webp"
@@ -89600,7 +89262,8 @@ const BlockChainWebDevelopment = () => {
         }), /* @__PURE__ */ jsx$1("div", {
           className: "order-2 flex items-start",
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 790,
+            height: 656,
             className: "w-4/5 md:w-3/5 lg:w-full mx-auto",
             alt: "Decentralized-Web-Consulting-img2",
             src: "/Images/serviceDetails/Decentralized-Web-Consulting-img2-webp.webp"
@@ -89643,7 +89306,8 @@ const Hiring$1 = () => {
             backgroundImage: "url(/Images/serviceDetails/Hire-Blockchain-Web-Developer-bg-webp.webp)"
           },
           children: [/* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 378,
+            height: 477,
             className: " absolute w-2/4 md:w-1/3 ",
             alt: "Blockchain-Web-Developer",
             src: "/Images/serviceDetails/Blockchain-Web-Developer-webp.webp"
@@ -89758,7 +89422,8 @@ const WorkingPrinciple = () => {
         children: [/* @__PURE__ */ jsx$1("div", {
           className: "",
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 1273,
+            height: 182,
             className: "w-4/5 mx-auto",
             alt: "Working-Principle-of-Decentralized-Web",
             src: "/Images/serviceDetails/Working-Principle-of-Decentralized-Web-webp.webp"
@@ -89792,6 +89457,8 @@ const ReasonCard = (props) => {
       children: [/* @__PURE__ */ jsxs("div", {
         className: "flex items-center mb-3 h-20",
         children: [/* @__PURE__ */ jsx$1("img", {
+          height: props.height,
+          width: props.width,
           loading: "lazy",
           alt: props.img.split("/").pop(),
           className: "w-2/12",
@@ -89831,18 +89498,26 @@ const WhyChooseUs = () => {
         children: [/* @__PURE__ */ jsx$1(ReasonCard, {
           title: "Peace of Mind",
           img: "/Images/serviceDetails/Experienced-Blockchain-Developers-webp.webp",
+          width: 210,
+          height: 247,
           desc: `It frees the business administrators from the blockchain infrastructure management headaches. For this, a sufficiently skilled third-party team of blockchain experts is available round-the-clock to look for any bugs and issues.`
         }), /* @__PURE__ */ jsx$1(ReasonCard, {
           title: "A pool of Experts",
           img: "/Images/serviceDetails/Experienced-Blockchain-Developers-webp.webp",
+          width: 210,
+          height: 247,
           desc: `By partnering-up with a fully competent and skilled Blockchain as a Service (BaaS) provider, you can access a vast pool of knowledge and experience under-one-roof. As a whole, you get professional assistance cost-effectively.`
         }), /* @__PURE__ */ jsx$1(ReasonCard, {
           title: "Offer Vast Scalability",
           img: "/Images/serviceDetails/Experienced-Blockchain-Developers-webp.webp",
+          width: 210,
+          height: 247,
           desc: `Blockchain is the backbone of future technology, no matter what size of business you want to integrate, it offers massive scalability to adjust with the changing business needs as your business grows.`
         }), /* @__PURE__ */ jsx$1(ReasonCard, {
           title: "Unmatched Security",
           img: "/Images/serviceDetails/Experienced-Blockchain-Developers-webp.webp",
+          width: 210,
+          height: 247,
           desc: `Blockchain works on a decentralised ledger technology, which makes it immutable, fully transparent, and easily traceable. Blockchain is unquestionably a highly secured platform, but to implement it securely, you need experts.                    `
         })]
       })]
@@ -89850,57 +89525,15 @@ const WhyChooseUs = () => {
   });
 };
 const BlockChainService = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "blockchain.solutions",
-          defaultMessage: "Blockchain Solutions - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "transform.your.business",
-          defaultMessage: "Transform your business with Astute Softwares's cutting-edge blockchain solutions and services that are secure, transparent, and efficient. Contact us to explore how we can help you."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Blockchain development services, Custom blockchain solutions, Blockchain technology consulting, Decentralized application development, Smart contract development"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/blockchain-solutions"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "blockchain.solutions",
-          defaultMessage: "Blockchain Solutions - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "transform.your.business",
-          defaultMessage: "Transform your business with Astute Softwares's cutting-edge blockchain solutions and services that are secure, transparent, and efficient. Contact us to explore how we can help you."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/blockchain-solutions"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col overflow-x-hidden ",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx$1(LandingSection$4, {}), /* @__PURE__ */ jsx$1(BlockChainWebDevelopment, {}), /* @__PURE__ */ jsx$1(Hiring$1, {}), /* @__PURE__ */ jsx$1(Features, {}), /* @__PURE__ */ jsx$1(WorkingPrinciple, {}), /* @__PURE__ */ jsx$1(WhyChooseUs, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$3 = () => {
@@ -89955,7 +89588,8 @@ const Services$2 = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "space-y-3 flex flex-col justify-center lg:h-72",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 158,
+                height: 124,
                 className: "w-2/12",
                 alt: "DevOps-Assessment",
                 src: "/Images/serviceDetails/DevOps-Assessment-webp.webp"
@@ -89975,7 +89609,8 @@ const Services$2 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89984,7 +89619,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -89993,7 +89629,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90002,7 +89639,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90011,7 +89649,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90020,7 +89659,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90032,10 +89672,10 @@ const Services$2 = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "space-y-3 lg:pl-12 pb-10 lg:pb-0 flex flex-col justify-center lg:h-72",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
-                alt: "DevOps-Automation",
-                className: "w-2/12",
-                src: "/Images/serviceDetails/DevOps-Automation-webp.webp"
+                width: 37,
+                height: 37,
+                alt: "bullet point",
+                src: "/Images/serviceDetails/bullet-point-webp.webp"
               }), /* @__PURE__ */ jsx$1("p", {
                 className: "text-blue-primary font-normal text-xl lg:text-2xl",
                 children: "Technology"
@@ -90051,7 +89691,8 @@ const Services$2 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90060,7 +89701,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90069,7 +89711,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90078,7 +89721,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90087,7 +89731,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90096,7 +89741,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90105,7 +89751,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90126,7 +89773,8 @@ const ManagementCard = (props) => {
       children: [/* @__PURE__ */ jsxs("div", {
         className: "flex flex-col md:flex-row items-center mb-3 h-20",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: props.width,
+          height: props.height,
           alt: "management-card",
           className: "w-2/12",
           src: props.img
@@ -90165,16 +89813,22 @@ const Management$1 = () => {
         children: [/* @__PURE__ */ jsx$1(ManagementCard, {
           title: "Continous Learning",
           img: "/Images/serviceDetails/Continuous-Learning-webp.webp",
+          width: 89,
+          height: 95,
           desc: `In the world of Cloud DevOps tools, platforms and best practices are complex and are rapidly evolving. Continuous learning keeps Astute teams up-to-the-minute on the latest technologies, tools, automation and development methodologies.
                    `
         }), /* @__PURE__ */ jsx$1(ManagementCard, {
           title: "Continous delivery & pipline management & optimization",
           img: "/Images/serviceDetails/CONTINUOUS-DELIVERY-PIPELINE-MANAGEMENT-&-OPTIMIZATION-webp.webp",
+          width: 131,
+          height: 88,
           desc: `We assist your core team in ensuring a full- fledged integrated functioning of the delivery pipeline automation cycle and in adapting your automated deployment cycle to changes.
                    `
         }), /* @__PURE__ */ jsx$1(ManagementCard, {
           title: "Continous Integration",
           img: "/Images/serviceDetails/CONTINUOUS-INTEGRATION-webp.webp",
+          width: 114,
+          height: 115,
           desc: `We take care of release management, continuous deployment, replica environment, new server setup, change management and performance optimization on an ongoing basis.
                    `
         })]
@@ -90200,7 +89854,8 @@ const BenefitsCircle = (props) => {
         children: /* @__PURE__ */ jsx$1("div", {
           className: `${innerBoxStyle}`,
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: props.width,
+            height: props.height,
             alt: props.innerImage.split("/").pop(),
             className: "w-2/5",
             src: props.innerImage
@@ -90233,30 +89888,40 @@ const KandaIndustries = () => {
           children: [/* @__PURE__ */ jsx$1(BenefitsCircle, {
             title: "Faster Time To Market",
             bgImage: "/Images/serviceDetails/devopBenifits/1-webp.webp",
+            width: 170,
+            height: 88,
             number: "odd",
             innerImage: "/Images/serviceDetails/devopBenifits/FASTER-TIME-webp.webp",
             marginLeft: "lg:-ml-1"
           }), /* @__PURE__ */ jsx$1(BenefitsCircle, {
             title: "Greater Business Agility",
             bgImage: "/Images/serviceDetails/devopBenifits/2-webp.webp",
+            width: 170,
+            height: 87,
             number: "even",
             innerImage: "/Images/serviceDetails/devopBenifits/GREATER-BUSINESS-webp.webp",
             marginLeft: "-ml-3"
           }), /* @__PURE__ */ jsx$1(BenefitsCircle, {
             title: "Enhanced Security",
             bgImage: "/Images/serviceDetails/devopBenifits/3-webp.webp",
+            width: 170,
+            height: 85,
             number: "odd",
             innerImage: "/Images/serviceDetails/devopBenifits/Security-webp.webp",
             marginLeft: "-ml-5 lg:-ml-8"
           }), /* @__PURE__ */ jsx$1(BenefitsCircle, {
             title: "Faster Time To Market",
             bgImage: "/Images/serviceDetails/devopBenifits/4-webp.webp",
+            width: 169,
+            height: 85,
             number: "even",
             innerImage: "/Images/serviceDetails/devopBenifits/INCREASED-Producitivity-webp.webp",
             marginLeft: "-ml-4 lg:-ml-6"
           }), /* @__PURE__ */ jsx$1(BenefitsCircle, {
             title: "Optimized Costs Reliability",
             bgImage: "/Images/serviceDetails/devopBenifits/5-webp.webp",
+            width: 170,
+            height: 85,
             number: "odd",
             innerImage: "/Images/serviceDetails/business--webp.webp",
             positionX: "-18px",
@@ -90264,18 +89929,24 @@ const KandaIndustries = () => {
           }), /* @__PURE__ */ jsx$1(BenefitsCircle, {
             title: "Speed And Efficiency",
             bgImage: "/Images/serviceDetails/devopBenifits/6-webp.webp",
+            width: 170,
+            height: 87,
             number: "even",
             innerImage: "/Images/serviceDetails/devopBenifits/EFFICIENCY-webp.webp",
             marginLeft: "-ml-1 lg:-ml-3"
           }), /* @__PURE__ */ jsx$1(BenefitsCircle, {
             title: "Reliability",
             bgImage: "/Images/serviceDetails/devopBenifits/1-webp.webp",
+            width: 170,
+            height: 88,
             number: "odd",
             innerImage: "/Images/serviceDetails/devopBenifits/RELIABILITY-webp.webp",
             marginLeft: "-ml-3 lg:-ml-6"
           }), /* @__PURE__ */ jsx$1(BenefitsCircle, {
             title: "Shared Sense Of Ownership",
             bgImage: "/Images/serviceDetails/devopBenifits/8-webp.webp",
+            width: 170,
+            height: 88,
             number: "even",
             innerImage: "/Images/serviceDetails/devopBenifits/SHARED-SENSE-webp.webp",
             marginLeft: "-ml-3 lg:-ml-6"
@@ -90306,7 +89977,8 @@ const Services$1 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90315,7 +89987,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90324,7 +89997,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90333,7 +90007,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90342,7 +90017,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90351,7 +90027,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90360,7 +90037,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90369,7 +90047,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90384,7 +90063,8 @@ const Services$1 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90393,7 +90073,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90402,7 +90083,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90411,7 +90093,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90420,7 +90103,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90429,7 +90113,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90438,7 +90123,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx$1("p", {
@@ -90465,7 +90151,8 @@ const Services = () => {
           children: /* @__PURE__ */ jsxs("div", {
             className: "space-y-3 flex flex-col justify-center items-center",
             children: [/* @__PURE__ */ jsx$1("img", {
-              loading: "lazy",
+              width: 158,
+              height: 124,
               className: "w-2/12",
               alt: "DevOps-Assessment",
               src: "/Images/serviceDetails/DevOps-Assessment-webp.webp"
@@ -90492,7 +90179,8 @@ const ServiceAdvantageCard = (props) => {
     children: /* @__PURE__ */ jsxs("div", {
       className: " space-y-3  sm:space-y-5 flex flex-col items-center w-10/12 md:w-7/12 lg:w-4/5 px-5 absolute top-20 md:top-10 lg:top-12 md:ml-12 lg:ml-0 lg:left-0 ",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "service-card",
         className: "w-5/12",
         src: props.img
@@ -90524,23 +90212,31 @@ const Management = () => {
         children: [/* @__PURE__ */ jsx$1(ServiceAdvantageCard, {
           title: "A solid Plan",
           img: "/Images/serviceDetails/A-SOLID-PLAN-webp.webp",
+          width: 105,
+          height: 86,
           desc: `for a painless and predictable move to DevOps practices under AWS,
                    Google Cloud or Azure – not as a one size fits all, but tailored specifically
                    to the state of your release and deployment pipeline`
         }), /* @__PURE__ */ jsx$1(ServiceAdvantageCard, {
           title: "AUTOMATION & TESTING",
           img: "/Images/serviceDetails/AUTOMATION-&-TESTING-webp.webp",
+          width: 157,
+          height: 96,
           desc: `We’ll help you build or automate your CI/CD pipeline as well as 
                    application and environment testing processes for fast, reliable and 
                    predictable releases`
         }), /* @__PURE__ */ jsx$1(ServiceAdvantageCard, {
           title: "Optimization",
           img: "/Images/serviceDetails/OPTIMIZATION-webp.webp",
+          width: 109,
+          height: 89,
           desc: `of the costs of using a cloud provider of your choice, and the 
                    ability to adjust your product architecture to minimize those costs.`
         }), /* @__PURE__ */ jsx$1(ServiceAdvantageCard, {
           title: "Integration",
           img: "/Images/serviceDetails/INTEGRATION-webp.webp",
+          width: 109,
+          height: 86,
           desc: `of our DevOps personnel and/or asistance in training your people 
                    to keep DevOps running smoothly once you are up and running.`
         })]
@@ -90549,57 +90245,15 @@ const Management = () => {
   });
 };
 const DevopService = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "devops.services",
-          defaultMessage: "DevOps Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "maximize.efficiency",
-          defaultMessage: "Maximize efficiency and streamline your software development process with our expert DevOps services. Contact us today to see how we can help your business succeed"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "DevOps consulting services, Continuous integration solutions, Automated deployment services, DevOps strategy and tools, Cloud and DevOps services"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/devops-services"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "devops.services",
-          defaultMessage: "DevOps Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "maximize.efficiency",
-          defaultMessage: "Maximize efficiency and streamline your software development process with our expert DevOps services. Contact us today to see how we can help your business succeed"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/devops-services"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx$1(LandingSection$3, {}), /* @__PURE__ */ jsx$1(Services$2, {}), /* @__PURE__ */ jsx$1(Management$1, {}), /* @__PURE__ */ jsx$1(KandaIndustries, {}), /* @__PURE__ */ jsx$1(Services$1, {}), /* @__PURE__ */ jsx$1(Management, {}), /* @__PURE__ */ jsx$1(Services, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$2 = () => {
@@ -90630,7 +90284,8 @@ const LandingSection$2 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: " bg-cover px-5 flex justify-center items-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 1128,
+          height: 1322,
           className: "w-full md:w-3/5 lg:w-4/5",
           alt: "big-data-service",
           src: "/Images/serviceDetails/TimeAndMaterial/time-and-material-high-dimensions-webp.webp"
@@ -90674,7 +90329,9 @@ const Benefits = () => {
             backgroundImage: "url(/Images/serviceDetails/Hire-Blockchain-Web-Developer-bg-webp.webp)"
           },
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            load: true,
+            width: 828,
+            height: 465,
             className: "w-4/5",
             alt: "Blockchain-Web-Developer",
             src: "/Images/serviceDetails/TimeAndMaterial/BENEFITS-webp.webp"
@@ -90793,7 +90450,8 @@ const Consultation = () => {
             backgroundImage: "url(/Images/serviceDetails/Hire-Blockchain-Web-Developer-bg-webp.webp)"
           },
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 762,
+            height: 537,
             className: "w-4/5 md:w-2/5 lg:w-3/5",
             alt: "CAN-THIS-MODEL-BE-OF-USE-image",
             src: "/Images/serviceDetails/TimeAndMaterial/CAN-THIS-MODEL-BE-OF-USE-image-webp.webp"
@@ -90847,12 +90505,10 @@ const Hiring = () => {
       children: [/* @__PURE__ */ jsxs("div", {
         className: " w-2/12 mdmd:w-auto",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           alt: "3-steps",
           className: " px-10 hidden mdmd:block",
           src: "/Images/serviceDetails/TimeAndMaterial/3-steps-webp.webp"
         }), /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
           alt: "3-steps",
           style: {
             height: "80%"
@@ -90877,57 +90533,15 @@ const Hiring = () => {
   });
 };
 const TimeAndMaterialService = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "time.and.material",
-          defaultMessage: "Time and Material Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "maintain.your.goals",
-          defaultMessage: "Maintain your goals according to your allocated budget with our reliable time and material services. The experts at Astute Softwares offers reasonable pricing and timely delivery."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Time and material model, Flexible project pricing, Custom billing solutions, Pay as you go IT services, Project-based billing services"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/time-and-material-services"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "time.and.material",
-          defaultMessage: "Time and Material Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "maintain.your.goals",
-          defaultMessage: "Maintain your goals according to your allocated budget with our reliable time and material services. The experts at Astute Softwares offers reasonable pricing and timely delivery."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/time-and-material-services"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col overflow-x-hidden ",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx$1(LandingSection$2, {}), /* @__PURE__ */ jsx$1(Benefits, {}), /* @__PURE__ */ jsx$1(OurServices, {}), /* @__PURE__ */ jsx$1(Consultation, {}), /* @__PURE__ */ jsx$1(Hiring, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const CouponPage = () => {
@@ -91106,7 +90720,8 @@ const index$a = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 891,
+          height: 601,
           className: "w-4/5 ",
           alt: "showrooms",
           src: "/Images/serviceAssets/ar-Services/showrooms-webp.webp"
@@ -91140,7 +90755,8 @@ const index$9 = () => {
                   children: [/* @__PURE__ */ jsxs("div", {
                     className: "flex flex-col md:flex-row space-x-4 items-center",
                     children: [/* @__PURE__ */ jsx$1("img", {
-                      loading: "lazy",
+                      width: 114,
+                      height: 95,
                       alt: "ar-service-1",
                       src: "/Images/serviceAssets/ar-Services/01-webp.webp"
                     }), /* @__PURE__ */ jsx$1("h2", {
@@ -91160,7 +90776,8 @@ const index$9 = () => {
                   children: [/* @__PURE__ */ jsxs("div", {
                     className: "flex flex-col md:flex-row space-x-4 items-center",
                     children: [/* @__PURE__ */ jsx$1("img", {
-                      loading: "lazy",
+                      width: 140,
+                      height: 95,
                       alt: "ar-service-3",
                       src: "/Images/serviceAssets/ar-Services/03-webp.webp"
                     }), /* @__PURE__ */ jsx$1("h2", {
@@ -91177,7 +90794,8 @@ const index$9 = () => {
               }), /* @__PURE__ */ jsx$1("div", {
                 className: "col-span-3 mx-auto hidden lg:block ",
                 children: /* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 187,
+                  height: 301,
                   alt: "wining-points",
                   src: "/Images/serviceAssets/ar-Services/wining-points-webp.webp"
                 })
@@ -91188,7 +90806,8 @@ const index$9 = () => {
                   children: [/* @__PURE__ */ jsxs("div", {
                     className: "flex flex-col md:flex-row space-x-4 items-center",
                     children: [/* @__PURE__ */ jsx$1("img", {
-                      loading: "lazy",
+                      width: 142,
+                      height: 95,
                       alt: "ar-service-2",
                       src: "/Images/serviceAssets/ar-Services/02-webp.webp",
                       className: ""
@@ -91209,7 +90828,8 @@ const index$9 = () => {
                   children: [/* @__PURE__ */ jsxs("div", {
                     className: "flex flex-col md:flex-row space-x-4 items-center",
                     children: [/* @__PURE__ */ jsx$1("img", {
-                      loading: "lazy",
+                      width: 148,
+                      height: 95,
                       alt: "ar-service-4",
                       src: "/Images/serviceAssets/ar-Services/04-webp.webp"
                     }), /* @__PURE__ */ jsx$1("h2", {
@@ -91260,7 +90880,8 @@ const index$8 = () => {
               backgroundImage: "url('/Images/serviceAssets/ar-Services/AR-development-partner-backgound-webp.webp')"
             },
             children: /* @__PURE__ */ jsx$1("img", {
-              loading: "lazy",
+              width: 705,
+              height: 766,
               alt: "AR-development-partner",
               className: "w-9/12 mx-auto ",
               style: {
@@ -91272,7 +90893,8 @@ const index$8 = () => {
         }), /* @__PURE__ */ jsx$1("div", {
           className: "absolute  -bottom-24 ",
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 1914,
+            height: 608,
             alt: "ar-development-partner-background",
             className: "w-full",
             src: "/Images/serviceAssets/ar-Services/ar-development-partner-background-webp.webp"
@@ -91284,55 +90906,13 @@ const index$8 = () => {
 };
 const ArServices = () => {
   const [refOffset, setRefOffset] = reactExports.useState();
-  const intl = useIntl();
+  useIntl();
   const ref = reactExports.useRef(null);
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "software.augmented.reality",
-          defaultMessage: "Astute Softwares - Augmented Reality"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.software.offers.ar",
-          defaultMessage: "Astute softwares offers augmented reality services that allows you to monetize your business and increase conversion rates."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Augmented reality development, AR for businesses, Immersive AR experiences, AR app design, Augmented reality consulting"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/augmented-reality"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "software.augmented.reality",
-          defaultMessage: "Astute Softwares - Augmented Reality"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.software.offers.ar",
-          defaultMessage: "Astute softwares offers augmented reality services that allows you to monetize your business and increase conversion rates."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/augmented-reality"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+    children: [/* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsx$1("div", {
         className: "flex-grow",
@@ -91387,7 +90967,8 @@ const LandingSection$1 = () => {
             zIndex: 1
           },
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 538,
+            height: 768,
             alt: "langing-chracter",
             className: "landingCharacter mx-auto w-2/4 lg:w-4/5   ",
             src: "/Images/serviceAssets/metaverse/landing-page-character-webp.webp"
@@ -91396,7 +90977,8 @@ const LandingSection$1 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "absolute bottom-0 ",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 1920,
+          height: 487,
           alt: "Our-platforms-technologies-background",
           className: "w-full",
           src: "/Images/serviceAssets/metaverse/Our-platforms-technologies-background-webp.webp"
@@ -91430,7 +91012,8 @@ const Momemntum = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 512,
+                height: 512,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -91441,7 +91024,8 @@ const Momemntum = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 512,
+                height: 512,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -91452,7 +91036,8 @@ const Momemntum = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 512,
+                height: 512,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -91502,7 +91087,8 @@ const PlatFormAndTechnologies = () => {
               children: [/* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -91513,7 +91099,8 @@ const PlatFormAndTechnologies = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -91524,7 +91111,8 @@ const PlatFormAndTechnologies = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -91535,7 +91123,8 @@ const PlatFormAndTechnologies = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -91546,7 +91135,8 @@ const PlatFormAndTechnologies = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -91557,7 +91147,8 @@ const PlatFormAndTechnologies = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -91568,7 +91159,8 @@ const PlatFormAndTechnologies = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -91582,12 +91174,14 @@ const PlatFormAndTechnologies = () => {
         }), /* @__PURE__ */ jsxs("div", {
           className: "bg-no-repeat flex items-center  justify-center ",
           children: [/* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 526,
+            height: 526,
             alt: "circle-image",
             src: "/Images/serviceAssets/metaverse/circle-webp.webp",
             className: "relative antiClockwiseSpin w-4/5 "
           }), /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 705,
+            height: 766,
             alt: "our-platforms-technologies",
             className: "absolute w-200 sm:w-300 md:w-300 lg:w-350  ",
             src: "/Images/serviceAssets/metaverse/our-platforms-technologies-webp.webp"
@@ -91596,7 +91190,8 @@ const PlatFormAndTechnologies = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "absolute bottom-0",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 1920,
+          height: 487,
           alt: "Our-platforms-technologies-background",
           className: "w-full",
           src: "/Images/serviceAssets/metaverse/Our-platforms-technologies-background-webp.webp"
@@ -91637,7 +91232,8 @@ const Table = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white  py-0 lg:py-2 lg:text-justify space-x-2 flex flex-grow-0 space-x-4 items-center ",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 114,
+                height: 114,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/iconBlue-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -91648,7 +91244,8 @@ const Table = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
               children: [/* @__PURE__ */ jsx$1("img", {
-                loading: "lazy",
+                width: 114,
+                height: 114,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/iconBlue-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -91736,7 +91333,8 @@ const Table = () => {
     }), /* @__PURE__ */ jsxs("div", {
       className: "h-screen  relative bg-gray-consultancy",
       children: [/* @__PURE__ */ jsx$1("img", {
-        loading: "lazy",
+        width: 1920,
+        height: 1080,
         alt: "consultancy_pattern",
         src: "/Images/serviceAssets/metaverse/consultancy_pattern-webp.webp",
         className: "w-full absolute -top-16 md:-top-32  lg:-top-64  "
@@ -91788,51 +91386,9 @@ const Table = () => {
   });
 };
 const MetverseServices = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "software.metaverse",
-          defaultMessage: "Astute Softwares - Metaverse"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.software.is.a.leading",
-          defaultMessage: "Astute softwares is a leading software development company that specializes in the development of metaverse and Web 3.0 services."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Metaverse development services, Virtual reality solutions, Augmented reality services, Metaverse platform development, Custom metaverse applications"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/metaverse"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "software.metaverse",
-          defaultMessage: "Astute Softwares - Metaverse"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.software.is.a.leading",
-          defaultMessage: "Astute softwares is a leading software development company that specializes in the development of metaverse and Web 3.0 services."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/metaverse"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "",
       children: [/* @__PURE__ */ jsx$1(LandingSection$1, {}), /* @__PURE__ */ jsx$1(Momemntum, {}), /* @__PURE__ */ jsx$1(PlatFormAndTechnologies, {}), /* @__PURE__ */ jsx$1("div", {
         className: "",
@@ -91841,7 +91397,7 @@ const MetverseServices = () => {
           children: /* @__PURE__ */ jsx$1(Table, {})
         })
       })]
-    })]
+    })
   });
 };
 const index$7 = ({
@@ -91910,7 +91466,8 @@ const index$6 = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 827,
+          height: 581,
           alt: "The-future-of-Business",
           className: "w-4/5 ",
           src: "/Images/serviceAssets/3dModeling/The-future-of-Business-webp.webp"
@@ -91941,7 +91498,8 @@ const index$5 = () => {
         }), /* @__PURE__ */ jsx$1("div", {
           className: "flex items-center justify-center",
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 768,
+            height: 653,
             alt: "marketing",
             className: "w-4/5 ",
             src: "/Images/serviceAssets/3dModeling/marketing-webp.webp"
@@ -91964,7 +91522,8 @@ const index$4 = () => {
         children: [/* @__PURE__ */ jsx$1("div", {
           className: "flex items-center justify-center",
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 827,
+            height: 603,
             alt: "Extraordinary-quality",
             className: "w-4/5 ",
             src: "/Images/serviceAssets/3dModeling/Extraordinary-quality-webp.webp"
@@ -91996,7 +91555,8 @@ const index$3 = () => {
         children: [/* @__PURE__ */ jsx$1("div", {
           className: "flex items-center justify-center",
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 772,
+            height: 677,
             alt: "sales",
             className: "w-4/5 ",
             src: "/Images/serviceAssets/3dModeling/sales-webp.webp"
@@ -92037,7 +91597,8 @@ const index$2 = () => {
         }), /* @__PURE__ */ jsx$1("div", {
           className: "flex items-center justify-center",
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 836,
+            height: 605,
             alt: "e-commerce",
             className: "w-4/5 ",
             src: "/Images/serviceAssets/3dModeling/E-commerce-webp.webp"
@@ -92069,7 +91630,8 @@ const index$1 = () => {
         }), /* @__PURE__ */ jsx$1("div", {
           className: "flex items-center justify-center",
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 935,
+            height: 480,
             alt: "real-Estate",
             className: "w-4/5 ",
             src: "/Images/serviceAssets/3dModeling/real-Estate-webp.webp"
@@ -92092,7 +91654,8 @@ const index = () => {
         children: [/* @__PURE__ */ jsx$1("div", {
           className: "flex items-center justify-center",
           children: /* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 753,
+            height: 471,
             alt: "Industrial",
             className: "w-4/5 ",
             src: "/Images/serviceAssets/3dModeling/Industrial-webp.webp"
@@ -92114,54 +91677,12 @@ const index = () => {
 const ThreedModeling = () => {
   const [refOffset, setRefOffset] = reactExports.useState();
   const ref = reactExports.useRef(null);
-  const intl = useIntl();
+  useIntl();
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "software.3d.modeling",
-          defaultMessage: "Astute Softwares - 3D modelling"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.software.is.a.leading",
-          defaultMessage: "Astute softwares is a leading software development company that specializes in the development of metaverse and Web 3.0 services."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "3D modeling services, Custom 3D design, Professional 3D rendering, 3D animation services, Virtual product modeling"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/3d-modelling"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "software.3d.modeling",
-          defaultMessage: "Astute Softwares - 3D modelling"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.software.is.a.leading",
-          defaultMessage: "Astute softwares is a leading software development company that specializes in the development of metaverse and Web 3.0 services."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/3d-modelling"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+    children: [/* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsx$1("div", {
         className: "flex-grow",
@@ -92217,7 +91738,7 @@ const PlantModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DIfbNrtF.js");
+        } = await import("./OrbitControls-s0x68D5e.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92241,7 +91762,7 @@ const PlantModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-m8pvkBRU.js");
+        } = await import("./method-0l1A4vHk.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92293,7 +91814,7 @@ const PlantModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DIfbNrtF.js");
+        } = await import("./OrbitControls-s0x68D5e.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92317,7 +91838,7 @@ const PlantModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-Dz220hjP.js");
+        } = await import("./method-THoBvFiM.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92374,7 +91895,7 @@ const PlanModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DIfbNrtF.js");
+        } = await import("./OrbitControls-s0x68D5e.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92398,7 +91919,7 @@ const PlanModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-CisCM4HF.js");
+        } = await import("./method-6HjCZsR3.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92799,7 +92320,7 @@ const BagModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DIfbNrtF.js");
+        } = await import("./OrbitControls-s0x68D5e.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92823,7 +92344,7 @@ const BagModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-CzSfs5VY.js");
+        } = await import("./method-m_CFHN3L.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92873,7 +92394,7 @@ const BagModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DIfbNrtF.js");
+        } = await import("./OrbitControls-s0x68D5e.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92897,7 +92418,7 @@ const BagModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-DZC2XyY-.js");
+        } = await import("./method-BawH-5zb.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92953,7 +92474,7 @@ const BagModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DIfbNrtF.js");
+        } = await import("./OrbitControls-s0x68D5e.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92977,7 +92498,7 @@ const BagModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-CSNuuxJ5.js");
+        } = await import("./method-pYwz3ydG.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -93174,13 +92695,13 @@ const Model1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DIfbNrtF.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-s0x68D5e.js"), true ? [] : void 0);
     const {
       createCamera,
       createRenderer,
       onWindowResize,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-CpCSPUyW.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-DTnRun3g.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -93203,7 +92724,7 @@ const Model2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DIfbNrtF.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-s0x68D5e.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93212,7 +92733,7 @@ const Model2 = ({
       createScene,
       onWindowResize,
       animate: animate2
-    } = __vitePreload(() => import("./method-FQUFIah6.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-DoTJb-Oe.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
     const renderer = createRenderer();
     const scene = createScene();
     const camera = createCamera();
@@ -93250,7 +92771,7 @@ const Model3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DIfbNrtF.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-s0x68D5e.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93260,7 +92781,7 @@ const Model3 = ({
       animate: animate2,
       createFloor,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-BA8fI6ky.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-D8RijHY6.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -93332,7 +92853,7 @@ const BottleModel1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DIfbNrtF.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-s0x68D5e.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93342,7 +92863,7 @@ const BottleModel1 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-BMIfKqZF.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-BnOULp63.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93377,7 +92898,7 @@ const BottleModel2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DIfbNrtF.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-s0x68D5e.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93387,7 +92908,7 @@ const BottleModel2 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-jA26W_0f.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-93Cfjsxa.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93424,7 +92945,7 @@ const BottleModel3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DIfbNrtF.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-s0x68D5e.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93434,7 +92955,7 @@ const BottleModel3 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-CKUjG2I2.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-mA2RCo5H.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93651,57 +93172,15 @@ const Portfolio = ({
 }) => {
   const [selectedModel, setSelectedModel] = reactExports.useState(3);
   const [toggleSideBar, setToggleSideBar] = reactExports.useState(false);
-  const intl = useIntl();
+  useIntl();
   reactExports.useEffect(() => {
     setShowHeaderFooter(false);
     return () => {
       setShowHeaderFooter(true);
     };
   }, []);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "astute.software.portfolio",
-          defaultMessage: "Astute Softwares - portfolio"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "see.some.our.work",
-          defaultMessage: "See some of our best work in 3D. With Astute software solutions, you can create everything from custom animations to beautiful presentations."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Software development portfolio, Project showcase, Client success stories, Technology solutions portfolio, Custom software projects"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/portfolio"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "astute.software.portfolio",
-          defaultMessage: "Astute Softwares - portfolio"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "see.some.our.work",
-          defaultMessage: "See some of our best work in 3D. With Astute software solutions, you can create everything from custom animations to beautiful presentations."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/portfolio"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "relative",
       children: [/* @__PURE__ */ jsx$1("div", {
         className: `w-350 overflow-y-auto overflow-x-hidden  min-h-screen fixed left-0 top-0 bottom-0 bg-white transition  transform ${toggleSideBar ? " z-50 duration-900 ease-in-out translate-x-0 " : "hidden lg:block"} `,
@@ -93740,7 +93219,7 @@ const Portfolio = ({
           onClick: () => setToggleSideBar(!toggleSideBar)
         })
       })]
-    })]
+    })
   });
 };
 const LandingSection = () => {
@@ -93750,7 +93229,8 @@ const LandingSection = () => {
       children: [/* @__PURE__ */ jsxs("div", {
         className: "lg:w-1/2 md:px-10 xl:pl-20 flex text-center lg:text-left flex-col justify-center",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 554,
+          height: 205,
           alt: "logo",
           className: "w-2/5 mb-10 mx-auto xl:w-2/5",
           src: "/Images/falling-gems/logo-webp.webp"
@@ -93764,6 +93244,8 @@ const LandingSection = () => {
       }), /* @__PURE__ */ jsx$1("div", {
         className: "lg:w-1/2 flex justify-end",
         children: /* @__PURE__ */ jsx$1("img", {
+          width: 870,
+          height: 643,
           className: "w-4/5 md:w-3/5 lg:w-full mx-auto",
           loading: "lazy",
           alt: "game logo",
@@ -93777,7 +93259,7 @@ const ModalVideo = (props) => {
   const [isOpen, setOpen] = reactExports.useState(false);
   const [VideoModal, setVideoModal] = reactExports.useState(null);
   reactExports.useEffect(() => {
-    __vitePreload(() => import("./index-yXNZFP3y.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
+    __vitePreload(() => import("./index-DadsiGID.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
       setVideoModal(() => module2.default);
     });
   }, []);
@@ -93822,7 +93304,8 @@ const LevelOne$2 = () => {
         children: /* @__PURE__ */ jsxs("div", {
           className: "relative md:w-4/5 lg:w-full mx-auto xl:mx-0 ",
           children: [/* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 747,
+            height: 650,
             alt: "level one picture",
             className: "",
             src: "/Images/falling-gems/level 1 picture-webp.webp"
@@ -93835,7 +93318,8 @@ const LevelOne$2 = () => {
         className: "flex flex-col justify-center",
         children: [/* @__PURE__ */ jsx$1("img", {
           className: "mb-10 w-4/5 xl:w-4/5 mx-auto",
-          loading: "lazy",
+          width: 552,
+          height: 302,
           alt: "fruits",
           src: "/Images/falling-gems/fruits-webp.webp"
         }), /* @__PURE__ */ jsx$1("h3", {
@@ -93872,7 +93356,8 @@ const LevelOne$1 = () => {
         children: /* @__PURE__ */ jsxs("div", {
           className: "relative md:w-4/5 lg:w-full mx-auto xl:mx-0 ",
           children: [/* @__PURE__ */ jsx$1("img", {
-            loading: "lazy",
+            width: 747,
+            height: 650,
             alt: "level 2 picture",
             className: "",
             src: "/Images/falling-gems/level 2 picture-webp.webp"
@@ -93884,7 +93369,8 @@ const LevelOne$1 = () => {
       }), /* @__PURE__ */ jsxs("div", {
         className: "flex flex-col justify-center",
         children: [/* @__PURE__ */ jsx$1("img", {
-          loading: "lazy",
+          width: 378,
+          height: 317,
           alt: "snow objects",
           className: "mb-10 w-3/5 xl:w-3/5 mx-auto",
           src: "/Images/falling-gems/snow object-webp.webp"
@@ -93923,7 +93409,8 @@ const LevelOne = () => {
           className: "relative md:w-4/5 lg:w-full mx-auto xl:mx-0 ",
           children: [/* @__PURE__ */ jsx$1("img", {
             alt: "level 3 picture",
-            loading: "lazy",
+            width: 582,
+            height: 455,
             className: "",
             src: "/Images/falling-gems/level3 picture-webp.webp"
           }), /* @__PURE__ */ jsx$1("h2", {
@@ -93935,7 +93422,8 @@ const LevelOne = () => {
         className: "flex flex-col justify-center",
         children: [/* @__PURE__ */ jsx$1("img", {
           alt: "level 3 objects",
-          loading: "lazy",
+          width: 282,
+          height: 261,
           className: "mb-10 w-3/5 xl:w-3/5 mx-auto",
           src: "/Images/falling-gems/level3 object-webp.webp"
         }), /* @__PURE__ */ jsx$1("h3", {
@@ -94142,7 +93630,8 @@ const Profile = () => {
               children: [/* @__PURE__ */ jsxs("div", {
                 className: "flex items-center space-x-5",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 76,
+                  height: 78,
                   alt: "trophy",
                   className: "w-10",
                   src: "/Images/falling-gems/trophy-webp.webp"
@@ -94158,7 +93647,8 @@ const Profile = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "flex items-center space-x-5",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 82,
+                  height: 62,
                   alt: "game mode",
                   className: "w-10",
                   src: "/Images/falling-gems/game mode-webp.webp"
@@ -94174,7 +93664,8 @@ const Profile = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "flex items-center space-x-5",
                 children: [/* @__PURE__ */ jsx$1("img", {
-                  loading: "lazy",
+                  width: 241,
+                  height: 142,
                   alt: "coins blue",
                   className: "w-10",
                   src: "/Images/falling-gems/coins-blue-webp.webp"
@@ -94198,58 +93689,19 @@ const Profile = () => {
 const Index = ({
   setShowHeaderFooter
 }) => {
-  const intl = useIntl();
+  useIntl();
   reactExports.useEffect(() => {
     setShowHeaderFooter(true);
     return () => {
       setShowHeaderFooter(false);
     };
   }, []);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "falling.gems",
-          defaultMessage: "Falling Gems - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "introducing.astute.softwares",
-          defaultMessage: "Introducing Astute Softwares' Falling Gems. Don't let these precious GEMS FALL! From exciting game levels to gold coins, everything is put up to make you feel good and relax."
-        })
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/falling-gems"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "falling.gems",
-          defaultMessage: "Falling Gems - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "introducing.astute.softwares",
-          defaultMessage: "Introducing Astute Softwares' Falling Gems. Don't let these precious GEMS FALL! From exciting game levels to gold coins, everything is put up to make you feel good and relax."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/falling-gems"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       children: [/* @__PURE__ */ jsx$1("div", {
         className: "w-full md:w-1/2 lg:w-1/3  2xl:w-1/4 mx-auto lg:mx-0 px-20 pt-10 pb-10 lg:pb-0"
       }), /* @__PURE__ */ jsx$1(LandingSection, {}), /* @__PURE__ */ jsx$1(LevelOne$2, {}), /* @__PURE__ */ jsx$1(LevelOne$1, {}), /* @__PURE__ */ jsx$1(LevelOne, {}), /* @__PURE__ */ jsx$1(PreSale, {}), /* @__PURE__ */ jsx$1(Profile, {})]
-    })]
+    })
   });
 };
 const CookiePolicy = () => {
@@ -95493,7 +94945,6 @@ function HeroSection() {
       children: /* @__PURE__ */ jsx$1("img", {
         width: 1201,
         height: 1438,
-        loading: "lazy",
         alt: "pattern",
         className: "absolute top-0 right-0 transform lg:translate-x-1/4 lg:-translate-y-24 w-full z-0 select-none hidden lg:inline",
         src: "/Images/landing-page-assets/Group 53-webp.webp"
@@ -95647,7 +95098,6 @@ function SolutionSection() {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 1420,
           height: 1012,
-          loading: "lazy",
           src: "/Images/landing-page-assets/chats-webp.webp",
           alt: "chats",
           className: "relative z-10"
@@ -95768,7 +95218,6 @@ function TechSection() {
         children: [/* @__PURE__ */ jsx$1("img", {
           width: 4768,
           height: 1792,
-          loading: "lazy",
           alt: "box_layers",
           className: "absolute top-0 w-full z-0",
           src: "/Images/landing-page-assets/box_layers-webp.webp"

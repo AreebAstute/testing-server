@@ -7,12 +7,12 @@ import { AiOutlineWhatsApp, AiFillStar, AiFillLock } from "react-icons/ai";
 import { FaTwitter, FaInstagram, FaFacebook, FaLinkedin, FaTimes, FaArrowCircleRight, FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa";
 import require$$1$1 from "object-assign";
 import ReactGA from "react-ga4";
-import { Helmet } from "react-helmet";
 import { motion, AnimatePresence, useViewportScroll } from "framer-motion";
 import { BsDot, BsArrowRight, BsSearch } from "react-icons/bs";
 import { getDocument, getWindow } from "ssr-window";
 import { $, remove, filter, children, find, closest, parents, parent, prevAll, prev, nextAll, next, prepend, append, eq, index as index$c, is, text, html, each, css, offset, styles, outerHeight, outerWidth, transitionEnd as transitionEnd$1, trigger, off, on, transition as transition$1, transform, removeAttr, attr, toggleClass, hasClass, removeClass, addClass } from "dom7";
 import { GLTFExporter } from "three/examples/jsm/exporters/GLTFExporter.js";
+import { Helmet } from "react-helmet";
 import QRCode from "react-qr-code";
 import { BiLoaderAlt, BiCube, BiLinkExternal, BiMenuAltLeft } from "react-icons/bi";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -13319,7 +13319,7 @@ const Viewer = ({
       } = await import("./assets/methods-Bfz_N5DN.js");
       const {
         default: ColorPallete2
-      } = await import("./assets/index-DzVjzD8b.js");
+      } = await import("./assets/index-DYbduW6K.js");
       setColorPalleteComponent(() => ColorPallete2);
       const {
         GLTFExporter: GLTFExporter2
@@ -16309,7 +16309,8 @@ const LandingSection$i = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 744,
+          height: 625,
           className: "w-full md:w-4/5 lg:w-full",
           alt: "Angular-logo",
           src: "/Images/technologies/Angular-logo-webp.webp"
@@ -16345,7 +16346,8 @@ const ModernDevelopment$6 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           alt: "modern-js-development",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -16360,7 +16362,8 @@ const FeatureCard$6 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -16385,11 +16388,15 @@ const AngularFeatures = () => {
       children: [/* @__PURE__ */ jsx(FeatureCard$6, {
         alt: "fast-development",
         img: "/Images/technologies/fast-development-webp.webp",
+        width: 79,
+        height: 72,
         title: "Fast development",
         desc: "Angular provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx(FeatureCard$6, {
         alt: "Awesome-user-experience",
         img: "/Images/technologies/Awesome-user-experience-webp.webp",
+        width: 74,
+        height: 60,
         title: "Awesome user experience",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -16397,18 +16404,24 @@ const AngularFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard$6, {
         alt: "all-in-one-approach",
         img: "/Images/technologies/all-in-one-approach-webp.webp",
+        width: 86,
+        height: 52,
         title: "All-in-one approach ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
       }), /* @__PURE__ */ jsx(FeatureCard$6, {
         alt: "versatile-use",
         img: "/Images/technologies/versatile-use-webp.webp",
+        width: 72,
+        height: 42,
         title: "Verstaile use",
         desc: `You can build web apps, mobile web apps, native mobile 
             apps and even desktop software`
       }), /* @__PURE__ */ jsx(FeatureCard$6, {
         alt: "best-practices",
         img: "/Images/technologies/Bestpractices-webp.webp",
+        width: 69,
+        height: 63,
         title: "Best practice",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to 
@@ -16416,6 +16429,8 @@ const AngularFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard$6, {
         alt: "focus-on-busines",
         img: "/Images/technologies/Focus-on-busines-webp.webp",
+        width: 69,
+        height: 67,
         title: "Focus on business",
         desc: `It's used, developed and trusted by the biggest and most innovative 
             companies in the business`
@@ -16803,7 +16818,8 @@ const GreenCard$6 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.width,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx("h3", {
@@ -16854,29 +16870,41 @@ const WhyAngular = () => {
         },
         children: [/* @__PURE__ */ jsx(GreenCard$6, {
           img: "/Images/technologies/High-seniority-level-and-technical-skills-webp.webp",
+          width: 65,
+          height: 72,
           title: "High seniority level and technical skils development",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard$6, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "Ability to scale a team in days",
           desc: `At times, great efort ends in failure, or conversely, ordinary 
                 efort leads to succes. We recognize and reward efort and resist 
                 the temptation to judge you based on outcomes.`
         }), /* @__PURE__ */ jsx(GreenCard$6, {
           img: "/Images/technologies/API-first-approach-webp.webp",
+          width: 75,
+          height: 56,
           title: "API-first approach",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard$6, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "SEO-friendly code",
           desc: `Search engines will love your app. We'll make your Javascript 
                 indexable and visible for Google`
         }), /* @__PURE__ */ jsx(GreenCard$6, {
           img: "/Images/technologies/Newest-trends-in-practice-webp.webp",
+          width: 58,
+          height: 54,
           title: "Newest trends in practice",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard$6, {
           img: "/Images/technologies/Battle-tested-process-webp.webp",
+          width: 55,
+          height: 64,
           title: "Batle-tested proces",
           desc: `BSo you can easily adapt to change and stay on the track at the 
                 same time`
@@ -16886,54 +16914,12 @@ const WhyAngular = () => {
   });
 };
 const Angular = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "angular.development",
-          defaultMessage: "Angular Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.softwares.offers.angular",
-          defaultMessage: "Astute Softwares offers expert Angular development services for creating immersive and interactive UIs that deliver great UX to consumers."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Angular development services, Angular web development, Certified Angular developers, Enterprise Angular solutions, Angular application development"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/angular"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "angular.development",
-          defaultMessage: "Angular Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.softwares.offers.angular",
-          defaultMessage: "Astute Softwares offers expert Angular development services for creating immersive and interactive UIs that deliver great UX to consumers."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/angular"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$i, {}), /* @__PURE__ */ jsx(ModernDevelopment$6, {}), /* @__PURE__ */ jsx(AngularFeatures, {}), /* @__PURE__ */ jsx(Advantages$6, {}), /* @__PURE__ */ jsx(WhyAngular, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$h = () => {
@@ -16959,7 +16945,8 @@ const LandingSection$h = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 2600,
+          height: 1750,
           className: "w-full md:w-4/5 lg:w-full",
           alt: "laravel-logo",
           src: "/Images/technologies/Laravel-logo-webp.webp"
@@ -16995,7 +16982,8 @@ const ModernDevelopment$5 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           alt: "modern-js-development",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -17010,7 +16998,8 @@ const FeatureCard$5 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -17035,11 +17024,15 @@ const LaravelFeatures = () => {
       children: [/* @__PURE__ */ jsx(FeatureCard$5, {
         alt: "benefits from Laravel",
         img: "/Images/technologies/Benefits from Laravel's powerfu-webp.webp",
+        width: 250,
+        height: 250,
         title: "Rapid development",
         desc: "Laravel provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx(FeatureCard$5, {
         alt: "best application",
         img: "/Images/technologies/Follows best application-webp.webp",
+        width: 250,
+        height: 250,
         title: "Awesome user experience",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -17047,18 +17040,24 @@ const LaravelFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard$5, {
         alt: "Laravel",
         img: "/Images/technologies/Laravel documentation-webp.webp",
+        width: 250,
+        height: 250,
         title: "All-in-one approach ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
       }), /* @__PURE__ */ jsx(FeatureCard$5, {
         alt: "SEO-friendly-code",
         img: "/Images/technologies/SEO-friendly-code-webp.webp",
+        width: 73,
+        height: 49,
         title: "Verstaile use",
         desc: `You can build web apps, mobile web apps, native mobile 
             apps and even desktop software`
       }), /* @__PURE__ */ jsx(FeatureCard$5, {
         alt: "PHP Developers’ choice",
         img: "/Images/technologies/PHP Developers’ choice-webp.webp",
+        width: 250,
+        height: 250,
         title: "Best practice",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to 
@@ -17066,6 +17065,8 @@ const LaravelFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard$5, {
         alt: "Focus-on-business",
         img: "/Images/technologies/Focus-on-busines-webp.webp",
+        width: 69,
+        height: 67,
         title: "Focus on business",
         desc: `It's used, developed and trusted by the biggest and most innovative 
             companies in the business`
@@ -17459,7 +17460,8 @@ const GreenCard$5 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx("h3", {
@@ -17511,29 +17513,41 @@ const WhyLaravel = () => {
         },
         children: [/* @__PURE__ */ jsx(GreenCard$5, {
           img: "/Images/technologies/High-seniority-level-and-technical-skills-webp.webp",
+          width: 65,
+          height: 72,
           title: "High seniority level and technical skils development",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard$5, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "Ability to scale a team in days",
           desc: `At times, great efort ends in failure, or conversely, ordinary 
                 efort leads to succes. We recognize and reward efort and resist 
                 the temptation to judge you based on outcomes.`
         }), /* @__PURE__ */ jsx(GreenCard$5, {
           img: "/Images/technologies/API-first-approach-webp.webp",
+          width: 75,
+          height: 56,
           title: "API-first approach",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard$5, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "SEO-friendly code",
           desc: `Search engines will love your app. We'll make your Javascript 
                 indexable and visible for Google`
         }), /* @__PURE__ */ jsx(GreenCard$5, {
           img: "/Images/technologies/Newest-trends-in-practice-webp.webp",
+          width: 58,
+          height: 54,
           title: "Newest trends in practice",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard$5, {
           img: "/Images/technologies/Battle-tested-process-webp.webp",
+          width: 55,
+          height: 64,
           title: "Battle-tested process",
           desc: `BSo you can easily adapt to change and stay on the track at the 
                 same time`
@@ -17543,54 +17557,12 @@ const WhyLaravel = () => {
   });
 };
 const Laravel = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "laravel.development",
-          defaultMessage: "Laravel Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.softwares.offers",
-          defaultMessage: "Astute Softwares offers expert Laravel development services solutions for web application development, e-commerce solutions, and more."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Laravel development services, Custom Laravel solutions, PHP Laravel developer, Laravel web application, Laravel enterprise solutions"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/laravel"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "laravel.development",
-          defaultMessage: "Laravel Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.softwares.offers",
-          defaultMessage: "Astute Softwares offers expert Laravel development services solutions for web application development, e-commerce solutions, and more."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/laravel"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$h, {}), /* @__PURE__ */ jsx(ModernDevelopment$5, {}), /* @__PURE__ */ jsx(LaravelFeatures, {}), /* @__PURE__ */ jsx(Advantages$5, {}), /* @__PURE__ */ jsx(WhyLaravel, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$g = () => {
@@ -17616,7 +17588,8 @@ const LandingSection$g = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 1797,
+          height: 1209,
           className: "w-full md:w-4/5 lg:w-full",
           alt: "react-logo",
           src: "/Images/technologies/React-logo-webp.webp"
@@ -17652,7 +17625,8 @@ const ModernDevelopment$4 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           alt: "modern-js-development",
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -17667,7 +17641,8 @@ const FeatureCard$4 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -17693,11 +17668,15 @@ const ReactFeatures = () => {
       children: [/* @__PURE__ */ jsx(FeatureCard$4, {
         alt: "supportive",
         img: "/Images/technologies/A supportive -webp.webp",
+        width: 250,
+        height: 250,
         title: "Supportive",
         desc: "React provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx(FeatureCard$4, {
         alt: "Higher quality, cheaper",
         img: "/Images/technologies/Higher quality, cheapeR-webp.webp",
+        width: 250,
+        height: 250,
         title: "Higher quality",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -17705,18 +17684,24 @@ const ReactFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard$4, {
         alt: "Micro frontends",
         img: "/Images/technologies/Micro frontends-webp.webp",
+        width: 250,
+        height: 250,
         title: "Micro front-ends ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
       }), /* @__PURE__ */ jsx(FeatureCard$4, {
         alt: "Performance",
         img: "/Images/technologies/Performance-webp.webp",
+        width: 250,
+        height: 250,
         title: "Higher performance",
         desc: `You can build web apps, mobile web apps, native mobile 
             apps and even desktop software`
       }), /* @__PURE__ */ jsx(FeatureCard$4, {
         alt: "Reusable components",
         img: "/Images/technologies/Reusable components-webp.webp",
+        width: 250,
+        height: 250,
         title: "Reusable components",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to 
@@ -17724,6 +17709,8 @@ const ReactFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard$4, {
         alt: "SEO-optimized",
         img: "/Images/technologies/SEO-optimized-webp.webp",
+        width: 250,
+        height: 250,
         title: "SEO optimized",
         desc: `It's used, developed and trusted by the biggest and most innovative 
             companies in the business`
@@ -18117,7 +18104,8 @@ const GreenCard$4 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         alt: "card-img",
         src: props.img
       }), /* @__PURE__ */ jsx("h3", {
@@ -18168,29 +18156,41 @@ const WhyReact = () => {
         },
         children: [/* @__PURE__ */ jsx(GreenCard$4, {
           img: "/Images/technologies/High-seniority-level-and-technical-skills-webp.webp",
+          width: 65,
+          height: 72,
           title: "High seniority level and technical skils development",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard$4, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "Ability to scale a team in days",
           desc: `At times, great efort ends in failure, or conversely, ordinary 
                 efort leads to succes. We recognize and reward efort and resist 
                 the temptation to judge you based on outcomes.`
         }), /* @__PURE__ */ jsx(GreenCard$4, {
           img: "/Images/technologies/API-first-approach-webp.webp",
+          width: 75,
+          height: 56,
           title: "API-first approach",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard$4, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "SEO-friendly code",
           desc: `Search engines will love your app. We'll make your Javascript 
                 indexable and visible for Google`
         }), /* @__PURE__ */ jsx(GreenCard$4, {
           img: "/Images/technologies/Newest-trends-in-practice-webp.webp",
+          width: 58,
+          height: 54,
           title: "Newest trends in practice",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard$4, {
           img: "/Images/technologies/Battle-tested-process-webp.webp",
+          width: 55,
+          height: 64,
           title: "Batle-tested proces",
           desc: `BSo you can easily adapt to change and stay on the track at the 
                 same time`
@@ -18200,54 +18200,12 @@ const WhyReact = () => {
   });
 };
 const ReactTechnology = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "react.development.services",
-          defaultMessage: "React Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.softwares.offers.react",
-          defaultMessage: "Astute Softwares offers expert React development services for creating immersive and interactive UIs that deliver great UX to consumers."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "React development services, React JS development, Hire React developers, React web application, React native for mobile"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/react"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "react.development.services",
-          defaultMessage: "React Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.softwares.offers.react",
-          defaultMessage: "Astute Softwares offers expert React development services for creating immersive and interactive UIs that deliver great UX to consumers."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/react"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$g, {}), /* @__PURE__ */ jsx(ModernDevelopment$4, {}), /* @__PURE__ */ jsx(ReactFeatures, {}), /* @__PURE__ */ jsx(Advantages$4, {}), /* @__PURE__ */ jsx(WhyReact, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$f = () => {
@@ -18273,7 +18231,8 @@ const LandingSection$f = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 1797,
+          height: 1209,
           className: "w-full md:w-4/5 lg:w-full",
           alt: "Node-logo",
           src: "/Images/technologies/Node-logo-webp.webp"
@@ -18309,7 +18268,8 @@ const ModernDevelopment$3 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           alt: "modern-js-development",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -18324,7 +18284,8 @@ const FeatureCard$3 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -18350,11 +18311,15 @@ const NodeFeatures = () => {
       children: [/* @__PURE__ */ jsx(FeatureCard$3, {
         alt: "1st choice for scalable apps",
         img: "/Images/technologies/1st choice for scalable apps-webp.webp",
+        width: 250,
+        height: 250,
         title: "Supportive",
         desc: "Node provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx(FeatureCard$3, {
         alt: "Community-made",
         img: "/Images/technologies/Community-made -webp.webp",
+        width: 250,
+        height: 250,
         title: "Higher quality",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -18362,18 +18327,24 @@ const NodeFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard$3, {
         alt: "Designed to empower",
         img: "/Images/technologies/Designed to empower-webp.webp",
+        width: 250,
+        height: 250,
         title: "Micro front-ends ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
       }), /* @__PURE__ */ jsx(FeatureCard$3, {
         alt: "Microservice-ready",
         img: "/Images/technologies/Microservice-ready a-webp.webp",
+        width: 250,
+        height: 250,
         title: "Higher performance",
         desc: `You can build web apps, mobile web apps, native mobile 
             apps and even desktop software`
       }), /* @__PURE__ */ jsx(FeatureCard$3, {
         alt: "Ready for full-stack",
         img: "/Images/technologies/Ready for full-stack-webp.webp",
+        width: 250,
+        height: 250,
         title: "Reusable components",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to 
@@ -18381,6 +18352,8 @@ const NodeFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard$3, {
         alt: "Real-time data flow",
         img: "/Images/technologies/Real-time data flow-webp.webp",
+        width: 250,
+        height: 250,
         title: "SEO optimized",
         desc: `It's used, developed and trusted by the biggest and most innovative 
             companies in the business`
@@ -18774,7 +18747,8 @@ const GreenCard$3 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx("h3", {
@@ -18825,29 +18799,41 @@ const WhyNode = () => {
         },
         children: [/* @__PURE__ */ jsx(GreenCard$3, {
           img: "/Images/technologies/High-seniority-level-and-technical-skills-webp.webp",
+          width: 65,
+          height: 72,
           title: "High seniority level and technical skils development",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard$3, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "Ability to scale a team in days",
           desc: `At times, great efort ends in failure, or conversely, ordinary 
                 efort leads to succes. We recognize and reward efort and resist 
                 the temptation to judge you based on outcomes.`
         }), /* @__PURE__ */ jsx(GreenCard$3, {
           img: "/Images/technologies/API-first-approach-webp.webp",
+          width: 75,
+          height: 56,
           title: "API-first approach",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard$3, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "SEO-friendly code",
           desc: `Search engines will love your app. We'll make your Javascript 
                 indexable and visible for Google`
         }), /* @__PURE__ */ jsx(GreenCard$3, {
           img: "/Images/technologies/Newest-trends-in-practice-webp.webp",
+          width: 58,
+          height: 54,
           title: "Newest trends in practice",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard$3, {
           img: "/Images/technologies/Battle-tested-process-webp.webp",
+          width: 55,
+          height: 64,
           title: "Batle-tested proces",
           desc: `BSo you can easily adapt to change and stay on the track at the 
                 same time`
@@ -18857,54 +18843,12 @@ const WhyNode = () => {
   });
 };
 const Node = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "node.js.development",
-          defaultMessage: "NodeJS Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "asute.softwares.node.js",
-          defaultMessage: "Astute Softwares offers expert NodeJS development services for building efficient web applications. Contact us today to learn how we can help bring your project to life."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Node.js development services, Node.js backend development, Hire Node.js developers, Scalable Node.js applications, Node.js API development"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/nodejs"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "node.js.development",
-          defaultMessage: "NodeJS Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "asute.softwares.node.js",
-          defaultMessage: "Astute Softwares offers expert NodeJS development services for building efficient web applications. Contact us today to learn how we can help bring your project to life."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/nodejs"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$f, {}), /* @__PURE__ */ jsx(ModernDevelopment$3, {}), /* @__PURE__ */ jsx(NodeFeatures, {}), /* @__PURE__ */ jsx(Advantages$3, {}), /* @__PURE__ */ jsx(WhyNode, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$e = () => {
@@ -18930,7 +18874,8 @@ const LandingSection$e = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 1797,
+          height: 1209,
           alt: "react-logo",
           className: "w-full md:w-4/5 lg:w-full",
           src: "/Images/technologies/React-logo-webp.webp"
@@ -18966,7 +18911,8 @@ const ModernDevelopment$2 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           alt: "modern-js-development",
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -18981,7 +18927,8 @@ const FeatureCard$2 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -19007,11 +18954,15 @@ const VueJsFeatures = () => {
       children: [/* @__PURE__ */ jsx(FeatureCard$2, {
         alt: "1st choice for scalable apps",
         img: "/Images/technologies/1st choice for scalable apps-webp.webp",
+        width: 250,
+        height: 250,
         title: "Supportive",
         desc: "VueJs provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx(FeatureCard$2, {
         alt: "Community-made",
         img: "/Images/technologies/Community-made -webp.webp",
+        width: 250,
+        height: 250,
         title: "Higher quality",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -19019,18 +18970,24 @@ const VueJsFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard$2, {
         alt: "Designed to empower",
         img: "/Images/technologies/Designed to empower-webp.webp",
+        width: 250,
+        height: 250,
         title: "Micro front-ends ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
       }), /* @__PURE__ */ jsx(FeatureCard$2, {
         alt: "Microservice-ready",
         img: "/Images/technologies/Microservice-ready a-webp.webp",
+        width: 250,
+        height: 250,
         title: "Higher performance",
         desc: `You can build web apps, mobile web apps, native mobile 
             apps and even desktop software`
       }), /* @__PURE__ */ jsx(FeatureCard$2, {
         alt: "Ready for full-stack",
         img: "/Images/technologies/Ready for full-stack-webp.webp",
+        width: 250,
+        height: 250,
         title: "Reusable components",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to 
@@ -19038,6 +18995,8 @@ const VueJsFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard$2, {
         alt: "Real-time data flow",
         img: "/Images/technologies/Real-time data flow-webp.webp",
+        width: 250,
+        height: 250,
         title: "SEO optimized",
         desc: `It's used, developed and trusted by the biggest and most innovative 
             companies in the business`
@@ -19514,54 +19473,12 @@ const WhyVueJs = () => {
   });
 };
 const VueJs = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "vue.js.development",
-          defaultMessage: "Kotlin Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "asute.softwares.vue.js",
-          defaultMessage: "Astute Softwares offers expert Kotlin developers that can build your next project with efficiency and reliability. Contact us today to get started."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Vue.js development services, Vue frontend development, Hire Vue.js developers, Vue SPA development, Vue application development"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/vue"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "vue.js.development",
-          defaultMessage: "Kotlin Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "asute.softwares.vue.js",
-          defaultMessage: "Astute Softwares offers expert Kotlin developers that can build your next project with efficiency and reliability. Contact us today to get started."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/vue"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$e, {}), /* @__PURE__ */ jsx(ModernDevelopment$2, {}), /* @__PURE__ */ jsx(VueJsFeatures, {}), /* @__PURE__ */ jsx(Advantages$2, {}), /* @__PURE__ */ jsx(WhyVueJs, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$d = () => {
@@ -19587,7 +19504,8 @@ const LandingSection$d = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 1797,
+          height: 1209,
           alt: "react-logo",
           className: "w-full md:w-4/5 lg:w-full",
           src: "/Images/technologies/react-logo-webp.webp"
@@ -19623,7 +19541,8 @@ const ModernDevelopment$1 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           alt: "modern-js-development",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -19638,7 +19557,8 @@ const FeatureCard$1 = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -19668,6 +19588,8 @@ const KotlineFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard$1, {
         alt: "best-application",
         img: "/Images/technologies/Follows best application-webp.webp",
+        width: 250,
+        height: 250,
         title: "Awesome user experience",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -20170,54 +20092,12 @@ const WhyKotline = () => {
   });
 };
 const Kotline = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "kotlin.development",
-          defaultMessage: "Kotlin Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "asute.softwares.kotlin",
-          defaultMessage: "Astute Softwares offers expert Kotlin developers that can build your next project with efficiency and reliability. Contact us today to get started."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Kotlin development services, Kotlin app development, Hire Kotlin developers, Kotlin for Android, Kotlin mobile solutions"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/kotlin"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "kotlin.development",
-          defaultMessage: "Kotlin Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "asute.softwares.kotlin",
-          defaultMessage: "Astute Softwares offers expert Kotlin developers that can build your next project with efficiency and reliability. Contact us today to get started."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/kotlin"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$d, {}), /* @__PURE__ */ jsx(ModernDevelopment$1, {}), /* @__PURE__ */ jsx(KotlineFeatures, {}), /* @__PURE__ */ jsx(Advantages$1, {}), /* @__PURE__ */ jsx(WhyKotline, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$c = () => {
@@ -20243,7 +20123,8 @@ const LandingSection$c = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " bg-cover px-5  flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 1797,
+          height: 1209,
           alt: "react-logo",
           className: "w-full md:w-4/5 lg:w-full",
           src: "/Images/technologies/react-logo-webp.webp"
@@ -20279,7 +20160,8 @@ const ModernDevelopment = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " order-2 lg:order-1 bg-cover px-5 py-10 flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 892,
+          height: 1008,
           className: "w-4/5 md:w-3/6 lg:w-4/5",
           alt: "modern-js-development",
           src: "/Images/technologies/modern-js-development-webp.webp"
@@ -20294,7 +20176,8 @@ const FeatureCard = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row  items-center",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         className: "w-16 lg:w-24",
         src: props.img,
         alt: props.alt
@@ -20319,11 +20202,15 @@ const DjangoFeatures = () => {
       children: [/* @__PURE__ */ jsx(FeatureCard, {
         alt: "benefits-from-laravel",
         img: "/Images/technologies/Benefits from Laravel's powerfu-webp.webp",
+        width: 250,
+        height: 250,
         title: "Rapid development",
         desc: "Django provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx(FeatureCard, {
         alt: "follows-best-application",
         img: "/Images/technologies/Follows best application-webp.webp",
+        width: 250,
+        height: 250,
         title: "Awesome user experience",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to
@@ -20331,18 +20218,24 @@ const DjangoFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard, {
         alt: "laravel-documentation",
         img: "/Images/technologies/Laravel documentation-webp.webp",
+        width: 250,
+        height: 250,
         title: "All-in-one approach ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
       }), /* @__PURE__ */ jsx(FeatureCard, {
         alt: "SEO-friendly-code",
         img: "/Images/technologies/SEO-friendly-code-webp.webp",
+        width: 73,
+        height: 49,
         title: "Verstaile use",
         desc: `You can build web apps, mobile web apps, native mobile 
             apps and even desktop software`
       }), /* @__PURE__ */ jsx(FeatureCard, {
         alt: "/PHP-developers-choice",
         img: "/Images/technologies/PHP Developers’ choice-webp.webp",
+        width: 250,
+        height: 250,
         title: "Best practice",
         desc: `At times, great efort ends in failure, or conversely, ordinary efort 
             leads to succes. We recognize and reward efort and resist the temptation to 
@@ -20350,6 +20243,8 @@ const DjangoFeatures = () => {
       }), /* @__PURE__ */ jsx(FeatureCard, {
         alt: "focus-on-busines",
         img: "/Images/technologies/Focus-on-busines-webp.webp",
+        width: 69,
+        height: 67,
         title: "Focus on business",
         desc: `It's used, developed and trusted by the biggest and most innovative 
             companies in the business`
@@ -20741,7 +20636,8 @@ const GreenCard = (props) => {
     children: [/* @__PURE__ */ jsxs("div", {
       className: "flex flex-col lg:flex-row items-center space-y-3",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         alt: "card img",
         src: props.img
       }), /* @__PURE__ */ jsx("h3", {
@@ -20792,29 +20688,41 @@ const WhyDjango = () => {
         },
         children: [/* @__PURE__ */ jsx(GreenCard, {
           img: "/Images/technologies/High-seniority-level-and-technical-skills-webp.webp",
+          width: 65,
+          height: 72,
           title: "High seniority level and technical skils development",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "Ability to scale a team in days",
           desc: `At times, great efort ends in failure, or conversely, ordinary 
                 efort leads to succes. We recognize and reward efort and resist 
                 the temptation to judge you based on outcomes.`
         }), /* @__PURE__ */ jsx(GreenCard, {
           img: "/Images/technologies/API-first-approach-webp.webp",
+          width: 75,
+          height: 56,
           title: "API-first approach",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard, {
           img: "/Images/technologies/Ability-to-scale-a-team-in-days-webp.webp",
+          width: 67,
+          height: 51,
           title: "SEO-friendly code",
           desc: `Search engines will love your app. We'll make your Javascript 
                 indexable and visible for Google`
         }), /* @__PURE__ */ jsx(GreenCard, {
           img: "/Images/technologies/Newest-trends-in-practice-webp.webp",
+          width: 58,
+          height: 54,
           title: "Newest trends in practice",
           desc: "Build your technology as sets from the very beginning"
         }), /* @__PURE__ */ jsx(WhiteCard, {
           img: "/Images/technologies/Battle-tested-process-webp.webp",
+          width: 55,
+          height: 64,
           title: "Batle-tested proces",
           desc: `BSo you can easily adapt to change and stay on the track at the 
                 same time`
@@ -20824,54 +20732,12 @@ const WhyDjango = () => {
   });
 };
 const Django = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "django.development",
-          defaultMessage: "Django Development Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "django.development.services",
-          defaultMessage: "Astute Softwares offers expert Django development services that can build your next web application efficiently. Contact us today to get started."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Django development services, Python Django web development, Django application development, Hire Django developers, Custom Django solutions"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com//technologies/django"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "django.development",
-          defaultMessage: "Django Development Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "django.development.services",
-          defaultMessage: "Astute Softwares offers expert Django development services that can build your next web application efficiently. Contact us today to get started."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com//technologies/django"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$c, {}), /* @__PURE__ */ jsx(ModernDevelopment, {}), /* @__PURE__ */ jsx(DjangoFeatures, {}), /* @__PURE__ */ jsx(Advantages, {}), /* @__PURE__ */ jsx(WhyDjango, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })]
+    })
   });
 };
 const LandingSection$b = ({
@@ -20944,6 +20810,8 @@ const SecondSection$5 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx("img", {
+          width: 453,
+          height: 370,
           loading: "lazy",
           alt: "software development",
           className: "w-4/5",
@@ -20979,6 +20847,8 @@ const Services$d = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -20988,6 +20858,8 @@ const Services$d = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -20997,6 +20869,8 @@ const Services$d = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -21006,6 +20880,8 @@ const Services$d = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -21024,6 +20900,8 @@ const Services$d = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -21033,6 +20911,8 @@ const Services$d = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -21042,6 +20922,8 @@ const Services$d = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -21051,6 +20933,8 @@ const Services$d = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
+                  width: 37,
+                  height: 37,
                   loading: "lazy",
                   alt: "bullet-point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
@@ -21079,7 +20963,6 @@ const EngagementModelCard$1 = ({
         children: /* @__PURE__ */ jsxs("div", {
           className: "container text-center items-center ",
           children: [/* @__PURE__ */ jsx("img", {
-            loading: "lazy",
             className: "inline-block my-3 ",
             src: img,
             alt: getImageALt(img),
@@ -21165,7 +21048,8 @@ const SecretSauceCard$1 = (props) => {
           return /* @__PURE__ */ jsxs("li", {
             className: "contentListItem",
             children: [/* @__PURE__ */ jsx("img", {
-              loading: "lazy",
+              height: props.height,
+              width: props.width,
               alt: "bullet-point",
               src: "/Images/serviceDetails/bullet-point-webp.webp"
             }), /* @__PURE__ */ jsx("p", {
@@ -21197,6 +21081,8 @@ const SecretSauce$1 = () => {
       children: [/* @__PURE__ */ jsx(SecretSauceCard$1, {
         title: "Skill",
         image: "/Images/serviceDetails/skill-webp.webp",
+        width: 250,
+        height: 250,
         list: [`We recruit and retain exceptional engineering talent and 
                     keep training them. 80% of our developers and over 
                     50% or QA staff hold MS degree in Computer Science or 
@@ -21213,6 +21099,8 @@ const SecretSauce$1 = () => {
       }), /* @__PURE__ */ jsx(SecretSauceCard$1, {
         title: "Speed",
         image: "/Images/serviceDetails/speed-webp.webp",
+        width: 250,
+        height: 250,
         list: [`We assemble a dedicated team ready to engage faster than 
                     hiring locally. We are able to quickly scale up or downsize 
                     according to client’s needs`, `Ingrained Agile Development Methodology.`, `Astute Softwares has been actively using Agile Methodology since 2007. 
@@ -21222,6 +21110,8 @@ const SecretSauce$1 = () => {
       }), /* @__PURE__ */ jsx(SecretSauceCard$1, {
         title: "Security",
         image: "/Images/serviceDetails/security-webp.webp",
+        width: 250,
+        height: 250,
         list: [`Thorough protection of client’s IP`, `Astute Softwares has worked on various enterprise-class applications that 
                     require strict security protocols. Security is assured at 
                     several levels, including authentication and authorization 
@@ -21748,54 +21638,12 @@ const FifthSection$1 = () => {
 const WebDevService = () => {
   const [refOffset, setRefOffset] = useState();
   const ref = useRef(null);
-  const intl = useIntl();
+  useIntl();
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "ideal.company.for",
-          defaultMessage: "The ideal company for top-notch websites and web application development."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "we.offer.web.design",
-          defaultMessage: "We offer web design, framework coding, and backend development for reliable, scalable and maintainable software. Start-ups, established businesses and marketers all need web development services. We specialize in building custom websites and mobile apps."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Custom web development, Professional website creation, E-commerce development services, Responsive web design, Full-stack web developers"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/custom-software-development"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "ideal.company.for",
-          defaultMessage: "The ideal company for top-notch websites and web application development."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "we.offer.web.design",
-          defaultMessage: "We offer web design, framework coding, and backend development for reliable, scalable and maintainable software. Start-ups, established businesses and marketers all need web development services. We specialize in building custom websites and mobile apps."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/custom-software-development"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow ",
@@ -21806,7 +21654,7 @@ const WebDevService = () => {
           children: /* @__PURE__ */ jsx(SecondSection$5, {})
         }), /* @__PURE__ */ jsx(Services$d, {}), /* @__PURE__ */ jsx(EngagementModels, {}), /* @__PURE__ */ jsx(SecretSauce$1, {}), /* @__PURE__ */ jsx(FourthSection$3, {}), /* @__PURE__ */ jsx(FifthSection$1, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$a = ({
@@ -21873,6 +21721,8 @@ const SecondSection$4 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx("img", {
+          width: 453,
+          height: 370,
           loading: "lazy",
           className: "w-4/5",
           alt: "qa_second",
@@ -22087,54 +21937,12 @@ const Services$c = () => {
 const QAService = () => {
   const [refOffset, setRefOffset] = useState();
   const ref = useRef(null);
-  const intl = useIntl();
+  useIntl();
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "astute.software.quality",
-          defaultMessage: "Astute Softwares, Software Quality Assurance"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.offer.has.perfected",
-          defaultMessage: "Astute Softwares has perfected QA and Testing strategy and methodology that blend seamlessly into the development lifecycle without crossing the important boundaries,"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Quality assurance services, Software testing experts, Application testing services, Automated testing solutions, QA and testing consultancy"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/software-quality-assurance"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "astute.software.quality",
-          defaultMessage: "Astute Softwares, Software Quality Assurance"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.offer.has.perfected",
-          defaultMessage: "Astute Softwares has perfected QA and Testing strategy and methodology that blend seamlessly into the development lifecycle without crossing the important boundaries,"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/software-quality-assurance"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -22145,7 +21953,7 @@ const QAService = () => {
           children: /* @__PURE__ */ jsx(SecondSection$4, {})
         }), /* @__PURE__ */ jsx(MutualSuccess, {}), /* @__PURE__ */ jsx(Services$c, {}), /* @__PURE__ */ jsx(QATypes$3, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$9 = ({
@@ -22215,7 +22023,8 @@ const SecondSection$3 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 567,
+          height: 463,
           alt: "Digital Transformation",
           className: "w-4/5",
           src: "/Images/serviceDetails/Digital Transformation-webp.webp"
@@ -22233,7 +22042,8 @@ const SecretSauceCard = (props) => {
         className: "text-blue-primary text-center text-xl md:text-2xl lg:text-xl font-bold mb-5",
         children: props.title
       }), /* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        height: props.height,
+        width: props.width,
         alt: getImageALt(props.image),
         className: "w-3/5",
         src: props.image
@@ -22272,21 +22082,29 @@ const SecretSauce = () => {
       children: [/* @__PURE__ */ jsx(SecretSauceCard, {
         title: "Improve Business\r Agility",
         image: "/Images/serviceDetails/Improve_Business-webp.webp",
+        width: 250,
+        height: 250,
         blueText: "Optimize business performance, reap the benefits of digital economy and speed up\r innovation by moving to the Cloud and implementing DevOps. Unlock better\r business and consumer insights with Advanced Analytics and Reporting.",
         grayText: "We work with you to make your technology backbone and business more agile, scalable, and\r efficient in addressing fast-changing business demands."
       }), /* @__PURE__ */ jsx(SecretSauceCard, {
         title: "Transform Digital\r Experiences",
         image: "/Images/serviceDetails/Transform_Digital-webp.webp",
+        width: 250,
+        height: 250,
         blueText: "Delight your customers with hyper-personalized experiences and run successful\r customized omni-channel campaigns by utilizing latest technology advances like\r Machine Learning and AI, 360-degree consumer journey analytics, VR, and IoT.",
         grayText: "We help clients build and launch real-time consumer insights platforms to capture critical\r information, develop and deploy AI-driven recommendation and customization engines, predict\r consumer behavior, identify high-value customer segments, and drive product and services\r strategy that is highly relevant to company’s clients."
       }), /* @__PURE__ */ jsx(SecretSauceCard, {
         title: "Increase Operational\r Efficiency",
         image: "/Images/serviceDetails/Increase_Operational-webp.webp",
+        width: 250,
+        height: 250,
         blueText: "Streamline business processes and workflows to improve business operations and\r profitability without compromising on product quality, security and customer\r experiences.",
         grayText: "We help clients to reduce total cost of ownership by moving to the cloud, translate internal data\r into meaningful business insights, implement process automation, and increase the speed and\r quality of the releases by implementing DevOps."
       }), /* @__PURE__ */ jsx(SecretSauceCard, {
         title: "Monetize Your Data",
         image: "/Images/serviceDetails/Monetize_Your_Data-webp.webp",
+        width: 250,
+        height: 250,
         blueText: "Leverage your data to transform operations and business planning, develop new\r markets, increase revenue and create enhanced consumer experiences.",
         grayText: "From ETL and Data Integration to Cloud Data Warehousing and Business Intelligence platforms\r we have the skills and expertise in helping clients monetize their data to deliver value to clients,\r customize offerings, optimize internal operations, and unlock new revenue streams."
       })]
@@ -22330,7 +22148,8 @@ const Services$b = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -22339,7 +22158,8 @@ const Services$b = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -22348,7 +22168,8 @@ const Services$b = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -22357,7 +22178,8 @@ const Services$b = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -22375,7 +22197,8 @@ const Services$b = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -22384,7 +22207,8 @@ const Services$b = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -22393,7 +22217,8 @@ const Services$b = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -22482,7 +22307,8 @@ const ModernCoreApplication = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 2002,
+          height: 2002,
           alt: "Core-Application",
           className: "Core_Application",
           src: "/Images/serviceDetails/Core_Application-webp.webp"
@@ -22494,14 +22320,17 @@ const ModernCoreApplication = () => {
 const MonetizeDataCard = ({
   title,
   img,
-  desc
+  desc,
+  height,
+  width
 }) => {
   return /* @__PURE__ */ jsxs("div", {
     className: "flex py-5 ",
     children: [/* @__PURE__ */ jsx("div", {
       className: "w-1/4 mx-3",
       children: /* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        height,
+        width,
         alt: getImageALt(img),
         className: "bg-gray-light rounded-full",
         src: img
@@ -22553,15 +22382,21 @@ const MonetizeData = () => {
         children: [/* @__PURE__ */ jsx(MonetizeDataCard, {
           title: "ENABLE DATA COLLECTION",
           desc: "Big Data Warehousing. Data Extraction, Conversion and Normalization.\r Make your data feeds clean, clear and actionable",
-          img: "/Images/serviceDetails/DATA_COLLECTION-webp.webp"
+          img: "/Images/serviceDetails/DATA_COLLECTION-webp.webp",
+          width: 250,
+          height: 250
         }), /* @__PURE__ */ jsx(MonetizeDataCard, {
           title: "VISUALIZE DATA TO UNLOCK INSIGHTS",
           desc: "Convert Disorganized consumer, business and operations data \r into Actionable Insights and Comprehensive reports",
-          img: "/Images/serviceDetails/VISUALIZE-DATA-webp.webp"
+          img: "/Images/serviceDetails/VISUALIZE-DATA-webp.webp",
+          width: 250,
+          height: 250
         }), /* @__PURE__ */ jsx(MonetizeDataCard, {
           title: "DATA-DRIVEN BEHAVIOR & ANALYTICS",
           desc: "Forecasting, Predictive Analytics, Real-time Personalization",
-          img: "/Images/serviceDetails/DATA-DRIVEN-BEHAVIOR-webp.webp"
+          img: "/Images/serviceDetails/DATA-DRIVEN-BEHAVIOR-webp.webp",
+          width: 250,
+          height: 250
         })]
       })]
     })]
@@ -23032,54 +22867,12 @@ const FifthSection = () => {
 const DTService = () => {
   const [refOffset, setRefOffset] = useState();
   const ref = useRef(null);
-  const intl = useIntl();
+  useIntl();
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "astute.software.digital.transformation",
-          defaultMessage: "Astute Softwares, Digital Transformation Services"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.offer.the.most",
-          defaultMessage: "Astute Softwares offers the most advanced digital transformation services. We provide an integrated and astute way of digitising internal processes and corporate tasks. We are also committed to making sure that you have all transparency about what is going on."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Digital transformation services, Business digitalization consulting, Digital strategy development, Tech innovation solutions, Digital enterprise transformation"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/digital-transformation-services"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "astute.software.digital.transformation",
-          defaultMessage: "Astute Softwares, Digital Transformation Services"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.offer.the.most",
-          defaultMessage: "Astute Softwares offers the most advanced digital transformation services. We provide an integrated and astute way of digitising internal processes and corporate tasks. We are also committed to making sure that you have all transparency about what is going on."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/digital-transformation-services"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -23090,7 +22883,7 @@ const DTService = () => {
           children: /* @__PURE__ */ jsx(SecondSection$3, {})
         }), /* @__PURE__ */ jsx(SecretSauce, {}), /* @__PURE__ */ jsx(DigitalTransformationDesc, {}), /* @__PURE__ */ jsx(ModernCoreApplication, {}), /* @__PURE__ */ jsx(Services$b, {}), /* @__PURE__ */ jsx(FourthSection$2, {}), /* @__PURE__ */ jsx(MonetizeData, {}), /* @__PURE__ */ jsx(FifthSection, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$8 = ({
@@ -23160,7 +22953,8 @@ const SecondSection$2 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 453,
+          height: 370,
           alt: "app_development",
           className: "w-4/5",
           src: "/Images/serviceDetails/app_development-webp.webp"
@@ -23331,54 +23125,12 @@ const Services$7 = () => {
 const MobileAppDev = () => {
   const [refOffset, setRefOffset] = useState();
   const ref = useRef(null);
-  const intl = useIntl();
+  useIntl();
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "astute.software.custom.mobile.app",
-          defaultMessage: "Astute Softwares, Custom Mobile Application Development"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.software.is.a",
-          defaultMessage: "Astute Softwares is a leading mobile application developer with a wide range of products and services. We have a team of skilled, qualified specialists in the field of iOS and Android development to help you create an app that suits your needs."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Mobile application development, iOS and Android app services, Cross-platform app solutions, Custom mobile app design, Mobile app project consultation"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/mobile-application-development"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "astute.software.custom.mobile.app",
-          defaultMessage: "Astute Softwares, Custom Mobile Application Development"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.software.is.a",
-          defaultMessage: "Astute Softwares is a leading mobile application developer with a wide range of products and services. We have a team of skilled, qualified specialists in the field of iOS and Android development to help you create an app that suits your needs."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/mobile-application-development"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -23389,7 +23141,7 @@ const MobileAppDev = () => {
           children: /* @__PURE__ */ jsx(SecondSection$2, {})
         }), /* @__PURE__ */ jsx(Services$a, {}), /* @__PURE__ */ jsx(Services$9, {}), /* @__PURE__ */ jsx(Services$8, {}), /* @__PURE__ */ jsx(Services$7, {}), /* @__PURE__ */ jsx(FourthSection$1, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$7 = ({
@@ -23489,8 +23241,9 @@ const Services$6 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
                   children: "Front-End Architecture and Design"
@@ -23498,8 +23251,9 @@ const Services$6 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
                   children: "Rapid Prototyping"
@@ -23507,8 +23261,9 @@ const Services$6 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
                   children: "Front-end assessment and optimization services"
@@ -23516,8 +23271,9 @@ const Services$6 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
                   children: "Front-end Migration"
@@ -23525,8 +23281,9 @@ const Services$6 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
                   children: "Front-end Quality assurance services"
@@ -23534,8 +23291,9 @@ const Services$6 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
                   children: "Maintenance and Support"
@@ -23650,7 +23408,6 @@ const SecondSection$1 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
           alt: "prototype",
           className: "w-4/5",
           src: "/Images/serviceDetails/prototype-webp.webp"
@@ -23681,8 +23438,9 @@ const Services$5 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
                   children: "UX/UI Audit and Analysis"
@@ -23690,8 +23448,9 @@ const Services$5 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
                   children: "User Interface Wireframing"
@@ -23699,8 +23458,9 @@ const Services$5 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
                   children: "Clickable Prototypes"
@@ -23708,8 +23468,9 @@ const Services$5 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
                   children: "User Journey mapping and design"
@@ -23717,8 +23478,9 @@ const Services$5 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
                   children: "Cross-Device User Experience"
@@ -23726,8 +23488,9 @@ const Services$5 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
-                  alt: "bullet-point",
+                  width: 37,
+                  height: 37,
+                  alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
                   children: "Maintenance and Support"
@@ -23754,7 +23517,6 @@ const LanguageCard = ({
     children: /* @__PURE__ */ jsxs("div", {
       className: "flex items-center my-2 md:my-0 lg:mx-10 flex-col",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
         alt: getImageALt(img),
         src: img
       }), /* @__PURE__ */ jsx("p", {
@@ -23827,54 +23589,12 @@ const FrontEndLanguages = () => {
 const UxDesign = () => {
   const [refOffset, setRefOffset] = useState();
   const ref = useRef(null);
-  const intl = useIntl();
+  useIntl();
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "ui.ux.design",
-          defaultMessage: "UI and UX Design - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "we.blend.a.variety",
-          defaultMessage: "We blend a variety of ui and ux design skills to produce elegant, functional and user-focused interfaces that gives users an immersive experience."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "User experience design services, Professional UI/UX design, Creative design solutions, Interactive app design, UX/UI consulting services"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/ui-and-ux-design"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "ui.ux.design",
-          defaultMessage: "UI and UX Design - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "we.blend.a.variety",
-          defaultMessage: "We blend a variety of ui and ux design skills to produce elegant, functional and user-focused interfaces that gives users an immersive experience."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/ui-and-ux-design"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -23885,7 +23605,7 @@ const UxDesign = () => {
           children: /* @__PURE__ */ jsx(PurposeNeeds, {})
         }), /* @__PURE__ */ jsx(Services$6, {}), /* @__PURE__ */ jsx(Services$5, {}), /* @__PURE__ */ jsx(QATypes$2, {}), /* @__PURE__ */ jsx(SecondSection$1, {}), /* @__PURE__ */ jsx(FourthSection, {}), /* @__PURE__ */ jsx(FrontEndLanguages, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$6 = ({
@@ -23952,7 +23672,8 @@ const SecondSection = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 567,
+          height: 463,
           className: "w-4/5",
           alt: "MAintenance team",
           src: "/Images/serviceDetails/MAintenance team-webp.webp"
@@ -24188,54 +23909,12 @@ const Services$4 = () => {
 const MaintenanceSupport = () => {
   const [refOffset, setRefOffset] = useState();
   const ref = useRef(null);
-  const intl = useIntl();
+  useIntl();
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "maintenance.and.support",
-          defaultMessage: "Maintenance and Support - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "outsourcing.your.application",
-          defaultMessage: "Outsourcing your application's support and maintenance frees up your team to focus on what really matters. Astute Softwares seamlessly becomes the binding glue keeping everything together."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "IT support and maintenance, Software maintenance services, Application support solutions, Ongoing IT assistance, Technical support services"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/maintenance-and-support"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "maintenance.and.support",
-          defaultMessage: "Maintenance and Support - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "outsourcing.your.application",
-          defaultMessage: "Outsourcing your application's support and maintenance frees up your team to focus on what really matters. Astute Softwares seamlessly becomes the binding glue keeping everything together."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/maintenance-and-support"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -24246,7 +23925,7 @@ const MaintenanceSupport = () => {
           children: /* @__PURE__ */ jsx(SecondSection, {})
         }), /* @__PURE__ */ jsx(Services$4, {}), /* @__PURE__ */ jsx(QATypes$1, {}), /* @__PURE__ */ jsx(QATypes, {}), /* @__PURE__ */ jsx(Monitoring, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$5 = () => {
@@ -24322,7 +24001,8 @@ const Services$3 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -24331,7 +24011,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -24340,7 +24021,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -24349,7 +24031,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -24358,7 +24041,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -24367,7 +24051,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -24376,7 +24061,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -24385,7 +24071,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -24394,7 +24081,8 @@ const Services$3 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -24478,7 +24166,8 @@ const FeaturesCard$1 = (props) => {
       children: [/* @__PURE__ */ jsx("div", {
         className: "flex flex-col justify-center items-center mb-5 rounded-xl shadow-lg h-4/5 p-8",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          height: props.height,
+          width: props.width,
           alt: props.img.split("/").pop(),
           className: "w-2/6 md:w-2/5 xl:w-3/5",
           src: props.img
@@ -24519,28 +24208,42 @@ const ThirdSection = () => {
         className: "grid grid-cols-1 md:grid-cols-2  xl:grid-cols-4 mt-20 w-5/6 2xl:w-3/5 gap-12 mx-auto ",
         children: [/* @__PURE__ */ jsx(FeaturesCard$1, {
           title: "Digital health",
-          img: "/Images/serviceDetails/DIGITAL-HEALTH-webp.webp"
+          img: "/Images/serviceDetails/DIGITAL-HEALTH-webp.webp",
+          width: 107,
+          height: 122
         }), /* @__PURE__ */ jsx(FeaturesCard$1, {
           title: "Financial services",
-          img: "/Images/serviceDetails/FINANCIALSERVICE-webp.webp"
+          img: "/Images/serviceDetails/FINANCIALSERVICE-webp.webp",
+          width: 172,
+          height: 129
         }), /* @__PURE__ */ jsx(FeaturesCard$1, {
           title: "Retail",
           img: "/Images/serviceDetails/RETAI-webp.webp"
         }), /* @__PURE__ */ jsx(FeaturesCard$1, {
           title: "Education",
-          img: "/Images/serviceDetails/Educatio-webp.webp"
+          img: "/Images/serviceDetails/Educatio-webp.webp",
+          width: 158,
+          height: 116
         }), /* @__PURE__ */ jsx(FeaturesCard$1, {
           title: "ADTECH & MARKETING",
-          img: "/Images/serviceDetails/ADTECH&MARKETING-webp.webp"
+          img: "/Images/serviceDetails/ADTECH&MARKETING-webp.webp",
+          width: 134,
+          height: 112
         }), /* @__PURE__ */ jsx(FeaturesCard$1, {
           title: "IOT",
-          img: "/Images/serviceDetails/IOT-webp.webp"
+          img: "/Images/serviceDetails/IOT-webp.webp",
+          width: 75,
+          height: 124
         }), /* @__PURE__ */ jsx(FeaturesCard$1, {
           title: "Publishing",
-          img: "/Images/serviceDetails/PUBLISHING-webp.webp"
+          img: "/Images/serviceDetails/PUBLISHING-webp.webp",
+          width: 148,
+          height: 117
         }), /* @__PURE__ */ jsx(FeaturesCard$1, {
           title: "Non-profit",
-          img: "/Images/serviceDetails/NON-PROFIT-webp.webp"
+          img: "/Images/serviceDetails/NON-PROFIT-webp.webp",
+          width: 130,
+          height: 117
         })]
       })]
     })
@@ -24576,57 +24279,15 @@ const KandaIndustries$1 = () => {
   });
 };
 const BigDataService = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "big.data.services",
-          defaultMessage: "Big Data Consulting Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "get.insights.from",
-          defaultMessage: "Get insights from your data with our expert big data consulting services. From data collection to analysis, Astute Softwares helps you make informed decisions."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Big data solutions, Data analytics services, Big data consulting, Data management solutions, Advanced analytics services"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/big-data-consulting-services"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "big.data.services",
-          defaultMessage: "Big Data Consulting Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "get.insights.from",
-          defaultMessage: "Get insights from your data with our expert big data consulting services. From data collection to analysis, Astute Softwares helps you make informed decisions."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/big-data-consulting-services"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx(LandingSection$5, {}), /* @__PURE__ */ jsx(Services$3, {}), /* @__PURE__ */ jsx(ThirdSection, {}), /* @__PURE__ */ jsx(KandaIndustries$1, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$4 = () => {
@@ -24678,7 +24339,8 @@ const BlockChainWebDevelopment = () => {
         children: [/* @__PURE__ */ jsx("div", {
           className: "order-2 lg:order-1",
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 818,
+            height: 672,
             className: "w-4/5 md:w-3/5 lg:w-full mx-auto",
             alt: "Decentralized-Web-Consulting",
             src: "/Images/serviceDetails/Decentralized-Web-Consulting-webp.webp"
@@ -24707,7 +24369,8 @@ const BlockChainWebDevelopment = () => {
         }), /* @__PURE__ */ jsx("div", {
           className: "order-2 flex items-start",
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 790,
+            height: 656,
             className: "w-4/5 md:w-3/5 lg:w-full mx-auto",
             alt: "Decentralized-Web-Consulting-img2",
             src: "/Images/serviceDetails/Decentralized-Web-Consulting-img2-webp.webp"
@@ -24750,7 +24413,8 @@ const Hiring$1 = () => {
             backgroundImage: "url(/Images/serviceDetails/Hire-Blockchain-Web-Developer-bg-webp.webp)"
           },
           children: [/* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 378,
+            height: 477,
             className: " absolute w-2/4 md:w-1/3 ",
             alt: "Blockchain-Web-Developer",
             src: "/Images/serviceDetails/Blockchain-Web-Developer-webp.webp"
@@ -24865,7 +24529,8 @@ const WorkingPrinciple = () => {
         children: [/* @__PURE__ */ jsx("div", {
           className: "",
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 1273,
+            height: 182,
             className: "w-4/5 mx-auto",
             alt: "Working-Principle-of-Decentralized-Web",
             src: "/Images/serviceDetails/Working-Principle-of-Decentralized-Web-webp.webp"
@@ -24899,6 +24564,8 @@ const ReasonCard = (props) => {
       children: [/* @__PURE__ */ jsxs("div", {
         className: "flex items-center mb-3 h-20",
         children: [/* @__PURE__ */ jsx("img", {
+          height: props.height,
+          width: props.width,
           loading: "lazy",
           alt: props.img.split("/").pop(),
           className: "w-2/12",
@@ -24938,18 +24605,26 @@ const WhyChooseUs = () => {
         children: [/* @__PURE__ */ jsx(ReasonCard, {
           title: "Peace of Mind",
           img: "/Images/serviceDetails/Experienced-Blockchain-Developers-webp.webp",
+          width: 210,
+          height: 247,
           desc: `It frees the business administrators from the blockchain infrastructure management headaches. For this, a sufficiently skilled third-party team of blockchain experts is available round-the-clock to look for any bugs and issues.`
         }), /* @__PURE__ */ jsx(ReasonCard, {
           title: "A pool of Experts",
           img: "/Images/serviceDetails/Experienced-Blockchain-Developers-webp.webp",
+          width: 210,
+          height: 247,
           desc: `By partnering-up with a fully competent and skilled Blockchain as a Service (BaaS) provider, you can access a vast pool of knowledge and experience under-one-roof. As a whole, you get professional assistance cost-effectively.`
         }), /* @__PURE__ */ jsx(ReasonCard, {
           title: "Offer Vast Scalability",
           img: "/Images/serviceDetails/Experienced-Blockchain-Developers-webp.webp",
+          width: 210,
+          height: 247,
           desc: `Blockchain is the backbone of future technology, no matter what size of business you want to integrate, it offers massive scalability to adjust with the changing business needs as your business grows.`
         }), /* @__PURE__ */ jsx(ReasonCard, {
           title: "Unmatched Security",
           img: "/Images/serviceDetails/Experienced-Blockchain-Developers-webp.webp",
+          width: 210,
+          height: 247,
           desc: `Blockchain works on a decentralised ledger technology, which makes it immutable, fully transparent, and easily traceable. Blockchain is unquestionably a highly secured platform, but to implement it securely, you need experts.                    `
         })]
       })]
@@ -24957,57 +24632,15 @@ const WhyChooseUs = () => {
   });
 };
 const BlockChainService = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "blockchain.solutions",
-          defaultMessage: "Blockchain Solutions - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "transform.your.business",
-          defaultMessage: "Transform your business with Astute Softwares's cutting-edge blockchain solutions and services that are secure, transparent, and efficient. Contact us to explore how we can help you."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Blockchain development services, Custom blockchain solutions, Blockchain technology consulting, Decentralized application development, Smart contract development"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/blockchain-solutions"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "blockchain.solutions",
-          defaultMessage: "Blockchain Solutions - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "transform.your.business",
-          defaultMessage: "Transform your business with Astute Softwares's cutting-edge blockchain solutions and services that are secure, transparent, and efficient. Contact us to explore how we can help you."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/blockchain-solutions"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col overflow-x-hidden ",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx(LandingSection$4, {}), /* @__PURE__ */ jsx(BlockChainWebDevelopment, {}), /* @__PURE__ */ jsx(Hiring$1, {}), /* @__PURE__ */ jsx(Features, {}), /* @__PURE__ */ jsx(WorkingPrinciple, {}), /* @__PURE__ */ jsx(WhyChooseUs, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$3 = () => {
@@ -25062,7 +24695,8 @@ const Services$2 = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "space-y-3 flex flex-col justify-center lg:h-72",
               children: [/* @__PURE__ */ jsx("img", {
-                loading: "lazy",
+                width: 158,
+                height: 124,
                 className: "w-2/12",
                 alt: "DevOps-Assessment",
                 src: "/Images/serviceDetails/DevOps-Assessment-webp.webp"
@@ -25082,7 +24716,8 @@ const Services$2 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25091,7 +24726,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25100,7 +24736,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25109,7 +24746,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25118,7 +24756,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25127,7 +24766,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25139,10 +24779,10 @@ const Services$2 = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "space-y-3 lg:pl-12 pb-10 lg:pb-0 flex flex-col justify-center lg:h-72",
               children: [/* @__PURE__ */ jsx("img", {
-                loading: "lazy",
-                alt: "DevOps-Automation",
-                className: "w-2/12",
-                src: "/Images/serviceDetails/DevOps-Automation-webp.webp"
+                width: 37,
+                height: 37,
+                alt: "bullet point",
+                src: "/Images/serviceDetails/bullet-point-webp.webp"
               }), /* @__PURE__ */ jsx("p", {
                 className: "text-blue-primary font-normal text-xl lg:text-2xl",
                 children: "Technology"
@@ -25158,7 +24798,8 @@ const Services$2 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25167,7 +24808,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25176,7 +24818,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25185,7 +24828,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25194,7 +24838,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25203,7 +24848,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25212,7 +24858,8 @@ const Services$2 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25233,7 +24880,8 @@ const ManagementCard = (props) => {
       children: [/* @__PURE__ */ jsxs("div", {
         className: "flex flex-col md:flex-row items-center mb-3 h-20",
         children: [/* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: props.width,
+          height: props.height,
           alt: "management-card",
           className: "w-2/12",
           src: props.img
@@ -25272,16 +24920,22 @@ const Management$1 = () => {
         children: [/* @__PURE__ */ jsx(ManagementCard, {
           title: "Continous Learning",
           img: "/Images/serviceDetails/Continuous-Learning-webp.webp",
+          width: 89,
+          height: 95,
           desc: `In the world of Cloud DevOps tools, platforms and best practices are complex and are rapidly evolving. Continuous learning keeps Astute teams up-to-the-minute on the latest technologies, tools, automation and development methodologies.
                    `
         }), /* @__PURE__ */ jsx(ManagementCard, {
           title: "Continous delivery & pipline management & optimization",
           img: "/Images/serviceDetails/CONTINUOUS-DELIVERY-PIPELINE-MANAGEMENT-&-OPTIMIZATION-webp.webp",
+          width: 131,
+          height: 88,
           desc: `We assist your core team in ensuring a full- fledged integrated functioning of the delivery pipeline automation cycle and in adapting your automated deployment cycle to changes.
                    `
         }), /* @__PURE__ */ jsx(ManagementCard, {
           title: "Continous Integration",
           img: "/Images/serviceDetails/CONTINUOUS-INTEGRATION-webp.webp",
+          width: 114,
+          height: 115,
           desc: `We take care of release management, continuous deployment, replica environment, new server setup, change management and performance optimization on an ongoing basis.
                    `
         })]
@@ -25307,7 +24961,8 @@ const BenefitsCircle = (props) => {
         children: /* @__PURE__ */ jsx("div", {
           className: `${innerBoxStyle}`,
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: props.width,
+            height: props.height,
             alt: props.innerImage.split("/").pop(),
             className: "w-2/5",
             src: props.innerImage
@@ -25340,30 +24995,40 @@ const KandaIndustries = () => {
           children: [/* @__PURE__ */ jsx(BenefitsCircle, {
             title: "Faster Time To Market",
             bgImage: "/Images/serviceDetails/devopBenifits/1-webp.webp",
+            width: 170,
+            height: 88,
             number: "odd",
             innerImage: "/Images/serviceDetails/devopBenifits/FASTER-TIME-webp.webp",
             marginLeft: "lg:-ml-1"
           }), /* @__PURE__ */ jsx(BenefitsCircle, {
             title: "Greater Business Agility",
             bgImage: "/Images/serviceDetails/devopBenifits/2-webp.webp",
+            width: 170,
+            height: 87,
             number: "even",
             innerImage: "/Images/serviceDetails/devopBenifits/GREATER-BUSINESS-webp.webp",
             marginLeft: "-ml-3"
           }), /* @__PURE__ */ jsx(BenefitsCircle, {
             title: "Enhanced Security",
             bgImage: "/Images/serviceDetails/devopBenifits/3-webp.webp",
+            width: 170,
+            height: 85,
             number: "odd",
             innerImage: "/Images/serviceDetails/devopBenifits/Security-webp.webp",
             marginLeft: "-ml-5 lg:-ml-8"
           }), /* @__PURE__ */ jsx(BenefitsCircle, {
             title: "Faster Time To Market",
             bgImage: "/Images/serviceDetails/devopBenifits/4-webp.webp",
+            width: 169,
+            height: 85,
             number: "even",
             innerImage: "/Images/serviceDetails/devopBenifits/INCREASED-Producitivity-webp.webp",
             marginLeft: "-ml-4 lg:-ml-6"
           }), /* @__PURE__ */ jsx(BenefitsCircle, {
             title: "Optimized Costs Reliability",
             bgImage: "/Images/serviceDetails/devopBenifits/5-webp.webp",
+            width: 170,
+            height: 85,
             number: "odd",
             innerImage: "/Images/serviceDetails/business--webp.webp",
             positionX: "-18px",
@@ -25371,18 +25036,24 @@ const KandaIndustries = () => {
           }), /* @__PURE__ */ jsx(BenefitsCircle, {
             title: "Speed And Efficiency",
             bgImage: "/Images/serviceDetails/devopBenifits/6-webp.webp",
+            width: 170,
+            height: 87,
             number: "even",
             innerImage: "/Images/serviceDetails/devopBenifits/EFFICIENCY-webp.webp",
             marginLeft: "-ml-1 lg:-ml-3"
           }), /* @__PURE__ */ jsx(BenefitsCircle, {
             title: "Reliability",
             bgImage: "/Images/serviceDetails/devopBenifits/1-webp.webp",
+            width: 170,
+            height: 88,
             number: "odd",
             innerImage: "/Images/serviceDetails/devopBenifits/RELIABILITY-webp.webp",
             marginLeft: "-ml-3 lg:-ml-6"
           }), /* @__PURE__ */ jsx(BenefitsCircle, {
             title: "Shared Sense Of Ownership",
             bgImage: "/Images/serviceDetails/devopBenifits/8-webp.webp",
+            width: 170,
+            height: 88,
             number: "even",
             innerImage: "/Images/serviceDetails/devopBenifits/SHARED-SENSE-webp.webp",
             marginLeft: "-ml-3 lg:-ml-6"
@@ -25413,7 +25084,8 @@ const Services$1 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25422,7 +25094,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25431,7 +25104,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25440,7 +25114,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25449,7 +25124,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25458,7 +25134,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25467,7 +25144,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25476,7 +25154,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25491,7 +25170,8 @@ const Services$1 = () => {
               children: [/* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25500,7 +25180,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25509,7 +25190,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25518,7 +25200,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25527,7 +25210,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25536,7 +25220,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25545,7 +25230,8 @@ const Services$1 = () => {
               }), /* @__PURE__ */ jsxs("li", {
                 className: "contentListItem",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 37,
+                  height: 37,
                   alt: "bullet point",
                   src: "/Images/serviceDetails/bullet-point-webp.webp"
                 }), /* @__PURE__ */ jsx("p", {
@@ -25572,7 +25258,8 @@ const Services = () => {
           children: /* @__PURE__ */ jsxs("div", {
             className: "space-y-3 flex flex-col justify-center items-center",
             children: [/* @__PURE__ */ jsx("img", {
-              loading: "lazy",
+              width: 158,
+              height: 124,
               className: "w-2/12",
               alt: "DevOps-Assessment",
               src: "/Images/serviceDetails/DevOps-Assessment-webp.webp"
@@ -25599,7 +25286,8 @@ const ServiceAdvantageCard = (props) => {
     children: /* @__PURE__ */ jsxs("div", {
       className: " space-y-3  sm:space-y-5 flex flex-col items-center w-10/12 md:w-7/12 lg:w-4/5 px-5 absolute top-20 md:top-10 lg:top-12 md:ml-12 lg:ml-0 lg:left-0 ",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        width: props.width,
+        height: props.height,
         alt: "service-card",
         className: "w-5/12",
         src: props.img
@@ -25631,23 +25319,31 @@ const Management = () => {
         children: [/* @__PURE__ */ jsx(ServiceAdvantageCard, {
           title: "A solid Plan",
           img: "/Images/serviceDetails/A-SOLID-PLAN-webp.webp",
+          width: 105,
+          height: 86,
           desc: `for a painless and predictable move to DevOps practices under AWS,
                    Google Cloud or Azure – not as a one size fits all, but tailored specifically
                    to the state of your release and deployment pipeline`
         }), /* @__PURE__ */ jsx(ServiceAdvantageCard, {
           title: "AUTOMATION & TESTING",
           img: "/Images/serviceDetails/AUTOMATION-&-TESTING-webp.webp",
+          width: 157,
+          height: 96,
           desc: `We’ll help you build or automate your CI/CD pipeline as well as 
                    application and environment testing processes for fast, reliable and 
                    predictable releases`
         }), /* @__PURE__ */ jsx(ServiceAdvantageCard, {
           title: "Optimization",
           img: "/Images/serviceDetails/OPTIMIZATION-webp.webp",
+          width: 109,
+          height: 89,
           desc: `of the costs of using a cloud provider of your choice, and the 
                    ability to adjust your product architecture to minimize those costs.`
         }), /* @__PURE__ */ jsx(ServiceAdvantageCard, {
           title: "Integration",
           img: "/Images/serviceDetails/INTEGRATION-webp.webp",
+          width: 109,
+          height: 86,
           desc: `of our DevOps personnel and/or asistance in training your people 
                    to keep DevOps running smoothly once you are up and running.`
         })]
@@ -25656,57 +25352,15 @@ const Management = () => {
   });
 };
 const DevopService = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "devops.services",
-          defaultMessage: "DevOps Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "maximize.efficiency",
-          defaultMessage: "Maximize efficiency and streamline your software development process with our expert DevOps services. Contact us today to see how we can help your business succeed"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "DevOps consulting services, Continuous integration solutions, Automated deployment services, DevOps strategy and tools, Cloud and DevOps services"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/devops-services"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "devops.services",
-          defaultMessage: "DevOps Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "maximize.efficiency",
-          defaultMessage: "Maximize efficiency and streamline your software development process with our expert DevOps services. Contact us today to see how we can help your business succeed"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/devops-services"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx(LandingSection$3, {}), /* @__PURE__ */ jsx(Services$2, {}), /* @__PURE__ */ jsx(Management$1, {}), /* @__PURE__ */ jsx(KandaIndustries, {}), /* @__PURE__ */ jsx(Services$1, {}), /* @__PURE__ */ jsx(Management, {}), /* @__PURE__ */ jsx(Services, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const LandingSection$2 = () => {
@@ -25737,7 +25391,8 @@ const LandingSection$2 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: " bg-cover px-5 flex justify-center items-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 1128,
+          height: 1322,
           className: "w-full md:w-3/5 lg:w-4/5",
           alt: "big-data-service",
           src: "/Images/serviceDetails/TimeAndMaterial/time-and-material-high-dimensions-webp.webp"
@@ -25781,7 +25436,9 @@ const Benefits = () => {
             backgroundImage: "url(/Images/serviceDetails/Hire-Blockchain-Web-Developer-bg-webp.webp)"
           },
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            load: true,
+            width: 828,
+            height: 465,
             className: "w-4/5",
             alt: "Blockchain-Web-Developer",
             src: "/Images/serviceDetails/TimeAndMaterial/BENEFITS-webp.webp"
@@ -25900,7 +25557,8 @@ const Consultation = () => {
             backgroundImage: "url(/Images/serviceDetails/Hire-Blockchain-Web-Developer-bg-webp.webp)"
           },
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 762,
+            height: 537,
             className: "w-4/5 md:w-2/5 lg:w-3/5",
             alt: "CAN-THIS-MODEL-BE-OF-USE-image",
             src: "/Images/serviceDetails/TimeAndMaterial/CAN-THIS-MODEL-BE-OF-USE-image-webp.webp"
@@ -25954,12 +25612,10 @@ const Hiring = () => {
       children: [/* @__PURE__ */ jsxs("div", {
         className: " w-2/12 mdmd:w-auto",
         children: [/* @__PURE__ */ jsx("img", {
-          loading: "lazy",
           alt: "3-steps",
           className: " px-10 hidden mdmd:block",
           src: "/Images/serviceDetails/TimeAndMaterial/3-steps-webp.webp"
         }), /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
           alt: "3-steps",
           style: {
             height: "80%"
@@ -25984,57 +25640,15 @@ const Hiring = () => {
   });
 };
 const TimeAndMaterialService = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "time.and.material",
-          defaultMessage: "Time and Material Services - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "maintain.your.goals",
-          defaultMessage: "Maintain your goals according to your allocated budget with our reliable time and material services. The experts at Astute Softwares offers reasonable pricing and timely delivery."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Time and material model, Flexible project pricing, Custom billing solutions, Pay as you go IT services, Project-based billing services"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/services/time-and-material-services"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "time.and.material",
-          defaultMessage: "Time and Material Services - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "maintain.your.goals",
-          defaultMessage: "Maintain your goals according to your allocated budget with our reliable time and material services. The experts at Astute Softwares offers reasonable pricing and timely delivery."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/services/time-and-material-services"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col overflow-x-hidden ",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx(LandingSection$2, {}), /* @__PURE__ */ jsx(Benefits, {}), /* @__PURE__ */ jsx(OurServices, {}), /* @__PURE__ */ jsx(Consultation, {}), /* @__PURE__ */ jsx(Hiring, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })]
+    })
   });
 };
 const CouponPage = () => {
@@ -26213,7 +25827,8 @@ const index$a = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 891,
+          height: 601,
           className: "w-4/5 ",
           alt: "showrooms",
           src: "/Images/serviceAssets/ar-Services/showrooms-webp.webp"
@@ -26247,7 +25862,8 @@ const index$9 = () => {
                   children: [/* @__PURE__ */ jsxs("div", {
                     className: "flex flex-col md:flex-row space-x-4 items-center",
                     children: [/* @__PURE__ */ jsx("img", {
-                      loading: "lazy",
+                      width: 114,
+                      height: 95,
                       alt: "ar-service-1",
                       src: "/Images/serviceAssets/ar-Services/01-webp.webp"
                     }), /* @__PURE__ */ jsx("h2", {
@@ -26267,7 +25883,8 @@ const index$9 = () => {
                   children: [/* @__PURE__ */ jsxs("div", {
                     className: "flex flex-col md:flex-row space-x-4 items-center",
                     children: [/* @__PURE__ */ jsx("img", {
-                      loading: "lazy",
+                      width: 140,
+                      height: 95,
                       alt: "ar-service-3",
                       src: "/Images/serviceAssets/ar-Services/03-webp.webp"
                     }), /* @__PURE__ */ jsx("h2", {
@@ -26284,7 +25901,8 @@ const index$9 = () => {
               }), /* @__PURE__ */ jsx("div", {
                 className: "col-span-3 mx-auto hidden lg:block ",
                 children: /* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 187,
+                  height: 301,
                   alt: "wining-points",
                   src: "/Images/serviceAssets/ar-Services/wining-points-webp.webp"
                 })
@@ -26295,7 +25913,8 @@ const index$9 = () => {
                   children: [/* @__PURE__ */ jsxs("div", {
                     className: "flex flex-col md:flex-row space-x-4 items-center",
                     children: [/* @__PURE__ */ jsx("img", {
-                      loading: "lazy",
+                      width: 142,
+                      height: 95,
                       alt: "ar-service-2",
                       src: "/Images/serviceAssets/ar-Services/02-webp.webp",
                       className: ""
@@ -26316,7 +25935,8 @@ const index$9 = () => {
                   children: [/* @__PURE__ */ jsxs("div", {
                     className: "flex flex-col md:flex-row space-x-4 items-center",
                     children: [/* @__PURE__ */ jsx("img", {
-                      loading: "lazy",
+                      width: 148,
+                      height: 95,
                       alt: "ar-service-4",
                       src: "/Images/serviceAssets/ar-Services/04-webp.webp"
                     }), /* @__PURE__ */ jsx("h2", {
@@ -26367,7 +25987,8 @@ const index$8 = () => {
               backgroundImage: "url('/Images/serviceAssets/ar-Services/AR-development-partner-backgound-webp.webp')"
             },
             children: /* @__PURE__ */ jsx("img", {
-              loading: "lazy",
+              width: 705,
+              height: 766,
               alt: "AR-development-partner",
               className: "w-9/12 mx-auto ",
               style: {
@@ -26379,7 +26000,8 @@ const index$8 = () => {
         }), /* @__PURE__ */ jsx("div", {
           className: "absolute  -bottom-24 ",
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 1914,
+            height: 608,
             alt: "ar-development-partner-background",
             className: "w-full",
             src: "/Images/serviceAssets/ar-Services/ar-development-partner-background-webp.webp"
@@ -26391,55 +26013,13 @@ const index$8 = () => {
 };
 const ArServices = () => {
   const [refOffset, setRefOffset] = useState();
-  const intl = useIntl();
+  useIntl();
   const ref = useRef(null);
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "software.augmented.reality",
-          defaultMessage: "Astute Softwares - Augmented Reality"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.software.offers.ar",
-          defaultMessage: "Astute softwares offers augmented reality services that allows you to monetize your business and increase conversion rates."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Augmented reality development, AR for businesses, Immersive AR experiences, AR app design, Augmented reality consulting"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/augmented-reality"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "software.augmented.reality",
-          defaultMessage: "Astute Softwares - Augmented Reality"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.software.offers.ar",
-          defaultMessage: "Astute softwares offers augmented reality services that allows you to monetize your business and increase conversion rates."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/augmented-reality"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+    children: [/* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsx("div", {
         className: "flex-grow",
@@ -26494,7 +26074,8 @@ const LandingSection$1 = () => {
             zIndex: 1
           },
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 538,
+            height: 768,
             alt: "langing-chracter",
             className: "landingCharacter mx-auto w-2/4 lg:w-4/5   ",
             src: "/Images/serviceAssets/metaverse/landing-page-character-webp.webp"
@@ -26503,7 +26084,8 @@ const LandingSection$1 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "absolute bottom-0 ",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 1920,
+          height: 487,
           alt: "Our-platforms-technologies-background",
           className: "w-full",
           src: "/Images/serviceAssets/metaverse/Our-platforms-technologies-background-webp.webp"
@@ -26537,7 +26119,8 @@ const Momemntum = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
               children: [/* @__PURE__ */ jsx("img", {
-                loading: "lazy",
+                width: 512,
+                height: 512,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -26548,7 +26131,8 @@ const Momemntum = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
               children: [/* @__PURE__ */ jsx("img", {
-                loading: "lazy",
+                width: 512,
+                height: 512,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -26559,7 +26143,8 @@ const Momemntum = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
               children: [/* @__PURE__ */ jsx("img", {
-                loading: "lazy",
+                width: 512,
+                height: 512,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -26609,7 +26194,8 @@ const PlatFormAndTechnologies = () => {
               children: [/* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -26620,7 +26206,8 @@ const PlatFormAndTechnologies = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -26631,7 +26218,8 @@ const PlatFormAndTechnologies = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -26642,7 +26230,8 @@ const PlatFormAndTechnologies = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -26653,7 +26242,8 @@ const PlatFormAndTechnologies = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -26664,7 +26254,8 @@ const PlatFormAndTechnologies = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -26675,7 +26266,8 @@ const PlatFormAndTechnologies = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "text-white text-lg  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 512,
+                  height: 512,
                   alt: "icon",
                   src: "/Images/serviceAssets/metaverse/icon-webp.webp",
                   className: "flex-shrink-0 w-4 h-4"
@@ -26689,12 +26281,14 @@ const PlatFormAndTechnologies = () => {
         }), /* @__PURE__ */ jsxs("div", {
           className: "bg-no-repeat flex items-center  justify-center ",
           children: [/* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 526,
+            height: 526,
             alt: "circle-image",
             src: "/Images/serviceAssets/metaverse/circle-webp.webp",
             className: "relative antiClockwiseSpin w-4/5 "
           }), /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 705,
+            height: 766,
             alt: "our-platforms-technologies",
             className: "absolute w-200 sm:w-300 md:w-300 lg:w-350  ",
             src: "/Images/serviceAssets/metaverse/our-platforms-technologies-webp.webp"
@@ -26703,7 +26297,8 @@ const PlatFormAndTechnologies = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "absolute bottom-0",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 1920,
+          height: 487,
           alt: "Our-platforms-technologies-background",
           className: "w-full",
           src: "/Images/serviceAssets/metaverse/Our-platforms-technologies-background-webp.webp"
@@ -26744,7 +26339,8 @@ const Table = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white  py-0 lg:py-2 lg:text-justify space-x-2 flex flex-grow-0 space-x-4 items-center ",
               children: [/* @__PURE__ */ jsx("img", {
-                loading: "lazy",
+                width: 114,
+                height: 114,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/iconBlue-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -26755,7 +26351,8 @@ const Table = () => {
             }), /* @__PURE__ */ jsxs("div", {
               className: "text-white  py-0 lg:py-2 lg:text-justify space-x-2 flex space-x-4 items-center",
               children: [/* @__PURE__ */ jsx("img", {
-                loading: "lazy",
+                width: 114,
+                height: 114,
                 alt: "icon",
                 src: "/Images/serviceAssets/metaverse/iconBlue-webp.webp",
                 className: "flex-shrink-0 w-4 h-4"
@@ -26843,7 +26440,8 @@ const Table = () => {
     }), /* @__PURE__ */ jsxs("div", {
       className: "h-screen  relative bg-gray-consultancy",
       children: [/* @__PURE__ */ jsx("img", {
-        loading: "lazy",
+        width: 1920,
+        height: 1080,
         alt: "consultancy_pattern",
         src: "/Images/serviceAssets/metaverse/consultancy_pattern-webp.webp",
         className: "w-full absolute -top-16 md:-top-32  lg:-top-64  "
@@ -26895,51 +26493,9 @@ const Table = () => {
   });
 };
 const MetverseServices = () => {
-  const intl = useIntl();
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "software.metaverse",
-          defaultMessage: "Astute Softwares - Metaverse"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.software.is.a.leading",
-          defaultMessage: "Astute softwares is a leading software development company that specializes in the development of metaverse and Web 3.0 services."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Metaverse development services, Virtual reality solutions, Augmented reality services, Metaverse platform development, Custom metaverse applications"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/metaverse"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "software.metaverse",
-          defaultMessage: "Astute Softwares - Metaverse"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.software.is.a.leading",
-          defaultMessage: "Astute softwares is a leading software development company that specializes in the development of metaverse and Web 3.0 services."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/metaverse"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  useIntl();
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "",
       children: [/* @__PURE__ */ jsx(LandingSection$1, {}), /* @__PURE__ */ jsx(Momemntum, {}), /* @__PURE__ */ jsx(PlatFormAndTechnologies, {}), /* @__PURE__ */ jsx("div", {
         className: "",
@@ -26948,7 +26504,7 @@ const MetverseServices = () => {
           children: /* @__PURE__ */ jsx(Table, {})
         })
       })]
-    })]
+    })
   });
 };
 const index$7 = ({
@@ -27017,7 +26573,8 @@ const index$6 = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "flex items-center justify-center",
         children: /* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 827,
+          height: 581,
           alt: "The-future-of-Business",
           className: "w-4/5 ",
           src: "/Images/serviceAssets/3dModeling/The-future-of-Business-webp.webp"
@@ -27048,7 +26605,8 @@ const index$5 = () => {
         }), /* @__PURE__ */ jsx("div", {
           className: "flex items-center justify-center",
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 768,
+            height: 653,
             alt: "marketing",
             className: "w-4/5 ",
             src: "/Images/serviceAssets/3dModeling/marketing-webp.webp"
@@ -27071,7 +26629,8 @@ const index$4 = () => {
         children: [/* @__PURE__ */ jsx("div", {
           className: "flex items-center justify-center",
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 827,
+            height: 603,
             alt: "Extraordinary-quality",
             className: "w-4/5 ",
             src: "/Images/serviceAssets/3dModeling/Extraordinary-quality-webp.webp"
@@ -27103,7 +26662,8 @@ const index$3 = () => {
         children: [/* @__PURE__ */ jsx("div", {
           className: "flex items-center justify-center",
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 772,
+            height: 677,
             alt: "sales",
             className: "w-4/5 ",
             src: "/Images/serviceAssets/3dModeling/sales-webp.webp"
@@ -27144,7 +26704,8 @@ const index$2 = () => {
         }), /* @__PURE__ */ jsx("div", {
           className: "flex items-center justify-center",
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 836,
+            height: 605,
             alt: "e-commerce",
             className: "w-4/5 ",
             src: "/Images/serviceAssets/3dModeling/E-commerce-webp.webp"
@@ -27176,7 +26737,8 @@ const index$1 = () => {
         }), /* @__PURE__ */ jsx("div", {
           className: "flex items-center justify-center",
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 935,
+            height: 480,
             alt: "real-Estate",
             className: "w-4/5 ",
             src: "/Images/serviceAssets/3dModeling/real-Estate-webp.webp"
@@ -27199,7 +26761,8 @@ const index = () => {
         children: [/* @__PURE__ */ jsx("div", {
           className: "flex items-center justify-center",
           children: /* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 753,
+            height: 471,
             alt: "Industrial",
             className: "w-4/5 ",
             src: "/Images/serviceAssets/3dModeling/Industrial-webp.webp"
@@ -27221,54 +26784,12 @@ const index = () => {
 const ThreedModeling = () => {
   const [refOffset, setRefOffset] = useState();
   const ref = useRef(null);
-  const intl = useIntl();
+  useIntl();
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "software.3d.modeling",
-          defaultMessage: "Astute Softwares - 3D modelling"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.software.is.a.leading",
-          defaultMessage: "Astute softwares is a leading software development company that specializes in the development of metaverse and Web 3.0 services."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "3D modeling services, Custom 3D design, Professional 3D rendering, 3D animation services, Virtual product modeling"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/3d-modelling"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "software.3d.modeling",
-          defaultMessage: "Astute Softwares - 3D modelling"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.software.is.a.leading",
-          defaultMessage: "Astute softwares is a leading software development company that specializes in the development of metaverse and Web 3.0 services."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/3d-modelling"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx("div", {
+    children: [/* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsx("div", {
         className: "flex-grow",
@@ -28528,57 +28049,15 @@ const Portfolio = ({
 }) => {
   const [selectedModel, setSelectedModel] = useState(3);
   const [toggleSideBar, setToggleSideBar] = useState(false);
-  const intl = useIntl();
+  useIntl();
   useEffect(() => {
     setShowHeaderFooter(false);
     return () => {
       setShowHeaderFooter(true);
     };
   }, []);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "astute.software.portfolio",
-          defaultMessage: "Astute Softwares - portfolio"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "see.some.our.work",
-          defaultMessage: "See some of our best work in 3D. With Astute software solutions, you can create everything from custom animations to beautiful presentations."
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "keywords",
-        content: "Software development portfolio, Project showcase, Client success stories, Technology solutions portfolio, Custom software projects"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/portfolio"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "astute.software.portfolio",
-          defaultMessage: "Astute Softwares - portfolio"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "see.some.our.work",
-          defaultMessage: "See some of our best work in 3D. With Astute software solutions, you can create everything from custom animations to beautiful presentations."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/portfolio"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "relative",
       children: [/* @__PURE__ */ jsx("div", {
         className: `w-350 overflow-y-auto overflow-x-hidden  min-h-screen fixed left-0 top-0 bottom-0 bg-white transition  transform ${toggleSideBar ? " z-50 duration-900 ease-in-out translate-x-0 " : "hidden lg:block"} `,
@@ -28617,7 +28096,7 @@ const Portfolio = ({
           onClick: () => setToggleSideBar(!toggleSideBar)
         })
       })]
-    })]
+    })
   });
 };
 const LandingSection = () => {
@@ -28627,7 +28106,8 @@ const LandingSection = () => {
       children: [/* @__PURE__ */ jsxs("div", {
         className: "lg:w-1/2 md:px-10 xl:pl-20 flex text-center lg:text-left flex-col justify-center",
         children: [/* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 554,
+          height: 205,
           alt: "logo",
           className: "w-2/5 mb-10 mx-auto xl:w-2/5",
           src: "/Images/falling-gems/logo-webp.webp"
@@ -28641,6 +28121,8 @@ const LandingSection = () => {
       }), /* @__PURE__ */ jsx("div", {
         className: "lg:w-1/2 flex justify-end",
         children: /* @__PURE__ */ jsx("img", {
+          width: 870,
+          height: 643,
           className: "w-4/5 md:w-3/5 lg:w-full mx-auto",
           loading: "lazy",
           alt: "game logo",
@@ -28699,7 +28181,8 @@ const LevelOne$2 = () => {
         children: /* @__PURE__ */ jsxs("div", {
           className: "relative md:w-4/5 lg:w-full mx-auto xl:mx-0 ",
           children: [/* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 747,
+            height: 650,
             alt: "level one picture",
             className: "",
             src: "/Images/falling-gems/level 1 picture-webp.webp"
@@ -28712,7 +28195,8 @@ const LevelOne$2 = () => {
         className: "flex flex-col justify-center",
         children: [/* @__PURE__ */ jsx("img", {
           className: "mb-10 w-4/5 xl:w-4/5 mx-auto",
-          loading: "lazy",
+          width: 552,
+          height: 302,
           alt: "fruits",
           src: "/Images/falling-gems/fruits-webp.webp"
         }), /* @__PURE__ */ jsx("h3", {
@@ -28749,7 +28233,8 @@ const LevelOne$1 = () => {
         children: /* @__PURE__ */ jsxs("div", {
           className: "relative md:w-4/5 lg:w-full mx-auto xl:mx-0 ",
           children: [/* @__PURE__ */ jsx("img", {
-            loading: "lazy",
+            width: 747,
+            height: 650,
             alt: "level 2 picture",
             className: "",
             src: "/Images/falling-gems/level 2 picture-webp.webp"
@@ -28761,7 +28246,8 @@ const LevelOne$1 = () => {
       }), /* @__PURE__ */ jsxs("div", {
         className: "flex flex-col justify-center",
         children: [/* @__PURE__ */ jsx("img", {
-          loading: "lazy",
+          width: 378,
+          height: 317,
           alt: "snow objects",
           className: "mb-10 w-3/5 xl:w-3/5 mx-auto",
           src: "/Images/falling-gems/snow object-webp.webp"
@@ -28800,7 +28286,8 @@ const LevelOne = () => {
           className: "relative md:w-4/5 lg:w-full mx-auto xl:mx-0 ",
           children: [/* @__PURE__ */ jsx("img", {
             alt: "level 3 picture",
-            loading: "lazy",
+            width: 582,
+            height: 455,
             className: "",
             src: "/Images/falling-gems/level3 picture-webp.webp"
           }), /* @__PURE__ */ jsx("h2", {
@@ -28812,7 +28299,8 @@ const LevelOne = () => {
         className: "flex flex-col justify-center",
         children: [/* @__PURE__ */ jsx("img", {
           alt: "level 3 objects",
-          loading: "lazy",
+          width: 282,
+          height: 261,
           className: "mb-10 w-3/5 xl:w-3/5 mx-auto",
           src: "/Images/falling-gems/level3 object-webp.webp"
         }), /* @__PURE__ */ jsx("h3", {
@@ -29019,7 +28507,8 @@ const Profile = () => {
               children: [/* @__PURE__ */ jsxs("div", {
                 className: "flex items-center space-x-5",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 76,
+                  height: 78,
                   alt: "trophy",
                   className: "w-10",
                   src: "/Images/falling-gems/trophy-webp.webp"
@@ -29035,7 +28524,8 @@ const Profile = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "flex items-center space-x-5",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 82,
+                  height: 62,
                   alt: "game mode",
                   className: "w-10",
                   src: "/Images/falling-gems/game mode-webp.webp"
@@ -29051,7 +28541,8 @@ const Profile = () => {
               }), /* @__PURE__ */ jsxs("div", {
                 className: "flex items-center space-x-5",
                 children: [/* @__PURE__ */ jsx("img", {
-                  loading: "lazy",
+                  width: 241,
+                  height: 142,
                   alt: "coins blue",
                   className: "w-10",
                   src: "/Images/falling-gems/coins-blue-webp.webp"
@@ -29075,58 +28566,19 @@ const Profile = () => {
 const Index = ({
   setShowHeaderFooter
 }) => {
-  const intl = useIntl();
+  useIntl();
   useEffect(() => {
     setShowHeaderFooter(true);
     return () => {
       setShowHeaderFooter(false);
     };
   }, []);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(Helmet, {
-      children: [/* @__PURE__ */ jsx("title", {
-        children: intl.formatMessage({
-          id: "falling.gems",
-          defaultMessage: "Falling Gems - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "introducing.astute.softwares",
-          defaultMessage: "Introducing Astute Softwares' Falling Gems. Don't let these precious GEMS FALL! From exciting game levels to gold coins, everything is put up to make you feel good and relax."
-        })
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/falling-gems"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "falling.gems",
-          defaultMessage: "Falling Gems - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "introducing.astute.softwares",
-          defaultMessage: "Introducing Astute Softwares' Falling Gems. Don't let these precious GEMS FALL! From exciting game levels to gold coins, everything is put up to make you feel good and relax."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/falling-gems"
-      }), /* @__PURE__ */ jsx("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       children: [/* @__PURE__ */ jsx("div", {
         className: "w-full md:w-1/2 lg:w-1/3  2xl:w-1/4 mx-auto lg:mx-0 px-20 pt-10 pb-10 lg:pb-0"
       }), /* @__PURE__ */ jsx(LandingSection, {}), /* @__PURE__ */ jsx(LevelOne$2, {}), /* @__PURE__ */ jsx(LevelOne$1, {}), /* @__PURE__ */ jsx(LevelOne, {}), /* @__PURE__ */ jsx(PreSale, {}), /* @__PURE__ */ jsx(Profile, {})]
-    })]
+    })
   });
 };
 const CookiePolicy = () => {
@@ -30370,7 +29822,6 @@ function HeroSection() {
       children: /* @__PURE__ */ jsx("img", {
         width: 1201,
         height: 1438,
-        loading: "lazy",
         alt: "pattern",
         className: "absolute top-0 right-0 transform lg:translate-x-1/4 lg:-translate-y-24 w-full z-0 select-none hidden lg:inline",
         src: "/Images/landing-page-assets/Group 53-webp.webp"
@@ -30524,7 +29975,6 @@ function SolutionSection() {
         children: /* @__PURE__ */ jsx("img", {
           width: 1420,
           height: 1012,
-          loading: "lazy",
           src: "/Images/landing-page-assets/chats-webp.webp",
           alt: "chats",
           className: "relative z-10"
@@ -30645,7 +30095,6 @@ function TechSection() {
         children: [/* @__PURE__ */ jsx("img", {
           width: 4768,
           height: 1792,
-          loading: "lazy",
           alt: "box_layers",
           className: "absolute top-0 w-full z-0",
           src: "/Images/landing-page-assets/box_layers-webp.webp"
