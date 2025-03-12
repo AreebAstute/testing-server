@@ -50,7 +50,7 @@ export function generateMetaInfo({ path }) {
           title: "Astute Softwares - Complete Package of Software Development",
           description: "From Product Design to Software Development, Astute Softwares assures continuous delivery for your growth with custom software development, mobile app development, digital transformation, and more.",
           url: "https://www.astutesoftwares.com", // Replace with your actual website URL
-          image: "https://imgur.com/a/ENEhffu", // Replace with an actual image URL
+          image: "https://pro-id.s3.eu-central-1.amazonaws.com/media/THUMBNAIL-FOR-VIEW.jpg", // Replace with an actual image URL
           keywords: "software development, web development, mobile applications, digital transformation, DevOps, QA, blockchain, UI/UX design, big data",
           author: "Astute Softwares",
         };
@@ -366,7 +366,7 @@ export function generateMetaInfo({ path }) {
           title: "Astute Softwares - Complete Package of Software Development",
           description: "From Product Design to Software Development, Astute Softwares assures continuous delivery for your growth with custom software development, mobile app development, digital transformation, and more.",
           url: "https://www.astutesoftwares.com", // Replace with your actual website URL
-          image: "https://imgur.com/a/ENEhffu", // Replace with an actual image URL
+          image: "https://pro-id.s3.eu-central-1.amazonaws.com/media/THUMBNAIL-FOR-VIEW.jpg", // Replace with an actual image URL
           keywords: "software development, web development, mobile applications, digital transformation, DevOps, QA, blockchain, UI/UX design, big data",
           author: "Astute Softwares",
         };
