@@ -6,6 +6,7 @@ import aos from "aos";
 import { AiOutlineWhatsApp, AiFillStar, AiFillLock } from "react-icons/ai";
 import { FaTwitter, FaInstagram, FaFacebook, FaLinkedin, FaTimes, FaArrowCircleRight, FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa";
 import require$$1$1 from "object-assign";
+import { BiLoaderAlt, BiCube, BiLinkExternal, BiMenuAltLeft } from "react-icons/bi";
 import ReactGA from "react-ga4";
 import { motion, AnimatePresence, useViewportScroll } from "framer-motion";
 import { BsDot, BsArrowRight, BsSearch } from "react-icons/bs";
@@ -14,7 +15,6 @@ import { $, remove, filter, children, find, closest, parents, parent, prevAll, p
 import { GLTFExporter } from "three/examples/jsm/exporters/GLTFExporter.js";
 import { Helmet } from "react-helmet";
 import QRCode from "react-qr-code";
-import { BiLoaderAlt, BiCube, BiLinkExternal, BiMenuAltLeft } from "react-icons/bi";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import Axios from "axios";
 import * as Yup from "yup";
@@ -13309,7 +13309,7 @@ const Viewer = ({
       } = await import("./assets/methods-Bfz_N5DN.js");
       const {
         default: ColorPallete2
-      } = await import("./assets/index-DYbduW6K.js");
+      } = await import("./assets/index-oh21xAc2.js");
       setColorPalleteComponent(() => ColorPallete2);
       const {
         GLTFExporter: GLTFExporter2
@@ -30862,9 +30862,13 @@ const ItalianDirectContactUs = ({
 };
 const BaseRoutes = () => {
   const [sidebar, setSidebar] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [gameDownload, setGameDownload] = useState(false);
   const [gamePage, setGamePage] = useState(false);
   const [showHeaderFooter, setShowHeaderFooter] = useState(true);
+  useEffect(() => {
+    setLoading(false);
+  }, []);
   return (
     // <div className="flex flex-col h-full pt-28">
     /* @__PURE__ */ jsxs(Fragment, {
@@ -30877,7 +30881,7 @@ const BaseRoutes = () => {
           sidebar,
           setSidebar
         })]
-      }), /* @__PURE__ */ jsxs(Switch, {
+      }), loading ? /* @__PURE__ */ jsx(Loader, {}) : /* @__PURE__ */ jsxs(Switch, {
         children: [/* @__PURE__ */ jsx(Route, {
           path: "/turin-startup-campaign",
           exact: true,

@@ -1,9 +1,9 @@
-import { G as GLTFLoader } from "./GLTFLoader-BN1_KJyK.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-D-Npn4Il.js";
-import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, e as PointLightHelper, b as PMREMGenerator, E as EquirectangularReflectionMapping, C as Color, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-CFAEiR8u.js";
+import { G as GLTFLoader } from "./GLTFLoader-CE2YSyCl.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-BaiHvCMX.js";
+import { W as WebGLRenderer, S as Scene, P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, C as Color, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-S5jOeCxG.js";
 const createRenderer = () => {
   var renderer = new WebGLRenderer({
-    canvas: document.getElementById("bagModel1"),
+    canvas: document.getElementById("botttleModel3"),
     antialias: true,
     alpha: true
   });
@@ -19,23 +19,21 @@ const createScene = () => {
   return scene;
 };
 const createCamera = () => {
-  const camera = new PerspectiveCamera(5.7, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 20, 4e3);
-  camera.position.z = 100;
+  const camera = new PerspectiveCamera(3.9, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 0.9, 4e3);
+  camera.position.z = 190;
   camera.position.x = 0;
   camera.position.y = 0;
   return camera;
 };
 const createLight = (scene) => {
-  const ambientlight = new AmbientLight(16777215, 1);
-  const pointlightFront = new PointLight(16777215, 1, 100);
-  pointlightFront.position.set(0, 0, 10);
-  new PointLightHelper(pointlightFront, 2, "red");
-  const pointlightBackTop = new PointLight(16777215, 1, 100);
-  pointlightBackTop.position.set(0, 0, -10);
-  new PointLightHelper(pointlightBackTop, 2, "blue");
-  scene.add(ambientlight, pointlightFront, pointlightBackTop);
+  const ambientlight = new AmbientLight(16777215, 0.2);
+  const pointlight = new PointLight(16777215, 1, 100);
+  pointlight.position.set(2, 2, 10);
+  const pointlightBack = new PointLight(16777215, 1, 100);
+  pointlightBack.position.set(2, 2, -10);
+  scene.add(ambientlight);
 };
-const createModel = (model, scene, path, setLoading, renderer, selectedColor) => {
+const createModel = (model, scene, path, setLoading, renderer) => {
   setLoading(true);
   let loadingEnvornment = true;
   const dracoLoader = new DRACOLoader();
@@ -50,12 +48,12 @@ const createModel = (model, scene, path, setLoading, renderer, selectedColor) =>
   });
   loader.load(path, function(gltf) {
     model.current = gltf.scene;
-    model.current.position.y = -1.2;
     model.current.position.x = 0;
-    const baseMesh = model.current.children.find((item) => item.name === "base");
-    baseMesh.children.map((item) => {
-      if (item.isMesh && item.name != "NurbsPath003" && item.name != "Cylinder002") {
-        item.material.color = new Color("#C95a65");
+    model.current.position.y = -3;
+    const BottleMesh = model.current.children.find((item) => item.name === "cup_base");
+    BottleMesh.children.map((item) => {
+      if (item.isMesh && item.name == "Cylinder012") {
+        item.material.color = new Color("#96182d");
       }
     });
     if (!loadingEnvornment) {
@@ -78,6 +76,16 @@ const createFloor = (scene) => {
   floor.position.y = -1;
   scene.add(floor);
 };
+const applyTextureToModel = (parent, type, mtl) => {
+  parent.traverse((o) => {
+    if (o.isMesh) {
+      if (o.name.includes(type)) {
+        o.material = mtl;
+        o.nameID = type;
+      }
+    }
+  });
+};
 const animate = (callback) => {
   function loop(time) {
     callback(time);
@@ -89,9 +97,11 @@ const onWindowResize = (camera, renderer) => {
   const windowWidth = document.getElementById("modelPlace").clientWidth;
   const windowHeigth = document.getElementById("modelPlace").clientHeight;
   renderer.setSize(windowWidth, windowHeigth);
+  return renderer;
 };
 export {
   animate,
+  applyTextureToModel,
   createCamera,
   createFloor,
   createLight,
