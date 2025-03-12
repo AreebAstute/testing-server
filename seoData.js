@@ -5,7 +5,7 @@ export function generateMetaInfo({ path }) {
           title: "Edisu Case Study - Astute Softwares",
           description: "Explore how Astute Softwares addressed the COVID-19 pandemic's impact on study halls with a comprehensive digital solution that included a mobile app for students and a web portal for study hall operators.",
           url: "https://www.astutesoftwares.com/edisu", // Replace with the actual URL for this case study
-          image: "./logo-webp.png", // Replace with an actual image URL
+          image: "https://pro-id.s3.eu-central-1.amazonaws.com/media/THUMBNAIL-FOR-VIEW.jpg", // Replace with an actual image URL
           keywords: "COVID-19, study halls, digital solution, mobile application, web portal, sanitation, booking system, education, public health",
           author: "Astute Softwares",
         };
@@ -50,7 +50,7 @@ export function generateMetaInfo({ path }) {
           title: "Astute Softwares - Complete Package of Software Development",
           description: "From Product Design to Software Development, Astute Softwares assures continuous delivery for your growth with custom software development, mobile app development, digital transformation, and more.",
           url: "https://www.astutesoftwares.com", // Replace with your actual website URL
-          image: "./logo-webp.png", // Replace with an actual image URL
+          image: "https://pro-id.s3.eu-central-1.amazonaws.com/media/THUMBNAIL-FOR-VIEW.jpg", // Replace with an actual image URL
           keywords: "software development, web development, mobile applications, digital transformation, DevOps, QA, blockchain, UI/UX design, big data",
           author: "Astute Softwares",
         };
