@@ -76,7 +76,7 @@ export function generateMetaInfo({ path }) {
         return{
           title: "Astute Softwares - Top-Notch IT Solutions & Software Development",
           description: "Looking for cutting-edge IT solutions? Astute Softwares provides top-notch custom software development, digital transformation, QA, DevOps, mobile app development, and more.",
-          url: "https://www.astutesoftwares.com", // Replace with your actual website URL
+          url: "https://www.astutesoftwares.com/services", // Replace with your actual website URL
           image: "./logo-webp.png", // Replace with an actual image URL, like a banner image or logo
           keywords: "custom software development, digital transformation, QA services, mobile app development, DevOps, blockchain, augmented reality, big data, UI/UX design, software maintenance",
           author: "Astute Softwares",
