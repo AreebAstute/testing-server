@@ -1,5 +1,5 @@
-import { G as GLTFLoader } from "./GLTFLoader-BEHlmPPk.js";
-import { C as PerspectiveCamera, J as PlaneGeometry, M as MeshPhongMaterial, K as Mesh, T as HemisphereLight, U as DirectionalLight, D as AmbientLight, ao as TextureLoader, W as WebGLRenderer, I as Scene } from "./index-CG8AyQ8c.js";
+import { G as GLTFLoader } from "./GLTFLoader-BN1_KJyK.js";
+import { P as PerspectiveCamera, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh, H as HemisphereLight, D as DirectionalLight, A as AmbientLight, G as TextureLoader, W as WebGLRenderer, S as Scene } from "./index-CFAEiR8u.js";
 const createRenderer = () => {
   const renderer = new WebGLRenderer({
     canvas: document.getElementById("model"),
