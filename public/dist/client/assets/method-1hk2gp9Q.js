@@ -1,7 +1,8 @@
-import { G as GLTFLoader } from "./GLTFLoader-CE2YSyCl.js";
-import { OrbitControls } from "./OrbitControls-DtyBHjQI.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-BaiHvCMX.js";
-import { S as Scene, P as PerspectiveCamera, A as AmbientLight, H as HemisphereLight, D as DirectionalLight, a as PointLight, f as SpotLight, W as WebGLRenderer, b as PMREMGenerator, E as EquirectangularReflectionMapping, g as AnimationMixer, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh, h as Clock } from "./index-S5jOeCxG.js";
+import { G as GLTFLoader } from "./GLTFLoader-CayNpOya.js";
+import { OrbitControls } from "./OrbitControls-CzWXyAyV.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-Dq1rZWrs.js";
+import { S as Scene, P as PerspectiveCamera, A as AmbientLight, H as HemisphereLight, D as DirectionalLight, a as PointLight, f as SpotLight, W as WebGLRenderer, b as PMREMGenerator, E as EquirectangularReflectionMapping, g as AnimationMixer, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh, h as Clock } from "./BaseRoutes-DS9FjfZ_.js";
+import "./index-ltyAauky.js";
 let scene;
 let camera;
 let renderer;
