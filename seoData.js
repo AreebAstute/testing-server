@@ -267,7 +267,7 @@ export function generateMetaInfo({ path }) {
           title: "Astute Softwares Portfolio - Showcasing Our Work",
           description: "Explore our portfolio of innovative software solutions, including web and mobile applications, digital transformation projects, and more. See how Astute Softwares helps businesses grow.",
           url: "https://www.astutesoftwares.com/portfolio", // Replace with your actual portfolio page URL
-          ./logo-webp.png./logo-webp.png", // Replace with an actual image URL for the portfolio page
+          image: "./logo-webp.png", // Replace with an actual image URL for the portfolio page
           keywords: "software portfolio, web applications, mobile apps, digital transformation, software solutions, UI/UX design, blockchain, DevOps, big data, technology solutions",
           author: "Astute Softwares",
         };
@@ -294,7 +294,7 @@ export function generateMetaInfo({ path }) {
           title: "React Development Services - Build High-Performance Apps",
           description: "Get a world-class React development team to turn your ideas into high-performance, scalable apps with our experienced team. Offering modern JavaScript development, micro frontends, SEO optimization, and reusable components.",
           url: "https://www.astutesoftwares.com/technologies/react", // Replace with your actual page URL
-          ./logo-webp.png./logo-webp.png", // Replace with an actual image URL
+          image: "./logo-webp.png", // Replace with an actual image URL
           keywords: "React development, frontend solutions, scalable apps, micro frontends, SEO optimized, web development, mobile apps, enterprise-level applications",
           author: "Astute Softwares",
         };
