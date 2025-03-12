@@ -1,5 +1,4 @@
-import { i as EventDispatcher, V as Vector3, j as MOUSE, T as TOUCH, k as Spherical, Q as Quaternion, l as Vector2 } from "./BaseRoutes-LHr-pTd6.js";
-import "./index-CNv9fwaS.js";
+import { _ as EventDispatcher, a0 as Vector3, a1 as MOUSE, a2 as TOUCH, a3 as Spherical, a4 as Quaternion, a5 as Vector2 } from "./index-CG8AyQ8c.js";
 const _changeEvent = { type: "change" };
 const _startEvent = { type: "start" };
 const _endEvent = { type: "end" };

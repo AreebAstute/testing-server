@@ -1,10 +1,9 @@
-import { G as GLTFLoader } from "./GLTFLoader-CuICPN_t.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-CpkRRELE.js";
-import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, C as Color, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./BaseRoutes-LHr-pTd6.js";
-import "./index-CNv9fwaS.js";
+import { G as GLTFLoader } from "./GLTFLoader-BEHlmPPk.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-vg4HfcIi.js";
+import { C as PerspectiveCamera, D as AmbientLight, E as PointLight, G as PMREMGenerator, H as EquirectangularReflectionMapping, W as WebGLRenderer, I as Scene, J as PlaneGeometry, M as MeshPhongMaterial, K as Mesh } from "./index-CG8AyQ8c.js";
 const createRenderer = () => {
   var renderer = new WebGLRenderer({
-    canvas: document.getElementById("bagModel3"),
+    canvas: document.getElementById("plantModel1"),
     antialias: true,
     alpha: true
   });
@@ -20,19 +19,17 @@ const createScene = () => {
   return scene;
 };
 const createCamera = () => {
-  const camera = new PerspectiveCamera(3, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 0.9, 4e3);
-  camera.position.z = 190;
+  const camera = new PerspectiveCamera(2, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 20, 4e3);
+  camera.position.z = 100;
   camera.position.x = 0;
-  camera.position.y = 50;
+  camera.position.y = 30;
   return camera;
 };
 const createLight = (scene) => {
-  const ambientlight = new AmbientLight(16777215, 1);
-  const pointlightFront = new PointLight(16777215, 1, 100);
-  pointlightFront.position.set(2, 2, 10);
-  const pointlightBack = new PointLight(16777215, 1, 100);
-  pointlightBack.position.set(2, 2, -10);
-  scene.add(ambientlight, pointlightFront, pointlightBack);
+  const ambientlight = new AmbientLight(16777215, 1.6);
+  const pointlight = new PointLight(16777215, 1, 100);
+  pointlight.position.set(2, 2, 10);
+  scene.add(ambientlight);
 };
 const createModel = (model, scene, path, setLoading, renderer) => {
   setLoading(true);
@@ -49,15 +46,8 @@ const createModel = (model, scene, path, setLoading, renderer) => {
   });
   loader.load(path, function(gltf) {
     model.current = gltf.scene;
+    model.current.position.y = -0.78;
     model.current.position.x = 0;
-    model.current.position.y = -1.2;
-    model.current.rotation.y -= 10;
-    const baseLayer = model.current.children.find((item) => item.name === "base");
-    baseLayer.children.map((item) => {
-      if (item.isMesh) {
-        item.material.color = new Color("#528ade");
-      }
-    });
     if (!loadingEnvornment) {
       scene.add(model.current);
       setLoading(false);
@@ -89,7 +79,6 @@ const onWindowResize = (camera, renderer) => {
   const windowWidth = document.getElementById("modelPlace").clientWidth;
   const windowHeigth = document.getElementById("modelPlace").clientHeight;
   renderer.setSize(windowWidth, windowHeigth);
-  return renderer;
 };
 export {
   animate,
