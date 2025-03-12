@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/BaseRoutes-Bb7_WTIh.js","assets/BaseRoutes-CTkQnywV.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/BaseRoutes-LHr-pTd6.js","assets/BaseRoutes-CTkQnywV.css"])))=>i.map(i=>d[i]);
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -7803,7 +7803,7 @@ function requireReactIs() {
   }
   return reactIs.exports;
 }
-requireReactIs();
+var reactIsExports = requireReactIs();
 function _objectWithoutPropertiesLoose$1(r, e) {
   if (null == r) return {};
   var t = {};
@@ -13871,6 +13871,9 @@ function createLoadable(_ref) {
     }
     function resolve(module, props, Loadable2) {
       var Component = options.resolveComponent ? options.resolveComponent(module, props) : defaultResolveComponent2(module);
+      if (options.resolveComponent && !reactIsExports.isValidElementType(Component)) {
+        throw new Error("resolveComponent returned something that is not a React component!");
+      }
       hoistNonReactStatics$1(Loadable2, Component, {
         preload: true
       });
@@ -14309,9 +14312,9 @@ const Loader = () => {
   });
 };
 const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-(connection == null ? void 0 : connection.effectiveType.includes("2g")) || (connection == null ? void 0 : connection.effectiveType.includes("3g"));
-const BaseRoutes = loadable$2(() => __vitePreload(() => import("./BaseRoutes-Bb7_WTIh.js").then((n) => n.ay), true ? __vite__mapDeps([0,1]) : void 0), {
-  fallback: /* @__PURE__ */ jsx(Loader, {})
+const isSlowNetwork = (connection == null ? void 0 : connection.effectiveType.includes("2g")) || (connection == null ? void 0 : connection.effectiveType.includes("3g"));
+const BaseRoutes = loadable$2(() => __vitePreload(() => import("./BaseRoutes-LHr-pTd6.js").then((n) => n.ay), true ? __vite__mapDeps([0,1]) : void 0), {
+  ssr: !isSlowNetwork
 });
 function App() {
   reactExports.useEffect(() => {
@@ -14321,7 +14324,9 @@ function App() {
     messages: en,
     locale: "en",
     defaultLocale: "en",
-    children: [/* @__PURE__ */ jsx(RouteChangeTracker, {}), /* @__PURE__ */ jsx(BaseRoutes, {})]
+    children: [/* @__PURE__ */ jsx(RouteChangeTracker, {}), /* @__PURE__ */ jsx(BaseRoutes, {
+      fallback: /* @__PURE__ */ jsx(Loader, {})
+    })]
   });
 }
 ReactDOM.hydrate(/* @__PURE__ */ jsx(BrowserRouter, {

@@ -982,9 +982,9 @@ const Loader = () => {
   });
 };
 const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-(connection == null ? void 0 : connection.effectiveType.includes("2g")) || (connection == null ? void 0 : connection.effectiveType.includes("3g"));
+const isSlowNetwork = (connection == null ? void 0 : connection.effectiveType.includes("2g")) || (connection == null ? void 0 : connection.effectiveType.includes("3g"));
 const BaseRoutes = loadable(() => import("./assets/BaseRoutes-euOcL48N.js"), {
-  fallback: /* @__PURE__ */ jsx(Loader, {})
+  ssr: !isSlowNetwork
 });
 function App() {
   useEffect(() => {
@@ -994,7 +994,9 @@ function App() {
     messages: en,
     locale: "en",
     defaultLocale: "en",
-    children: [/* @__PURE__ */ jsx(RouteChangeTracker, {}), /* @__PURE__ */ jsx(BaseRoutes, {})]
+    children: [/* @__PURE__ */ jsx(RouteChangeTracker, {}), /* @__PURE__ */ jsx(BaseRoutes, {
+      fallback: /* @__PURE__ */ jsx(Loader, {})
+    })]
   });
 }
 function render(url, context) {
