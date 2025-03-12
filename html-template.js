@@ -18,17 +18,17 @@ export function getHeader(metaData) {
     <meta property="og:site_name" content="ContentKing" />
     <meta property="og:image" content="${metaData.image}" />
     <meta property="og:image:secure_url" content="${metaData.image}" />
-    <meta property="og:image:width" content="${metaData.imageWidth}" />
-    <meta property="og:image:height" content="${metaData.imageHeight}" />
-
+    
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${metaData.title}" />
     <meta name="twitter:description" content="${metaData.description}" />
     <meta name="twitter:image" content="${metaData.image}" />
-  `;
-}
-
+    `;
+  }
+  
+  // <meta property="og:image:width" content="${metaData.imageWidth}" />
+  // <meta property="og:image:height" content="${metaData.imageHeight}" />
 
 
 // export function getHeader(metaData) {
