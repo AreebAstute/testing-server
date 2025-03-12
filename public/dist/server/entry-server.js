@@ -18902,8 +18902,8 @@ const LandingSection$e = () => {
           width: 1797,
           height: 1209,
           alt: "react-logo",
-          className: "w-full md:w-4/5 lg:w-full",
-          src: "/Images/technologies/React-logo-webp.webp"
+          className: "w-9/12 md:w-7/12 lg:w-8/12",
+          src: "/Images/technologies/vue2x1.webp"
         })
       })]
     })
@@ -19544,8 +19544,8 @@ const LandingSection$d = () => {
           width: 1797,
           height: 1209,
           alt: "react-logo",
-          className: "w-full md:w-4/5 lg:w-full",
-          src: "/Images/technologies/React-logo-webp.webp"
+          className: "w-9/12 md:w-7/12 lg:w-8/12",
+          src: "/Images/technologies/kotlin2x1.webp"
         })
       })]
     })
@@ -20177,8 +20177,8 @@ const LandingSection$c = () => {
           width: 1797,
           height: 1209,
           alt: "react-logo",
-          className: "w-full md:w-4/5 lg:w-full",
-          src: "/Images/technologies/React-logo-webp.webp"
+          className: "w-9/12 md:w-7/12 lg:w-8/12",
+          src: "/Images/technologies/dj2x1.webp"
         })
       })]
     })
@@ -24244,7 +24244,8 @@ const ThirdSection = () => {
           className: "text-xl md:text-3xl 2xl:text-4xl font-extrabold mb-8 capitalize",
           children: "Industries We work with"
         }), /* @__PURE__ */ jsx("p", {
-          className: "font-normal text-lg ",
+          className: "font-normal text-lg text-center"
+        }), /* @__PURE__ */ jsx("p", {
           children: "Astute Softwares' Big Data Development Services are designed to satisfy unique clients’business objectives and budgets with customized oferings. Our skiled teams of Data Scientists, ML engineers, BigData developers and QA specialists work with innovative startups and large enterprises helping them get the most out of their data investment, extract business value from data, optimize business processes, gain consumer insights, and predict sales."
         })]
       }), /* @__PURE__ */ jsxs("div", {
@@ -24300,9 +24301,9 @@ const KandaIndustries$1 = () => {
         backgroundImage: "url(/Images/serviceAssets/section2/left_pattern-webp.webp)"
       },
       children: /* @__PURE__ */ jsxs("div", {
-        className: "flex flex-col items-center text-blue-primary  text-center mx-auto",
+        className: "flex flex-col items-center text-blue-primary w-5/6 lg:w-3/5  text-center mx-auto",
         children: [/* @__PURE__ */ jsx("p", {
-          className: " font-normal text-xl lg:text-2xl",
+          className: "  font-normal text-xl lg:text-2xl",
           children: /* @__PURE__ */ jsx("div", {
             className: "font-medium bg-no-repeat bg-contain bg-center inline-block py-3",
             style: {
@@ -24311,10 +24312,12 @@ const KandaIndustries$1 = () => {
             children: "Technology"
           })
         }), /* @__PURE__ */ jsx("h2", {
-          className: "text-xl md:text-3xl 2xl:text-4xl font-extrabold mb-8 w-5/6 md:w-3/5 xl:w-2/5 leading-normal ",
+          id: "headfinggg",
+          className: "text-xl this is hahhahahahahahah md:text-3xl 2xl:text-4xl font-extrabold mb-8 leading-normal ",
           children: "Astute Softwares' Data Scientists are commited to bringing change to your Business"
         }), /* @__PURE__ */ jsx("p", {
-          className: "font-normal text-lg text-center w-5/6 lg:w-4/6",
+          className: "font-normal text-lg text-center"
+        }), /* @__PURE__ */ jsx("p", {
           children: "Our Data Scientists will explore and carefully examine data from a variety of the disparate sources, deliver new insight critical for better decision—making proceses related to competitive positioning or existing business issues and provide recommendations how to efectively use existing data to achieve unique clients’goals. By analyzing velocity, variety, volume and complexity of client’s data our Data Scientists and software development teams will propose optimal solution to address specific client business needs."
         })]
       })
