@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/BaseRoutes-DS9FjfZ_.js","assets/BaseRoutes-CTkQnywV.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/BaseRoutes-Bb7_WTIh.js","assets/BaseRoutes-CTkQnywV.css"])))=>i.map(i=>d[i]);
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -14308,7 +14308,9 @@ const Loader = () => {
     })
   });
 };
-const BaseRoutes = loadable$2(() => __vitePreload(() => import("./BaseRoutes-DS9FjfZ_.js").then((n) => n.ay), true ? __vite__mapDeps([0,1]) : void 0), {
+const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+(connection == null ? void 0 : connection.effectiveType.includes("2g")) || (connection == null ? void 0 : connection.effectiveType.includes("3g"));
+const BaseRoutes = loadable$2(() => __vitePreload(() => import("./BaseRoutes-Bb7_WTIh.js").then((n) => n.ay), true ? __vite__mapDeps([0,1]) : void 0), {
   fallback: /* @__PURE__ */ jsx(Loader, {})
 });
 function App() {

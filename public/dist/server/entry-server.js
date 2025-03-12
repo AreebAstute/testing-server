@@ -981,6 +981,8 @@ const Loader = () => {
     })
   });
 };
+const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+(connection == null ? void 0 : connection.effectiveType.includes("2g")) || (connection == null ? void 0 : connection.effectiveType.includes("3g"));
 const BaseRoutes = loadable(() => import("./assets/BaseRoutes-euOcL48N.js"), {
   fallback: /* @__PURE__ */ jsx(Loader, {})
 });

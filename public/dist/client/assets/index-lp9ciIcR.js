@@ -1,5 +1,5 @@
-import { j as jsxs, a as jsx, F as Fragment } from "./index-ltyAauky.js";
-import { aw as motion, v as TextureLoader, ax as FaArrowLeft, M as MeshPhongMaterial } from "./BaseRoutes-DS9FjfZ_.js";
+import { j as jsxs, a as jsx, F as Fragment } from "./index-eBv59KwW.js";
+import { aw as motion, v as TextureLoader, ax as FaArrowLeft, M as MeshPhongMaterial } from "./BaseRoutes-Bb7_WTIh.js";
 const COLOR_PALLETTE = ["#ff0000", "#68b745", "#66717E", "#D4D6B9", "#D1CAA1"];
 const BED_PALLETE = [{
   txt: new TextureLoader().load("/textures/bed/1-webp.webp"),
