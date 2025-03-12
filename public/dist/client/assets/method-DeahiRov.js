@@ -1,9 +1,9 @@
-import { G as GLTFLoader } from "./GLTFLoader-BN1_KJyK.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-D-Npn4Il.js";
-import { W as WebGLRenderer, S as Scene, P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, C as Color, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-CFAEiR8u.js";
+import { G as GLTFLoader } from "./GLTFLoader-BhgEKeBe.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-DAKnM0k_.js";
+import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-BNOZ_cot.js";
 const createRenderer = () => {
   var renderer = new WebGLRenderer({
-    canvas: document.getElementById("bottleModel1"),
+    canvas: document.getElementById("plantmodel2"),
     antialias: true,
     alpha: true
   });
@@ -19,19 +19,17 @@ const createScene = () => {
   return scene;
 };
 const createCamera = () => {
-  const camera = new PerspectiveCamera(5, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 20, 4e3);
-  camera.position.z = 100;
+  const camera = new PerspectiveCamera(1, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 20, 4e3);
+  camera.position.z = 190;
   camera.position.x = 0;
-  camera.position.y = 0;
+  camera.position.y = 50;
   return camera;
 };
 const createLight = (scene) => {
-  new AmbientLight(16777215, 1);
+  const ambientlight = new AmbientLight(16777215, 0);
   const pointlight = new PointLight(16777215, 1, 100);
-  pointlight.position.set(0, 2, 10);
-  const pointlightBack = new PointLight(16777215, 1, 100);
-  pointlightBack.position.set(2, 2, -10);
-  scene.add(pointlight, pointlightBack);
+  pointlight.position.set(2, 2, 10);
+  scene.add(ambientlight);
 };
 const createModel = (model, scene, path, setLoading, renderer) => {
   setLoading(true);
@@ -48,12 +46,8 @@ const createModel = (model, scene, path, setLoading, renderer) => {
   });
   loader.load(path, function(gltf) {
     model.current = gltf.scene;
-    model.current.position.y = -2.6;
-    model.current.position.x = 0.5;
-    const BottleMesh = model.current.children.filter((item) => item.name === "base" || item.name === "handle");
-    BottleMesh.map((item) => {
-      item.material.color = new Color("#292523");
-    });
+    model.current.position.y = -0.6;
+    model.current.position.x = 0;
     if (!loadingEnvornment) {
       scene.add(model.current);
       setLoading(false);
@@ -74,16 +68,6 @@ const createFloor = (scene) => {
   floor.position.y = -1;
   scene.add(floor);
 };
-const applyTextureToModel = (parent, type, mtl) => {
-  parent.traverse((o) => {
-    if (o.isMesh) {
-      if (o.name.includes(type)) {
-        o.material = mtl;
-        o.nameID = type;
-      }
-    }
-  });
-};
 const animate = (callback) => {
   function loop(time) {
     callback(time);
@@ -98,7 +82,6 @@ const onWindowResize = (camera, renderer) => {
 };
 export {
   animate,
-  applyTextureToModel,
   createCamera,
   createFloor,
   createLight,

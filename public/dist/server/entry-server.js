@@ -6,12 +6,12 @@ import aos from "aos";
 import { AiOutlineWhatsApp, AiFillStar, AiFillLock } from "react-icons/ai";
 import { FaTwitter, FaInstagram, FaFacebook, FaLinkedin, FaTimes, FaArrowCircleRight, FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa";
 import require$$1$1 from "object-assign";
+import { GLTFExporter } from "three/examples/jsm/exporters/GLTFExporter.js";
 import ReactGA from "react-ga4";
 import { motion, AnimatePresence, useViewportScroll } from "framer-motion";
 import { BsDot, BsArrowRight, BsSearch } from "react-icons/bs";
 import { getDocument, getWindow } from "ssr-window";
 import { $, remove, filter, children, find, closest, parents, parent, prevAll, prev, nextAll, next, prepend, append, eq, index as index$c, is, text, html, each, css, offset, styles, outerHeight, outerWidth, transitionEnd as transitionEnd$1, trigger, off, on, transition as transition$1, transform, removeAttr, attr, toggleClass, hasClass, removeClass, addClass } from "dom7";
-import { GLTFExporter } from "three/examples/jsm/exporters/GLTFExporter.js";
 import { Helmet } from "react-helmet";
 import QRCode from "react-qr-code";
 import { BiLoaderAlt, BiCube, BiLinkExternal, BiMenuAltLeft } from "react-icons/bi";
@@ -1607,6 +1607,9 @@ const Ovarlay = ({
     className: "fixed h-screen w-screen bg-black bg-opacity-25 top-0 left-0 overflow-hidden"
   });
 };
+const initGA = (id) => {
+  ReactGA.initialize(id);
+};
 const handleScroll = (offset2) => {
   console.log("scrolling to:::", offset2 - 40);
   window.scrollTo(0, offset2 - 40);
@@ -1659,6 +1662,44 @@ const saveString = (file, setState, setModelConverting) => {
     var base64data = reader.result;
     setState(base64data);
   };
+};
+const Cookie = ({
+  setCookie
+}) => {
+  const handleChange = () => {
+    setCookie(false);
+    localStorage.setItem("cookies", true);
+    if (process.env.REACT_APP_GA_TRACKING_ID) {
+      initGA(process.env.REACT_APP_GA_TRACKING_ID);
+    }
+  };
+  return /* @__PURE__ */ jsxs("div", {
+    style: {
+      zIndex: "10000"
+    },
+    className: "space-x-4 md:w-1/2 py-4 px-6 fixed left-0 bottom-0 bg-black bg-opacity-80 text-white flex-col flex justify-center items-center",
+    children: [/* @__PURE__ */ jsxs("p", {
+      className: "text-xs 2xl:text-sm w-full lg:w-auto mb-4 text-center lg:mb-0",
+      children: ["This website uses cookies to offer you a better experience. By continuing navigation you agree to the use of cookies. For more information see our ", /* @__PURE__ */ jsx(Link, {
+        className: "underline",
+        to: "/cookie-policy",
+        children: "Cookie Policy."
+      })]
+    }), /* @__PURE__ */ jsxs("div", {
+      className: "flex mt-5",
+      children: [/* @__PURE__ */ jsx("p", {
+        className: "cursor-pointer mx-3 text-sm bg-green-primary py-1 px-3 rounded-md flex-shrink-0",
+        onClick: handleChange,
+        children: "Accept all of them"
+      }), /* @__PURE__ */ jsx("p", {
+        onClick: () => {
+          setCookie(false);
+        },
+        className: "mx-3 text-sm bg-blue-primary py-1 px-3 rounded-md flex-shrink-0 cursor-pointer",
+        children: "Reject all of them"
+      })]
+    })]
+  });
 };
 const GameServices = ({
   gameDownload,
@@ -13309,7 +13350,7 @@ const Viewer = ({
       } = await import("./assets/methods-Bfz_N5DN.js");
       const {
         default: ColorPallete2
-      } = await import("./assets/index-DYbduW6K.js");
+      } = await import("./assets/index-DDNG_pNY.js");
       setColorPalleteComponent(() => ColorPallete2);
       const {
         GLTFExporter: GLTFExporter2
@@ -19504,7 +19545,7 @@ const LandingSection$d = () => {
           height: 1209,
           alt: "react-logo",
           className: "w-full md:w-4/5 lg:w-full",
-          src: "/Images/technologies/react-logo-webp.webp"
+          src: "/Images/technologies/React-logo-webp.webp"
         })
       })]
     })
@@ -20137,7 +20178,7 @@ const LandingSection$c = () => {
           height: 1209,
           alt: "react-logo",
           className: "w-full md:w-4/5 lg:w-full",
-          src: "/Images/technologies/react-logo-webp.webp"
+          src: "/Images/technologies/React-logo-webp.webp"
         })
       })]
     })
@@ -23988,10 +24029,7 @@ const Services$3 = () => {
         children: [/* @__PURE__ */ jsxs("p", {
           className: "text-blue-primary font-normal text-xl lg:text-2xl",
           children: [/* @__PURE__ */ jsx("div", {
-            className: "font-medium bg-no-repeat bg-contain inline-block py-3",
-            style: {
-              backgroundImage: "url(/Images/serviceDetails/title-bg-webp.webp)"
-            },
+            className: "grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-28 mt-10",
             children: "Tech"
           }), "nology"]
         }), /* @__PURE__ */ jsx("h2", {
@@ -30864,11 +30902,20 @@ const BaseRoutes = () => {
   const [sidebar, setSidebar] = useState(false);
   const [gameDownload, setGameDownload] = useState(false);
   const [gamePage, setGamePage] = useState(false);
+  const [cookie, setCookie] = useState(true);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedCookie = localStorage.getItem("cookies");
+      setCookie(storedCookie ? false : true);
+    }
+  }, []);
   const [showHeaderFooter, setShowHeaderFooter] = useState(true);
   return (
     // <div className="flex flex-col h-full pt-28">
     /* @__PURE__ */ jsxs(Fragment, {
-      children: [sidebar ? /* @__PURE__ */ jsx(Ovarlay, {}) : null, showHeaderFooter && // !gamePage &&
+      children: [cookie ? /* @__PURE__ */ jsx(Cookie, {
+        setCookie
+      }) : null, sidebar ? /* @__PURE__ */ jsx(Ovarlay, {}) : null, showHeaderFooter && // !gamePage &&
       /* @__PURE__ */ jsxs(Fragment, {
         children: [/* @__PURE__ */ jsx(Navbar, {
           sidebar,

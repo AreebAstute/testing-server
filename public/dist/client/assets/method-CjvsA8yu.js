@@ -1,9 +1,9 @@
-import { G as GLTFLoader } from "./GLTFLoader-BN1_KJyK.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-D-Npn4Il.js";
-import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-CFAEiR8u.js";
+import { G as GLTFLoader } from "./GLTFLoader-BhgEKeBe.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-DAKnM0k_.js";
+import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-BNOZ_cot.js";
 const createRenderer = () => {
   var renderer = new WebGLRenderer({
-    canvas: document.getElementById("plantModel1"),
+    canvas: document.getElementById("plantModel3"),
     antialias: true,
     alpha: true
   });
@@ -19,14 +19,14 @@ const createScene = () => {
   return scene;
 };
 const createCamera = () => {
-  const camera = new PerspectiveCamera(2, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 20, 4e3);
-  camera.position.z = 100;
+  const camera = new PerspectiveCamera(2.7, document.getElementById("modelPlace").clientWidth / document.getElementById("modelPlace").clientHeight, 0.9, 4e3);
+  camera.position.z = 190;
   camera.position.x = 0;
-  camera.position.y = 30;
+  camera.position.y = 60;
   return camera;
 };
 const createLight = (scene) => {
-  const ambientlight = new AmbientLight(16777215, 1.6);
+  const ambientlight = new AmbientLight(16777215, 1);
   const pointlight = new PointLight(16777215, 1, 100);
   pointlight.position.set(2, 2, 10);
   scene.add(ambientlight);
@@ -46,8 +46,8 @@ const createModel = (model, scene, path, setLoading, renderer) => {
   });
   loader.load(path, function(gltf) {
     model.current = gltf.scene;
-    model.current.position.y = -0.78;
     model.current.position.x = 0;
+    model.current.position.y = -3;
     if (!loadingEnvornment) {
       scene.add(model.current);
       setLoading(false);
