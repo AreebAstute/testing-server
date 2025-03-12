@@ -14,7 +14,7 @@ export function generateMetaInfo({ path }) {
           title: "PAT App Case Study - Astute Softwares",
           description: "Discover how the PAT App streamlines the treatment journey for patients and healthcare providers with virtual consultations, symptom tracking, and medication reminders.",
           url: "https://www.astutesoftwares.com/pat-app", // Replace with your actual case study URL
-          image: "./logo-webp.webp", // Replace with an actual image URL for the case study
+          image: "./AS(logo)- facebook.png", // Replace with an actual image URL for the case study
           keywords: "PAT App, healthcare app, patient care, medication reminders, virtual doctor-patient communication, symptom tracking, healthcare technology",
           author: "Astute Softwares",
         };
@@ -23,7 +23,7 @@ export function generateMetaInfo({ path }) {
           title: "Pro-ID Case Study - Digital Business Cards by Astute Softwares",
           description: "Learn how Astute Softwares developed Pro-ID, a digital business card platform that reduces waste, enhances networking, and offers real-time updates, analytics, and branding opportunities.",
           url: "https://www.astutesoftwares.com/pro-id", // Replace with actual case study page URL
-          image: "./logo-webp.webp", // Replace with actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with actual image URL
           keywords: "digital business card, networking, QR code, NFC, digital transformation, business innovation, eco-friendly, Pro-ID, data analytics, professional branding",
           author: "Astute Softwares",
         };
@@ -32,7 +32,7 @@ export function generateMetaInfo({ path }) {
           title: "Astute Softwares: Dove Ogni Byte - Trasforma le Startup in Giganti",
           description: "Nel 2024, Astute Softwares aiuta le startup a ridurre i costi e a garantire un servizio completo per lo sviluppo e la manutenzione dei loro prodotti digitali. Più di 10 startup hanno lanciato con successo i loro MVP nel 2023.",
           url: "https://www.astutesoftwares.com/turin-startup-campaign", // Replace with your actual website URL
-          image: "./logo-webp.webp", // Replace with an actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with an actual image URL
           keywords: "startup, sviluppo software, MVP, cloud, AWS, DevOps, consulenza IT, modellazione 3D, sviluppo web, manutenzione prodotti digitali",
           author: "Astute Softwares",
         };
@@ -50,7 +50,7 @@ export function generateMetaInfo({ path }) {
           title: "Astute Softwares - Complete Package of Software Development",
           description: "From Product Design to Software Development, Astute Softwares assures continuous delivery for your growth with custom software development, mobile app development, digital transformation, and more.",
           url: "https://www.astutesoftwares.com", // Replace with your actual website URL
-          image: "./logo-webp.webp", // Replace with an actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with an actual image URL
           keywords: "software development, web development, mobile applications, digital transformation, DevOps, QA, blockchain, UI/UX design, big data",
           author: "Astute Softwares",
         };
@@ -68,7 +68,7 @@ export function generateMetaInfo({ path }) {
           title: "Astute Softwares - Your Ideal Software Development Partner",
           description: "Astute Softwares helps tech companies scale up with agile software development teams, offering services in DevOps, Blockchain, Big Data, and more. We focus on innovation, technology, and digitalization to drive business growth.",
           url: "https://www.astutesoftwares.com/about-us", // Replace with your actual URL
-          image: "./logo-webp.webp", // Replace with an actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with an actual image URL
           keywords: "software development, agile development, DevOps, blockchain, big data, technology partnerships, digitalization, cloud computing, UI/UX design",
           author: "Astute Softwares",
         };
@@ -77,7 +77,7 @@ export function generateMetaInfo({ path }) {
           title: "Astute Softwares - Top-Notch IT Solutions & Software Development",
           description: "Looking for cutting-edge IT solutions? Astute Softwares provides top-notch custom software development, digital transformation, QA, DevOps, mobile app development, and more.",
           url: "https://www.astutesoftwares.com", // Replace with your actual website URL
-          image: "./logo-webp.webp", // Replace with an actual image URL, like a banner image or logo
+          image: "./AS(logo)- facebook.png", // Replace with an actual image URL, like a banner image or logo
           keywords: "custom software development, digital transformation, QA services, mobile app development, DevOps, blockchain, augmented reality, big data, UI/UX design, software maintenance",
           author: "Astute Softwares",
         };                             
@@ -123,7 +123,7 @@ export function generateMetaInfo({ path }) {
           title: "Astute Softwares - Agile Software Development Process",
           description: "Astute Softwares helps businesses grow by providing agile software development, project planning, and high-quality scalable solutions. We focus on delivering reliable, predictable, and flexible results that meet business goals.",
           url: "https://www.astutesoftwares.com/how-we-deliver", // Replace with your actual page URL
-          image: "./logo-webp.webp", // Replace with an actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with an actual image URL
           keywords: "agile software development, project planning, software solutions, scalable infrastructure, DevOps, cloud solutions, product management, team scaling",
           author: "Astute Softwares",
         };
@@ -132,7 +132,7 @@ export function generateMetaInfo({ path }) {
           title: "Careers at Astute Softwares - Join Our Growing Team",
           description: "Explore job offers at Astute Softwares. Join one of the fastest-growing software services companies and build your career in a respectful, open, and creative environment.",
           url: "https://www.astutesoftwares.com/careers", // Replace with your actual career page URL
-          image: "./logo-webp.webp", // Replace with an actual image URL for the career page
+          image: "./AS(logo)- facebook.png", // Replace with an actual image URL for the career page
           keywords: "careers, job offers, software development, technology jobs, software services, team, competitive salaries, job openings, tech jobs, Pakistan",
           author: "Astute Softwares",
         };
@@ -150,7 +150,7 @@ export function generateMetaInfo({ path }) {
           title: "Custom Software Development - Astute Softwares",
           description: "Astute Softwares provides custom software development services including discovery, architecture, POC, MVP, QA testing, DevOps, cloud migration, and ongoing support. A reliable and scalable partner for your business.",
           url: "https://www.astutesoftwares.com/services/custom-software-development", // Replace with your actual page URL
-          image: "./logo-webp.webp", // Replace with an actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with an actual image URL
           keywords: "custom software development, software engineering, cloud migration, DevOps, mobile app development, QA testing, Agile, web development, software design",
           author: "Astute Softwares",
         };
@@ -168,7 +168,7 @@ export function generateMetaInfo({ path }) {
           title: "Digital Transformation Services | Astute Softwares",
           description: "Accelerate your journey to the cloud with Astute Softwares' Digital Transformation services. Optimize business performance, improve agility, and unlock new business insights with cloud migration, AI, DevOps, and more.",
           url: "https://www.astutesoftwares.com/services/digital-transformation-services", // Replace with the actual URL of the page
-          image: "./logo-webp.webp", // Replace with the actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with the actual image URL
           keywords: "digital transformation, cloud migration, DevOps, AI, big data, business intelligence, legacy application modernization, data monetization, business agility",
           author: "Astute Softwares",
         };
@@ -177,7 +177,7 @@ export function generateMetaInfo({ path }) {
           title: "Custom Mobile Application Development - Astute Softwares",
           description: "Astute Softwares creates transformative mobile experiences that solve business challenges with expertise in native iOS, Android, and cross-platform development. We deliver beautiful, user-friendly, and high-quality mobile solutions.",
           url: "https://www.astutesoftwares.com/services/mobile-application-development", // Replace with the actual URL for this page
-          image: "./logo-webp.webp", // Replace with the actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with the actual image URL
           keywords: "mobile application development, iOS development, Android development, cross-platform solutions, responsive mobile applications, hybrid apps, UX/UI design, mobile app optimization, enterprise mobile apps, mobile app migration",
           author: "Astute Softwares",
         };
@@ -195,7 +195,7 @@ export function generateMetaInfo({ path }) {
           title: "Application Maintenance & Support Services - Astute Softwares",
           description: "Outsource your application maintenance and support with Astute Softwares to ensure smooth software operation, scalability, and continuous delivery, so your team can focus on business-critical initiatives.",
           url: "https://www.astutesoftwares.com/services/maintenance-and-support", // Replace with your actual URL
-          image: "./logo-webp.webp", // Replace with an actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with an actual image URL
           keywords: "application maintenance, software support services, bug fixing, software upgrades, IT infrastructure, 24/7 support, system monitoring, cloud-native systems, adaptive maintenance, preventive maintenance, corrective maintenance",
           author: "Astute Softwares",
         };
@@ -204,7 +204,7 @@ export function generateMetaInfo({ path }) {
           title: "Big Data Consulting and Analytics Services | Astute Softwares",
           description: "Astute Softwares provides Big Data Consulting and Analytics Services, offering strategic insights and technology solutions to help businesses optimize their data and drive growth.",
           url: "https://www.astutesoftwares.com/services/big-data-consulting-services", // Replace with the actual URL
-          image: "./logo-webp.webp", // Replace with the actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with the actual image URL
           keywords: "Big Data, Data Analytics, Data Consulting, Data Governance, Data Science, Machine Learning, ETL, Cloud Migration, Data Visualization, Predictive Analytics",
           author: "Astute Softwares",
         };
@@ -231,7 +231,7 @@ export function generateMetaInfo({ path }) {
           title: "Time and Material Services - Astute Softwares",
           description: "Astute Softwares offers Time and Material services to address challenges like finding qualified talent, offering flexible budgets, and ensuring client satisfaction with a focus on agile development.",
           url: "https://www.astutesoftwares.com/services/time-and-material-services", // Replace with actual page URL
-          image: "./logo-webp.webp", // Replace with actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with actual image URL
           keywords: "Time and Material Services, Software Development, Agile, Flexibility, Custom Software, Business Agility, Blockchain, DevOps, Quality Assurance",
           author: "Astute Softwares",
         };
@@ -240,7 +240,7 @@ export function generateMetaInfo({ path }) {
           title: "Augmented Reality Agency - Transform Your Business with AR Solutions",
           description: "Whether B2B or B2C, augmented reality helps businesses close more deals and increase brand awareness. Create dynamic, engaging AR experiences that deliver measurable results.",
           url: "https://www.astutesoftwares.com/augmented-reality", // Replace with actual URL
-          image: "./logo-webp.webp", // Replace with actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with actual image URL
           keywords: "augmented reality, AR solutions, AR experiences, virtual showrooms, AR development, B2B, B2C, brand awareness, business growth",
           author: "Astute Softwares",
         };
@@ -249,7 +249,7 @@ export function generateMetaInfo({ path }) {
           title: "Metaverse Development and Consulting Service | Astute Softwares",
           description: "Unlock new opportunities in the evolving digital world with Astute Softwares’ metaverse development and consulting services. Build relationships, engage audiences, and prepare for the future of digital innovation.",
           url: "https://www.astutesoftwares.com/metaverse", // Replace with your actual page URL
-          image: "./logo-webp.webp", // Replace with the actual image URL for this page
+          image: "./AS(logo)- facebook.png", // Replace with the actual image URL for this page
           keywords: "metaverse development, consulting services, digital innovation, Web3, Unity, Unreal, WebXR, blockchain, AWS, spatial design, augmented reality, virtual reality, digital transformation",
           author: "Astute Softwares",
         };
@@ -258,7 +258,7 @@ export function generateMetaInfo({ path }) {
           title: "Affordable 3D Modeling Services for VR and AR Experiences - Astute Softwares",
           description: "Astute Softwares offers affordable 3D modeling services for businesses to showcase products in virtual and augmented reality, enhancing marketing, sales, e-commerce, and more.",
           url: "https://www.astutesoftwares.com/3d-modelling", // Replace with your actual webpage URL
-          image: "./logo-webp.webp", // Replace with your actual image URL (e.g., a hero image or relevant image for 3D modeling)
+          image: "./AS(logo)- facebook.png", // Replace with your actual image URL (e.g., a hero image or relevant image for 3D modeling)
           keywords: "3D modeling, VR, AR, augmented reality, virtual reality, 3D rendering, e-commerce, marketing, sales, industrial models, real estate",
           author: "Astute Softwares",
         };
@@ -321,7 +321,7 @@ export function generateMetaInfo({ path }) {
           title: "Kotlin Development Team - Build High-Performance & Scalable Apps",
           description: "Turn your ideas into high-performance and scalable apps with experienced Kotlin development teams. Focus on business growth with a high-performing development team.",
           url: "https://www.astutesoftwares.com/technologies/kotlin", // Replace with your actual URL
-          image: "./logo-webp.webp", // Replace with an actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with an actual image URL
           keywords: "Kotlin development, scalable apps, Kotlin framework, mobile app development, web app development, enterprise-level applications, high-performance apps",
           author: "Astute Softwares",
         };
@@ -330,7 +330,7 @@ export function generateMetaInfo({ path }) {
           title: "World-Class Django Development Team | Astute Softwares",
           description: "Turn your ideas into high-performance and scalable apps with Astute Softwares' experienced Django development teams. Get rapid, SEO-friendly solutions for your business.",
           url: "https://www.astutesoftwares.com/technologies/django", // Replace with the actual page URL
-          image: "./logo-webp.webp", // Replace with an actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with an actual image URL
           keywords: "Django development, scalable apps, enterprise-level applications, frontend solutions, web and mobile apps, SEO-friendly code, rapid development, Python web framework",
           author: "Astute Softwares",
         };
@@ -366,7 +366,7 @@ export function generateMetaInfo({ path }) {
           title: "Astute Softwares - Complete Package of Software Development",
           description: "From Product Design to Software Development, Astute Softwares assures continuous delivery for your growth with custom software development, mobile app development, digital transformation, and more.",
           url: "https://www.astutesoftwares.com", // Replace with your actual website URL
-          image: "./logo-webp.webp", // Replace with an actual image URL
+          image: "./AS(logo)- facebook.png", // Replace with an actual image URL
           keywords: "software development, web development, mobile applications, digital transformation, DevOps, QA, blockchain, UI/UX design, big data",
           author: "Astute Softwares",
         };
