@@ -1,5 +1,6 @@
 export function generateMetaInfo({ path }) {
-    switch (path) {
+  const normalizedPath = path.replace(/\/$/, '');
+    switch (normalizedPath) {
       case `/edisu`:
         return{
           title: "Edisu Case Study - Astute Softwares",
