@@ -1732,10 +1732,10 @@ const GameServices = ({
           className: "flex  justify-center",
           children: /* @__PURE__ */ jsxs("div", {
             className: "px-5 md:px-20 lg:px-0 inline-block text-center",
-            children: [/* @__PURE__ */ jsx("h1", {
+            children: [/* @__PURE__ */ jsx("h2", {
               className: " smallHeading",
               children: " Our Games"
-            }), /* @__PURE__ */ jsxs("h2", {
+            }), /* @__PURE__ */ jsxs("h3", {
               className: "heding1",
               children: [" ", "Are you ready for our next challenge?", " "]
             })]
@@ -10073,7 +10073,7 @@ const LandingAnimation = ({
           duration: 2
         },
         className: `p-5 lg:p-0 text-center lg:text-left bg-white bg-opacity-80 md:bg-opacity-100 lg:bg-transparent absolute bottom-28 lg:top-1/4 ${metaImg ? "lg:-right-32" : threedImage ? "lg:-right-40 xl:-right-56 " : "lg:-right-40 xl:-right-48"}      } ${isActive ? "block" : "hidden"}  `,
-        children: [/* @__PURE__ */ jsx(motion.h1, {
+        children: [/* @__PURE__ */ jsx(motion.h2, {
           initial: {
             opacity: 0,
             translateY: "-2.5rem",
@@ -11840,7 +11840,7 @@ const ServiceCard = (props) => {
       })
     }), /* @__PURE__ */ jsxs("div", {
       className: "col-span-4 xl:col-span-2 text-blue-primary mt-5 md:mt-0 text-center md:text-left ",
-      children: [/* @__PURE__ */ jsx("h1", {
+      children: [/* @__PURE__ */ jsx("h2", {
         className: "text-base md:text-lg lg:text-base 2xl:text-lg leading-tighter font-bold mb-1",
         children: props.title
       }), /* @__PURE__ */ jsx("p", {
@@ -11909,12 +11909,12 @@ const HomePageServices = () => {
       })
     }), /* @__PURE__ */ jsxs("div", {
       className: "text-center text-blue-primary tracking-wide mb-12 mx-5 md:mt-40 mt-20",
-      children: [/* @__PURE__ */ jsx("h1", {
-        className: "smallHeading",
-        children: "Complete package"
-      }), /* @__PURE__ */ jsx("h2", {
-        className: "heding1",
-        children: "From Product Design to Software Development"
+      children: [/* @__PURE__ */ jsxs("h1", {
+        className: "heading1",
+        children: [/* @__PURE__ */ jsx("span", {
+          className: "block smallHeading",
+          children: "Complete package"
+        }), "From Product Design to Software Development"]
       }), /* @__PURE__ */ jsx("p", {
         className: "text-base text-gray-text my-2",
         children: "Astute Softwares is assuring continuous delivery for your growth"
@@ -12084,10 +12084,10 @@ function LanguagePage() {
           className: "flex  justify-center",
           children: /* @__PURE__ */ jsxs("div", {
             className: " inline-block text-center",
-            children: [/* @__PURE__ */ jsx("h1", {
+            children: [/* @__PURE__ */ jsx("h2", {
               className: " smallHeading",
               children: " Technologies "
-            }), /* @__PURE__ */ jsxs("h2", {
+            }), /* @__PURE__ */ jsxs("h3", {
               className: "heding1",
               children: [" ", "All your favorite technologies at one place", " "]
             })]
@@ -12529,10 +12529,10 @@ function SEOServices() {
           className: "flex  justify-center mt-10",
           children: /* @__PURE__ */ jsxs("div", {
             className: " inline-block text-center mx-2",
-            children: [/* @__PURE__ */ jsx("h1", {
+            children: [/* @__PURE__ */ jsx("h2", {
               className: " smallHeading",
               children: " Complete Astuteness "
-            }), /* @__PURE__ */ jsx("h2", {
+            }), /* @__PURE__ */ jsx("h3", {
               className: "heding1",
               children: "Select the best service for your business’s digital growth"
             })]
@@ -12638,10 +12638,10 @@ const TimeAndMaterial = ({}) => {
         }), /* @__PURE__ */ jsxs("div", {
           className: "w-full lg:w-1/2 flex flex-col text-center lg:text-left space-y-10",
           children: [/* @__PURE__ */ jsxs("div", {
-            children: [/* @__PURE__ */ jsx("h1", {
+            children: [/* @__PURE__ */ jsx("h2", {
               className: " smallHeading",
               children: " Complete package "
-            }), /* @__PURE__ */ jsx("h2", {
+            }), /* @__PURE__ */ jsx("h3", {
               className: "heding1",
               children: " Time and Materials Services "
             })]
