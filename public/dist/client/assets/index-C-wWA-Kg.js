@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-BTEI7Hi9.js","assets/GLTFLoader-BYU_vMBY.js","assets/method-DsUgppZ5.js","assets/RGBELoader-BKU9WGpJ.js","assets/method-NE8GiLqE.js","assets/method-DcIepMMh.js","assets/method-5wIsaDnv.js","assets/method-CuTF2_aV.js","assets/method-DG-Ts0IA.js","assets/method-SPzl9KDJ.js","assets/OrbitControls-DXRuEiT9.js","assets/method-om0IMd8W.js","assets/method-BKlg1LmG.js","assets/method-DSlPRPGj.js","assets/method-DfKYtK8Z.js","assets/method-C_uUBfk6.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-C4KdxwfP.js","assets/GLTFLoader-DzhHJ-Ae.js","assets/method-BtP4IFQ0.js","assets/RGBELoader-BoEgHaz9.js","assets/method-BzcbYo13.js","assets/method-VRbIToEg.js","assets/method-Nk6LoEU2.js","assets/method-Cmh_DIGC.js","assets/method-DNdYcG9o.js","assets/method-cXoKocZv.js","assets/OrbitControls-BwmBXy-h.js","assets/method-DWmI-fjM.js","assets/method-DsH906Ii.js","assets/method-Bf5J2DrN.js","assets/method-xPAC9jSJ.js","assets/method-Dsi33asJ.js"])))=>i.map(i=>d[i]);
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -13696,7 +13696,7 @@ const Index$3 = () => {
           children: [/* @__PURE__ */ jsx$1("img", {
             width: 250,
             height: 63,
-            alt: "white logo",
+            alt: "Astute logo",
             className: "-mt-8",
             src: "/Images/footerAssets/White color logo-webp.webp"
           }), /* @__PURE__ */ jsxs("div", {
@@ -13823,7 +13823,7 @@ const Index$3 = () => {
               children: /* @__PURE__ */ jsx$1("img", {
                 width: 131,
                 height: 131,
-                alt: "insta icon",
+                alt: "instagram",
                 className: "w-7 mr-5",
                 src: "/Images/icons/insta-1-webp.webp"
               })
@@ -13833,7 +13833,7 @@ const Index$3 = () => {
               children: /* @__PURE__ */ jsx$1("img", {
                 width: 131,
                 height: 131,
-                alt: "fb icon",
+                alt: "facebook",
                 className: "w-7 mx-5",
                 src: "/Images/icons/fb_-webp.webp"
               })
@@ -13843,7 +13843,7 @@ const Index$3 = () => {
               children: /* @__PURE__ */ jsx$1("img", {
                 width: 131,
                 height: 131,
-                alt: "in icon",
+                alt: "linkdin",
                 className: "w-7 mx-5",
                 src: "/Images/icons/in-1-webp.webp"
               })
@@ -13853,7 +13853,7 @@ const Index$3 = () => {
               children: /* @__PURE__ */ jsx$1("img", {
                 width: 131,
                 height: 131,
-                alt: "twitter icon",
+                alt: "twitter",
                 className: "w-7 mx-5",
                 src: "/Images/icons/twitter-webp.webp"
               })
@@ -44779,13 +44779,6 @@ const handleScroll = (offset2) => {
   console.log("scrolling to:::", offset2 - 40);
   window.scrollTo(0, offset2 - 40);
 };
-const getImageALt = (img) => {
-  if (img) {
-    const splitArray = img.split("/");
-    const length2 = splitArray.length;
-    return splitArray[length2 - 1];
-  }
-};
 const exportGltfModel = (model, setState, setClickImage) => {
   const exporter = new GLTFExporter();
   exporter.parse(
@@ -61656,7 +61649,7 @@ const ServiceCard = (props) => {
         width: props.width,
         height: props.height,
         className: "w-2/6 md:w-4/6 lg:w-1/6 xl:w-4/6 mx-auto md:mx-0",
-        alt: getImageALt(props.img),
+        alt: props.img.split("/").pop().replace(/-webp/, "").replace(/\.[^.]+$/, ""),
         src: props.img
       })
     }), /* @__PURE__ */ jsxs("div", {
@@ -61731,10 +61724,10 @@ const HomePageServices = () => {
     }), /* @__PURE__ */ jsxs("div", {
       className: "text-center text-blue-primary tracking-wide mb-12 mx-5 md:mt-40 mt-20",
       children: [/* @__PURE__ */ jsxs("h1", {
-        className: "heading1",
-        children: [/* @__PURE__ */ jsx$1("span", {
+        className: "heding1",
+        children: [/* @__PURE__ */ jsxs("span", {
           className: "block smallHeading",
-          children: "Complete package"
+          children: ["Complete package ", " "]
         }), "From Product Design to Software Development"]
       }), /* @__PURE__ */ jsx$1("p", {
         className: "text-base text-gray-text my-2",
@@ -61828,7 +61821,7 @@ const HomePageLanguageCard = ({
           height,
           className: "object-contain h-1/5 w-full",
           src: image,
-          alt: getImageALt(image)
+          alt: image.split("/").pop().replace(/-webp/, "").replace(/\.[^.]+$/, "")
         }), /* @__PURE__ */ jsx$1("h3", {
           className: languageTitle,
           children: title
@@ -62252,7 +62245,7 @@ const SeoServiceCard = ({
             children: [/* @__PURE__ */ jsx$1("img", {
               className: "inline-block py-10",
               src: img,
-              alt: getImageALt(img),
+              alt: img.split("/").pop().replace(/-webp/, "").replace(/\.[^.]+$/, ""),
               width: "150px",
               height: "150px"
             }), /* @__PURE__ */ jsx$1("h3", {
@@ -63426,28 +63419,28 @@ const Features$2 = () => {
       }), /* @__PURE__ */ jsxs("div", {
         className: "lg:w-2/3  mx-5 md:mx-0 gap-y-8 grid grid-cols-2 md:grid-cols-4 mt-16 lg:mt-0 lg:ml-5",
         children: [/* @__PURE__ */ jsx$1(FeatureCard$8, {
-          alt: "fb",
+          alt: "facebook",
           img: "/Images/icons/fb_-webp.webp"
         }), /* @__PURE__ */ jsx$1(FeatureCard$8, {
           alt: "linkedin",
           img: "/Images/icons/in-1-webp.webp"
         }), /* @__PURE__ */ jsx$1(FeatureCard$8, {
-          alt: "insta",
+          alt: "instagram",
           img: "/Images/icons/insta-1-webp.webp"
         }), /* @__PURE__ */ jsx$1(FeatureCard$8, {
           alt: "twitter",
           img: "/Images/icons/twitter-webp.webp"
         }), /* @__PURE__ */ jsx$1(FeatureCard$8, {
-          alt: "fb",
+          alt: "facebook",
           img: "/Images/icons/fb_-webp.webp"
         }), /* @__PURE__ */ jsx$1(FeatureCard$8, {
-          alt: "fb",
+          alt: "facebook",
           img: "/Images/icons/fb_-webp.webp"
         }), /* @__PURE__ */ jsx$1(FeatureCard$8, {
-          alt: "fb",
+          alt: "facebook",
           img: "/Images/icons/fb_-webp.webp"
         }), /* @__PURE__ */ jsx$1(FeatureCard$8, {
-          alt: "fb",
+          alt: "facebook",
           img: "/Images/icons/fb_-webp.webp"
         })]
       })]
@@ -63859,7 +63852,7 @@ const LandingSectionCard = ({
     children: [/* @__PURE__ */ jsx$1("img", {
       width,
       height,
-      alt: "",
+      alt: img.split("/").pop().replace(/-webp/, "").replace(/\.[^.]+$/, ""),
       className: "w-48",
       src: img
     }), /* @__PURE__ */ jsx$1("p", {
@@ -65222,7 +65215,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DXRuEiT9.js");
+        } = await import("./OrbitControls-BwmBXy-h.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -65246,7 +65239,7 @@ const Viewer = ({
           createScene: createScene2,
           onWindowResize: onWindowResize2,
           animate: animate3
-        } = await import("./methods-BTEI7Hi9.js");
+        } = await import("./methods-C4KdxwfP.js");
         return {
           createCamera: createCamera2,
           createFloor: createFloor2,
@@ -65263,7 +65256,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           default: ColorPallete3
-        } = await import("./index-C-u9V2e6.js");
+        } = await import("./index-DJ0e9ZOY.js");
         return {
           default: ColorPallete3
         };
@@ -65587,7 +65580,7 @@ const ServicePageServiceCard = ({
           height,
           className: "inline-block w-2/5 ",
           src: img,
-          alt: getImageALt(img)
+          alt: img.split("/").pop().replace(/-webp/, "").replace(/\.[^.]+$/, "")
         }), /* @__PURE__ */ jsx$1("h3", {
           className: " font-extrabold text-lg text-font-primary",
           children: title
@@ -79722,7 +79715,7 @@ const FeaturesCard$3 = (props) => {
           width: props.width,
           height: props.height,
           className: "w-2/12 mr-3 ",
-          alt: getImageALt(props.img),
+          alt: props.img.split("/").pop().replace(/-webp/, "").replace(/\.[^.]+$/, ""),
           src: props.img
         }), /* @__PURE__ */ jsx$1("h3", {
           className: "text-blue-primary text-xl 2xl:text-2xl font-bold",
@@ -80359,7 +80352,7 @@ const QDFeaturesCard = (props) => {
           width: props.width,
           height: props.height,
           className: "w-2/12 lg:w-3/12 mr-5",
-          alt: getImageALt(props.img),
+          alt: props.img.split("/").pop().replace(/-webp/, "").replace(/\.[^.]+$/, ""),
           src: props.img
         }), /* @__PURE__ */ jsx$1("h3", {
           className: "text-blue-primary text-xl font-bold",
@@ -80463,7 +80456,7 @@ const FeaturesCard$2 = (props) => {
         width: props.width,
         height: props.height,
         className: "w-1/4 md:w-2/12 mt-2 mx-3",
-        alt: getImageALt(props.img),
+        alt: props.img.split("/").pop().replace(/-webp/, "").replace(/\.[^.]+$/, ""),
         src: props.img
       }), /* @__PURE__ */ jsxs("div", {
         className: "ml-3",
@@ -85070,7 +85063,7 @@ const LandingSection$c = () => {
         children: /* @__PURE__ */ jsx$1("img", {
           width: 1797,
           height: 1209,
-          alt: "react-logo",
+          alt: "django",
           className: "w-9/12 md:w-7/12 lg:w-8/12",
           src: "/Images/technologies/dj2x1.webp"
         })
@@ -85145,8 +85138,8 @@ const DjangoFeatures = () => {
     children: /* @__PURE__ */ jsxs("div", {
       className: "lg:w-11/12 lg:mx-auto mx-5 py-20 grid md:grid-cols-2 lg:grid-cols-3 gap-12 ",
       children: [/* @__PURE__ */ jsx$1(FeatureCard, {
-        alt: "benefits-from-laravel",
-        img: "/Images/technologies/Benefits from Laravel's powerfu-webp.webp",
+        alt: "benefits-from-django",
+        img: "/Images/technologies/Benefits from django's powerfu-webp.webp",
         width: 250,
         height: 250,
         title: "Rapid development",
@@ -85161,8 +85154,8 @@ const DjangoFeatures = () => {
             leads to succes. We recognize and reward efort and resist the temptation to
             judge you based on outcomes.`
       }), /* @__PURE__ */ jsx$1(FeatureCard, {
-        alt: "laravel-documentation",
-        img: "/Images/technologies/Laravel documentation-webp.webp",
+        alt: "django-documentation",
+        img: "/Images/technologies/django documentation-webp.webp",
         width: 250,
         height: 250,
         title: "All-in-one approach ",
@@ -85902,7 +85895,7 @@ const EngagementModelCard$1 = ({
           children: [/* @__PURE__ */ jsx$1("img", {
             className: "inline-block my-3 ",
             src: img,
-            alt: getImageALt(img),
+            alt: img.split("/").pop().replace("-webp", "").replace(/\.[^/.]+$/, ""),
             width: "80px",
             height: "80px"
           }), /* @__PURE__ */ jsx$1("h3", {
@@ -85975,7 +85968,7 @@ const SecretSauceCard$1 = (props) => {
       }), /* @__PURE__ */ jsx$1("img", {
         width: props.width,
         height: props.height,
-        alt: getImageALt(props.image),
+        alt: props.image.split("/").pop().replace("-webp", "").replace(/\.[^/.]+$/, ""),
         src: props.image
       })]
     }), /* @__PURE__ */ jsx$1("div", {
@@ -86103,7 +86096,7 @@ const CardLanguage$1 = (props) => {
         children: [/* @__PURE__ */ jsx$1("img", {
           className: "inline-block bg-contain py-10 pl-5 pr-5 ",
           src: props.imgCard,
-          alt: getImageALt(props.imgCard),
+          alt: props.imgCard.split("/").pop().replace(/-webp/, "").replace(/\.[^.]+$/, ""),
           width: "100px",
           height: "100px"
         }), /* @__PURE__ */ jsx$1("h3", {
@@ -86718,7 +86711,7 @@ const QATypeCard = ({
       children: [/* @__PURE__ */ jsx$1("img", {
         className: "inline-block mt-5 ",
         src: img,
-        alt: getImageALt(img),
+        alt: img.split("/").pop().replace("-webp", "").replace(/\.[^/.]+$/, ""),
         width: "80px",
         height: "80px"
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -86986,7 +86979,7 @@ const SecretSauceCard = (props) => {
       }), /* @__PURE__ */ jsx$1("img", {
         height: props.height,
         width: props.width,
-        alt: getImageALt(props.image),
+        alt: props.image.split("/").pop().replace(/-webp/, "").replace(/\.[^.]+$/, ""),
         className: "w-3/5",
         src: props.image
       })]
@@ -87274,7 +87267,7 @@ const MonetizeDataCard = ({
       children: /* @__PURE__ */ jsx$1("img", {
         height,
         width,
-        alt: getImageALt(img),
+        alt: img.split("/").pop().replace("-webp", "").replace(/\.[^/.]+$/, ""),
         className: "bg-gray-light rounded-full",
         src: img
       })
@@ -87380,7 +87373,7 @@ const CardLanguage = (props) => {
         children: [/* @__PURE__ */ jsx$1("img", {
           className: "inline-block bg-contain py-10 pl-5 pr-5 ",
           src: props.imgCard,
-          alt: getImageALt(props.imgCard),
+          alt: props.imgCard.split("/").pop().replace("-webp", "").replace(/\.[^.]+$/, ""),
           width: "100px",
           height: "100px"
         }), /* @__PURE__ */ jsx$1("h3", {
@@ -88278,7 +88271,7 @@ const EngagementModelCard = ({
       children: [/* @__PURE__ */ jsx$1("img", {
         className: "inline-block my-5 ",
         src: img,
-        alt: getImageALt(img),
+        alt: img.split("/").pop().replace("-webp", "").replace(/\.[^/.]+$/, ""),
         width: "80px",
         height: "80px"
       }), /* @__PURE__ */ jsx$1("h3", {
@@ -88464,7 +88457,7 @@ const LanguageCard = ({
     children: /* @__PURE__ */ jsxs("div", {
       className: "flex items-center my-2 md:my-0 lg:mx-10 flex-col",
       children: [/* @__PURE__ */ jsx$1("img", {
-        alt: getImageALt(img),
+        alt: img.split("/").pop().replace(/\.[^/.]+$/, ""),
         src: img
       }), /* @__PURE__ */ jsx$1("p", {
         className: textStyles,
@@ -88639,7 +88632,7 @@ const MaintenanceServicesCard = ({
     children: [/* @__PURE__ */ jsx$1("img", {
       className: "inline-block ",
       src: img,
-      alt: getImageALt(img),
+      alt: img.split("/").pop().replace("-webp", "").replace(/\.[^/.]+$/, ""),
       width: "100px",
       height: "100px"
     }), /* @__PURE__ */ jsxs("h3", {
@@ -88920,12 +88913,17 @@ const Services$3 = () => {
       },
       children: /* @__PURE__ */ jsxs("div", {
         className: " text-blue-primary tracking-wider mb-12 lg:px-20 w-full 2xl:w-4/5",
-        children: [/* @__PURE__ */ jsxs("p", {
-          className: "text-blue-primary font-normal text-xl lg:text-2xl",
-          children: [/* @__PURE__ */ jsx$1("div", {
-            className: "grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-28 mt-10",
-            children: "Tech"
-          }), "nology"]
+        children: [/* @__PURE__ */ jsx$1("div", {
+          children: /* @__PURE__ */ jsxs("p", {
+            className: "text-blue-primary font-normal text-xl lg:text-2xl",
+            children: [/* @__PURE__ */ jsx$1("div", {
+              className: "font-medium bg-no-repeat bg-contain inline-block py-3",
+              style: {
+                backgroundImage: "url(/Images/serviceDetails/title-bg-webp.webp)"
+              },
+              children: "Tech"
+            }), "nology"]
+          })
         }), /* @__PURE__ */ jsx$1("h2", {
           className: "text-xl md:text-3xl 2xl:text-4xl font-extrabold mb-5 capitalize",
           children: "Big data services"
@@ -89105,7 +89103,7 @@ const FeaturesCard$1 = (props) => {
         children: /* @__PURE__ */ jsx$1("img", {
           height: props.height,
           width: props.width,
-          alt: props.img.split("/").pop(),
+          alt: props.img.split("/").pop().replace("-webp", "").replace(/\.[^/.]+$/, ""),
           className: "w-2/6 md:w-2/5 xl:w-3/5",
           src: props.img
         })
@@ -89474,7 +89472,7 @@ const WorkingPrinciple = () => {
             width: 1273,
             height: 182,
             className: "w-4/5 mx-auto",
-            alt: "Working-Principle-of-Decentralized-Web",
+            alt: "Working-Principle-of-Decentralized",
             src: "/Images/serviceDetails/Working-Principle-of-Decentralized-Web-webp.webp"
           })
         }), /* @__PURE__ */ jsxs("div", {
@@ -89508,7 +89506,7 @@ const ReasonCard = (props) => {
         children: [/* @__PURE__ */ jsx$1("img", {
           height: props.height,
           width: props.width,
-          alt: props.img.split("/").pop(),
+          alt: props.img.split("/").pop().replace("-webp", "").replace(/\.[^/.]+$/, ""),
           className: "w-2/12",
           src: props.img
         }), /* @__PURE__ */ jsx$1("h3", {
@@ -89721,10 +89719,11 @@ const Services$2 = () => {
             children: [/* @__PURE__ */ jsxs("div", {
               className: "space-y-3 lg:pl-12 pb-10 lg:pb-0 flex flex-col justify-center lg:h-72",
               children: [/* @__PURE__ */ jsx$1("img", {
-                width: 37,
-                height: 37,
+                width: 184,
+                height: 97,
+                className: "w-2/12",
                 alt: "bullet point",
-                src: "/Images/serviceDetails/bullet-point-webp.webp"
+                src: "/Images/serviceDetails/DevOps-Automation-webp.webp"
               }), /* @__PURE__ */ jsx$1("p", {
                 className: "text-blue-primary font-normal text-xl lg:text-2xl",
                 children: "Technology"
@@ -89886,6 +89885,7 @@ const Management$1 = () => {
   });
 };
 const BenefitsCircle = (props) => {
+  var _a2;
   const outerBoxStyle = "bg-contain rounded-full  bg-no-repeat flex p-5 lg:p-8 justify-center items-center   ";
   const innerBoxStyle = "bg-white w-20 h-20 md:w-16 md:h-16 lg:w-28 lg:h-28 2xl:w-32 2xl:h-32 rounded-full shadow-2xl flex justify-center items-center transform -rotate-90 md:rotate-0";
   const circleText = " py-1 text-blue-primary normal-case lg:uppercase text-sm font-normal flex justify-center w-full w-4/5 lg:mx-auto text-center transform -rotate-90 md:rotate-0";
@@ -89905,7 +89905,7 @@ const BenefitsCircle = (props) => {
           children: /* @__PURE__ */ jsx$1("img", {
             width: props.width,
             height: props.height,
-            alt: props.innerImage.split("/").pop(),
+            alt: (_a2 = props.innerImage) == null ? void 0 : _a2.split("/").pop().replace("-webp", "").replace(/\.[^/.]+$/, ""),
             className: "w-2/5",
             src: props.innerImage
           })
@@ -90502,7 +90502,7 @@ const Consultation = () => {
             width: 762,
             height: 537,
             className: "w-4/5 md:w-2/5 lg:w-3/5",
-            alt: "CAN-THIS-MODEL-BE-OF-USE-image",
+            alt: "Time and Material Services",
             src: "/Images/serviceDetails/TimeAndMaterial/CAN-THIS-MODEL-BE-OF-USE-image-webp.webp"
           })
         }), /* @__PURE__ */ jsx$1("div", {
@@ -90597,7 +90597,7 @@ const TimeAndMaterialService = () => {
 };
 const CouponPage = () => {
   const [scrolled, setScrolled] = reactExports.useState(false);
-  const intl = useIntl();
+  useIntl();
   reactExports.useEffect(() => {
     document.getElementById("couponPath");
     setScrolled(true);
@@ -90605,50 +90605,8 @@ const CouponPage = () => {
       setScrolled(false);
     };
   }, []);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "coupon.astute.softwares",
-          defaultMessage: "Coupons - Astute Softwares"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "save.big.with",
-          defaultMessage: "Save big with our exclusive coupons! Astute Softwares offers a wide range of discounts on products and services. Visit our website today to see how much you can save!"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Exclusive software deals, IT service discounts, Promo codes for services, Software coupon offers, Discounted tech solutions"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/careers"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "coupon.astute.softwares",
-          defaultMessage: "Coupons - Astute Softwares"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "save.big.with",
-          defaultMessage: "Save big with our exclusive coupons! Astute Softwares offers a wide range of discounts on products and services. Visit our website today to see how much you can save!"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/careers"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "h-full flex flex-col pt-20 bg-bottom bg-cover bg-no-repeat",
       style: {
         backgroundImage: "url(/Images/coupon-page/backgorund-pattern-webp.webp)"
@@ -90720,7 +90678,7 @@ const CouponPage = () => {
           })]
         })]
       })]
-    })]
+    })
   });
 };
 const index$b = ({
@@ -91798,7 +91756,7 @@ const PlantModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DXRuEiT9.js");
+        } = await import("./OrbitControls-BwmBXy-h.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91822,7 +91780,7 @@ const PlantModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-DsUgppZ5.js");
+        } = await import("./method-BtP4IFQ0.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -91874,7 +91832,7 @@ const PlantModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DXRuEiT9.js");
+        } = await import("./OrbitControls-BwmBXy-h.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91898,7 +91856,7 @@ const PlantModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-NE8GiLqE.js");
+        } = await import("./method-BzcbYo13.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -91955,7 +91913,7 @@ const PlanModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DXRuEiT9.js");
+        } = await import("./OrbitControls-BwmBXy-h.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91979,7 +91937,7 @@ const PlanModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-DcIepMMh.js");
+        } = await import("./method-VRbIToEg.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92381,7 +92339,7 @@ const BagModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DXRuEiT9.js");
+        } = await import("./OrbitControls-BwmBXy-h.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92405,7 +92363,7 @@ const BagModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-5wIsaDnv.js");
+        } = await import("./method-Nk6LoEU2.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92455,7 +92413,7 @@ const BagModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DXRuEiT9.js");
+        } = await import("./OrbitControls-BwmBXy-h.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92479,7 +92437,7 @@ const BagModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-CuTF2_aV.js");
+        } = await import("./method-Cmh_DIGC.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92535,7 +92493,7 @@ const BagModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DXRuEiT9.js");
+        } = await import("./OrbitControls-BwmBXy-h.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92559,7 +92517,7 @@ const BagModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-DG-Ts0IA.js");
+        } = await import("./method-DNdYcG9o.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92756,13 +92714,13 @@ const Model1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DXRuEiT9.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-BwmBXy-h.js"), true ? [] : void 0);
     const {
       createCamera,
       createRenderer,
       onWindowResize,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-SPzl9KDJ.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-cXoKocZv.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -92785,7 +92743,7 @@ const Model2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DXRuEiT9.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-BwmBXy-h.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92794,7 +92752,7 @@ const Model2 = ({
       createScene,
       onWindowResize,
       animate: animate2
-    } = __vitePreload(() => import("./method-om0IMd8W.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-DWmI-fjM.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
     const renderer = createRenderer();
     const scene = createScene();
     const camera = createCamera();
@@ -92832,7 +92790,7 @@ const Model3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DXRuEiT9.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-BwmBXy-h.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92842,7 +92800,7 @@ const Model3 = ({
       animate: animate2,
       createFloor,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-BKlg1LmG.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-DsH906Ii.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -92914,7 +92872,7 @@ const BottleModel1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DXRuEiT9.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-BwmBXy-h.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92924,7 +92882,7 @@ const BottleModel1 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-DSlPRPGj.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-Bf5J2DrN.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -92959,7 +92917,7 @@ const BottleModel2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DXRuEiT9.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-BwmBXy-h.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92969,7 +92927,7 @@ const BottleModel2 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-DfKYtK8Z.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-xPAC9jSJ.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93006,7 +92964,7 @@ const BottleModel3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DXRuEiT9.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-BwmBXy-h.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93016,7 +92974,7 @@ const BottleModel3 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-C_uUBfk6.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-Dsi33asJ.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93318,7 +93276,7 @@ const ModalVideo = (props) => {
   const [isOpen, setOpen] = reactExports.useState(false);
   const [VideoModal, setVideoModal] = reactExports.useState(null);
   reactExports.useEffect(() => {
-    __vitePreload(() => import("./index-DrkogbG4.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
+    __vitePreload(() => import("./index-C3QSdxeH.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
       setVideoModal(() => module2.default);
     });
   }, []);
@@ -93522,7 +93480,7 @@ const BucketCart = ({
       children: /* @__PURE__ */ jsxs("div", {
         className: "text-center space-y-3 flex flex-col items-center justify-center bg-golden-text rounded-3xl px-10 pb-20",
         children: [/* @__PURE__ */ jsx$1("img", {
-          alt: img.split("/").pop(),
+          alt: img.split("/").pop().replace("-webp", "").replace(/\.[^/.]+$/, ""),
           className: "w-40 mb-5 -mt-20",
           src: img
         }), /* @__PURE__ */ jsxs("div", {
@@ -93766,53 +93724,11 @@ const Index = ({
   });
 };
 const CookiePolicy = () => {
-  const intl = useIntl();
+  useIntl();
   const questionStyle = "font-bold my-2 text-black";
   const linkStyles = "underline text-blue-700";
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "astute.software.cookie",
-          defaultMessage: "Astute Softwares - Cookie Policy"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.software.cookie.desc",
-          defaultMessage: "Astute Softwares website only uses technical cookies, including analytics cookies, in order to ensure its user-friendliness and improve its functionality."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Website cookie policy, Cookie consent guide, Managing cookies, Online privacy cookies, Cookie usage policy"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/cookie-policy"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "astute.software.cookie",
-          defaultMessage: "Astute Softwares - Cookie Policy"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.software.cookie.desc",
-          defaultMessage: "Astute Softwares website only uses technical cookies, including analytics cookies, in order to ensure its user-friendliness and improve its functionality."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/cookie-policy"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsxs("div", {
       className: "pt-32 mb-20 mx-10 text-lg text-gray-text",
       children: [/* @__PURE__ */ jsx$1("h1", {
         className: "my-8 text-xl",
@@ -93951,59 +93867,17 @@ const CookiePolicy = () => {
           children: "Cookie Policy."
         })]
       })]
-    })]
+    })
   });
 };
 const PrivacyPolicy = () => {
-  const intl = useIntl();
+  useIntl();
   const linkStyles = "underline text-blue-700";
   reactExports.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsxs(HelmetExport, {
-      children: [/* @__PURE__ */ jsx$1("title", {
-        children: intl.formatMessage({
-          id: "astute.software.privacy",
-          defaultMessage: "Astute Softwares - Policy"
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "description",
-        content: intl.formatMessage({
-          id: "astute.software.privacy.desc",
-          defaultMessage: "Personal data is processed in accordance with the GDPR. The Personal data collected by ASTUTE SOFTWARES will be processed in accordance with the law."
-        })
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "keywords",
-        content: "Online privacy policy, Data protection statement, User information privacy, Privacy practices, Personal data policy"
-      }), /* @__PURE__ */ jsx$1("link", {
-        rel: "canonical",
-        href: "https://astutesoftwares.com/privacy-policy"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:title",
-        content: intl.formatMessage({
-          id: "astute.software.privacy",
-          defaultMessage: "Astute Softwares - Policy"
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:description",
-        content: intl.formatMessage({
-          id: "astute.software.privacy.desc",
-          defaultMessage: "Personal data is processed in accordance with the GDPR. The Personal data collected by ASTUTE SOFTWARES will be processed in accordance with the law."
-        }),
-        "data-react-helmet": "true"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:type",
-        content: "website"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        property: "og:url",
-        content: "https://astutesoftwares.com/privacy-policy"
-      }), /* @__PURE__ */ jsx$1("meta", {
-        name: "referrer",
-        content: "origin-when-crossorigin"
-      })]
-    }), /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsx$1(Fragment, {
+    children: /* @__PURE__ */ jsx$1("div", {
       className: "w-11/12 mx-auto pt-32 mb-20 text-lg text-blue-primary",
       children: /* @__PURE__ */ jsx$1("section", {
         className: "mt-0 md:mt-12 align-baseline flex flex-wrap -mr-4 -ml-4",
@@ -94481,7 +94355,7 @@ const PrivacyPolicy = () => {
           })
         })
       })
-    })]
+    })
   });
 };
 const statsData$1 = [{

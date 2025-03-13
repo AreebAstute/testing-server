@@ -24,6 +24,9 @@ export function getHeader(metaData) {
     <meta name="twitter:title" content="${metaData.title}" />
     <meta name="twitter:description" content="${metaData.description}" />
     <meta name="twitter:image" content="${metaData.image}" />
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="${metaData.url}" />
     `;
   }
   
