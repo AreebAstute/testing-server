@@ -12,7 +12,7 @@ import { motion, AnimatePresence, useViewportScroll } from "framer-motion";
 import { BsDot, BsArrowRight, BsSearch } from "react-icons/bs";
 import { getDocument, getWindow } from "ssr-window";
 import { $, remove, filter, children, find, closest, parents, parent, prevAll, prev, nextAll, next, prepend, append, eq, index as index$c, is, text, html, each, css, offset, styles, outerHeight, outerWidth, transitionEnd as transitionEnd$1, trigger, off, on, transition as transition$1, transform, removeAttr, attr, toggleClass, hasClass, removeClass, addClass } from "dom7";
-import "react-helmet";
+import { Helmet } from "react-helmet";
 import QRCode from "react-qr-code";
 import { BiLoaderAlt, BiCube, BiLinkExternal, BiMenuAltLeft } from "react-icons/bi";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -12667,14 +12667,18 @@ const Index$2 = ({
   setGameDownload
 }) => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Astute Softwares - Complete Package of Software Development"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "overflow-hidden",
       children: [/* @__PURE__ */ jsx(MainPageContent, {}), /* @__PURE__ */ jsx(HomePageServices, {}), /* @__PURE__ */ jsx(SEOServices, {}), /* @__PURE__ */ jsx(TimeAndMaterial, {}), /* @__PURE__ */ jsx(LanguagePage, {}), /* @__PURE__ */ jsx(GameServices, {
         gameDownload,
         setGameDownload
       }), /* @__PURE__ */ jsx(Consultation$1, {})]
-    })
+    })]
   });
 };
 const FeatureCard$8 = ({
@@ -13571,11 +13575,15 @@ const LandingSection$m = () => {
 };
 const ARLandingPage = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "The Leading Platform for 3D & AR on the Web - ViewAR"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "py-28 relative z-20",
       children: [/* @__PURE__ */ jsx(LandingSection$m, {}), /* @__PURE__ */ jsx(Intro, {}), /* @__PURE__ */ jsx(StepOne, {}), /* @__PURE__ */ jsx(StepTwo, {}), /* @__PURE__ */ jsx(StepThree, {}), /* @__PURE__ */ jsx(StepFour, {}), /* @__PURE__ */ jsx(StepFive, {}), /* @__PURE__ */ jsx(Hiring$2, {}), /* @__PURE__ */ jsx(Features$1, {}), /* @__PURE__ */ jsx(Hiring$3, {}), /* @__PURE__ */ jsx(Features$2, {})]
-    })
+    })]
   });
 };
 const ScrollButton = ({
@@ -19612,7 +19620,7 @@ const KotlineFeatures = () => {
       className: "lg:w-11/12 lg:mx-auto mx-5 py-20 grid md:grid-cols-2 lg:grid-cols-3 gap-12 ",
       children: [/* @__PURE__ */ jsx(FeatureCard$1, {
         alt: "benefits-from-Kotlin",
-        img: "/Images/technologies/Benefits from Kotlin's powerfu-webp.webp",
+        img: "/Images/technologies/Benefits from Laravel's powerfu-webp.webp",
         title: "Rapid development",
         desc: "Kotlin provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx(FeatureCard$1, {
@@ -19626,7 +19634,7 @@ const KotlineFeatures = () => {
             judge you based on outcomes.`
       }), /* @__PURE__ */ jsx(FeatureCard$1, {
         alt: "Kotlin",
-        img: "/Images/technologies/Kotlin documentation-webp.webp",
+        img: "/Images/technologies/Laravel documentation-webp.webp",
         title: "All-in-one approach ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
@@ -20245,7 +20253,7 @@ const DjangoFeatures = () => {
       className: "lg:w-11/12 lg:mx-auto mx-5 py-20 grid md:grid-cols-2 lg:grid-cols-3 gap-12 ",
       children: [/* @__PURE__ */ jsx(FeatureCard, {
         alt: "benefits-from-django",
-        img: "/Images/technologies/Benefits from django's powerfu-webp.webp",
+        img: "/Images/technologies/Benefits from Laravel's powerfu-webp.webp",
         width: 250,
         height: 250,
         title: "Rapid development",
@@ -20261,7 +20269,7 @@ const DjangoFeatures = () => {
             judge you based on outcomes.`
       }), /* @__PURE__ */ jsx(FeatureCard, {
         alt: "django-documentation",
-        img: "/Images/technologies/django documentation-webp.webp",
+        img: "/Images/technologies/Laravel documentation-webp.webp",
         width: 250,
         height: 250,
         title: "All-in-one approach ",
@@ -29660,11 +29668,15 @@ const TidioChat = () => {
 };
 function LandingPage$1() {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Astute Softwares - Transforming Startups with Affordable Digital Solutions"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "main_landing flex flex-col py-8",
       children: [/* @__PURE__ */ jsx(HeroSection$1, {}), /* @__PURE__ */ jsx(MostSearchedSection$1, {}), /* @__PURE__ */ jsx(SolutionSection$1, {}), /* @__PURE__ */ jsx(TechSection$1, {}), /* @__PURE__ */ jsx(ReviewSection$1, {}), /* @__PURE__ */ jsx(TidioChat, {})]
-    })
+    })]
   });
 }
 const statsData = [{
@@ -30078,11 +30090,15 @@ function ReviewSection() {
 }
 function LandingPage() {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Astute Softwares: Dove Ogni Byte - Trasforma le Startup in Giganti"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "main_landing flex flex-col py-8",
       children: [/* @__PURE__ */ jsx(HeroSection, {}), /* @__PURE__ */ jsx(MostSearchedSection, {}), /* @__PURE__ */ jsx(SolutionSection, {}), /* @__PURE__ */ jsx(TechSection, {}), /* @__PURE__ */ jsx(ReviewSection, {}), /* @__PURE__ */ jsx(TidioChat, {})]
-    })
+    })]
   });
 }
 const PageNotFound = () => {

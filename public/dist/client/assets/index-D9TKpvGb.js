@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-C4KdxwfP.js","assets/GLTFLoader-DzhHJ-Ae.js","assets/method-BtP4IFQ0.js","assets/RGBELoader-BoEgHaz9.js","assets/method-BzcbYo13.js","assets/method-VRbIToEg.js","assets/method-Nk6LoEU2.js","assets/method-Cmh_DIGC.js","assets/method-DNdYcG9o.js","assets/method-cXoKocZv.js","assets/OrbitControls-BwmBXy-h.js","assets/method-DWmI-fjM.js","assets/method-DsH906Ii.js","assets/method-Bf5J2DrN.js","assets/method-xPAC9jSJ.js","assets/method-Dsi33asJ.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-DZ2SQqef.js","assets/GLTFLoader-BepbwYof.js","assets/method-BR2NwiwS.js","assets/RGBELoader-CNh8YRrg.js","assets/method-5ckPXkMD.js","assets/method-DK5Q0Div.js","assets/method-R4hU_T72.js","assets/method-CU5SUjqC.js","assets/method-BT0Mvm7A.js","assets/method-Cu3o_quA.js","assets/OrbitControls-DDk9-jBQ.js","assets/method-Dssmqfmm.js","assets/method-yvjGtsAU.js","assets/method-DklC6ovk.js","assets/method-BvZoYmeK.js","assets/method-D5-AxxI0.js"])))=>i.map(i=>d[i]);
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -62483,21 +62483,6 @@ const TimeAndMaterial = ({}) => {
     })
   });
 };
-const Index$2 = ({
-  gameDownload,
-  setGameDownload
-}) => {
-  useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
-      className: "overflow-hidden",
-      children: [/* @__PURE__ */ jsx$1(MainPageContent, {}), /* @__PURE__ */ jsx$1(HomePageServices, {}), /* @__PURE__ */ jsx$1(SEOServices, {}), /* @__PURE__ */ jsx$1(TimeAndMaterial, {}), /* @__PURE__ */ jsx$1(LanguagePage, {}), /* @__PURE__ */ jsx$1(GameServices, {
-        gameDownload,
-        setGameDownload
-      }), /* @__PURE__ */ jsx$1(Consultation$1, {})]
-    })
-  });
-};
 var lib$1;
 var hasRequiredLib$1;
 function requireLib$1() {
@@ -63376,6 +63361,25 @@ var NullComponent = function NullComponent2() {
 var HelmetSideEffects = withSideEffect(reducePropsToState, handleClientStateChange, mapStateOnServer)(NullComponent);
 var HelmetExport = Helmet(HelmetSideEffects);
 HelmetExport.renderStatic = HelmetExport.rewind;
+const Index$2 = ({
+  gameDownload,
+  setGameDownload
+}) => {
+  useIntl();
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Astute Softwares - Complete Package of Software Development"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
+      className: "overflow-hidden",
+      children: [/* @__PURE__ */ jsx$1(MainPageContent, {}), /* @__PURE__ */ jsx$1(HomePageServices, {}), /* @__PURE__ */ jsx$1(SEOServices, {}), /* @__PURE__ */ jsx$1(TimeAndMaterial, {}), /* @__PURE__ */ jsx$1(LanguagePage, {}), /* @__PURE__ */ jsx$1(GameServices, {
+        gameDownload,
+        setGameDownload
+      }), /* @__PURE__ */ jsx$1(Consultation$1, {})]
+    })]
+  });
+};
 const FeatureCard$8 = ({
   img,
   alt
@@ -65215,7 +65219,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BwmBXy-h.js");
+        } = await import("./OrbitControls-DDk9-jBQ.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -65239,7 +65243,7 @@ const Viewer = ({
           createScene: createScene2,
           onWindowResize: onWindowResize2,
           animate: animate3
-        } = await import("./methods-C4KdxwfP.js");
+        } = await import("./methods-DZ2SQqef.js");
         return {
           createCamera: createCamera2,
           createFloor: createFloor2,
@@ -65256,7 +65260,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           default: ColorPallete3
-        } = await import("./index-DJ0e9ZOY.js");
+        } = await import("./index-CVMrW2wm.js");
         return {
           default: ColorPallete3
         };
@@ -65502,11 +65506,15 @@ const LandingSection$m = () => {
 };
 const ARLandingPage = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "The Leading Platform for 3D & AR on the Web - ViewAR"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "py-28 relative z-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$m, {}), /* @__PURE__ */ jsx$1(Intro, {}), /* @__PURE__ */ jsx$1(StepOne, {}), /* @__PURE__ */ jsx$1(StepTwo, {}), /* @__PURE__ */ jsx$1(StepThree, {}), /* @__PURE__ */ jsx$1(StepFour, {}), /* @__PURE__ */ jsx$1(StepFive, {}), /* @__PURE__ */ jsx$1(Hiring$2, {}), /* @__PURE__ */ jsx$1(Features$1, {}), /* @__PURE__ */ jsx$1(Hiring$3, {}), /* @__PURE__ */ jsx$1(Features$2, {})]
-    })
+    })]
   });
 };
 const ScrollButton = ({
@@ -84506,7 +84514,7 @@ const KotlineFeatures = () => {
       className: "lg:w-11/12 lg:mx-auto mx-5 py-20 grid md:grid-cols-2 lg:grid-cols-3 gap-12 ",
       children: [/* @__PURE__ */ jsx$1(FeatureCard$1, {
         alt: "benefits-from-Kotlin",
-        img: "/Images/technologies/Benefits from Kotlin's powerfu-webp.webp",
+        img: "/Images/technologies/Benefits from Laravel's powerfu-webp.webp",
         title: "Rapid development",
         desc: "Kotlin provides top-quality,ready-made solutions,templates and components"
       }), /* @__PURE__ */ jsx$1(FeatureCard$1, {
@@ -84520,7 +84528,7 @@ const KotlineFeatures = () => {
             judge you based on outcomes.`
       }), /* @__PURE__ */ jsx$1(FeatureCard$1, {
         alt: "Kotlin",
-        img: "/Images/technologies/Kotlin documentation-webp.webp",
+        img: "/Images/technologies/Laravel documentation-webp.webp",
         title: "All-in-one approach ",
         desc: `Since it's robust, you can limit external dependencies to as elected
             number of trusted solutions`
@@ -85139,7 +85147,7 @@ const DjangoFeatures = () => {
       className: "lg:w-11/12 lg:mx-auto mx-5 py-20 grid md:grid-cols-2 lg:grid-cols-3 gap-12 ",
       children: [/* @__PURE__ */ jsx$1(FeatureCard, {
         alt: "benefits-from-django",
-        img: "/Images/technologies/Benefits from django's powerfu-webp.webp",
+        img: "/Images/technologies/Benefits from Laravel's powerfu-webp.webp",
         width: 250,
         height: 250,
         title: "Rapid development",
@@ -85155,7 +85163,7 @@ const DjangoFeatures = () => {
             judge you based on outcomes.`
       }), /* @__PURE__ */ jsx$1(FeatureCard, {
         alt: "django-documentation",
-        img: "/Images/technologies/django documentation-webp.webp",
+        img: "/Images/technologies/Laravel documentation-webp.webp",
         width: 250,
         height: 250,
         title: "All-in-one approach ",
@@ -91756,7 +91764,7 @@ const PlantModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BwmBXy-h.js");
+        } = await import("./OrbitControls-DDk9-jBQ.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91780,7 +91788,7 @@ const PlantModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BtP4IFQ0.js");
+        } = await import("./method-BR2NwiwS.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -91832,7 +91840,7 @@ const PlantModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BwmBXy-h.js");
+        } = await import("./OrbitControls-DDk9-jBQ.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91856,7 +91864,7 @@ const PlantModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BzcbYo13.js");
+        } = await import("./method-5ckPXkMD.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -91913,7 +91921,7 @@ const PlanModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BwmBXy-h.js");
+        } = await import("./OrbitControls-DDk9-jBQ.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91937,7 +91945,7 @@ const PlanModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-VRbIToEg.js");
+        } = await import("./method-DK5Q0Div.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92339,7 +92347,7 @@ const BagModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BwmBXy-h.js");
+        } = await import("./OrbitControls-DDk9-jBQ.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92363,7 +92371,7 @@ const BagModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-Nk6LoEU2.js");
+        } = await import("./method-R4hU_T72.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92413,7 +92421,7 @@ const BagModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BwmBXy-h.js");
+        } = await import("./OrbitControls-DDk9-jBQ.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92437,7 +92445,7 @@ const BagModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-Cmh_DIGC.js");
+        } = await import("./method-CU5SUjqC.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92493,7 +92501,7 @@ const BagModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-BwmBXy-h.js");
+        } = await import("./OrbitControls-DDk9-jBQ.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92517,7 +92525,7 @@ const BagModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-DNdYcG9o.js");
+        } = await import("./method-BT0Mvm7A.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92714,13 +92722,13 @@ const Model1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-BwmBXy-h.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DDk9-jBQ.js"), true ? [] : void 0);
     const {
       createCamera,
       createRenderer,
       onWindowResize,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-cXoKocZv.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-Cu3o_quA.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -92743,7 +92751,7 @@ const Model2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-BwmBXy-h.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DDk9-jBQ.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92752,7 +92760,7 @@ const Model2 = ({
       createScene,
       onWindowResize,
       animate: animate2
-    } = __vitePreload(() => import("./method-DWmI-fjM.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-Dssmqfmm.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
     const renderer = createRenderer();
     const scene = createScene();
     const camera = createCamera();
@@ -92790,7 +92798,7 @@ const Model3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-BwmBXy-h.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DDk9-jBQ.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92800,7 +92808,7 @@ const Model3 = ({
       animate: animate2,
       createFloor,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-DsH906Ii.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-yvjGtsAU.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -92872,7 +92880,7 @@ const BottleModel1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-BwmBXy-h.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DDk9-jBQ.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92882,7 +92890,7 @@ const BottleModel1 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-Bf5J2DrN.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-DklC6ovk.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -92917,7 +92925,7 @@ const BottleModel2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-BwmBXy-h.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DDk9-jBQ.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92927,7 +92935,7 @@ const BottleModel2 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-xPAC9jSJ.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-BvZoYmeK.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -92964,7 +92972,7 @@ const BottleModel3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-BwmBXy-h.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-DDk9-jBQ.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92974,7 +92982,7 @@ const BottleModel3 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-Dsi33asJ.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-D5-AxxI0.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93276,7 +93284,7 @@ const ModalVideo = (props) => {
   const [isOpen, setOpen] = reactExports.useState(false);
   const [VideoModal, setVideoModal] = reactExports.useState(null);
   reactExports.useEffect(() => {
-    __vitePreload(() => import("./index-C3QSdxeH.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
+    __vitePreload(() => import("./index-DJj7kv-P.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
       setVideoModal(() => module2.default);
     });
   }, []);
@@ -94784,11 +94792,15 @@ const TidioChat = () => {
 };
 function LandingPage$1() {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Astute Softwares - Transforming Startups with Affordable Digital Solutions"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "main_landing flex flex-col py-8",
       children: [/* @__PURE__ */ jsx$1(HeroSection$1, {}), /* @__PURE__ */ jsx$1(MostSearchedSection$1, {}), /* @__PURE__ */ jsx$1(SolutionSection$1, {}), /* @__PURE__ */ jsx$1(TechSection$1, {}), /* @__PURE__ */ jsx$1(ReviewSection$1, {}), /* @__PURE__ */ jsx$1(TidioChat, {})]
-    })
+    })]
   });
 }
 const statsData = [{
@@ -95202,11 +95214,15 @@ function ReviewSection() {
 }
 function LandingPage() {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Astute Softwares: Dove Ogni Byte - Trasforma le Startup in Giganti"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "main_landing flex flex-col py-8",
       children: [/* @__PURE__ */ jsx$1(HeroSection, {}), /* @__PURE__ */ jsx$1(MostSearchedSection, {}), /* @__PURE__ */ jsx$1(SolutionSection, {}), /* @__PURE__ */ jsx$1(TechSection, {}), /* @__PURE__ */ jsx$1(ReviewSection, {}), /* @__PURE__ */ jsx$1(TidioChat, {})]
-    })
+    })]
   });
 }
 const PageNotFound = () => {

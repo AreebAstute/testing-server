@@ -21,8 +21,6 @@ process.env.MY_CUSTOM_SECRET = 'API_KEY_qwertyuiop';
 async function createServer(root = process.cwd(), isProd = process.env.VITE_NODE_ENV === process.env.VITE_NODE_ENV) {
   const resolve = (p) => path.resolve(__dirname, p);
 
-  console.log("this is resolve", resolve)
-
   const indexProd = isProd ? fs.readFileSync(resolve('./public/dist/client/index.html'), 'utf-8') : '';
 
   const app = express();
