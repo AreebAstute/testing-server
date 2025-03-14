@@ -12,7 +12,7 @@ import { motion, AnimatePresence, useViewportScroll } from "framer-motion";
 import { BsDot, BsArrowRight, BsSearch } from "react-icons/bs";
 import { getDocument, getWindow } from "ssr-window";
 import { $, remove, filter, children, find, closest, parents, parent, prevAll, prev, nextAll, next, prepend, append, eq, index as index$c, is, text, html, each, css, offset, styles, outerHeight, outerWidth, transitionEnd as transitionEnd$1, trigger, off, on, transition as transition$1, transform, removeAttr, attr, toggleClass, hasClass, removeClass, addClass } from "dom7";
-import { Helmet as Helmet$1 } from "react-helmet";
+import { Helmet } from "react-helmet";
 import QRCode from "react-qr-code";
 import { BiLoaderAlt, BiCube, BiLinkExternal, BiMenuAltLeft } from "react-icons/bi";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -12668,7 +12668,7 @@ const Index$2 = ({
 }) => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Astute Softwares - Complete Package of Software Development"
       })
@@ -13576,7 +13576,7 @@ const LandingSection$m = () => {
 const ARLandingPage = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "The Leading Platform for 3D & AR on the Web - ViewAR"
       })
@@ -13980,7 +13980,7 @@ function ServiceIndex() {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Astute Softwares - Top-Notch IT Solutions & Software Development"
       })
@@ -14259,7 +14259,7 @@ function AboutUSIndex() {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Astute Softwares - Your Ideal Software Development Partner"
       })
@@ -14793,7 +14793,7 @@ const MapSection = () => {
 const Index$1 = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Contact Astute Softwares - Get in Touch with Our Experts"
       })
@@ -15744,7 +15744,7 @@ const IterativeIncremental = () => {
 const HowWeDeliver = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Astute Softwares - Agile Software Development Process"
       })
@@ -16959,7 +16959,7 @@ const WhyAngular = () => {
 const Angular = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Angular Development Services - Build High-Performance, Scalable Apps"
       })
@@ -17607,7 +17607,7 @@ const WhyLaravel = () => {
 const Laravel = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Laravel Development Services - High-Performance and Scalable Apps"
       })
@@ -18255,7 +18255,7 @@ const WhyReact = () => {
 const ReactTechnology = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "React Development Services - Build High-Performance Apps"
       })
@@ -18903,7 +18903,7 @@ const WhyNode = () => {
 const Node = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Node Development Services - High Performance & Scalable Apps"
       })
@@ -19549,7 +19549,7 @@ const WhyVueJs = () => {
 const VueJs = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Vue JS Development Team | Astute Softwares"
       })
@@ -20186,7 +20186,7 @@ const WhyKotline = () => {
 const Kotline = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Kotlin Development Team - Build High-Performance & Scalable Apps"
       })
@@ -20831,7 +20831,7 @@ const WhyDjango = () => {
 const Django = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "World-Class Django Development Team | Astute Softwares"
       })
@@ -21741,7 +21741,7 @@ const WebDevService = () => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Custom Software Development - Astute Softwares"
       })
@@ -22043,7 +22043,7 @@ const QAService = () => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Software Quality Assurance and Testing Services - Astute Softwares"
       })
@@ -22983,7 +22983,7 @@ const DTService = () => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Digital Transformation Services | Astute Softwares"
       })
@@ -23245,7 +23245,7 @@ const MobileAppDev = () => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Custom Mobile Application Development - Astute Softwares"
       })
@@ -24405,7 +24405,7 @@ const KandaIndustries$1 = () => {
 const BigDataService = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Big Data Consulting and Analytics Services | Astute Softwares"
       })
@@ -24763,7 +24763,7 @@ const WhyChooseUs = () => {
 const BlockChainService = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Blockchain Web Development Services - Astute Softwares"
       })
@@ -25490,7 +25490,7 @@ const Management = () => {
 const DevopService = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "DevOps Services and Solutions - Astute Softwares"
       })
@@ -25808,7 +25808,7 @@ const CouponPage = () => {
     };
   }, []);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Astute Softwares - Exclusive Coupons and Offers"
       })
@@ -26130,7 +26130,7 @@ const ArServices = () => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Augmented Reality Agency - Transform Your Business with AR Solutions"
       })
@@ -26615,7 +26615,7 @@ const Table = () => {
 const MetverseServices = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Metaverse Development and Consulting Service | Astute Softwares"
       })
@@ -26913,7 +26913,7 @@ const ThreedModeling = () => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Affordable 3D Modeling Services for VR and AR Experiences - Astute Softwares"
       })
@@ -28186,7 +28186,7 @@ const Portfolio = ({
     };
   }, []);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Astute Softwares Portfolio - Showcasing Our Work"
       })
@@ -28708,7 +28708,7 @@ const Index = ({
     };
   }, []);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Falling Gems - Catch the Fruits, Blizzard, and More!"
       })
@@ -29781,7 +29781,7 @@ const TidioChat = () => {
 function LandingPage$1() {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Astute Softwares - Transforming Startups with Affordable Digital Solutions"
       })
@@ -30203,7 +30203,7 @@ function ReviewSection() {
 function LandingPage() {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Astute Softwares: Dove Ogni Byte - Trasforma le Startup in Giganti"
       })
@@ -30297,7 +30297,7 @@ const DirectContactUs = ({
     }
   }, [screen]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Contact Us - Astute Softwares"
       })
@@ -30631,7 +30631,7 @@ const ItalianDirectContactUs = ({
     actions.resetForm(initialValues);
   };
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet$1, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Contattaci - Astute Softwares"
       })
