@@ -12,7 +12,7 @@ import { motion, AnimatePresence, useViewportScroll } from "framer-motion";
 import { BsDot, BsArrowRight, BsSearch } from "react-icons/bs";
 import { getDocument, getWindow } from "ssr-window";
 import { $, remove, filter, children, find, closest, parents, parent, prevAll, prev, nextAll, next, prepend, append, eq, index as index$c, is, text, html, each, css, offset, styles, outerHeight, outerWidth, transitionEnd as transitionEnd$1, trigger, off, on, transition as transition$1, transform, removeAttr, attr, toggleClass, hasClass, removeClass, addClass } from "dom7";
-import { Helmet } from "react-helmet";
+import { Helmet as Helmet$1 } from "react-helmet";
 import QRCode from "react-qr-code";
 import { BiLoaderAlt, BiCube, BiLinkExternal, BiMenuAltLeft } from "react-icons/bi";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -12668,7 +12668,7 @@ const Index$2 = ({
 }) => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Astute Softwares - Complete Package of Software Development"
       })
@@ -13576,7 +13576,7 @@ const LandingSection$m = () => {
 const ARLandingPage = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
       children: /* @__PURE__ */ jsx("title", {
         children: "The Leading Platform for 3D & AR on the Web - ViewAR"
       })
@@ -13980,7 +13980,11 @@ function ServiceIndex() {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(ServiceLandingPage, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Astute Softwares - Top-Notch IT Solutions & Software Development"
+      })
+    }), /* @__PURE__ */ jsx(ServiceLandingPage, {
       refOffset
     }), /* @__PURE__ */ jsx("div", {
       id: "our-services",
@@ -14255,7 +14259,11 @@ function AboutUSIndex() {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(LandingPageAboutUS, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Astute Softwares - Your Ideal Software Development Partner"
+      })
+    }), /* @__PURE__ */ jsx(LandingPageAboutUS, {
       refOffset
     }), /* @__PURE__ */ jsx("div", {
       ref,
@@ -14785,7 +14793,11 @@ const MapSection = () => {
 const Index$1 = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(LandingSection$l, {}), /* @__PURE__ */ jsx(GetinTouch, {}), /* @__PURE__ */ jsx(MapSection, {})]
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Contact Astute Softwares - Get in Touch with Our Experts"
+      })
+    }), /* @__PURE__ */ jsx(LandingSection$l, {}), /* @__PURE__ */ jsx(GetinTouch, {}), /* @__PURE__ */ jsx(MapSection, {})]
   });
 };
 const LandingSection$k = () => {
@@ -15731,14 +15743,18 @@ const IterativeIncremental = () => {
 };
 const HowWeDeliver = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Astute Softwares - Agile Software Development Process"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
         children: [/* @__PURE__ */ jsx(LandingSection$k, {}), /* @__PURE__ */ jsx(Predictable, {}), /* @__PURE__ */ jsx(IterativeIncremental$1, {}), /* @__PURE__ */ jsx(QualityDriven, {}), /* @__PURE__ */ jsx(Scalable, {}), /* @__PURE__ */ jsx(IterativeIncremental, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$j = ({
@@ -16118,8 +16134,12 @@ const Careers = () => {
     window.scrollTo(0, 0);
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Careers at Astute Softwares - Join Our Growing Team"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-28",
       children: [/* @__PURE__ */ jsx(LandingSection$j, {
         refOffset
@@ -16127,7 +16147,7 @@ const Careers = () => {
         ref,
         children: /* @__PURE__ */ jsx(OpenPositions, {})
       }), /* @__PURE__ */ jsx(WhyUs, {}), /* @__PURE__ */ jsx(CoreValues, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const UnderConstruction = () => {
@@ -16938,11 +16958,15 @@ const WhyAngular = () => {
 };
 const Angular = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Angular Development Services - Build High-Performance, Scalable Apps"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$i, {}), /* @__PURE__ */ jsx(ModernDevelopment$6, {}), /* @__PURE__ */ jsx(AngularFeatures, {}), /* @__PURE__ */ jsx(Advantages$6, {}), /* @__PURE__ */ jsx(WhyAngular, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$h = () => {
@@ -17582,11 +17606,15 @@ const WhyLaravel = () => {
 };
 const Laravel = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Laravel Development Services - High-Performance and Scalable Apps"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$h, {}), /* @__PURE__ */ jsx(ModernDevelopment$5, {}), /* @__PURE__ */ jsx(LaravelFeatures, {}), /* @__PURE__ */ jsx(Advantages$5, {}), /* @__PURE__ */ jsx(WhyLaravel, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$g = () => {
@@ -18226,11 +18254,15 @@ const WhyReact = () => {
 };
 const ReactTechnology = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "React Development Services - Build High-Performance Apps"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$g, {}), /* @__PURE__ */ jsx(ModernDevelopment$4, {}), /* @__PURE__ */ jsx(ReactFeatures, {}), /* @__PURE__ */ jsx(Advantages$4, {}), /* @__PURE__ */ jsx(WhyReact, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$f = () => {
@@ -18870,11 +18902,15 @@ const WhyNode = () => {
 };
 const Node = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Node Development Services - High Performance & Scalable Apps"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$f, {}), /* @__PURE__ */ jsx(ModernDevelopment$3, {}), /* @__PURE__ */ jsx(NodeFeatures, {}), /* @__PURE__ */ jsx(Advantages$3, {}), /* @__PURE__ */ jsx(WhyNode, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$e = () => {
@@ -19512,11 +19548,15 @@ const WhyVueJs = () => {
 };
 const VueJs = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Vue JS Development Team | Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$e, {}), /* @__PURE__ */ jsx(ModernDevelopment$2, {}), /* @__PURE__ */ jsx(VueJsFeatures, {}), /* @__PURE__ */ jsx(Advantages$2, {}), /* @__PURE__ */ jsx(WhyVueJs, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$d = () => {
@@ -20145,11 +20185,15 @@ const WhyKotline = () => {
 };
 const Kotline = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Kotlin Development Team - Build High-Performance & Scalable Apps"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$d, {}), /* @__PURE__ */ jsx(ModernDevelopment$1, {}), /* @__PURE__ */ jsx(KotlineFeatures, {}), /* @__PURE__ */ jsx(Advantages$1, {}), /* @__PURE__ */ jsx(WhyKotline, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$c = () => {
@@ -20786,11 +20830,15 @@ const WhyDjango = () => {
 };
 const Django = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "World-Class Django Development Team | Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx(LandingSection$c, {}), /* @__PURE__ */ jsx(ModernDevelopment, {}), /* @__PURE__ */ jsx(DjangoFeatures, {}), /* @__PURE__ */ jsx(Advantages, {}), /* @__PURE__ */ jsx(WhyDjango, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$b = ({
@@ -21692,8 +21740,12 @@ const WebDevService = () => {
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Custom Software Development - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow ",
@@ -21704,7 +21756,7 @@ const WebDevService = () => {
           children: /* @__PURE__ */ jsx(SecondSection$5, {})
         }), /* @__PURE__ */ jsx(Services$d, {}), /* @__PURE__ */ jsx(EngagementModels, {}), /* @__PURE__ */ jsx(SecretSauce$1, {}), /* @__PURE__ */ jsx(FourthSection$3, {}), /* @__PURE__ */ jsx(FifthSection$1, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$a = ({
@@ -21990,8 +22042,12 @@ const QAService = () => {
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Software Quality Assurance and Testing Services - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -22002,7 +22058,7 @@ const QAService = () => {
           children: /* @__PURE__ */ jsx(SecondSection$4, {})
         }), /* @__PURE__ */ jsx(MutualSuccess, {}), /* @__PURE__ */ jsx(Services$c, {}), /* @__PURE__ */ jsx(QATypes$3, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$9 = ({
@@ -22926,8 +22982,12 @@ const DTService = () => {
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Digital Transformation Services | Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -22938,7 +22998,7 @@ const DTService = () => {
           children: /* @__PURE__ */ jsx(SecondSection$3, {})
         }), /* @__PURE__ */ jsx(SecretSauce, {}), /* @__PURE__ */ jsx(DigitalTransformationDesc, {}), /* @__PURE__ */ jsx(ModernCoreApplication, {}), /* @__PURE__ */ jsx(Services$b, {}), /* @__PURE__ */ jsx(FourthSection$2, {}), /* @__PURE__ */ jsx(MonetizeData, {}), /* @__PURE__ */ jsx(FifthSection, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$8 = ({
@@ -23184,8 +23244,12 @@ const MobileAppDev = () => {
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Custom Mobile Application Development - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -23196,7 +23260,7 @@ const MobileAppDev = () => {
           children: /* @__PURE__ */ jsx(SecondSection$2, {})
         }), /* @__PURE__ */ jsx(Services$a, {}), /* @__PURE__ */ jsx(Services$9, {}), /* @__PURE__ */ jsx(Services$8, {}), /* @__PURE__ */ jsx(Services$7, {}), /* @__PURE__ */ jsx(FourthSection$1, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$7 = ({
@@ -23647,8 +23711,12 @@ const UxDesign = () => {
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Interactive UX/UI Designs - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -23659,7 +23727,7 @@ const UxDesign = () => {
           children: /* @__PURE__ */ jsx(PurposeNeeds, {})
         }), /* @__PURE__ */ jsx(Services$6, {}), /* @__PURE__ */ jsx(Services$5, {}), /* @__PURE__ */ jsx(QATypes$2, {}), /* @__PURE__ */ jsx(SecondSection$1, {}), /* @__PURE__ */ jsx(FourthSection, {}), /* @__PURE__ */ jsx(FrontEndLanguages, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$6 = ({
@@ -23965,8 +24033,12 @@ const MaintenanceSupport = () => {
   useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Application Maintenance & Support Services - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -23977,7 +24049,7 @@ const MaintenanceSupport = () => {
           children: /* @__PURE__ */ jsx(SecondSection, {})
         }), /* @__PURE__ */ jsx(Services$4, {}), /* @__PURE__ */ jsx(QATypes$1, {}), /* @__PURE__ */ jsx(QATypes, {}), /* @__PURE__ */ jsx(Monitoring, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$5 = () => {
@@ -24332,14 +24404,18 @@ const KandaIndustries$1 = () => {
 };
 const BigDataService = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Big Data Consulting and Analytics Services | Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx(LandingSection$5, {}), /* @__PURE__ */ jsx(Services$3, {}), /* @__PURE__ */ jsx(ThirdSection, {}), /* @__PURE__ */ jsx(KandaIndustries$1, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$4 = () => {
@@ -24686,14 +24762,18 @@ const WhyChooseUs = () => {
 };
 const BlockChainService = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Blockchain Web Development Services - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col overflow-x-hidden ",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx(LandingSection$4, {}), /* @__PURE__ */ jsx(BlockChainWebDevelopment, {}), /* @__PURE__ */ jsx(Hiring$1, {}), /* @__PURE__ */ jsx(Features, {}), /* @__PURE__ */ jsx(WorkingPrinciple, {}), /* @__PURE__ */ jsx(WhyChooseUs, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$3 = () => {
@@ -25409,14 +25489,18 @@ const Management = () => {
 };
 const DevopService = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "DevOps Services and Solutions - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx(LandingSection$3, {}), /* @__PURE__ */ jsx(Services$2, {}), /* @__PURE__ */ jsx(Management$1, {}), /* @__PURE__ */ jsx(KandaIndustries, {}), /* @__PURE__ */ jsx(Services$1, {}), /* @__PURE__ */ jsx(Management, {}), /* @__PURE__ */ jsx(Services, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$2 = () => {
@@ -25699,14 +25783,18 @@ const Hiring = () => {
 };
 const TimeAndMaterialService = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsx("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Time and Material Services - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col overflow-x-hidden ",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx(LandingSection$2, {}), /* @__PURE__ */ jsx(Benefits, {}), /* @__PURE__ */ jsx(OurServices, {}), /* @__PURE__ */ jsx(Consultation, {}), /* @__PURE__ */ jsx(Hiring, {}), /* @__PURE__ */ jsx(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const CouponPage = () => {
@@ -25719,8 +25807,12 @@ const CouponPage = () => {
       setScrolled(false);
     };
   }, []);
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Astute Softwares - Exclusive Coupons and Offers"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "h-full flex flex-col pt-20 bg-bottom bg-cover bg-no-repeat",
       style: {
         backgroundImage: "url(/Images/coupon-page/backgorund-pattern-webp.webp)"
@@ -25792,7 +25884,7 @@ const CouponPage = () => {
           })]
         })]
       })]
-    })
+    })]
   });
 };
 const index$b = ({
@@ -26038,7 +26130,11 @@ const ArServices = () => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx("div", {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Augmented Reality Agency - Transform Your Business with AR Solutions"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsx("div", {
         className: "flex-grow",
@@ -26518,8 +26614,12 @@ const Table = () => {
 };
 const MetverseServices = () => {
   useIntl();
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Metaverse Development and Consulting Service | Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "",
       children: [/* @__PURE__ */ jsx(LandingSection$1, {}), /* @__PURE__ */ jsx(Momemntum, {}), /* @__PURE__ */ jsx(PlatFormAndTechnologies, {}), /* @__PURE__ */ jsx("div", {
         className: "",
@@ -26528,7 +26628,7 @@ const MetverseServices = () => {
           children: /* @__PURE__ */ jsx(Table, {})
         })
       })]
-    })
+    })]
   });
 };
 const index$7 = ({
@@ -26813,7 +26913,11 @@ const ThreedModeling = () => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx("div", {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Affordable 3D Modeling Services for VR and AR Experiences - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsx("div", {
         className: "flex-grow",
@@ -28081,8 +28185,12 @@ const Portfolio = ({
       setShowHeaderFooter(true);
     };
   }, []);
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Astute Softwares Portfolio - Showcasing Our Work"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "relative",
       children: [/* @__PURE__ */ jsx("div", {
         className: `w-350 overflow-y-auto overflow-x-hidden  min-h-screen fixed left-0 top-0 bottom-0 bg-white transition  transform ${toggleSideBar ? " z-50 duration-900 ease-in-out translate-x-0 " : "hidden lg:block"} `,
@@ -28121,7 +28229,7 @@ const Portfolio = ({
           onClick: () => setToggleSideBar(!toggleSideBar)
         })
       })]
-    })
+    })]
   });
 };
 const LandingSection = () => {
@@ -28599,12 +28707,16 @@ const Index = ({
       setShowHeaderFooter(false);
     };
   }, []);
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Falling Gems - Catch the Fruits, Blizzard, and More!"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       children: [/* @__PURE__ */ jsx("div", {
         className: "w-full md:w-1/2 lg:w-1/3  2xl:w-1/4 mx-auto lg:mx-0 px-20 pt-10 pb-10 lg:pb-0"
       }), /* @__PURE__ */ jsx(LandingSection, {}), /* @__PURE__ */ jsx(LevelOne$2, {}), /* @__PURE__ */ jsx(LevelOne$1, {}), /* @__PURE__ */ jsx(LevelOne, {}), /* @__PURE__ */ jsx(PreSale, {}), /* @__PURE__ */ jsx(Profile, {})]
-    })
+    })]
   });
 };
 const CookiePolicy = () => {
@@ -29669,7 +29781,7 @@ const TidioChat = () => {
 function LandingPage$1() {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Astute Softwares - Transforming Startups with Affordable Digital Solutions"
       })
@@ -30091,7 +30203,7 @@ function ReviewSection() {
 function LandingPage() {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx(Helmet, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
       children: /* @__PURE__ */ jsx("title", {
         children: "Astute Softwares: Dove Ogni Byte - Trasforma le Startup in Giganti"
       })
@@ -30184,8 +30296,12 @@ const DirectContactUs = ({
       }, 1e4);
     }
   }, [screen]);
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Contact Us - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "bg-blue-primary min-h-screen w-screen ",
       children: [/* @__PURE__ */ jsxs("div", {
         className: "-z-10",
@@ -30458,7 +30574,7 @@ const DirectContactUs = ({
           })]
         })
       })]
-    })
+    })]
   });
 };
 const ItalianDirectContactUs = ({
@@ -30514,8 +30630,12 @@ const ItalianDirectContactUs = ({
     }
     actions.resetForm(initialValues);
   };
-  return /* @__PURE__ */ jsx(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx(Helmet$1, {
+      children: /* @__PURE__ */ jsx("title", {
+        children: "Contattaci - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "bg-blue-primary min-h-screen w-screen ",
       children: [/* @__PURE__ */ jsxs("div", {
         className: "-z-10",
@@ -30788,7 +30908,7 @@ const ItalianDirectContactUs = ({
           })]
         })
       })]
-    })
+    })]
   });
 };
 const BaseRoutes = () => {

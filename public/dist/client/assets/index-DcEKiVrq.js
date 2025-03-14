@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-DZ2SQqef.js","assets/GLTFLoader-BepbwYof.js","assets/method-BR2NwiwS.js","assets/RGBELoader-CNh8YRrg.js","assets/method-5ckPXkMD.js","assets/method-DK5Q0Div.js","assets/method-R4hU_T72.js","assets/method-CU5SUjqC.js","assets/method-BT0Mvm7A.js","assets/method-Cu3o_quA.js","assets/OrbitControls-DDk9-jBQ.js","assets/method-Dssmqfmm.js","assets/method-yvjGtsAU.js","assets/method-DklC6ovk.js","assets/method-BvZoYmeK.js","assets/method-D5-AxxI0.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-BluRgS2t.js","assets/GLTFLoader-Dyf0XBNA.js","assets/method-DWAW4QOQ.js","assets/RGBELoader-CN0sQi9A.js","assets/method-BJ9jlihr.js","assets/method-C8lW4BdH.js","assets/method-DsPSBzev.js","assets/method-B74cX5tc.js","assets/method--HksmLK0.js","assets/method-rU43UoOw.js","assets/OrbitControls-Yqs3-2Vu.js","assets/method-BL3EQK_w.js","assets/method-BvgN2-7I.js","assets/method-6NxauoAO.js","assets/method-CA1XX0B2.js","assets/method-BzDOOFbT.js"])))=>i.map(i=>d[i]);
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -63183,7 +63183,7 @@ var mapStateOnServer = function mapStateOnServer2(_ref3) {
     title: getMethodsForTag(TAG_NAMES.TITLE, { title, titleAttributes }, encode)
   };
 };
-var Helmet = function Helmet2(Component) {
+var Helmet$1 = function Helmet2(Component) {
   var _class, _temp;
   return _temp = _class = function(_React$Component) {
     inherits(HelmetWrapper, _React$Component);
@@ -63359,7 +63359,7 @@ var NullComponent = function NullComponent2() {
   return null;
 };
 var HelmetSideEffects = withSideEffect(reducePropsToState, handleClientStateChange, mapStateOnServer)(NullComponent);
-var HelmetExport = Helmet(HelmetSideEffects);
+var HelmetExport = Helmet$1(HelmetSideEffects);
 HelmetExport.renderStatic = HelmetExport.rewind;
 const Index$2 = ({
   gameDownload,
@@ -65219,7 +65219,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DDk9-jBQ.js");
+        } = await import("./OrbitControls-Yqs3-2Vu.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -65243,7 +65243,7 @@ const Viewer = ({
           createScene: createScene2,
           onWindowResize: onWindowResize2,
           animate: animate3
-        } = await import("./methods-DZ2SQqef.js");
+        } = await import("./methods-BluRgS2t.js");
         return {
           createCamera: createCamera2,
           createFloor: createFloor2,
@@ -65260,7 +65260,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           default: ColorPallete3
-        } = await import("./index-CVMrW2wm.js");
+        } = await import("./index-wgrenhQ_.js");
         return {
           default: ColorPallete3
         };
@@ -65911,7 +65911,11 @@ function ServiceIndex() {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx$1(ServiceLandingPage, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Astute Softwares - Top-Notch IT Solutions & Software Development"
+      })
+    }), /* @__PURE__ */ jsx$1(ServiceLandingPage, {
       refOffset
     }), /* @__PURE__ */ jsx$1("div", {
       id: "our-services",
@@ -66186,7 +66190,11 @@ function AboutUSIndex() {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx$1(LandingPageAboutUS, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Astute Softwares - Your Ideal Software Development Partner"
+      })
+    }), /* @__PURE__ */ jsx$1(LandingPageAboutUS, {
       refOffset
     }), /* @__PURE__ */ jsx$1("div", {
       ref,
@@ -79679,7 +79687,11 @@ const MapSection = () => {
 const Index$1 = () => {
   useIntl();
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx$1(LandingSection$l, {}), /* @__PURE__ */ jsx$1(GetinTouch, {}), /* @__PURE__ */ jsx$1(MapSection, {})]
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Contact Astute Softwares - Get in Touch with Our Experts"
+      })
+    }), /* @__PURE__ */ jsx$1(LandingSection$l, {}), /* @__PURE__ */ jsx$1(GetinTouch, {}), /* @__PURE__ */ jsx$1(MapSection, {})]
   });
 };
 const LandingSection$k = () => {
@@ -80625,14 +80637,18 @@ const IterativeIncremental = () => {
 };
 const HowWeDeliver = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Astute Softwares - Agile Software Development Process"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
         children: [/* @__PURE__ */ jsx$1(LandingSection$k, {}), /* @__PURE__ */ jsx$1(Predictable, {}), /* @__PURE__ */ jsx$1(IterativeIncremental$1, {}), /* @__PURE__ */ jsx$1(QualityDriven, {}), /* @__PURE__ */ jsx$1(Scalable, {}), /* @__PURE__ */ jsx$1(IterativeIncremental, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$j = ({
@@ -81012,8 +81028,12 @@ const Careers = () => {
     window.scrollTo(0, 0);
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(Helmet, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Careers at Astute Softwares - Join Our Growing Team"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-28",
       children: [/* @__PURE__ */ jsx$1(LandingSection$j, {
         refOffset
@@ -81021,7 +81041,7 @@ const Careers = () => {
         ref,
         children: /* @__PURE__ */ jsx$1(OpenPositions, {})
       }), /* @__PURE__ */ jsx$1(WhyUs, {}), /* @__PURE__ */ jsx$1(CoreValues, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const UnderConstruction = () => {
@@ -81832,11 +81852,15 @@ const WhyAngular = () => {
 };
 const Angular = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Angular Development Services - Build High-Performance, Scalable Apps"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$i, {}), /* @__PURE__ */ jsx$1(ModernDevelopment$6, {}), /* @__PURE__ */ jsx$1(AngularFeatures, {}), /* @__PURE__ */ jsx$1(Advantages$6, {}), /* @__PURE__ */ jsx$1(WhyAngular, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$h = () => {
@@ -82476,11 +82500,15 @@ const WhyLaravel = () => {
 };
 const Laravel = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Laravel Development Services - High-Performance and Scalable Apps"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$h, {}), /* @__PURE__ */ jsx$1(ModernDevelopment$5, {}), /* @__PURE__ */ jsx$1(LaravelFeatures, {}), /* @__PURE__ */ jsx$1(Advantages$5, {}), /* @__PURE__ */ jsx$1(WhyLaravel, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$g = () => {
@@ -83120,11 +83148,15 @@ const WhyReact = () => {
 };
 const ReactTechnology = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "React Development Services - Build High-Performance Apps"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$g, {}), /* @__PURE__ */ jsx$1(ModernDevelopment$4, {}), /* @__PURE__ */ jsx$1(ReactFeatures, {}), /* @__PURE__ */ jsx$1(Advantages$4, {}), /* @__PURE__ */ jsx$1(WhyReact, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$f = () => {
@@ -83764,11 +83796,15 @@ const WhyNode = () => {
 };
 const Node$1 = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Node Development Services - High Performance & Scalable Apps"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$f, {}), /* @__PURE__ */ jsx$1(ModernDevelopment$3, {}), /* @__PURE__ */ jsx$1(NodeFeatures, {}), /* @__PURE__ */ jsx$1(Advantages$3, {}), /* @__PURE__ */ jsx$1(WhyNode, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$e = () => {
@@ -84406,11 +84442,15 @@ const WhyVueJs = () => {
 };
 const VueJs = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Vue JS Development Team | Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$e, {}), /* @__PURE__ */ jsx$1(ModernDevelopment$2, {}), /* @__PURE__ */ jsx$1(VueJsFeatures, {}), /* @__PURE__ */ jsx$1(Advantages$2, {}), /* @__PURE__ */ jsx$1(WhyVueJs, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$d = () => {
@@ -85039,11 +85079,15 @@ const WhyKotline = () => {
 };
 const Kotline = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Kotlin Development Team - Build High-Performance & Scalable Apps"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$d, {}), /* @__PURE__ */ jsx$1(ModernDevelopment$1, {}), /* @__PURE__ */ jsx$1(KotlineFeatures, {}), /* @__PURE__ */ jsx$1(Advantages$1, {}), /* @__PURE__ */ jsx$1(WhyKotline, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$c = () => {
@@ -85680,11 +85724,15 @@ const WhyDjango = () => {
 };
 const Django = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "World-Class Django Development Team | Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "pt-20",
       children: [/* @__PURE__ */ jsx$1(LandingSection$c, {}), /* @__PURE__ */ jsx$1(ModernDevelopment, {}), /* @__PURE__ */ jsx$1(DjangoFeatures, {}), /* @__PURE__ */ jsx$1(Advantages, {}), /* @__PURE__ */ jsx$1(WhyDjango, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
-    })
+    })]
   });
 };
 const LandingSection$b = ({
@@ -86586,8 +86634,12 @@ const WebDevService = () => {
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Custom Software Development - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow ",
@@ -86598,7 +86650,7 @@ const WebDevService = () => {
           children: /* @__PURE__ */ jsx$1(SecondSection$5, {})
         }), /* @__PURE__ */ jsx$1(Services$d, {}), /* @__PURE__ */ jsx$1(EngagementModels, {}), /* @__PURE__ */ jsx$1(SecretSauce$1, {}), /* @__PURE__ */ jsx$1(FourthSection$3, {}), /* @__PURE__ */ jsx$1(FifthSection$1, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$a = ({
@@ -86884,8 +86936,12 @@ const QAService = () => {
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Software Quality Assurance and Testing Services - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -86896,7 +86952,7 @@ const QAService = () => {
           children: /* @__PURE__ */ jsx$1(SecondSection$4, {})
         }), /* @__PURE__ */ jsx$1(MutualSuccess, {}), /* @__PURE__ */ jsx$1(Services$c, {}), /* @__PURE__ */ jsx$1(QATypes$3, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$9 = ({
@@ -87820,8 +87876,12 @@ const DTService = () => {
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Digital Transformation Services | Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -87832,7 +87892,7 @@ const DTService = () => {
           children: /* @__PURE__ */ jsx$1(SecondSection$3, {})
         }), /* @__PURE__ */ jsx$1(SecretSauce, {}), /* @__PURE__ */ jsx$1(DigitalTransformationDesc, {}), /* @__PURE__ */ jsx$1(ModernCoreApplication, {}), /* @__PURE__ */ jsx$1(Services$b, {}), /* @__PURE__ */ jsx$1(FourthSection$2, {}), /* @__PURE__ */ jsx$1(MonetizeData, {}), /* @__PURE__ */ jsx$1(FifthSection, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$8 = ({
@@ -88078,8 +88138,12 @@ const MobileAppDev = () => {
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Custom Mobile Application Development - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -88090,7 +88154,7 @@ const MobileAppDev = () => {
           children: /* @__PURE__ */ jsx$1(SecondSection$2, {})
         }), /* @__PURE__ */ jsx$1(Services$a, {}), /* @__PURE__ */ jsx$1(Services$9, {}), /* @__PURE__ */ jsx$1(Services$8, {}), /* @__PURE__ */ jsx$1(Services$7, {}), /* @__PURE__ */ jsx$1(FourthSection$1, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$7 = ({
@@ -88541,8 +88605,12 @@ const UxDesign = () => {
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(Helmet, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Interactive UX/UI Designs - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -88553,7 +88621,7 @@ const UxDesign = () => {
           children: /* @__PURE__ */ jsx$1(PurposeNeeds, {})
         }), /* @__PURE__ */ jsx$1(Services$6, {}), /* @__PURE__ */ jsx$1(Services$5, {}), /* @__PURE__ */ jsx$1(QATypes$2, {}), /* @__PURE__ */ jsx$1(SecondSection$1, {}), /* @__PURE__ */ jsx$1(FourthSection, {}), /* @__PURE__ */ jsx$1(FrontEndLanguages, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$6 = ({
@@ -88859,8 +88927,12 @@ const MaintenanceSupport = () => {
   reactExports.useEffect(() => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(Helmet, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Application Maintenance & Support Services - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow",
@@ -88871,7 +88943,7 @@ const MaintenanceSupport = () => {
           children: /* @__PURE__ */ jsx$1(SecondSection, {})
         }), /* @__PURE__ */ jsx$1(Services$4, {}), /* @__PURE__ */ jsx$1(QATypes$1, {}), /* @__PURE__ */ jsx$1(QATypes, {}), /* @__PURE__ */ jsx$1(Monitoring, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$5 = () => {
@@ -89226,14 +89298,18 @@ const KandaIndustries$1 = () => {
 };
 const BigDataService = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Big Data Consulting and Analytics Services | Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx$1(LandingSection$5, {}), /* @__PURE__ */ jsx$1(Services$3, {}), /* @__PURE__ */ jsx$1(ThirdSection, {}), /* @__PURE__ */ jsx$1(KandaIndustries$1, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$4 = () => {
@@ -89580,14 +89656,18 @@ const WhyChooseUs = () => {
 };
 const BlockChainService = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Blockchain Web Development Services - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col overflow-x-hidden ",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx$1(LandingSection$4, {}), /* @__PURE__ */ jsx$1(BlockChainWebDevelopment, {}), /* @__PURE__ */ jsx$1(Hiring$1, {}), /* @__PURE__ */ jsx$1(Features, {}), /* @__PURE__ */ jsx$1(WorkingPrinciple, {}), /* @__PURE__ */ jsx$1(WhyChooseUs, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$3 = () => {
@@ -90303,14 +90383,18 @@ const Management = () => {
 };
 const DevopService = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "DevOps Services and Solutions - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx$1(LandingSection$3, {}), /* @__PURE__ */ jsx$1(Services$2, {}), /* @__PURE__ */ jsx$1(Management$1, {}), /* @__PURE__ */ jsx$1(KandaIndustries, {}), /* @__PURE__ */ jsx$1(Services$1, {}), /* @__PURE__ */ jsx$1(Management, {}), /* @__PURE__ */ jsx$1(Services, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const LandingSection$2 = () => {
@@ -90593,14 +90677,18 @@ const Hiring = () => {
 };
 const TimeAndMaterialService = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsx$1("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(Helmet, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Time and Material Services - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col overflow-x-hidden ",
       children: /* @__PURE__ */ jsxs("div", {
         className: "flex-grow pt-24",
         children: [/* @__PURE__ */ jsx$1(LandingSection$2, {}), /* @__PURE__ */ jsx$1(Benefits, {}), /* @__PURE__ */ jsx$1(OurServices, {}), /* @__PURE__ */ jsx$1(Consultation, {}), /* @__PURE__ */ jsx$1(Hiring, {}), /* @__PURE__ */ jsx$1(ConsultancySection, {})]
       })
-    })
+    })]
   });
 };
 const CouponPage = () => {
@@ -90613,8 +90701,12 @@ const CouponPage = () => {
       setScrolled(false);
     };
   }, []);
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Astute Softwares - Exclusive Coupons and Offers"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "h-full flex flex-col pt-20 bg-bottom bg-cover bg-no-repeat",
       style: {
         backgroundImage: "url(/Images/coupon-page/backgorund-pattern-webp.webp)"
@@ -90686,7 +90778,7 @@ const CouponPage = () => {
           })]
         })]
       })]
-    })
+    })]
   });
 };
 const index$b = ({
@@ -90932,7 +91024,11 @@ const ArServices = () => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx$1("div", {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Augmented Reality Agency - Transform Your Business with AR Solutions"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsx$1("div", {
         className: "flex-grow",
@@ -91412,8 +91508,12 @@ const Table = () => {
 };
 const MetverseServices = () => {
   useIntl();
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Metaverse Development and Consulting Service | Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "",
       children: [/* @__PURE__ */ jsx$1(LandingSection$1, {}), /* @__PURE__ */ jsx$1(Momemntum, {}), /* @__PURE__ */ jsx$1(PlatFormAndTechnologies, {}), /* @__PURE__ */ jsx$1("div", {
         className: "",
@@ -91422,7 +91522,7 @@ const MetverseServices = () => {
           children: /* @__PURE__ */ jsx$1(Table, {})
         })
       })]
-    })
+    })]
   });
 };
 const index$7 = ({
@@ -91707,7 +91807,11 @@ const ThreedModeling = () => {
     setRefOffset(ref.current.offsetTop);
   }, [ref]);
   return /* @__PURE__ */ jsxs(Fragment, {
-    children: [/* @__PURE__ */ jsx$1("div", {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Affordable 3D Modeling Services for VR and AR Experiences - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsx$1("div", {
       className: "h-full flex flex-col",
       children: /* @__PURE__ */ jsx$1("div", {
         className: "flex-grow",
@@ -91764,7 +91868,7 @@ const PlantModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DDk9-jBQ.js");
+        } = await import("./OrbitControls-Yqs3-2Vu.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91788,7 +91892,7 @@ const PlantModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BR2NwiwS.js");
+        } = await import("./method-DWAW4QOQ.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -91840,7 +91944,7 @@ const PlantModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DDk9-jBQ.js");
+        } = await import("./OrbitControls-Yqs3-2Vu.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91864,7 +91968,7 @@ const PlantModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-5ckPXkMD.js");
+        } = await import("./method-BJ9jlihr.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -91921,7 +92025,7 @@ const PlanModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DDk9-jBQ.js");
+        } = await import("./OrbitControls-Yqs3-2Vu.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91945,7 +92049,7 @@ const PlanModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-DK5Q0Div.js");
+        } = await import("./method-C8lW4BdH.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92347,7 +92451,7 @@ const BagModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DDk9-jBQ.js");
+        } = await import("./OrbitControls-Yqs3-2Vu.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92371,7 +92475,7 @@ const BagModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-R4hU_T72.js");
+        } = await import("./method-DsPSBzev.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92421,7 +92525,7 @@ const BagModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DDk9-jBQ.js");
+        } = await import("./OrbitControls-Yqs3-2Vu.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92445,7 +92549,7 @@ const BagModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-CU5SUjqC.js");
+        } = await import("./method-B74cX5tc.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92501,7 +92605,7 @@ const BagModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DDk9-jBQ.js");
+        } = await import("./OrbitControls-Yqs3-2Vu.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92525,7 +92629,7 @@ const BagModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BT0Mvm7A.js");
+        } = await import("./method--HksmLK0.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92722,13 +92826,13 @@ const Model1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DDk9-jBQ.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-Yqs3-2Vu.js"), true ? [] : void 0);
     const {
       createCamera,
       createRenderer,
       onWindowResize,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-Cu3o_quA.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-rU43UoOw.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -92751,7 +92855,7 @@ const Model2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DDk9-jBQ.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-Yqs3-2Vu.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92760,7 +92864,7 @@ const Model2 = ({
       createScene,
       onWindowResize,
       animate: animate2
-    } = __vitePreload(() => import("./method-Dssmqfmm.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-BL3EQK_w.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
     const renderer = createRenderer();
     const scene = createScene();
     const camera = createCamera();
@@ -92798,7 +92902,7 @@ const Model3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DDk9-jBQ.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-Yqs3-2Vu.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92808,7 +92912,7 @@ const Model3 = ({
       animate: animate2,
       createFloor,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-yvjGtsAU.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-BvgN2-7I.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -92880,7 +92984,7 @@ const BottleModel1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DDk9-jBQ.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-Yqs3-2Vu.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92890,7 +92994,7 @@ const BottleModel1 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-DklC6ovk.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-6NxauoAO.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -92925,7 +93029,7 @@ const BottleModel2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DDk9-jBQ.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-Yqs3-2Vu.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92935,7 +93039,7 @@ const BottleModel2 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-BvZoYmeK.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-CA1XX0B2.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -92972,7 +93076,7 @@ const BottleModel3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DDk9-jBQ.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-Yqs3-2Vu.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92982,7 +93086,7 @@ const BottleModel3 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-D5-AxxI0.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-BzDOOFbT.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93205,8 +93309,12 @@ const Portfolio = ({
       setShowHeaderFooter(true);
     };
   }, []);
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Astute Softwares Portfolio - Showcasing Our Work"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "relative",
       children: [/* @__PURE__ */ jsx$1("div", {
         className: `w-350 overflow-y-auto overflow-x-hidden  min-h-screen fixed left-0 top-0 bottom-0 bg-white transition  transform ${toggleSideBar ? " z-50 duration-900 ease-in-out translate-x-0 " : "hidden lg:block"} `,
@@ -93245,7 +93353,7 @@ const Portfolio = ({
           onClick: () => setToggleSideBar(!toggleSideBar)
         })
       })]
-    })
+    })]
   });
 };
 const LandingSection = () => {
@@ -93284,7 +93392,7 @@ const ModalVideo = (props) => {
   const [isOpen, setOpen] = reactExports.useState(false);
   const [VideoModal, setVideoModal] = reactExports.useState(null);
   reactExports.useEffect(() => {
-    __vitePreload(() => import("./index-DJj7kv-P.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
+    __vitePreload(() => import("./index-DwSuB1pq.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
       setVideoModal(() => module2.default);
     });
   }, []);
@@ -93723,12 +93831,16 @@ const Index = ({
       setShowHeaderFooter(false);
     };
   }, []);
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Falling Gems - Catch the Fruits, Blizzard, and More!"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       children: [/* @__PURE__ */ jsx$1("div", {
         className: "w-full md:w-1/2 lg:w-1/3  2xl:w-1/4 mx-auto lg:mx-0 px-20 pt-10 pb-10 lg:pb-0"
       }), /* @__PURE__ */ jsx$1(LandingSection, {}), /* @__PURE__ */ jsx$1(LevelOne$2, {}), /* @__PURE__ */ jsx$1(LevelOne$1, {}), /* @__PURE__ */ jsx$1(LevelOne, {}), /* @__PURE__ */ jsx$1(PreSale, {}), /* @__PURE__ */ jsx$1(Profile, {})]
-    })
+    })]
   });
 };
 const CookiePolicy = () => {
@@ -95308,8 +95420,12 @@ const DirectContactUs = ({
       }, 1e4);
     }
   }, [screen]);
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Contact Us - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "bg-blue-primary min-h-screen w-screen ",
       children: [/* @__PURE__ */ jsxs("div", {
         className: "-z-10",
@@ -95582,7 +95698,7 @@ const DirectContactUs = ({
           })]
         })
       })]
-    })
+    })]
   });
 };
 const ItalianDirectContactUs = ({
@@ -95638,8 +95754,12 @@ const ItalianDirectContactUs = ({
     }
     actions.resetForm(initialValues);
   };
-  return /* @__PURE__ */ jsx$1(Fragment, {
-    children: /* @__PURE__ */ jsxs("div", {
+  return /* @__PURE__ */ jsxs(Fragment, {
+    children: [/* @__PURE__ */ jsx$1(HelmetExport, {
+      children: /* @__PURE__ */ jsx$1("title", {
+        children: "Contattaci - Astute Softwares"
+      })
+    }), /* @__PURE__ */ jsxs("div", {
       className: "bg-blue-primary min-h-screen w-screen ",
       children: [/* @__PURE__ */ jsxs("div", {
         className: "-z-10",
@@ -95912,7 +96032,7 @@ const ItalianDirectContactUs = ({
           })]
         })
       })]
-    })
+    })]
   });
 };
 const BaseRoutes = () => {
