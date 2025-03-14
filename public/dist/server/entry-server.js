@@ -2,12 +2,12 @@ import ReactDOMServer from "react-dom/server.js";
 import { Link, NavLink, useLocation, useHistory, Switch, Route, Redirect, StaticRouter } from "react-router-dom";
 import React, { useState, useEffect, useLayoutEffect, forwardRef, useRef } from "react";
 import { useIntl, IntlProvider } from "react-intl";
+import ReactGA from "react-ga4";
 import aos from "aos";
 import { AiOutlineWhatsApp, AiFillStar, AiFillLock } from "react-icons/ai";
 import { FaTwitter, FaInstagram, FaFacebook, FaLinkedin, FaTimes, FaArrowCircleRight, FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa";
 import require$$1$1 from "object-assign";
 import { GLTFExporter } from "three/examples/jsm/exporters/GLTFExporter.js";
-import ReactGA from "react-ga4";
 import { motion, AnimatePresence, useViewportScroll } from "framer-motion";
 import { BsDot, BsArrowRight, BsSearch } from "react-icons/bs";
 import { getDocument, getWindow } from "ssr-window";
@@ -13347,7 +13347,7 @@ const Viewer = ({
       } = await import("./assets/methods-Bfz_N5DN.js");
       const {
         default: ColorPallete2
-      } = await import("./assets/index-DDNG_pNY.js");
+      } = await import("./assets/index-Pzu-9Snf.js");
       setColorPalleteComponent(() => ColorPallete2);
       const {
         GLTFExporter: GLTFExporter2
@@ -31131,6 +31131,8 @@ const RouteChangeTracker = () => {
 };
 function App() {
   useEffect(() => {
+    const TRACKING_ID = "G-DQ4FKJDYP7";
+    ReactGA.initialize(TRACKING_ID);
     aos.init();
   }, []);
   return /* @__PURE__ */ jsxs(IntlProvider, {
