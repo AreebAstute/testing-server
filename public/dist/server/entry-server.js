@@ -24404,6 +24404,9 @@ const KandaIndustries$1 = () => {
 };
 const BigDataService = () => {
   useIntl();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return /* @__PURE__ */ jsxs(Fragment, {
     children: [/* @__PURE__ */ jsx(Helmet, {
       children: /* @__PURE__ */ jsx("title", {
