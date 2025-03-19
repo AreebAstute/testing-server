@@ -23268,7 +23268,7 @@ const LandingSection$7 = ({
 }) => {
   return /* @__PURE__ */ jsx(Fragment, {
     children: /* @__PURE__ */ jsxs("div", {
-      className: " px-5 h-screen flex flex-col justify-center items-center multiple-bg ",
+      className: " px-5 h-screen pt-32 flex flex-col justify-center items-center multiple-bg ",
       children: [/* @__PURE__ */ jsxs("div", {
         className: "text-center text-blue-primary tracking-wider mb-12 lg:w-3/6 mx-auto space-y-4 relative",
         children: [/* @__PURE__ */ jsxs("h1", {

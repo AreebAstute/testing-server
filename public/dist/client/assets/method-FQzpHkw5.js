@@ -1,6 +1,6 @@
-import { G as GLTFLoader } from "./GLTFLoader-Cz-BgZPl.js";
-import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-CIgDGgVP.js";
-import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-BxY6cs4J.js";
+import { G as GLTFLoader } from "./GLTFLoader-BPQOngCf.js";
+import { D as DRACOLoader, R as RGBELoader } from "./RGBELoader-CvUzLPi7.js";
+import { P as PerspectiveCamera, A as AmbientLight, a as PointLight, b as PMREMGenerator, E as EquirectangularReflectionMapping, W as WebGLRenderer, S as Scene, c as PlaneGeometry, M as MeshPhongMaterial, d as Mesh } from "./index-DOKwj8w9.js";
 const createRenderer = () => {
   var renderer = new WebGLRenderer({
     canvas: document.getElementById("plantmodel2"),

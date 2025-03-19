@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-SIJwK3hP.js","assets/GLTFLoader-Cz-BgZPl.js","assets/method-7ka7QGSR.js","assets/RGBELoader-CIgDGgVP.js","assets/method-BD7aq319.js","assets/method-DXWofX8K.js","assets/method-DWcL9sl1.js","assets/method-aTl_6io4.js","assets/method-BAkudQTj.js","assets/method-DY5gp_tE.js","assets/OrbitControls-DUIKK5bo.js","assets/method-jtaAGwMB.js","assets/method-UMMnAbNS.js","assets/method-Dd4PKRKS.js","assets/method-DgG3VF7f.js","assets/method-6HjIXuM3.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/methods-BT_GII8h.js","assets/GLTFLoader-BPQOngCf.js","assets/method-hHKjzinx.js","assets/RGBELoader-CvUzLPi7.js","assets/method-FQzpHkw5.js","assets/method-XnqiWE8g.js","assets/method-BLj5g_xc.js","assets/method-ZLyoq1f5.js","assets/method-MUMkfPWn.js","assets/method-2B19Vtev.js","assets/OrbitControls-q2ME1qS5.js","assets/method-DAebmUJD.js","assets/method-dcO9v2wq.js","assets/method-Di0d2DWQ.js","assets/method-73pj_V9M.js","assets/method-BPGkFRTE.js"])))=>i.map(i=>d[i]);
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -65219,7 +65219,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DUIKK5bo.js");
+        } = await import("./OrbitControls-q2ME1qS5.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -65243,7 +65243,7 @@ const Viewer = ({
           createScene: createScene2,
           onWindowResize: onWindowResize2,
           animate: animate3
-        } = await import("./methods-SIJwK3hP.js");
+        } = await import("./methods-BT_GII8h.js");
         return {
           createCamera: createCamera2,
           createFloor: createFloor2,
@@ -65260,7 +65260,7 @@ const Viewer = ({
       } = await __vitePreload(async () => {
         const {
           default: ColorPallete3
-        } = await import("./index-0rYUt7xS.js");
+        } = await import("./index-DGosSwM2.js");
         return {
           default: ColorPallete3
         };
@@ -88162,7 +88162,7 @@ const LandingSection$7 = ({
 }) => {
   return /* @__PURE__ */ jsx$1(Fragment, {
     children: /* @__PURE__ */ jsxs("div", {
-      className: " px-5 h-screen flex flex-col justify-center items-center multiple-bg ",
+      className: " px-5 h-screen pt-32 flex flex-col justify-center items-center multiple-bg ",
       children: [/* @__PURE__ */ jsxs("div", {
         className: "text-center text-blue-primary tracking-wider mb-12 lg:w-3/6 mx-auto space-y-4 relative",
         children: [/* @__PURE__ */ jsxs("h1", {
@@ -91871,7 +91871,7 @@ const PlantModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DUIKK5bo.js");
+        } = await import("./OrbitControls-q2ME1qS5.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91895,7 +91895,7 @@ const PlantModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-7ka7QGSR.js");
+        } = await import("./method-hHKjzinx.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -91947,7 +91947,7 @@ const PlantModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DUIKK5bo.js");
+        } = await import("./OrbitControls-q2ME1qS5.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -91971,7 +91971,7 @@ const PlantModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BD7aq319.js");
+        } = await import("./method-FQzpHkw5.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92028,7 +92028,7 @@ const PlanModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DUIKK5bo.js");
+        } = await import("./OrbitControls-q2ME1qS5.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92052,7 +92052,7 @@ const PlanModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-DXWofX8K.js");
+        } = await import("./method-XnqiWE8g.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92454,7 +92454,7 @@ const BagModel1 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DUIKK5bo.js");
+        } = await import("./OrbitControls-q2ME1qS5.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92478,7 +92478,7 @@ const BagModel1 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-DWcL9sl1.js");
+        } = await import("./method-BLj5g_xc.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92528,7 +92528,7 @@ const BagModel2 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DUIKK5bo.js");
+        } = await import("./OrbitControls-q2ME1qS5.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92552,7 +92552,7 @@ const BagModel2 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-aTl_6io4.js");
+        } = await import("./method-ZLyoq1f5.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92608,7 +92608,7 @@ const BagModel3 = ({
       } = await __vitePreload(async () => {
         const {
           OrbitControls: OrbitControls2
-        } = await import("./OrbitControls-DUIKK5bo.js");
+        } = await import("./OrbitControls-q2ME1qS5.js");
         return {
           OrbitControls: OrbitControls2
         };
@@ -92632,7 +92632,7 @@ const BagModel3 = ({
           onWindowResize: onWindowResize2,
           animate: animate3,
           createFloor: createFloor2
-        } = await import("./method-BAkudQTj.js");
+        } = await import("./method-MUMkfPWn.js");
         return {
           createCamera: createCamera2,
           createLight: createLight2,
@@ -92829,13 +92829,13 @@ const Model1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DUIKK5bo.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-q2ME1qS5.js"), true ? [] : void 0);
     const {
       createCamera,
       createRenderer,
       onWindowResize,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-DY5gp_tE.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-2B19Vtev.js"), true ? __vite__mapDeps([9,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -92858,7 +92858,7 @@ const Model2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DUIKK5bo.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-q2ME1qS5.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92867,7 +92867,7 @@ const Model2 = ({
       createScene,
       onWindowResize,
       animate: animate2
-    } = __vitePreload(() => import("./method-jtaAGwMB.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-DAebmUJD.js"), true ? __vite__mapDeps([11,1,3]) : void 0);
     const renderer = createRenderer();
     const scene = createScene();
     const camera = createCamera();
@@ -92905,7 +92905,7 @@ const Model3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DUIKK5bo.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-q2ME1qS5.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92915,7 +92915,7 @@ const Model3 = ({
       animate: animate2,
       createFloor,
       createAnimatedModel
-    } = __vitePreload(() => import("./method-UMMnAbNS.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
+    } = __vitePreload(() => import("./method-dcO9v2wq.js"), true ? __vite__mapDeps([12,1,10,3]) : void 0);
     const renderer = createRenderer();
     const camera = createCamera();
     createAnimatedModel(model, data2.model, setLoading);
@@ -92987,7 +92987,7 @@ const BottleModel1 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DUIKK5bo.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-q2ME1qS5.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -92997,7 +92997,7 @@ const BottleModel1 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-Dd4PKRKS.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-Di0d2DWQ.js"), true ? __vite__mapDeps([13,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93032,7 +93032,7 @@ const BottleModel2 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DUIKK5bo.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-q2ME1qS5.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93042,7 +93042,7 @@ const BottleModel2 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-DgG3VF7f.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-73pj_V9M.js"), true ? __vite__mapDeps([14,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93079,7 +93079,7 @@ const BottleModel3 = ({
   reactExports.useEffect(() => {
     const {
       OrbitControls
-    } = __vitePreload(() => import("./OrbitControls-DUIKK5bo.js"), true ? [] : void 0);
+    } = __vitePreload(() => import("./OrbitControls-q2ME1qS5.js"), true ? [] : void 0);
     const {
       createCamera,
       createLight,
@@ -93089,7 +93089,7 @@ const BottleModel3 = ({
       onWindowResize,
       animate: animate2,
       createFloor
-    } = __vitePreload(() => import("./method-6HjIXuM3.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
+    } = __vitePreload(() => import("./method-BPGkFRTE.js"), true ? __vite__mapDeps([15,1,3]) : void 0);
     setSelectedColor("");
     const renderer = createRenderer();
     const scene = createScene();
@@ -93395,7 +93395,7 @@ const ModalVideo = (props) => {
   const [isOpen, setOpen] = reactExports.useState(false);
   const [VideoModal, setVideoModal] = reactExports.useState(null);
   reactExports.useEffect(() => {
-    __vitePreload(() => import("./index-DxrWnQ1P.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
+    __vitePreload(() => import("./index-5gwUL6C3.js").then((n) => n.i), true ? [] : void 0).then((module2) => {
       setVideoModal(() => module2.default);
     });
   }, []);
