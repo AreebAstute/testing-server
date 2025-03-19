@@ -1,7 +1,7 @@
 export function getHeader(metaData) {
   return `
     <title>${metaData.title}</title>
-    
+     
     <!-- Other Important Meta Tags -->
     <meta name="description" content="${metaData.description}" />
     <meta name="robots" content="index, follow" />
